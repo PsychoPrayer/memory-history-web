@@ -1,0 +1,3746 @@
+[
+  {
+    "id": "story16_question1",
+    "historia": "16",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué fecha fue declarado oficialmente el Araguaney como Árbol Nacional de Venezuela?",
+      "opciones": [
+        "15 de julio de 1950",
+        "29 de mayo de 1948",
+        "19 de abril de 1810",
+        "12 de octubre de 1492"
+      ]
+    },
+    "en": {
+      "enunciado": "On what date was the Araguaney officially declared the National Tree of Venezuela?",
+      "opciones": [
+        "July 15, 1950",
+        "May 29, 1948",
+        "April 19, 1810",
+        "October 12, 1492"
+      ]
+    }
+  },
+  {
+    "id": "story16_question2",
+    "historia": "16",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué característica física define la madera del Araguaney?",
+      "opciones": [
+        "Es blanda y fácil de moldear.",
+        "Es flexible y de color rojizo.",
+        "Es extremadamente dura y pesada",
+        "Es porosa y flota fácilmente."
+      ]
+    },
+    "en": {
+      "enunciado": "What physical characteristic defines the wood of the Araguaney?",
+      "opciones": [
+        "It is soft and easy to shape.",
+        "It is flexible and reddish in color.",
+        "It is extremely hard and heavy",
+        "It is porous and floats easily."
+      ]
+    }
+  },
+  {
+    "id": "story16_question3",
+    "historia": "16",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Por qué el Araguaney es considerado un árbol caducifolio?",
+      "opciones": [
+        "Porque sus flores cambian de color según la estación.",
+        "Porque florece durante todo el año sin interrupción.",
+        "Porque pierde sus hojas antes de su floración",
+        "Porque crece únicamente en zonas pantanosas."
+      ]
+    },
+    "en": {
+      "enunciado": "Why is the Araguaney considered a deciduous tree?",
+      "opciones": [
+        "Because its flowers change color according to the season.",
+        "Because it blooms throughout the year without interruption.",
+        "Because it loses its leaves before flowering",
+        "Because it grows only in swampy areas."
+      ]
+    }
+  },
+  {
+    "id": "story17_question1",
+    "historia": "17",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el hábitat principal del chigüire en Venezuela?",
+      "opciones": [
+        "Las cumbres nevadas de los Andes.",
+        "Las selvas densas del Amazonas.",
+        "Las zonas cercanas a cuerpos de agua en los Llanos",
+        "Las zonas desérticas del estado Falcón."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the main habitat of the chigüire in Venezuela?",
+      "opciones": [
+        "The snow-capped peaks of the Andes.",
+        "The dense jungles of the Amazon.",
+        "Areas near bodies of water in the Llanos",
+        "The desert areas of Falcón state."
+      ]
+    }
+  },
+  {
+    "id": "story17_question2",
+    "historia": "17",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿A qué familia de animales pertenece biológicamente el chigüire?",
+      "opciones": [
+        "A los marsupiales, como el rabipelado.",
+        "A los roedores, siendo el más grande del mundo",
+        "A los porcinos, por su forma física.",
+        "A los anfibios, debido a su gran habilidad para nadar."
+      ]
+    },
+    "en": {
+      "enunciado": "To which family of animals does the chigüire biologically belong?",
+      "opciones": [
+        "Marsupials, like the opossum.",
+        "Rodents, being the largest in the world",
+        "Pigs, due to its physical shape.",
+        "Amphibians, due to its great swimming ability."
+      ]
+    }
+  },
+  {
+    "id": "story17_question3",
+    "historia": "17",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es la dieta principal de este animal?",
+      "opciones": [
+        "Es omnívoro y caza pequeños peces.",
+        "Es herbívoro, se alimenta de pastos y plantas acuáticas",
+        "Se alimenta exclusivamente de frutas caídas de los árboles.",
+        "Es carnívoro y compite con el caimán por alimento."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the main diet of this animal?",
+      "opciones": [
+        "It is omnivorous and hunts small fish.",
+        "It is herbivorous, feeding on grasses and aquatic plants",
+        "It feeds exclusively on fruits fallen from trees.",
+        "It is carnivorous and competes with the alligator for food."
+      ]
+    }
+  },
+  {
+    "id": "story18_question1",
+    "historia": "18",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué comportamiento social caracteriza a las guacamayas respecto a sus parejas?",
+      "opciones": [
+        "Cambian de pareja cada temporada de reproducción.",
+        "Viven de forma solitaria y solo se unen para anidar.",
+        "Son monógamas y mantienen a la misma pareja de por vida",
+        "Los machos cuidan a las crías sin ayuda de la hembra."
+      ]
+    },
+    "en": {
+      "enunciado": "What social behavior characterizes macaws regarding their partners?",
+      "opciones": [
+        "They change partners every breeding season.",
+        "They live solitarily and only come together to nest.",
+        "They are monogamous and keep the same partner for life",
+        "Males care for the offspring without the female's help."
+      ]
+    }
+  },
+  {
+    "id": "story18_question2",
+    "historia": "18",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué ciudad venezolana es común verlas volar libremente entre los edificios?",
+      "opciones": [
+        "Maracaibo",
+        "Caracas",
+        "Mérida",
+        "Barquisimeto"
+      ]
+    },
+    "en": {
+      "enunciado": "In which Venezuelan city is it common to see them flying freely between buildings?",
+      "opciones": [
+        "Maracaibo",
+        "Caracas",
+        "Mérida",
+        "Barquisimeto"
+      ]
+    }
+  },
+  {
+    "id": "story18_question3",
+    "historia": "18",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es una de las funciones principales de su pico fuerte y curvo?",
+      "opciones": [
+        "Exclusivamente para defenderse de los depredadores.",
+        "Para filtrar el agua de los ríos.",
+        "Para romper semillas duras y trepar por las ramas",
+        "Para excavar túneles en el suelo donde anidan."
+      ]
+    },
+    "en": {
+      "enunciado": "What is one of the main functions of their strong, curved beak?",
+      "opciones": [
+        "Exclusively to defend themselves from predators.",
+        "To filter water from rivers.",
+        "To break hard seeds and climb through branches",
+        "To dig tunnels in the ground where they nest."
+      ]
+    }
+  },
+  {
+    "id": "story19_question1",
+    "historia": "19",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué fenómeno natural es el principal responsable de la formación de las dunas en este parque?",
+      "opciones": [
+        "Las fuertes lluvias estacionales.",
+        "Las corrientes marinas del Golfo de Venezuela.",
+        "La acción constante de los vientos alisios",
+        "El movimiento de las placas tectónicas."
+      ]
+    },
+    "en": {
+      "enunciado": "What natural phenomenon is primarily responsible for the formation of the dunes in this park?",
+      "opciones": [
+        "Heavy seasonal rains.",
+        "The ocean currents of the Gulf of Venezuela.",
+        "The constant action of the trade winds",
+        "The movement of tectonic plates."
+      ]
+    }
+  },
+  {
+    "id": "story19_question2",
+    "historia": "19",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué estado de Venezuela se encuentra ubicado el Parque Nacional Médanos de Coro?",
+      "opciones": [
+        "Estado Zulia.",
+        "Estado Falcón",
+        "Estado Lara.",
+        "Estado Carabobo."
+      ]
+    },
+    "en": {
+      "enunciado": "In which state of Venezuela is the Médanos de Coro National Park located?",
+      "opciones": [
+        "Zulia State.",
+        "Falcón State",
+        "Lara State.",
+        "Carabobo State."
+      ]
+    }
+  },
+  {
+    "id": "story19_question3",
+    "historia": "19",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué tipo de vegetación es predominante en este ecosistema árido?",
+      "opciones": [
+        "Bosques nublados y helechos gigantes.",
+        "Manglares y palmeras de coco.",
+        "Vegetación xerófila como cujíes y cardones",
+        "Pinos y vegetación de páramo."
+      ]
+    },
+    "en": {
+      "enunciado": "What type of vegetation predominates in this arid ecosystem?",
+      "opciones": [
+        "Cloud forests and giant ferns.",
+        "Mangroves and coconut palms.",
+        "Xerophilous vegetation such as cujíes and cardones",
+        "Pines and páramo vegetation."
+      ]
+    }
+  },
+  {
+    "id": "story20_question1",
+    "historia": "20",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué significa la palabra \"Tepuy\" en la lengua del pueblo pemón?",
+      "opciones": [
+        "Selva impenetrable.",
+        "Montaña o morada de los dioses",
+        "Río de aguas negras.",
+        "Piedra que llora."
+      ]
+    },
+    "en": {
+      "enunciado": "What does the word \"Tepuy\" mean in the language of the Pemón people?",
+      "opciones": [
+        "Impenetrable jungle.",
+        "Mountain or dwelling of the gods",
+        "River of dark waters.",
+        "Weeping stone."
+      ]
+    }
+  },
+  {
+    "id": "story20_question2",
+    "historia": "20",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el tepuy más famoso por albergar el Salto Ángel?",
+      "opciones": [
+        "Monte Roraima.",
+        "Kukenán-tepuy.",
+        "Auyantepuy",
+        "Autana-tepuy."
+      ]
+    },
+    "en": {
+      "enunciado": "Which tepuy is the most famous for housing Angel Falls?",
+      "opciones": [
+        "Mount Roraima.",
+        "Kukenán-tepuy.",
+        "Auyantepuy",
+        "Autana-tepuy."
+      ]
+    }
+  },
+  {
+    "id": "story20_question3",
+    "historia": "20",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Por qué se dice que los tepuyes son \"islas ecológicas\"?",
+      "opciones": [
+        "Porque están rodeados de agua de mar.",
+        "Porque se desplazan lentamente por el territorio.",
+        "Porque su aislamiento permite que existan especies únicas en sus cimas",
+        "Porque solo se puede llegar a ellos en barco."
+      ]
+    },
+    "en": {
+      "enunciado": "Why are tepuis said to be \"ecological islands\"?",
+      "opciones": [
+        "Because they are surrounded by seawater.",
+        "Because they slowly move across the territory.",
+        "Because their isolation allows unique species to exist on their summits",
+        "Because they can only be reached by boat."
+      ]
+    }
+  },
+  {
+    "id": "story21_question1",
+    "historia": "21",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuáles son los cuatro ingredientes básicos que componen un pabellón tradicional?",
+      "opciones": [
+        "Pasta, granos, pollo y ensalada.",
+        "Arroz blanco, caraotas negras, carne mechada y tajadas",
+        "Arepa, perico, queso y aguacate.",
+        "Sopa de res, yuca, casabe y picante."
+      ]
+    },
+    "en": {
+      "enunciado": "What are the four basic ingredients that make up a traditional pabellón?",
+      "opciones": [
+        "Pasta, beans, chicken, and salad.",
+        "White rice, black beans, shredded beef, and fried plantains",
+        "Arepa, perico (scrambled eggs with vegetables), cheese, and avocado.",
+        "Beef soup, yucca, cassava bread, and hot sauce."
+      ]
+    }
+  },
+  {
+    "id": "story21_question2",
+    "historia": "21",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué nombre recibe el plato cuando se le añade un huevo frito encima?",
+      "opciones": [
+        "Pabellón con baranda.",
+        "Pabellón oriental.",
+        "Pabellón a caballo",
+        "Pabellón real."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the dish when a fried egg is added on top?",
+      "opciones": [
+        "Pabellón con baranda.",
+        "Pabellón oriental.",
+        "Pabellón a caballo",
+        "Pabellón real."
+      ]
+    }
+  },
+  {
+    "id": "story21_question3",
+    "historia": "21",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué ingrediente representa el aporte indígena dentro de la simbología del plato?",
+      "opciones": [
+        "El arroz blanco.",
+        "Las caraotas negras.",
+        "La carne mechada",
+        "El queso blanco."
+      ]
+    },
+    "en": {
+      "enunciado": "Which ingredient represents the indigenous contribution within the dish's symbolism?",
+      "opciones": [
+        "White rice.",
+        "Black beans.",
+        "Shredded beef",
+        "White cheese."
+      ]
+    }
+  },
+  {
+    "id": "story22_question1",
+    "historia": "22",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué año fue inaugurado el Arco de Carabobo?",
+      "opciones": [
+        "1821",
+        "1921",
+        "1945",
+        "1811"
+      ]
+    },
+    "en": {
+      "enunciado": "In what year was the Carabobo Arch inaugurated?",
+      "opciones": [
+        "1821",
+        "1921",
+        "1945",
+        "1811"
+      ]
+    }
+  },
+  {
+    "id": "story22_question2",
+    "historia": "22",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué batalla histórica conmemora este monumento?",
+      "opciones": [
+        "Batalla de La Victoria.",
+        "Batalla de San Mateo.",
+        "Batalla de Carabobo",
+        "Batalla naval del Lago de Maracaibo."
+      ]
+    },
+    "en": {
+      "enunciado": "Which historical battle does this monument commemorate?",
+      "opciones": [
+        "Battle of La Victoria.",
+        "Battle of San Mateo.",
+        "Battle of Carabobo",
+        "Naval Battle of Lake Maracaibo."
+      ]
+    }
+  },
+  {
+    "id": "story22_question3",
+    "historia": "22",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué ceremonia tradicional se puede observar cada dos horas en el complejo del monumento?",
+      "opciones": [
+        "Un desfile aéreo de la Fuerza Armada.",
+        "Una misa solemne al aire libre.",
+        "El cambio de la Guardia de Honor",
+        "El encendido de fuegos artificiales."
+      ]
+    },
+    "en": {
+      "enunciado": "What traditional ceremony can be observed every two hours in the monument complex?",
+      "opciones": [
+        "An aerial parade of the Armed Forces.",
+        "An outdoor solemn mass.",
+        "The changing of the Honor Guard",
+        "The lighting of fireworks."
+      ]
+    }
+  },
+  {
+    "id": "story23_question1",
+    "historia": "23",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el nombre indígena del Cerro El Ávila?",
+      "opciones": [
+        "Guaraira Repano.",
+        "Waraira Repano",
+        "Naiguatá.",
+        "Galipán."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the indigenous name of El Ávila Hill?",
+      "opciones": [
+        "Guaraira Repano.",
+        "Waraira Repano",
+        "Naiguatá.",
+        "Galipán."
+      ]
+    }
+  },
+  {
+    "id": "story23_question2",
+    "historia": "23",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo se llama el icónico hotel de forma circular ubicado en una de sus cimas?",
+      "opciones": [
+        "Hotel Tamanaco.",
+        "Hotel Alba.",
+        "Hotel Humboldt",
+        "Hotel Meliá."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the iconic circular-shaped hotel located on one of its peaks?",
+      "opciones": [
+        "Hotel Tamanaco.",
+        "Hotel Alba.",
+        "Hotel Humboldt",
+        "Hotel Meliá."
+      ]
+    }
+  },
+  {
+    "id": "story23_question3",
+    "historia": "23",
+    "numero": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál es el pico más alto de todo el Parque Nacional El Ávila?",
+      "opciones": [
+        "Pico El Ávila.",
+        "Pico Occidental.",
+        "Pico Oriental.",
+        "Pico Naiguatá"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the highest peak of the entire El Ávila National Park?",
+      "opciones": [
+        "Pico El Ávila.",
+        "Pico Occidental.",
+        "Pico Oriental.",
+        "Pico Naiguatá"
+      ]
+    }
+  },
+  {
+    "id": "story24_question1",
+    "historia": "24",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué fecha fue declarada oficialmente la Orquídea como Flor Nacional?",
+      "opciones": [
+        "19 de abril de 1810.",
+        "23 de mayo de 1951.",
+        "5 de julio de 1811.",
+        "12 de octubre de 1492."
+      ]
+    },
+    "en": {
+      "enunciado": "On what date was the Orchid officially declared the National Flower?",
+      "opciones": [
+        "April 19, 1810.",
+        "May 23, 1951.",
+        "July 5, 1811.",
+        "October 12, 1492."
+      ]
+    }
+  },
+  {
+    "id": "story24_question2",
+    "historia": "24",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué significa que la orquídea sea una planta \"epífita\"?",
+      "opciones": [
+        "Que crece bajo la tierra como un tubérculo.",
+        "Que se alimenta de insectos para sobrevivir.",
+        "Que crece sobre otras plantas usándolas como soporte.",
+        "Que solo puede crecer en el agua."
+      ]
+    },
+    "en": {
+      "enunciado": "What does it mean that the orchid is an \"epiphytic\" plant?",
+      "opciones": [
+        "That it grows underground like a tuber.",
+        "That it feeds on insects to survive.",
+        "That it grows on other plants using them as support.",
+        "That it can only grow in water."
+      ]
+    }
+  },
+  {
+    "id": "story24_question3",
+    "historia": "24",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Con qué nombre popular se conoce a la especie Cattleya mossiae en Venezuela?",
+      "opciones": [
+        "Rosa de montaña.",
+        "Flor de Mayo.",
+        "Lirio del valle.",
+        "Girasol del trópico."
+      ]
+    },
+    "en": {
+      "enunciado": "By what popular name is the species Cattleya mossiae known in Venezuela?",
+      "opciones": [
+        "Mountain rose.",
+        "May flower.",
+        "Lily of the valley.",
+        "Tropical sunflower."
+      ]
+    }
+  },
+  {
+    "id": "story25_question1",
+    "historia": "25",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué ciudad y año se estima que se creó el primer Pan de Jamón?",
+      "opciones": [
+        "Maracaibo, 1920.",
+        "Caracas, 1905",
+        "Valencia, 1890.",
+        "Barquisimeto, 1915."
+      ]
+    },
+    "en": {
+      "enunciado": "In which city and year is it estimated that the first Ham Bread was created?",
+      "opciones": [
+        "Maracaibo, 1920.",
+        "Caracas, 1905",
+        "Valencia, 1890.",
+        "Barquisimeto, 1915."
+      ]
+    }
+  },
+  {
+    "id": "story25_question2",
+    "historia": "25",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuáles son los ingredientes tradicionales que aportan el toque dulce al relleno?",
+      "opciones": [
+        "Chocolate y canela.",
+        "Pasas y, en ocasiones, el barnizado con papelón",
+        "Mermelada de guayaba y miel.",
+        "Trozos de manzana y azúcar morena."
+      ]
+    },
+    "en": {
+      "enunciado": "What are the traditional ingredients that give a sweet touch to the filling?",
+      "opciones": [
+        "Chocolate and cinnamon.",
+        "Raisins and, sometimes, glazing with panela",
+        "Guava jam and honey.",
+        "Apple pieces and brown sugar."
+      ]
+    }
+  },
+  {
+    "id": "story25_question3",
+    "historia": "25",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué otros dos elementos suelen acompañar al jamón y la tocineta dentro del pan?",
+      "opciones": [
+        "Queso amarillo y jamón de pavo.",
+        "Aceitunas verdes y pasas",
+        "Alcaparras y cebolla blanca.",
+        "Pimentón asado y maíz dulce."
+      ]
+    },
+    "en": {
+      "enunciado": "What other two elements usually accompany the ham and bacon inside the bread?",
+      "opciones": [
+        "Yellow cheese and turkey ham.",
+        "Green olives and raisins",
+        "Capers and white onion.",
+        "Roasted bell pepper and sweet corn."
+      ]
+    }
+  },
+  {
+    "id": "story26_question1",
+    "historia": "26",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué festividad religiosa católica se lleva a cabo la danza de los Diablos de Yare?",
+      "opciones": [
+        "Semana Santa.",
+        "Corpus Christi",
+        "Navidad.",
+        "El día de San Juan Bautista."
+      ]
+    },
+    "en": {
+      "enunciado": "In which Catholic religious festival is the dance of the Devils of Yare performed?",
+      "opciones": [
+        "Holy Week.",
+        "Corpus Christi",
+        "Christmas.",
+        "The day of Saint John the Baptist."
+      ]
+    }
+  },
+  {
+    "id": "story26_question2",
+    "historia": "26",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué color es el que predomina en el vestuario de los danzantes?",
+      "opciones": [
+        "Amarillo brillante.",
+        "Rojo intenso",
+        "Negro y blanco.",
+        "Verde oscuro."
+      ]
+    },
+    "en": {
+      "enunciado": "What color predominates in the dancers' costumes?",
+      "opciones": [
+        "Bright yellow.",
+        "Intense red",
+        "Black and white.",
+        "Dark green."
+      ]
+    }
+  },
+  {
+    "id": "story26_question3",
+    "historia": "26",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué reconocimiento internacional recibió esta tradición en el año 2012?",
+      "opciones": [
+        "El Premio Nobel de la Paz.",
+        "Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO",
+        "Monumento Natural Protegido.",
+        "Record Guinness a la danza más larga del mundo."
+      ]
+    },
+    "en": {
+      "enunciado": "What international recognition did this tradition receive in 2012?",
+      "opciones": [
+        "The Nobel Peace Prize.",
+        "Intangible Cultural Heritage of Humanity by UNESCO",
+        "Protected Natural Monument.",
+        "Guinness World Record for the longest dance in the world."
+      ]
+    }
+  },
+  {
+    "id": "story27_question1",
+    "historia": "27",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué símbolo patrio trajo Miranda a Venezuela por primera vez en 1806?",
+      "opciones": [
+        "El Escudo Nacional.",
+        "El Himno Nacional \"Gloria al Bravo Pueblo\".",
+        "La bandera tricolor (amarillo, azul y rojo)",
+        "La Constitución de la República."
+      ]
+    },
+    "en": {
+      "enunciado": "Which national symbol did Miranda bring to Venezuela for the first time in 1806?",
+      "opciones": [
+        "The National Coat of Arms.",
+        "The National Anthem \"Gloria al Bravo Pueblo.\"",
+        "The tricolor flag (yellow, blue, and red)",
+        "The Constitution of the Republic."
+      ]
+    }
+  },
+  {
+    "id": "story27_question2",
+    "historia": "27",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué importante monumento europeo está inscrito el nombre de Francisco de Miranda?",
+      "opciones": [
+        "En el Big Ben de Londres.",
+        "En el Arco del Triunfo de París",
+        "En el Coliseo de Roma.",
+        "En la Puerta de Alcalá en Madrid."
+      ]
+    },
+    "en": {
+      "enunciado": "On which important European monument is Francisco de Miranda's name inscribed?",
+      "opciones": [
+        "On Big Ben in London.",
+        "On the Arc de Triomphe in Paris",
+        "On the Colosseum in Rome.",
+        "On the Puerta de Alcalá in Madrid."
+      ]
+    }
+  },
+  {
+    "id": "story27_question3",
+    "historia": "27",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo llamó Miranda a su gran proyecto de una nación americana unificada?",
+      "opciones": [
+        "Confederación de los Andes.",
+        "Estados Unidos del Sur.",
+        "Colombeia",
+        "Nueva Granada."
+      ]
+    },
+    "en": {
+      "enunciado": "What did Miranda call his great project of a unified American nation?",
+      "opciones": [
+        "Confederation of the Andes.",
+        "United States of the South.",
+        "Colombeia",
+        "New Granada"
+      ]
+    }
+  },
+  {
+    "id": "story28_question1",
+    "historia": "28",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué representan las 24 mieses de trigo en el cuartel rojo?",
+      "opciones": [
+        "Los meses del año de la independencia.",
+        "La unión de los estados de la República y la riqueza",
+        "Los próceres que firmaron el acta de 1811.",
+        "Las batallas más importantes de la gesta emancipadora."
+      ]
+    },
+    "en": {
+      "enunciado": "What do the 24 ears of wheat in the red quarter represent?",
+      "opciones": [
+        "The months of the year of independence.",
+        "The union of the states of the Republic and wealth",
+        "The heroes who signed the 1811 act.",
+        "The most important battles of the emancipation struggle."
+      ]
+    }
+  },
+  {
+    "id": "story28_question2",
+    "historia": "28",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Hacia qué dirección galopa el caballo blanco en el diseño actual del escudo?",
+      "opciones": [
+        "Hacia la derecha y mirando hacia atrás.",
+        "Hacia la izquierda y mirando hacia adelante",
+        "Se encuentra estático en posición de descanso.",
+        "Hacia arriba, saltando sobre una montaña."
+      ]
+    },
+    "en": {
+      "enunciado": "In which direction does the white horse gallop in the current design of the coat of arms?",
+      "opciones": [
+        "To the right and looking backward.",
+        "To the left and looking forward",
+        "It is stationary in a resting position.",
+        "Upward, jumping over a mountain."
+      ]
+    }
+  },
+  {
+    "id": "story28_question3",
+    "historia": "28",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué significan las ramas de olivo y palma que rodean el escudo?",
+      "opciones": [
+        "La flora típica de los llanos y la costa.",
+        "El alimento y la sombra para el pueblo.",
+        "La paz y la victoria, respectivamente",
+        "El pasado colonial y el futuro republicano."
+      ]
+    },
+    "en": {
+      "enunciado": "What do the olive and palm branches surrounding the shield signify?",
+      "opciones": [
+        "The typical flora of the plains and the coast.",
+        "Food and shade for the people.",
+        "The peace and victory, respectively",
+        "The colonial past and the republican future."
+      ]
+    }
+  },
+  {
+    "id": "story29_question1",
+    "historia": "29",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué fecha fue declarado el Turpial como Ave Nacional de Venezuela?",
+      "opciones": [
+        "19 de abril de 1810",
+        "5 de julio de 1811",
+        "23 de mayo de 1958",
+        "12 de octubre de 1492"
+      ]
+    },
+    "en": {
+      "enunciado": "On what date was the Turpial declared the National Bird of Venezuela?",
+      "opciones": [
+        "April 19, 1810",
+        "July 5, 1811",
+        "May 23, 1958",
+        "October 12, 1492"
+      ]
+    }
+  },
+  {
+    "id": "story29_question2",
+    "historia": "29",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es una característica distintiva del comportamiento de anidación del turpial?",
+      "opciones": [
+        "Construye nidos gigantescos de barro.",
+        "Suele ocupar o quitar nidos de otras aves",
+        "Teje sus nidos con hilos de seda de araña.",
+        "Anida exclusivamente en cuevas profundas."
+      ]
+    },
+    "en": {
+      "enunciado": "What is a distinctive characteristic of the Turpial's nesting behavior?",
+      "opciones": [
+        "It builds gigantic mud nests.",
+        "It usually occupies or takes over nests of other birds",
+        "It weaves its nests with spider silk threads.",
+        "It nests exclusively in deep caves."
+      ]
+    }
+  },
+  {
+    "id": "story29_question3",
+    "historia": "29",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué color resalta alrededor de los ojos del turpial?",
+      "opciones": [
+        "Un círculo rojo intenso.",
+        "Un parche de color verde.",
+        "Un fino anillo de color azul celeste",
+        "Una mancha blanca brillante."
+      ]
+    },
+    "en": {
+      "enunciado": "What color stands out around the Turpial's eyes?",
+      "opciones": [
+        "An intense red circle.",
+        "A green patch.",
+        "A thin sky blue ring",
+        "A bright white spot."
+      ]
+    }
+  },
+  {
+    "id": "story30_question1",
+    "historia": "30",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué estado de Venezuela se encuentra el santuario principal de la Virgen del Valle?",
+      "opciones": [
+        "Estado Sucre.",
+        "Estado Nueva Esparta",
+        "Estado Anzoátegui.",
+        "Estado Monagas."
+      ]
+    },
+    "en": {
+      "enunciado": "In which state of Venezuela is the main sanctuary of the Virgin of the Valley located?",
+      "opciones": [
+        "Sucre State.",
+        "Nueva Esparta State",
+        "Anzoátegui State.",
+        "Monagas State."
+      ]
+    }
+  },
+  {
+    "id": "story30_question2",
+    "historia": "30",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es la fecha central en la que se celebra su festividad cada año?",
+      "opciones": [
+        "12 de diciembre.",
+        "14 de enero.",
+        "8 de septiembre",
+        "18 de noviembre."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the main date on which her feast is celebrated each year?",
+      "opciones": [
+        "December 12.",
+        "January 14.",
+        "September 8",
+        "November 18."
+      ]
+    }
+  },
+  {
+    "id": "story30_question3",
+    "historia": "30",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿A qué grupo de personas o institución se le considera especialmente protegida por \"Vallita\"?",
+      "opciones": [
+        "A los agricultores de los Andes.",
+        "A los pescadores y la Armada",
+        "A los mineros del estado Bolívar.",
+        "A los ganaderos de los Llanos."
+      ]
+    },
+    "en": {
+      "enunciado": "Which group of people or institution is considered to be especially protected by \"Vallita\"?",
+      "opciones": [
+        "The farmers of the Andes.",
+        "The fishermen and the Navy",
+        "The miners of Bolívar State.",
+        "The ranchers of the Llanos."
+      ]
+    }
+  },
+  {
+    "id": "story31_question1",
+    "historia": "31",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es la altura oficial aproximada del Pico Bolívar?",
+      "opciones": [
+        "2.765 metros.",
+        "3.500 metros.",
+        "4.978 metros",
+        "5.100 metros."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the approximate official height of Pico Bolívar?",
+      "opciones": [
+        "2,765 meters.",
+        "3,500 meters.",
+        "4,978 meters",
+        "5,100 meters."
+      ]
+    }
+  },
+  {
+    "id": "story31_question2",
+    "historia": "31",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se llamaba este pico antes de ser rebautizado en honor a Simón Bolívar?",
+      "opciones": [
+        "Pico Espejo.",
+        "La Columna",
+        "El Toro.",
+        "Pan de Azúcar."
+      ]
+    },
+    "en": {
+      "enunciado": "What was this peak called before being renamed in honor of Simón Bolívar?",
+      "opciones": [
+        "Pico Espejo.",
+        "La Columna",
+        "El Toro.",
+        "Pan de Azúcar."
+      ]
+    }
+  },
+  {
+    "id": "story31_question3",
+    "historia": "31",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿A través de qué sistema de transporte se puede llegar cerca de su cumbre?",
+      "opciones": [
+        "El Tren de los Andes.",
+        "El Teleférico de Caracas.",
+        "El Teleférico de Mérida Mukumbarí",
+        "Un sistema de funiculares subterráneos"
+      ]
+    },
+    "en": {
+      "enunciado": "Through which transportation system can you get close to its summit?",
+      "opciones": [
+        "The Andes Train.",
+        "The Caracas Cable Car.",
+        "The Mérida Mukumbarí Cable Car",
+        "An underground funicular system"
+      ]
+    }
+  },
+  {
+    "id": "story32_question1",
+    "historia": "32",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué carga El Silbón dentro de un saco sobre su espalda, según la leyenda?",
+      "opciones": [
+        "Monedas de oro robadas.",
+        "Huesos humanos",
+        "Comida para su viaje eterno.",
+        "Piedras del río para marcar su camino."
+      ]
+    },
+    "en": {
+      "enunciado": "What does El Silbón carry in a sack on his back, according to the legend?",
+      "opciones": [
+        "Stolen gold coins.",
+        "Human bones",
+        "Food for his eternal journey.",
+        "River stones to mark his path."
+      ]
+    }
+  },
+  {
+    "id": "story32_question2",
+    "historia": "32",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué significa, paradójicamente, escuchar su silbido de manera muy tenue y distante?",
+      "opciones": [
+        "Que está de buen humor y no atacará.",
+        "Que se aleja rápidamente hacia el horizonte.",
+        "Que está muy cerca y eres su próxima víctima",
+        "Que busca ayuda para romper su maldición."
+      ]
+    },
+    "en": {
+      "enunciado": "What does it paradoxically mean to hear his whistle very faintly and from a distance?",
+      "opciones": [
+        "That he is in a good mood and will not attack.",
+        "That he is quickly moving away toward the horizon.",
+        "That he is very close and you are his next victim",
+        "That he is seeking help to break his curse."
+      ]
+    }
+  },
+  {
+    "id": "story32_question3",
+    "historia": "32",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué tipo de personas son, según la tradición, las víctimas preferidas de El Silbón?",
+      "opciones": [
+        "Las mujeres trabajadoras.",
+        "Los hombres borrachos y mujeriegos",
+        "Los ancianos sabios de la comunidad.",
+        "Los animales domésticos."
+      ]
+    },
+    "en": {
+      "enunciado": "What type of people are, according to tradition, El Silbón's preferred victims?",
+      "opciones": [
+        "Hardworking women.",
+        "Drunken and womanizing men",
+        "The wise elderly of the community.",
+        "Domestic animals."
+      ]
+    }
+  },
+  {
+    "id": "story33_question1",
+    "historia": "33",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué fortaleza militar fue encarcelada Luisa Cáceres para presionar a su esposo?",
+      "opciones": [
+        "Castillo de Puerto Cabello.",
+        "Castillo de Santa Rosa, en Margarita",
+        "Fortín Solano.",
+        "Castillo de San Carlos de la Barra."
+      ]
+    },
+    "en": {
+      "enunciado": "In which military fortress was Luisa Cáceres imprisoned to pressure her husband?",
+      "opciones": [
+        "Puerto Cabello Castle.",
+        "Santa Rosa Castle, in Margarita",
+        "Fortín Solano.",
+        "San Carlos de la Barra Castle."
+      ]
+    }
+  },
+  {
+    "id": "story33_question2",
+    "historia": "33",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál fue el destino final de Luisa Cáceres de Arismendi, siendo la primera mujer en recibir este honor?",
+      "opciones": [
+        "Fue nombrada Presidenta Honoraria.",
+        "Sus restos fueron llevados a la Catedral de Caracas.",
+        "Sus restos fueron trasladados al Panteón Nacional",
+        "Se le otorgó el título de Libertadora de Oriente."
+      ]
+    },
+    "en": {
+      "enunciado": "What was the final destiny of Luisa Cáceres de Arismendi, being the first woman to receive this honor?",
+      "opciones": [
+        "She was named Honorary President.",
+        "Her remains were taken to the Caracas Cathedral.",
+        "Her remains were moved to the National Pantheon",
+        "She was granted the title of Liberator of the East."
+      ]
+    }
+  },
+  {
+    "id": "story33_question3",
+    "historia": "33",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Quién fue el esposo de Luisa y un importante general de la independencia?",
+      "opciones": [
+        "Santiago Mariño.",
+        "José Antonio Páez.",
+        "Juan Bautista Arismendi",
+        "Francisco de Miranda."
+      ]
+    },
+    "en": {
+      "enunciado": "Who was Luisa's husband and an important general of independence?",
+      "opciones": [
+        "Santiago Mariño.",
+        "José Antonio Páez.",
+        "Juan Bautista Arismendi",
+        "Francisco de Miranda"
+      ]
+    }
+  },
+  {
+    "id": "story34_question1",
+    "historia": "34",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Con qué famoso apodo bautizó Simón Bolívar a Manuela Sáenz tras salvarle la vida?",
+      "opciones": [
+        "La Heroína de Quito.",
+        "La Libertadora del Libertador",
+        "La Coronela de los Andes.",
+        "El Ángel de la Guarda de Colombia."
+      ]
+    },
+    "en": {
+      "enunciado": "With what famous nickname did Simón Bolívar baptize Manuela Sáenz after saving her life?",
+      "opciones": [
+        "The Heroine of Quito.",
+        "The Liberator of the Liberator",
+        "The Colonel of the Andes.",
+        "The Guardian Angel of Colombia."
+      ]
+    }
+  },
+  {
+    "id": "story34_question2",
+    "historia": "34",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué rango militar llegó a alcanzar Manuela en el Ejército Libertador?",
+      "opciones": [
+        "General de Brigada.",
+        "Sargento Mayor.",
+        "Coronela",
+        "Capitana de Navío."
+      ]
+    },
+    "en": {
+      "enunciado": "What military rank did Manuela reach in the Liberation Army?",
+      "opciones": [
+        "Brigadier General.",
+        "Major Sergeant.",
+        "Colonel",
+        "Ship Captain."
+      ]
+    }
+  },
+  {
+    "id": "story34_question3",
+    "historia": "34",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué ciudad peruana pasó sus últimos años de vida tras ser desterrada?",
+      "opciones": [
+        "Lima.",
+        "Cusco.",
+        "Paita",
+        "Arequipa."
+      ]
+    },
+    "en": {
+      "enunciado": "In which Peruvian city did she spend her last years of life after being exiled?",
+      "opciones": [
+        "Lima.",
+        "Cusco.",
+        "Paita",
+        "Arequipa."
+      ]
+    }
+  },
+  {
+    "id": "story35_question1",
+    "historia": "35",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el origen del nombre \"La Sayona\"?",
+      "opciones": [
+        "Por el apellido de la mujer que originó la leyenda.",
+        "Por el \"sayón\", la túnica blanca que viste",
+        "Por el pueblo donde se apareció por primera vez.",
+        "Por el sonido de sus pasos al caminar."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the origin of the name 'La Sayona'?",
+      "opciones": [
+        "From the surname of the woman who started the legend.",
+        "From the 'sayón,' the white tunic she wears",
+        "From the town where she first appeared.",
+        "From the sound of her footsteps when walking."
+      ]
+    }
+  },
+  {
+    "id": "story35_question2",
+    "historia": "35",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿A qué tipo de personas persigue principalmente este espectro, según la tradición?",
+      "opciones": [
+        "A los niños que no quieren dormir.",
+        "A los viajeros que se pierden en el llano.",
+        "A los hombres infieles y mujeriegos",
+        "A los cazadores furtivos."
+      ]
+    },
+    "en": {
+      "enunciado": "What type of people does this specter mainly pursue, according to tradition?",
+      "opciones": [
+        "Children who do not want to sleep.",
+        "Travelers who get lost in the plains.",
+        "Unfaithful and womanizing men",
+        "Poachers."
+      ]
+    }
+  },
+  {
+    "id": "story35_question3",
+    "historia": "35",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo se transforma el rostro de La Sayona cuando revela su verdadera identidad?",
+      "opciones": [
+        "En el rostro de una anciana piadosa.",
+        "Se vuelve invisible para atacar por la espalda.",
+        "En una calavera con dientes afilados y ojos de fuego",
+        "En el rostro de la madre que ella asesinó."
+      ]
+    },
+    "en": {
+      "enunciado": "How does La Sayona’s face transform when she reveals her true identity?",
+      "opciones": [
+        "Into the face of a pious old woman.",
+        "She becomes invisible to attack from behind.",
+        "Into a skull with sharp teeth and fiery eyes",
+        "Into the face of the mother she murdered."
+      ]
+    }
+  },
+  {
+    "id": "story36_question1",
+    "historia": "36",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuáles son los tres instrumentos básicos que conforman el conjunto de joropo llanero?",
+      "opciones": [
+        "Guitarra, tambor y flauta.",
+        "Arpa, cuatro y maracas",
+        "Violín, acordeón y caja.",
+        "Piano, trompeta y bajo."
+      ]
+    },
+    "en": {
+      "enunciado": "What are the three basic instruments that make up the llanero joropo ensemble?",
+      "opciones": [
+        "Guitar, drum, and flute.",
+        "Harp, cuatro, and maracas",
+        "Violin, accordion, and box.",
+        "Piano, trumpet, and bass."
+      ]
+    }
+  },
+  {
+    "id": "story36_question2",
+    "historia": "36",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo se denomina al paso de baile que realiza la mujer, simulando barrer el piso?",
+      "opciones": [
+        "El zapateo.",
+        "El valsiao.",
+        "El escobillao",
+        "El remolino."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the dance step performed by the woman, simulating sweeping the floor?",
+      "opciones": [
+        "The tap dance.",
+        "The waltz.",
+        "The escobillao",
+        "The whirl."
+      ]
+    }
+  },
+  {
+    "id": "story36_question3",
+    "historia": "36",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué significado tiene la palabra \"joropo\" en el contexto tradicional venezolano?",
+      "opciones": [
+        "Solamente un tipo de zapato para bailar.",
+        "Un instrumento de cuerda muy antiguo.",
+        "Tanto el género musical como la fiesta donde se baila",
+        "El nombre de una comida típica del llano."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the meaning of the word \"joropo\" in the traditional Venezuelan context?",
+      "opciones": [
+        "Only a type of shoe for dancing.",
+        "A very old string instrument.",
+        "Both the musical genre and the party where it is danced",
+        "The name of a typical Llanos food."
+      ]
+    }
+  },
+  {
+    "id": "story37_question1",
+    "historia": "37",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el género musical distintivo que se escucha y baila en El Callao?",
+      "opciones": [
+        "El Joropo.",
+        "El Calipso",
+        "La Gaita.",
+        "El Tambor costeño."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the distinctive musical genre that is heard and danced to in El Callao?",
+      "opciones": [
+        "Joropo.",
+        "Calypso",
+        "Gaita.",
+        "Coastal Drum."
+      ]
+    }
+  },
+  {
+    "id": "story37_question2",
+    "historia": "37",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué personaje femenino representa la elegancia y la tradición de las antillas francesas e inglesas?",
+      "opciones": [
+        "La Sayona.",
+        "La Llorona.",
+        "La Madama",
+        "La Guacamaya."
+      ]
+    },
+    "en": {
+      "enunciado": "Which female character represents the elegance and tradition of the French and English Antilles?",
+      "opciones": [
+        "La Sayona.",
+        "La Llorona.",
+        "La Madama",
+        "La Guacamaya."
+      ]
+    }
+  },
+  {
+    "id": "story37_question3",
+    "historia": "37",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Por qué razón histórica se originó esta mezcla cultural tan particular en El Callao?",
+      "opciones": [
+        "Por la llegada masiva de turistas europeos en los años 50.",
+        "Por la inmigración de antillanos atraídos por la explotación del oro",
+        "Por un intercambio cultural con Brasil a través de la frontera.",
+        "Por la celebración de la victoria en una batalla histórica."
+      ]
+    },
+    "en": {
+      "enunciado": "For what historical reason did this particularly unique cultural mix originate in El Callao?",
+      "opciones": [
+        "Due to the massive arrival of European tourists in the 1950s.",
+        "Due to the immigration of Caribbean people attracted by gold exploitation",
+        "Due to a cultural exchange with Brazil across the border.",
+        "Due to the celebration of victory in a historic battle."
+      ]
+    }
+  },
+  {
+    "id": "story38_question1",
+    "historia": "38",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el nombre del pueblo donde se encuentra el santuario permanente de la Virgen?",
+      "opciones": [
+        "El Tocuyo.",
+        "Santa Rosa",
+        "Cabudare.",
+        "Quíbor."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the town where the permanent sanctuary of the Virgin is located?",
+      "opciones": [
+        "El Tocuyo.",
+        "Santa Rosa",
+        "Cabudare.",
+        "Quíbor."
+      ]
+    }
+  },
+  {
+    "id": "story38_question2",
+    "historia": "38",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué evento histórico en 1856 dio inicio a la tradición de la procesión anual?",
+      "opciones": [
+        "Un terremoto que destruyó la catedral.",
+        "La llegada de los primeros colonizadores.",
+        "Una epidemia de cólera que azotaba la región",
+        "La victoria en una batalla de la independencia."
+      ]
+    },
+    "en": {
+      "enunciado": "What historical event in 1856 started the tradition of the annual procession?",
+      "opciones": [
+        "An earthquake that destroyed the cathedral.",
+        "The arrival of the first settlers.",
+        "A cholera epidemic that struck the region",
+        "The victory in an independence battle."
+      ]
+    }
+  },
+  {
+    "id": "story38_question3",
+    "historia": "38",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué fecha específica de enero se realiza siempre su multitudinaria procesión?",
+      "opciones": [
+        "1 de enero.",
+        "6 de enero (Día de Reyes).",
+        "14 de enero",
+        "23 de enero."
+      ]
+    },
+    "en": {
+      "enunciado": "On which specific date in January is her massive procession always held?",
+      "opciones": [
+        "January 1.",
+        "January 6 (Three Kings' Day).",
+        "January 14",
+        "January 23."
+      ]
+    }
+  },
+  {
+    "id": "story39_question1",
+    "historia": "39",
+    "numero": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál es la altura total del Salto Ángel?",
+      "opciones": [
+        "500 metros",
+        "807 metros",
+        "979 metros (Respuesta Correcta)",
+        "1,200 metros"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the total height of Angel Falls?",
+      "opciones": [
+        "500 meters",
+        "807 meters",
+        "979 meters (Correct Answer)",
+        "1,200 meters"
+      ]
+    }
+  },
+  {
+    "id": "story39_question2",
+    "historia": "39",
+    "numero": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Quién fue el primer descriptor documentado del Salto Ángel en 1910?",
+      "opciones": [
+        "Jimmie Angel",
+        "Charles Lindbergh",
+        "Ernesto Sánchez La Cruz (Respuesta Correcta)",
+        "Alexander von Humboldt"
+      ]
+    },
+    "en": {
+      "enunciado": "Who was the first documented describer of Angel Falls in 1910?",
+      "opciones": [
+        "Jimmie Angel",
+        "Charles Lindbergh •",
+        "Ernesto Sánchez La Cruz (Correct Answer)",
+        "Alexander von Humboldt"
+      ]
+    }
+  },
+  {
+    "id": "story39_question3",
+    "historia": "39",
+    "numero": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cómo se llama el tepuy desde el que cae el Salto Ángel y qué significa su nombre pemón?",
+      "opciones": [
+        "Roraima (Madre de las Aguas)",
+        "Auyantepuy (Montaña del Diablo) (Respuesta Correcta)",
+        "Kukenán (Lugar de los Muertos)",
+        "Chimantá (Lugar del Sol)"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the tepui from which Angel Falls falls and what does its Pemon name mean?",
+      "opciones": [
+        "Roraima (Mother of Waters)",
+        "Auyantepuy (Devil's Mountain) (Correct Answer)",
+        "Kukenán (Place of the Dead)",
+        "Chimantá (Place of the Sun)"
+      ]
+    }
+  },
+  {
+    "id": "story40_question1",
+    "historia": "40",
+    "numero": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál es el grupo indígena más numeroso de Venezuela?",
+      "opciones": [
+        "Warao",
+        "Pemón",
+        "Wayuu (Respuesta Correcta)",
+        "Yanomami"
+      ]
+    },
+    "en": {
+      "enunciado": "Which is the most numerous indigenous group in Venezuela?",
+      "opciones": [
+        "Warao",
+        "Pemón",
+        "Wayuu (Correct Answer)",
+        "Yanomami"
+      ]
+    }
+  },
+  {
+    "id": "story40_question2",
+    "historia": "40",
+    "numero": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿En qué región de Venezuela se concentra la mayor población indígena del país?",
+      "opciones": [
+        "Los Andes",
+        "Los Llanos",
+        "Guayana (Respuesta Correcta)",
+        "La Costa"
+      ]
+    },
+    "en": {
+      "enunciado": "In which region of Venezuela is the largest indigenous population of the country concentrated?",
+      "opciones": [
+        "The Andes",
+        "The Llanos",
+        "Guayana (Correct Answer)",
+        "The Coast"
+      ]
+    }
+  },
+  {
+    "id": "story40_question3",
+    "historia": "40",
+    "numero": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Qué instrumento musical tradicional, hecho con cañas de bambú, es característico de los pueblos indígenas de la Guayana?",
+      "opciones": [
+        "Maracas",
+        "Cuatro",
+        "Flauta de Pan (carrizo) (Respuesta Correcta)",
+        "Tambor"
+      ]
+    },
+    "en": {
+      "enunciado": "Which traditional musical instrument, made of bamboo reeds, is characteristic of the indigenous peoples of Guayana?",
+      "opciones": [
+        "Maracas",
+        "Cuatro",
+        "Pan Flute (reed) (Correct Answer)",
+        "Drum"
+      ]
+    }
+  },
+  {
+    "id": "story41_question1",
+    "historia": "41",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es la variedad de cacao originaria de Venezuela considerada la más fina del mundo?",
+      "opciones": [
+        "Forastero.",
+        "Trinitario.",
+        "Criollo",
+        "Calabacillo."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the variety of cocoa native to Venezuela considered the finest in the world?",
+      "opciones": [
+        "Forastero.",
+        "Trinitario.",
+        "Criollo",
+        "Calabacillo."
+      ]
+    }
+  },
+  {
+    "id": "story41_question2",
+    "historia": "41",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué famosa población del estado Aragua es mundialmente conocida por la calidad de su cacao y su plaza de secado?",
+      "opciones": [
+        "Ocumare del Tuy.",
+        "Chuao",
+        "Choroní.",
+        "Canoabo."
+      ]
+    },
+    "en": {
+      "enunciado": "Which famous town in the state of Aragua is world-renowned for the quality of its cocoa and its drying plaza?",
+      "opciones": [
+        "Ocumare del Tuy.",
+        "Chuao",
+        "Choroní.",
+        "Canoabo."
+      ]
+    }
+  },
+  {
+    "id": "story41_question3",
+    "historia": "41",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué significa el nombre científico del cacao, Theobroma?",
+      "opciones": [
+        "Fruto de la tierra.",
+        "Oro negro.",
+        "Alimento de los dioses",
+        "Semilla del sol."
+      ]
+    },
+    "en": {
+      "enunciado": "What does the scientific name of cocoa, Theobroma, mean?",
+      "opciones": [
+        "Fruit of the earth.",
+        "Black gold.",
+        "Food of the gods",
+        "Seed of the sun."
+      ]
+    }
+  },
+  {
+    "id": "story42_question1",
+    "historia": "42",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Quién fue el arquitecto venezolano encargado de diseñar el Hotel Humboldt?",
+      "opciones": [
+        "Carlos Raúl Villanueva.",
+        "Tomás José Sanabria",
+        "Fruto Vivas.",
+        "Alejandro Chataing."
+      ]
+    },
+    "en": {
+      "enunciado": "Who was the Venezuelan architect in charge of designing the Hotel Humboldt?",
+      "opciones": [
+        "Carlos Raúl Villanueva.",
+        "Tomás José Sanabria",
+        "Fruto Vivas.",
+        "Alejandro Chataing."
+      ]
+    }
+  },
+  {
+    "id": "story42_question2",
+    "historia": "42",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es la característica forma geométrica que define la torre del hotel?",
+      "opciones": [
+        "Es un prisma rectangular.",
+        "Es una pirámide triangular.",
+        "Es una torre circular o cilíndrica",
+        "Es una estructura hexagonal."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the characteristic geometric shape that defines the hotel's tower?",
+      "opciones": [
+        "It is a rectangular prism.",
+        "It is a triangular pyramid.",
+        "It is a circular or cylindrical tower",
+        "It is a hexagonal structure."
+      ]
+    }
+  },
+  {
+    "id": "story42_question3",
+    "historia": "42",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué dos paisajes se pueden observar simultáneamente desde la cima del hotel?",
+      "opciones": [
+        "El Lago de Valencia y el Pico Bolívar.",
+        "La ciudad de Caracas y el Mar Caribe",
+        "Los Médanos de Coro y la Sierra Nevada.",
+        "El Río Orinoco y la Gran Sabana."
+      ]
+    },
+    "en": {
+      "enunciado": "Which two landscapes can be observed simultaneously from the top of the hotel?",
+      "opciones": [
+        "Lake Valencia and Pico Bolívar.",
+        "The city of Caracas and the Caribbean Sea",
+        "The Médanos de Coro and the Sierra Nevada.",
+        "The Orinoco River and the Gran Sabana."
+      ]
+    }
+  },
+  {
+    "id": "story43_question1",
+    "historia": "43",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Quién es el único pelotero venezolano que ha sido exaltado al Salón de la Fama de Cooperstown?",
+      "opciones": [
+        "Miguel Cabrera.",
+        "Luis Aparicio",
+        "Andrés Galarraga.",
+        "Omar Vizquel."
+      ]
+    },
+    "en": {
+      "enunciado": "Who is the only Venezuelan baseball player who has been inducted into the Baseball Hall of Fame in Cooperstown?",
+      "opciones": [
+        "Miguel Cabrera.",
+        "Luis Aparicio",
+        "Andrés Galarraga.",
+        "Omar Vizquel."
+      ]
+    }
+  },
+  {
+    "id": "story43_question2",
+    "historia": "43",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo se conoce popularmente al enfrentamiento entre los Leones del Caracas y los Navegantes del Magallanes?",
+      "opciones": [
+        "El Clásico de Otoño.",
+        "El Duelo de Titanes.",
+        "Los Eternos Rivales",
+        "El Derby de la Capital."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the popular name for the matchup between the Leones del Caracas and the Navegantes del Magallanes?",
+      "opciones": [
+        "The Fall Classic.",
+        "The Duel of Titans.",
+        "The Eternal Rivals",
+        "The Capital Derby."
+      ]
+    }
+  },
+  {
+    "id": "story43_question3",
+    "historia": "43",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué hito histórico alcanzó Miguel Cabrera en las Grandes Ligas en el año 2012?",
+      "opciones": [
+        "Fue el primer venezolano en lanzar un juego perfecto.",
+        "Rompió el récord de más bases robadas en una temporada.",
+        "Ganó la Triple Corona de Bateo (Líder en Promedio, Jonrones e Impulsadas)",
+        "Fue nombrado mánager del año siendo jugador activo."
+      ]
+    },
+    "en": {
+      "enunciado": "What historic milestone did Miguel Cabrera achieve in Major League Baseball in 2012?",
+      "opciones": [
+        "He was the first Venezuelan to pitch a perfect game.",
+        "He broke the record for most stolen bases in a season.",
+        "He won the Triple Crown in Batting (Leader in Average, Home Runs, and RBIs)",
+        "He was named manager of the year while being a player."
+      ]
+    }
+  },
+  {
+    "id": "story44_question1",
+    "historia": "44",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo se llama esta historia?",
+      "opciones": [
+        "Pelota",
+        "Independencia",
+        "Playas",
+        "Papagayos"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of this story?",
+      "opciones": [
+        "Pelota",
+        "Independencia",
+        "Playas",
+        "Papagayos"
+      ]
+    }
+  },
+  {
+    "id": "story44_question2",
+    "historia": "44",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué tipo de elemento es \"Playas\"?",
+      "opciones": [
+        "Ciudad",
+        "Historia",
+        "Ave",
+        "Montaña"
+      ]
+    },
+    "en": {
+      "enunciado": "What type of element is \"Playas\"?",
+      "opciones": [
+        "City",
+        "History",
+        "Bird",
+        "Mountain"
+      ]
+    }
+  },
+  {
+    "id": "story44_question3",
+    "historia": "44",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué país se ubica esta historia?",
+      "opciones": [
+        "Colombia",
+        "Venezuela",
+        "México",
+        "Perú"
+      ]
+    },
+    "en": {
+      "enunciado": "In which country does this story take place?",
+      "opciones": [
+        "Colombia",
+        "Venezuela",
+        "Mexico",
+        "Peru"
+      ]
+    }
+  },
+  {
+    "id": "story45_question1",
+    "historia": "45",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué estado de Venezuela ocurre este fenómeno natural?",
+      "opciones": [
+        "Estado Falcón.",
+        "Estado Zulia",
+        "Estado Sucre.",
+        "Estado Bolívar."
+      ]
+    },
+    "en": {
+      "enunciado": "In which state of Venezuela does this natural phenomenon occur?",
+      "opciones": [
+        "Falcón State.",
+        "Zulia State",
+        "Sucre State.",
+        "Bolívar State."
+      ]
+    }
+  },
+  {
+    "id": "story45_question2",
+    "historia": "45",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el récord mundial que ostenta este fenómeno en el Libro Guinness?",
+      "opciones": [
+        "El trueno más fuerte jamás registrado.",
+        "La tormenta que ha durado más años seguidos.",
+        "La mayor concentración de relámpagos por kilómetro cuadrado al año",
+        "El rayo más largo que ha cruzado el océano."
+      ]
+    },
+    "en": {
+      "enunciado": "What world record does this phenomenon hold in the Guinness Book?",
+      "opciones": [
+        "The loudest thunder ever recorded.",
+        "The storm that has lasted the most consecutive years.",
+        "The highest concentration of lightning per square kilometer per year",
+        "The longest lightning that has crossed the ocean."
+      ]
+    }
+  },
+  {
+    "id": "story45_question3",
+    "historia": "45",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué beneficio ambiental se le atribuye a este fenómeno constante?",
+      "opciones": [
+        "Limpia el agua del Lago de Maracaibo.",
+        "Ayuda a la regeneración de la capa de ozono",
+        "Atrae bancos de peces hacia la superficie.",
+        "Enfría la temperatura global de la región."
+      ]
+    },
+    "en": {
+      "enunciado": "What environmental benefit is attributed to this constant phenomenon?",
+      "opciones": [
+        "Cleans the water of Lake Maracaibo.",
+        "Helps regenerate the ozone layer",
+        "Attracts schools of fish to the surface.",
+        "Cools the global temperature of the region."
+      ]
+    }
+  },
+  {
+    "id": "story46_question1",
+    "historia": "46",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el tiempo mínimo de envejecimiento en barricas que exige la D.O.C. para que un producto sea llamado \"Ron de Venezuela\"?",
+      "opciones": [
+        "6 meses.",
+        "1 año.",
+        "2 años",
+        "5 años."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the minimum barrel aging time required by the D.O.C. for a product to be called \"Rum of Venezuela\"?",
+      "opciones": [
+        "6 months.",
+        "1 year.",
+        "2 years",
+        "5 years."
+      ]
+    }
+  },
+  {
+    "id": "story46_question2",
+    "historia": "46",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué característica climática de Venezuela favorece el sabor distintivo de su ron?",
+      "opciones": [
+        "Las lluvias constantes durante todo el año.",
+        "El fuerte contraste térmico entre el día y la noche",
+        "La baja altitud de los cañaverales.",
+        "La humedad extrema de las costas."
+      ]
+    },
+    "en": {
+      "enunciado": "Which climatic characteristic of Venezuela favors the distinctive taste of its rum?",
+      "opciones": [
+        "Constant rains throughout the year.",
+        "The strong temperature contrast between day and night",
+        "The low altitude of the sugarcane fields.",
+        "The extreme humidity of the coasts."
+      ]
+    }
+  },
+  {
+    "id": "story46_question3",
+    "historia": "46",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué año se otorgó oficialmente la Denominación de Origen Controlada al Ron de Venezuela?",
+      "opciones": [
+        "1980.",
+        "1999.",
+        "2003",
+        "2015."
+      ]
+    },
+    "en": {
+      "enunciado": "In what year was the Controlled Designation of Origin officially granted to Rum of Venezuela?",
+      "opciones": [
+        "1980.",
+        "1999.",
+        "2003",
+        "2015."
+      ]
+    }
+  },
+  {
+    "id": "story47_question1",
+    "historia": "47",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es la altitud máxima que alcanza la estación final, Pico Espejo?",
+      "opciones": [
+        "2.500 m.s.n.m.",
+        "3.800 m.s.n.m.",
+        "4.765 m.s.n.m.",
+        "5.200 m.s.n.m."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the maximum altitude reached by the final station, Pico Espejo?",
+      "opciones": [
+        "2,500 m.a.s.l.",
+        "3,800 m.a.s.l.",
+        "4,765 m.a.s.l.",
+        "5,200 m.a.s.l."
+      ]
+    }
+  },
+  {
+    "id": "story47_question2",
+    "historia": "47",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué significa la palabra \"Mukumbarí\", nombre dado al sistema en honor a la lengua indígena local?",
+      "opciones": [
+        "Camino de los Gigantes.",
+        "Lugar donde duerme el sol",
+        "Montaña de Cristal.",
+        "Vuelo del Cóndor."
+      ]
+    },
+    "en": {
+      "enunciado": "What does the word \"Mukumbarí,\" the name given to the system in honor of the local indigenous language, mean?",
+      "opciones": [
+        "Path of the Giants.",
+        "Place where the sun sleeps",
+        "Crystal Mountain.",
+        "Condor Flight."
+      ]
+    }
+  },
+  {
+    "id": "story47_question3",
+    "historia": "47",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuántas estaciones componen el recorrido total desde la ciudad hasta la cumbre?",
+      "opciones": [
+        "Tres estaciones.",
+        "Cuatro estaciones.",
+        "Cinco estaciones",
+        "Siete estaciones."
+      ]
+    },
+    "en": {
+      "enunciado": "How many stations make up the total route from the city to the summit?",
+      "opciones": [
+        "Three stations.",
+        "Four stations.",
+        "Five stations",
+        "Seven stations."
+      ]
+    }
+  },
+  {
+    "id": "story48_question1",
+    "historia": "48",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Quiénes fueron los principales redactores del Acta de Independencia?",
+      "opciones": [
+        "Simón Bolívar y Francisco de Miranda.",
+        "Juan Germán Roscio y Francisco Iznardi",
+        "Cristóbal Mendoza y José Cortés de Madariaga.",
+        "Andrés Bello y Vicente Salias."
+      ]
+    },
+    "en": {
+      "enunciado": "Who were the main drafters of the Act of Independence?",
+      "opciones": [
+        "Simón Bolívar and Francisco de Miranda.",
+        "Juan Germán Roscio and Francisco Iznardi",
+        "Cristóbal Mendoza and José Cortés de Madariaga.",
+        "Andrés Bello and Vicente Salias."
+      ]
+    }
+  },
+  {
+    "id": "story48_question2",
+    "historia": "48",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuántas provincias de la Capitanía General de Venezuela firmaron el acta originalmente?",
+      "opciones": [
+        "Las diez provincias.",
+        "Siete provincias",
+        "Solo la provincia de Caracas.",
+        "Doce provincias."
+      ]
+    },
+    "en": {
+      "enunciado": "How many provinces of the Captaincy General of Venezuela originally signed the act?",
+      "opciones": [
+        "All ten provinces.",
+        "Seven provinces",
+        "Only the province of Caracas.",
+        "Twelve provinces."
+      ]
+    }
+  },
+  {
+    "id": "story48_question3",
+    "historia": "48",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué lugar específico de Caracas se reunió el Congreso para la firma?",
+      "opciones": [
+        "En el Panteón Nacional.",
+        "En el Palacio de Miraflores.",
+        "En la Capilla de Santa Rosa de Lima",
+        "En la Plaza Mayor (hoy Plaza Bolívar)."
+      ]
+    },
+    "en": {
+      "enunciado": "In what specific place in Caracas did the Congress meet for the signing?",
+      "opciones": [
+        "At the National Pantheon.",
+        "At the Miraflores Palace.",
+        "At the Chapel of Santa Rosa de Lima",
+        "At the Plaza Mayor (today Plaza Bolívar)."
+      ]
+    }
+  },
+  {
+    "id": "story49_question1",
+    "historia": "49",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo llamaban los indígenas venezolanos al petróleo que brotaba naturalmente de la tierra?",
+      "opciones": [
+        "Alquitrán.",
+        "Brea de la selva.",
+        "Mene",
+        "Aceite de piedra."
+      ]
+    },
+    "en": {
+      "enunciado": "What did the Venezuelan indigenous people call the oil that naturally flowed from the ground?",
+      "opciones": [
+        "Tar.",
+        "Jungle pitch.",
+        "Mene",
+        "Stone oil."
+      ]
+    }
+  },
+  {
+    "id": "story49_question2",
+    "historia": "49",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué pozo petrolero en 1922 marcó el inicio de la era de explotación a gran escala en el estado Zulia?",
+      "opciones": [
+        "Zumaque I.",
+        "Barroso II",
+        "Pozo La Canoa.",
+        "El Furrial."
+      ]
+    },
+    "en": {
+      "enunciado": "Which oil well in 1922 marked the beginning of the era of large-scale exploitation in Zulia state?",
+      "opciones": [
+        "Zumaque I.",
+        "Barroso II",
+        "La Canoa Well.",
+        "El Furrial."
+      ]
+    }
+  },
+  {
+    "id": "story49_question3",
+    "historia": "49",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se llama el cinturón geográfico que alberga las mayores reservas de crudo pesado de Venezuela?",
+      "opciones": [
+        "Cuenca del Lago de Maracaibo.",
+        "Faja Petrolífera del Orinoco",
+        "Cordillera de la Costa.",
+        "Llanos Occidentales."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the geographic belt that hosts Venezuela's largest heavy crude oil reserves?",
+      "opciones": [
+        "Maracaibo Lake Basin.",
+        "Orinoco Oil Belt",
+        "Coastal Mountain Range.",
+        "Western Plains."
+      ]
+    }
+  },
+  {
+    "id": "story50_question1",
+    "historia": "50",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué mes del año se celebra tradicionalmente la Feria de la Sapoara en Ciudad Bolívar?",
+      "opciones": [
+        "Diciembre.",
+        "Mayo.",
+        "Agosto",
+        "Octubre."
+      ]
+    },
+    "en": {
+      "enunciado": "In which month of the year is the Sapoara Fair traditionally celebrated in Ciudad Bolívar?",
+      "opciones": [
+        "December.",
+        "May.",
+        "August",
+        "October."
+      ]
+    }
+  },
+  {
+    "id": "story50_question2",
+    "historia": "50",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la leyenda, ¿qué parte del pez debe comer un visitante para quedarse para siempre en Guayana?",
+      "opciones": [
+        "La cola.",
+        "La cabeza",
+        "Las escamas.",
+        "El espinazo."
+      ]
+    },
+    "en": {
+      "enunciado": "According to the legend, which part of the fish must a visitor eat to stay forever in Guayana?",
+      "opciones": [
+        "The tail.",
+        "The head",
+        "The scales.",
+        "The backbone."
+      ]
+    }
+  },
+  {
+    "id": "story50_question3",
+    "historia": "50",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el nombre del río donde habita y se pesca la sapoara?",
+      "opciones": [
+        "Río Caroní.",
+        "Río Orinoco",
+        "Río Apure.",
+        "Río Meta."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the river where the sapoara lives and is fished?",
+      "opciones": [
+        "Caroní River.",
+        "Orinoco River",
+        "Apure River.",
+        "Meta River."
+      ]
+    }
+  },
+  {
+    "id": "story51_question1",
+    "historia": "51",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el rango de coloración más característico de una tonina adulta?",
+      "opciones": [
+        "Gris oscuro.",
+        "Rosado vibrante",
+        "Blanco puro.",
+        "Negro con manchas blancas."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the most characteristic coloration range of an adult tonina?",
+      "opciones": [
+        "Dark gray.",
+        "Vibrant pink",
+        "Pure white.",
+        "Black with white spots."
+      ]
+    }
+  },
+  {
+    "id": "story51_question2",
+    "historia": "51",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué tipo de ecosistema habitan principalmente las toninas?",
+      "opciones": [
+        "Arrecifes de coral en el Mar Caribe.",
+        "Lagos salados de alta montaña.",
+        "Ríos de agua dulce y sus afluentes",
+        "Estuarios de agua salobre."
+      ]
+    },
+    "en": {
+      "enunciado": "What type of ecosystem do toninas mainly inhabit?",
+      "opciones": [
+        "Coral reefs in the Caribbean Sea.",
+        "High mountain salt lakes.",
+        "Freshwater rivers and their tributaries",
+        "Brackish water estuaries."
+      ]
+    }
+  },
+  {
+    "id": "story51_question3",
+    "historia": "51",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el estatus de conservación actual de la Tonina del Orinoco a nivel mundial?",
+      "opciones": [
+        "Especie abundante sin amenazas.",
+        "Especie casi amenazada.",
+        "En peligro de extinción",
+        "Datos insuficientes."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the current conservation status of the Orinoco Tonina worldwide?",
+      "opciones": [
+        "Abundant species with no threats.",
+        "Near threatened species.",
+        "Endangered",
+        "Insufficient data."
+      ]
+    }
+  },
+  {
+    "id": "story52_question1",
+    "historia": "52",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se llama el juguete que consiste en un disco que gira y suena al tensar un cordel que pasa por su centro?",
+      "opciones": [
+        "El Yo-yo.",
+        "El Gurrufío",
+        "La Zaranda.",
+        "El Emboque."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the toy that consists of a spinning disc that makes a sound when a string passing through its center is pulled?",
+      "opciones": [
+        "The Yo-yo.",
+        "The Gurrufío",
+        "The Zaranda.",
+        "The Emboque."
+      ]
+    }
+  },
+  {
+    "id": "story52_question2",
+    "historia": "52",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "En el juego del trompo, ¿qué nombre recibe el círculo dibujado en el suelo donde se debe hacer bailar el juguete?",
+      "opciones": [
+        "El Ruedo.",
+        "La Arena.",
+        "La Troya",
+        "El Foso."
+      ]
+    },
+    "en": {
+      "enunciado": "In the spinning top game, what is the name of the circle drawn on the ground where the toy must be made to spin?",
+      "opciones": [
+        "The Ruedo.",
+        "The Arena.",
+        "The Troya",
+        "The Foso."
+      ]
+    }
+  },
+  {
+    "id": "story52_question3",
+    "historia": "52",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿De qué fruto natural se fabrica tradicionalmente \"La Zaranda\", el juguete típico de los llanos?",
+      "opciones": [
+        "De Coco seco.",
+        "De Madera de pino.",
+        "De la Totuma (fruto del taparo)",
+        "De Arcilla cocida."
+      ]
+    },
+    "en": {
+      "enunciado": "From which natural fruit is \"La Zaranda,\" the typical toy of the plains, traditionally made?",
+      "opciones": [
+        "From dry coconut.",
+        "From pine wood.",
+        "From Calabash (fruit of the taparo)",
+        "From baked clay."
+      ]
+    }
+  },
+  {
+    "id": "story1_question1",
+    "historia": "1",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuántos años de antigüedad tienen aproximadamente las raíces de la arepa?",
+      "opciones": [
+        "Más de 2,000 años",
+        "Más de 3,000 años",
+        "Más de 5,000 años",
+        "Más de 1,000 años"
+      ]
+    },
+    "en": {
+      "enunciado": "Approximately how many years old are the roots of the arepa?",
+      "opciones": [
+        "More than 2,000 years",
+        "More than 3,000 years",
+        "More than 5,000 years",
+        "More than 1,000 years"
+      ]
+    }
+  },
+  {
+    "id": "story1_question2",
+    "historia": "1",
+    "numero": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál de estos NO es un relleno típico de arepa?",
+      "opciones": [
+        "Reina Pepiada",
+        "Pelúa",
+        "Sifrina",
+        "Caraqueña"
+      ]
+    },
+    "en": {
+      "enunciado": "Which of these is NOT a typical arepa filling?",
+      "opciones": [
+        "Reina Pepiada",
+        "Pelúa",
+        "Sifrina",
+        "Caraqueña"
+      ]
+    }
+  },
+  {
+    "id": "story1_question3",
+    "historia": "1",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué pueblos originarios ya molían el maíz para hacer arepas antes de la llegada de los españoles?",
+      "opciones": [
+        "Mayas, Aztecas e Incas",
+        "Cumanagotos, Timoto-Cuicas y Caribes",
+        "Arawak, Warao y Pemón",
+        "Chibchas, Quechuas y Mapuches"
+      ]
+    },
+    "en": {
+      "enunciado": "Which native peoples were already grinding corn to make arepas before the arrival of the Spanish?",
+      "opciones": [
+        "Mayans, Aztecs and Incas",
+        "Cumanagotos, Timoto-Cuicas and Caribes",
+        "Arawak, Warao and Pemón",
+        "Chibchas, Quechuas and Mapuches"
+      ]
+    }
+  },
+  {
+    "id": "story2_question1",
+    "historia": "2",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué tribus indígenas dominaban las costas de Venezuela antes de la llegada de los españoles?",
+      "opciones": [
+        "Los Arawak",
+        "Los Timoto-Cuicas",
+        "Los Caribes",
+        "Los Pemón"
+      ]
+    },
+    "en": {
+      "enunciado": "Which indigenous tribes dominated the coasts of Venezuela before the arrival of the Spanish?",
+      "opciones": [
+        "The Arawak",
+        "The Timoto-Cuicas",
+        "The Caribes",
+        "The Pemón"
+      ]
+    }
+  },
+  {
+    "id": "story2_question2",
+    "historia": "2",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué año fue fundada Caracas?",
+      "opciones": [
+        "1527",
+        "1447",
+        "1567",
+        "1387"
+      ]
+    },
+    "en": {
+      "enunciado": "In what year was Caracas founded?",
+      "opciones": [
+        "1527",
+        "1447",
+        "1567",
+        "1387"
+      ]
+    }
+  },
+  {
+    "id": "story2_question3",
+    "historia": "2",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Quién llegó a Venezuela en 1498, siendo el primer europeo en pisar estas tierras?",
+      "opciones": [
+        "Alonso de Ojeda",
+        "Cristóbal Colón",
+        "Francisco de Miranda",
+        "Simón Bolívar"
+      ]
+    },
+    "en": {
+      "enunciado": "Who arrived in Venezuela in 1498, being the first European to set foot on these lands?",
+      "opciones": [
+        "Alonso de Ojeda",
+        "Christopher Columbus",
+        "Francisco de Miranda",
+        "Simón Bolívar"
+      ]
+    }
+  },
+  {
+    "id": "story3_question1",
+    "historia": "3",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿De dónde proviene el nombre \"tequeño\"?",
+      "opciones": [
+        "Del estado Carabobo",
+        "De la ciudad de Los Teques, estado Miranda",
+        "Del nombre de un cocinero venezolano",
+        "De una palabra indígena que significa \"delicioso\""
+      ]
+    },
+    "en": {
+      "enunciado": "Where does the name \"tequeño\" come from?",
+      "opciones": [
+        "From Carabobo state",
+        "From the city of Los Teques, Miranda state",
+        "From the name of a Venezuelan cook",
+        "From an indigenous word meaning \"delicious\""
+      ]
+    }
+  },
+  {
+    "id": "story3_question2",
+    "historia": "3",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué época histórica surgieron los tequeños?",
+      "opciones": [
+        "Época precolombina",
+        "Época colonial",
+        "Época republicana",
+        "Siglo XX"
+      ]
+    },
+    "en": {
+      "enunciado": "In what historical period did tequeños originate?",
+      "opciones": [
+        "Pre-Columbian period",
+        "Colonial period",
+        "Republican period",
+        "20th century"
+      ]
+    }
+  },
+  {
+    "id": "story3_question3",
+    "historia": "3",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Para qué eventos familiares son típicos los tequeños?",
+      "opciones": [
+        "Solo para bautizos",
+        "Solo para bodas",
+        "Cumpleaños, bautizos y bodas",
+        "Solo para Navidad"
+      ]
+    },
+    "en": {
+      "enunciado": "For what family events are tequeños typical?",
+      "opciones": [
+        "Only for baptisms",
+        "Only for weddings",
+        "Birthdays, baptisms and weddings",
+        "Only for Christmas"
+      ]
+    }
+  },
+  {
+    "id": "story4_question1",
+    "historia": "4",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuántas naciones sudamericanas lideró Bolívar en su independencia?",
+      "opciones": [
+        "Tres naciones",
+        "Cuatro naciones",
+        "Cinco naciones",
+        "Seis naciones"
+      ]
+    },
+    "en": {
+      "enunciado": "How many South American nations did Bolívar lead to independence?",
+      "opciones": [
+        "Three nations",
+        "Four nations",
+        "Five nations",
+        "Six nations"
+      ]
+    }
+  },
+  {
+    "id": "story4_question2",
+    "historia": "4",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué batalla se liberó definitivamente Venezuela?",
+      "opciones": [
+        "Batalla de Boyacá",
+        "Batalla de Carabobo",
+        "Batalla de Pichincha",
+        "Batalla de Ayacucho"
+      ]
+    },
+    "en": {
+      "enunciado": "In which battle was Venezuela definitively liberated?",
+      "opciones": [
+        "Battle of Boyacá",
+        "Battle of Carabobo",
+        "Battle of Pichincha",
+        "Battle of Ayacucho"
+      ]
+    }
+  },
+  {
+    "id": "story4_question3",
+    "historia": "4",
+    "numero": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál de estas frases NO es atribuida a Simón Bolívar?",
+      "opciones": [
+        "\"La libertad del Nuevo Mundo es la esperanza del universo\"",
+        "\"Un soldado feliz no adquiere ningún derecho a mandar su patria\"",
+        "\"Moral y luces son los polos de una república\"",
+        "\"Venezuela será grande o no será nada\""
+      ]
+    },
+    "en": {
+      "enunciado": "Which of these phrases is NOT attributed to Simón Bolívar?",
+      "opciones": [
+        "\"The liberty of the New World is the hope of the universe\"",
+        "\"A happy soldier does not acquire any right to command his homeland\"",
+        "\"Morality and enlightenment are the poles of a republic\"",
+        "\"Venezuela will be great or will be nothing\""
+      ]
+    }
+  },
+  {
+    "id": "story5_question1",
+    "historia": "5",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué año fue fundada la Colonia Tovar?",
+      "opciones": [
+        "1423",
+        "1933",
+        "1843",
+        "1900"
+      ]
+    },
+    "en": {
+      "enunciado": "In what year was Colonia Tovar founded?",
+      "opciones": [
+        "1423",
+        "1933",
+        "1843",
+        "1900"
+      ]
+    }
+  },
+  {
+    "id": "story5_question2",
+    "historia": "5",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿De qué región de Alemania provenían los inmigrantes que fundaron la Colonia Tovar?",
+      "opciones": [
+        "Baviera",
+        "Sajonia",
+        "Kaiserstuhl en Baden-Württemberg",
+        "Prusia"
+      ]
+    },
+    "en": {
+      "enunciado": "From which region of Germany did the immigrants who founded Colonia Tovar come?",
+      "opciones": [
+        "Bavaria",
+        "Saxony",
+        "Kaiserstuhl in Baden-Württemberg",
+        "Prussia"
+      ]
+    }
+  },
+  {
+    "id": "story5_question3",
+    "historia": "5",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué cultivos son especialmente conocidos en la Colonia Tovar?",
+      "opciones": [
+        "Café y cacao",
+        "Fresas, hortalizas y flores",
+        "Maíz y yuca",
+        "Plátano y cambur"
+      ]
+    },
+    "en": {
+      "enunciado": "What crops are especially known in Colonia Tovar?",
+      "opciones": [
+        "Coffee and cocoa",
+        "Strawberries, vegetables and flowers",
+        "Corn and cassava",
+        "Plantain and banana"
+      ]
+    }
+  },
+  {
+    "id": "story6_question1",
+    "historia": "6",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿De qué instrumentos ibéricos se deriva el cuatro venezolano?",
+      "opciones": [
+        "El laúd árabe",
+        "La guitarra barroca y otros cordófonos ibéricos",
+        "La vihuela española solamente",
+        "El arpa europea"
+      ]
+    },
+    "en": {
+      "enunciado": "From which Iberian instruments does the Venezuelan cuatro derive?",
+      "opciones": [
+        "The Arabic lute",
+        "The baroque guitar and other Iberian chordophones",
+        "The Spanish vihuela only",
+        "The European harp"
+      ]
+    }
+  },
+  {
+    "id": "story6_question2",
+    "historia": "6",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuántas cuerdas tiene el cuatro venezolano?",
+      "opciones": [
+        "3 cuerdas",
+        "4 cuerdas",
+        "6 cuerdas",
+        "8 cuerdas"
+      ]
+    },
+    "en": {
+      "enunciado": "How many strings does the Venezuelan cuatro have?",
+      "opciones": [
+        "3 strings",
+        "4 strings",
+        "6 strings",
+        "8 strings"
+      ]
+    }
+  },
+  {
+    "id": "story6_question3",
+    "historia": "6",
+    "numero": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿En qué género musical NO se menciona el uso del cuatro?",
+      "opciones": [
+        "Joropo",
+        "Galerón",
+        "Tamunangue",
+        "Vals venezolano"
+      ]
+    },
+    "en": {
+      "enunciado": "In which musical genre is the cuatro NOT mentioned?",
+      "opciones": [
+        "Joropo",
+        "Galerón",
+        "Tamunangue",
+        "Venezuelan waltz"
+      ]
+    }
+  },
+  {
+    "id": "story7_question1",
+    "historia": "7",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es la base principal de la versión popular moderna de chicha venezolana?",
+      "opciones": [
+        "Maíz fermentado",
+        "Yuca fermentada",
+        "Arroz cocido",
+        "Avena cocida"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the main base of the modern popular version of Venezuelan chicha?",
+      "opciones": [
+        "Fermented corn",
+        "Fermented cassava",
+        "Cooked rice",
+        "Cooked oats"
+      ]
+    }
+  },
+  {
+    "id": "story7_question2",
+    "historia": "7",
+    "numero": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál de estos NO es un topping típico de la chicha mencionado en la historia?",
+      "opciones": [
+        "Canela",
+        "Leche condensada",
+        "Barquillo",
+        "Coco rallado y nueces"
+      ]
+    },
+    "en": {
+      "enunciado": "Which of these is NOT a typical chicha topping mentioned in the Story?",
+      "opciones": [
+        "Cinnamon",
+        "Condensed milk",
+        "Wafer",
+        "Shredded coconut and nuts"
+      ]
+    }
+  },
+  {
+    "id": "story7_question3",
+    "historia": "7",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuáles son los ingredientes principales de la chicha moderna según el texto?",
+      "opciones": [
+        "Arroz, agua, azúcar y especias",
+        "Arroz cocido, leche, azúcar y vainilla",
+        "Maíz, leche, miel y canela",
+        "Yuca, leche, papelón y clavo"
+      ]
+    },
+    "en": {
+      "enunciado": "What are the main ingredients of modern chicha according to the text?",
+      "opciones": [
+        "Rice, water, sugar and spices",
+        "Cooked rice, milk, sugar and vanilla",
+        "Corn, milk, honey and cinnamon",
+        "Cassava, milk, panela and cloves"
+      ]
+    }
+  },
+  {
+    "id": "story8_question1",
+    "historia": "8",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Dónde nace el río Orinoco?",
+      "opciones": [
+        "En los Andes venezolanos",
+        "En el cerro Delgado Chalbaud, Guayana",
+        "En el estado Amazonas",
+        "En Colombia"
+      ]
+    },
+    "en": {
+      "enunciado": "Where does the Orinoco River originate?",
+      "opciones": [
+        "In the Venezuelan Andes",
+        "At Cerro Delgado Chalbaud, Guayana",
+        "In Amazonas state",
+        "In Colombia"
+      ]
+    }
+  },
+  {
+    "id": "story8_question2",
+    "historia": "8",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Hacia qué océano desemboca el río Orinoco?",
+      "opciones": [
+        "Océano Pacífico",
+        "Océano Atlántico",
+        "Mar Caribe",
+        "Océano Índico"
+      ]
+    },
+    "en": {
+      "enunciado": "Into which ocean does the Orinoco River flow?",
+      "opciones": [
+        "Pacific Ocean",
+        "Atlantic Ocean",
+        "Caribbean Sea",
+        "Indian Ocean"
+      ]
+    }
+  },
+  {
+    "id": "story8_question3",
+    "historia": "8",
+    "numero": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué animal NO se menciona como habitante del ecosistema del Orinoco?",
+      "opciones": [
+        "Delfines del Orinoco",
+        "Anacondas",
+        "Jaguares",
+        "Oso frontino"
+      ]
+    },
+    "en": {
+      "enunciado": "Which animal is NOT mentioned as an inhabitant of the Orinoco ecosystem?",
+      "opciones": [
+        "Orinoco dolphins",
+        "Anacondas",
+        "Jaguars",
+        "Spectacled bear"
+      ]
+    }
+  },
+  {
+    "id": "story9_question1",
+    "historia": "9",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el nombre del perro Mucuchíes más famoso que acompañó a Simón Bolívar?",
+      "opciones": [
+        "Fiel",
+        "Nevado",
+        "Andino",
+        "Libertador"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the most famous Mucuchíes dog that accompanied Simón Bolívar?",
+      "opciones": [
+        "Fiel",
+        "Nevado",
+        "Andino",
+        "Libertador"
+      ]
+    }
+  },
+  {
+    "id": "story9_question2",
+    "historia": "9",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué región de Venezuela se originó el perro Mucuchíes?",
+      "opciones": [
+        "En los Llanos",
+        "En los Andes",
+        "En la Costa",
+        "En la Guayana"
+      ]
+    },
+    "en": {
+      "enunciado": "In which region of Venezuela did the Mucuchíes dog originate?",
+      "opciones": [
+        "In the Llanos",
+        "In the Andes",
+        "On the Coast",
+        "In Guayana"
+      ]
+    }
+  },
+  {
+    "id": "story9_question3",
+    "historia": "9",
+    "numero": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué características físicas NO se mencionan del Mucuchíes?",
+      "opciones": [
+        "Tamaño mediano-grande",
+        "Pelaje denso blanco/crema con o sin manchas",
+        "Resistente al frío",
+        "Cola corta naturalmente"
+      ]
+    },
+    "en": {
+      "enunciado": "What physical characteristics are NOT mentioned for the Mucuchíes?",
+      "opciones": [
+        "Medium-large size",
+        "Dense white/cream coat with or without spots",
+        "Cold resistant",
+        "Naturally short tail"
+      ]
+    }
+  },
+  {
+    "id": "story10_question1",
+    "historia": "10",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál queso venezolano se menciona como ideal para tequeños?",
+      "opciones": [
+        "Queso Guayanés",
+        "Queso Blanco Duro",
+        "Queso Telita",
+        "Queso de Mano"
+      ]
+    },
+    "en": {
+      "enunciado": "Which Venezuelan cheese is mentioned as ideal for tequeños?",
+      "opciones": [
+        "Guayanés Cheese",
+        "Hard White Cheese",
+        "Telita Cheese",
+        "Hand Cheese"
+      ]
+    }
+  },
+  {
+    "id": "story10_question2",
+    "historia": "10",
+    "numero": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál es el queso que se menciona como \"compañero clásico de la cachapa\"?",
+      "opciones": [
+        "Queso Blanco Duro",
+        "Queso Guayanés",
+        "Queso Telita",
+        "Queso de Mano"
+      ]
+    },
+    "en": {
+      "enunciado": "Which cheese is mentioned as \"classic companion of the cachapa\"?",
+      "opciones": [
+        "Hard White Cheese",
+        "Guayanés Cheese",
+        "Telita Cheese",
+        "Hand Cheese"
+      ]
+    }
+  },
+  {
+    "id": "story10_question3",
+    "historia": "10",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué queso venezolano se describe como \"tierno, con láminas elásticas que se derrite en la boca\"?",
+      "opciones": [
+        "Queso Llanero",
+        "Queso Telita",
+        "Queso Palmita",
+        "Requesón"
+      ]
+    },
+    "en": {
+      "enunciado": "Which Venezuelan cheese is described as \"tender, with elastic layers that melt in the mouth\"?",
+      "opciones": [
+        "Llanero Cheese",
+        "Telita Cheese",
+        "Palmita Cheese",
+        "Ricotta"
+      ]
+    }
+  },
+  {
+    "id": "story11_question1",
+    "historia": "11",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué ciudad nacieron los cachitos?",
+      "opciones": [
+        "Valencia",
+        "Maracaibo",
+        "Caracas",
+        "Barquisimeto"
+      ]
+    },
+    "en": {
+      "enunciado": "In which city were cachitos born?",
+      "opciones": [
+        "Valencia",
+        "Maracaibo",
+        "Caracas",
+        "Barquisimeto"
+      ]
+    }
+  },
+  {
+    "id": "story11_question2",
+    "historia": "11",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué panadería caraqueña se creó el cachito según el texto?",
+      "opciones": [
+        "Panadería \"Venezuela\"",
+        "Panadería \"Ramella\"",
+        "Panadería \"Central\"",
+        "Panadería \"Nacional\""
+      ]
+    },
+    "en": {
+      "enunciado": "In which Caracas bakery was the cachito created according to the text?",
+      "opciones": [
+        "\"Venezuela\" Bakery",
+        "\"Ramella\" Bakery",
+        "\"Central\" Bakery",
+        "\"Nacional\" Bakery"
+      ]
+    }
+  },
+  {
+    "id": "story11_question3",
+    "historia": "11",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿De qué bollería europea se inspiró el cachito venezolano?",
+      "opciones": [
+        "Donas",
+        "Pan dulce español",
+        "Medialunas/croissants",
+        "Pan de molde"
+      ]
+    },
+    "en": {
+      "enunciado": "From which European pastry did the Venezuelan cachito take inspiration?",
+      "opciones": [
+        "Donuts",
+        "Spanish sweet bread",
+        "Croissants",
+        "Sliced bread"
+      ]
+    }
+  },
+  {
+    "id": "story12_question1",
+    "historia": "12",
+    "numero": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál es el nombre científico del Cardenalito mencionado en el texto?",
+      "opciones": [
+        "Spinus cucullatus",
+        "Icterus icterus",
+        "Cattleya mossiae",
+        "Handroanthus chrysanthus"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the scientific name of the Cardenalito mentioned in the text?",
+      "opciones": [
+        "Spinus cucullatus",
+        "Icterus icterus",
+        "Cattleya mossiae",
+        "Handroanthus chrysanthus"
+      ]
+    }
+  },
+  {
+    "id": "story12_question2",
+    "historia": "12",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Desde qué siglo el Cardenalito deslumbró por su plumaje rojo intenso?",
+      "opciones": [
+        "Siglo XVII",
+        "Siglo XVIII",
+        "Siglo XIX",
+        "Siglo XX"
+      ]
+    },
+    "en": {
+      "enunciado": "Since which century did the Cardenalito dazzle with its intense red plumage?",
+      "opciones": [
+        "17th century",
+        "18th century",
+        "19th century",
+        "20th century"
+      ]
+    }
+  },
+  {
+    "id": "story12_question3",
+    "historia": "12",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué estado de conservación se encuentra actualmente el Cardenalito?",
+      "opciones": [
+        "Preocupación menor",
+        "Vulnerable",
+        "En peligro crítico",
+        "Extinto en libertad"
+      ]
+    },
+    "en": {
+      "enunciado": "In what currently conservation status is the Cardenalito?",
+      "opciones": [
+        "Least concern",
+        "Vulnerable",
+        "Critically endangered",
+        "Extinct in the wild"
+      ]
+    }
+  },
+  {
+    "id": "story13_question1",
+    "historia": "13",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Con qué se tiñe la masa de la hallaca para darle su color amarillo característico?",
+      "opciones": [
+        "Achiote",
+        "Onoto",
+        "Cúrcuma",
+        "Azafrán"
+      ]
+    },
+    "en": {
+      "enunciado": "What is used to dye the hallaca dough to give it its characteristic yellow color?",
+      "opciones": [
+        "Achiote",
+        "Onoto",
+        "Turmeric",
+        "Saffron"
+      ]
+    }
+  },
+  {
+    "id": "story13_question2",
+    "historia": "13",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué se envuelve la hallaca antes de ser hervida?",
+      "opciones": [
+        "Hojas de maíz",
+        "Hojas de plátano",
+        "Hojas de palma",
+        "Papel de aluminio"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the hallaca wrapped in before being boiled?",
+      "opciones": [
+        "Corn leaves",
+        "Plantain leaves",
+        "Palm leaves",
+        "Aluminum foil"
+      ]
+    }
+  },
+  {
+    "id": "story13_question3",
+    "historia": "13",
+    "numero": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál de estos adornos NO se menciona como parte de la hallaca?",
+      "opciones": [
+        "Pasas",
+        "Aceitunas",
+        "Alcaparras",
+        "Arroz"
+      ]
+    },
+    "en": {
+      "enunciado": "Which of these garnishes is NOT mentioned as part of the hallaca?",
+      "opciones": [
+        "Raisins",
+        "Olives",
+        "Capers",
+        "Rice"
+      ]
+    }
+  },
+  {
+    "id": "story14_question1",
+    "historia": "14",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué presidencia fue inaugurado el Puente de Angostura?",
+      "opciones": [
+        "Marcos Pérez Jiménez",
+        "Raúl Leoni",
+        "Carlos Andrés Pérez",
+        "Rómulo Betancourt"
+      ]
+    },
+    "en": {
+      "enunciado": "Under which presidency was the Angostura Bridge inaugurated?",
+      "opciones": [
+        "Marcos Pérez Jiménez",
+        "Raúl Leoni",
+        "Carlos Andrés Pérez",
+        "Rómulo Betancourt"
+      ]
+    }
+  },
+  {
+    "id": "story14_question2",
+    "historia": "14",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué río cruza el Puente de Angostura?",
+      "opciones": [
+        "Río Apure",
+        "Río Orinoco",
+        "Río Caroní",
+        "Río Arauca"
+      ]
+    },
+    "en": {
+      "enunciado": "Which river does the Angostura Bridge cross?",
+      "opciones": [
+        "Apure River",
+        "Orinoco River",
+        "Caroní River",
+        "Arauca River"
+      ]
+    }
+  },
+  {
+    "id": "story14_question3",
+    "historia": "14",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuántos metros de altura tiene el Puente de Angostura sobre el nivel del río?",
+      "opciones": [
+        "234 metros",
+        "57 metros",
+        "5 metros",
+        "23 metros"
+      ]
+    },
+    "en": {
+      "enunciado": "How many meters high is the Angostura Bridge above the river level?",
+      "opciones": [
+        "234 meters",
+        "57 meters",
+        "5 meters",
+        "23 meters"
+      ]
+    }
+  },
+  {
+    "id": "story15_question1",
+    "historia": "15",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué utensilio se cocina tradicionalmente la cachapa?",
+      "opciones": [
+        "Sarten",
+        "Olla",
+        "Budare",
+        "Horno"
+      ]
+    },
+    "en": {
+      "enunciado": "In what utensil is the cachapa traditionally cooked?",
+      "opciones": [
+        "Frying pan",
+        "Pot",
+        "Budare",
+        "Oven"
+      ]
+    }
+  },
+  {
+    "id": "story15_question2",
+    "historia": "15",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿De qué tipo de maíz se hace la cachapa?",
+      "opciones": [
+        "Maíz seco",
+        "Maíz tierno",
+        "Maíz pira",
+        "Maíz blanco"
+      ]
+    },
+    "en": {
+      "enunciado": "What type of corn is used to make cachapa?",
+      "opciones": [
+        "Dry corn",
+        "Tender corn",
+        "Popcorn corn",
+        "White corn"
+      ]
+    }
+  },
+  {
+    "id": "story15_question3",
+    "historia": "15",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué queso se menciona como acompañante clásico de la cachapa?",
+      "opciones": [
+        "Queso Guayanés",
+        "Queso de Mano o Telita",
+        "Queso Blanco Duro",
+        "Queso Llanero"
+      ]
+    },
+    "en": {
+      "enunciado": "Which cheese is mentioned as the classic accompaniment to cachapa?",
+      "opciones": [
+        "Guayanés Cheese",
+        "Hand Cheese or Telita",
+        "Hard White Cheese",
+        "Llanero Cheese"
+      ]
+    }
+  }
+]

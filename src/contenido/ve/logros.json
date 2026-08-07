@@ -1,0 +1,422 @@
+[
+  {
+    "id": "ach_10_hard_levels",
+    "es": {
+      "titulo": "Maestro Difícil",
+      "descripcion": "Completa 10 niveles difíciles"
+    },
+    "en": {
+      "titulo": "Hard Master",
+      "descripcion": "Complete 10 hard levels"
+    },
+    "tipo": 30,
+    "objetivo": 10,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_10_levels",
+    "es": {
+      "titulo": "Veterano",
+      "descripcion": "Completa 10 niveles en total"
+    },
+    "en": {
+      "titulo": "Veteran",
+      "descripcion": "Complete 10 levels in total"
+    },
+    "tipo": 0,
+    "objetivo": 10,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_10_normal_levels",
+    "es": {
+      "titulo": "Experto Normal",
+      "descripcion": "Completa 10 niveles normales"
+    },
+    "en": {
+      "titulo": "Normal Expert",
+      "descripcion": "Complete 10 normal levels"
+    },
+    "tipo": 28,
+    "objetivo": 10,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_10_perfect_levels",
+    "es": {
+      "titulo": "Perfeccionista",
+      "descripcion": "Completa 10 niveles con 3 estrellas"
+    },
+    "en": {
+      "titulo": "Perfectionist",
+      "descripcion": "Complete 10 levels with 3 stars"
+    },
+    "tipo": 16,
+    "objetivo": 10,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_10_stories_unlock",
+    "es": {
+      "titulo": "Descubridor",
+      "descripcion": "Desbloquea 10 historias"
+    },
+    "en": {
+      "titulo": "Discoverer",
+      "descripcion": "Unlock 10 stories"
+    },
+    "tipo": 25,
+    "objetivo": 10,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_100_stars",
+    "es": {
+      "titulo": "Constelación",
+      "descripcion": "Reúne 100 estrellas"
+    },
+    "en": {
+      "titulo": "Constellation",
+      "descripcion": "Collect 100 stars"
+    },
+    "tipo": 18,
+    "objetivo": 100,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_20_hard_levels",
+    "es": {
+      "titulo": "Maestro del Desafío",
+      "descripcion": "Completa 20 niveles difíciles"
+    },
+    "en": {
+      "titulo": "Challenge Master",
+      "descripcion": "Complete 20 hard levels"
+    },
+    "tipo": 2,
+    "objetivo": 20,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_20_levels",
+    "es": {
+      "titulo": "Experto",
+      "descripcion": "Completa 20 niveles en total"
+    },
+    "en": {
+      "titulo": "Expert",
+      "descripcion": "Complete 20 levels in total"
+    },
+    "tipo": 0,
+    "objetivo": 20,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_200_stars",
+    "es": {
+      "titulo": "Galaxia",
+      "descripcion": "Reúne 200 estrellas"
+    },
+    "en": {
+      "titulo": "Galaxy",
+      "descripcion": "Collect 200 stars"
+    },
+    "tipo": 19,
+    "objetivo": 200,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_25_stories_unlock",
+    "es": {
+      "titulo": "Arqueólogo",
+      "descripcion": "Desbloquea 25 historias"
+    },
+    "en": {
+      "titulo": "Archaeologist",
+      "descripcion": "Unlock 25 stories"
+    },
+    "tipo": 26,
+    "objetivo": 25,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_30_levels",
+    "es": {
+      "titulo": "Leyenda",
+      "descripcion": "Completa 30 niveles en total"
+    },
+    "en": {
+      "titulo": "Legend",
+      "descripcion": "Complete 30 levels in total"
+    },
+    "tipo": 0,
+    "objetivo": 30,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_30_normal_levels",
+    "es": {
+      "titulo": "Campeón Normal",
+      "descripcion": "Completa 30 niveles normales"
+    },
+    "en": {
+      "titulo": "Normal Champion",
+      "descripcion": "Complete 30 normal levels"
+    },
+    "tipo": 1,
+    "objetivo": 30,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_5_hard_levels",
+    "es": {
+      "titulo": "Desafiante",
+      "descripcion": "Completa 5 niveles difíciles"
+    },
+    "en": {
+      "titulo": "Challenger",
+      "descripcion": "Complete 5 hard levels"
+    },
+    "tipo": 29,
+    "objetivo": 5,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_5_normal_levels",
+    "es": {
+      "titulo": "Aprendiz",
+      "descripcion": "Completa 5 niveles normales"
+    },
+    "en": {
+      "titulo": "Apprentice",
+      "descripcion": "Complete 5 normal levels"
+    },
+    "tipo": 27,
+    "objetivo": 5,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_5_stories_unlock",
+    "es": {
+      "titulo": "Explorador",
+      "descripcion": "Desbloquea 5 historias"
+    },
+    "en": {
+      "titulo": "Explorer",
+      "descripcion": "Unlock 5 stories"
+    },
+    "tipo": 24,
+    "objetivo": 5,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_50_stars",
+    "es": {
+      "titulo": "Recolector de Estrellas",
+      "descripcion": "Reúne 50 estrellas"
+    },
+    "en": {
+      "titulo": "Star Collector",
+      "descripcion": "Collect 50 stars"
+    },
+    "tipo": 17,
+    "objetivo": 50,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_all_tests",
+    "es": {
+      "titulo": "Maestro de Tests",
+      "descripcion": "Completa todos los tests"
+    },
+    "en": {
+      "titulo": "Test Master",
+      "descripcion": "Complete all tests"
+    },
+    "tipo": 14,
+    "objetivo": 5,
+    "conProgreso": true,
+    "icono": null
+  },
+  {
+    "id": "ach_first_level",
+    "es": {
+      "titulo": "Primer Paso",
+      "descripcion": "Completa tu primer nivel"
+    },
+    "en": {
+      "titulo": "First Step",
+      "descripcion": "Complete your first level"
+    },
+    "tipo": 31,
+    "objetivo": 1,
+    "conProgreso": false,
+    "icono": null
+  },
+  {
+    "id": "ach_first_story",
+    "es": {
+      "titulo": "Primera Historia",
+      "descripcion": "Lee tu primera historia"
+    },
+    "en": {
+      "titulo": "First Story",
+      "descripcion": "Read your first story"
+    },
+    "tipo": 33,
+    "objetivo": 1,
+    "conProgreso": false,
+    "icono": null
+  },
+  {
+    "id": "ach_first_test",
+    "es": {
+      "titulo": "Primer Examen",
+      "descripcion": "Completa tu primer test"
+    },
+    "en": {
+      "titulo": "First Test",
+      "descripcion": "Complete your first test"
+    },
+    "tipo": 32,
+    "objetivo": 1,
+    "conProgreso": false,
+    "icono": null
+  },
+  {
+    "id": "ach_perfect_level",
+    "es": {
+      "titulo": "Perfección",
+      "descripcion": "Completa un nivel con 3 estrellas"
+    },
+    "en": {
+      "titulo": "Perfection",
+      "descripcion": "Complete a level with 3 stars"
+    },
+    "tipo": 15,
+    "objetivo": 1,
+    "conProgreso": false,
+    "icono": null
+  },
+  {
+    "id": "ach_section_12_cards",
+    "es": {
+      "titulo": "Conquista 12",
+      "descripcion": "Aprendiz"
+    },
+    "en": {
+      "titulo": "Conquest 12",
+      "descripcion": "Apprentice"
+    },
+    "tipo": 34,
+    "objetivo": 12,
+    "conProgreso": false,
+    "icono": null
+  },
+  {
+    "id": "ach_section_16_cards",
+    "es": {
+      "titulo": "Conquista 16",
+      "descripcion": "Descubridor"
+    },
+    "en": {
+      "titulo": "Conquest 16",
+      "descripcion": "Discoverer"
+    },
+    "tipo": 34,
+    "objetivo": 16,
+    "conProgreso": false,
+    "icono": null
+  },
+  {
+    "id": "ach_section_20_cards",
+    "es": {
+      "titulo": "Conquista 20",
+      "descripcion": "Historiados"
+    },
+    "en": {
+      "titulo": "Conquest 20",
+      "descripcion": "Historian"
+    },
+    "tipo": 34,
+    "objetivo": 20,
+    "conProgreso": false,
+    "icono": null
+  },
+  {
+    "id": "ach_section_24_cards",
+    "es": {
+      "titulo": "Conquista 24",
+      "descripcion": "Arqueologo"
+    },
+    "en": {
+      "titulo": "Conquest 24",
+      "descripcion": "Archaeologist"
+    },
+    "tipo": 34,
+    "objetivo": 24,
+    "conProgreso": false,
+    "icono": null
+  },
+  {
+    "id": "ach_section_28_cards",
+    "es": {
+      "titulo": "Conquista 28",
+      "descripcion": "Expedicionario"
+    },
+    "en": {
+      "titulo": "Conquest 28",
+      "descripcion": "Expeditionary"
+    },
+    "tipo": 34,
+    "objetivo": 28,
+    "conProgreso": false,
+    "icono": null
+  },
+  {
+    "id": "ach_section_32_cards",
+    "es": {
+      "titulo": "Conquista 32",
+      "descripcion": "Maestro"
+    },
+    "en": {
+      "titulo": "Conquest 32",
+      "descripcion": "Master"
+    },
+    "tipo": 34,
+    "objetivo": 32,
+    "conProgreso": false,
+    "icono": null
+  },
+  {
+    "id": "ach_section_40_cards",
+    "es": {
+      "titulo": "Conquista 40",
+      "descripcion": "Erudito"
+    },
+    "en": {
+      "titulo": "Conquest 40",
+      "descripcion": "Scholar"
+    },
+    "tipo": 34,
+    "objetivo": 40,
+    "conProgreso": false,
+    "icono": null
+  }
+]

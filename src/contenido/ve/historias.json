@@ -1,0 +1,1028 @@
+[
+  {
+    "id": "1",
+    "titulo": "Arepas",
+    "imagen": "/imagenes/historias/arepas.webp",
+    "es": {
+      "presentacion": "Prueba la arepa, el sabor de Venezuela en cada bocado. Más de 3,000 años de tradición y cultura indígena convertidos en delicia criolla.",
+      "texto": [
+        "LA AREPA\n\nLa arepa es el pan de cada día de Venezuela, con raíces indígenas que se remontan a más de 3,000 años. Los pueblos originarios (cumanagotos, timoto-cuicas, caribes) ya molían el maíz y lo cocinaban en forma de discos planos. Con la llegada de los españoles, la técnica se refinó y se incorporó a la dieta colonial. Hoy es símbolo de identidad nacional y patrimonio cultural inmaterial.\n\nSu sabor neutro la convierto en el acompañante perfecto para cualquier relleno, desde el desayuno hasta la cena.\n\nRellenos Típicos:\n\nReina Pepiada: Pollo desmechado con aguacate y mayonesa.\n\nPelúa: Carne mechada con queso amarillo.\n\nDominó: Caraotas negras con queso blanco.\n\nCatira: Pollo desmechado con queso amarillo.\n\nSifrina: Jamón, queso y aguacate.\n\nPabellón: Caraotas, carne mechada, queso y plátano.\n\nTecnica transmitida de generacion en generacion."
+      ]
+    },
+    "en": {
+      "presentacion": "Try the arepa, the taste of Venezuela in every bite. Over 3,000 years of indigenous tradition and culture turned into Creole delight.",
+      "texto": [
+        "THE AREPA\n\nThe arepa is Venezuela's daily bread, with indigenous roots dating back more than 3,000 years. The native peoples (Cumanagotos, Timoto-Cuicas, Caribs) already ground corn and cooked it into flat discs. With the arrival of the Spaniards, the technique was refined and incorporated into the colonial diet. Today it is a symbol of national identity and intangible cultural heritage.\n\nIts neutral flavor makes it the perfect companion for any filling, from breakfast to dinner.\n\nTypical Fillings:\n\nReina Pepiada: Shredded chicken with avocado and mayonnaise.\n\nPelúa: Shredded beef with yellow cheese.\n\nDominó: Black beans with white cheese.\n\nCatira: Shredded chicken with yellow cheese.\n\nSifrina: Ham, cheese, and avocado.\n\nPabellón: Black beans, shredded beef, cheese, and plantain.\n\nTechnique passed down from generation to generation."
+      ]
+    },
+    "nivelDesbloqueo": "1",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "2",
+    "titulo": "Venezuela",
+    "imagen": "/imagenes/historias/venezuela.webp",
+    "es": {
+      "presentacion": "Descubre la historia de Venezuela, desde los pueblos indígenas hasta la independencia. Tierra de libertad y grandes héroes.",
+      "texto": [
+        "VENEZUELA\n\nÉpoca Precolombina:\nVenezuela fue habitada por diversas tribus indígenas antes de la llegada de los españoles. Los caribes dominaban las costas, los arawak poblaban el oriente, y los timoto-cuicas habitaban los Andes. Estas culturas desarrollaron técnicas agrícolas, cerámicas y sistemas de organización social que perduraron en la identidad venezolana.\n\nDescripción Histórica:\nVenezuela era una tierra rica en recursos naturales, con pueblos que practicaban la agricultura del maíz, la yuca y el cacao. Los indígenas construían bohíos, desarrollaban artesanías y mantenían un profundo respeto por la naturaleza. Su organización social se basaba en cacicazgos y sistemas de intercambio comercial.\n\nMomentos Clave:\n1498: Llegada de Cristóbal Colón\n1499: Expedición de Alonso de Ojeda\n1527: Fundación de Coro (primera ciudad)\n1567: Fundación de Caracas\n1811: Declaración de Independencia\n\nVenezuela nació del encuentro entre mundos, forjada por la resistencia indígena, la ambición española y el sueño de libertad que definiría su destino como nación independiente."
+      ]
+    },
+    "en": {
+      "presentacion": "Discover the history of Venezuela, from the indigenous peoples to independence. Land of freedom and great heroes.",
+      "texto": [
+        "VENEZUELA\n\nPre-Columbian Era:\nVenezuela was inhabited by various indigenous tribes before the arrival of the Spanish. The Caribs dominated the coasts, the Arawaks populated the east, and the Timoto-Cuicas inhabited the Andes. These cultures developed agricultural techniques, ceramics, and social organization systems that endured in Venezuelan identity.\n\nHistorical Description:\nVenezuela was a land rich in natural resources, with people who practiced agriculture of corn, cassava, and cacao. The indigenous people built huts, developed crafts, and maintained a deep respect for nature. Their social organization was based on chiefdoms and systems of commercial exchange.\n\nKey Moments:\n1498: Arrival of Christopher Columbus\n1499: Expedition of Alonso de Ojeda\n1527: Foundation of Coro (first city)\n1567: Foundation of Caracas\n1811: Declaration of Independence\n\nVenezuela was born from the meeting of worlds, forged by indigenous resistance, Spanish ambition, and the dream of freedom that would define its destiny as an independent nation."
+      ]
+    },
+    "nivelDesbloqueo": "2",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "3",
+    "titulo": "Tequeños",
+    "imagen": "/imagenes/historias/tequenos.webp",
+    "es": {
+      "presentacion": "Los tequeños, la esencia de las celebraciones venezolanas. Queso dorado envuelto en masa, tradición que une familias.",
+      "texto": [
+        "TEQUEÑOS\n\nEs uno de los bocadillos más emblemáticos de Venezuela, con raíces que se remontan a la época colonial. Su nombre proviene de la ciudad de Los Teques en el estado Miranda, donde se popularizó esta delicia. Surgió como una forma creativa de aprovechar el queso blanco duro venezolano, envolviéndolo en masa de trigo para crear un aperitivo crujiente y delicioso.\n\nEl tequeño trasciende la comida para convertirse en símbolo de Celebración familiar, Presente en cumpleaños, bautizos y bodas."
+      ]
+    },
+    "en": {
+      "presentacion": "Tequeños, the essence of Venezuelan celebrations. Golden cheese wrapped in dough, a tradition that brings families together.",
+      "texto": [
+        "TEQUEÑOS\n\nIt is one of the most iconic snacks in Venezuela, with roots dating back to the colonial era. Its name comes from the city of Los Teques in the state of Miranda, where this treat became popular. It originated as a creative way to use Venezuelan hard white cheese, wrapping it in wheat dough to create a crunchy and delicious appetizer.\n\nThe tequeño goes beyond food to become a symbol of family celebration, present at birthdays, baptisms, and weddings."
+      ]
+    },
+    "nivelDesbloqueo": "3",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "4",
+    "titulo": "Simon Bolivar",
+    "imagen": "/imagenes/historias/simon-bolivar.webp",
+    "es": {
+      "presentacion": "Conoce a Bolívar, el Libertador. El hombre que liberó cinco naciones y cambió el destino de América para siempre.",
+      "texto": [
+        "SIMÓN BOLÍVAR - EL LIBERTADOR\n\nSimón José Antonio de la Santísima Trinidad Bolívar y Palacios nació en Caracas el 24 de julio de 1783, en el seno de una familia aristocrática criolla. Huérfano desde temprana edad, fue educado por tutores que le inculcaron las ideas liberales. Su formación en Europa lo expuso a las ideas revolucionarias francesas y al ideal de libertad que marcaría su destino.\n\nBolívar fue un militar, político y estratega excepcional que lideró la independencia de cinco naciones sudamericanas. Su genio militar se combinó con una visión política continental única. Era un orador elocuente, escritor prolífico y líder carismático que logró unir a pueblos diversos bajo la bandera de la libertad.\n\nLogros Principales Por Nación Liberada:\n\nVenezuela: Su patria natal, liberada luego de la batalla de Carabobo en 1821.\nColombia: Liberada en la Batalla de Boyacá (1819).\nEcuador: Liberada en la Batalla de Pichincha (1822).\nPerú: Liberada en las Batallas de Junín y Ayacucho (1824).\nBolivia: Creada como nación independiente (1825).\n\nFrases Inmortales:\n\n\"La libertad del Nuevo Mundo es la esperanza del universo\".\n\"Un soldado feliz no adquiere ningún derecho a mandar su patria\".\n\"Moral y luces son los polos de una república\".\n\"La educación popular debe ser el cuidado primogénito del amor paternal del Congreso\".\n\nSimón Bolívar fue más que un libertador: fue el arquitecto de la libertad americana, el visionario que soñó con una gran patria continental y el héroe que forjó el destino de cinco naciones bajo la bandera de la independencia."
+      ]
+    },
+    "en": {
+      "presentacion": "",
+      "texto": [
+        "SIMÓN BOLÍVAR - THE LIBERATOR\n\nSimón José Antonio de la Santísima Trinidad Bolívar y Palacios was born in Caracas on July 24, 1783, into an aristocratic Creole family. Orphaned at an early age, he was educated by tutors who instilled liberal ideas in him. His education in Europe exposed him to French revolutionary ideas and the ideal of freedom that would shape his destiny.\n\nBolívar was an exceptional military leader, politician, and strategist who led the independence of five South American nations. His military genius was combined with a unique continental political vision. He was an eloquent speaker, prolific writer, and charismatic leader who succeeded in uniting diverse peoples under the banner of liberty.\n\nMain Achievements by Liberated Nation:\n\nVenezuela: His homeland, liberated after the Battle of Carabobo in 1821.\nColombia: Liberated in the Battle of Boyacá (1819).\nEcuador: Liberated in the Battle of Pichincha (1822).\nPeru: Liberated in the Battles of Junín and Ayacucho (1824).\nBolivia: Created as an independent nation (1825).\n\n Immortal Phrases: \"The freedom of the New World is the hope of the universe.\" \"A happy soldier earns no right to command his homeland.\" \"Morality and knowledge are the poles of a republic.\" \"Popular education should be the first concern of the paternal love of Congress.\" Simón Bolívar was more than a liberator: he was the architect of American freedom, the visionary who dreamed of a great continental homeland, and the hero who shaped the destiny of five nations under the banner of independence."
+      ]
+    },
+    "nivelDesbloqueo": "4",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "5",
+    "titulo": "Colonia Tovar",
+    "imagen": "/imagenes/historias/colonia-tovar.webp",
+    "es": {
+      "presentacion": "Explora la Colonia Tovar, un pedacito de Alemania en Venezuela. Tradición europea en tierra criolla.",
+      "texto": [
+        "LA COLONIA TOVAR\n\nLa Colonia Tovar es un pueblo único en Venezuela, fundado en 1843 por inmigrantes alemanes provenientes de la región de Kaiserstuhl en Baden-Württemberg. Llegaron a Venezuela invitados por el gobierno venezolano para establecer una colonia agrícola en las montañas del estado Aragua. Los colonos alemanes trajeron consigo sus tradiciones, arquitectura, gastronomía y forma de vida, adaptándose al clima tropical venezolano. Durante décadas, mantuvieron su identidad cultural, hablando alemán y preservando sus costumbres bávaras. El pueblo se desarrolló como un centro agrícola, especialmente conocido por sus cultivos de fresas, hortalizas y flores. Con el tiempo, la Colonia Tovar se convirtió en un destino turístico único, donde los visitantes pueden experimentar la cultura alemana en un entorno tropical. Hoy, sus casas de estilo bávaro, su gastronomía tradicional, sus festivales y su arquitectura única la convierten en uno de los pueblos más pintorescos y especiales de Venezuela.\n\nLa Colonia Tovar es símbolo de la diversidad cultural venezolana. Fusión única entre tradiciones alemanas y ambiente tropical. Destino turístico único en América Latina.\n\nEmblema de la riqueza multicultural y la hospitalidad venezolana."
+      ]
+    },
+    "en": {
+      "presentacion": "Explore Colonia Tovar, a little piece of Germany in Venezuela. European tradition in native land.",
+      "texto": [
+        "LA COLONIA TOVAR\n\nColonia Tovar is a unique town in Venezuela, founded in 1843 by German immigrants from the Kaiserstuhl region in Baden-Württemberg. They came to Venezuela invited by the Venezuelan government to establish an agricultural colony in the mountains of Aragua state. The German settlers brought with them their traditions, architecture, cuisine, and way of life, adapting to the Venezuelan tropical climate. For decades, they maintained their cultural identity, speaking German and preserving their Bavarian customs. The town developed as an agricultural center, especially known for its strawberry, vegetable, and flower crops. Over time, Colonia Tovar became a unique tourist destination, where visitors can experience German culture in a tropical setting. Today, its Bavarian-style houses, traditional cuisine, festivals, and unique architecture make it one of the most picturesque and special towns in Venezuela. Colonia Tovar is a symbol of Venezuelan cultural diversity. A unique fusion of German traditions and a tropical environment. A unique tourist destination in Latin America. An emblem of multicultural richness and Venezuelan hospitality."
+      ]
+    },
+    "nivelDesbloqueo": "5",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "6",
+    "titulo": "Cuatro",
+    "imagen": "/imagenes/historias/cuatro.webp",
+    "es": {
+      "presentacion": "Escucha el cuatro, el alma musical de Venezuela. Cuatro cuerdas que cuentan historias de joropo y tradición.",
+      "texto": [
+        "CUATRO\n\nDerivado de cordófonos ibéricos del período colonial (como la guitarra barroca), el cuatro se adapta en Venezuela con 4 cuerdas y caja pequeña, ideal para ritmos rápidos y acompañamiento vocal.\n\nPresente en joropo, galerón, tamunangue, golpe Tocuyano, parranda y merengue caraqueño; acompaña fiestas, devociones y celebraciones populares.\n\nPopularizado y elevado a instrumento solista por cultores y virtuosos modernos; usado tanto en folclore como en fusiones contemporáneas.\n\nEmblema sonoro en giras, grabaciones y festivales; reconocido como identidad musical venezolana en el mundo."
+      ]
+    },
+    "en": {
+      "presentacion": "Listen to the cuatro, the musical soul of Venezuela. Four strings that tell stories of joropo and tradition.",
+      "texto": [
+        "CUATRO\n\nDerived from Iberian chordophones of the colonial period (such as the baroque guitar), the cuatro was adapted in Venezuela with 4 strings and a small body, ideal for fast rhythms and vocal accompaniment.\n\nPresent in joropo, galerón, tamunangue, golpe Tocuyano, parranda, and Caracas-style merengue; it accompanies parties, devotions, and popular celebrations.\n\nPopularized and elevated to a solo instrument by modern practitioners and virtuosos; used both in folklore and contemporary fusions.\n\nA sonic emblem in tours, recordings, and festivals; recognized worldwide as a symbol of Venezuelan musical identity."
+      ]
+    },
+    "nivelDesbloqueo": "6",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "7",
+    "titulo": "Chicha",
+    "imagen": "/imagenes/historias/chicha.webp",
+    "es": {
+      "presentacion": "Refréscate con la chicha, la bebida popular que endulza las tardes venezolanas. Tradición refrescante.",
+      "texto": [
+        "CHICHA\n\nbebidasa fermentadas indígenas (maíz, yuca, arroz), adaptadas luego al gusto criollo.\n\nVersión popular moderna: a base de arroz cocido, leche, azúcar y vainilla; espesa, fría y muy cremosa.\n\nToppings típicos: canela, leche condensada, barquillo, coco rallado.\n\nDe mercados y plazas a carritos icónicos; bebida de recreo escolar y domingos en familia."
+      ]
+    },
+    "en": {
+      "presentacion": "Cool off with chicha, the popular drink that sweetens Venezuelan afternoons. A refreshing tradition.",
+      "texto": [
+        "CHICHA\n\nIndigenous fermented drinks (corn, cassava, rice), later adapted to Creole taste.\n\nModern popular version: made with cooked rice, milk, sugar, and vanilla; thick, cold, and very creamy.\n\nTypical toppings: cinnamon, condensed milk, wafer, grated coconut.\n\nFrom markets and squares to iconic carts; a drink for school recreation and family Sundays."
+      ]
+    },
+    "nivelDesbloqueo": "7",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "8",
+    "titulo": "Rio Orinoco",
+    "imagen": "/imagenes/historias/rio-orinoco.webp",
+    "es": {
+      "presentacion": "Navega el río Orinoco, la vida que fluye por Venezuela. Uno de los ríos más importantes de Sudamérica, cuna de ecosistemas únicos.",
+      "texto": [
+        "EL RIO ORINOCO\n\nUno de los ríos más antiguos y caudalosos de Sudamérica; sagrado para pueblos indígenas.\n\nNace en el cerro Delgado Chalbaud (Guayana), bordea los tepuyes y se abre en un delta vasto hacia el Atlántico, hogar de delfines del Orinoco, anacondas, jaguares y una riqueza ictiológica extraordinaria. Vía histórica de exploración, intercambio y leyendas; columna vertebral de la Guayana venezolana.\n\nEmblema de fuerza, belleza y abundancia natural de Venezuela."
+      ]
+    },
+    "en": {
+      "presentacion": "Sail the Orinoco River, the life that flows through Venezuela. One of the most important rivers in South America, home to unique ecosystems.",
+      "texto": [
+        "THE ORINOCO RIVER\n\nOne of the oldest and most voluminous rivers in South America; sacred to indigenous peoples.\n\nIt originates in Cerro Delgado Chalbaud (Guayana), skirts the tepuis, and opens into a vast delta toward the Atlantic, home to Orinoco dolphins, anacondas, jaguars, and an extraordinary richness of fish species. A historical route of exploration, exchange, and legends; the backbone of Venezuelan Guayana.\n\nAn emblem of strength, beauty, and natural abundance of Venezuela."
+      ]
+    },
+    "nivelDesbloqueo": "8",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "9",
+    "titulo": "Mucuchie",
+    "imagen": "/imagenes/historias/mucuchie.webp",
+    "es": {
+      "presentacion": "Conoce al Mucuchíes, el perro andino que acompañó a Bolívar. Nevado, el fiel compañero de la gesta libertadora.",
+      "texto": [
+        "EL PERRO MUCUCHIES\n\nOriginado en los Andes de Venezuela a partir de perros europeos traídos en la epoca de la colonia, el Mucuchíes fue seleccionado por campesinos para resistir el frío, cuidar hatos y proteger el hogar. Su leyenda más famosa es “Nevado”, el perro que acompañó a Simón Bolívar en la gesta independentista.\n\nFiel, sereno, protector con su familia, excelente guardián y compañero de trabajo en montaña.\n\nDe tamaño mediano-grande, pelaje denso (blanco/crema con o sin manchas), resistente al frío."
+      ]
+    },
+    "en": {
+      "presentacion": "Meet Mucuchíes, the Andean dog that accompanied Bolívar. Nevado, the faithful companion of the liberating campaign.",
+      "texto": [
+        "THE MUCUCHÍES DOG\n\nOriginating in the Andes of Venezuela from European dogs brought during the colonial period, the Mucuchíes was bred by farmers to withstand the cold, tend herds, and protect the home. Its most famous legend is “Nevado,” the dog that accompanied Simón Bolívar in the struggle for independence.\n\nLoyal, calm, protective with its family, an excellent guardian and mountain work companion.\n\nMedium-large in size, dense coat (white/cream with or without spots), resistant to the cold."
+      ]
+    },
+    "nivelDesbloqueo": "9",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "10",
+    "titulo": "Queso Venezolano",
+    "imagen": "/imagenes/historias/queso-venezolano.webp",
+    "es": {
+      "presentacion": "Saborea los quesos venezolanos, desde el Guayanés hasta la Telita. Delicias que acompañan cada comida criolla.",
+      "texto": [
+        "QUESOS VENEZOLANOS\n\nCon raíces en la época colonial y adaptados al clima tropical, los quesos venezolanos se desarrollaron como productos frescos y salados, ideales para el día a día: fáciles de producir, transportar y combinar con arepas, cachapas y tequeños. En cada región nació un perfil propio, del llano a los Andes y la costa.\n\nQueso Blanco Duro: salado, firme; ideal para rallar, freír y tequeños.\nQueso Guayanés: suave, mantecoso; perfecto para arepas y desayunos.\nQueso Telita: tierno, láminas elásticas; se derrite en la boca.\nQueso de Mano: fresco, en capas; compañero clásico de la cachapa.\nQueso Llanero: curado y salado; para rallar sobre pastas y arepas.\nQueso Palmita / Mozzarella criolla: suave y fibroso; funde muy bien.\nRequesón: ligero y granuloso; para rellenos y preparaciones\nfrescas.\n\nProducto estrella de la cocina venezolana: versátil, cercano y regional. Cada queso cuenta una historia de territorio, oficio y sabor criollo."
+      ]
+    },
+    "en": {
+      "presentacion": "Savor Venezuelan cheeses, from Guayanés to Telita. Delicacies that accompany every Creole meal.",
+      "texto": [
+        "VENEZUELAN CHEESES\n\nWith roots in the colonial era and adapted to the tropical climate, Venezuelan cheeses developed as fresh and salty products, ideal for everyday use: easy to produce, transport, and pair with arepas, cachapas, and tequeños. Each region developed its own profile, from the plains to the Andes and the coast.\n\nHard White Cheese: salty, firm; ideal for grating, frying, and tequeños.\nGuayanés Cheese: soft, buttery; perfect for arepas and breakfasts.\nTelita Cheese: tender, elastic slices; melts in your mouth.\nQueso de Mano: fresh, layered; a classic companion to cachapas.\nLlanero Cheese: cured and salty; for grating over pastas and arepas.\nPalmita Cheese / Creole Mozzarella: soft and fibrous; melts very well.\nRequesón: light and granular; for fillings and fresh preparations.\n\nA star product of Venezuelan cuisine: versatile, approachable, and regional. Each cheese tells a story of territory, craft, and Creole flavor."
+      ]
+    },
+    "nivelDesbloqueo": "10",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "11",
+    "titulo": "Cachito",
+    "imagen": "/imagenes/historias/cachito.webp",
+    "es": {
+      "presentacion": "Disfruta el cachito caraqueño, el desayuno favorito de Venezuela. Pan dulce con jamón, tradición de las panaderías criollas.",
+      "texto": [
+        "EL CACHITO\n\nEl cachito nació en las panaderías caraqueñas de inicios–mediados del siglo XX, inspirado en bollería europea (medialunas/croissants) y adaptado al gusto criollo con masa suave y relleno de jamón. Rápidamente se volvió el desayuno urbano por excelencia: práctico, aromático y perfecto con café con leche.\n\nPieza de masa tierna y ligeramente dulce, formada en media luna, con relleno clásico de jamón (a veces con queso). Horneado hasta\ndorar, de corteza fina y miga esponjosa.\n\nIcono del desayuno venezolano: sencillo, cercano y nostálgico; una tradición panadera con sabor cotidiano."
+      ]
+    },
+    "en": {
+      "presentacion": "Enjoy the 'cachito caraqueño,' Venezuela's favorite breakfast. Sweet bread with ham, a tradition of local bakeries.",
+      "texto": [
+        "THE CACHITO\n\nThe cachito was born in Caracas bakeries in the early to mid-20th century, inspired by European pastries (medialunas/croissants) and adapted to the local taste with soft dough and ham filling. It quickly became the quintessential urban breakfast: practical, aromatic, and perfect with coffee with milk.\n\nA piece of soft, slightly sweet dough, shaped into a crescent, with a classic ham filling (sometimes with cheese). Baked until golden, with a thin crust and fluffy crumb.\n\nAn icon of the Venezuelan breakfast: simple, familiar, and nostalgic; a bakery tradition with everyday flavor."
+      ]
+    },
+    "nivelDesbloqueo": "11",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "12",
+    "titulo": "Cardenal",
+    "imagen": "/imagenes/historias/cardenal.webp",
+    "es": {
+      "presentacion": "Admira al Cardenalito, el ave de plumaje rojo intenso. Tesoro de la naturaleza venezolana que debemos proteger.",
+      "texto": [
+        "EL CARDENAL\n\nConocido como Cardenalito (Spinus cucullatus), este ave venezolana deslumbró desde el siglo XIX por su plumaje rojo intenso. Habitó llanos y piedemontes con bandadas pequeñas, pero su belleza la volvió víctima del tráfico de fauna y la pérdida de hábitat, llevándola al borde de la extinción. Hoy es emblema de\nconservación y orgullo nacional.\n\nMacho rojo brillante con negro; hembra más parda y discreta, Tamaño pequeño, canto melodioso, Prefiere sabanas arboladas, matorrales y bordes de bosque, Prefiere sabanas arboladas, matorrales y bordes de bosque, se alimenta de semillas e insectos pequeños.\n\nEspecie en peligro crítico; protegida por ley, Programas de cría y reintroducción buscan recuperar sus poblaciones.\n\nAdmira sin capturar, protege su hogar."
+      ]
+    },
+    "en": {
+      "presentacion": "Admire the Little Cardinal, the bird with bright red plumage. A treasure of Venezuelan nature that we must protect.",
+      "texto": [
+        "THE CARDINAL\n\nKnown as the Little Cardinal (Spinus cucullatus), this Venezuelan bird has dazzled since the 19th century with its bright red plumage. It inhabited plains and foothills in small flocks, but its beauty made it a victim of wildlife trafficking and habitat loss, bringing it to the brink of extinction. Today it is a symbol of conservation and national pride.\n\nMale bright red with black; female browner and more discreet. Small size, melodious song. Prefers wooded savannas, shrubs, and forest edges. Feeds on seeds and small insects.\n\nCritically endangered species; protected by law. Breeding and reintroduction programs aim to restore its populations.\n\nAdmire without capturing, protect its home."
+      ]
+    },
+    "nivelDesbloqueo": "12",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "13",
+    "titulo": "Hallaca",
+    "imagen": "/imagenes/historias/hallaca.webp",
+    "es": {
+      "presentacion": "Prueba la hallaca, el plato de Navidad que une familias. Masa de maíz con historia, sabores que se heredan.",
+      "texto": [
+        "LA HALLACA\n\nLa hallaca nace en la época colonial como plato mestizo: masa de maíz teñida con onoto, rellena con guiso criollo y adornos (pasas, aceitunas, alcaparras), todo envuelto en hojas de plátano y hervido. Cada diciembre, su preparación en familia se vuelve ritual: amasar, guisar, armar y amarrar, celebrando unión y memoria.\n\nMasa: de maíz, suave y amarilla (onoto).\nGuiso: carnes (res/cerdo/pollo) con sofrito y especias.\nAdornos: pasas, aceitunas, alcaparras, pimentón.\n\nPlato emblema de la Navidad venezolana: trabajo en equipo, sabores mestizos y orgullo regional, servido con pan de jamón, el pernil y ensalada de gallina."
+      ]
+    },
+    "en": {
+      "presentacion": "Try the hallaca, the Christmas dish that brings families together. Corn dough with history, flavors that are passed down.",
+      "texto": [
+        "THE HALLACA\n\nThe hallaca originated in the colonial era as a mestizo dish: corn dough colored with annatto, filled with creole stew and garnishes (raisins, olives, capers), all wrapped in plantain leaves and boiled. Every December, its preparation with family becomes a ritual: kneading, cooking, assembling, and tying, celebrating unity and memory.\n\nDough: made from corn, soft and yellow (annatto).\nStew: meats (beef/pork/chicken) with sofrito and spices.\nGarnishes: raisins, olives, capers, bell pepper.\n\nA flagship dish of Venezuelan Christmas: teamwork, mestizo flavors, and regional pride, served with ham bread, roasted pork, and chicken salad."
+      ]
+    },
+    "nivelDesbloqueo": "13",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "14",
+    "titulo": "Puente de Angostura",
+    "imagen": "/imagenes/historias/puente-de-angostura.webp",
+    "es": {
+      "presentacion": "Cruza el Puente de Angostura, obra de ingeniería sobre el Orinoco. Conexión entre estados, símbolo de unidad.",
+      "texto": [
+        "EL PUENTE DE ANGOSTURA\n\nEl Puente de Angostura es una de las obras de ingeniería más emblemáticas de Venezuela. Inaugurado el 6 de enero de 1967 por el presidente Raúl Leoni, marcó un hito histórico al unir finalmente por vía terrestre las riberas del río Orinoco, conectando los estados Anzoátegui y Bolívar.\nEs un símbolo de orgullo para los bolivarenses y un punto de referencia visual inconfundible por su imponente diseño sobre el río más grande del país."
+      ]
+    },
+    "en": {
+      "presentacion": "Cross the Angostura Bridge, an engineering feat over the Orinoco. A connection between states, a symbol of unity.",
+      "texto": [
+        "THE ANGOSTURA BRIDGE\n\nThe Angostura Bridge is one of Venezuela's most iconic engineering feats. Inaugurated on January 6, 1967, by President Raúl Leoni, it marked a historic milestone by finally uniting the banks of the Orinoco River by land, connecting the states of Anzoátegui and Bolívar.\n\nIt is a symbol of pride for the people of Bolívar and an unmistakable visual landmark due to its imposing design spanning the country's largest river."
+      ]
+    },
+    "nivelDesbloqueo": "14",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "15",
+    "titulo": "La Cachapa",
+    "imagen": "/imagenes/historias/la-cachapa.webp",
+    "es": {
+      "presentacion": "Saborea la cachapa, el dulce despertar venezolano. Maíz tierno convertido en delicia dorada en el budare.",
+      "texto": [
+        "LA CACHAPA\n\nDe origen campesino y prehispánico, la cachapa nace del maíz tierno molido y cocido en budare. Con la mezcla de tradiciones indígenas y coloniales, se volvió desayuno y antojo nacional, especialmente en rutas y ventas de carretera.\n\nBase: maíz tierno molido, a veces con leche, sal y azúcar.\nTextura: gruesa, húmeda y ligeramente dulce.\nClásica: con queso de mano o telita y mantequilla.\n\nPlato icónico de maíz fresco que celebra lo criollo: comida de carretera, ferias y desayunos en familia; combo ideal con papelón con limón o chicha."
+      ]
+    },
+    "en": {
+      "presentacion": "Savor the cachapa, the sweet Venezuelan awakening. Tender corn turned into golden delight in budare.",
+      "texto": [
+        "THE CACHAPA\n\nOf rural and pre-Hispanic origin, the cachapa is made from ground tender corn cooked on a griddle. With the blend of indigenous and colonial traditions, it became a national breakfast and a beloved treat, especially along highways and roadside stands.\n\nBase: ground tender corn, sometimes with milk, salt, and sugar.\nTexture: thick, moist, and slightly sweet.\nClassic: served with hand-made cheese or 'telita' cheese and butter.\n\nAn iconic fresh corn dish that celebrates Creole culture: typical highway food, fair food, and family breakfasts; ideally paired with brown sugar and lime drink or chicha."
+      ]
+    },
+    "nivelDesbloqueo": "15",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "16",
+    "titulo": "Araguaney",
+    "imagen": "/imagenes/historias/araguaney.webp",
+    "es": {
+      "presentacion": "Contempla el araguaney, el Árbol Nacional. Sus flores amarillas anuncian la llegada de las lluvias cada año.",
+      "texto": [
+        "El Araguaney (Handroanthus chrysanthus), declarado Árbol Nacional de Venezuela el 29 de mayo de 1948, es uno de los espectáculos naturales más impresionantes del trópico. Su nombre proviene de la lengua indígena caribe, y es reconocido mundialmente por su explosiva floración amarilla que coincide con el final de la época de sequía. Este árbol se caracteriza por su tronco derecho y una madera extremadamente dura y pesada, lo que le otorga el apodo de \\\"roble amarillo\\\". Alcanza alturas de entre 6 y 12 metros y tiene la particularidad de ser caducifolio, lo que significa que pierde todas sus hojas antes de cubrirse completamente de flores doradas. Este fenómeno suele ocurrir entre los meses de febrero y abril, creando un contraste vibrante con el paisaje árido, simbolizando la resiliencia y la belleza que surge incluso en condiciones difíciles."
+      ]
+    },
+    "en": {
+      "presentacion": "Behold the araguaney, the National Tree. Its yellow flowers announce the arrival of the rains every year.",
+      "texto": [
+        "The Araguaney (Handroanthus chrysanthus), declared the National Tree of Venezuela on May 29, 1948, is one of the most impressive natural spectacles in the tropics. Its name comes from the Caribbean indigenous language, and it is globally recognized for its explosive yellow flowering that coincides with the end of the dry season. This tree is characterized by its straight trunk and extremely hard and heavy wood, which gives it the nickname \\\"yellow oak.\\\" It reaches heights between 6 and 12 meters and has the particularity of being deciduous, which means it loses all its leaves before being completely covered in golden flowers. This phenomenon usually occurs between the months of February and April, creating a vibrant contrast with the arid landscape, symbolizing resilience and the beauty that emerges even in difficult conditions."
+      ]
+    },
+    "nivelDesbloqueo": "16",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "17",
+    "titulo": "Chiguire",
+    "imagen": "/imagenes/historias/chiguire.webp",
+    "es": {
+      "presentacion": "Conoce al chigüire, el rey de los llanos. El roedor más grande del mundo, símbolo de la fauna venezolana.",
+      "texto": [
+        "El Chigüire (Hydrochoerus hydrochaeris), conocido en otros países como capibara o carpincho, es el roedor más grande y pesado del mundo. En Venezuela, es un símbolo icónico de la región de los Llanos, donde habita en manadas cerca de ríos, lagunas y caños. Este animal es un excelente nadador gracias a sus patas ligeramente palmeadas, lo que le permite refugiarse en el agua ante la presencia de depredadores. Con un cuerpo robusto cubierto de un pelaje áspero de color pardo, el chigüire puede llegar a pesar hasta 65 kilogramos. Es un animal herbívoro que se alimenta principalmente de hierbas acuáticas y gramíneas. Su comportamiento social es muy avanzado, viviendo en grupos familiares liderados por un macho dominante. En la cultura venezolana, su presencia es fundamental no solo para el ecosistema, sino también en la gastronomía tradicional, especialmente durante la época de Semana Santa."
+      ]
+    },
+    "en": {
+      "presentacion": "Meet the capybara, the king of the plains. The largest rodent in the world, a symbol of Venezuelan wildlife.",
+      "texto": [
+        "The Chigüire (Hydrochoerus hydrochaeris), known in other countries as capybara or carpincho, is the largest and heaviest rodent in the world. In Venezuela, it is an iconic symbol of the Llanos region, where it lives in herds near rivers, lagoons, and streams. This animal is an excellent swimmer thanks to its slightly webbed feet, which allow it to take refuge in water in the presence of predators. With a robust body covered in coarse brown fur, the capybara can weigh up to 65 kilograms. It is a herbivorous animal that feeds mainly on aquatic grasses and grasses. Its social behavior is very advanced, living in family groups led by a dominant male. In Venezuelan culture, its presence is fundamental not only for the ecosystem but also in traditional cuisine, especially during Holy Week."
+      ]
+    },
+    "nivelDesbloqueo": "17",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "18",
+    "titulo": "Guacamaya",
+    "imagen": "/imagenes/historias/guacamaya.webp",
+    "es": {
+      "presentacion": "Descubre las guacamayas, aves sagradas de colores vibrantes. Joyas del cielo venezolano que debemos conservar.",
+      "texto": [
+        "La Guacamaya (Ara), especialmente la especie Guacamaya Bandera (Ara macao) y la Guacamaya Azul y Amarilla (Ara ararauna), es uno de los símbolos naturales más vibrantes y queridos de Venezuela. Aunque habitan en selvas y bosques húmedos en todo el país, han protagonizado un fenómeno único en el mundo: su integración total a la vida urbana de la capital, Caracas, donde sobrevuelan los edificios al amanecer y al atardecer. Estas aves se caracterizan por su plumaje de colores intensos, picos fuertes y curvos capaces de romper semillas duras, y su gran inteligencia. Son animales monógamos, lo que significa que eligen una pareja para toda la vida, volando siempre en pares o en ruidosas bandadas. En Venezuela, se han convertido en un símbolo de libertad y biodiversidad, siendo protegidas por los ciudadanos que suelen alimentarlas con frutas y semillas en sus balcones."
+      ]
+    },
+    "en": {
+      "presentacion": "Discover the macaws, sacred birds with vibrant colors. Jewels of the Venezuelan sky that we must protect.",
+      "texto": [
+        "The Macaw (Ara), especially the Scarlet Macaw (Ara macao) and the Blue-and-Yellow Macaw (Ara ararauna), is one of Venezuela's most vibrant and beloved natural symbols. Although they inhabit rainforests and wet forests throughout the country, they have starred in a unique phenomenon in the world: their total integration into the urban life of the capital, Caracas, where they fly over buildings at dawn and dusk. These birds are characterized by their brightly colored plumage, strong and curved beaks capable of cracking hard seeds, and their great intelligence. They are monogamous animals, which means they choose a mate for life, always flying in pairs or in noisy flocks. In Venezuela, they have become a symbol of freedom and biodiversity, being protected by citizens who often feed them fruits and seeds on their balconies."
+      ]
+    },
+    "nivelDesbloqueo": "18",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "19",
+    "titulo": "Medanos de Coro",
+    "imagen": "/imagenes/historias/medanos-de-coro.webp",
+    "es": {
+      "presentacion": "Explora los Médanos de Coro, un desierto único en el Caribe. Dunas doradas moldeadas por el viento durante siglos.",
+      "texto": [
+        "El Parque Nacional Médanos de Coro, ubicado en el estado Falcón, es uno de los paisajes más impactantes y singulares de Venezuela. Este desierto de arenas nómadas se formó por la acumulación de sedimentos traídos por los vientos alisios que soplan del noreste hacia el istmo que une a la ciudad de Coro con la Península de Paraguaná. Es un ecosistema dinámico donde las dunas, que pueden alcanzar hasta 40 metros de altura, cambian constantemente de forma y posición debido a la fuerza del viento. Declarado Parque Nacional el 6 de febrero de 1974, este espacio protege no solo las dunas, sino también una vegetación xerófila compuesta por cujíes, cardones y tunas, además de una fauna adaptada al calor extremo, como lagartijos, conejos y aves rapaces. Caminar sobre sus arenas cálidas al atardecer es una de las experiencias turísticas más emblemáticas del país, ofreciendo un contraste dorado único frente al azul del Mar Caribe."
+      ]
+    },
+    "en": {
+      "presentacion": "Explore the Médanos de Coro, a unique desert in the Caribbean. Golden dunes shaped by the wind for centuries.",
+      "texto": [
+        "The Coro Dunes National Park, located in the Falcón state, is one of the most striking and unique landscapes in Venezuela. This desert of wandering sands was formed by the accumulation of sediments carried by the trade winds blowing from the northeast toward the isthmus that connects the city of Coro with the Paraguaná Peninsula. It is a dynamic ecosystem where the dunes, which can reach up to 40 meters in height, constantly change shape and position due to the force of the wind. Declared a National Park on February 6, 1974, this area protects not only the dunes but also xerophilous vegetation composed of cujíes, long cacti, and prickly pears, as well as fauna adapted to extreme heat, such as lizards, rabbits, and birds of prey. Walking on its warm sands at sunset is one of the country’s most emblematic tourist experiences, offering a unique golden contrast against the blue of the Caribbean Sea."
+      ]
+    },
+    "nivelDesbloqueo": "19",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "20",
+    "titulo": "Los Tepuy",
+    "imagen": "/imagenes/historias/los-tepuy.webp",
+    "es": {
+      "presentacion": "Asciende los tepuyes, montañas antiguas de 2,000 millones de años. Moradas de espíritus según la tradición pemón.",
+      "texto": [
+        "Los Tepuyes son mesetas de paredes verticales y cimas planas que se encuentran en el Escudo Guayanés, principalmente en el estado Bolívar de Venezuela. Su nombre proviene de la lengua indígena pemón y significa \\\"montaña\\\" o \\\"morada de los dioses\\\". Estas formaciones geológicas se consideran unas de las más antiguas de la Tierra, con una edad estimada de hasta 2.000 millones de años. Debido a su altura y aislamiento extremo, la cima de cada tepuy funciona como una \\\"isla ecológica\\\". Esto ha permitido la evolución de especies de flora y fauna que no existen en ningún otro lugar del planeta (endémicas), como la planta carnívora Heliamphora o la pequeña rana de los tepuyes. Entre los más famosos se encuentran el Monte Roraima, que marca la frontera entre Venezuela, Brasil y Guyana, y el Auyantepuy, desde cuya cima cae el Salto Ángel, la caída de agua más alta del mundo."
+      ]
+    },
+    "en": {
+      "presentacion": "Ascend the tepuis, ancient mountains 2 billion years old. Homes of spirits according to Pemon tradition.",
+      "texto": [
+        "The Tepuys are plateaus with vertical walls and flat tops that are found in the Guiana Shield, mainly in the Bolívar state of Venezuela. Their name comes from the indigenous Pemon language and means \\\"mountain\\\" or \\\"dwelling of the gods.\\\" These geological formations are considered some of the oldest on Earth, with an estimated age of up to 2 billion years. Due to their height and extreme isolation, the top of each tepui functions as an \\\"ecological island.\\\" This has allowed the evolution of species of flora and fauna that do not exist anywhere else on the planet (endemic), such as the carnivorous plant Heliamphora or the small tepui frog. Among the most famous are Mount Roraima, which marks the border between Venezuela, Brazil, and Guyana, and Auyantepuy, from whose top falls Angel Falls, the highest waterfall in the world."
+      ]
+    },
+    "nivelDesbloqueo": "20",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "21",
+    "titulo": "Pabellon",
+    "imagen": "/imagenes/historias/pabellon.webp",
+    "es": {
+      "presentacion": "Saborea el pabellón criollo, el plato que evoca la bandera. Arroz, caraotas, carne mechada y plátano, sabor nacional.",
+      "texto": [
+        "El Pabellón Criollo es el plato nacional por excelencia de Venezuela. Se trata de una preparación colorida y nutritiva que representa, según la tradición popular, la unión de las razas que conformaron la identidad del país: la europea (arroz blanco), la africana (caraotas negras) y la indígena (carne mechada). Es un plato que equilibra sabores salados, dulces y texturas variadas, siendo un pilar fundamental en los hogares venezolanos. Los componentes esenciales del pabellón son cuatro: arroz blanco suelto, caraotas negras (frijoles) refritas o en guiso, carne mechada (falda de res hervida y desmechada, luego guisada con aliños) y tajadas de plátano maduro frito. Cuando se le añade un huevo frito por encima, se le conoce como \\\"pabellón a caballo\\\", y si se acompaña con queso blanco rallado sobre las caraotas, se denomina \\\"pabellón con baranda\\\". En el oriente del país, es común sustituir la carne por pescado desmechado (como el cazón)."
+      ]
+    },
+    "en": {
+      "presentacion": "Savor the criollo pavilion, the dish that evokes the flag. Rice, black beans, shredded beef, and plantain, a national flavor.",
+      "texto": [
+        "The Creole Pabellón is the quintessential national dish of Venezuela. It is a colorful and nutritious preparation that, according to popular tradition, represents the union of the races that shaped the country's identity: European (white rice), African (black beans), and Indigenous (shredded beef). It is a dish that balances salty and sweet flavors with varied textures, being a fundamental pillar in Venezuelan households. The essential components of pabellón are four: loose white rice, black beans (refried or stewed), shredded beef (boiled skirt steak shredded, then stewed with seasonings), and slices of fried ripe plantain. When a fried egg is added on top, it is known as \\\"pabellón a caballo,\\\" and if served with grated white cheese over the beans, it is called \\\"pabellón con baranda.\\\" In the eastern part of the country, it is common to replace the beef with shredded fish (such as cazón)."
+      ]
+    },
+    "nivelDesbloqueo": "21",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "22",
+    "titulo": "Arco de Carabobo",
+    "imagen": "/imagenes/historias/arco-de-carabobo.webp",
+    "es": {
+      "presentacion": "Recuerda la Batalla de Carabobo, la victoria que selló la independencia. Monumento a los héroes del 24 de junio de 1821.",
+      "texto": [
+        "El Arco de Carabobo, ubicado en el Campo de Carabobo, cerca de la ciudad de Valencia, es el monumento histórico más importante dedicado a la independencia de Venezuela. Fue inaugurado el 24 de junio de 1921 por el presidente Juan Vicente Gómez, para conmemorar el centenario de la Batalla de Carabobo, el enfrentamiento decisivo que selló la libertad de Venezuela frente al imperio español en 1821. Este arco de triunfo mide aproximadamente 28 metros de altura y se compone de dos columnas que sostienen un arco decorado con relieves y esculturas. En su parte superior, destacan las estatuas que representan la Victoria y la Paz. El monumento forma parte de un complejo mayor que incluye el Altar de la Patria, donde reposan los restos de un soldado desconocido custodiados por una guardia de honor que realiza un cambio de guardia solemne cada dos horas. Es un lugar de peregrinación patriótica donde el fuego sagrado arde permanentemente en honor a los próceres."
+      ]
+    },
+    "en": {
+      "presentacion": "Remember the Battle of Carabobo, the victory that sealed independence. Monument to the heroes of June 24, 1821.",
+      "texto": [
+        "The Carabobo Arch, located in the Carabobo Field, near the city of Valencia, is the most important historical monument dedicated to Venezuela's independence. It was inaugurated on June 24, 1921, by President Juan Vicente Gómez, to commemorate the centenary of the Battle of Carabobo, the decisive confrontation that secured Venezuela's freedom from the Spanish empire in 1821. This triumphal arch measures approximately 28 meters in height and consists of two columns supporting an arch decorated with reliefs and sculptures. At its top, the statues representing Victory and Peace stand out. The monument is part of a larger complex that includes the Altar of the Fatherland, where the remains of an unknown soldier rest, guarded by an honor guard that performs a solemn changing of the guard every two hours. It is a place of patriotic pilgrimage where the sacred fire burns permanently."
+      ]
+    },
+    "nivelDesbloqueo": "22",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "23",
+    "titulo": "Avila",
+    "imagen": "/imagenes/historias/avila.webp",
+    "es": {
+      "presentacion": "Sube el Ávila, Waraira Repano guardián de Caracas. La montaña que protege el valle y ofrece aventuras inolvidables.",
+      "texto": [
+        "El Cerro El Ávila, cuyo nombre indígena es Waraira Repano (\\\"Sierra Grande\\\" o \\\"Tierra de dantas\\\"), es la formación montañosa que separa a la ciudad de Caracas del Mar Caribe. Declarado Parque Nacional en 1958, este imponente pulmón vegetal es el símbolo de identidad más fuerte para los caraqueños, ofreciendo no solo un paisaje verde constante, sino también un refugio para la biodiversidad y el esparcimiento. Su cumbre más alta es el Pico Naiguatá, con 2.765 metros sobre el nivel del mar. Uno de sus puntos más emblemáticos es el complejo turístico del Pico El Ávila, donde se encuentra el histórico Hotel Humboldt, una joya arquitectónica de mediados del siglo XX con su característica forma de torre circular. A este sector se puede acceder a través del Teleférico de Caracas, en un recorrido que ofrece vistas panorámicas espectaculares de la capital hacia un lado y del litoral guaireño hacia el otro. Para los más deportistas, el cerro cuenta con numerosas rutas de senderismo, siendo \\\"Sabas Nieves\\\" la entrada más popular."
+      ]
+    },
+    "en": {
+      "presentacion": "Climb Ávila, Waraira Repano, guardian of Caracas. The mountain that protects the valley and offers unforgettable adventures.",
+      "texto": [
+        "El Ávila Hill, whose indigenous name is Waraira Repano (\\\"Big Mountain Range\\\" or \\\"Land of Tapirs\\\"), is the mountain formation that separates the city of Caracas from the Caribbean Sea. Declared a National Park in 1958, this impressive green lung is the strongest symbol of identity for the people of Caracas, offering not only a constant green landscape but also a refuge for biodiversity and recreation. Its highest peak is Pico Naiguatá, at 2,765 meters above sea level. One of its most emblematic spots is the El Ávila Peak tourist complex, where the historic Humboldt Hotel is located, an architectural gem from the mid-20th century with its characteristic circular tower shape. This area can be accessed via the Caracas Cable Car, on a route that offers spectacular panoramic views of the capital on one side and the Guaira coastline on the other. For the more athletic, the hill has numerous hiking trails, with \\\"Sabas Nieves\\\" being the most popular entrance."
+      ]
+    },
+    "nivelDesbloqueo": "23",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "24",
+    "titulo": "Orquidea",
+    "imagen": "/imagenes/historias/orquidea.webp",
+    "es": {
+      "presentacion": "Admira la orquídea, la Flor Nacional. La Cattleya mossiae, belleza que representa la naturaleza venezolana.",
+      "texto": [
+        "La Orquídea (Cattleya mossiae), conocida popularmente como la Flor de Mayo, fue declarada Flor Nacional de Venezuela el 23 de mayo de 1951. Esta especie es originaria de la cordillera de la Costa y de los Andes venezolanos, donde crece de forma epífita, es decir, apoyada sobre las ramas de los árboles sin alimentarse de ellos, buscando la luz solar a través del dosel del bosque. Se distingue por su elegancia y sus pétalos de color púrpura, lila y rosado, con un centro o \\\"labelo\\\" que presenta manchas amarillas y vetas más oscuras. La Cattleya mossiae debe su nombre común a que su floración ocurre con mayor intensidad durante el mes de mayo, coincidiendo tradicionalmente con las celebraciones de la Cruz de Mayo y el mes de las madres. En el lenguaje de las flores, la orquídea venezolana simboliza la belleza, la feminidad y el orgullo por la biodiversidad del país."
+      ]
+    },
+    "en": {
+      "presentacion": "Admire the orchid, the National Flower. The Cattleya mossiae, a beauty that represents Venezuelan nature.",
+      "texto": [
+        "The Orchid (Cattleya mossiae), popularly known as the May Flower, was declared the National Flower of Venezuela on May 23, 1951. This species is native to the Coastal Range and the Venezuelan Andes, where it grows epiphytically, that is, supported on the branches of trees without feeding on them, seeking sunlight through the forest canopy. It is distinguished by its elegance and its petals in shades of purple, lilac, and pink, with a center or \\\"labellum\\\" that has yellow spots and darker veins. The Cattleya mossiae owes its common name to the fact that it blooms more intensely during the month of May, traditionally coinciding with the celebrations of the Cruz de Mayo and Mother’s Month. In the language of flowers, the Venezuelan orchid symbolizes beauty, femininity, and pride in the country’s biodiversity."
+      ]
+    },
+    "nivelDesbloqueo": "24",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "25",
+    "titulo": "Pan de Jamon",
+    "imagen": "/imagenes/historias/pan-de-jamon.webp",
+    "es": {
+      "presentacion": "Disfruta el pan de jamón, el rey de la Navidad venezolana. Creación de Gustavo Ramella que endulza diciembre.",
+      "texto": [
+        "El Pan de Jamón es una de las creaciones más emblemáticas de la gastronomía de Venezuela, cuya invención se atribuye a finales de diciembre de 1905 en la Panadería \\\"Ramella\\\" de Caracas. Originalmente, era un pan sencillo relleno únicamente con jamón de pierna, pero con el tiempo su receta evolucionó hasta convertirse en la versión que conocemos hoy, fundamental en la cena de Nochebuena y Fin de Año. Su preparación consiste en una masa de pan dulce y suave, elaborada con harina de trigo, leche, mantequilla y huevos. El relleno es una combinación perfecta de sabores contrastantes: jamón ahumado picado o en lonjas, tocineta, aceitunas verdes rellenas de pimentón y pasas. Este equilibrio entre lo salado y lo dulce, envuelto en una costra dorada y brillante (a menudo barnizada con papelón o huevo), lo convierte en el acompañante indispensable de la hallaca y la ensalada de gallina en el plato navideño."
+      ]
+    },
+    "en": {
+      "presentacion": "Enjoy the ham bread, the king of Venezuelan Christmas. Created by Gustavo Ramella, it sweetens December.",
+      "texto": [
+        "Ham Bread is one of the most emblematic creations of Venezuelan gastronomy, whose invention is attributed to late December 1905 at the \\\"Ramella\\\" Bakery in Caracas. Originally, it was a simple bread filled only with leg ham, but over time its recipe evolved into the version we know today, essential at the Christmas Eve and New Year's Eve dinner. Its preparation consists of a soft, sweet bread dough made with wheat flour, milk, butter, and eggs. The filling is a perfect combination of contrasting flavors: chopped or sliced smoked ham, bacon, green olives stuffed with pimento, and raisins. This balance between salty and sweet, wrapped in a golden and shiny crust (often glazed with brown sugar or egg), makes it an indispensable companion to the hallaca and the chicken salad on the Christmas plate."
+      ]
+    },
+    "nivelDesbloqueo": "25",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "26",
+    "titulo": "Diablos de Yare",
+    "imagen": "/imagenes/historias/diablos-de-yare.webp",
+    "es": {
+      "presentacion": "Vive la tradición de los Diablos de Yare, danza sagrada del Jueves de Corpus. Patrimonio cultural reconocido por la UNESCO.",
+      "texto": [
+        "Los Diablos Danzantes de Yare son una de las tradiciones religiosas y culturales más vibrantes de Venezuela, celebrada cada año en el pueblo de San Francisco de Yare, estado Miranda, durante el día de Corpus Christi. Esta festividad, que data del siglo XVIII, representa un acto de devoción popular donde los promeseros, vestidos de rojo y con máscaras grotescas, danzan al ritmo del tambor para rendir culto al Santísimo Sacramento. El momento más simbólico de la celebración ocurre cuando los \\\"diablos\\\", después de danzar por las calles, se rinden ante la iglesia y caen al suelo en señal de humillación, simbolizando la victoria del bien sobre el mal. Las máscaras, elaboradas artesanalmente con colores intensos y cuernos, varían en tamaño y número de cuernos según la jerarquía del danzante. Por su incalculable valor cultural, esta tradición fue declarada Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO en 2012."
+      ]
+    },
+    "en": {
+      "presentacion": "Experience the tradition of the Diablos de Yare, the sacred dance of Corpus Thursday. A cultural heritage recognized by UNESCO.",
+      "texto": [
+        "The Dancing Devils of Yare are one of Venezuela's most vibrant religious and cultural traditions, celebrated every year in the town of San Francisco de Yare, Miranda state, on Corpus Christi day. This festivity, dating back to the 18th century, represents an act of popular devotion where the 'promeseros,' dressed in red and wearing grotesque masks, dance to the rhythm of drums to worship the Blessed Sacrament. The most symbolic moment of the celebration occurs when the 'devils,' after dancing through the streets, surrender before the church and fall to the ground as a sign of humiliation, symbolizing the victory of good over evil. The masks, handcrafted with intense colors and horns, vary in size and number of horns according to the dancer's hierarchy. Due to its incalculable cultural value, this tradition was declared Intangible Cultural Heritage of Humanity by UNESCO in 2012."
+      ]
+    },
+    "nivelDesbloqueo": "26",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "27",
+    "titulo": "Francisco de Miranda",
+    "imagen": "/imagenes/historias/francisco-de-miranda.webp",
+    "es": {
+      "presentacion": "Descubre a Francisco de Miranda, el Precursor. Visionario que soñó con una América unida y libre.",
+      "texto": [
+        "Sebastián Francisco de Miranda y Rodríguez (1750-1816) es conocido como el \\\"Precursor\\\" de la independencia de Venezuela y de Hispanoamérica. Fue un hombre de pensamiento universal, cuya vida parece sacada de una novela de aventuras: es el único americano que tiene su nombre grabado en el Arco del Triunfo en París y su retrato cuelga en la Galería de las Batallas en Versalles, debido a su participación en la Revolución Francesa. Miranda fue un estratega militar y político que participó en los tres grandes movimientos históricos de su era: la Guerra de Independencia de los Estados Unidos, la Revolución Francesa y la Guerra de Independencia de Venezuela. En 1806, lideró la primera expedición libertadora a las costas venezolanas, donde izó por primera vez la bandera tricolor (amarillo, azul y rojo) en la Vela de Coro. Aunque su proyecto de la \\\"Gran Colombia\\\" (que él llamaba Colombeia) no se consolidó bajo su mando, sentó las bases ideológicas que luego seguiría Simón Bolívar. Tras la caída de la Primera República en 1812, fue arrestado y enviado a España, donde murió en la prisión de La Carraca en Cádiz. Trivia de Francisco de Miranda Demuestra cuánto sabes sobre \\\"El Primer Venezolano Universal\\\":"
+      ]
+    },
+    "en": {
+      "presentacion": "Discover Francisco de Miranda, the Forerunner. A visionary who dreamed of a united and free America.",
+      "texto": [
+        "Sebastián Francisco de Miranda y Rodríguez (1750-1816) is known as the \\\"Forerunner\\\" of the independence of Venezuela and Hispanic America. He was a man of universal thought, whose life seems taken from an adventure novel: he is the only American whose name is engraved on the Arc de Triomphe in Paris, and his portrait hangs in the Gallery of Battles in Versailles, due to his participation in the French Revolution. Miranda was a military and political strategist who participated in the three major historical movements of his era: the United States War of Independence, the French Revolution, and the Venezuelan War of Independence. In 1806, he led the first liberation expedition to the Venezuelan coasts, where he raised the tricolor flag (yellow, blue, and red) for the first time in La Vela de Coro. Although his project of the \\\"Gran Colombia\\\" (which he called Colombeia) was not consolidated under his command, it laid the Ideological bases that Simon Bolívar would later follow. After the fall of the First Republic in 1812, he was arrested and sent to Spain, where he died in the La Carraca prison in Cádiz."
+      ]
+    },
+    "nivelDesbloqueo": "27",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "28",
+    "titulo": "Escudo",
+    "imagen": "/imagenes/historias/escudo.webp",
+    "es": {
+      "presentacion": "Estudia el Escudo Nacional, símbolo de nuestra identidad. Cada elemento cuenta la historia de Venezuela.",
+      "texto": [
+        "El Escudo de Armas de la República Bolivariana de Venezuela es, junto a la bandera y el himno, uno de los tres símbolos patrios oficiales del país. Su diseño actual fue aprobado mediante la Ley de Bandera, Escudo e Himno Nacionales el 7 de marzo de 2006, introduciendo cambios significativos para reflejar la historia y la soberanía del país. El escudo está dividido en tres cuarteles que llevan los colores de la bandera nacional. El cuartel de la izquierda (rojo) contiene un manojo de 24 mieses de trigo que simbolizan la unión de los estados de la República y la riqueza de la nación. El cuartel de la derecha (amarillo) presenta un triunfo de armas (espadas, lanzas y arco con flechas) y dos banderas nacionales enlazadas por una corona de laurel, representando la victoria en la guerra. El cuartel inferior (azul) muestra un caballo blanco indómito que galopa hacia la izquierda y mira hacia adelante, símbolo de la libertad e independencia. El escudo está enmarcado por una rama de olivo y una de palma, unidas por una cinta tricolor con inscripciones históricas. Trivia del Escudo de Venezuela Pon a prueba tu atención al detalle sobre nuestro emblema nacional:"
+      ]
+    },
+    "en": {
+      "presentacion": "Study the National Coat of Arms, a symbol of our identity. Each element tells the story of Venezuela.",
+      "texto": [
+        "The Coat of Arms of the Bolivarian Republic of Venezuela is, along with the flag and the anthem, one of the country's three official patriotic symbols. Its current design was approved through the Law of National Flag, Coat of Arms, and Anthem on March 7, 2006, introducing significant changes to reflect the country's history and sovereignty. The coat of arms is divided into three sections that carry the colors of the national flag. The left section (red) contains a bundle of 24 ears of wheat, symbolizing the union of the states of the Republic and the nation's wealth. The right section (yellow) features a triumph of arms (swords, spears, and bow with arrows) and two national flags linked by a laurel crown, representing victory in war. The lower section (blue) shows a wild white horse galloping to the left and looking forward, symbolizing freedom and independence."
+      ]
+    },
+    "nivelDesbloqueo": "28",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "29",
+    "titulo": "Turpial",
+    "imagen": "/imagenes/historias/turpial.webp",
+    "es": {
+      "presentacion": "Escucha el canto del turpial, el Ave Nacional. Sus colores brillantes alegran los campos venezolanos.",
+      "texto": [
+        "El Turpial (Icterus icterus) es el Ave Nacional de Venezuela, designada oficialmente el 23 de mayo de 1958. Se distingue por su plumaje de un amarillo intenso (o naranja) que contrasta con el negro profundo de su cabeza, alas y cola, además de una característica mancha blanca en las alas y un pequeño anillo de color azul celeste alrededor de sus ojos. Es un ave solitaria que habita en zonas cálidas y áridas, como los llanos, cardonales y bosques deciduos. Lo que más destaca del turpial es su canto melodioso y potente, el cual se escucha especialmente al amanecer. A diferencia de otras aves, no construye nidos propios; es conocido por su comportamiento oportunista, ya que suele ocupar nidos abandonados de otras especies (como los del güitío) o incluso expulsar a los habitantes de nidos activos para establecerse allí."
+      ]
+    },
+    "en": {
+      "presentacion": "Listen to the song of the troupial, the National Bird. Its bright colors brighten the Venezuelan fields.",
+      "texto": [
+        "The Troupial (Icterus icterus) is the National Bird of Venezuela, officially designated on May 23, 1958. It is distinguished by its bright yellow (or orange) plumage that contrasts with the deep black of its head, wings, and tail, as well as a characteristic white patch on its wings and a small sky-blue ring around its eyes. It is a solitary bird that inhabits warm and dry areas, such as plains, cactus fields, and deciduous forests. What stands out most about the Troupial is its melodious and powerful song, which is especially heard at dawn. Unlike other birds, it does not build its own nests; it is known for its opportunistic behavior, as it usually occupies abandoned nests of other species (such as those of the güitío) or even evicts the inhabitants of active nests to settle there."
+      ]
+    },
+    "nivelDesbloqueo": "29",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "30",
+    "titulo": "Virgen del Valle",
+    "imagen": "/imagenes/historias/virgen-del-valle.webp",
+    "es": {
+      "presentacion": "Conoce la Virgen del Valle, patrona de Margarita y los pescadores. Milagrosa protectora desde su basílica en el valle.",
+      "texto": [
+        "La Virgen del Valle, conocida cariñosamente como \\\"Vallita\\\", es la patrona del Oriente de Venezuela, de los pescadores y de la Armada Bolivariana. Su imagen se venera en la Basílica Menor de Nuestra Señora del Valle, en la Isla de Margarita, estado Nueva Esparta. La historia cuenta que la imagen llegó a la isla tras ser rescatada de la ciudad de Nueva Cádiz (isla de Cubagua) después de que un maremoto azotara la zona en 1541. Es una de las advocaciones marianas más queridas del país. Cada 8 de septiembre, miles de peregrinos de toda Venezuela viajan a Margarita para celebrar su festividad principal. Se le atribuyen numerosos milagros, siendo el más famoso el de la \\\"Perla de la pierna\\\": un pescador que estaba a punto de perder su pierna por una gangrena prometió a la virgen la primera perla que sacara si se curaba; al sanar, encontró una perla con la forma exacta de una pierna humana, la cual hoy se exhibe en su museo."
+      ]
+    },
+    "en": {
+      "presentacion": "Meet the Virgin of the Valley, patroness of Margarita and the fishermen. A miraculous protector from her basilica in the valley.",
+      "texto": [
+        "The Virgin of the Valley, affectionately known as \\\"Vallita,\\\" is the patroness of Eastern Venezuela, of fishermen, and of the Bolivarian Navy. Her image is venerated in the Minor Basilica of Our Lady of the Valley, on Margarita Island, Nueva Esparta state. The story says that the image arrived on the island after being rescued from the city of Nueva Cádiz (Cubagua Island) following a tsunami that struck the area in 1541. She is one of the most beloved Marian advocations in the country. Every September 8, thousands of pilgrims from all over Venezuela travel to Margarita to celebrate her main feast. Numerous miracles are attributed to her, the most famous being the \\\"Pearl of the Leg\\\": a fisherman who was about to lose his leg to gangrene promised the Virgin the first pearl he found if he were healed; upon recovery, he found a pearl in the exact shape of a human leg, which is now displayed in her museum."
+      ]
+    },
+    "nivelDesbloqueo": "30",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "31",
+    "titulo": "Pico Bolivar",
+    "imagen": "/imagenes/historias/pico-bolivar.webp",
+    "es": {
+      "presentacion": "Alcanza el Pico Bolívar, la cima de Venezuela. 4,978 metros de altura en los majestuosos Andes.",
+      "texto": [
+        "El Pico Bolívar es la montaña más alta de Venezuela, con una altitud oficial de 4.978 metros sobre el nivel del mar. Forma parte de la Sierra Nevada dentro de la Cordillera de los Andes, en el estado Mérida. Su nombre actual le fue otorgado en 1925 en honor al Libertador Simón Bolívar, reemplazando su antiguo nombre indígena, La Columna. En su cima se encuentra un busto de bronce del Libertador, colocado allí en 1935. Es un destino emblemático para el montañismo y el turismo, accesible a través del Teleférico de Mérida \\\"Mukumbarí\\\" (el más alto y segundo más largo del mundo), el cual llega hasta la estación Pico Espejo, desde donde se puede apreciar la majestuosidad del Bolívar. Aunque debido al cambio climático sus glaciares han retrocedido drásticamente, sigue siendo el símbolo máximo de las cumbres andinas venezolanas."
+      ]
+    },
+    "en": {
+      "presentacion": "Reach Pico Bolívar, the highest peak in Venezuela. 4,978 meters tall in the majestic Andes.",
+      "texto": [
+        "Pico Bolívar is the highest mountain in Venezuela, with an official altitude of 4,978 meters above sea level. It is part of the Sierra Nevada within the Andes Mountain Range, in the state of Mérida. Its current name was given in 1925 in honor of the Liberator Simón Bolívar, replacing its former indigenous name, La Columna. At its summit, there is a bronze bust of the Liberator, placed there in 1935. It is an emblematic destination for mountaineering and tourism, accessible via the Mérida Cable Car \\\"Mukumbarí\\\" (the highest and second longest in the world), which reaches the Pico Espejo station, from where one can admire the majesty of Bolívar. Although its glaciers have drastically retreated due to climate change, it remains the ultimate symbol of the Venezuelan Andean peaks."
+      ]
+    },
+    "nivelDesbloqueo": "31",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "32",
+    "titulo": "El Silbon",
+    "imagen": "/imagenes/historias/el-silbon.webp",
+    "es": {
+      "presentacion": "Escucha la leyenda del Silbón, el fantasma de los llanos. Mitología popular que enseña valores y respeto.",
+      "texto": [
+        "El Silbón es una de las figuras más espeluznantes y arraigadas en el folclore de la región de los Llanos, tanto en Venezuela como en Colombia. La leyenda cuenta la historia de un joven que, tras una serie de tragedias familiares (que varían según la versión), fue maldito por su abuelo y condenado a vagar eternamente por la sabana. Es descrito como un hombre extremadamente flaco y alto, que lleva un sombrero de paja y carga un saco lleno de huesos (los restos de sus víctimas). Su característica más aterradora y que le da nombre es su silbido característico, una melodía que asciende y desciende por la escala musical. Se dice que si escuchas el silbido muy fuerte, significa que El Silbón está lejos y no corres peligro; pero si el silbido se escucha tenue y distante, es porque está muy cerca y se aproxima a ti. Aparece principalmente en las noches oscuras y lluviosas, y sus principales víctimas son los hombres borrachos, mujeriegos y los niños desobedientes. Trivia de El Silbón Pon a prueba tu coraje y conocimiento sobre este fantasma llanero:"
+      ]
+    },
+    "en": {
+      "presentacion": "Listen to the legend of El Silbón, the ghost of the plains. Popular mythology that teaches values and respect.",
+      "texto": [
+        "El Silbón is one of the most frightening and entrenched figures in the folklore of the Llanos region, both in Venezuela and Colombia. The legend tells the story of a young man who, after a series of family tragedies (which vary depending on the version), was cursed by his grandfather and condemned to wander eternally through the savanna. He is described as an extremely thin and tall man, wearing a straw hat and carrying a sack full of bones (the remains of his victims). His most terrifying feature, which gives him his name, is his characteristic whistle, a melody that rises and falls along the musical scale. It is said that if you hear the whistle loudly, it means that El Silbón is far away and you are not in danger; but if the whistle is faint and distant, it is because he is very close and approaching you. He appears mainly on dark and rainy nights, and his main victims are drunk men, womanizers, and disobedient children."
+      ]
+    },
+    "nivelDesbloqueo": "32",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "33",
+    "titulo": "Luisa Caceres",
+    "imagen": "/imagenes/historias/luisa-caceres.webp",
+    "es": {
+      "presentacion": "Conoce a Luisa Cáceres, heroína de la independencia. Su valentía y sacrificio inspiraron la lucha libertadora.",
+      "texto": [
+        "Luisa Cáceres de Arismendi (1799-1866) es una de las figuras femeninas más insignes de la gesta emancipadora de Venezuela. Su vida es un testimonio de lealtad, valentía y sacrificio por la causa republicana. A los 15 años, se unió a la \\\"Emigración a Oriente\\\" huyendo de las tropas realistas, y poco después contrajo matrimonio con el general patriota Juan Bautista Arismendi. Su calvario comenzó en 1815, cuando fue capturada por los españoles con el objetivo de presionar a su esposo para que se rindiera. A pesar de estar embarazada y ser sometida a condiciones infrahumanas en el Castillo de Santa Rosa en la Isla de Margarita, Luisa nunca cedió. Su respuesta ante las amenazas fue tajante: \\\"Jamás lograréis que le aconseje faltar a sus deberes\\\". Tras años de cautiverio entre Venezuela y España, logró escapar y regresar a su patria en 1818. Fue la primera mujer cuyos restos fueron trasladados al Panteón Nacional en 1876, recibiendo los máximos honores de la República. Trivia de Luisa Cáceres de Arismendi"
+      ]
+    },
+    "en": {
+      "presentacion": "Meet Luisa Cáceres, heroine of independence. Her bravery and sacrifice inspired the fight for freedom.",
+      "texto": [
+        "SU CALVARIO COMENZÓ EN 1815, CUANDO FUE CAPTURADA POR LOS ESPAÑOLES CON EL OBJETIVO DE PRESIONAR A SU ESPOSO PARA QUE SE RINDIERA. A PESAR DE ESTAR EMBARAZADA Y SER SOMETIDA A CONDICIONES INFRAHUMANAS EN EL CASTILLO DE SANTA ROSA EN LA ISLA DE MARGARITA, LUISA NUNCA CEDIÓ. SU RESPUESTA ANTE LAS AMENAZAS FUE TAJANTE\nLuisa Cáceres de Arismendi (1799-1866) is one of the most distinguished female figures of Venezuela's struggle for independence. Her life is a testament to loyalty, courage, and sacrifice for the republican cause. At the age of 15, she joined the \\\"Emigration to the East\\\" fleeing from the royalist troops, and shortly afterward she married the patriot general Juan Bautista Arismendi. Her ordeal began in 1815 when she was captured by the Spanish with the goal of pressuring her husband into surrendering. Despite being pregnant and subjected to inhumane conditions at the Castillo de Santa Rosa on Margarita Island, Luisa never gave in. Her response to the threats was firm: \\\"You will never make me advise him to neglect his duties.\\\" After years of captivity between Venezuela and Spain, she managed to escape and return to her homeland in 1818. She was the first woman whose remains were transferred to the National Pantheon in 1876, receiving the the highest honors of the Republic."
+      ]
+    },
+    "nivelDesbloqueo": "33",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "34",
+    "titulo": "Manuelita Saenz",
+    "imagen": "/imagenes/historias/manuelita-saenz.webp",
+    "es": {
+      "presentacion": "Descubre a Manuelita Sáenz, la Libertadora del Libertador. La mujer que salvó a Bolívar y desafió su época.",
+      "texto": [
+        "Manuela Sáenz Aizpuru (1797-1856), nacida en Quito, es una de las figuras más fascinantes y aguerridas de la independencia de América del Sur. Aunque durante mucho tiempo la historia tradicional la relegó a un papel secundario, hoy es reconocida como una estratega política y militar de gran relevancia. Su encuentro con Simón Bolívar en 1822 marcó el inicio de una intensa relación amorosa y una alianza política inquebrantable. Manuela no fue solo la compañera de Bolívar; ostentó el rango de Coronela en el Ejército Libertador y participó activamente en la planificación de campañas. Su acto más heroico ocurrió la noche del 25 de septiembre de 1828 en Bogotá (la \\\"Conspiración Septembrina\\\"), cuando enfrentó a los asesinos que buscaban a Bolívar, permitiéndole a este escapar por una ventana. Por este acto, el propio Bolívar la apodó como la \\\"Libertadora del Libertador\\\". Tras la muerte de Bolívar, vivió un largo y digno exilio en Paita, Perú, donde murió en la pobreza, pero manteniendo siempre su lealtad a los ideales bolivarianos."
+      ]
+    },
+    "en": {
+      "presentacion": "Discover Manuelita Sáenz, the Liberator of the Liberator. The woman who saved Bolívar and defied her time.",
+      "texto": [
+        "Manuela Sáenz Aizpuru (1797-1856), born in Quito, is one of the most fascinating and determined figures of South American independence. Although for a long time traditional history relegated her to a secondary role, today she is recognized as a political and military strategist of great significance. Her encounter with Simón Bolívar in 1822 marked the beginning of an intense romantic relationship and an unbreakable political alliance. Manuela was not only Bolívar's companion; she held the rank of Colonel in the Liberator Army and actively participated in planning campaigns. Her most heroic act occurred on the night of September 25, 1828, in Bogotá (the \\\"September Conspiracy\\\"), when she confronted the assassins looking for Bolívar, allowing him to escape through a window. For this act, Bolívar himself nicknamed her the \\\"Liberator of the Liberator.\\\" After Bolívar's death, she lived a long and dignified exile in Paita, Peru, where she died in poverty, but always maintaining her loyalty to Bolivarian ideals."
+      ]
+    },
+    "nivelDesbloqueo": "34",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "35",
+    "titulo": "La Sayona",
+    "imagen": "/imagenes/historias/la-sayona.webp",
+    "es": {
+      "presentacion": "Conoce la leyenda de la Sayona, el espíritu que castiga a los infieles. Mitología llanera que perdura en el tiempo.",
+      "texto": [
+        "La Sayona es, junto a El Silbón, una de las leyendas más famosas y temidas del folclore venezolano. Se trata de la aparición de una mujer alta, elegante y de gran belleza, vestida tradicionalmente con una túnica blanca (llamada \\\"sayón\\\", de donde proviene su nombre). Según el mito, esta mujer era originalmente Casilda, una esposa celosa que, tras ser engañada por una falsa historia de infidelidad, asesinó a su madre y a su propio esposo. Antes de morir, su madre la maldijo a vagar por la eternidad persiguiendo a hombres infieles. La leyenda cuenta que La Sayona se aparece a los hombres que andan en parrandas nocturnas o que engañan a sus parejas. Inicialmente se muestra como una mujer hermosa y seductora para atraer a su víctima a un lugar solitario. Una vez que el hombre está cerca, ella transforma su rostro en una calavera con dientes afilados y ojos de fuego, lanzando un grito aterrador que puede dejar a sus víctimas locas o incluso causarles la muerte por el susto. Es considerada un símbolo de remordimiento y una advertencia moral en la cultura popular."
+      ]
+    },
+    "en": {
+      "presentacion": "Discover the legend of La Sayona, the spirit who punishes the unfaithful. Plains mythology that endures through time.",
+      "texto": [
+        "La Sayona is, along with El Silbón, one of the most famous and feared legends in Venezuelan folklore. It is the apparition of a tall, elegant, and very beautiful woman, traditionally dressed in a white tunic (called \\\"sayón,\\\" from which her name comes). According to the myth, this woman was originally Casilda, a jealous wife who, after being deceived by a false story of infidelity, murdered her mother and her own husband. Before dying, her mother cursed her to wander for eternity chasing unfaithful men. The legend says that La Sayona appears to men who roam in nighttime revelries or who cheat on their partners. Initially, she presents herself as a beautiful and seductive woman to lure her victim to a secluded place. Once the man is close, she transforms her face into a skull with sharp teeth and eyes of fire, letting out a terrifying scream that can drive her victims insane or even cause them death from fright. She is considered a symbol of remorse and a moral warning in popular culture."
+      ]
+    },
+    "nivelDesbloqueo": "35",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "36",
+    "titulo": "Joropo",
+    "imagen": "/imagenes/historias/joropo.webp",
+    "es": {
+      "presentacion": "Baila el joropo, el ritmo que corre por las venas venezolanas. Patrimonio de la Humanidad, música que une al país.",
+      "texto": [
+        "El Joropo es la expresión musical y bailable más emblemática de Venezuela. Aunque tiene sus raíces en el fandango español y la música melódica árabe, se transformó en los llanos venezolanos integrando elementos africanos e indígenas. Fue declarado Patrimonio Cultural de la Nación en 2014, y su nombre no solo se refiere a un género musical, sino también a la fiesta o reunión donde se baila. Existen diversas variantes regionales como el joropo central o el oriental, pero el más conocido internacionalmente es el joropo llanero. Se caracteriza por el uso del arpa, el cuatro y las maracas, que acompañan el canto. El baile es una representación de gallardía y destreza: el hombre realiza el \\\"zapateo\\\" con fuerza, mientras la mujer ejecuta el \\\"escobillao\\\", un movimiento sutil de pies que simula barrer el suelo. Es un ritmo rápido y vibrante que simboliza la identidad recia del habitante de las llanuras."
+      ]
+    },
+    "en": {
+      "presentacion": "Dance the joropo, the rhythm that runs through Venezuelan veins. A World Heritage, music that unites the country.",
+      "texto": [
+        "The Joropo is the most emblematic musical and dance expression of Venezuela. Although it has its roots in the Spanish fandango and Arabic melodic music, it transformed in the Venezuelan plains by integrating African and indigenous elements. It was declared a Cultural Heritage of the Nation in 2014, and its name refers not only to a musical genre but also to the party or gathering where it is danced. There are various regional variants such as the central or eastern joropo, but the most internationally known is the llanero joropo. It is characterized by the use of the harp, the cuatro, and maracas, which accompany the singing. The dance is a representation of gallantry and skill: the man performs the \\\"zapateo\\\" with strength, while the woman executes the \\\"escobillao,\\\" a subtle foot movement that simulates sweeping the floor. It is a fast and vibrant rhythm that symbolizes the strong identity of the plains inhabitant."
+      ]
+    },
+    "nivelDesbloqueo": "36",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "37",
+    "titulo": "Carnvales",
+    "imagen": "/imagenes/historias/carnvales.webp",
+    "es": {
+      "presentacion": "Celebra los Carnavales del Callao, fiesta de calipso y alegría. Tradición caribeña que llena de color y ritmo.",
+      "texto": [
+        "El Carnaval de El Callao, celebrado en el estado Bolívar al sur de Venezuela, es una de las festividades más coloridas y ricas en historia del país. Su origen se remonta al siglo XIX, cuando la fiebre del oro atrajo a inmigrantes de las Antillas británicas y francesas, quienes trajeron consigo sus lenguas (como el patuá), su gastronomía y su música. El resultado fue una mezcla única de tradiciones africanas, caribeñas y venezolanas. El alma de esta fiesta es el Calipso, un ritmo contagioso que se toca con tambores metálicos (steel drums), bumbac y campanas. Los personajes que dan vida al desfile son icónicos: las Madamas, mujeres vestidas con trajes elegantes y coloridos turbantes que representan la sabiduría y el respeto; los Negros Pintos, que se bañan en una mezcla de carbón y aceite para jugar con el público; y los Diablos de El Callao, que con sus enormes máscaras y látigos mantienen el orden en la comparsa. En 2016, esta tradición fue declarada Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO."
+      ]
+    },
+    "en": {
+      "presentacion": "Celebrate the Callao Carnival, a festival of calypso and joy. A Caribbean tradition full of color and rhythm.",
+      "texto": [
+        "The Carnival of El Callao, celebrated in the Bolívar state in southern Venezuela, is one of the most colorful and historically rich festivities in the country. Its origin dates back to the 19th century, when the gold rush attracted immigrants from the British and French Caribbean, who brought with them their languages (such as patuá), cuisine, and music. The result was a unique mixture of African, Caribbean, and Venezuelan traditions. The soul of this festival is Calypso, a contagious rhythm played with metallic drums (steel drums), bumbac, and bells. The characters that bring the parade to life are iconic: the Madamas, women dressed in elegant outfits and colorful headwraps representing wisdom and respect; the Negros Pintos, who coat themselves in a mixture of coal and oil to play with the audience; and the Diablos de El Callao, who with their enormous masks and whips maintain order in the parade. In 2016, this tradition was declared Intangible Cultural Heritage of Humanity by UNESCO."
+      ]
+    },
+    "nivelDesbloqueo": "37",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "38",
+    "titulo": "Divina Pastora",
+    "imagen": "/imagenes/historias/divina-pastora.webp",
+    "es": {
+      "presentacion": "Visita la Divina Pastora, patrona de Lara. La imagen milagrosa que congrega multitudes cada 14 de enero.",
+      "texto": [
+        "La Divina Pastora es la patrona espiritual del estado Lara y una de las advocaciones marianas más queridas de Venezuela. Su procesión, que se realiza cada 14 de enero, es considerada la más grande de Venezuela y una de las más multitudinarias del mundo, solo superada por la de la Virgen de Guadalupe en México y la Virgen de Fátima en Portugal. En este día, la imagen es trasladada desde su santuario en el pueblo de Santa Rosa hasta la Catedral de Barquisimeto en un recorrido de unos 7.5 kilómetros cargada en hombros por sus fieles. El origen de su devoción masiva se remonta a 1856, cuando una terrible epidemia de cólera azotaba a Venezuela. El padre José Macario Yépez, desesperado por el sufrimiento del pueblo, ofreció su vida a la Virgen a cambio de que cesara la enfermedad. Según la tradición, tras la oración del sacerdote y la salida de la imagen a las calles, la epidemia comenzó a desaparecer. Desde entonces, el pueblo larense y visitantes de todo el país se visten de gala y caminan junto a ella en un acto de fe, agradecimiento y esperanza."
+      ]
+    },
+    "en": {
+      "presentacion": "Visit the Divine Shepherdess, patroness of Lara. The miraculous image that draws crowds every January 14.",
+      "texto": [
+        "La Divina Pastora is the spiritual patroness of the state of Lara and one of the most beloved Marian advocations in Venezuela. Her procession, which takes place every January 14, is considered the largest in Venezuela and one of the most crowded in the world, only surpassed by that of the Virgin of Guadalupe in Mexico and the Virgin of Fátima in Portugal. On this day, the image is moved from its sanctuary in the town of Santa Rosa to the Cathedral of Barquisimeto on a route of about 7.5 kilometers, carried on the shoulders of her faithful. The origin of her massive devotion dates back to 1856, when a terrible cholera epidemic struck Venezuela. Father José Macario Yépez, desperate over the suffering of the people, offered his life to the Virgin in exchange for the cessation of the disease. According to tradition, after the priest's prayer and the image's journey into the streets, the epidemic began to disappear. Since then, the people of Lara and visitors from all over the country dress up and walk alongside her in an act of faith, gratitude, and hope."
+      ]
+    },
+    "nivelDesbloqueo": "38",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "39",
+    "titulo": "Salto Angel",
+    "imagen": "/imagenes/historias/salto-angel.webp",
+    "es": {
+      "presentacion": "Maravíllate con el Salto Ángel, la cascada más alta del mundo. 979 metros de agua cayendo desde el Auyantepuy.",
+      "texto": [
+        "El Salto Ángel es una de las maravillas naturales más impresionantes del mundo. Situado en el Parque Nacional Canaima, en el estado Bolívar, Venezuela, es la caída de agua más alta del mundo, con una altura de 979 metros (807 metros de caída libre). El agua desciende desde la cima del Auyantepuy, uno de los tepuyes (mesetas de cima plana) más grandes y famosos del Escudo Guayanés. El salto es conocido en idioma pemón como Kerepakupai Vená, que significa \\\"salto del lugar más profundo\\\". Un Descubrimiento y un Nombre Aunque el piloto estadounidense Jimmie Angel lo dio a conocer al mundo occidental en 1937, tras aterrizar con su avioneta en la cima del Auyantepuy, el primer descriptor documentado del Salto Ángel fue el explorador venezolano Ernesto Sánchez La Cruz en 1910. Sánchez La Cruz, en una de sus expediciones por la región, divisó la imponente cascada y dejó constancia de su existencia en sus diarios, describiéndola como una maravilla natural sin igual. A pesar de este hallazgo temprano, la cascada fue nombrada en honor a Jimmie Angel por la Royal Geographical Society en 1939, tras su mediático aterrizaje. Un Símbolo de Belleza y Aventura El Salto Ángel es un símbolo de la belleza, la biodiversidad y el espíritu aventurero de Venezuela. La cascada forma parte del río Churún, un afluente del río Caroní. El acceso al Salto Ángel es una aventura en sí misma, que suele implicar un vuelo hasta Canaima y luego un viaje en curiara (canoa tradicional) remontando los ríos Carrao y Churún. El recorrido ofrece vistas espectaculares de los tepuyes, la selva y la fauna local. Una caminata por la selva lleva hasta el mirador de Laime, desde donde se puede admirar la cascada en todo su esplendor, un destino imperdible para los amantes de la naturaleza."
+      ]
+    },
+    "en": {
+      "presentacion": "Marvel at Angel Falls, the highest waterfall in the world. 979 meters of water falling from the Auyantepuy.",
+      "texto": [
+        "Angel Falls is one of the most impressive natural wonders in the world. Located in Canaima National Park, in the state of Bolívar, Venezuela, it is the highest waterfall in the world, with a height of 979 meters (807 meters of free fall). The water descends from the top of Auyantepuy, one of the largest and most famous tepuis (flat-topped mountains) of the Guiana Shield. The falls are known in the Pemon language as Kerepakupai Vená, which means \\\"falls of the deepest place.\\\" A Discovery and a Name Although the American pilot Jimmie Angel made it known to the Western world in 1937, after landing his small plane on top of Auyantepuy, the first documented describer of Angel Falls was the Venezuelan explorer Ernesto Sánchez La Cruz in 1910. Sánchez La Cruz, during one of his expeditions in the region, spotted the imposing waterfall and recorded its existence in his journals, describing it as a unique natural marvel. Despite this early discovery, the waterfall was named in honor of Jimmie Angel by the Royal Geographical Society in 1939, after his widely publicized landing. A Symbol of Beauty and Adventure Angel Falls is a symbol of the beauty, biodiversity, and adventurous spirit of Venezuela. The waterfall is part of the Churún River, a tributary of the Caroní River. Access to Angel Falls is an adventure in itself, usually involving a flight to Canaima and then a trip in a curiara (traditional canoe) up the Carrao and Churún rivers. The journey offers spectacular views of the tepuis, the jungle, and the local wildlife. A hike through the jungle leads to the Laime viewpoint, from where the waterfall can be admired in all its splendor, an unmissable destination for nature lovers."
+      ]
+    },
+    "nivelDesbloqueo": "39",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "40",
+    "titulo": "Indigenas",
+    "imagen": "/imagenes/historias/indigenas.webp",
+    "es": {
+      "presentacion": "Conoce a los pueblos indígenas de Venezuela, guardianes de sabiduría ancestral. Warao, Wayúu, Pemón y más, riqueza cultural viva.",
+      "texto": [
+        "Los indígenas venezolanos son los descendientes de los pobladores originales del territorio que hoy ocupa Venezuela. Antes de la llegada de los europeos en el siglo XV, estas comunidades habitaban diversas regiones del país, desarrollando culturas, lenguas y modos de vida adaptados a sus entornos. Hoy en día, constituyen una parte fundamental de la identidad nacional, representando una riqueza cultural y lingüística inestimable. Diversidad y Distribución Se estima que en Venezuela viven alrededor de 51 pueblos indígenas diferentes, con una población total de más de un millón de personas, según el censo de 2011. Estos pueblos se distribuyen principalmente en las regiones de Guayana (Amazonas, Bolívar y Delta Amacuro), los Llanos (Apure, Barinas y Portuguesa), los Andes (Mérida y Táchira) y la costa (Zulia y Sucre). Cada pueblo tiene su propia lengua, cosmovisión, organización social, tradiciones y conocimientos ancestrales sobre el manejo de los recursos naturales. Algunos de los pueblos indígenas más numerosos son los wayuu, los warao, los pemón, los yanomami, los añu, los piaroa, los yekuana y los yukpa. Desafíos y Reconocimiento A pesar de su rica herencia cultural, los indígenas venezolanos enfrentan numerosos desafíos, como la pérdida de sus tierras y territorios ancestrales, la discriminación, la falta de acceso a servicios básicos y la presión de actividades extractivas como la minería y la tala ilegal. En las últimas décadas, ha habido un mayor reconocimiento de sus derechos en la legislación nacional, incluyendo la Constitución de 1999, que declara a Venezuela como un Estado multiétnico y pluricultural y reconoce los derechos de los pueblos indígenas a sus tierras, lenguas, culturas y formas de vida. Sin embargo, la implementación efectiva de estos derechos sigue siendo un reto pendiente."
+      ]
+    },
+    "en": {
+      "presentacion": "Meet the indigenous peoples of Venezuela, guardians of ancestral wisdom. Warao, Wayúu, Pemón, and more, living cultural wealth.",
+      "texto": [
+        "Venezuelan indigenous peoples are the descendants of the original inhabitants of the territory that is now Venezuela. Before the arrival of Europeans in the 15th century, these communities inhabited various regions of the country, developing cultures, languages, and ways of life adapted to their environments. Today, they constitute a fundamental part of the national identity, representing an invaluable cultural and linguistic richness. Diversity and Distribution It is estimated that around 51 different indigenous peoples live in Venezuela, with a total population of more than one million people, according to the 2011 census. These peoples are mainly distributed in the regions of Guayana (Amazonas, Bolívar, and Delta Amacuro), the Llanos (Apure, Barinas, and Portuguesa), the Andes (Mérida and Táchira), and the coast (Zulia and Sucre). Each people has its own language, worldview, social organization, traditions, and ancient knowledge about the management of natural resources. Some of the most numerous indigenous peoples are the Wayuu, the Warao, the Pemón, the Yanomami, the Añu, the Piaroa, the Yekuana, and the Yukpa. Challenges and Recognition Despite their rich cultural heritage, Venezuelan indigenous peoples face numerous challenges, such as the loss of their ancestral lands and territories, discrimination, lack of access to basic services, and pressure from extractive activities such as mining and illegal logging. In recent decades, there has been greater recognition of their rights in national legislation, including the 1999 Constitution, which declares Venezuela as a multi-ethnic and multicultural state and recognizes the rights of indigenous peoples to their lands, languages, cultures, and ways of life. However, the effective implementation of these rights remains an outstanding challenge."
+      ]
+    },
+    "nivelDesbloqueo": "40",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "41",
+    "titulo": "Cacao",
+    "imagen": "/imagenes/historias/cacao.webp",
+    "es": {
+      "presentacion": "Saborea el cacao venezolano, considerado el mejor del mundo. El oro que alguna vez valió más que el metal precioso.",
+      "texto": [
+        "El Cacao (Theobroma cacao) es, sin duda, uno de los tesoros más preciados de Venezuela. El país es reconocido mundialmente por producir el cacao de tipo Criollo, considerado el de mayor calidad, finura y aroma. A diferencia de otras variedades más comunes y amargas, el cacao venezolano destaca por sus notas frutales, florales y de nuez, lo que lo convierte en el ingrediente predilecto de los maestros chocolateros más exigentes de Europa y el mundo. Históricamente, el cacao fue el principal motor de la economía venezolana durante la época colonial. Regiones como Chuao, en el estado Aragua, poseen una denominación de origen controlada debido a la excelencia de sus granos, los cuales son secados al sol en la plaza del pueblo siguiendo técnicas ancestrales. El árbol del cacao crece bajo la sombra de árboles más grandes (como el bucare o el samán) en zonas cálidas y húmedas, produciendo mazorcas de colores vibrantes que van desde el amarillo hasta el rojo purpúreo, dentro de las cuales se esconden las semillas que darán vida al chocolate."
+      ]
+    },
+    "en": {
+      "presentacion": "Savor Venezuelan cocoa, considered the best in the world. The gold that was once worth more than precious metal.",
+      "texto": [
+        "Cocoa (Theobroma cacao) is, without a doubt, one of Venezuela's most precious treasures. The country is globally recognized for producing Criollo-type cocoa, considered to be of the highest quality, fineness, and aroma. Unlike other more common and bitter varieties, Venezuelan cocoa stands out for its fruity, floral, and nutty notes, making it the preferred ingredient of the most demanding chocolatiers in Europe and around the world. Historically, cocoa was the main engine of the Venezuelan economy during the colonial era. Regions like Chuao, in the state of Aragua, have a controlled designation of origin due to the excellence of their beans, which are sun-dried in the town square following ancestral techniques. The cocoa tree grows under the shade of larger trees (such as the bucare or samán) in warm and humid areas, producing vibrant-colored pods ranging from yellow to to purplish red, within which are hidden the seeds that will give life to chocolate."
+      ]
+    },
+    "nivelDesbloqueo": "41",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "42",
+    "titulo": "Hotel Humbolt",
+    "imagen": "/imagenes/historias/hotel-humbolt.webp",
+    "es": {
+      "presentacion": "Descubre el Hotel Humboldt, joya arquitectónica en las alturas. Modernismo venezolano a más de 2,000 metros sobre el mar.",
+      "texto": [
+        "El Hotel Humboldt, inaugurado el 29 de diciembre de 1956, es una de las obras arquitectónicas más icónicas de la modernidad venezolana. Ubicado en la cima del Cerro El Ávila (Waraira Repano) a 2.140 metros sobre el nivel del mar, fue diseñado por el renombrado arquitecto Tomás José Sanabria durante el gobierno de Marcos Pérez Jiménez. Su estructura circular de 19 pisos ofrece una vista de 360 grados que permite contemplar, al mismo tiempo, el valle de Caracas y el Mar Caribe. Este hotel fue concebido como parte de un ambicioso complejo turístico que incluía el sistema de teleféricos. Su diseño fue revolucionario para la época, utilizando una estructura de concreto armado capaz de resistir los fuertes vientos de la montaña. Tras décadas de abandono y cierres intermitentes, el hotel fue sometido a una restauración profunda que rescató sus lujosos acabados originales, sus salones de fiesta y su famosa piscina climatizada, reabriendo sus puertas para devolverle a Caracas su \\\"faro de cristal\\\" en las alturas."
+      ]
+    },
+    "en": {
+      "presentacion": "Discover the Humboldt Hotel, an architectural gem in the heights. Venezuelan modernism more than 2,000 meters above sea level.",
+      "texto": [
+        "The Humboldt Hotel, inaugurated on December 29, 1956, is one of the most iconic architectural works of Venezuelan modernity. Located at the top of Cerro El Ávila (Waraira Repano) at 2,140 meters above sea level, it was designed by the renowned architect Tomás José Sanabria during the government of Marcos Pérez Jiménez. Its 19-story circular structure offers a 360-degree view that allows one to simultaneously admire the Caracas valley and the Caribbean Sea. This hotel was conceived as part of an ambitious tourist complex that included the cable car system. Its design was revolutionary for the time, using a reinforced concrete structure capable of withstanding the strong mountain winds. After decades of abandonment and intermittent closures, the hotel underwent a thorough restoration that recovered its luxurious original finishes, its ballrooms, and its famous heated pool, reopening its doors for to return to Caracas its \\\"glass lighthouse\\\" in the heights."
+      ]
+    },
+    "nivelDesbloqueo": "42",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "43",
+    "titulo": "Pelota",
+    "imagen": "/imagenes/historias/pelota.webp",
+    "es": {
+      "presentacion": "Vive la pasión del béisbol venezolano, deporte que une al país. La LVBP, tradición de peloteros y fanáticos.",
+      "texto": [
+        "El Béisbol es, sin duda alguna, el deporte nacional de Venezuela y una parte fundamental de su tejido cultural. Aunque su origen es estadounidense, el país lo adoptó con un fervor único desde finales del siglo XIX, convirtiéndose en la disciplina que más glorias y exportación de talento ha dado a la nación. La liga profesional local, la LVBP (Liga Venezolana de Béisbol Profesional), paraliza al país cada invierno con la mítica rivalidad entre los Leones del Caracas y los Navegantes del Magallanes. Venezuela es reconocida mundialmente como una \\\"fábrica de grandeligas\\\". Figuras legendarias como Luis Aparicio (único venezolano en el Salón de la Fama de Cooperstown), Miguel Cabrera (ganador de la Triple Corona de bateo) y Félix Hernández han dejado huella en las Grandes Ligas (MLB). El béisbol en Venezuela no es solo un juego; es una tradición familiar que se vive con música de viento en los estadios, \\\"arepas\\\" en las tribunas y una pasión que une a todas las regiones, desde las costas hasta los llanos. Trivia del Béisbol Venezolano Pon a prueba tus conocimientos sobre \\\"el juego de la pelota caliente\\\":"
+      ]
+    },
+    "en": {
+      "presentacion": "Experience the passion of Venezuelan baseball, a sport that unites the country. The LVBP, a tradition of players and fans.",
+      "texto": [
+        "Baseball is, without a doubt, the national sport of Venezuela and a fundamental part of its cultural fabric. Although its origin is American, the country adopted it with a unique fervor since the late 19th century, becoming the sport that has brought the most glory and talent export to the nation. The local professional league, the LVBP (Venezuelan Professional Baseball League), stops the country every winter with the mythical rivalry between the Leones del Caracas and the Navegantes del Magallanes. Venezuela is recognized worldwide as a \\\"major league factory.\\\" Legendary figures such as Luis Aparicio (the only Venezuelan in the Cooperstown Hall of Fame), Miguel Cabrera (Triple Crown batting winner), and Félix Hernández have left their mark in Major League Baseball (MLB). Baseball in Venezuela is not just a game; it is a family tradition experienced with wind music in the stadiums, \\\"arepas\\\" in the stands and a passion that unites all the regions, from the coasts to the plains."
+      ]
+    },
+    "nivelDesbloqueo": "43",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "44",
+    "titulo": "Playas",
+    "imagen": "/imagenes/historias/playas.webp",
+    "es": {
+      "presentacion": "Relájate en las playas de Venezuela, desde Los Roques hasta Margarita. Paraísos caribeños de aguas turquesas y arena blanca.",
+      "texto": [
+        "Venezuela posee un litoral privilegiado bañado por las aguas cálidas del Mar Caribe, ofreciendo una extraordinaria diversidad de playas que van desde tranquilas bahías de arena blanca hasta costas vírgenes rodeadas de selva tropical. El Archipiélago de Los Roques, declarado Parque Nacional en 1972, es considerado uno de los destinos de playa más espectaculares del Caribe, con sus aguas cristalinas color turquesa, arrecifes de coral y más de 300 cayos e islas. Otras joyas incluyen la Isla de Margarita, conocida como \\\"La Perla del Caribe\\\", con playas icónicas como El Yaque (paraíso del windsurf y kitesurf), Playa El Agua y Playa Parguito.\nEl Parque Nacional Morrocoy, en el estado Falcón, ofrece cayos de postal como Cayo Sombrero, Cayo Muerto y Cayo Peraza, donde la arena blanca contrasta con manglares y aguas poco profundas ideales para el snorkel. En el oriente del país, el estado Sucre alberga playas espectaculares como Playa Medina, considerada una de las más hermosas de Venezuela por su combinación de cocoteros, arena dorada y olas perfectas rodeadas de montañas. Playa Colorada, también en Sucre, es famosa por su arena rojiza única y su ambiente tranquilo y familiar.\nEl Parque Nacional Mochima, que abarca los estados Anzoátegui y Sucre, ofrece bahías escondidas accesibles solo por mar, como Playa Arapito y Playa Blanca, donde la biodiversidad marina es excepcional. En el estado Vargas, cerca de Caracas, playas como Los Caracas, Caraballeda y Macuto han sido el escape tradicional de los caraqueños durante generaciones. Más al occidente, en el estado Falcón, las playas de la península de Paraguaná como Adicora atraen a surfistas y amantes de los deportes acuáticos.\nLas playas venezolanas no solo destacan por su belleza natural, sino también por su riqueza cultural y gastronómica. En cada costa se puede disfrutar de la gastronomía marina local: pescado frito, empanadas de cazón, arepas de chicharrón y cócteles de camarones frescos preparados por pescadores locales. Las playas venezolanas representan el espíritu caribeño del país, donde el sol, el mar y la hospitalidad se combinan para crear experiencias inolvidables, consolidando a Venezuela como uno de los destinos de playa más completos y diversos de América Latina."
+      ]
+    },
+    "en": {
+      "presentacion": "Relax on the beaches of Venezuela, from Los Roques to Margarita. Caribbean paradises with turquoise waters and white sand.",
+      "texto": [
+        "Venezuela has a privileged coastline washed by the warm waters of the Caribbean Sea, offering an extraordinary diversity of beaches ranging from peaceful white-sand bays to untouched coasts surrounded by tropical rainforest. The Los Roques Archipelago, declared a National Park in 1972, is considered one of the most spectacular beach destinations in the Caribbean, with its turquoise crystal-clear waters, coral reefs, and more than 300 cays and islands. Other gems include Margarita Island, known as \\\"The Pearl of the Caribbean,\\\" with iconic beaches such as El Yaque (a paradise for windsurfing and kitesurfing), Playa El Agua, and Playa Parguito.\nMorrocoy National Park, in Falcón state, offers postcard-like cays such as Cayo Sombrero, Cayo Muerto, and Cayo Peraza, where the white sand contrasts with mangroves and shallow waters ideal for snorkeling. In the eastern part of the country, Sucre state is home to spectacular beaches like Playa Medina, considered one of the most beautiful from Venezuela for its combination of coconut palms, golden sand, and perfect waves surrounded by mountains. Playa Colorada, also in Sucre, is famous for its unique reddish sand and its calm, family-friendly atmosphere. Mochima National Park, which spans the states of Anzoátegui and Sucre, offers hidden bays accessible only by sea, such as Playa Arapito and Playa Blanca, where marine biodiversity is exceptional. In the state of Vargas, near Caracas, beaches like Los Caracas, Caraballeda, and Macuto have traditionally been the getaway for locals for generations. Further west, in the state of Falcón, the beaches of the Paraguaná Peninsula, such as Adicora, attract surfers and water sports enthusiasts. Venezuelan beaches not only stand out for their natural beauty but also for their cultural and gastronomic richness. On every coast, you can enjoy local seafood cuisine: fried fish, cazón empanadas, chicharrón arepas, and fresh shrimp cocktails prepared with the catch of the day. Venezuelan beaches represent the Caribbean spirit of the country, where the sun, the sea, and hospitality combine to create unforgettable experiences, establishing Venezuela as one of the most complete and diverse beach destinations in Latin America."
+      ]
+    },
+    "nivelDesbloqueo": "44",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "45",
+    "titulo": "Relampagos del Catatumbo",
+    "imagen": "/imagenes/historias/relampagos-del-catatumbo.webp",
+    "es": {
+      "presentacion": "Observa el Relámpago del Catatumbo, fenómeno natural único. El Faro de Maracaibo, espectáculo de luz que ilumina las noches.",
+      "texto": [
+        "El Relámpago del Catatumbo es un fenómeno meteorológico único en el mundo que ocurre en la cuenca del lago de Maracaibo, específicamente en la desembocadura del río Catatumbo, en el estado Zulia. Se caracteriza por la aparición de una serie de relámpagos de manera casi continua y silente, debido a las grandes distancias. Este fenómeno es el resultado de la combinación de vientos alisios que cruzan la superficie del lago y chocan con las imponentes paredes de la Cordillera de los Andes y la Sierra de Perijá. Este \\\"faro\\\" natural ha servido de guía a navegantes desde la época colonial y es famoso por su capacidad de regenerar la capa de ozono de la Tierra, al ser la fuente de energía eléctrica atmosférica más grande del planeta. En el año 2014, ingresó al Libro Guinness de los Récords por poseer el mayor promedio de relámpagos por kilómetro cuadrado al año (250 relámpagos por $km^2$). Además, es el primer fenómeno meteorológico declarado Patrimonio de la Humanidad por la UNESCO."
+      ]
+    },
+    "en": {
+      "presentacion": "Watch the Catatumbo Lightning, a unique natural phenomenon. The Maracaibo Lighthouse, a light show that brightens the nights.",
+      "texto": [
+        "The Catatumbo Lightning is a unique meteorological phenomenon in the world that occurs in the Maracaibo Lake basin, specifically at the mouth of the Catatumbo River, in Zulia state. It is characterized by the appearance of a series of lightning strikes almost continuously and silently, due to the great distances. This phenomenon is the result of the combination of trade winds that cross the surface of the lake and collide with the imposing walls of the Andes Mountains and the Perijá Sierra. This natural 'lighthouse' has served as a guide for navigators since colonial times and is famous for its ability to regenerate the Earth's ozone layer, being the largest source of atmospheric electrical energy on the planet. In 2014, it entered the Guinness Book of Records for having the highest average of lightning strikes per square kilometer per year (250 lightning strikes per $km^2$). Additionally, it is the first meteorological phenomenon declared a World Heritage by UNESCO."
+      ]
+    },
+    "nivelDesbloqueo": "45",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "46",
+    "titulo": "Ron",
+    "imagen": "/imagenes/historias/ron.webp",
+    "es": {
+      "presentacion": "Degusta el ron venezolano, tradición de más de dos siglos. El método de solera que crea rones únicos y reconocidos mundialmente.",
+      "texto": [
+        "El Ron de Venezuela no es solo una bebida; es un embajador de la excelencia venezolana en el mundo. Desde el año 2003, cuenta con la Denominación de Origen Controlada (D.O.C.), un sello de calidad que garantiza que el producto ha sido elaborado bajo estrictos estándares: debe ser producido con caña de azúcar cultivada en el país y tener un envejecimiento mínimo de dos años en barricas de roble blanco. La geografía de Venezuela juega un papel crucial: el contraste entre los días calurosos y las noches frescas de las zonas productoras (como los valles de Aragua) acelera el proceso de maduración, permitiendo que el alcohol interactúe de forma única con la madera. Esto resulta en rones de suavidad excepcional, con notas que van desde la vainilla y el chocolate hasta el cuero y los frutos secos. Marcas como Santa Teresa, Diplomático, Carúpano y Pampero han posicionado a Venezuela como uno de los productores de ron premium más premiados del planeta."
+      ]
+    },
+    "en": {
+      "presentacion": "Taste Venezuelan rum, a tradition of more than two centuries. The solera method that creates unique and world-renowned rums.",
+      "texto": [
+        "Venezuelan Rum is not just a drink; it is an ambassador of Venezuelan excellence in the world. Since 2003, it has had the Controlled Denomination of Origin (D.O.C.), a quality seal that guarantees that the product has been made under strict standards: it must be produced with sugarcane grown in the country and have a minimum aging of two years in white oak barrels. Venezuela's geography plays a crucial role: the contrast between the hot days and the cool nights in the producing areas (such as the Aragua valleys) accelerates the maturation process, allowing the alcohol to interact uniquely with the wood. This results in rums of exceptional smoothness, with notes ranging from vanilla and chocolate to leather and nuts. Brands like Santa Teresa, Diplomático, Carúpano, and Pampero have positioned Venezuela as one of the most awarded premium rum producers on the planet."
+      ]
+    },
+    "nivelDesbloqueo": "46",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "47",
+    "titulo": "Teleferico de Merida",
+    "imagen": "/imagenes/historias/teleferico-de-merida.webp",
+    "es": {
+      "presentacion": "Viaja en el Teleférico de Mérida, el más alto y largo del mundo. De la ciudad a las nubes, aventura en los Andes.",
+      "texto": [
+        "El Sistema de Teleféricos Mukumbarí es una de las obras de ingeniería más impresionantes de Venezuela y un ícono del turismo andino. Ubicado en el estado Mérida, ostenta el título de ser el teleférico más alto del mundo (alcanzando los 4.765 metros sobre el nivel del mar) y el segundo más largo, con un recorrido de 12,5 kilómetros que conecta la ciudad de Mérida con las cumbres del Parque Nacional Sierra Nevada. El trayecto se divide en cinco estaciones: Barinitas (la base en la ciudad), La Montaña, La Aguada, Loma Redonda y, finalmente, Pico Espejo. A medida que las cabinas ascienden, los visitantes experimentan un cambio drástico de paisaje y clima, pasando de la selva nublada de montaña a los páramos andinos adornados con frailejones, hasta llegar a las nieves perpetuas y formaciones rocosas de la alta montaña. Desde la última estación, se tiene una vista privilegiada del Pico Bolívar y las lagunas glaciares que reposan en los valles."
+      ]
+    },
+    "en": {
+      "presentacion": "Ride the Mérida Cable Car, the highest and longest in the world. From the city to the clouds, an adventure in the Andes.",
+      "texto": [
+        "The Mukumbarí Cable Car System is one of the most impressive engineering works in Venezuela and an icon of Andean tourism. Located in the state of Mérida, it holds the title of being the highest cable car in the world (reaching 4,765 meters above sea level) and the second longest, with a route of 12.5 kilometers that connects the city of Mérida with the peaks of Sierra Nevada National Park. The route is divided into five stations: Barinitas (the base in the city), La Montaña, La Aguada, Loma Redonda, and finally, Pico Espejo. As the cabins ascend, visitors experience a drastic change in landscape and climate, moving from the clouded mountain jungle to the Andean moors adorned with frailejones, until reaching the perpetual snows and rocky formations of the high mountains. From the last station, there is a privileged view of Pico Bolívar and the glacial lagoons that rest in the valleys."
+      ]
+    },
+    "nivelDesbloqueo": "47",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "48",
+    "titulo": "Independencia",
+    "imagen": "/imagenes/historias/independencia.webp",
+    "es": {
+      "presentacion": "Recuerda el 5 de julio de 1811, el día de la independencia. El momento en que Venezuela se declaró libre y soberana.",
+      "texto": [
+        "La Firma del Acta de Independencia de Venezuela es el acontecimiento político más trascendental de la historia nacional. Ocurrida el 5 de julio de 1811, marcó la ruptura formal y definitiva con el nexo colonial del Imperio Español. Tras los sucesos del 19 de abril de 1810, se instaló el primer Congreso Constituyente de Venezuela en la Capilla de Santa Rosa de Lima, en Caracas, donde los representantes de siete de las diez provincias decidieron declarar a Venezuela como un Estado soberano e independiente. El documento fue redactado principalmente por Juan Germán Roscio y Francisco Iznardi. En él se exponían las razones por las cuales Venezuela debía ser libre, fundamentadas en los derechos naturales y la opresión sufrida. Aunque la declaración se aprobó el 5 de julio, el proceso de recolección de firmas continuó durante varios días. Este acto convirtió a Venezuela en la primera colonia española en América, y la tercera en todo el continente (después de EE. UU. y Haití), en declarar su independencia absoluta."
+      ]
+    },
+    "en": {
+      "presentacion": "Remember July 5, 1811, Independence Day. The moment when Venezuela declared itself free and sovereign.",
+      "texto": [
+        "The Signing of the Act of Independence of Venezuela is the most transcendent political event in the national history. Occurring on July 5, 1811, it marked the formal and definitive break with the colonial bond of the Spanish Empire. After the events of April 19, 1810, the first Constituent Congress of Venezuela was established in the Chapel of Santa Rosa de Lima, in Caracas, where the representatives of seven of the ten provinces decided to declare Venezuela as a sovereign and independent state. The document was mainly drafted by Juan Germán Roscio and Francisco Iznardi. It laid out the reasons why Venezuela should be free, based on natural rights and the oppression suffered. Although the declaration was approved on July 5, the process of collecting signatures continued for several days. This act made Venezuela the first Spanish colony in America, and the third on the entire continent (after the U.S. and Haiti), to declare its absolute independence."
+      ]
+    },
+    "nivelDesbloqueo": "48",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "49",
+    "titulo": "Petroleo",
+    "imagen": "/imagenes/historias/petroleo.webp",
+    "es": {
+      "presentacion": "Conoce la historia del petróleo en Venezuela, recurso que transformó al país. Del reventón de 1922 a la nacionalización de 1976..",
+      "texto": [
+        "El petróleo ha definido la historia moderna de Venezuela desde principios del siglo XX. Aunque se conocía desde la época prehispánica como \\\"mene\\\" (usado por los indígenas para calafatear canoas e iluminar), su explotación industrial comenzó formalmente con el reventón del pozo Zumaque I en 1914 y, de manera más espectacular, con el Barroso II en 1922, que lanzó un chorro de crudo de 40 metros de altura durante nueve días. Venezuela posee las reservas probadas de petróleo más grandes del mundo, concentradas principalmente en la Faja Petrolífera del Orinoco \\\"Hugo Chávez\\\". Este recurso transformó al país de una sociedad rural y agrícola en una potencia urbana y energética. En 1960, Venezuela fue miembro fundador de la OPEP (Organización de Países Exportadores de Petróleo), liderada por el venezolano Juan Pablo Pérez Alfonzo, quien buscaba estabilizar los precios del mercado mundial."
+      ]
+    },
+    "en": {
+      "presentacion": "Learn about the history of oil in Venezuela, a resource that transformed the country. From the 1922 gusher to the 1976 nationalization.",
+      "texto": [
+        "Oil has defined the modern history of Venezuela since the early 20th century. Although it was known since pre-Hispanic times as \\\"mene\\\" (used by the indigenous people to caulk canoes and provide light), its industrial exploitation formally began with the blowout of the Zumaque I well in 1914 and, more spectacularly, with Barroso II in 1922, which spouted crude oil 40 meters high for nine days. Venezuela has the largest proven oil reserves in the world, concentrated mainly in the Orinoco Petroleum Belt .  This resource transformed the country from a rural and agricultural society into an urban and energy power. In 1960, Venezuela was a founding member of OPEC (Organization of the Petroleum Exporting Countries), led by Venezuelan Juan Pablo Pérez Alfonzo, who sought to stabilize global market prices."
+      ]
+    },
+    "nivelDesbloqueo": "49",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "50",
+    "titulo": "Sapoara",
+    "imagen": "/imagenes/historias/sapoara.webp",
+    "es": {
+      "presentacion": "Descubre la sapoara, el pez migratorio de los llanos. Sus cardúmenes masivos son un espectáculo natural único.",
+      "texto": [
+        "La Sapoara (Semaprochilodus laticeps) es el pez más emblemático del estado Bolívar y el protagonista indiscutible de la gastronomía y el folclore de Ciudad Bolívar. Este pez migratorio aparece en las orillas del río Orinoco únicamente durante el mes de agosto, cuando el río alcanza su máximo nivel. Su llegada da origen a la famosa Feria de la Sapoara, donde pescadores y turistas se reúnen en el Paseo Orinoco para capturarla con redes llamadas \\\"atarrayas\\\". Más allá de su valor culinario (es famosa por su sabor, a pesar de tener muchas espinas), la sapoara está envuelta en una de las leyendas urbanas más famosas de Venezuela. Se dice que todo forastero que visite Ciudad Bolívar y se coma la cabeza de la sapoara, quedará encantado por la magia del río y la hospitalidad de su gente, obligándolo a quedarse para siempre en la ciudad o a casarse con una guayanesa. Es un símbolo de arraigo y tradición que une al hombre con el \\\"Soberbio Orinoco\\\"."
+      ]
+    },
+    "en": {
+      "presentacion": "Discover the sapoara, the migratory fish of the plains. Its massive schools are a unique natural spectacle.",
+      "texto": [
+        "The Sapoara (Semaprochilodus laticeps) is the most emblematic fish of Bolívar state and the undisputed protagonist of the cuisine and folklore of Ciudad Bolívar. This migratory fish appears on the banks of the Orinoco River only during the month of August, when the river reaches its highest level. Its arrival gives rise to the famous Sapoara Fair, where fishermen and tourists gather at the Paseo Orinoco to catch it with nets called \\\"atarrayas.\\\" Beyond its culinary value (it is famous for its flavor, despite having many bones), the sapoara is wrapped in one of Venezuela's most famous urban legends. It is said that any stranger who visits Ciudad Bolívar and eats the head of the sapoara will be enchanted by the magic of the river and the hospitality of its people, forcing them to stay forever in the city or to marry a woman from Guayana. It is a symbol of rootedness and tradition that connects man with the \\\"Proud Orinoco.\\\""
+      ]
+    },
+    "nivelDesbloqueo": "50",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "51",
+    "titulo": "Tonina del orinoco",
+    "imagen": "/imagenes/historias/tonina-del-orinoco.webp",
+    "es": {
+      "presentacion": "",
+      "texto": [
+        "LA TONINA\n\nLa Tonina (Inia geoffrensis), también conocida como delfín rosado o bufeo, es el mamífero acuático más grande de la cuenca del río Orinoco y sus afluentes. A diferencia de sus parientes marinos, las toninas están adaptadas a los ecosistemas de agua dulce y son vitales para el equilibrio de los ríos llaneros. Su coloración varía con la edad: nacen grises y se vuelven rosadas al llegar a la adultez, especialmente los machos, debido al desgaste de la piel y los capilares sanguíneos cerca de la superficie. En Venezuela, la tonina está rodeada de mitos y leyendas por parte de las comunidades indígenas y llaneras. Se dice que son seres mágicos que pueden transformarse en humanos para seducir a las personas o que son guardianes del río. A pesar de su importancia cultural y ecológica, la especie se encuentra en peligro de extinción debido a la contaminación de las aguas, la minería ilegal y la pesca accidental. Ver una tonina saltar en el Orinoco es un espectáculo natural inolvidable y un recordatorio de la biodiversidad de los llanos venezolanos."
+      ]
+    },
+    "en": {
+      "presentacion": "",
+      "texto": [
+        "THE TONINA\n\nThe Tonina (Inia geoffrensis), also known as the pink dolphin or boto, is the largest aquatic mammal in the Orinoco River basin and its tributaries. Unlike its marine relatives, toninas are adapted to freshwater ecosystems and are vital to the balance of the plains rivers. Their coloration varies with age: they are born gray and turn pink when they reach adulthood, especially males, due to the wear of the skin and blood capillaries near the surface. In Venezuela, the tonina is surrounded by myths and legends from indigenous and plains communities. It is said that they are magical beings that can transform into humans to seduce people or that they are guardians of the river. Despite their cultural and ecological importance, the species is endangered due to water pollution, illegal mining, and accidental fishing. Seeing a tonina jump in the Orinoco is an unforgettable natural spectacle and a reminder of the biodiversity of the Venezuelan llanos."
+      ]
+    },
+    "nivelDesbloqueo": "51",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "52",
+    "titulo": "Juegos Tradicionales",
+    "imagen": "/imagenes/historias/juegos-tradicionales.webp",
+    "es": {
+      "presentacion": "Conoce los juegos tradicionales venezolanos, tesoros lúdicos que han acompañado a generaciones. De las metras al papagayo, diversión que une comunidades y preserva nuestra cultura.",
+      "texto": [
+        "Los juegos tradicionales de Venezuela son una herencia viva que mezcla raíces indígenas, africanas y españolas. Más que simples pasatiempos, representan la identidad del venezolano y su ingenio para crear diversión con elementos de la naturaleza como madera, semillas (totumas), hilos y metal. Aunque muchos se juegan durante todo el año, cobran especial protagonismo durante la Semana Santa, cuando las calles y plazas de los pueblos se llenan de niños y adultos compitiendo en sanas contiendas de destreza. Entre los más icónicos se encuentran el Trompo, una pieza de madera torneada con punta de metal que se hace bailar con una cuerda; la Perinola, el desafío de embocar un casco en un palito; y el Gurrufío, un disco (a veces hecho con chapas de refresco aplanadas) que gira velozmente al tensar y aflojar un cordel. También destacan las Metras (bolitas de vidrio), el Papagayo (cometa) que adorna los cielos de colores, y la Zaranda, un juguete hecho de totuma que tradicionalmente bailan las mujeres en el llano mientras los hombres intentan golpearla con sus trompos."
+      ]
+    },
+    "en": {
+      "presentacion": "Discover traditional Venezuelan games, playful treasures that have accompanied generations. From marbles to the kite, fun that brings communities together and preserves our culture.",
+      "texto": [
+        "Venezuela's traditional games are a living heritage that combines indigenous, African, and Spanish roots. More than just pastimes, they represent the identity of Venezuelans and their ingenuity in creating fun with elements from nature such as wood, seeds (totumas), strings, and metal. Although many are played throughout the year, they take on special importance during Holy Week, when the streets and squares of towns fill with children and adults competing in healthy contests of skill. Among the most iconic are the Trompo, a turned wooden piece with a metal tip that is made to spin with a string; the Perinola, the challenge of landing a cap on a stick; and the Gurrufío, a disc (sometimes made from flattened soda caps) that spins quickly when a cord is tightened and loosened. Also notable are the Metras (glass marbles), the Papagayo (kite) that adorns the skies with colors, and the Zaranda, a toy made from calabash that women traditionally dance with in the plains while men try to hit it with their spinning tops."
+      ]
+    },
+    "nivelDesbloqueo": "52",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "53",
+    "titulo": "Casabe",
+    "imagen": "/imagenes/historias/casabe.webp",
+    "es": {
+      "presentacion": "El pan de yuca de Venezuela: tradición de más de tres mil años",
+      "texto": [
+        "El Casabe es un pan ázimo, crujiente, delgado y circular elaborado a base de yuca amarga (Manihot esculenta). Es una de las herencias gastronómicas más antiguas de Venezuela, originaria de los pueblos indígenas (especialmente los Arahuacos, Caribes y Tamanacos), quienes dominaron el complejo proceso necesario para transformar una raíz venenosa en un alimento duradero y nutritivo. Debido a su baja humedad, el casabe puede conservarse por meses sin dañarse, lo que lo convirtió en el bastimento ideal para los viajes de los exploradores y guerreros prehispánicos. El proceso de elaboración es un ritual de ingeniería ancestral: primero se ralla la yuca, luego la masa resultante se introduce en el sebucán (un colador cilíndrico tejido en fibra de palma) para exprimir el yare, un líquido cianhídrico tóxico. La harina seca obtenida, llamada catibía, se tamiza y se extiende sobre un budare caliente, donde el calor une los granos de almidón hasta formar la torta sólida. Es el acompañante perfecto para hervidos, pescados, o simplemente untado con mantequilla y queso, siendo un elemento esencial en la mesa de los llanos, el oriente y el sur de Venezuela."
+      ]
+    },
+    "en": {
+      "presentacion": "Venezuela’s yuca bread: a tradition of over three thousand years.",
+      "texto": [
+        "Casabe is an unleavened, crispy, thin, and round bread made from bitter cassava (Manihot esculenta). It is one of the oldest gastronomic heritages of Venezuela, originating from the indigenous peoples (especially the Arawaks, Caribs, and Tamanacos), who mastered the complex process necessary to transform a poisonous root into a durable and nutritious food. Due to its low moisture, casabe can be preserved for months without spoiling, making it the ideal provision for the journeys of explorers and pre-Hispanic warriors. The preparation process is a ritual of ancestral engineering: first the cassava is grated, then the resulting dough is placed in the sebucán (a cylindrical strainer woven from palm fiber) to squeeze out the yare, a toxic cyanide-containing liquid. The dry flour obtained, called catibía, is sifted and spread over a hot budare, where the heat binds the starch grains together until forming the solid cake. It is the perfect accompaniment for boiled foods, fish, or simply spread with butter and cheese, being an essential element on the table of the plains, the east, and the south of Venezuela."
+      ]
+    },
+    "nivelDesbloqueo": "53",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "54",
+    "titulo": "",
+    "imagen": "/imagenes/historias/golfeado.webp",
+    "es": {
+      "presentacion": "El caracol dulce de Venezuela: papelón, queso y anís.",
+      "texto": [
+        "EL GOLFEADO\n\nEl golfeado es un pan dulce venezolano en forma de caracol: masa suave y esponjosa rellena de papelón (panela) rallado y queso blanco, aromatizado con anís y a veces canela, y barnizado con melao de papelón. Su origen está en la Región Capital, en Petare, a principios del siglo XX. Se atribuye a los hermanos Duarte —panaderos de origen canario—, que lo elaboraban en la Panadería Central, en la calle Libertad (cerca de la actual Redoma de Petare, frente a la plaza Sagrado Corazón de Jesús). En esa época Petare era parada obligada para quienes iban hacia el oriente; los viajeros compraban pan y probaban este dulce recién horneado en hornos de leña. La combinación de dulce (papelón) y salado (queso), la forma de caracol y el aroma a anís lo hicieron muy popular y la receta se extendió a Sabana Grande, Palo Verde, El Junquito, Los Teques y luego a todo el país. El nombre \"golfeado\" (o \"golfiao\") viene de la semilla de café en forma de caracol que los campesinos llamaban \"golfiao\" en la hacienda cafetalera \"El Hoyo de las Tapias\", que abastecía a Caracas. Cuenta la tradición que un cliente, al ver el bollo enrollado, pidió: \"Deme eso que parece un golfiao\", y el nombre quedó. Hoy el golfeado es un símbolo de la repostería venezolana, se sirve con queso de mano y sigue ligado a Petare y al estado Miranda como su cuna."
+      ]
+    },
+    "en": {
+      "presentacion": "Venezuelan sweet spiral: papelón, cheese and anise.",
+      "texto": [
+        "GOLFEADO\n\nGolfeado is a Venezuelan sweet bread shaped like a snail: soft, fluffy dough filled with grated papelón (panela) and white cheese, flavored with anise and sometimes cinnamon, and glazed with papelón syrup. It originated in the Capital Region, in Petare, in the early twentieth century. It is credited to the Duarte siblings—bakers of Canary Island descent—who made it at Panadería Central on Calle Libertad (near today’s Redoma de Petare, facing Plaza Sagrado Corazón de Jesús). At that time Petare was a common stop for travelers heading east; they would buy bread and try this sweet fresh from wood-fired ovens. The mix of sweet (papelón) and salty (cheese), the spiral shape, and the anise aroma made it very popular, and the recipe spread to Sabana Grande, Palo Verde, El Junquito, Los Teques, and eventually across Venezuela. The name \"golfeado\" (or \"golfiao\") comes from the spiral-shaped coffee seed that farmworkers called \"golfiao\" at the \"El Hoyo de las Tapias\" coffee estate, which supplied Caracas. Tradition says a customer, seeing the rolled bun, asked for \"that thing that looks like a golfiao,\" and the name stuck. Today golfeado is a symbol of Venezuelan baking, often served with queso de mano, and remains tied to Petare and Miranda as its birthplace."
+      ]
+    },
+    "nivelDesbloqueo": "54",
+    "abiertaPorDefecto": false
+  }
+]

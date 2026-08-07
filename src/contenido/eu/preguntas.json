@@ -1,0 +1,3890 @@
+[
+  {
+    "id": "story1.1_question1",
+    "historia": "1",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Quién fue el principal autor del borrador de la Declaración de Independencia?",
+      "opciones": [
+        "George Washington.",
+        "Benjamin Franklin.",
+        "Thomas Jefferson",
+        "John Adams."
+      ]
+    },
+    "en": {
+      "enunciado": "Who was the principal author of the draft of the Declaration of Independence?",
+      "opciones": [
+        "George Washington.",
+        "Benjamin Franklin.",
+        "Thomas Jefferson",
+        "John Adams."
+      ]
+    }
+  },
+  {
+    "id": "story1.1_question2",
+    "historia": "1",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué dos padres fundadores y ex-presidentes murieron exactamente el mismo día, el 4 de julio de 1826 (50 aniversario de la firma)?",
+      "opciones": [
+        "George Washington y Alexander Hamilton.",
+        "Thomas Jefferson y John Adams",
+        "James Madison y James Monroe.",
+        "Benjamin Franklin y Patrick Henry."
+      ]
+    },
+    "en": {
+      "enunciado": "Which two Founding Fathers and former presidents died on the exact same day—July 4, 1826 (the 50th anniversary of the signing)?",
+      "opciones": [
+        "George Washington and Alexander Hamilton.",
+        "Thomas Jefferson and John Adams",
+        "James Madison and James Monroe.",
+        "Benjamin Franklin and Patrick Henry."
+      ]
+    }
+  },
+  {
+    "id": "story1.1_question3",
+    "historia": "1",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué ciudad se firmó originalmente la Declaración de Independencia?",
+      "opciones": [
+        "Washington D.C.",
+        "Nueva York.",
+        "Filadelfia",
+        "Boston."
+      ]
+    },
+    "en": {
+      "enunciado": "In which city was the Declaration of Independence originally signed?",
+      "opciones": [
+        "Washington D.C.",
+        "New York.",
+        "Philadelphia",
+        "Boston."
+      ]
+    }
+  },
+  {
+    "id": "story2.1_question1",
+    "historia": "2",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el diseño de tela más icónico y tradicional asociado con las mantas de picnic en los Estados Unidos?",
+      "opciones": [
+        "Flores de colores.",
+        "Rayas marineras.",
+        "Cuadros rojos y blancos (Gingham)",
+        "Color sólido verde bosque."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the most iconic and traditional fabric pattern associated with picnic blankets in the United States?",
+      "opciones": [
+        "Colorful floral prints.",
+        "Nautical stripes.",
+        "Red and white checks (Gingham)",
+        "Solid forest green."
+      ]
+    }
+  },
+  {
+    "id": "story2.1_question2",
+    "historia": "2",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de estos platos es considerado un \"imprescindible\" en un picnic clásico estadounidense por su facilidad de transporte y sabor?",
+      "opciones": [
+        "Sopa de cebolla caliente.",
+        "Helado de vainilla derretido.",
+        "Ensalada de patata o de pasta",
+        "Filete recién salido de la parrilla."
+      ]
+    },
+    "en": {
+      "enunciado": "Which of these dishes is considered a \"must-have\" at a classic American picnic due to its portability and flavor?",
+      "opciones": [
+        "Hot onion soup.",
+        "Melted vanilla ice cream.",
+        "Potato salad or pasta salad",
+        "Steak fresh off the grill."
+      ]
+    }
+  },
+  {
+    "id": "story2.1_question3",
+    "historia": "2",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué famoso parque de la ciudad de Nueva York se encuentra el \"Sheep Meadow\", uno de los lugares más populares del mundo para hacer un picnic urbano?",
+      "opciones": [
+        "Prospect Park.",
+        "Central Park",
+        "Bryant Park.",
+        "High Line Park"
+      ]
+    },
+    "en": {
+      "enunciado": "In which famous New York City park is \"Sheep Meadow\" located—one of the most popular spots in the world for an urban picnic?",
+      "opciones": [
+        "Prospect Park.",
+        "Central Park",
+        "Bryant Park.",
+        "High Line Park."
+      ]
+    }
+  },
+  {
+    "id": "story3.1_question1",
+    "historia": "3",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál fue el primer Parque Nacional del mundo, establecido en los Estados Unidos en 1872?",
+      "opciones": [
+        "Yosemite.",
+        "Gran Cañón.",
+        "Yellowstone",
+        "Everglades."
+      ]
+    },
+    "en": {
+      "enunciado": "What was the world's first National Park, established in the United States in 1872?",
+      "opciones": [
+        "Yosemite.",
+        "Grand Canyon.",
+        "Yellowstone",
+        "Everglades."
+      ]
+    }
+  },
+  {
+    "id": "story3.1_question2",
+    "historia": "3",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué ciudad estadounidense fue la primera capital oficial de la nación bajo la Constitución actual en 1789?",
+      "opciones": [
+        "Filadelfia.",
+        "Nueva York",
+        "Washington D.C.",
+        "Boston."
+      ]
+    },
+    "en": {
+      "enunciado": "Which U.S. city served as the nation's first official capital under the current Constitution in 1789?",
+      "opciones": [
+        "Philadelphia.",
+        "New York",
+        "Washington D.C.",
+        "Boston."
+      ]
+    }
+  },
+  {
+    "id": "story3.1_question3",
+    "historia": "3",
+    "numero": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál es el río más largo de los Estados Unidos, que fluye desde las Rocosas hasta el río Misisipi?",
+      "opciones": [
+        "Río Grande.",
+        "Río Colorado.",
+        "Río Hudson.",
+        "Rio Musuri"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the longest river in the United States, flowing from the Rocky Mountains to the Mississippi River?",
+      "opciones": [
+        "Rio Grande.",
+        "Colorado River.",
+        "Hudson River.",
+        "Missouri River"
+      ]
+    }
+  },
+  {
+    "id": "story4.1_question1",
+    "historia": "4",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el principal agente responsable de haber tallado el Gran Cañón a través de los milenios?",
+      "opciones": [
+        "El viento del desierto.",
+        "Glaciares de la Edad de Hielo.",
+        "El río Colorado",
+        "Movimientos volcánicos subterráneos."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the primary agent responsible for carving the Grand Canyon over the millennia?",
+      "opciones": [
+        "Desert winds.",
+        "Ice Age glaciers.",
+        "The Colorado River",
+        "Subterranean volcanic activity."
+      ]
+    }
+  },
+  {
+    "id": "story4.1_question2",
+    "historia": "4",
+    "numero": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Aproximadamente cuántos años de historia geológica están expuestos en las capas de roca más profundas del cañón?",
+      "opciones": [
+        "10 millones de años.",
+        "500 millones de años.",
+        "1.000 millones de años.",
+        "Cerca de 2.000 millones de años"
+      ]
+    },
+    "en": {
+      "enunciado": "Approximately how many years of geological history are exposed in the deepest rock layers of the canyon?",
+      "opciones": [
+        "10 million years.",
+        "500 million years.",
+        "1 billion years.",
+        "Nearly 2 billion years"
+      ]
+    }
+  },
+  {
+    "id": "story4.1_question3",
+    "historia": "4",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué tribu indígena vive en una de las zonas más remotas del cañón, famosa por sus espectaculares cataratas de agua azul turquesa?",
+      "opciones": [
+        "Los Apaches.",
+        "Los Havasupai",
+        "Los Sioux.",
+        "Los Cherokees."
+      ]
+    },
+    "en": {
+      "enunciado": "Which indigenous tribe lives in one of the most remote areas of the canyon, famous for its spectacular turquoise-blue waterfalls?",
+      "opciones": [
+        "The Apaches.",
+        "The Havasupai",
+        "The Sioux.",
+        "The Cherokees."
+      ]
+    }
+  },
+  {
+    "id": "story5.1_question1",
+    "historia": "5",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿A qué edad aproximada desarrollan las águilas calvas el plumaje blanco característico de su cabeza y cola?",
+      "opciones": [
+        "A los 6 meses de nacidas.",
+        "Al año de edad.",
+        "A los 4 o 5 años",
+        "Solo cuando llegan a la vejez, después de los 15 años."
+      ]
+    },
+    "en": {
+      "enunciado": "At approximately what age do bald eagles develop the characteristic white plumage on their heads and tails?",
+      "opciones": [
+        "At 6 months old.",
+        "At one year of age.",
+        "At 4 or 5 years old",
+        "Only when they reach old age, after 15 years."
+      ]
+    }
+  },
+  {
+    "id": "story5.1_question2",
+    "historia": "5",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el tipo de alimento principal en la dieta de un águila calva que vive cerca de la costa?",
+      "opciones": [
+        "Conejos y liebres.",
+        "Serpientes y lagartos.",
+        "Peces",
+        "Insectos grandes y bayas."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the primary food source in the diet of a bald eagle living near the coast?",
+      "opciones": [
+        "Rabbits and hares.",
+        "Snakes and lizards.",
+        "Fish",
+        "Large insects and berries."
+      ]
+    }
+  },
+  {
+    "id": "story5.1_question3",
+    "historia": "5",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué factor ambiental principal llevó a la especie al borde de la extinción en el siglo XX?",
+      "opciones": [
+        "La caza excesiva por sus plumas.",
+        "El uso del pesticida DDT, que debilitaba los cascarones de sus huevos",
+        "La pérdida de hábitat debido a la deforestación.",
+        "Una enfermedad viral que afectaba solo a las aves rapaces."
+      ]
+    },
+    "en": {
+      "enunciado": "What primary environmental factor drove the species to the brink of extinction in the 20th century?",
+      "opciones": [
+        "Excessive hunting for their feathers.",
+        "The use of the pesticide DDT, which weakened their eggshells.",
+        "Habitat loss due to deforestation.",
+        "A viral disease that affected only birds of prey."
+      ]
+    }
+  },
+  {
+    "id": "story6.1_question1",
+    "historia": "6",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál fue el documento emitido por Lincoln en 1863 que declaró la libertad de los esclavos en los estados rebeldes?",
+      "opciones": [
+        "La Carta Magna.",
+        "La Proclamación de Emancipación",
+        "La Declaración de Derechos.",
+        "El Tratado de Versalles."
+      ]
+    },
+    "en": {
+      "enunciado": "What document, issued by Lincoln in 1863, declared the freedom of enslaved people in the rebellious states?",
+      "opciones": [
+        "The Magna Carta.",
+        "The Emancipation Proclamation",
+        "The Bill of Rights.",
+        "The Treaty of Versailles."
+      ]
+    }
+  },
+  {
+    "id": "story6.1_question2",
+    "historia": "6",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué ciudad pronunció Lincoln su discurso más famoso, que comienza con la frase \"Hace cuatro veintenas y siete años...\"?",
+      "opciones": [
+        "Washington D.C.",
+        "Richmond.",
+        "Gettysburg",
+        "Chicago."
+      ]
+    },
+    "en": {
+      "enunciado": "In which city did Lincoln deliver his most famous speech, which begins with the phrase \"Four score and seven years ago...\"?",
+      "opciones": [
+        "Washington D.C.",
+        "Richmond.",
+        "Gettysburg",
+        "Chicago."
+      ]
+    }
+  },
+  {
+    "id": "story6.1_question3",
+    "historia": "6",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Antes de ser presidente, ¿cuál era la profesión principal de Lincoln en Illinois?",
+      "opciones": [
+        "Médico cirujano.",
+        "Abogado",
+        "General del ejército.",
+        "Banquero."
+      ]
+    },
+    "en": {
+      "enunciado": "Before becoming president, what was Lincoln's primary profession in Illinois?",
+      "opciones": [
+        "Surgeon.",
+        "Lawyer",
+        "Army General.",
+        "Banker."
+      ]
+    }
+  },
+  {
+    "id": "story7.1_question1",
+    "historia": "7",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es la única frase oficial que Smokey Bear ha utilizado en sus campañas desde 1944 (con una pequeña variación en 2001)?",
+      "opciones": [
+        "\"Cuida los árboles, son vida\".",
+        "\"El fuego es el enemigo del bosque\".",
+        "\"Solo TÚ puedes prevenir los incendios forestales\"",
+        "\"No dejes rastro en la naturaleza\"."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the only official catchphrase Smokey Bear has used in his campaigns since 1944 (with a slight variation in 2001)?",
+      "opciones": [
+        "\"Care for the trees; they are life.\"",
+        "\"Fire is the forest's enemy.\"",
+        "\"Only YOU Can Prevent Forest Fires\"",
+        "\"Leave no trace in nature.\""
+      ]
+    }
+  },
+  {
+    "id": "story7.1_question2",
+    "historia": "7",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Smokey Bear es tan famoso que el Servicio Postal de los EE. UU. le asignó algo que muy pocas personas o personajes tienen. ¿Qué es?",
+      "opciones": [
+        "Su propio avión privado.",
+        "Su propio código postal (ZIP Code) exclusivo",
+        "Una oficina de correos dentro de una cueva.",
+        "El derecho a enviar cartas gratis de por vida."
+      ]
+    },
+    "en": {
+      "enunciado": "Smokey Bear is so famous that the U.S. Postal Service assigned him something that very few people or characters possess. What is it?",
+      "opciones": [
+        "His own private plane.",
+        "His own exclusive postal code (ZIP Code)",
+        "A post office inside a cave.",
+        "The right to send letters for free for life."
+      ]
+    }
+  },
+  {
+    "id": "story7.1_question3",
+    "historia": "7",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué tipo de oso es Smokey, basado tanto en la ilustración original como en el cachorro real encontrado en Nuevo México?",
+      "opciones": [
+        "Oso Grizzly.",
+        "Oso Negro Americano",
+        "Oso Pardo de Alaska.",
+        "Osos Kodiak"
+      ]
+    },
+    "en": {
+      "enunciado": "What type of bear is Smokey, based on both the original illustration and the actual cub found in New Mexico?",
+      "opciones": [
+        "Grizzly Bear.",
+        "American Black Bear",
+        "Alaskan Brown Bear.",
+        "Kodiak Bear."
+      ]
+    }
+  },
+  {
+    "id": "story8.1_question1",
+    "historia": "8",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué ciudad estadounidense terminaba oficialmente la Ruta 66, marcada hoy por un famoso letrero en su muelle?",
+      "opciones": [
+        "Los Ángeles.",
+        "Santa Mónica",
+        "San Francisco.",
+        "San Diego."
+      ]
+    },
+    "en": {
+      "enunciado": "In which U.S. city did Route 66 officially end—a spot marked today by a famous sign on its pier?",
+      "opciones": [
+        "Los Angeles.",
+        "Santa Monica",
+        "San Francisco.",
+        "San Diego."
+      ]
+    }
+  },
+  {
+    "id": "story8.1_question2",
+    "historia": "8",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Quién apodó a la Ruta 66 como \"La Carretera Madre\" (The Mother Road) en su famosa novela de 1939, Las uvas de la ira?",
+      "opciones": [
+        "Mark Twain.",
+        "Jack Kerouac.",
+        "John Steinbeck",
+        "Ernest Hemingway."
+      ]
+    },
+    "en": {
+      "enunciado": "Who nicknamed Route 66 \"The Mother Road\" in his famous 1939 novel, *The Grapes of Wrath*?",
+      "opciones": [
+        "Mark Twain.",
+        "Jack Kerouac.",
+        "John Steinbeck",
+        "Ernest Hemingway."
+      ]
+    }
+  },
+  {
+    "id": "story8.1_question3",
+    "historia": "8",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de estos estados NO era atravesado originalmente por la Ruta 66?",
+      "opciones": [
+        "Oklahoma.",
+        "Arizona.",
+        "Nevada",
+        "Missouri"
+      ]
+    },
+    "en": {
+      "enunciado": "Which of these states was NOT originally traversed by Route 66?",
+      "opciones": [
+        "Oklahoma.",
+        "Arizona.",
+        "Nevada",
+        "Missouri."
+      ]
+    }
+  },
+  {
+    "id": "story9.1_question1",
+    "historia": "9",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se llama el trofeo que recibe el equipo ganador del Super Bowl cada año?",
+      "opciones": [
+        "Copa Stanley.",
+        "Trofeo Vince Lombardi",
+        "Trofeo Heisman.",
+        "Copa del Comisionado."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the trophy awarded to the winning team of the Super Bowl each year?",
+      "opciones": [
+        "Stanley Cup.",
+        "Vince Lombardi Trophy",
+        "Heisman Trophy.",
+        "Commissioner's Trophy."
+      ]
+    }
+  },
+  {
+    "id": "story9.1_question2",
+    "historia": "9",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuántas yardas debe avanzar un equipo en cuatro oportunidades (downs) para obtener un nuevo set de jugadas?",
+      "opciones": [
+        "5 yardas.",
+        "10 yardas",
+        "15 yardas.",
+        "20 yardas."
+      ]
+    },
+    "en": {
+      "enunciado": "How many yards must a team advance in four opportunities (downs) to earn a new set of downs?",
+      "opciones": [
+        "5 yards.",
+        "10 yards",
+        "15 yards.",
+        "20 yards."
+      ]
+    }
+  },
+  {
+    "id": "story9.1_question3",
+    "historia": "9",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es la puntuación que se otorga por un \"Touchdown\" antes de intentar el punto extra?",
+      "opciones": [
+        "3 puntos.",
+        "6 puntos",
+        "7 puntos.",
+        "2 puntos."
+      ]
+    },
+    "en": {
+      "enunciado": "How many points are awarded for a \"touchdown\" before attempting the extra point?",
+      "opciones": [
+        "3 points.",
+        "6 points",
+        "7 points.",
+        "2 points."
+      ]
+    }
+  },
+  {
+    "id": "story10.1_question1",
+    "historia": "10",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué innovación de seguridad fue introducida por primera vez en un automóvil comercial con el Ford Modelo A?",
+      "opciones": [
+        "Cinturones de seguridad.",
+        "Parabrisas de vidrio laminado de seguridad",
+        "Frenos de disco.",
+        "Luces de cruce automáticas."
+      ]
+    },
+    "en": {
+      "enunciado": "What safety innovation was introduced for the first time in a commercial automobile with the Ford Model A?",
+      "opciones": [
+        "Seat belts.",
+        "Laminated safety glass windshields.",
+        "Disc brakes.",
+        "Automatic headlights."
+      ]
+    }
+  },
+  {
+    "id": "story10.1_question2",
+    "historia": "10",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "A diferencia del Modelo T, ¿cuál fue una de las grandes novedades estéticas del Modelo A?",
+      "opciones": [
+        "Solo se fabricaba en color verde.",
+        "No tenía techo.",
+        "Se ofrecía en una gran variedad de colores y estilos de carrocería",
+        "Tenía ruedas de madera maciza."
+      ]
+    },
+    "en": {
+      "enunciado": "Unlike the Model T, what was one of the major aesthetic innovations of the Model A?",
+      "opciones": [
+        "It was manufactured only in green.",
+        "It had no roof.",
+        "It was offered in a wide variety of colors and body styles.",
+        "It had solid wooden wheels."
+      ]
+    }
+  },
+  {
+    "id": "story10.1_question3",
+    "historia": "10",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuántas velocidades tenía la nueva caja de cambios manual del Modelo A?",
+      "opciones": [
+        "Una velocidad.",
+        "Dos velocidades.",
+        "Tres velocidades",
+        "Cinco velocidades"
+      ]
+    },
+    "en": {
+      "enunciado": "How many gears did the Model A's new manual transmission have?",
+      "opciones": [
+        "One gear.",
+        "Two gears.",
+        "Three gears.",
+        "Five gears"
+      ]
+    }
+  },
+  {
+    "id": "story11.1_question1",
+    "historia": "11",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál fue el nombre del primer avión que compró Amelia Earhart con sus ahorros?",
+      "opciones": [
+        "El Electra.",
+        "El Canario",
+        "El Lockheed Vega.",
+        "El Águila Blanca."
+      ]
+    },
+    "en": {
+      "enunciado": "What was the name of the first airplane Amelia Earhart purchased with her own savings?",
+      "opciones": [
+        "The Electra.",
+        "The Canary",
+        "The Lockheed Vega.",
+        "The White Eagle."
+      ]
+    }
+  },
+  {
+    "id": "story11.1_question2",
+    "historia": "11",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Además de ser aviadora, ¿en qué otra industria incursionó Amelia diseñando sus propios productos?",
+      "opciones": [
+        "En la industria automotriz.",
+        "En la fabricación de relojes de precisión.",
+        "En la moda y el diseño de equipaje",
+        "En la producción de cosméticos para deportistas."
+      ]
+    },
+    "en": {
+      "enunciado": "In addition to being an aviator, in which other industry did Amelia venture by designing her own products?",
+      "opciones": [
+        "The automotive industry.",
+        "Precision watchmaking.",
+        "Fashion and luggage design",
+        "Cosmetics for athletes."
+      ]
+    }
+  },
+  {
+    "id": "story11.1_question3",
+    "historia": "11",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué récord histórico alcanzó Amelia en mayo de 1932?",
+      "opciones": [
+        "Fue la primera persona en volar sobre el Polo Sur.",
+        "Fue la primera mujer en cruzar el Atlántico sola en un avión",
+        "Fue la primera mujer en alcanzar la velocidad del sonido.",
+        "Rompió el récord de permanencia en el aire sin reabastecer combustible."
+      ]
+    },
+    "en": {
+      "enunciado": "What historic record did Amelia achieve in May 1932?",
+      "opciones": [
+        "She was the first person to fly over the South Pole.",
+        "She was the first woman to cross the Atlantic alone in an airplane.",
+        "She was the first woman to reach the speed of sound.",
+        "She broke the record for time spent in the air without refueling."
+      ]
+    }
+  },
+  {
+    "id": "story12.1_question1",
+    "historia": "12",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se llama el estilo de servir el pie de manzana acompañado de una bola de helado de vainilla?",
+      "opciones": [
+        "Estilo Americano.",
+        "À la mode",
+        "Deep Dish.",
+        "Continental."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the style of serving apple pie accompanied by a scoop of vanilla ice cream?",
+      "opciones": [
+        "American Style.",
+        "À la mode",
+        "Deep Dish.",
+        "Continental."
+      ]
+    }
+  },
+  {
+    "id": "story12.1_question2",
+    "historia": "12",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el estado de la Unión que tiene al Apple Pie como su postre oficial oficial?",
+      "opciones": [
+        "Nueva York.",
+        "Vermont",
+        "Georgia.",
+        "Florida."
+      ]
+    },
+    "en": {
+      "enunciado": "Which U.S. state has designated apple pie as its official state dessert?",
+      "opciones": [
+        "New York.",
+        "Vermont",
+        "Georgia.",
+        "Florida."
+      ]
+    }
+  },
+  {
+    "id": "story12.1_question3",
+    "historia": "12",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué tipo de manzana es la más recomendada por los expertos para que el relleno no se deshaga al hornear?",
+      "opciones": [
+        "Red Delicious.",
+        "Granny Smith",
+        "Gala.",
+        "Fuji."
+      ]
+    },
+    "en": {
+      "enunciado": "Which type of apple is most recommended by experts to ensure the filling doesn't turn to mush during baking?",
+      "opciones": [
+        "Red Delicious.",
+        "Granny Smith",
+        "Gala.",
+        "Fuji."
+      ]
+    }
+  },
+  {
+    "id": "story13.1_question1",
+    "historia": "13",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué material innovador se utilizó por primera vez en la construcción de los cables de este puente?",
+      "opciones": [
+        "Hierro forjado.",
+        "Acero",
+        "Cuerdas de cáñamo reforzado.",
+        "Aluminio estructural."
+      ]
+    },
+    "en": {
+      "enunciado": "What innovative material was used for the first time in the construction of this bridge's cables?",
+      "opciones": [
+        "Wrought iron.",
+        "Steel",
+        "Reinforced hemp ropes.",
+        "Structural aluminum."
+      ]
+    }
+  },
+  {
+    "id": "story13.1_question2",
+    "historia": "13",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Quién fue la mujer que supervisó gran parte de la construcción final debido a la enfermedad de su esposo?",
+      "opciones": [
+        "Susan B. Anthony.",
+        "Emily Warren Roebling",
+        "Eleanor Roosevelt.",
+        "Jane Addams."
+      ]
+    },
+    "en": {
+      "enunciado": "Who was the woman who supervised a large portion of the final construction due to her husband's illness?",
+      "opciones": [
+        "Susan B. Anthony.",
+        "Emily Warren Roebling",
+        "Eleanor Roosevelt.",
+        "Jane Addams."
+      ]
+    }
+  },
+  {
+    "id": "story13.1_question3",
+    "historia": "13",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Para demostrar que el puente era seguro tras su inauguración, ¿qué famoso circo cruzó 21 animales por él en 1884?",
+      "opciones": [
+        "Un desfile de caballos de carrera.",
+        "El circo de P.T. Barnum con una manada de elefantes",
+        "Una caravana de camellos del Sahara.",
+        "Un grupo de leones enjaulados."
+      ]
+    },
+    "en": {
+      "enunciado": "To demonstrate that the bridge was safe following its inauguration, which famous circus led 21 animals across it in 1884?",
+      "opciones": [
+        "A parade of racehorses.",
+        "P.T. Barnum's circus with a herd of elephants",
+        "A caravan of camels from the Sahara.",
+        "A group of caged lions."
+      ]
+    }
+  },
+  {
+    "id": "story14.1_question1",
+    "historia": "14",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es la función principal de la joroba de músculo que los Grizzly tienen en sus hombros?",
+      "opciones": [
+        "Almacenar grasa para la hibernación.",
+        "Ayudarles a nadar en ríos caudalosos.",
+        "Proporcionar fuerza para excavar raíces y guaridas",
+        "Servir como defensa contra otros osos."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the primary function of the muscle hump that grizzlies have on their shoulders?",
+      "opciones": [
+        "To store fat for hibernation.",
+        "To help them swim in fast-flowing rivers.",
+        "To provide strength for digging up roots and dens.",
+        "To serve as a defense against other bears."
+      ]
+    }
+  },
+  {
+    "id": "story14.1_question2",
+    "historia": "14",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Aproximadamente cuántos meses pasan los osos Grizzly en estado de hibernación durante el invierno?",
+      "opciones": [
+        "De 1 a 2 meses.",
+        "De 5 a 7 meses",
+        "Todo el año excepto el verano.",
+        "Los Grizzly no hibernan."
+      ]
+    },
+    "en": {
+      "enunciado": "Approximately how many months do grizzly bears spend in hibernation during the winter?",
+      "opciones": [
+        "1 to 2 months.",
+        "5 to 7 months.",
+        "The entire year, except for the summer.",
+        "Grizzlies do not hibernate."
+      ]
+    }
+  },
+  {
+    "id": "story14.1_question3",
+    "historia": "14",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué sentido tiene más desarrollado el oso Grizzly, siendo capaz de detectar comida a kilómetros de distancia?",
+      "opciones": [
+        "La vista.",
+        "El olfato",
+        "El oído.",
+        "El tacto"
+      ]
+    },
+    "en": {
+      "enunciado": "Which sense is most highly developed in the grizzly bear, enabling it to detect food from kilometers away?",
+      "opciones": [
+        "Sight.",
+        "Smell",
+        "Hearing.",
+        "Touch."
+      ]
+    }
+  },
+  {
+    "id": "story15.1_question1",
+    "historia": "15",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál de las tres cataratas que forman el conjunto del Niágara es la más grande y tiene forma de herradura?",
+      "opciones": [
+        "American Falls.",
+        "Horseshoe Falls",
+        "Bridal Veil Falls.",
+        "Terrapin Falls."
+      ]
+    },
+    "en": {
+      "enunciado": "Which of the three waterfalls that make up the Niagara complex is the largest and shaped like a horseshoe?",
+      "opciones": [
+        "American Falls.",
+        "Horseshoe Falls",
+        "Bridal Veil Falls.",
+        "Terrapin Falls."
+      ]
+    }
+  },
+  {
+    "id": "story15.1_question2",
+    "historia": "15",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Debido a la fuerza del agua, las cataratas sufren un proceso de erosión constante. ¿Hacia dónde se están \"moviendo\" geológicamente?",
+      "opciones": [
+        "Hacia adelante, hacia el lago Ontario.",
+        "Hacia atrás, río arriba hacia el lago Erie",
+        "Hacia los lados, ensanchando el río.",
+        "Las cataratas no se mueven."
+      ]
+    },
+    "en": {
+      "enunciado": "Due to the force of the water, the falls undergo a process of constant erosion. In which direction are they geologically \"moving\"?",
+      "opciones": [
+        "Forward, toward Lake Ontario.",
+        "Backward, upstream toward Lake Erie",
+        "Sideways, widening the river.",
+        "The falls do not move."
+      ]
+    }
+  },
+  {
+    "id": "story15.1_question3",
+    "historia": "15",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué famoso inventor compitió con Thomas Edison para construir la primera central hidroeléctrica a gran escala en el Niágara?",
+      "opciones": [
+        "Alexander Graham Bell.",
+        "Nikola Tesla",
+        "Guglielmo Marconi.",
+        "George Washington (usando el sistema Tesla)."
+      ]
+    },
+    "en": {
+      "enunciado": "Which famous inventor competed with Thomas Edison to build the first large-scale hydroelectric power plant at Niagara?",
+      "opciones": [
+        "Alexander Graham Bell.",
+        "Nikola Tesla",
+        "Guglielmo Marconi.",
+        "George Westinghouse (using Tesla's system)."
+      ]
+    }
+  },
+  {
+    "id": "story16.1_question1",
+    "historia": "16",
+    "numero": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Aproximadamente cuántos años le toma a un saguaro promedio desarrollar su primer brazo lateral?",
+      "opciones": [
+        "10 años.",
+        "25 años.",
+        "50 años.",
+        "75 a 100 años"
+      ]
+    },
+    "en": {
+      "enunciado": "Approximately how many years does it take for an average saguaro to develop its first lateral arm?",
+      "opciones": [
+        "10 years.",
+        "25 years.",
+        "50 years.",
+        "75 to 100 years"
+      ]
+    }
+  },
+  {
+    "id": "story16.1_question2",
+    "historia": "16",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el estado de la Unión que tiene la flor del cactus saguaro como su flor estatal oficial?",
+      "opciones": [
+        "Nuevo México.",
+        "Arizona",
+        "California.",
+        "Texas."
+      ]
+    },
+    "en": {
+      "enunciado": "Which U.S. state has the saguaro cactus flower as its official state flower?",
+      "opciones": [
+        "New Mexico.",
+        "Arizona",
+        "California.",
+        "Texas."
+      ]
+    }
+  },
+  {
+    "id": "story16.1_question3",
+    "historia": "16",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo logran los saguaros absorber tanta agua rápidamente durante las tormentas del desierto?",
+      "opciones": [
+        "Tienen una raíz principal que llega a 50 metros de profundidad.",
+        "Tienen raíces superficiales que se extienden horizontalmente como una red",
+        "Absorben la humedad directamente a través de sus espinas.",
+        "Abren poros gigantes en su piel solo cuando llueve."
+      ]
+    },
+    "en": {
+      "enunciado": "How do saguaros manage to absorb so much water so quickly during desert storms?",
+      "opciones": [
+        "They have a taproot that reaches a depth of 50 meters.",
+        "They have shallow roots that extend horizontally like a net.",
+        "They absorb moisture directly through their spines.",
+        "They open giant pores in their skin only when it rains"
+      ]
+    }
+  },
+  {
+    "id": "story17.1_question1",
+    "historia": "17",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué se encuentra en la cúspide de la cúpula del Capitolio, mirando hacia el este?",
+      "opciones": [
+        "Una bandera de oro sólido.",
+        "Un águila calva de bronce.",
+        "La Estatua de la Libertad (Freedom Statue)",
+        "Una linterna de gas original."
+      ]
+    },
+    "en": {
+      "enunciado": "What sits atop the Capitol dome, facing east?",
+      "opciones": [
+        "A solid gold flag.",
+        "A bronze bald eagle.",
+        "The Statue of Freedom",
+        "An original gas lantern."
+      ]
+    }
+  },
+  {
+    "id": "story17.1_question2",
+    "historia": "17",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el nombre del famoso fresco que adorna el interior de la cúpula y muestra a George Washington ascendiendo a los cielos?",
+      "opciones": [
+        "El Destino Manifiesto.",
+        "La Apoteosis de Washington",
+        "El Nacimiento de la Libertad.",
+        "El Juicio de la Democracia."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the famous fresco that adorns the interior of the dome and depicts George Washington ascending to the heavens?",
+      "opciones": [
+        "Manifest Destiny.",
+        "The Apotheosis of Washington",
+        "The Birth of Freedom.",
+        "The Judgment of Democracy."
+      ]
+    }
+  },
+  {
+    "id": "story17.1_question3",
+    "historia": "17",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Por qué el Capitolio se encuentra en el centro geográfico del diseño original de Washington D.C.?",
+      "opciones": [
+        "Para que fuera más fácil de defender.",
+        "Para dividir la ciudad en sus cuatro cuadrantes (NW, NE, SW, SE)",
+        "Porque era el punto más alto de la ciudad.",
+        "Fue una decisión puramente estética de Thomas Jefferson."
+      ]
+    },
+    "en": {
+      "enunciado": "Why is the Capitol located at the geographic center of the original design for Washington, D.C.?",
+      "opciones": [
+        "To make it easier to defend.",
+        "To divide the city into its four quadrants (NW, NE, SW, SE)",
+        "Because it was the highest point in the city.",
+        "It was a purely aesthetic decision by Thomas Jefferson."
+      ]
+    }
+  },
+  {
+    "id": "story18.1_question1",
+    "historia": "18",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Quién es la figura histórica a la que tradicionalmente se le atribuye haber cosido la primera bandera de las barras y estrellas, a petición de George Washington?",
+      "opciones": [
+        "Martha Washington.",
+        "Betsy Ross",
+        "Abigail Adams.",
+        "Molly Pitcher."
+      ]
+    },
+    "en": {
+      "enunciado": "Who is the historical figure traditionally credited with sewing the first Stars and Stripes flag at the request of George Washington?",
+      "opciones": [
+        "Martha Washington.",
+        "Betsy Ross",
+        "Abigail Adams.",
+        "Molly Pitcher."
+      ]
+    }
+  },
+  {
+    "id": "story18.1_question2",
+    "historia": "18",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué inspirado poeta escribió \"The Star-Spangled Banner\" (el himno nacional) tras ver la bandera ondear después de un bombardeo en 1814?",
+      "opciones": [
+        "Walt Whitman.",
+        "Robert Frost.",
+        "Francis Scott Key",
+        "Edgar Allan Poe"
+      ]
+    },
+    "en": {
+      "enunciado": "Which inspired poet wrote \"The Star-Spangled Banner\" (the national anthem) after seeing the flag waving following a bombardment in 1814?",
+      "opciones": [
+        "Walt Whitman.",
+        "Robert Frost.",
+        "Francis Scott Key",
+        "Edgar Allan Poe."
+      ]
+    }
+  },
+  {
+    "id": "story18.1_question3",
+    "historia": "18",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué representan específicamente las 13 franjas horizontales en el diseño de la bandera?",
+      "opciones": [
+        "Los firmantes principales de la Constitución.",
+        "Las 13 batallas mas importantes de la Revolución.",
+        "Las colonias originales que declararon su independencia.",
+        "Los primeros 13 estados en unirse tras la Guerra Civil."
+      ]
+    },
+    "en": {
+      "enunciado": "What specifically do the 13 horizontal stripes in the flag's design represent?",
+      "opciones": [
+        "The principal signers of the Constitution.",
+        "The 13 most important battles of the Revolution.",
+        "The original colonies that declared their independence.",
+        "The first 13 states to join after the Civil War."
+      ]
+    }
+  },
+  {
+    "id": "story19.1_question1",
+    "historia": "19",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué representan las siete puntas de la corona de la Estatua de la Libertad?",
+      "opciones": [
+        "Las siete maravillas del mundo antiguo.",
+        "Los siete continentes y los siete mares",
+        "Las siete colonias originales que se rebelaron.",
+        "Los siete días de la creación."
+      ]
+    },
+    "en": {
+      "enunciado": "What do the seven spikes on the Statue of Liberty's crown represent?",
+      "opciones": [
+        "The Seven Wonders of the Ancient World.",
+        "The seven continents and the seven seas.",
+        "The seven original colonies that rebelled.",
+        "The seven days of creation."
+      ]
+    }
+  },
+  {
+    "id": "story19.1_question2",
+    "historia": "19",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Quién diseñó la estructura interna de hierro que sostiene las láminas de cobre de la estatua?",
+      "opciones": [
+        "Frédéric Auguste Bartholdi.",
+        "Thomas Edison.",
+        "Gustave Eiffel",
+        "John Roebling."
+      ]
+    },
+    "en": {
+      "enunciado": "Who designed the internal iron structure that supports the statue's copper plates?",
+      "opciones": [
+        "Frédéric Auguste Bartholdi.",
+        "Thomas Edison.",
+        "Gustave Eiffel.",
+        "John Roebling."
+      ]
+    }
+  },
+  {
+    "id": "story19.1_question3",
+    "historia": "19",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿De qué material está recubierta la llama de la antorcha actual (instalada en la restauración de 1986)?",
+      "opciones": [
+        "Cobre pintado de amarillo.",
+        "Vidrio ámbar soplado.",
+        "Oro de 24 quilates",
+        "Bronce pulido."
+      ]
+    },
+    "en": {
+      "enunciado": "What material covers the flame of the current torch (installed during the 1986 restoration)?",
+      "opciones": [
+        "Copper painted yellow.",
+        "Blown amber glass.",
+        "24-karat gold",
+        "Polished bronze."
+      ]
+    }
+  },
+  {
+    "id": "story20.1_question1",
+    "historia": "20",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál de estos transbordadores fue el primero en volar al espacio en la misión STS-1 en 1981?",
+      "opciones": [
+        "Enterprise.",
+        "Columbia",
+        "Discovery.",
+        "Atlantis."
+      ]
+    },
+    "en": {
+      "enunciado": "Which of these shuttles was the first to fly into space on mission STS-1 in 1981?",
+      "opciones": [
+        "Enterprise.",
+        "Columbia",
+        "Discovery.",
+        "Atlantis."
+      ]
+    }
+  },
+  {
+    "id": "story20.1_question2",
+    "historia": "20",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Durante el aterrizaje, el transbordador no tenía motores encendidos. ¿Cómo se le llamaba comúnmente debido a su falta de propulsión en esa fase?",
+      "opciones": [
+        "El Halcón de Hierro.",
+        "El Ladrillo Volador (Flying Brick)",
+        "La Saeta Silenciosa.",
+        "El Planeador de Titanio."
+      ]
+    },
+    "en": {
+      "enunciado": "During landing, the shuttle had no engines running. What was it commonly called due to its lack of propulsion during that phase?",
+      "opciones": [
+        "The Iron Falcon.",
+        "The Flying Brick",
+        "The Silent Arrow.",
+        "The Titanium Glider."
+      ]
+    }
+  },
+  {
+    "id": "story20.1_question3",
+    "historia": "20",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué parte del sistema del transbordador era la única que NO se recuperaba ni se reutilizaba después del lanzamiento?",
+      "opciones": [
+        "El Orbitador.",
+        "Los Cohetes Aceleradores Sólidos (SRB).",
+        "El Tanque Externo naranja",
+        "Los motores principales."
+      ]
+    },
+    "en": {
+      "enunciado": "Which part of the shuttle system was the only one that was NOT recovered or reused after launch?",
+      "opciones": [
+        "The Orbiter.",
+        "The Solid Rocket Boosters (SRBs).",
+        "The orange External Tank",
+        "The main engines"
+      ]
+    }
+  },
+  {
+    "id": "story21.1_question1",
+    "historia": "21",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el pico más alto de todas las Montañas Rocosas, situado en el estado de Colorado?",
+      "opciones": [
+        "Monte Whitney.",
+        "Monte Elbert",
+        "Pico Pikes.",
+        "Longs Peak."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the highest peak in the entire Rocky Mountain range, located in the state of Colorado?",
+      "opciones": [
+        "Mount Whitney.",
+        "Mount Elbert",
+        "Pikes Peak.",
+        "Longs Peak."
+      ]
+    }
+  },
+  {
+    "id": "story21.1_question2",
+    "historia": "21",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo se llama la línea imaginaria que atraviesa las Rocosas y separa las cuencas hidrográficas que desembocan en océanos diferentes?",
+      "opciones": [
+        "La Línea de Fuego.",
+        "El Meridiano del Oeste.",
+        "La Divisoria Continental",
+        "El Cinturón de Granito."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the imaginary line that traverses the Rockies and separates the drainage basins that flow into different oceans?",
+      "opciones": [
+        "The Line of Fire.",
+        "The Western Meridian.",
+        "The Continental Divide",
+        "The Granite Belt."
+      ]
+    }
+  },
+  {
+    "id": "story21.1_question3",
+    "historia": "21",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué fenómeno geológico principal formó la estructura básica de las Rocosas hace aproximadamente 80 a 55 millones de años?",
+      "opciones": [
+        "Impactos de meteoritos masivos.",
+        "La Orogenia Laramide (colisión de placas tectónicas)",
+        "Erupciones volcánicas en cadena.",
+        "El peso de los glaciares de la Edad de Hielo"
+      ]
+    },
+    "en": {
+      "enunciado": "What major geological phenomenon formed the basic structure of the Rockies approximately 80 to 55 million years ago?",
+      "opciones": [
+        "Massive meteorite impacts.",
+        "The Laramide Orogeny (collision of tectonic plates)",
+        "A chain of volcanic eruptions.",
+        "The weight of Ice Age glaciers."
+      ]
+    }
+  },
+  {
+    "id": "story22.1_question1",
+    "historia": "22",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿A qué familia de aves pertenece técnicamente el correcaminos?",
+      "opciones": [
+        "Al de los halcones.",
+        "Al de los cucos (Cuculidae)",
+        "Al de las avestruces.",
+        "Al de los faisanes."
+      ]
+    },
+    "en": {
+      "enunciado": "To which family of birds does the roadrunner technically belong?",
+      "opciones": [
+        "The hawks.",
+        "The cuckoos (Cuculidae)",
+        "The ostriches.",
+        "The pheasants."
+      ]
+    }
+  },
+  {
+    "id": "story22.1_question2",
+    "historia": "22",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el estado de la Unión Americana que tiene al correcaminos como su ave estatal oficial?",
+      "opciones": [
+        "Arizona.",
+        "Texas.",
+        "Nuevo México",
+        "Nevada."
+      ]
+    },
+    "en": {
+      "enunciado": "Which U.S. state has adopted the roadrunner as its official state bird?",
+      "opciones": [
+        "Arizona.",
+        "Texas.",
+        "New Mexico",
+        "Nevada."
+      ]
+    }
+  },
+  {
+    "id": "story22.1_question3",
+    "historia": "22",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué característica física única tienen las huellas del correcaminos?",
+      "opciones": [
+        "Solo tienen dos dedos hacia adelante.",
+        "Son zigodáctilas (dos dedos hacia adelante y dos hacia atrás)",
+        "Tienen una membrana entre los dedos.",
+        "No dejan huella en la arena fina."
+      ]
+    },
+    "en": {
+      "enunciado": "What unique physical characteristic do the roadrunner's footprints possess?",
+      "opciones": [
+        "They have only two toes pointing forward.",
+        "They are zygodactyl (two toes pointing forward and two pointing backward)",
+        "They have webbing between the toes.",
+        "They leave no imprint in fine sand."
+      ]
+    }
+  },
+  {
+    "id": "story23.1_question1",
+    "historia": "23",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el nombre del árbol individual más grande del mundo (por volumen) que se encuentra en el Parque Nacional de las Secuoyas?",
+      "opciones": [
+        "Hyperion.",
+        "General Sherman",
+        "Matusalén.",
+        "El Gigante de Sierra."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the largest individual tree in the world (by volume) found in Sequoia National Park?",
+      "opciones": [
+        "Hyperion.",
+        "General Sherman",
+        "Methuselah.",
+        "The Sierra Giant."
+      ]
+    }
+  },
+  {
+    "id": "story23.1_question2",
+    "historia": "23",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué elemento natural es irónicamente esencial para que las secuoyas gigantes liberen sus semillas y se reproduzcan con éxito?",
+      "opciones": [
+        "Inundaciones primaverales.",
+        "Fuertes vientos huracanados.",
+        "El calor de los incendios forestales",
+        "Nieve extremadamente pesada."
+      ]
+    },
+    "en": {
+      "enunciado": "Which natural element is, ironically, essential for giant sequoias to release their seeds and reproduce successfully?",
+      "opciones": [
+        "Spring floods.",
+        "Strong hurricane-force winds.",
+        "The heat of forest fires",
+        "Extremely heavy snow."
+      ]
+    }
+  },
+  {
+    "id": "story23.1_question3",
+    "historia": "23",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué característica de la corteza de la secuoya la protege de la mayoría de las amenazas biológicas y del fuego?",
+      "opciones": [
+        "Es tan dura como el diamante.",
+        "Su gran grosor y la presencia de taninos resistentes",
+        "Produce un veneno que mata insectos.",
+        "Está recubierta de una capa de hielo perpetua."
+      ]
+    },
+    "en": {
+      "enunciado": "What characteristic of the sequoia's bark protects it from most biological threats and fire?",
+      "opciones": [
+        "It is as hard as diamond.",
+        "Its great thickness and the presence of resistant tannins",
+        "It produces a poison that kills insects.",
+        "It is covered by a layer of perpetual ice."
+      ]
+    }
+  },
+  {
+    "id": "story24.1_question1",
+    "historia": "24",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el tiempo mínimo que un jinete debe permanecer sobre un toro o un caballo bronco para que su monta sea calificada?",
+      "opciones": [
+        "5 segundos.",
+        "8 segundos",
+        "10 segundos.",
+        "15 segundos."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the minimum amount of time a rider must stay atop a bull or bronc for their ride to be scored?",
+      "opciones": [
+        "5 seconds.",
+        "8 seconds",
+        "10 seconds.",
+        "15 seconds."
+      ]
+    }
+  },
+  {
+    "id": "story24.1_question2",
+    "historia": "24",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se llama el evento de rodeo en el que un jinete debe saltar de su caballo para derribar a un novillo sujetándolo por los cuernos?",
+      "opciones": [
+        "Lazo doble.",
+        "Derribo de novillo o \"Steer Wrestling\"",
+        "Marcaje de becerros.",
+        "Rodeo de rescate."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the rodeo event in which a rider must jump from their horse to wrestle a steer to the ground by grabbing it by the horns?",
+      "opciones": [
+        "Team Roping.",
+        "Steer Wrestling",
+        "Calf Roping.",
+        "Rescue Rodeo."
+      ]
+    }
+  },
+  {
+    "id": "story24.1_question3",
+    "historia": "24",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es la ciudad de Nevada conocida por albergar las Finales Nacionales de Rodeo (NFR), el evento más importante del mundo en este deporte?",
+      "opciones": [
+        "Reno.",
+        "Carson City.",
+        "Las Vegas",
+        "Elko"
+      ]
+    },
+    "en": {
+      "enunciado": "Which city in Nevada is known for hosting the National Finals Rodeo (NFR)—the most important event in the world for this sport?",
+      "opciones": [
+        "Reno.",
+        "Carson City.",
+        "Las Vegas",
+        "Elko."
+      ]
+    }
+  },
+  {
+    "id": "story25.1_question1",
+    "historia": "25",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué famosa ciudad estadounidense se redactó y firmó la Constitución en 1787?",
+      "opciones": [
+        "Washington D.C.",
+        "Nueva York.",
+        "Filadelfia",
+        "Boston."
+      ]
+    },
+    "en": {
+      "enunciado": "In which famous American city was the Constitution drafted and signed in 1787?",
+      "opciones": [
+        "Washington D.C.",
+        "New York.",
+        "Philadelphia",
+        "Boston."
+      ]
+    }
+  },
+  {
+    "id": "story25.1_question2",
+    "historia": "25",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se conocen colectivamente las primeras diez enmiendas a la Constitución, que garantizan libertades individuales?",
+      "opciones": [
+        "El Gran Compromiso.",
+        "La Carta de Derechos (Bill of Rights)",
+        "El Pacto de Libertad.",
+        "Los Artículos de la Libertad."
+      ]
+    },
+    "en": {
+      "enunciado": "What are the first ten amendments to the Constitution—which guarantee individual liberties—collectively known as?",
+      "opciones": [
+        "The Great Compromise.",
+        "The Bill of Rights",
+        "The Freedom Pact.",
+        "The Articles of Liberty."
+      ]
+    }
+  },
+  {
+    "id": "story25.1_question3",
+    "historia": "25",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Quién es conocido como el \"Padre de la Constitución\" debido a su papel fundamental en su redacción y defensa?",
+      "opciones": [
+        "Thomas Jefferson.",
+        "Benjamin Franklin.",
+        "James Madison",
+        "Alexander Hamilton."
+      ]
+    },
+    "en": {
+      "enunciado": "Who is known as the \"Father of the Constitution\" due to his pivotal role in its drafting and defense?",
+      "opciones": [
+        "Thomas Jefferson.",
+        "Benjamin Franklin.",
+        "James Madison",
+        "Alexander Hamilton."
+      ]
+    }
+  },
+  {
+    "id": "story26.1_question1",
+    "historia": "26",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué conflicto bélico se utilizó por primera vez de forma masiva el famoso cartel del Tío Sam diciendo \"I Want YOU\"?",
+      "opciones": [
+        "Guerra Civil Americana.",
+        "Primera Guerra Mundial",
+        "Segunda Guerra Mundial.",
+        "Guerra de Vietnam."
+      ]
+    },
+    "en": {
+      "enunciado": "In which military conflict was the famous Uncle Sam poster—saying \"I Want YOU\"—first used on a massive scale?",
+      "opciones": [
+        "American Civil War.",
+        "World War I",
+        "World War II.",
+        "Vietnam War."
+      ]
+    }
+  },
+  {
+    "id": "story26.1_question2",
+    "historia": "26",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Antes de que el Tío Sam se convirtiera en el símbolo principal, ¿qué figura femenina era la personificación común de los EE. UU.?",
+      "opciones": [
+        "Lady Liberty.",
+        "Columbia",
+        "Betsy Ross.",
+        "Virginia."
+      ]
+    },
+    "en": {
+      "enunciado": "Before Uncle Sam became the primary symbol, which female figure served as the common personification of the U.S.?",
+      "opciones": [
+        "Lady Liberty.",
+        "Columbia",
+        "Betsy Ross.",
+        "Virginia."
+      ]
+    }
+  },
+  {
+    "id": "story26.1_question3",
+    "historia": "26",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué ciudad del estado de Nueva York es reconocida oficialmente por el Congreso como la \"Cuna del Tío Sam\"?",
+      "opciones": [
+        "Albany.",
+        "Búfalo.",
+        "Troy",
+        "Rochester"
+      ]
+    },
+    "en": {
+      "enunciado": "Which city in New York State is officially recognized by Congress as the \"Home of Uncle Sam\"?",
+      "opciones": [
+        "Albany.",
+        "Buffalo.",
+        "Troy",
+        "Rochester."
+      ]
+    }
+  },
+  {
+    "id": "story27.1_question1",
+    "historia": "27",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Por qué los dientes incisivos de los castores tienen un color naranja brillante?",
+      "opciones": [
+        "Por las manchas de la corteza de los árboles.",
+        "Por su alto contenido de hierro, que los hace extremadamente fuertes",
+        "Es una señal de advertencia para otros animales.",
+        "Por un tipo de alga que crece en el agua donde viven."
+      ]
+    },
+    "en": {
+      "enunciado": "Why do beavers' incisor teeth have a bright orange color?",
+      "opciones": [
+        "Due to stains from tree bark.",
+        "Due to their high iron content, which makes them extremely strong.",
+        "It serves as a warning signal to other animals.",
+        "Due to a type of algae that grows in the water where they live."
+      ]
+    }
+  },
+  {
+    "id": "story27.1_question2",
+    "historia": "27",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo se llama la estructura donde viven los castores, construida con palos y lodo en medio del estanque?",
+      "opciones": [
+        "Dique.",
+        "Madriguera subterránea.",
+        "Madriguera o \"Lodge\"",
+        "Nido flotante."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the structure where beavers live—built from sticks and mud in the middle of the pond?",
+      "opciones": [
+        "Dam.",
+        "Underground burrow.",
+        "Lodge.",
+        "Floating nest"
+      ]
+    }
+  },
+  {
+    "id": "story27.1_question3",
+    "historia": "27",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es la función principal de la cola plana del castor además de servir como timón?",
+      "opciones": [
+        "Almacenar comida para el invierno.",
+        "Golpear el agua para avisar de un peligro a otros castores",
+        "Cavar túneles en el lodo.",
+        "Atrapar peces pequeños."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the primary function of the beaver's flat tail, aside from serving as a rudder?",
+      "opciones": [
+        "To store food for the winter.",
+        "Slapping the water to warn other beavers of danger.",
+        "Digging tunnel in the mud.",
+        "Catching small fish."
+      ]
+    }
+  },
+  {
+    "id": "story28.1_question1",
+    "historia": "28",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué importante invento de Franklin ayudó a las personas que tenían problemas para ver tanto de lejos como de cerca?",
+      "opciones": [
+        "El telescopio de mano.",
+        "El microscopio óptico.",
+        "Los lentes bifocales",
+        "La lupa de aumento."
+      ]
+    },
+    "en": {
+      "enunciado": "What important invention of Franklin's helped people who had trouble seeing both distant and nearby objects?",
+      "opciones": [
+        "The handheld telescope.",
+        "The optical microscope.",
+        "Bifocal lenses",
+        "The magnifying glass."
+      ]
+    }
+  },
+  {
+    "id": "story28.1_question2",
+    "historia": "28",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál fue el seudónimo que utilizó Franklin para escribir su famoso almanaque lleno de consejos y refranes?",
+      "opciones": [
+        "Benjamin el Sabio.",
+        "Richard Saunders (Poor Richard)",
+        "El Silencioso.",
+        "Thomas Paine."
+      ]
+    },
+    "en": {
+      "enunciado": "What pseudonym did Franklin use to write his famous almanac, filled with advice and proverbs?",
+      "opciones": [
+        "Benjamin the Wise.",
+        "Richard Saunders (Poor Richard)",
+        "The Silent One.",
+        "Thomas Paine."
+      ]
+    }
+  },
+  {
+    "id": "story28.1_question3",
+    "historia": "28",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué ciudad estadounidense fue el hogar principal de Franklin y el centro de sus actividades como impresor y político?",
+      "opciones": [
+        "Nueva York.",
+        "Filadelfia",
+        "Boston.",
+        "Richmond."
+      ]
+    },
+    "en": {
+      "enunciado": "Which American city was Franklin's primary home and the center of his activities as a printer and politician?",
+      "opciones": [
+        "New York.",
+        "Philadelphia",
+        "Boston.",
+        "Richmond."
+      ]
+    }
+  },
+  {
+    "id": "story29.1_question1",
+    "historia": "29",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se llamaba el módulo lunar en el que aterrizaron Armstrong y Aldrin?",
+      "opciones": [
+        "Columbia.",
+        "Eagle (El Águila)",
+        "Discovery.",
+        "Odyssey."
+      ]
+    },
+    "en": {
+      "enunciado": "What was the name of the lunar module in which Armstrong and Aldrin landed?",
+      "opciones": [
+        "Columbia.",
+        "Eagle",
+        "Discovery.",
+        "Odyssey."
+      ]
+    }
+  },
+  {
+    "id": "story29.1_question2",
+    "historia": "29",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Quién fue el tercer astronauta de la misión que permaneció en órbita y nunca pisó la Luna?",
+      "opciones": [
+        "Alan Shepard.",
+        "John Glenn.",
+        "Michael Collins",
+        "Yuri Gagarin."
+      ]
+    },
+    "en": {
+      "enunciado": "Who was the third astronaut on the mission who remained in orbit and never set foot on the Moon?",
+      "opciones": [
+        "Alan Shepard.",
+        "John Glenn.",
+        "Michael Collins",
+        "Yuri Gagarin."
+      ]
+    }
+  },
+  {
+    "id": "story29.1_question3",
+    "historia": "29",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué zona específica de la Luna ocurrió el histórico alunizaje?",
+      "opciones": [
+        "Océano de las Tormentas.",
+        "Mar de la Tranquilidad",
+        "Cráter de Copérnico.",
+        "Montes Apalaches Lunares."
+      ]
+    },
+    "en": {
+      "enunciado": "In which specific area of ​​the Moon did the historic lunar landing take place?",
+      "opciones": [
+        "Ocean of Storms.",
+        "Sea of ​​Tranquility",
+        "Copernicus Crater.",
+        "Lunar Appalachian Mountains."
+      ]
+    }
+  },
+  {
+    "id": "story30.1_question1",
+    "historia": "30",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué ingeniero estadounidense es considerado el padre del primer barco de vapor comercialmente viable, el Clermont, en 1807?",
+      "opciones": [
+        "James Watt.",
+        "Robert Fulton",
+        "Henry Ford.",
+        "Thomas Edison."
+      ]
+    },
+    "en": {
+      "enunciado": "Which American engineer is considered the father of the first commercially viable steamboat, the *Clermont*, in 1807?",
+      "opciones": [
+        "James Watt.",
+        "Robert Fulton",
+        "Henry Ford.",
+        "Thomas Edison."
+      ]
+    }
+  },
+  {
+    "id": "story30.1_question2",
+    "historia": "30",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál era el nombre oficial que recibía la parte trasera del barco, donde se ubicaba la gran rueda de paletas que lo impulsaba?",
+      "opciones": [
+        "Proa.",
+        "Estribor.",
+        "Popa",
+        "Babor."
+      ]
+    },
+    "en": {
+      "enunciado": "What was the official name for the rear section of the boat—the area where the large paddle wheel providing propulsion was located?",
+      "opciones": [
+        "Bow.",
+        "Starboard.",
+        "Stern",
+        "Port."
+      ]
+    }
+  },
+  {
+    "id": "story30.1_question3",
+    "historia": "30",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué famoso autor estadounidense, cuyo seudónimo es un término de navegación fluvial, escribió extensamente sobre su vida como piloto de barcos de vapor en el Misisipi?",
+      "opciones": [
+        "Herman Melville.",
+        "Mark Twain",
+        "Edgar Allan Poe.",
+        "John Steinbeck."
+      ]
+    },
+    "en": {
+      "enunciado": "Which famous American author—whose pseudonym is a term derived from river navigation—wrote extensively about his life as a steamboat pilot on the Mississippi?",
+      "opciones": [
+        "Herman Melville.",
+        "Mark Twain",
+        "Edgar Allan Poe.",
+        "John Steinbeck."
+      ]
+    }
+  },
+  {
+    "id": "story31.1_question1",
+    "historia": "31",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué grupo de naciones formó una influyente confederación democrática en el noreste que sirvió de inspiración para los Padres Fundadores de EE. UU.?",
+      "opciones": [
+        "Los Apaches.",
+        "La Confederación Iroquesa (Haudenosaunee)",
+        "Los Cheroquis.",
+        "Los Seminolas."
+      ]
+    },
+    "en": {
+      "enunciado": "Which group of nations formed an influential democratic confederacy in the Northeast that served as an inspiration to the Founding Fathers of the United States?",
+      "opciones": [
+        "The Apaches.",
+        "The Iroquois Confederacy (Haudenosaunee)",
+        "The Cherokees.",
+        "The Seminoles."
+      ]
+    }
+  },
+  {
+    "id": "story31.1_question2",
+    "historia": "31",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué tipo de vivienda, fácil de montar y desmontar, era utilizada por las tribus nómadas de las Grandes Llanuras para seguir las migraciones del bisonte?",
+      "opciones": [
+        "Pueblo.",
+        "Iglú.",
+        "Tipi",
+        "Longhouse (Casa Larga)."
+      ]
+    },
+    "en": {
+      "enunciado": "What type of dwelling—easy to assemble and dismantle—was used by the nomadic tribes of the Great Plains to follow the bison migrations?",
+      "opciones": [
+        "Pueblo.",
+        "Igloo.",
+        "Tipi",
+        "Longhouse."
+      ]
+    }
+  },
+  {
+    "id": "story31.1_question3",
+    "historia": "31",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál de estas tribus es famosa por sus intrincados tótems tallados en madera de cedro en la región del Noroeste del Pacífico?",
+      "opciones": [
+        "Los Navajos.",
+        "Los Haida",
+        "Los Sioux.",
+        "Los Aztecas."
+      ]
+    },
+    "en": {
+      "enunciado": "Which of these tribes is famous for its intricate totems carved from cedar wood in the Pacific Northwest region?",
+      "opciones": [
+        "The Navajo.",
+        "The Haida",
+        "The Sioux.",
+        "The Aztecs."
+      ]
+    }
+  },
+  {
+    "id": "story32.1_question1",
+    "historia": "32",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué porcentaje del material removido para crear las caras se hizo utilizando dinamita?",
+      "opciones": [
+        "50%",
+        "75%",
+        "90%",
+        "100%"
+      ]
+    },
+    "en": {
+      "enunciado": "What percentage of the material removed to create the faces was removed using dynamite?",
+      "opciones": [
+        "50%",
+        "75%",
+        "90%",
+        "100%"
+      ]
+    }
+  },
+  {
+    "id": "story32.1_question2",
+    "historia": "32",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Existe una cámara \"secreta\" detrás de la cabeza de Abraham Lincoln. ¿Cómo se llama?",
+      "opciones": [
+        "El Búnker Presidencial.",
+        "El Salón de los Registros (Hall of Records)",
+        "La Bóveda de la Libertad.",
+        "El Almacén de Borglum."
+      ]
+    },
+    "en": {
+      "enunciado": "There is a \"secret\" chamber located behind Abraham Lincoln's head. What is it called?",
+      "opciones": [
+        "The Presidential Bunker",
+        "The Hall of Records",
+        "The Vault of Liberty",
+        "Borglum's Storehouse."
+      ]
+    }
+  },
+  {
+    "id": "story32.1_question3",
+    "historia": "32",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál de los rostros tuvo que ser dinamitado y reiniciado en un lugar diferente debido a que la roca era demasiado inestable?",
+      "opciones": [
+        "George Washington.",
+        "Thomas Jefferson",
+        "Theodore Roosevelt.",
+        "Abraham Lincoln."
+      ]
+    },
+    "en": {
+      "enunciado": "Which of the faces had to be dynamited and restarted in a different location because the rock was too unstable?",
+      "opciones": [
+        "George Washington.",
+        "Thomas Jefferson",
+        "Theodore Roosevelt.",
+        "Abraham Lincoln."
+      ]
+    }
+  },
+  {
+    "id": "story33.1_question1",
+    "historia": "33",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Por qué los colimbos tienen huesos sólidos a diferencia de casi todas las demás aves?",
+      "opciones": [
+        "Para protegerse de los depredadores grandes.",
+        "Para reducir su flotabilidad y poder bucear a gran profundidad",
+        "Para poder caminar mejor sobre el fondo de los lagos.",
+        "Para soportar las bajas temperaturas del Ártico."
+      ]
+    },
+    "en": {
+      "enunciado": "Why do loons have solid bones, unlike almost all other birds?",
+      "opciones": [
+        "To protect themselves from large predators.",
+        "To reduce their buoyancy and enable deep diving.",
+        "To help them walk better along the lakebed.",
+        "To withstand the frigid temperatures of the Arctic."
+      ]
+    }
+  },
+  {
+    "id": "story33.1_question2",
+    "historia": "33",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el estado de la Unión que tiene al Colimbo Grande como su ave estatal oficial?",
+      "opciones": [
+        "Alaska.",
+        "Maine.",
+        "Minnesota",
+        "Wisconsin."
+      ]
+    },
+    "en": {
+      "enunciado": "Which U.S. state has designated the Common Loon as its official state bird?",
+      "opciones": [
+        "Alaska.",
+        "Maine.",
+        "Minnesota.",
+        "Wisconsin."
+      ]
+    }
+  },
+  {
+    "id": "story33.1_question3",
+    "historia": "33",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo se llama el sonido similar a una \"risa maníaca\" que emiten los colimbos cuando se sienten amenazados?",
+      "opciones": [
+        "El Yodel.",
+        "El Gemido.",
+        "El Trémolo",
+        "El Hoot"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the sound—resembling a \"maniacal laugh\"—that loons emit when they feel threatened?",
+      "opciones": [
+        "The Yodel.",
+        "The Moan.",
+        "The Tremolo",
+        "The Hoot."
+      ]
+    }
+  },
+  {
+    "id": "story34.1_question1",
+    "historia": "34",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué estado de la Unión se encuentra Mount Vernon, la famosa plantación y hogar de George Washington?",
+      "opciones": [
+        "Maryland.",
+        "Pennsylvania.",
+        "Virginia",
+        "Carolina del Norte."
+      ]
+    },
+    "en": {
+      "enunciado": "In which U.S. state is Mount Vernon—George Washington's famous plantation and home—located?",
+      "opciones": [
+        "Maryland.",
+        "Pennsylvania.",
+        "Virginia",
+        "North Carolina."
+      ]
+    }
+  },
+  {
+    "id": "story34.1_question2",
+    "historia": "34",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Existe un mito popular sobre la dentadura de Washington. ¿De qué material estaban hechas realmente sus prótesis dentales más famosas?",
+      "opciones": [
+        "De madera de cerezo.",
+        "De una mezcla de marfil de hipopótamo, oro y dientes humanos",
+        "De porcelana fina importada de China.",
+        "De plata pura."
+      ]
+    },
+    "en": {
+      "enunciado": "There is a popular myth regarding Washington's teeth. What material were his most famous dental prosthetics actually made of?",
+      "opciones": [
+        "Cherry wood.",
+        "A mixture of hippopotamus ivory, gold, and human teeth",
+        "Fine porcelain imported from China.",
+        "Pure silver."
+      ]
+    }
+  },
+  {
+    "id": "story34.1_question3",
+    "historia": "34",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál fue el río que Washington y sus tropas cruzaron heroicamente la noche de Navidad de 1776 para atacar Trenton?",
+      "opciones": [
+        "Río Hudson.",
+        "Río Potomac.",
+        "Río Delaware",
+        "Río Mississippi."
+      ]
+    },
+    "en": {
+      "enunciado": "Which river did Washington and his troops heroically cross on Christmas night, 1776, to attack Trenton?",
+      "opciones": [
+        "Hudson River.",
+        "Potomac River.",
+        "Delaware River",
+        "Mississippi River."
+      ]
+    }
+  },
+  {
+    "id": "story35.1_question1",
+    "historia": "35",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el nombre científico correcto del animal comúnmente llamado búfalo en Norteamérica?",
+      "opciones": [
+        "Syncerus caffer.",
+        "Bubalus bubalis.",
+        "Bison bison",
+        "Taurotragus oryxs."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the correct scientific name for the animal commonly referred to as the buffalo in North America?",
+      "opciones": [
+        "Syncerus caffer.",
+        "Bubalus bubalis.",
+        "Bison bison",
+        "Taurotragus oryxs."
+      ]
+    }
+  },
+  {
+    "id": "story35.1_question2",
+    "historia": "35",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué parque nacional de EE. UU. reside la única población de bisontes que ha vivido allí continuamente desde tiempos prehistóricos?",
+      "opciones": [
+        "Gran Cañón.",
+        "Yellowstone",
+        "Yosemite.",
+        "Everglades."
+      ]
+    },
+    "en": {
+      "enunciado": "In which U.S. national park resides the only bison population that has lived there continuously since prehistoric times?",
+      "opciones": [
+        "Grand Canyon.",
+        "Yellowstone",
+        "Yosemite.",
+        "Everglades."
+      ]
+    }
+  },
+  {
+    "id": "story35.1_question3",
+    "historia": "35",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es la función principal de la gran joroba de los bisontes?",
+      "opciones": [
+        "Almacenar agua para las sequías.",
+        "Es solo un depósito de grasa para el invierno.",
+        "Sujetar poderosos músculos que les permiten usar su cabeza como \"arado\" en la nieve",
+        "Ayudarles a mantener el equilibrio al correr."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the primary function of the bison's large hump?",
+      "opciones": [
+        "To store water for droughts.",
+        "It is merely a fat reserve for the winter.",
+        "Anchor powerful muscles that allow them to use their head as a \"snowplow\"",
+        "Help them maintain balance while running."
+      ]
+    }
+  },
+  {
+    "id": "story36.1_question1",
+    "historia": "36",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el porcentaje mínimo de maíz que debe tener la mezcla de granos para ser considerado Bourbon?",
+      "opciones": [
+        "30%",
+        "45%",
+        "51%",
+        "75%"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the minimum percentage of corn required in the grain mixture for a whiskey to be considered Bourbon?",
+      "opciones": [
+        "30%",
+        "45%",
+        "51%",
+        "75%"
+      ]
+    }
+  },
+  {
+    "id": "story36.1_question2",
+    "historia": "36",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es la condición indispensable sobre las barricas de roble utilizadas para su envejecimiento?",
+      "opciones": [
+        "Deben ser barricas usadas de vino.",
+        "Deben ser nuevas y estar carbonizadas por dentro",
+        "Deben ser de madera de arce canadiense.",
+        "Deben guardarse bajo tierra en cuevas frías."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the indispensable requirement regarding the oak barrels used for aging?",
+      "opciones": [
+        "They must be used wine barrels.",
+        "They must be new and charred on the inside.",
+        "They must be made of Canadian maple wood.",
+        "They must be stored underground in cold caves."
+      ]
+    }
+  },
+  {
+    "id": "story36.1_question3",
+    "historia": "36",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué estado de la Unión es famoso por producir la gran mayoría del Bourbon del mundo?",
+      "opciones": [
+        "Tennessee.",
+        "Texas.",
+        "Kentucky",
+        "Virginia"
+      ]
+    },
+    "en": {
+      "enunciado": "Which U.S. state is famous for producing the vast majority of the world's Bourbon?",
+      "opciones": [
+        "Tennessee.",
+        "Texas.",
+        "Kentucky",
+        "Virginia."
+      ]
+    }
+  },
+  {
+    "id": "story37.1_question1",
+    "historia": "37",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es la principal diferencia visual en la forma del hocico entre un cocodrilo y un caimán?",
+      "opciones": [
+        "El del cocodrilo es ancho y en forma de \"U\".",
+        "El del cocodrilo es estrecho y en forma de \"V\"",
+        "El del cocodrilo no tiene dientes visibles al cerrarse.",
+        "Son exactamente iguales."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the main visual difference regarding snout shape between a crocodile and an alligator?",
+      "opciones": [
+        "The crocodile's snout is wide and U-shaped.",
+        "The crocodile's snout is narrow and V-shaped.",
+        "The crocodile's teeth are not visible when its mouth is closed.",
+        "They are exactly the same."
+      ]
+    }
+  },
+  {
+    "id": "story37.1_question2",
+    "historia": "37",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué zona específica de Florida es más probable encontrar al cocodrilo americano?",
+      "opciones": [
+        "En los lagos de agua dulce del centro de Florida.",
+        "En los ríos del norte del estado.",
+        "En los manglares y zonas costeras del extremo sur",
+        "En las playas del Golfo de México únicamente."
+      ]
+    },
+    "en": {
+      "enunciado": "In which specific area of ​​Florida are you most likely to encounter the American crocodile?",
+      "opciones": [
+        "In the freshwater lakes of Central Florida.",
+        "In the rivers of the northern part of the state.",
+        "In the mangroves and coastal areas of the far south.",
+        "Exclusively on the beaches of the Gulf of Mexico."
+      ]
+    }
+  },
+  {
+    "id": "story37.1_question3",
+    "historia": "37",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué característica física le permite al cocodrilo vivir en agua salada a diferencia del caimán?",
+      "opciones": [
+        "Sus escamas son más gruesas.",
+        "Posee glándulas de sal en la lengua que filtran el exceso",
+        "Puede cerrar sus branquias.",
+        "No bebe agua del entorno."
+      ]
+    },
+    "en": {
+      "enunciado": "What physical characteristic allows the crocodile to live in saltwater, unlike the caiman?",
+      "opciones": [
+        "Its scales are thicker.",
+        "It possesses salt glands on its tongue that filter out the excess.",
+        "It can close its gills.",
+        "It does not drink water from its environment."
+      ]
+    }
+  },
+  {
+    "id": "story38.1_question1",
+    "historia": "38",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el nombre oficial del color naranja que recubre el puente?",
+      "opciones": [
+        "Rojo Atardecer.",
+        "Naranja Internacional",
+        "Dorado Pacífico.",
+        "Ocre de San Francisco."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the official name of the orange color that coats the bridge?",
+      "opciones": [
+        "Sunset Red.",
+        "International Orange",
+        "Pacific Gold.",
+        "San Francisco Ochre."
+      ]
+    }
+  },
+  {
+    "id": "story38.1_question2",
+    "historia": "38",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Por qué el puente se llama \"Golden Gate\" (Puerta Dorada) si es de color naranja?",
+      "opciones": [
+        "Por las minas de oro encontradas debajo de sus pilares.",
+        "Por el nombre del estrecho de agua que cruza",
+        "Porque originalmente iba a ser recubierto con láminas de oro.",
+        "En honor a la fiebre del oro de 1849."
+      ]
+    },
+    "en": {
+      "enunciado": "Why is the bridge called the \"Golden Gate\" if it is orange?",
+      "opciones": [
+        "Because of gold mines found beneath its piers.",
+        "Because of the name of the water strait it crosses",
+        "Because it was originally intended to be clad in gold leaf.",
+        "In honor of the 1849 Gold Rush."
+      ]
+    }
+  },
+  {
+    "id": "story38.1_question3",
+    "historia": "38",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué importante elemento de seguridad se utilizó por primera vez a gran escala durante su construcción, salvando la vida de 19 trabajadores?",
+      "opciones": [
+        "Arneses de paracaídas.",
+        "Una red de seguridad gigante suspendida bajo el puente",
+        "Cascos de acero reforzado.",
+        "Botes salvavidas automáticos."
+      ]
+    },
+    "en": {
+      "enunciado": "What important safety feature was used for the first time on a large scale during its construction, saving the lives of 19 workers?",
+      "opciones": [
+        "Parachute harnesses.",
+        "A giant safety net suspended beneath the bridge",
+        "Steel-reinforced helmets.",
+        "Automatic lifeboats."
+      ]
+    }
+  },
+  {
+    "id": "story39.1_question1",
+    "historia": "39",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué frase en latín aparece en el anverso del sello y significa \"De muchos, uno\"?",
+      "opciones": [
+        "Veni, Vidi, Vici.",
+        "E Pluribus Unum",
+        "Ad Astra Per Aspera.",
+        "In Hoc Signo Vinces."
+      ]
+    },
+    "en": {
+      "enunciado": "What Latin phrase appears on the obverse of the seal and means \"Out of many, one\"?",
+      "opciones": [
+        "Veni, Vidi, Vici.",
+        "E Pluribus Unum",
+        "Ad Astra Per Aspera.",
+        "In Hoc Signo Vinces."
+      ]
+    }
+  },
+  {
+    "id": "story39.1_question2",
+    "historia": "39",
+    "numero": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál es el número que se repite constantemente en el diseño del sello (flechas, estrellas, niveles de la pirámide) en honor a las colonias originales?",
+      "opciones": [
+        "7.",
+        "10.",
+        "12.",
+        "13"
+      ]
+    },
+    "en": {
+      "enunciado": "What number is repeated consistently throughout the seal's design (arrows, stars, pyramid tiers) in honor of the original colonies?",
+      "opciones": [
+        "7.",
+        "10.",
+        "12.",
+        "13"
+      ]
+    }
+  },
+  {
+    "id": "story39.1_question3",
+    "historia": "39",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué figura animal propuso Benjamin Franklin originalmente para el sello antes de que se eligiera al águila calva?",
+      "opciones": [
+        "El León.",
+        "El Bisonte.",
+        "El Pavo",
+        "El Halcón."
+      ]
+    },
+    "en": {
+      "enunciado": "What animal figure did Benjamin Franklin originally propose for the seal before the bald eagle was chosen?",
+      "opciones": [
+        "The Lion.",
+        "The Bison.",
+        "The Turkey",
+        "The Falcon."
+      ]
+    }
+  },
+  {
+    "id": "story40.1_question1",
+    "historia": "40",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo se llama la escala utilizada por los meteorólogos para clasificar la intensidad de un tornado basada en el daño que causa?",
+      "opciones": [
+        "Escala Richter.",
+        "Escala Saffir-Simpson.",
+        "Escala Fujita Mejorada (EF)",
+        "Escala de Beaufort."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the scale used by meteorologists to classify a tornado's intensity based on the damage it causes?",
+      "opciones": [
+        "Richter Scale.",
+        "Saffir-Simpson Scale.",
+        "Enhanced Fujita (EF) Scale",
+        "Beaufort Scale."
+      ]
+    }
+  },
+  {
+    "id": "story40.1_question2",
+    "historia": "40",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el estado de EE. UU. que, históricamente, registra el mayor número de tornados por cada 10,000 millas cuadradas?",
+      "opciones": [
+        "California.",
+        "Nueva York.",
+        "Florida (aunque suelen ser más débiles que los de las llanuras)",
+        "Alaska."
+      ]
+    },
+    "en": {
+      "enunciado": "Which U.S. state historically records the highest number of tornadoes per 10,000 square miles?",
+      "opciones": [
+        "California.",
+        "New York.",
+        "Florida (though they tend to be weaker than those on the plains)",
+        "Alaska."
+      ]
+    }
+  },
+  {
+    "id": "story40.1_question3",
+    "historia": "40",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué color suele adquirir el cielo a menudo justo antes de que se produzca una tormenta severa capaz de generar un tornado?",
+      "opciones": [
+        "Rojo brillante.",
+        "Verde o amarillento",
+        "Azul eléctrico.",
+        "Blanco puro."
+      ]
+    },
+    "en": {
+      "enunciado": "What color does the sky often turn just before a severe storm capable of generating a tornado strikes?",
+      "opciones": [
+        "Bright red.",
+        "Green or yellowish",
+        "Electric blue.",
+        "Pure white."
+      ]
+    }
+  },
+  {
+    "id": "story41.1_question1",
+    "historia": "41",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué decía originalmente el famoso cartel de Hollywood cuando fue inaugurado en 1923?",
+      "opciones": [
+        "Hollywood Stars.",
+        "Hollywoodland",
+        "Welcome to Hollywood.",
+        "Movie Capital."
+      ]
+    },
+    "en": {
+      "enunciado": "What did the famous Hollywood Sign originally say when it was unveiled in 1923?",
+      "opciones": [
+        "Hollywood Stars.",
+        "Hollywoodland",
+        "Welcome to Hollywood.",
+        "Movie Capital."
+      ]
+    }
+  },
+  {
+    "id": "story41.1_question2",
+    "historia": "41",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el único artista que tiene una estrella en las cinco categorías del Paseo de la Fama (Cine, TV, Música, Radio y Teatro)?",
+      "opciones": [
+        "Frank Sinatra.",
+        "Walt Disney.",
+        "Gene Autry",
+        "Michael Jackson."
+      ]
+    },
+    "en": {
+      "enunciado": "Who is the only artist to hold a star in all five categories on the Walk of Fame (Film, TV, Music, Radio, and Theater)?",
+      "opciones": [
+        "Frank Sinatra.",
+        "Walt Disney.",
+        "Gene Autry",
+        "Michael Jackson."
+      ]
+    }
+  },
+  {
+    "id": "story41.1_question3",
+    "historia": "41",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué hotel se celebró la primera ceremonia de los Premios Oscar en 1929, con apenas 270 invitados?",
+      "opciones": [
+        "Hotel Beverly Hills.",
+        "Hotel Roosevelt",
+        "Hotel Chateau Marmont.",
+        "Hotel Millenium Biltmore."
+      ]
+    },
+    "en": {
+      "enunciado": "At which hotel was the very first Academy Awards ceremony held in 1929, attended by a mere 270 guests?",
+      "opciones": [
+        "The Beverly Hills Hotel.",
+        "Hotel Roosevelt",
+        "Chateau Marmont Hotel.",
+        "Millennium Biltmore Hotel."
+      ]
+    }
+  },
+  {
+    "id": "story42.1_question1",
+    "historia": "42",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué famosa playa de Nueva York se celebra cada 4 de julio el concurso internacional de comer hot dogs de Nathan's?",
+      "opciones": [
+        "Brighton Beach.",
+        "Coney Island",
+        "Jones Beach.",
+        "Rockaway Beach."
+      ]
+    },
+    "en": {
+      "enunciado": "On which famous New York beach is Nathan's International Hot Dog Eating Contest held every 4th of July?",
+      "opciones": [
+        "Brighton Beach.",
+        "Coney Island",
+        "Jones Beach.",
+        "Rockaway Beach."
+      ]
+    }
+  },
+  {
+    "id": "story42.1_question2",
+    "historia": "42",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la tradición del hot dog estilo Chicago, ¿cuál es el ingrediente que está \"estrictamente prohibido\" añadir?",
+      "opciones": [
+        "Mostaza.",
+        "Cebolla blanca.",
+        "Kétchup",
+        "Pepinillos."
+      ]
+    },
+    "en": {
+      "enunciado": "According to Chicago-style hot dog tradition, which ingredient is \"strictly forbidden\" to add?",
+      "opciones": [
+        "Mustard.",
+        "White onion.",
+        "Ketchup",
+        "Pickles."
+      ]
+    }
+  },
+  {
+    "id": "story42.1_question3",
+    "historia": "42",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué nombre reciben los hot dogs que vienen recubiertos de una masa de maíz y se sirven en un palo?",
+      "opciones": [
+        "Chili Dogs.",
+        "Corn Dogs",
+        "Pigs in a Blanket.",
+        "Bratwursts."
+      ]
+    },
+    "en": {
+      "enunciado": "What are hot dogs called when they are coated in cornmeal batter and served on a stick?",
+      "opciones": [
+        "Chili Dogs.",
+        "Corn Dogs",
+        "Pigs in a Blanket.",
+        "Bratwursts."
+      ]
+    }
+  },
+  {
+    "id": "story43.1_question1",
+    "historia": "43",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el nombre original que tenía la campana antes de que se popularizara como \"Campana de la Libertad\"?",
+      "opciones": [
+        "Campana de la Revolución.",
+        "Campana de la Casa de Estado (State House Bell)",
+        "Campana de Pensilvania.",
+        "Campana de la Unión."
+      ]
+    },
+    "en": {
+      "enunciado": "What was the bell's original name before it became popularly known as the \"Liberty Bell\"?",
+      "opciones": [
+        "Revolution Bell.",
+        "State House Bell",
+        "Pennsylvania Bell.",
+        "Union Bell."
+      ]
+    }
+  },
+  {
+    "id": "story43.1_question2",
+    "historia": "43",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué texto bíblico está grabado en el borde de la campana y se convirtió en el lema del movimiento abolicionista?",
+      "opciones": [
+        "\"En Dios confiamos\".",
+        "\"El Señor es mi pastor\".",
+        "\"Proclamaréis libertad por toda la tierra\"",
+        "\"Ama a tu prójimo\"."
+      ]
+    },
+    "en": {
+      "enunciado": "What biblical text is inscribed on the rim of the bell and became the motto of the abolitionist movement?",
+      "opciones": [
+        "\"In God We Trust.\"",
+        "\"The Lord is my shepherd.\"",
+        "\"Proclaim liberty throughout all the land\"",
+        "\"Love thy neighbor.\""
+      ]
+    }
+  },
+  {
+    "id": "story43.1_question3",
+    "historia": "43",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Por qué la campana ya no se hace sonar hoy en día?",
+      "opciones": [
+        "Porque el sonido es demasiado fuerte y daña los edificios cercanos.",
+        "Debido a su famosa y profunda grieta que la dejaría inútil si vibrara",
+        "Porque se considera un objeto sagrado que no debe ser tocado.",
+        "Porque el mazo original se perdió."
+      ]
+    },
+    "en": {
+      "enunciado": "Why is the bell no longer rung today?",
+      "opciones": [
+        "Because the sound is too loud and damages nearby buildings.",
+        "Due to its famous, deep crack, which would render it useless if it were to vibrate.",
+        "Because it is considered a sacred object that must not be touched.",
+        "Because the original mallet was lost."
+      ]
+    }
+  },
+  {
+    "id": "story44.1_question1",
+    "historia": "44",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuánto tiempo tarda, en promedio, una sola gota de agua en viajar desde el nacimiento del río en Minnesota hasta el Golfo de México?",
+      "opciones": [
+        "30 días.",
+        "60 días.",
+        "90 días",
+        "120 días."
+      ]
+    },
+    "en": {
+      "enunciado": "On average, how long does it take a single drop of water to travel from the river's source in Minnesota to the Gulf of Mexico?",
+      "opciones": [
+        "30 days.",
+        "60 days.",
+        "90 days",
+        "120 days."
+      ]
+    }
+  },
+  {
+    "id": "story44.1_question2",
+    "historia": "44",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el punto más profundo del río Mississippi, alcanzando aproximadamente los 60 metros (200 pies)?",
+      "opciones": [
+        "Cerca de St. Louis, Missouri.",
+        "Cerca de Algiers Point en Nueva Orleans",
+        "En el Lago Itasca.",
+        "Bajo el arco de St. Louis."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the deepest point of the Mississippi River, reaching approximately 60 meters (200 feet)?",
+      "opciones": [
+        "Near St. Louis, Missouri.",
+        "Near Algiers Point in New Orleans",
+        "At Lake Itasca.",
+        "Beneath the Gateway Arch in St. Louis."
+      ]
+    }
+  },
+  {
+    "id": "story44.1_question3",
+    "historia": "44",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de estos ríos es técnicamente más largo que el Mississippi, aunque se considera uno de sus afluentes?",
+      "opciones": [
+        "Río Ohio.",
+        "Río Arkansas.",
+        "Río Missouri",
+        "Río Rojo"
+      ]
+    },
+    "en": {
+      "enunciado": "Which of these rivers is technically longer than the Mississippi, even though it is considered one of its tributaries?",
+      "opciones": [
+        "The Ohio River.",
+        "Arkansas River.",
+        "Missouri River",
+        "Red River."
+      ]
+    }
+  },
+  {
+    "id": "story45.1_question1",
+    "historia": "45",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué característica física distingue a los alces de otros miembros de la familia de los ciervos (como los uapitíes o los renos)?",
+      "opciones": [
+        "Tienen manchas blancas en el lomo.",
+        "Tienen astas anchas y planas en forma de mano (palmeadas)",
+        "No tienen cola.",
+        "Sus ojos cambian de color en invierno."
+      ]
+    },
+    "en": {
+      "enunciado": "What physical characteristic distinguishes moose from other members of the deer family (such as elk or reindeer)?",
+      "opciones": [
+        "They have white spots on their backs.",
+        "They have broad, flat, hand-shaped (palmate) antlers.",
+        "They have no tail.",
+        "Their eyes change color in winter."
+      ]
+    }
+  },
+  {
+    "id": "story45.1_question2",
+    "historia": "45",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se llama el pliegue de piel cubierto de pelo que cuelga de la garganta del alce?",
+      "opciones": [
+        "Papada.",
+        "Campana o \"Dewlap\"",
+        "Cresta.",
+        "Barba de bosque."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the name of the hair-covered fold of skin that hangs from a moose's throat?",
+      "opciones": [
+        "Wattle.",
+        "Bell or \"Dewlap.\"",
+        "Crest.",
+        "Forest beard."
+      ]
+    }
+  },
+  {
+    "id": "story45.1_question3",
+    "historia": "45",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es la principal fuente de alimento de los alces durante el verano que les ayuda a obtener los minerales necesarios?",
+      "opciones": [
+        "Corteza de pino.",
+        "Plantas acuáticas en el fondo de lagos y estanques",
+        "Bayas silvestres.",
+        "Pequeños roedores."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the primary food source for moose during the summer that helps them obtain necessary minerals?",
+      "opciones": [
+        "Pine bark.",
+        "Aquatic plants at the bottom of lakes and ponds.",
+        "Wild berries.",
+        "Small rodents."
+      ]
+    }
+  },
+  {
+    "id": "story46.1_question1",
+    "historia": "46",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál era el propósito principal del diseño curvo del suelo de la carreta?",
+      "opciones": [
+        "Para que pudiera flotar mejor al cruzar ríos.",
+        "Para evitar que la carga se deslizara en pendientes pronunciadas",
+        "Para que fuera más aerodinámica contra el viento.",
+        "Era simplemente una cuestión estética de la época."
+      ]
+    },
+    "en": {
+      "enunciado": "What was the primary purpose of the wagon's curved bed design?",
+      "opciones": [
+        "To help it float better when crossing rivers.",
+        "To prevent cargo from sliding on steep slopes.",
+        "To make it more aerodynamic against the wind.",
+        "It was simply an aesthetic choice of the era."
+      ]
+    }
+  },
+  {
+    "id": "story46.1_question2",
+    "historia": "46",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Aproximadamente cuánta carga podía transportar una carreta Conestoga de tamaño completo?",
+      "opciones": [
+        "Hasta 500 kg.",
+        "1 o 2 toneladas.",
+        "Hasta 6 toneladas",
+        "10 toneladas."
+      ]
+    },
+    "en": {
+      "enunciado": "Approximately how much cargo could a full-sized Conestoga wagon carry?",
+      "opciones": [
+        "Up to 500 kg.",
+        "1 or 2 tons.",
+        "Up to 6 tons.",
+        "10 tons."
+      ]
+    }
+  },
+  {
+    "id": "story46.1_question3",
+    "historia": "46",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se llamaban los famosos cigarros baratos que fumaban los conductores de estas carretas y cuyo nombre es una abreviatura de \"Conestoga\"?",
+      "opciones": [
+        "Cubanos.",
+        "Stogies",
+        "Puros del Valle.",
+        "Rodillos de Lona"
+      ]
+    },
+    "en": {
+      "enunciado": "What were the famous, inexpensive cigars called that were smoked by the drivers of these wagons—and whose name is an abbreviation of \"Conestoga\"?",
+      "opciones": [
+        "Cubanos.",
+        "Stogies",
+        "Puros del Valle.",
+        "Canvas Rollers."
+      ]
+    }
+  },
+  {
+    "id": "story47.1_question1",
+    "historia": "47",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué estilo arquitectónico fue diseñado el Empire State Building?",
+      "opciones": [
+        "Gótico Moderno.",
+        "Neoclásico.",
+        "Art Déco",
+        "Estilo Internacional."
+      ]
+    },
+    "en": {
+      "enunciado": "In which architectural style was the Empire State Building designed?",
+      "opciones": [
+        "Modern Gothic.",
+        "Neoclassical.",
+        "Art Deco",
+        "International Style."
+      ]
+    }
+  },
+  {
+    "id": "story47.1_question2",
+    "historia": "47",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuánto tiempo tomó la construcción total de este rascacielos de 102 pisos?",
+      "opciones": [
+        "5 años.",
+        "3 años.",
+        "Aproximadamente 1 año y 45 días",
+        "10 meses."
+      ]
+    },
+    "en": {
+      "enunciado": "How long did the total construction of this 102-story skyscraper take?",
+      "opciones": [
+        "5 years.",
+        "3 years.",
+        "Approximately 1 year and 45 days",
+        "10 months."
+      ]
+    }
+  },
+  {
+    "id": "story47.1_question3",
+    "historia": "47",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué famoso personaje de ficción escaló el edificio en la clásica película de 1933?",
+      "opciones": [
+        "Spider-Man.",
+        "King Kong",
+        "Godzilla.",
+        "Batman"
+      ]
+    },
+    "en": {
+      "enunciado": "Which famous fictional character climbed the building in the classic 1933 film?",
+      "opciones": [
+        "Spider-Man.",
+        "King Kong",
+        "Godzilla.",
+        "Batman."
+      ]
+    }
+  },
+  {
+    "id": "story48.1_question1",
+    "historia": "48",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué año se inauguró el actual Yankee Stadium?",
+      "opciones": [
+        "1923",
+        "1996",
+        "2009",
+        "2012"
+      ]
+    },
+    "en": {
+      "enunciado": "In what year was the current Yankee Stadium inaugurated?",
+      "opciones": [
+        "1923",
+        "1996",
+        "2009",
+        "2012"
+      ]
+    }
+  },
+  {
+    "id": "story48.1_question2",
+    "historia": "48",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el apodo histórico del estadio original (y que heredó el actual)?",
+      "opciones": [
+        "El Diamante del Bronx",
+        "La Casa que Ruth construyó",
+        "El Palacio de los Bombarderos",
+        "La Catedral de Nueva York"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the historic nickname of the original stadium (a name inherited by the current one)?",
+      "opciones": [
+        "The Bronx Diamond",
+        "The House That Ruth Built",
+        "The Palace of the Bombers",
+        "The Cathedral of New York"
+      ]
+    }
+  },
+  {
+    "id": "story48.1_question3",
+    "historia": "48",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué material se utilizó para la fachada exterior, similar al del Empire State Building?",
+      "opciones": [
+        "Ladrillo rojo",
+        "Mármol de Carrara",
+        "Piedra caliza de Indiana",
+        "Hormigón pulido"
+      ]
+    },
+    "en": {
+      "enunciado": "What material was used for the exterior façade, similar to that of the Empire State Building?",
+      "opciones": [
+        "Red brick",
+        "Carrara marble",
+        "Indiana limestone",
+        "Polished concrete"
+      ]
+    }
+  },
+  {
+    "id": "story49.1_question1",
+    "historia": "49",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Aproximadamente cuántos galones (litros) de agua expulsa Old Faithful en una sola erupción?",
+      "opciones": [
+        "Entre 500 y 1,000 litros.",
+        "Alrededor de 5,000 litros.",
+        "Entre 14,000 y 32,000 litros",
+        "Más de 100,000 litros."
+      ]
+    },
+    "en": {
+      "enunciado": "Approximately how many gallons (liters) of water does Old Faithful expel in a single eruption?",
+      "opciones": [
+        "Between 500 and 1,000 liters.",
+        "Around 5,000 liters.",
+        "Between 14,000 and 32,000 liters",
+        "More than 100,000 liters."
+      ]
+    }
+  },
+  {
+    "id": "story49.1_question2",
+    "historia": "49",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el factor principal que determina cuánto tiempo habrá que esperar hasta la próxima erupción?",
+      "opciones": [
+        "La temperatura del aire exterior.",
+        "La duración de la erupción anterior",
+        "La cantidad de turistas en la zona.",
+        "La fase de la luna."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the primary factor that determines how long one must wait until the next eruption?",
+      "opciones": [
+        "The outside air temperature.",
+        "The duration of the previous eruption.",
+        "The number of tourists in the area.",
+        "The phase of the moon."
+      ]
+    }
+  },
+  {
+    "id": "story49.1_question3",
+    "historia": "49",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Aunque es muy regular, el intervalo entre erupciones de Old Faithful ha aumentado en las últimas décadas. ¿Cuál es la razón principal?",
+      "opciones": [
+        "El enfriamiento del magma subterráneo.",
+        "El uso excesivo de agua en hoteles cercanos.",
+        "Terremotos en la región que alteran los canales subterráneos",
+        "La evaporación debida al calentamiento global."
+      ]
+    },
+    "en": {
+      "enunciado": "Although it is very regular, the interval between Old Faithful's eruptions has increased in recent decades. What is the main reason?",
+      "opciones": [
+        "The cooling of underground magma.",
+        "Excessive water usage in nearby hotels.",
+        "Earthquakes in the region that alter underground channels.",
+        "Evaporation due to global warming."
+      ]
+    }
+  },
+  {
+    "id": "story50.1_question1",
+    "historia": "50",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿De qué material estaban hechos realmente los costados del USS Constitution que hacían rebotar las balas de cañón?",
+      "opciones": [
+        "Hierro forjado.",
+        "Capas densas de roble blanco y roble vivo",
+        "Acero laminado temprano.",
+        "Madera de teca reforzada con cobre."
+      ]
+    },
+    "en": {
+      "enunciado": "What material were the USS Constitution's sides actually made of that caused cannonballs to bounce off?",
+      "opciones": [
+        "Wrought iron.",
+        "Dense layers of white oak and live oak",
+        "Early rolled steel.",
+        "Teak wood reinforced with copper."
+      ]
+    }
+  },
+  {
+    "id": "story50.1_question2",
+    "historia": "50",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué importante ciudad histórica de los Estados Unidos se encuentra atracado permanentemente el USS Constitution hoy en día?",
+      "opciones": [
+        "Filadelfia.",
+        "Washington D.C.",
+        "Boston",
+        "Nueva York."
+      ]
+    },
+    "en": {
+      "enunciado": "In which major historic U.S. city is the USS Constitution permanently docked today?",
+      "opciones": [
+        "Philadelphia.",
+        "Washington D.C.",
+        "Boston",
+        "New York."
+      ]
+    }
+  },
+  {
+    "id": "story50.1_question3",
+    "historia": "50",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el récord de combate del USS Constitution a lo largo de su historia activa?",
+      "opciones": [
+        "10 victorias y 2 derrotas.",
+        "25 victorias y 5 empates.",
+        "Nunca fue derrotado en combate",
+        "Se hundió una vez y fue reflotado."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the USS Constitution's combat record throughout her active history?",
+      "opciones": [
+        "10 victories and 2 defeats.",
+        "25 victories and 5 draws.",
+        "It was never defeated in combat.",
+        "It sank once and was refloated."
+      ]
+    }
+  },
+  {
+    "id": "story51.1_question1",
+    "historia": "51",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el récord aproximado de envergadura (de punta a punta) que pueden alcanzar los cuernos de un ejemplar excepcional de Texas Longhorn?",
+      "opciones": [
+        "1 metro.",
+        "1.5 metros.",
+        "Más de 2.5 metros",
+        "4 metros."
+      ]
+    },
+    "en": {
+      "enunciado": "What is the approximate record span (tip-to-tip) that the horns of an exceptional Texas Longhorn specimen can reach?",
+      "opciones": [
+        "1 meter.",
+        "1.5 meters.",
+        "More than 2.5 meters",
+        "4 meters."
+      ]
+    }
+  },
+  {
+    "id": "story51.1_question2",
+    "historia": "51",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿A qué universidad estadounidense representa \"Bevo\", uno de los Texas Longhorns más famosos del mundo?",
+      "opciones": [
+        "Universidad de Texas A&M.",
+        "Universidad de Texas en Austin",
+        "Universidad Tecnológica de Texas.",
+        "Universidad Baylor."
+      ]
+    },
+    "en": {
+      "enunciado": "Which American university is represented by \"Bevo,\" one of the most famous Texas Longhorns in the world?",
+      "opciones": [
+        "Texas A&M University.",
+        "The University of Texas at Austin",
+        "Texas Tech University.",
+        "Baylor University."
+      ]
+    }
+  },
+  {
+    "id": "story51.1_question3",
+    "historia": "51",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál de estas características NO es típica del Texas Longhorn original?",
+      "opciones": [
+        "Gran resistencia a la falta de agua.",
+        "Necesidad de cuidados constantes y refugio cerrado",
+        "Longevidad superior a otras razas de ganado.",
+        "Gran variedad de colores y patrones en su pelaje."
+      ]
+    },
+    "en": {
+      "enunciado": "Which of these characteristics is NOT typical of the original Texas Longhorn?",
+      "opciones": [
+        "High resistance to a lack of water.",
+        "Need for constant care and enclosed shelter",
+        "Greater longevity than other cattle breeds.",
+        "Wide variety of colors and patterns in their coat."
+      ]
+    }
+  },
+  {
+    "id": "story52.1_question1",
+    "historia": "52",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué famosa ciudad minera de Arizona ocurrió el legendario duelo del O.K. Corral?",
+      "opciones": [
+        "Dodge City.",
+        "Tombstone",
+        "Deadwood.",
+        "Santa Fe."
+      ]
+    },
+    "en": {
+      "enunciado": "In which famous Arizona mining town did the legendary gunfight at the O.K. Corral take place?",
+      "opciones": [
+        "Dodge City.",
+        "Tombstone",
+        "Deadwood.",
+        "Santa Fe."
+      ]
+    }
+  },
+  {
+    "id": "story52.1_question2",
+    "historia": "52",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Quién era el dentista convertido en pistolero y jugador que fue el mejor amigo y aliado de Wyatt Earp?",
+      "opciones": [
+        "Billy the Kid.",
+        "Buffalo Bill.",
+        "Doc Holliday",
+        "Pat Garrett."
+      ]
+    },
+    "en": {
+      "enunciado": "Who was the dentist-turned-gunfighter and gambler who served as Wyatt Earp's best friend and ally?",
+      "opciones": [
+        "Billy the Kid.",
+        "Buffalo Bill.",
+        "Doc Holliday",
+        "Pat Garrett."
+      ]
+    }
+  },
+  {
+    "id": "story52.1_question3",
+    "historia": "52",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué hizo Wyatt Earp en sus últimos años de vida en Los Ángeles, California?",
+      "opciones": [
+        "Fue elegido alcalde de la ciudad.",
+        "Asesoró a directores y actores en las primeras películas de vaqueros",
+        "Se convirtió en un ermitaño en el desierto.",
+        "Abrió una academia de tiro para la policía local."
+      ]
+    },
+    "en": {
+      "enunciado": "What did Wyatt Earp do during his final years in Los Angeles, California?",
+      "opciones": [
+        "He was elected mayor of the city.",
+        "Advised directors and actors on early Western films",
+        "Became a hermit in the desert.",
+        "Opened a shooting academy for the local police."
+      ]
+    }
+  },
+  {
+    "id": "story53.1_question1",
+    "historia": "53",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de estos famosos personajes fue el sheriff protagonista del legendario tiroteo en el O.K. Corral?",
+      "opciones": [
+        "Billy the Kid.",
+        "Jesse James.",
+        "Wyatt Earp",
+        "Butch Cassidy."
+      ]
+    },
+    "en": {
+      "enunciado": "Which of these famous figures was the sheriff at the center of the legendary shootout at the O.K. Corral?",
+      "opciones": [
+        "Billy the Kid.",
+        "Jesse James.",
+        "Wyatt Earp",
+        "Butch Cassidy."
+      ]
+    }
+  },
+  {
+    "id": "story53.1_question2",
+    "historia": "53",
+    "numero": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se llamaba el servicio de correo rápido a caballo que cruzaba el oeste antes de la llegada del telégrafo?",
+      "opciones": [
+        "Western Express.",
+        "Pony Express",
+        "Iron Horse.",
+        "Buffalo Runners."
+      ]
+    },
+    "en": {
+      "enunciado": "What was the name of the rapid horse-mounted mail service that crossed the West before the arrival of the telegraph?",
+      "opciones": [
+        "Western Express.",
+        "Pony Express",
+        "Iron Horse.",
+        "Buffalo Runners."
+      ]
+    }
+  },
+  {
+    "id": "story53.1_question3",
+    "historia": "53",
+    "numero": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿En qué estado de EE. UU. comenzó la famosa \"Fiebre del Oro\" de 1849 que atrajo a miles de personas hacia el oeste?",
+      "opciones": [
+        "Nevada.",
+        "Arizona.",
+        "Texas.",
+        "California"
+      ]
+    },
+    "en": {
+      "enunciado": "In which U.S. state did the famous \"Gold Rush\" of 1849—which drew thousands of people westward—begin?",
+      "opciones": [
+        "Nevada.",
+        "Arizona.",
+        "Texas.",
+        "California"
+      ]
+    }
+  },
+  {
+    "id": "story54.1_question1",
+    "historia": "54",
+    "numero": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál fue el papel cultural más importante de Elvis en los años 50?",
+      "opciones": [
+        "Ser el primer actor de rock en llegar a Hollywood.",
+        "Inventar el género del Gospel moderno.",
+        "Actuar como un puente artístico entre géneros como el R&B y el Country.",
+        "Ser el dueño de la discográfica Sun Records."
+      ]
+    },
+    "en": {
+      "enunciado": "What was Elvis's most important cultural role in the 1950s?",
+      "opciones": [
+        "Being the first rock performer to make it to Hollywood.",
+        "Inventing the modern Gospel genre.",
+        "Acting as an artistic bridge between genres such as R&B and Country.",
+        "Owning the Sun Records label."
+      ]
+    }
+  },
+  {
+    "id": "story54.1_question2",
+    "historia": "54",
+    "numero": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué lugar se menciona como el santuario definitivo y hogar del legado de Elvis?",
+      "opciones": [
+        "Las Vegas, Nevada.",
+        "El estudio Sun Records en Memphis.",
+        "Su ciudad natal en Mississippi.",
+        "Su icónica mansión, Graceland."
+      ]
+    },
+    "en": {
+      "enunciado": "Which location is mentioned as the definitive sanctuary and home of Elvis's legacy?",
+      "opciones": [
+        "Las Vegas, Nevada.",
+        "The Sun Records studio in Memphis.",
+        "His hometown in Mississippi.",
+        "His iconic mansion, Graceland."
+      ]
+    }
+  },
+  {
+    "id": "story54.1_question3",
+    "historia": "54",
+    "numero": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué aspecto de sus presentaciones en vivo generó mayor controversia en los sectores conservadores?",
+      "opciones": [
+        "Su vestuario lleno de capas y joyas.",
+        "El volumen extremadamente alto de su banda.",
+        "Sus provocadores movimientos de cadera al bailar.",
+        "El hecho de que mezclara música clásica con rock."
+      ]
+    },
+    "en": {
+      "enunciado": "Which aspect of his live performances generated the most controversy among conservative sectors?",
+      "opciones": [
+        "His wardrobe, full of layers and jewelry.",
+        "The extremely high volume of his band.",
+        "His provocative hip movements while dancing.",
+        "The fact that he mixed classical music with rock."
+      ]
+    }
+  }
+]

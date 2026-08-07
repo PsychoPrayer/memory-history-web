@@ -1,0 +1,608 @@
+[
+  {
+    "id": "1",
+    "nombre": "Cachito",
+    "imagen": "/imagenes/cartas/cachito.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "2",
+    "nombre": "Arepas",
+    "imagen": "/imagenes/cartas/arepas.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "3",
+    "nombre": "Avila",
+    "imagen": "/imagenes/cartas/avila.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "4",
+    "nombre": "Cachapa",
+    "imagen": "/imagenes/cartas/cachapa.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "5",
+    "nombre": "Escudo",
+    "imagen": "/imagenes/cartas/escudo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "6",
+    "nombre": "Chiguire",
+    "imagen": "/imagenes/cartas/chiguire.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "7",
+    "nombre": "Chicha",
+    "imagen": "/imagenes/cartas/chicha.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "8",
+    "nombre": "Cunaguaro",
+    "imagen": "/imagenes/cartas/cunaguaro.webp",
+    "desbloqueoEn": 28
+  },
+  {
+    "id": "9",
+    "nombre": "Guacamaya",
+    "imagen": "/imagenes/cartas/guacamaya.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "10",
+    "nombre": "Pabellon",
+    "imagen": "/imagenes/cartas/pabellon.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "11",
+    "nombre": "Salto Angel",
+    "imagen": "/imagenes/cartas/salto-angel.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "12",
+    "nombre": "Simon Bolivar",
+    "imagen": "/imagenes/cartas/simon-bolivar.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "13",
+    "nombre": "Queso Palmizulia",
+    "imagen": "/imagenes/cartas/queso-palmizulia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "14",
+    "nombre": "Hallaca",
+    "imagen": "/imagenes/cartas/hallaca.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "15",
+    "nombre": "Tepuyes",
+    "imagen": "/imagenes/cartas/tepuyes.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "16",
+    "nombre": "Mucuchies",
+    "imagen": "/imagenes/cartas/mucuchies.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "17",
+    "nombre": "Arco de Carabobo",
+    "imagen": "/imagenes/cartas/arco-de-carabobo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "92",
+    "nombre": "Apamate",
+    "imagen": "/imagenes/cartas/apamate.webp",
+    "desbloqueoEn": 28
+  },
+  {
+    "id": "19",
+    "nombre": "Cacao",
+    "imagen": "/imagenes/cartas/cacao.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "20",
+    "nombre": "Lapa",
+    "imagen": "/imagenes/cartas/lapa.webp",
+    "desbloqueoEn": 28
+  },
+  {
+    "id": "21",
+    "nombre": "Cardenalito",
+    "imagen": "/imagenes/cartas/cardenalito.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "22",
+    "nombre": "Cuatro",
+    "imagen": "/imagenes/cartas/cuatro.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "23",
+    "nombre": "Francisco de Miranda",
+    "imagen": "/imagenes/cartas/francisco-de-miranda.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "24",
+    "nombre": "Manuelita Saenz",
+    "imagen": "/imagenes/cartas/manuelita-saenz.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "25",
+    "nombre": "Madama",
+    "imagen": "/imagenes/cartas/madama.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "26",
+    "nombre": "Orquidea",
+    "imagen": "/imagenes/cartas/orquidea.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "27",
+    "nombre": "Quesillo",
+    "imagen": "/imagenes/cartas/quesillo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "28",
+    "nombre": "Pan de Jamon",
+    "imagen": "/imagenes/cartas/pan-de-jamon.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "29",
+    "nombre": "Perinola",
+    "imagen": "/imagenes/cartas/perinola.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "31",
+    "nombre": "Turpial",
+    "imagen": "/imagenes/cartas/turpial.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "32",
+    "nombre": "Venezuela",
+    "imagen": "/imagenes/cartas/venezuela.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "33",
+    "nombre": "Tonina",
+    "imagen": "/imagenes/cartas/tonina.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "34",
+    "nombre": "La Colonia",
+    "imagen": "/imagenes/cartas/la-colonia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "35",
+    "nombre": "Sapoara",
+    "imagen": "/imagenes/cartas/sapoara.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "36",
+    "nombre": "Papagayo",
+    "imagen": "/imagenes/cartas/papagayo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "37",
+    "nombre": "Pico Bolivar",
+    "imagen": "/imagenes/cartas/pico-bolivar.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "38",
+    "nombre": "Reina Pepiada",
+    "imagen": "/imagenes/cartas/reina-pepiada.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "39",
+    "nombre": "Ron",
+    "imagen": "/imagenes/cartas/ron.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "40",
+    "nombre": "Medanos de Coro",
+    "imagen": "/imagenes/cartas/medanos-de-coro.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "41",
+    "nombre": "Luisa Caceres",
+    "imagen": "/imagenes/cartas/luisa-caceres.webp",
+    "desbloqueoEn": 28
+  },
+  {
+    "id": "42",
+    "nombre": "Joropo",
+    "imagen": "/imagenes/cartas/joropo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "43",
+    "nombre": "Pelota",
+    "imagen": "/imagenes/cartas/pelota.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "44",
+    "nombre": "Hotel Humbolt",
+    "imagen": "/imagenes/cartas/hotel-humbolt.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "45",
+    "nombre": "Indigenas",
+    "imagen": "/imagenes/cartas/indigenas.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "46",
+    "nombre": "Virgen del Valle",
+    "imagen": "/imagenes/cartas/virgen-del-valle.webp",
+    "desbloqueoEn": 28
+  },
+  {
+    "id": "47",
+    "nombre": "Silbon",
+    "imagen": "/imagenes/cartas/silbon.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "48",
+    "nombre": "Sayona",
+    "imagen": "/imagenes/cartas/sayona.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "49",
+    "nombre": "Morrocoy",
+    "imagen": "/imagenes/cartas/morrocoy.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "50",
+    "nombre": "Teleferico",
+    "imagen": "/imagenes/cartas/teleferico.webp",
+    "desbloqueoEn": 28
+  },
+  {
+    "id": "51",
+    "nombre": "Diablos de Yare",
+    "imagen": "/imagenes/cartas/diablos-de-yare.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "52",
+    "nombre": "Malta",
+    "imagen": "/imagenes/cartas/malta.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "53",
+    "nombre": "Mango",
+    "imagen": "/imagenes/cartas/mango.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "54",
+    "nombre": "Divina Pastora",
+    "imagen": "/imagenes/cartas/divina-pastora.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "55",
+    "nombre": "Caiman",
+    "imagen": "/imagenes/cartas/caiman.webp",
+    "desbloqueoEn": 16
+  },
+  {
+    "id": "30",
+    "nombre": "Tequeños",
+    "imagen": "/imagenes/cartas/tequenos.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "56",
+    "nombre": "Golfeado",
+    "imagen": "/imagenes/cartas/golfeado.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "57",
+    "nombre": "Casabe",
+    "imagen": "/imagenes/cartas/casabe.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "58",
+    "nombre": "Araguaney",
+    "imagen": "/imagenes/cartas/araguaney.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "59",
+    "nombre": "Cayena",
+    "imagen": "/imagenes/cartas/cayena.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "60",
+    "nombre": "Petroleo",
+    "imagen": "/imagenes/cartas/petroleo.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "61",
+    "nombre": "Puente de Angostura",
+    "imagen": "/imagenes/cartas/puente-de-angostura.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "62",
+    "nombre": "Empanadas",
+    "imagen": "/imagenes/cartas/empanadas.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "63",
+    "nombre": "Trompo",
+    "imagen": "/imagenes/cartas/trompo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "64",
+    "nombre": "Caribe",
+    "imagen": "/imagenes/cartas/caribe.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "65",
+    "nombre": "Tucan",
+    "imagen": "/imagenes/cartas/tucan.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "66",
+    "nombre": "Acacia",
+    "imagen": "/imagenes/cartas/acacia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "67",
+    "nombre": "coco",
+    "imagen": "/imagenes/cartas/coco.webp",
+    "desbloqueoEn": 16
+  },
+  {
+    "id": "68",
+    "nombre": "Merey",
+    "imagen": "/imagenes/cartas/merey.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "69",
+    "nombre": "Araguato",
+    "imagen": "/imagenes/cartas/araguato.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "70",
+    "nombre": "Rana",
+    "imagen": "/imagenes/cartas/rana.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "71",
+    "nombre": "Garza Roja",
+    "imagen": "/imagenes/cartas/garza-roja.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "72",
+    "nombre": "Cri Cri",
+    "imagen": "/imagenes/cartas/cri-cri.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "73",
+    "nombre": "Ave del paraiso",
+    "imagen": "/imagenes/cartas/ave-del-paraiso.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "74",
+    "nombre": "Harina Pan",
+    "imagen": "/imagenes/cartas/harina-pan.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "75",
+    "nombre": "Pirulin",
+    "imagen": "/imagenes/cartas/pirulin.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "76",
+    "nombre": "Toronto",
+    "imagen": "/imagenes/cartas/toronto.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "77",
+    "nombre": "Maiz",
+    "imagen": "/imagenes/cartas/maiz.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "78",
+    "nombre": "Frailejon",
+    "imagen": "/imagenes/cartas/frailejon.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "79",
+    "nombre": "samba",
+    "imagen": "/imagenes/cartas/samba.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "80",
+    "nombre": "Mono titi",
+    "imagen": "/imagenes/cartas/mono-titi.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "81",
+    "nombre": "Mamon",
+    "imagen": "/imagenes/cartas/mamon.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "82",
+    "nombre": "Toddy",
+    "imagen": "/imagenes/cartas/toddy.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "83",
+    "nombre": "Loro",
+    "imagen": "/imagenes/cartas/loro.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "84",
+    "nombre": "Pargo",
+    "imagen": "/imagenes/cartas/pargo.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "85",
+    "nombre": "Oso Frontino",
+    "imagen": "/imagenes/cartas/oso-frontino.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "86",
+    "nombre": "Nutria",
+    "imagen": "/imagenes/cartas/nutria.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "87",
+    "nombre": "Patacon",
+    "imagen": "/imagenes/cartas/patacon.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "88",
+    "nombre": "PingPong",
+    "imagen": "/imagenes/cartas/pingpong.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "89",
+    "nombre": "Trinitarias",
+    "imagen": "/imagenes/cartas/trinitarias.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "90",
+    "nombre": "Aji Dulce",
+    "imagen": "/imagenes/cartas/aji-dulce.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "91",
+    "nombre": "Bora",
+    "imagen": "/imagenes/cartas/bora.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "93",
+    "nombre": "Coquito",
+    "imagen": "/imagenes/cartas/coquito.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "94",
+    "nombre": "El chichero",
+    "imagen": "/imagenes/cartas/el-chichero.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "95",
+    "nombre": "cocosette",
+    "imagen": "/imagenes/cartas/cocosette.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "96",
+    "nombre": "Maracas",
+    "imagen": "/imagenes/cartas/maracas.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "97",
+    "nombre": "Natuchips",
+    "imagen": "/imagenes/cartas/natuchips.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "98",
+    "nombre": "Alpargatas",
+    "imagen": "/imagenes/cartas/alpargatas.webp",
+    "desbloqueoEn": 16
+  },
+  {
+    "id": "99",
+    "nombre": "liquiliqui",
+    "imagen": "/imagenes/cartas/liquiliqui.webp",
+    "desbloqueoEn": 16
+  },
+  {
+    "id": "100",
+    "nombre": "Cristofue",
+    "imagen": "/imagenes/cartas/cristofue.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "101",
+    "nombre": "pancito llanero",
+    "imagen": "/imagenes/cartas/pancito-llanero.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "102",
+    "nombre": "pancito avion",
+    "imagen": "/imagenes/cartas/pancito-avion.webp",
+    "desbloqueoEn": 20
+  }
+]

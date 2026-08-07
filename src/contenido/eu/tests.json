@@ -1,0 +1,42 @@
+[
+  {
+    "nivel": 1,
+    "nombre": "Nivel 1",
+    "desdeHistoria": 1,
+    "hastaHistoria": 10,
+    "preguntas": 10,
+    "segundos": 0
+  },
+  {
+    "nivel": 2,
+    "nombre": "Nivel 2",
+    "desdeHistoria": 11,
+    "hastaHistoria": 20,
+    "preguntas": 10,
+    "segundos": 0
+  },
+  {
+    "nivel": 3,
+    "nombre": "Nivel 3",
+    "desdeHistoria": 21,
+    "hastaHistoria": 30,
+    "preguntas": 10,
+    "segundos": 0
+  },
+  {
+    "nivel": 4,
+    "nombre": "Nivel 4",
+    "desdeHistoria": 31,
+    "hastaHistoria": 40,
+    "preguntas": 10,
+    "segundos": 0
+  },
+  {
+    "nivel": 5,
+    "nombre": "Nivel 5",
+    "desdeHistoria": 41,
+    "hastaHistoria": 52,
+    "preguntas": 10,
+    "segundos": 0
+  }
+]

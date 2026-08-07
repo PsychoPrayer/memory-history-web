@@ -1,0 +1,440 @@
+[
+  {
+    "id": "1",
+    "nombre": "Abanico",
+    "imagen": "/imagenes/cartas/abanico.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "2",
+    "nombre": "Abejaruco",
+    "imagen": "/imagenes/cartas/abejaruco.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "3",
+    "nombre": "Abubilla",
+    "imagen": "/imagenes/cartas/abubilla.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "4",
+    "nombre": "Aceite de oliva",
+    "imagen": "/imagenes/cartas/aceite-de-oliva.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "72",
+    "nombre": "Zapatos de flamenco",
+    "imagen": "/imagenes/cartas/zapatos-de-flamenco.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "5",
+    "nombre": "Aceitunas",
+    "imagen": "/imagenes/cartas/aceitunas.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "6",
+    "nombre": "Acordeon",
+    "imagen": "/imagenes/cartas/acordeon.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "7",
+    "nombre": "Agueducto de sevilla",
+    "imagen": "/imagenes/cartas/agueducto-de-sevilla.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "8",
+    "nombre": "Aguila imperial Iberica",
+    "imagen": "/imagenes/cartas/aguila-imperial-iberica.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "9",
+    "nombre": "Bailaor",
+    "imagen": "/imagenes/cartas/bailaor.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "10",
+    "nombre": "Bandera España",
+    "imagen": "/imagenes/cartas/bandera-espana.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "11",
+    "nombre": "Barquito",
+    "imagen": "/imagenes/cartas/barquito.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "12",
+    "nombre": "Boronia",
+    "imagen": "/imagenes/cartas/boronia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "13",
+    "nombre": "Bota de Vino",
+    "imagen": "/imagenes/cartas/bota-de-vino.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "14",
+    "nombre": "Botijo",
+    "imagen": "/imagenes/cartas/botijo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "15",
+    "nombre": "Burro",
+    "imagen": "/imagenes/cartas/burro.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "16",
+    "nombre": "Calle Laurel",
+    "imagen": "/imagenes/cartas/calle-laurel.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "17",
+    "nombre": "Camoanilla",
+    "imagen": "/imagenes/cartas/camoanilla.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "18",
+    "nombre": "Carabela",
+    "imagen": "/imagenes/cartas/carabela.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "19",
+    "nombre": "Carnavales",
+    "imagen": "/imagenes/cartas/carnavales.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "20",
+    "nombre": "Castañuelas",
+    "imagen": "/imagenes/cartas/castanuelas.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "21",
+    "nombre": "Ceramica Fajalauza",
+    "imagen": "/imagenes/cartas/ceramica-fajalauza.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "22",
+    "nombre": "Churros de Chocolate",
+    "imagen": "/imagenes/cartas/churros-de-chocolate.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "23",
+    "nombre": "Cigueña",
+    "imagen": "/imagenes/cartas/ciguena.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "24",
+    "nombre": "Clavel",
+    "imagen": "/imagenes/cartas/clavel.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "25",
+    "nombre": "Concha Peregrino",
+    "imagen": "/imagenes/cartas/concha-peregrino.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "26",
+    "nombre": "Crema Catalana",
+    "imagen": "/imagenes/cartas/crema-catalana.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "27",
+    "nombre": "Cruz asturiana",
+    "imagen": "/imagenes/cartas/cruz-asturiana.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "28",
+    "nombre": "Don quijote",
+    "imagen": "/imagenes/cartas/don-quijote.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "29",
+    "nombre": "Escudo Español",
+    "imagen": "/imagenes/cartas/escudo-espanol.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "30",
+    "nombre": "Fallas",
+    "imagen": "/imagenes/cartas/fallas.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "31",
+    "nombre": "Futball",
+    "imagen": "/imagenes/cartas/futball.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "32",
+    "nombre": "Gaudi",
+    "imagen": "/imagenes/cartas/gaudi.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "33",
+    "nombre": "Gazpacho",
+    "imagen": "/imagenes/cartas/gazpacho.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "34",
+    "nombre": "Guitarra",
+    "imagen": "/imagenes/cartas/guitarra.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "35",
+    "nombre": "Hernan cortez",
+    "imagen": "/imagenes/cartas/hernan-cortez.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "36",
+    "nombre": "Ibice español",
+    "imagen": "/imagenes/cartas/ibice-espanol.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "37",
+    "nombre": "Iris español",
+    "imagen": "/imagenes/cartas/iris-espanol.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "38",
+    "nombre": "Isabel la catolica",
+    "imagen": "/imagenes/cartas/isabel-la-catolica.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "39",
+    "nombre": "Jamon serrano",
+    "imagen": "/imagenes/cartas/jamon-serrano.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "40",
+    "nombre": "Jilguero Europeo",
+    "imagen": "/imagenes/cartas/jilguero-europeo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "41",
+    "nombre": "Lince Iberico",
+    "imagen": "/imagenes/cartas/lince-iberico.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "42",
+    "nombre": "Lobo Iberico",
+    "imagen": "/imagenes/cartas/lobo-iberico.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "43",
+    "nombre": "Manchego",
+    "imagen": "/imagenes/cartas/manchego.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "44",
+    "nombre": "Miguel de cervantes",
+    "imagen": "/imagenes/cartas/miguel-de-cervantes.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "45",
+    "nombre": "Molino",
+    "imagen": "/imagenes/cartas/molino.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "46",
+    "nombre": "Naipes",
+    "imagen": "/imagenes/cartas/naipes.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "47",
+    "nombre": "Naranjo",
+    "imagen": "/imagenes/cartas/naranjo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "48",
+    "nombre": "Narciso",
+    "imagen": "/imagenes/cartas/narciso.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "49",
+    "nombre": "Pablo Picaso",
+    "imagen": "/imagenes/cartas/pablo-picaso.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "50",
+    "nombre": "Pancito torero",
+    "imagen": "/imagenes/cartas/pancito-torero.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "51",
+    "nombre": "Pandereta",
+    "imagen": "/imagenes/cartas/pandereta.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "52",
+    "nombre": "Pechiazul",
+    "imagen": "/imagenes/cartas/pechiazul.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "53",
+    "nombre": "Peineta",
+    "imagen": "/imagenes/cartas/peineta.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "54",
+    "nombre": "Playa",
+    "imagen": "/imagenes/cartas/playa.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "55",
+    "nombre": "Pulpo a la gallega",
+    "imagen": "/imagenes/cartas/pulpo-a-la-gallega.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "56",
+    "nombre": "Rosca de reyes",
+    "imagen": "/imagenes/cartas/rosca-de-reyes.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "57",
+    "nombre": "Sagrada familia",
+    "imagen": "/imagenes/cartas/sagrada-familia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "58",
+    "nombre": "Salvador Dali",
+    "imagen": "/imagenes/cartas/salvador-dali.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "59",
+    "nombre": "San Fermines",
+    "imagen": "/imagenes/cartas/san-fermines.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "60",
+    "nombre": "Sangria",
+    "imagen": "/imagenes/cartas/sangria.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "61",
+    "nombre": "Sevillana",
+    "imagen": "/imagenes/cartas/sevillana.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "62",
+    "nombre": "Sol",
+    "imagen": "/imagenes/cartas/sol.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "63",
+    "nombre": "Tapas",
+    "imagen": "/imagenes/cartas/tapas.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "64",
+    "nombre": "Torero 2",
+    "imagen": "/imagenes/cartas/torero-2.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "65",
+    "nombre": "Torero",
+    "imagen": "/imagenes/cartas/torero.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "66",
+    "nombre": "Toro",
+    "imagen": "/imagenes/cartas/toro.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "67",
+    "nombre": "Torrijas",
+    "imagen": "/imagenes/cartas/torrijas.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "68",
+    "nombre": "Tortilla Española",
+    "imagen": "/imagenes/cartas/tortilla-espanola.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "69",
+    "nombre": "Turron",
+    "imagen": "/imagenes/cartas/turron.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "70",
+    "nombre": "Uvas",
+    "imagen": "/imagenes/cartas/uvas.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "71",
+    "nombre": "Vasija",
+    "imagen": "/imagenes/cartas/vasija.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "73",
+    "nombre": "QuebrantaHuesos",
+    "imagen": "/imagenes/cartas/quebrantahuesos.webp",
+    "desbloqueoEn": 12
+  }
+]

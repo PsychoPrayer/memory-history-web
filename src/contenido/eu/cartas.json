@@ -1,0 +1,572 @@
+[
+  {
+    "id": "1.1",
+    "nombre": "Bellota",
+    "imagen": "/imagenes/cartas/bellota.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "2.1",
+    "nombre": "Abraham Lincoln",
+    "imagen": "/imagenes/cartas/abraham-lincoln.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "3.1",
+    "nombre": "Apple pie",
+    "imagen": "/imagenes/cartas/apple-pie.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "4.1",
+    "nombre": "Apple",
+    "imagen": "/imagenes/cartas/apple.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "5.1",
+    "nombre": "Baseball Cap",
+    "imagen": "/imagenes/cartas/baseball-cap.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "6.1",
+    "nombre": "basketball",
+    "imagen": "/imagenes/cartas/basketball.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "7.1",
+    "nombre": "BBQ",
+    "imagen": "/imagenes/cartas/bbq.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "8.1",
+    "nombre": "beer",
+    "imagen": "/imagenes/cartas/beer.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "9.1",
+    "nombre": "Mordekay",
+    "imagen": "/imagenes/cartas/mordekay.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "10.1",
+    "nombre": "Bold Eagle",
+    "imagen": "/imagenes/cartas/bold-eagle.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "11.1",
+    "nombre": "Bourbon whiskey",
+    "imagen": "/imagenes/cartas/bourbon-whiskey.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "12.1",
+    "nombre": "Bowling",
+    "imagen": "/imagenes/cartas/bowling.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "13.1",
+    "nombre": "Bufalo",
+    "imagen": "/imagenes/cartas/bufalo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "14.1",
+    "nombre": "campbell soup",
+    "imagen": "/imagenes/cartas/campbell-soup.webp",
+    "desbloqueoEn": 16
+  },
+  {
+    "id": "15.1",
+    "nombre": "canoa",
+    "imagen": "/imagenes/cartas/canoa.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "16.1",
+    "nombre": "cardenal",
+    "imagen": "/imagenes/cartas/cardenal.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "17.1",
+    "nombre": "can",
+    "imagen": "/imagenes/cartas/can.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "18.1",
+    "nombre": "Beaver",
+    "imagen": "/imagenes/cartas/beaver.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "19.1",
+    "nombre": "cherry pie",
+    "imagen": "/imagenes/cartas/cherry-pie.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "20.1",
+    "nombre": "cherry",
+    "imagen": "/imagenes/cartas/cherry.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "21.1",
+    "nombre": "horse",
+    "imagen": "/imagenes/cartas/horse.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "22.1",
+    "nombre": "Converse",
+    "imagen": "/imagenes/cartas/converse.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "23.1",
+    "nombre": "Korn",
+    "imagen": "/imagenes/cartas/korn.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "24.1",
+    "nombre": "cowboy hat",
+    "imagen": "/imagenes/cartas/cowboy-hat.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "25.1",
+    "nombre": "cupcake",
+    "imagen": "/imagenes/cartas/cupcake.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "26.1",
+    "nombre": "Curling",
+    "imagen": "/imagenes/cartas/curling.webp",
+    "desbloqueoEn": 16
+  },
+  {
+    "id": "27.1",
+    "nombre": "dards",
+    "imagen": "/imagenes/cartas/dards.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "28.1",
+    "nombre": "donuts",
+    "imagen": "/imagenes/cartas/donuts.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "29.1",
+    "nombre": "ducky",
+    "imagen": "/imagenes/cartas/ducky.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "30.1",
+    "nombre": "US flag",
+    "imagen": "/imagenes/cartas/us-flag.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "31.1",
+    "nombre": "american football ball",
+    "imagen": "/imagenes/cartas/american-football-ball.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "32.1",
+    "nombre": "benjamin franklin",
+    "imagen": "/imagenes/cartas/benjamin-franklin.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "33.1",
+    "nombre": "strawberry",
+    "imagen": "/imagenes/cartas/strawberry.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "34.1",
+    "nombre": "fried chicken",
+    "imagen": "/imagenes/cartas/fried-chicken.webp",
+    "desbloqueoEn": 20
+  },
+  {
+    "id": "35.1",
+    "nombre": "ginger cooqui",
+    "imagen": "/imagenes/cartas/ginger-cooqui.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "36.1",
+    "nombre": "Globo aereoestatico",
+    "imagen": "/imagenes/cartas/globo-aereoestatico.webp",
+    "desbloqueoEn": 16
+  },
+  {
+    "id": "37.1",
+    "nombre": "baseball glove",
+    "imagen": "/imagenes/cartas/baseball-glove.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "38.1",
+    "nombre": "halloween",
+    "imagen": "/imagenes/cartas/halloween.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "39.1",
+    "nombre": "hambuerguesa",
+    "imagen": "/imagenes/cartas/hambuerguesa.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "40.1",
+    "nombre": "indian hat",
+    "imagen": "/imagenes/cartas/indian-hat.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "41.1",
+    "nombre": "hershey",
+    "imagen": "/imagenes/cartas/hershey.webp",
+    "desbloqueoEn": 24
+  },
+  {
+    "id": "42.1",
+    "nombre": "hockey helmet",
+    "imagen": "/imagenes/cartas/hockey-helmet.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "43.1",
+    "nombre": "hollywood",
+    "imagen": "/imagenes/cartas/hollywood.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "44.1",
+    "nombre": "hot dog",
+    "imagen": "/imagenes/cartas/hot-dog.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "45.1",
+    "nombre": "Ironside",
+    "imagen": "/imagenes/cartas/ironside.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "46.1",
+    "nombre": "kisses",
+    "imagen": "/imagenes/cartas/kisses.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "47.1",
+    "nombre": "Liberty bell",
+    "imagen": "/imagenes/cartas/liberty-bell.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "48.1",
+    "nombre": "Lincoln hat",
+    "imagen": "/imagenes/cartas/lincoln-hat.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "49.1",
+    "nombre": "Longhorn",
+    "imagen": "/imagenes/cartas/longhorn.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "50.1",
+    "nombre": "Loon",
+    "imagen": "/imagenes/cartas/loon.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "51.1",
+    "nombre": "Native",
+    "imagen": "/imagenes/cartas/native.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "52.1",
+    "nombre": "Racoon",
+    "imagen": "/imagenes/cartas/racoon.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "53.1",
+    "nombre": "Oak Tree",
+    "imagen": "/imagenes/cartas/oak-tree.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "54.1",
+    "nombre": "Model A",
+    "imagen": "/imagenes/cartas/model-a.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "55.1",
+    "nombre": "Alce",
+    "imagen": "/imagenes/cartas/alce.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "56.1",
+    "nombre": "Native American",
+    "imagen": "/imagenes/cartas/native-american.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "57.1",
+    "nombre": "Orange",
+    "imagen": "/imagenes/cartas/orange.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "58.1",
+    "nombre": "Grizzly Bear",
+    "imagen": "/imagenes/cartas/grizzly-bear.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "59.1",
+    "nombre": "Pancakes",
+    "imagen": "/imagenes/cartas/pancakes.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "60.1",
+    "nombre": "Peach",
+    "imagen": "/imagenes/cartas/peach.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "61.1",
+    "nombre": "Popcorn",
+    "imagen": "/imagenes/cartas/popcorn.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "62.1",
+    "nombre": "Puercoespin",
+    "imagen": "/imagenes/cartas/puercoespin.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "63.1",
+    "nombre": "Anabelle",
+    "imagen": "/imagenes/cartas/anabelle.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "64.1",
+    "nombre": "Roadrunner",
+    "imagen": "/imagenes/cartas/roadrunner.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "65.1",
+    "nombre": "Rodeo",
+    "imagen": "/imagenes/cartas/rodeo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "66.1",
+    "nombre": "Zorrillo",
+    "imagen": "/imagenes/cartas/zorrillo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "67.1",
+    "nombre": "Route 66",
+    "imagen": "/imagenes/cartas/route-66.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "68.1",
+    "nombre": "Abraham Lincoln",
+    "imagen": "/imagenes/cartas/abraham-lincoln-2.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "69.1",
+    "nombre": "Sheriff",
+    "imagen": "/imagenes/cartas/sheriff.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "70.1",
+    "nombre": "Space Shuttle",
+    "imagen": "/imagenes/cartas/space-shuttle.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "71.1",
+    "nombre": "Smokey Bear",
+    "imagen": "/imagenes/cartas/smokey-bear.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "72.1",
+    "nombre": "Spam",
+    "imagen": "/imagenes/cartas/spam.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "73.1",
+    "nombre": "Liberty Statue",
+    "imagen": "/imagenes/cartas/liberty-statue.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "74.1",
+    "nombre": "SteamBoat",
+    "imagen": "/imagenes/cartas/steamboat.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "75.1",
+    "nombre": "Sunflower",
+    "imagen": "/imagenes/cartas/sunflower.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "76.1",
+    "nombre": "Syrop",
+    "imagen": "/imagenes/cartas/syrop.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "77.1",
+    "nombre": "Abraham Lincoln",
+    "imagen": "/imagenes/cartas/abraham-lincoln-3.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "78.1",
+    "nombre": "Pavo",
+    "imagen": "/imagenes/cartas/pavo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "79.1",
+    "nombre": "Native House",
+    "imagen": "/imagenes/cartas/native-house.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "80.1",
+    "nombre": "Uncle Sam Hat",
+    "imagen": "/imagenes/cartas/uncle-sam-hat.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "81.1",
+    "nombre": "Football Helmet",
+    "imagen": "/imagenes/cartas/football-helmet.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "83.1",
+    "nombre": "George Washington",
+    "imagen": "/imagenes/cartas/george-washington.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "84.1",
+    "nombre": "Strong Woman",
+    "imagen": "/imagenes/cartas/strong-woman.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "85.1",
+    "nombre": "Chicken Wings",
+    "imagen": "/imagenes/cartas/chicken-wings.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "86.1",
+    "nombre": "Rosas",
+    "imagen": "/imagenes/cartas/rosas.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "87.1",
+    "nombre": "Botas",
+    "imagen": "/imagenes/cartas/botas.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "88.1",
+    "nombre": "Elvis",
+    "imagen": "/imagenes/cartas/elvis.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "89.1",
+    "nombre": "John Wayne",
+    "imagen": "/imagenes/cartas/john-wayne.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "90.1",
+    "nombre": "pancito yanqui",
+    "imagen": "/imagenes/cartas/pancito-yanqui.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "91.1",
+    "nombre": "pancito avion",
+    "imagen": "/imagenes/cartas/pancito-avion.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "92.1",
+    "nombre": "pancito usa 3",
+    "imagen": "/imagenes/cartas/pancito-usa-3.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "93.1",
+    "nombre": "Cinabon",
+    "imagen": "/imagenes/cartas/cinabon.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "94.1",
+    "nombre": "pie limon",
+    "imagen": "/imagenes/cartas/pie-limon.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "95.1",
+    "nombre": "Pumpkin Pie",
+    "imagen": "/imagenes/cartas/pumpkin-pie.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "96.1",
+    "nombre": "Cheerios",
+    "imagen": "/imagenes/cartas/cheerios.webp",
+    "desbloqueoEn": 12
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "1",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/alaska.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "2",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/alpinista.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "51",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/rey.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "3",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/aprendiz.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "4",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/argentina.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "5",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/aviador.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "6",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/bailaor.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "7",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/benjamin-franklin-2.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "8",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/bethoven.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "9",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/bombero.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "10",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/brasil.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "11",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/caballero.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "12",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/china.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "13",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/churchill.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "14",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/cocinero.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "15",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/colombia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "16",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/constructor.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "59",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/venezuela.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "18",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/egipto.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "19",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/einstein.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "20",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/el-fantasma-de-la-opera.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "21",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/el-principito.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "22",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/escandinavia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "23",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/escocia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "24",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/espana.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "25",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/etiopia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "26",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/explorador.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "27",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/ferrocarilero.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "28",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/finlandia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "29",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/francia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "30",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/galileo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "31",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/gandalf.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "32",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/gengis-kan.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "33",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/george-washington-2.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "34",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/hernan-cortez.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "35",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/inca.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "36",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/india.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "37",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/indiana-jones.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "38",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/inglaterra.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "39",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/irlanda.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "40",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/italia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "41",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/jack-sparrow.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "42",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/john-snow.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "43",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/louis-amstrong.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "44",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/marcel-marcou.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "45",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/marinero.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "46",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/merlin.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "47",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/mexico.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "48",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/mosquetero.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "49",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/napoleon.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "50",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/nativo-americano.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "52",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/romano.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "53",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/rusia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "54",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/samoa.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "55",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/samurai.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "56",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/shakespeare.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "57",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/sherlock-holmes.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "58",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/somalia.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "60",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/usa.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "61",
+    "nombre": "",
+    "imagen": "/imagenes/cartas/vaquero.webp",
+    "desbloqueoEn": 12
+  }
+]

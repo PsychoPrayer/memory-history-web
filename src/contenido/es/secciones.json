@@ -1,0 +1,44 @@
+[
+  {
+    "cartas": 12,
+    "es": "¡Felicidades! Completaste todos los niveles de 12 cartas.",
+    "en": "Congratulations! You completed all 12-card levels.",
+    "imagen": "/imagenes/secciones/seccion-12.webp"
+  },
+  {
+    "cartas": 16,
+    "es": "¡Felicidades! Completaste todos los niveles de 16 cartas.",
+    "en": "Congratulations! You completed all 16-card levels.",
+    "imagen": "/imagenes/secciones/seccion-16.webp"
+  },
+  {
+    "cartas": 20,
+    "es": "¡Felicidades! Completaste todos los niveles de 20 cartas.",
+    "en": "Congratulations! You completed all 20-card levels.",
+    "imagen": "/imagenes/secciones/seccion-20.webp"
+  },
+  {
+    "cartas": 24,
+    "es": "¡Felicidades! Completaste todos los niveles de 24 cartas.",
+    "en": "Congratulations! You completed all 24-card levels.",
+    "imagen": "/imagenes/secciones/seccion-24.webp"
+  },
+  {
+    "cartas": 28,
+    "es": "¡Felicidades! Completaste todos los niveles de 28 cartas.",
+    "en": "Congratulations! You completed all 28-card levels.",
+    "imagen": "/imagenes/secciones/seccion-28.webp"
+  },
+  {
+    "cartas": 32,
+    "es": "¡Felicidades! Completaste todos los niveles de 32 cartas.",
+    "en": "Congratulations! You completed all 32-card levels.",
+    "imagen": "/imagenes/secciones/seccion-32.webp"
+  },
+  {
+    "cartas": 40,
+    "es": "¡Felicidades! Completaste todos los niveles de 40 cartas.",
+    "en": "Congratulations! You completed all 40-card levels.",
+    "imagen": "/imagenes/secciones/seccion-40.webp"
+  }
+]

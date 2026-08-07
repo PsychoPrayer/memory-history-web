@@ -1,0 +1,33 @@
+{
+  "name": "memory-history-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "exportar": "node herramientas/exportar.mjs",
+    "medios": "node herramientas/medios.mjs",
+    "contenido": "npm run exportar && npm run medios",
+    "empaquetar": "node herramientas/empaquetar.mjs",
+    "banderas": "node herramientas/banderas.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "js-yaml": "^4.1.0",
+    "sharp": "^0.33.5",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.6"
+  }
+}
