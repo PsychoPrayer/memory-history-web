@@ -28,6 +28,8 @@
   --radio: 0;
   --filete: 1px solid rgba(43, 33, 22, 0.38);
   --filete-tenue: 1px solid rgba(43, 33, 22, 0.18);
+  /* Ancho máximo compartido: hoja con sombra y marco dorado. */
+  --hoja-max: 62rem;
 
   color-scheme: light;
 }
@@ -249,7 +251,7 @@ button {
 .pantalla {
   position: relative;
   min-height: 100%;
-  width: min(62rem, 100%);
+  width: min(var(--hoja-max), 100%);
   margin: 0 auto;
   padding: 1rem clamp(1.1rem, 4vw, 2.6rem) 3rem;
   display: flex;
@@ -385,25 +387,25 @@ button {
 /* ---------- Menú: la portadilla ------------------------------------------ */
 
 .pantalla-menu {
-  /* Holgura interior al filete: la hoja crema no lo atraviesa arriba/abajo. */
+  /* Holgura respecto al viewport; el filete dorado va pegado a esta hoja. */
   --marco-aire: clamp(1rem, 2.8vmin, 2rem);
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 1.8rem;
   box-sizing: border-box;
-  width: min(62rem, calc(100% - var(--marco-aire) * 2));
+  width: min(var(--hoja-max), calc(100% - var(--marco-aire) * 2));
   max-height: calc(100dvh - var(--marco-aire) * 2);
   min-height: calc(100dvh - var(--marco-aire) * 2);
   margin: var(--marco-aire) auto;
   overflow: auto;
 }
 
-/* Doble filete de lámina grabada. Siempre por encima de la hoja. */
+/* Doble filete: mismo ancho que la caja con sombra (no a pantalla completa). */
 .pantalla-menu::before {
   content: '';
-  position: fixed;
-  inset: var(--marco-aire);
+  position: absolute;
+  inset: 0;
   z-index: 5;
   pointer-events: none;
   border: 1px solid rgba(154, 111, 39, 0.45);
