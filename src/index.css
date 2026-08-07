@@ -1795,6 +1795,32 @@ button {
   color: var(--oro);
 }
 
+.boton-ayuda {
+  position: fixed;
+  right: clamp(1.1rem, 3vmin, 2.2rem);
+  bottom: clamp(1.1rem, 3vmin, 2.2rem);
+  z-index: 6;
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0;
+  border: 1px solid rgba(43, 33, 22, 0.45);
+  background: rgba(241, 232, 210, 0.94);
+  font-family: var(--display);
+  font-size: 1.45rem;
+  line-height: 1;
+  color: var(--tinta);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(43, 33, 22, 0.18);
+  transition: background 0.16s ease, color 0.16s ease;
+}
+
+.boton-ayuda:hover {
+  background: var(--tinta);
+  color: var(--papel-claro);
+}
+
 /* ---------- Ex libris (premio de historia) -------------------------------- */
 
 .exlibris {

@@ -135,10 +135,18 @@ const es = {
   bienvenida: 'Bienvenido a Memory History',
   saltar: 'Saltar',
   comoSeJuega: 'Cómo se juega',
-  guiaPaso1: 'Gana niveles de memoria para abrir páginas del libro.',
-  guiaPaso2: 'Cada victoria puede desbloquear una historia con su mensaje.',
-  guiaPaso3: 'Cuando tengas un bloque de historias, entra a Tests y pon a prueba lo aprendido.',
-  guiaPie: 'Elige país arriba del título. Cada uno guarda su propio progreso.',
+  ayuda: 'Ayuda',
+  guiaPaso1:
+    'Arriba del título está el país. Tócalo para cambiar (Venezuela, España, Estados Unidos…). Cada país guarda su propio progreso.',
+  guiaPaso2:
+    'Pulsa Jugar para elegir un nivel de memoria. Empareja las cartas iguales antes de que se acabe el tiempo.',
+  guiaPaso3:
+    'Al ganar un nivel puedes desbloquear una historia. Léelas en Historias cuando quieras.',
+  guiaPaso4:
+    'Cuando tengas un bloque de historias, entra a Tests y responde preguntas sobre lo aprendido.',
+  guiaPaso5:
+    'PancitoLandia es una partida libre. En Configuración cambias idioma, volumen y puedes reiniciar el progreso.',
+  guiaPie: 'Si te pierdes, pulsa el botón ? en el menú y vuelve a ver esta guía.',
   empezarAExplorar: 'Empezar a explorar',
 } as const
 
@@ -255,10 +263,18 @@ const en: Record<keyof typeof es, string> = {
   bienvenida: 'Welcome to Memory History',
   saltar: 'Skip',
   comoSeJuega: 'How to play',
-  guiaPaso1: 'Win memory levels to open pages of the book.',
-  guiaPaso2: 'Each win can unlock a story with its short presentation.',
-  guiaPaso3: 'When you have a block of stories, take the Tests to prove what you learned.',
-  guiaPie: 'Pick a country above the title. Each one keeps its own progress.',
+  ayuda: 'Help',
+  guiaPaso1:
+    'Above the title is the country. Tap it to switch (Venezuela, Spain, United States…). Each country keeps its own progress.',
+  guiaPaso2:
+    'Tap Play to pick a memory level. Match equal cards before time runs out.',
+  guiaPaso3:
+    'Winning a level can unlock a story. Read them anytime in Stories.',
+  guiaPaso4:
+    'When you have a block of stories, open Tests and answer questions about what you learned.',
+  guiaPaso5:
+    'PancitoLandia is a free match. In Settings you change language, volume, and can reset progress.',
+  guiaPie: 'If you get stuck, tap the ? button on the menu to open this guide again.',
   empezarAExplorar: 'Start exploring',
 }
 

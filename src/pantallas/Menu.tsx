@@ -28,6 +28,7 @@ export function Menu() {
 
   const [creditos, setCreditos] = useState(false)
   const [eligiendoPais, setEligiendoPais] = useState(false)
+  const [guiaAbierta, setGuiaAbierta] = useState(false)
 
   const estrellas = totalEstrellas(progreso)
   const maximo = niveles.length * 3
@@ -105,7 +106,25 @@ export function Menu() {
         </button>
       </footer>
 
+      <button
+        type="button"
+        className="boton-ayuda"
+        aria-label={t('ayuda')}
+        title={t('ayuda')}
+        onClick={() => {
+          sonar('boton')
+          setGuiaAbierta(true)
+        }}
+      >
+        ?
+      </button>
+
       <Bienvenida />
+
+      <GuiaJuego
+        abierta={guiaAbierta}
+        onCerrar={() => setGuiaAbierta(false)}
+      />
 
       <Modal abierto={eligiendoPais} onCerrar={() => setEligiendoPais(false)}>
         <h2 className="modal-titulo">{t('eligePais')}</h2>
@@ -187,9 +206,53 @@ function SelectorDePais({ actual, onElegir }: SelectorProps) {
   )
 }
 
+interface GuiaProps {
+  abierta: boolean
+  /** Si falta, el modal es obligatorio (primera visita). */
+  onCerrar?: () => void
+  etiquetaBoton?: 'continuar' | 'cerrar'
+  onConfirmar?: () => void
+}
+
+/** Misma hoja para la primera visita y para el botón ?. */
+function GuiaJuego({
+  abierta,
+  onCerrar,
+  etiquetaBoton = 'cerrar',
+  onConfirmar,
+}: GuiaProps) {
+  const t = useTexto()
+  if (!abierta) return null
+
+  return (
+    <Modal abierto onCerrar={onCerrar} ancho="ancho">
+      <h2 className="modal-titulo">{t('comoSeJuega')}</h2>
+      <ol className="guia-pasos">
+        <li>{t('guiaPaso1')}</li>
+        <li>{t('guiaPaso2')}</li>
+        <li>{t('guiaPaso3')}</li>
+        <li>{t('guiaPaso4')}</li>
+        <li>{t('guiaPaso5')}</li>
+      </ol>
+      <p className="modal-texto-tenue">{t('guiaPie')}</p>
+      <button
+        type="button"
+        className="boton-principal"
+        onClick={() => {
+          sonar('boton')
+          onConfirmar?.()
+          onCerrar?.()
+        }}
+      >
+        {t(etiquetaBoton)}
+      </button>
+    </Modal>
+  )
+}
+
 /**
- * Tres pasos y listo: idioma → una hoja de cómo se juega → términos.
- * Nada de tutoriales de ocho pantallas.
+ * Tres pasos y listo: idioma → guía → términos.
+ * La guía se puede reabrir cuando quieras con el botón ?.
  */
 function Bienvenida() {
   const t = useTexto()
@@ -222,25 +285,11 @@ function Bienvenida() {
 
   if (!ajustes.guiaVista) {
     return (
-      <Modal abierto>
-        <h2 className="modal-titulo">{t('comoSeJuega')}</h2>
-        <ol className="guia-pasos">
-          <li>{t('guiaPaso1')}</li>
-          <li>{t('guiaPaso2')}</li>
-          <li>{t('guiaPaso3')}</li>
-        </ol>
-        <p className="modal-texto-tenue">{t('guiaPie')}</p>
-        <button
-          type="button"
-          className="boton-principal"
-          onClick={() => {
-            sonar('boton')
-            cambiarAjuste('guiaVista', true)
-          }}
-        >
-          {t('continuar')}
-        </button>
-      </Modal>
+      <GuiaJuego
+        abierta
+        etiquetaBoton="continuar"
+        onConfirmar={() => cambiarAjuste('guiaVista', true)}
+      />
     )
   }
 
