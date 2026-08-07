@@ -385,25 +385,25 @@ button {
 /* ---------- Menú: la portadilla ------------------------------------------ */
 
 .pantalla-menu {
-  /* Misma holgura que el filete ::before, para que la hoja no lo atraviese. */
-  --marco-aire: clamp(0.8rem, 2.2vmin, 1.7rem);
+  /* Holgura interior al filete: la hoja crema no lo atraviesa arriba/abajo. */
+  --marco-aire: clamp(1rem, 2.8vmin, 2rem);
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 1.8rem;
   box-sizing: border-box;
-  /* Altura + márgenes = viewport: el filete queda libre arriba y abajo. */
+  width: min(62rem, calc(100% - var(--marco-aire) * 2));
+  max-height: calc(100dvh - var(--marco-aire) * 2);
   min-height: calc(100dvh - var(--marco-aire) * 2);
-  height: calc(100dvh - var(--marco-aire) * 2);
   margin: var(--marco-aire) auto;
   overflow: auto;
 }
 
-/* Doble filete de lámina grabada. Por encima de la hoja central. */
+/* Doble filete de lámina grabada. Siempre por encima de la hoja. */
 .pantalla-menu::before {
   content: '';
   position: fixed;
-  inset: var(--marco-aire, clamp(0.8rem, 2.2vmin, 1.7rem));
+  inset: var(--marco-aire);
   z-index: 5;
   pointer-events: none;
   border: 1px solid rgba(154, 111, 39, 0.45);
