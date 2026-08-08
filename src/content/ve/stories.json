@@ -58,7 +58,7 @@
   },
   {
     "id": "4",
-    "titulo": "Simon Bolivar",
+    "titulo": "Simón Bolívar",
     "imagen": "/imagenes/historias/simon-bolivar.webp",
     "es": {
       "presentacion": "Conoce a Bolívar, el Libertador. El hombre que liberó cinco naciones y cambió el destino de América para siempre.",
@@ -67,7 +67,7 @@
       ]
     },
     "en": {
-      "presentacion": "",
+      "presentacion": "Meet Bolívar, the Liberator — the man who freed five nations and changed the destiny of the Americas forever.",
       "texto": [
         "SIMÓN BOLÍVAR - THE LIBERATOR\n\nSimón José Antonio de la Santísima Trinidad Bolívar y Palacios was born in Caracas on July 24, 1783, into an aristocratic Creole family. Orphaned at an early age, he was educated by tutors who instilled liberal ideas in him. His education in Europe exposed him to French revolutionary ideas and the ideal of freedom that would shape his destiny.\n\nBolívar was an exceptional military leader, politician, and strategist who led the independence of five South American nations. His military genius was combined with a unique continental political vision. He was an eloquent speaker, prolific writer, and charismatic leader who succeeded in uniting diverse peoples under the banner of liberty.\n\nMain Achievements by Liberated Nation:\n\nVenezuela: His homeland, liberated after the Battle of Carabobo in 1821.\nColombia: Liberated in the Battle of Boyacá (1819).\nEcuador: Liberated in the Battle of Pichincha (1822).\nPeru: Liberated in the Battles of Junín and Ayacucho (1824).\nBolivia: Created as an independent nation (1825).\n\n Immortal Phrases: \"The freedom of the New World is the hope of the universe.\" \"A happy soldier earns no right to command his homeland.\" \"Morality and knowledge are the poles of a republic.\" \"Popular education should be the first concern of the paternal love of Congress.\" Simón Bolívar was more than a liberator: he was the architect of American freedom, the visionary who dreamed of a great continental homeland, and the hero who shaped the destiny of five nations under the banner of independence."
       ]
@@ -951,16 +951,16 @@
   },
   {
     "id": "51",
-    "titulo": "Tonina del orinoco",
+    "titulo": "Tonina del Orinoco",
     "imagen": "/imagenes/historias/tonina-del-orinoco.webp",
     "es": {
-      "presentacion": "",
+      "presentacion": "El delfín rosado del Orinoco: guardián de los ríos llaneros, rodeado de leyendas y hoy en peligro.",
       "texto": [
         "LA TONINA\n\nLa Tonina (Inia geoffrensis), también conocida como delfín rosado o bufeo, es el mamífero acuático más grande de la cuenca del río Orinoco y sus afluentes. A diferencia de sus parientes marinos, las toninas están adaptadas a los ecosistemas de agua dulce y son vitales para el equilibrio de los ríos llaneros. Su coloración varía con la edad: nacen grises y se vuelven rosadas al llegar a la adultez, especialmente los machos, debido al desgaste de la piel y los capilares sanguíneos cerca de la superficie. En Venezuela, la tonina está rodeada de mitos y leyendas por parte de las comunidades indígenas y llaneras. Se dice que son seres mágicos que pueden transformarse en humanos para seducir a las personas o que son guardianes del río. A pesar de su importancia cultural y ecológica, la especie se encuentra en peligro de extinción debido a la contaminación de las aguas, la minería ilegal y la pesca accidental. Ver una tonina saltar en el Orinoco es un espectáculo natural inolvidable y un recordatorio de la biodiversidad de los llanos venezolanos."
       ]
     },
     "en": {
-      "presentacion": "",
+      "presentacion": "The Orinoco’s pink river dolphin: guardian of the plains rivers, wrapped in legend and now at risk.",
       "texto": [
         "THE TONINA\n\nThe Tonina (Inia geoffrensis), also known as the pink dolphin or boto, is the largest aquatic mammal in the Orinoco River basin and its tributaries. Unlike its marine relatives, toninas are adapted to freshwater ecosystems and are vital to the balance of the plains rivers. Their coloration varies with age: they are born gray and turn pink when they reach adulthood, especially males, due to the wear of the skin and blood capillaries near the surface. In Venezuela, the tonina is surrounded by myths and legends from indigenous and plains communities. It is said that they are magical beings that can transform into humans to seduce people or that they are guardians of the river. Despite their cultural and ecological importance, the species is endangered due to water pollution, illegal mining, and accidental fishing. Seeing a tonina jump in the Orinoco is an unforgettable natural spectacle and a reminder of the biodiversity of the Venezuelan llanos."
       ]
@@ -1008,7 +1008,7 @@
   },
   {
     "id": "54",
-    "titulo": "",
+    "titulo": "Golfeado",
     "imagen": "/imagenes/historias/golfeado.webp",
     "es": {
       "presentacion": "El caracol dulce de Venezuela: papelón, queso y anís.",

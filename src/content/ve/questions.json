@@ -3742,5 +3742,149 @@
         "Llanero Cheese"
       ]
     }
+  },
+  {
+    "id": "story53_question1",
+    "historia": "53",
+    "numero": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿De qué se elabora el casabe?",
+      "opciones": [
+        "Maíz tierno",
+        "Yuca amarga",
+        "Trigo integral",
+        "Plátano verde"
+      ]
+    },
+    "en": {
+      "enunciado": "What is casabe made from?",
+      "opciones": [
+        "Sweet corn",
+        "Bitter cassava (yuca)",
+        "Whole wheat",
+        "Green plantain"
+      ]
+    }
+  },
+  {
+    "id": "story53_question2",
+    "historia": "53",
+    "numero": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Para qué se usa el sebucán al preparar el casabe?",
+      "opciones": [
+        "Para hornear la torta",
+        "Para endulzar la masa",
+        "Para exprimir el yare tóxico",
+        "Para fermentar la yuca"
+      ]
+    },
+    "en": {
+      "enunciado": "What is the sebucán used for when making casabe?",
+      "opciones": [
+        "To bake the cake",
+        "To sweeten the dough",
+        "To squeeze out the toxic yare",
+        "To ferment the cassava"
+      ]
+    }
+  },
+  {
+    "id": "story53_question3",
+    "historia": "53",
+    "numero": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Por qué el casabe era ideal para viajes largos?",
+      "opciones": [
+        "Se conserva meses por su baja humedad",
+        "Es muy dulce y pesado",
+        "Se cocina en segundos sin fuego",
+        "Solo lo comían en la costa"
+      ]
+    },
+    "en": {
+      "enunciado": "Why was casabe ideal for long journeys?",
+      "opciones": [
+        "It keeps for months thanks to low moisture",
+        "It is very sweet and heavy",
+        "It cooks in seconds without fire",
+        "It was only eaten on the coast"
+      ]
+    }
+  },
+  {
+    "id": "story54_question1",
+    "historia": "54",
+    "numero": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Qué forma tiene el golfeado?",
+      "opciones": [
+        "Caracol",
+        "Esfera",
+        "Triángulo",
+        "Herradura"
+      ]
+    },
+    "en": {
+      "enunciado": "What shape is the golfeado?",
+      "opciones": [
+        "A snail spiral",
+        "A sphere",
+        "A triangle",
+        "A horseshoe"
+      ]
+    }
+  },
+  {
+    "id": "story54_question2",
+    "historia": "54",
+    "numero": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Dónde se originó el golfeado a principios del siglo XX?",
+      "opciones": [
+        "Maracaibo",
+        "Mérida",
+        "Ciudad Bolívar",
+        "Petare"
+      ]
+    },
+    "en": {
+      "enunciado": "Where did the golfeado originate in the early twentieth century?",
+      "opciones": [
+        "Maracaibo",
+        "Mérida",
+        "Ciudad Bolívar",
+        "Petare"
+      ]
+    }
+  },
+  {
+    "id": "story54_question3",
+    "historia": "54",
+    "numero": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuáles son los rellenos clásicos del golfeado?",
+      "opciones": [
+        "Chocolate y nata",
+        "Papelón y queso blanco",
+        "Jamón y queso amarillo",
+        "Coco y leche condensada"
+      ]
+    },
+    "en": {
+      "enunciado": "What are the classic fillings of golfeado?",
+      "opciones": [
+        "Chocolate and cream",
+        "Papelón (panela) and white cheese",
+        "Ham and yellow cheese",
+        "Coconut and condensed milk"
+      ]
+    }
   }
 ]
