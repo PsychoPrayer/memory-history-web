@@ -707,6 +707,8 @@ button {
 }
 
 .atlas-scroll {
+  display: flex;
+  justify-content: safe center;
   width: 100%;
   margin-top: 0.35rem;
   overflow-x: auto;
@@ -730,10 +732,14 @@ button {
 }
 
 .atlas-plate {
+  /* Exact atlas PNG aspect (1024×764) so % markers match landmasses. */
+  --atlas-ratio: 1.3403;
+  --atlas-height: min(62vh, 34rem);
   position: relative;
-  height: min(62vh, 34rem);
-  width: max(100%, calc(min(62vh, 34rem) * 1.95));
-  min-width: 100%;
+  height: var(--atlas-height);
+  width: calc(var(--atlas-height) * var(--atlas-ratio));
+  flex-shrink: 0;
+  margin: 0 auto;
   overflow: hidden;
   background: #d8c7a4;
 }
@@ -743,8 +749,7 @@ button {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center center;
+  object-fit: fill;
   pointer-events: none;
   user-select: none;
 }
@@ -2457,8 +2462,7 @@ button {
   }
 
   .atlas-plate {
-    height: min(56vh, 30rem);
-    width: max(100%, calc(min(56vh, 30rem) * 2.15));
+    --atlas-height: min(56vh, 30rem);
   }
 
   .atlas-marker {

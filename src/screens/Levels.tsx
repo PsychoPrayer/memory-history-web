@@ -34,57 +34,63 @@ const ATLAS_MAP: Record<CountryCode, string> = {
 
 type MarkerXY = [number, number]
 
-/** Land-biased routes per country (percent of the plate). */
+/**
+ * Marker positions as % of the map image (same aspect for all atlas plates).
+ * Tuned so routes stay on the country landmass, not neighbors or ocean.
+ */
 const ATLAS_ROUTES: Record<
   CountryCode,
   { normal: MarkerXY[]; hard: MarkerXY[] }
 > = {
+  /* Venezuela — placed from the marked atlas guide. */
   VE: {
     normal: [
-      [18, 34],
-      [32, 30],
-      [46, 28],
-      [60, 32],
-      [74, 30],
+      [28, 28], // 1 Maracaibo (further west)
+      [38, 30], // 2 east of Maracaibo
+      [52, 28], // 3 Caracas coast
+      [62, 28], // 4 Cumaná north-central
+      [72, 30], // 5 Cumaná east / Orinoco delta
     ],
     hard: [
-      [22, 58],
-      [36, 62],
-      [50, 56],
-      [64, 64],
-      [78, 58],
+      [32, 46], // 6 Los Llanos west
+      [48, 48], // 7 Los Llanos center
+      [54, 62], // 8 south-central (lower)
+      [64, 52], // 9 Guayana west
+      [74, 56], // 10 Guayana east
     ],
   },
+  /* Spain — placed from the marked atlas guide. */
   ES: {
     normal: [
-      [22, 30],
-      [36, 28],
-      [48, 32],
-      [62, 30],
-      [74, 34],
+      [33, 25], // 1 Galicia (Santiago)
+      [43, 23], // 2 Asturias
+      [50, 35], // 3 Castilla (north / Burgos)
+      [60, 28], // 4 Aragón (near Pyrenees)
+      [71, 30], // 5 Cataluña (coast)
     ],
     hard: [
-      [26, 58],
-      [40, 62],
-      [52, 56],
-      [66, 60],
-      [78, 64],
+      [37, 52], // 6 Extremadura
+      [51, 52], // 7 south of Madrid (Vielle / New Castile)
+      [47, 65], // 8 Andalucía (Sevilla–Córdoba)
+      [64, 58], // 9 Murcia
+      [79, 49], // 10 Islas Baleares (Mallorca)
     ],
   },
+  /* Continental US: avoid Canada, Mexico, deep ocean */
   EU: {
     normal: [
-      [16, 36],
-      [30, 32],
-      [46, 30],
-      [62, 34],
-      [78, 32],
+      [20, 30], // Northwest
+      [34, 28], // Northern plains
+      [48, 30], // Upper Midwest
+      [62, 32], // Great Lakes
+      [76, 30], // Northeast
     ],
     hard: [
-      [20, 60],
-      [36, 64],
-      [52, 58],
-      [68, 62],
-      [84, 56],
+      [18, 50], // California
+      [30, 56], // Southwest
+      [44, 60], // Texas
+      [58, 62], // Deep South
+      [70, 58], // Southeast / Florida approach
     ],
   },
 }
