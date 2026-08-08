@@ -35,7 +35,11 @@ export interface SettingsData {
   timeAssist: TimeAssist
   languageChosen: boolean
   termsAccepted: boolean
+  /** First-run meet-Pancito modal completed. */
+  pancitoMet: boolean
   guideSeen: boolean
+  /** Dismissed Pancito tip ids (e.g. menu-country, levels-next). */
+  tipsSeen: string[]
 }
 
 export interface FreeSettings {
@@ -83,7 +87,9 @@ function initialState(): SavedState {
       timeAssist: 'default',
       languageChosen: false,
       termsAccepted: false,
+      pancitoMet: false,
       guideSeen: false,
+      tipsSeen: [],
     },
     free: {
       cards: 16,
@@ -111,13 +117,25 @@ function migrate(raw: Record<string, unknown>): SavedState {
       languageChosen: (old.idiomaElegido as boolean) ?? base.settings.languageChosen,
       termsAccepted: (old.terminosAceptados as boolean) ?? base.settings.termsAccepted,
       guideSeen: (old.guiaVista as boolean) ?? base.settings.guideSeen,
+      /* Returning players already past onboarding skip the meet modal. */
+      pancitoMet: Boolean(old.guiaVista),
+      tipsSeen: base.settings.tipsSeen,
     }
   } else if (raw.settings && typeof raw.settings === 'object') {
+    const incoming = raw.settings as Partial<SettingsData>
+    const guideSeen = incoming.guideSeen ?? base.settings.guideSeen
     base.settings = {
       ...base.settings,
-      ...(raw.settings as SettingsData),
-      timeAssist:
-        (raw.settings as SettingsData).timeAssist ?? base.settings.timeAssist,
+      ...incoming,
+      timeAssist: incoming.timeAssist ?? base.settings.timeAssist,
+      guideSeen,
+      pancitoMet:
+        typeof incoming.pancitoMet === 'boolean'
+          ? incoming.pancitoMet
+          : guideSeen,
+      tipsSeen: Array.isArray(incoming.tipsSeen)
+        ? incoming.tipsSeen
+        : base.settings.tipsSeen,
     }
   }
 
@@ -241,6 +259,21 @@ export function setSetting<C extends keyof SettingsData>(key: C, value: Settings
     ...previous,
     settings: { ...previous.settings, [key]: value },
   }))
+}
+
+/** Persist that a Pancito tip was dismissed. */
+export function markTipSeen(tipId: string) {
+  update((previous) => {
+    const seen = previous.settings.tipsSeen ?? []
+    if (seen.includes(tipId)) return previous
+    return {
+      ...previous,
+      settings: {
+        ...previous.settings,
+        tipsSeen: [...seen, tipId],
+      },
+    }
+  })
 }
 
 export function setFreeSettings(change: Partial<FreeSettings>) {

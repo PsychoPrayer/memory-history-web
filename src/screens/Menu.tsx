@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Modal } from '../components/Modal'
+import { PancitoSprite, PancitoTip } from '../components/PancitoGuide'
 import { STAR_TIP } from '../components/Stars'
 import {
   COUNTRY_NAME,
@@ -71,6 +72,13 @@ export function Menu() {
           <span>{t('starsOf', { a: stars, b: maximum })}</span>
         </div>
       </header>
+
+      <PancitoTip
+        tipId="menu-play"
+        textKey="tipMenuPlay"
+        pose="happy"
+        className="pancito-tip-menu"
+      />
 
       <nav className="menu-buttons">
         <button type="button" className="btn-primary" onClick={() => go('/levels')}>
@@ -213,13 +221,16 @@ function HowToPlay({
   return (
     <Modal open onClose={onClose} width="wide">
       <h2 className="modal-title">{t('howToPlay')}</h2>
-      <ol className="guide-steps">
-        <li>{t('guideStep1')}</li>
-        <li>{t('guideStep2')}</li>
-        <li>{t('guideStep3')}</li>
-        <li>{t('guideStep4')}</li>
-        <li>{t('guideStep5')}</li>
-      </ol>
+      <div className="guide-with-pancito">
+        <PancitoSprite pose="guide" className="guide-pancito" />
+        <ol className="guide-steps">
+          <li>{t('guideStep1')}</li>
+          <li>{t('guideStep2')}</li>
+          <li>{t('guideStep3')}</li>
+          <li>{t('guideStep4')}</li>
+          <li>{t('guideStep5')}</li>
+        </ol>
+      </div>
       <p className="modal-text-muted">{t('guideFooter')}</p>
       <button
         type="button"
@@ -260,6 +271,28 @@ function Onboarding() {
               {language === 'es' ? 'Español' : 'English'}
             </button>
           ))}
+        </div>
+      </Modal>
+    )
+  }
+
+  if (!settings.pancitoMet) {
+    return (
+      <Modal open>
+        <div className="pancito-meet">
+          <PancitoSprite pose="happy" className="pancito-meet-sprite" />
+          <h2 className="modal-title">{t('meetPancitoTitle')}</h2>
+          <p className="pancito-meet-body">{t('meetPancitoBody')}</p>
+          <button
+            type="button"
+            className="btn-primary"
+            onClick={() => {
+              playSound('button')
+              setSetting('pancitoMet', true)
+            }}
+          >
+            {t('niceToMeetYou')}
+          </button>
         </div>
       </Modal>
     )

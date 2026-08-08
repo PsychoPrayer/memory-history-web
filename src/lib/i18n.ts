@@ -161,6 +161,19 @@ const es = {
   improveScore: 'Mejorar puntuación',
   aboutThisStory: 'Historia: {title}',
   nextMission: 'Siguiente misión',
+  gotIt: 'Entendido',
+  thisWay: '¡Por aquí!',
+  tipMenuPlay:
+    'Elige tu país arriba y pulsa Jugar para empezar la campaña.',
+  tipLevelsAtlas:
+    'Desliza el mapa y sigue el marcador dorado: ahí está tu siguiente misión.',
+  meetPancitoTitle: '¡Hola! Soy Pancito',
+  meetPancitoBody:
+    'Seré tu guía en Memory History. Te iré señalando qué hacer: el mapa, las historias y las victorias. Cuando me veas, presta atención.',
+  niceToMeetYou: 'Encantado',
+  tipVictory: '¡Bien hecho! Cada victoria te acerca a nuevas historias.',
+  tipFirstStory:
+    '¡Tu primera historia! Léela cuando quieras en Historias… o ahora mismo.',
 } as const
 
 const en: Record<keyof typeof es, string> = {
@@ -322,6 +335,17 @@ const en: Record<keyof typeof es, string> = {
   improveScore: 'Improve score',
   aboutThisStory: 'Story: {title}',
   nextMission: 'Next mission',
+  gotIt: 'Got it',
+  thisWay: 'This way!',
+  tipMenuPlay: 'Pick your country up top, then tap Play to start the campaign.',
+  tipLevelsAtlas:
+    'Pan the map and follow the gold marker — that’s your next mission.',
+  meetPancitoTitle: 'Hi! I’m Pancito',
+  meetPancitoBody:
+    'I’ll be your guide in Memory History. I’ll point out what to do next — the map, stories, and wins. When you see me, pay attention.',
+  niceToMeetYou: 'Nice to meet you',
+  tipVictory: 'Nice work! Every win brings you closer to new stories.',
+  tipFirstStory: 'Your first story! Read it whenever in Stories… or right now.',
 }
 
 export const TEXTS = { es, en }

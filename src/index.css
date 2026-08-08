@@ -2266,6 +2266,225 @@ button {
   color: var(--papel-claro);
 }
 
+/* ---------- Pancito guide ------------------------------------------------- */
+
+.pancito-tip {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+  max-width: min(36rem, 100%);
+  text-align: left;
+  animation: pancito-tip-in 0.45s ease-out;
+}
+
+.pancito-tip-menu {
+  width: min(36rem, 100%);
+  margin: 0 auto -0.35rem;
+}
+
+.pancito-tip-levels {
+  width: min(36rem, 100%);
+  margin: 0 auto;
+}
+
+.pancito-sprite {
+  display: block;
+  height: auto;
+  filter: drop-shadow(0 3px 6px rgba(20, 13, 6, 0.28));
+}
+
+.pancito-tip-sprite {
+  flex: 0 0 auto;
+  width: 17rem;
+}
+
+.pancito-meet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  text-align: center;
+}
+
+.pancito-meet-sprite {
+  width: min(16rem, 70vw);
+}
+
+.pancito-meet-body {
+  margin: 0;
+  max-width: 28rem;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: var(--tinta);
+}
+
+.guide-with-pancito {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 0.4rem 0 0.6rem;
+}
+
+.guide-pancito {
+  flex: 0 0 auto;
+  width: min(9.5rem, 28vw);
+  margin-top: 0.2rem;
+}
+
+.guide-with-pancito .guide-steps {
+  flex: 1 1 auto;
+  margin: 0;
+}
+
+.pancito-callout {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0.35rem 0 0.75rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid rgba(43, 33, 22, 0.28);
+  background: rgba(250, 245, 232, 0.92);
+  text-align: left;
+}
+
+.pancito-callout-sprite {
+  flex: 0 0 auto;
+  width: 5.5rem;
+}
+
+.pancito-callout p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.35;
+  color: var(--tinta);
+}
+
+.pancito-tip-bubble {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 0.7rem 0.85rem 0.65rem;
+  border: 1px solid rgba(43, 33, 22, 0.35);
+  background: rgba(250, 245, 232, 0.96);
+  box-shadow: 0 4px 14px -6px rgba(20, 13, 6, 0.35);
+}
+
+.pancito-tip-bubble p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  color: var(--tinta);
+}
+
+.pancito-tip-dismiss {
+  align-self: flex-end;
+  min-height: 2.75rem;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid rgba(43, 33, 22, 0.4);
+  background: rgba(241, 232, 210, 0.9);
+  font-family: var(--versales);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--tinta);
+  cursor: pointer;
+}
+
+.pancito-tip-dismiss:hover,
+.pancito-tip-dismiss:focus-visible {
+  background: var(--tinta);
+  color: var(--papel-claro);
+}
+
+.atlas-marker-wrap[data-next='true'] {
+  z-index: 6;
+}
+
+/* Sit beside the marker so southern pins don't clip under the plate. */
+.pancito-pointer {
+  position: absolute;
+  left: calc(100% + 0.1rem);
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.12rem;
+  pointer-events: none;
+  animation: pancito-point-bob 1.8s ease-in-out infinite;
+}
+
+.pancito-pointer .pancito-sprite {
+  width: 8.6rem;
+  filter: drop-shadow(0 2px 4px rgba(20, 13, 6, 0.4));
+}
+
+.pancito-pointer-label {
+  padding: 0.12rem 0.45rem;
+  border: 1px solid rgba(154, 111, 39, 0.7);
+  background: rgba(241, 232, 210, 0.96);
+  font-family: var(--versales);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  color: #6d4a12;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px -2px rgba(20, 13, 6, 0.4);
+}
+
+@keyframes pancito-tip-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.35rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pancito-point-bob {
+  0%,
+  100% {
+    transform: translate(-0%, -50%);
+  }
+  50% {
+    transform: translate(0%, calc(-50% - 0.28rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pancito-tip {
+    animation: none;
+  }
+
+  .pancito-pointer {
+    animation: none;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 40rem) {
+  .pancito-tip-sprite {
+    width: 11rem;
+  }
+
+  .pancito-pointer .pancito-sprite {
+    width: 6.5rem;
+  }
+
+  .guide-with-pancito {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guide-pancito {
+    width: min(11rem, 42vw);
+  }
+
+  .pancito-callout-sprite {
+    width: 4.5rem;
+  }
+}
+
 /* ---------- Ex libris (story reward) -------------------------------------- */
 
 .ex-libris {

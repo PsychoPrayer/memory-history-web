@@ -4,12 +4,14 @@ import { MatchBar } from '../components/MatchBar'
 import { Stars } from '../components/Stars'
 import { Modal } from '../components/Modal'
 import { Board } from '../components/Board'
+import { PancitoCallout } from '../components/PancitoGuide'
 import { ZoomButton, ImageViewer } from '../components/ImageViewer'
 import { useDeck, useContent } from '../data/content'
 import { sectionComplete, sectionsFrom } from '../data/progression'
 import {
   markRewardShown,
   markSectionCelebrated,
+  markTipSeen,
   progressFor,
   recordVictory,
   useSave,
@@ -194,6 +196,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
     : undefined
 
   const advanceFromResult = () => {
+    markTipSeen('victory-first')
     if (newStory) {
       playSound('transition')
       setVictoryStep('story')
@@ -208,6 +211,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
   }
 
   const advanceFromStory = () => {
+    markTipSeen('first-story')
     if (newStory) markRewardShown(country, newStory.id)
     if (sectionMessage) {
       playSound('section')
@@ -218,6 +222,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
   }
 
   const readStory = () => {
+    markTipSeen('first-story')
     if (newStory) markRewardShown(country, newStory.id)
     navigate('/stories')
   }
@@ -345,6 +350,9 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
                 <p className="modal-praise">{praise(result.stars, t)}</p>
               </>
             )}
+            {level && (
+              <PancitoCallout tipId="victory-first" textKey="tipVictory" pose="happy" />
+            )}
             <dl className="summary">
               <div>
                 <dt>{t('yourTime')}</dt>
@@ -368,9 +376,10 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
                 <button
                   type="button"
                   className="btn-primary"
-                  onClick={() =>
+                  onClick={() => {
+                    markTipSeen('victory-first')
                     navigate(`/game/${encodeURIComponent(next.id)}`)
-                  }
+                  }}
                 >
                   {t('next')}
                 </button>
@@ -378,14 +387,20 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
               <button
                 type="button"
                 className="btn-secondary"
-                onClick={match.restart}
+                onClick={() => {
+                  markTipSeen('victory-first')
+                  match.restart()
+                }}
               >
                 {t('improveScore')}
               </button>
               <button
                 type="button"
                 className="btn-secondary"
-                onClick={() => navigate(levelsExit)}
+                onClick={() => {
+                  markTipSeen('victory-first')
+                  navigate(levelsExit)
+                }}
               >
                 {t('toLevels')}
               </button>
@@ -410,6 +425,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
             {newStory[language].presentacion && (
               <p className="reward-intro">{newStory[language].presentacion}</p>
             )}
+            <PancitoCallout tipId="first-story" textKey="tipFirstStory" pose="guide" />
             <div className="modal-actions">
               <button type="button" className="btn-primary" onClick={readStory}>
                 {t('readStory')}

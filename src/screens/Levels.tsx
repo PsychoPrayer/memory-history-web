@@ -8,6 +8,7 @@ import {
 } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Header } from '../components/Header'
+import { PancitoPointer, PancitoTip } from '../components/PancitoGuide'
 import { Stars } from '../components/Stars'
 import { useContent } from '../data/content'
 import {
@@ -71,7 +72,7 @@ const ATLAS_ROUTES: Record<
     hard: [
       [37, 52], // 6 Extremadura
       [51, 52], // 7 south of Madrid (Vielle / New Castile)
-      [47, 65], // 8 Andalucía (Sevilla–Córdoba)
+      [47, 78], // 8 Andalucía (Sevilla–Córdoba)
       [64, 58], // 9 Murcia
       [79, 49], // 10 Islas Baleares (Mallorca)
     ],
@@ -231,6 +232,13 @@ export function Levels() {
         })}
       </nav>
 
+      <PancitoTip
+        tipId="levels-atlas"
+        textKey="tipLevelsAtlas"
+        pose="guide"
+        className="pancito-tip-levels"
+      />
+
       <div className="atlas-summary">
         <div className="atlas-summary-main">
           <p className="atlas-rank">{t(sectionKey(section.cards))}</p>
@@ -387,6 +395,7 @@ function AtlasRoute({
                 )}
               </span>
             </button>
+            {isNext && <PancitoPointer />}
           </div>
         )
       })}
