@@ -6,79 +6,86 @@ import {
   Routes,
   useLocation,
 } from 'react-router-dom'
-import { ProveedorContenido } from './datos/contenido'
-import { useGuardado } from './lib/almacen'
+import { ContentProvider } from './data/content'
+import { useSave } from './lib/save'
 import {
-  atenuarMusicaEnPartida,
-  desbloquearAudio,
-  reproducirMusica,
+  dimMusicInMatch,
+  unlockAudio,
+  playMusic,
 } from './lib/audio'
-import { Intro } from './pantallas/Intro'
-import { Menu } from './pantallas/Menu'
-import { Niveles } from './pantallas/Niveles'
-import { Juego } from './pantallas/Juego'
-import { Historias } from './pantallas/Historias'
-import { Ajustes } from './pantallas/Ajustes'
-import { Tests } from './pantallas/Tests'
-import { Quiz } from './pantallas/Quiz'
-import { Logros } from './pantallas/Logros'
-import { Libre } from './pantallas/Libre'
+import { LiveRegion } from './components/LiveRegion'
+import { SkipLink } from './components/SkipLink'
+import { Intro } from './screens/Intro'
+import { Menu } from './screens/Menu'
+import { Levels } from './screens/Levels'
+import { Game } from './screens/Game'
+import { Stories } from './screens/Stories'
+import { Settings } from './screens/Settings'
+import { Tests } from './screens/Tests'
+import { Quiz } from './screens/Quiz'
+import { Achievements } from './screens/Achievements'
+import { FreePlay } from './screens/FreePlay'
 
 export default function App() {
-  const pais = useGuardado((estado) => estado.ajustes.pais)
+  const country = useSave((state) => state.settings.country)
+  const language = useSave((state) => state.settings.language)
 
-  // Los navegadores no dejan sonar nada hasta el primer gesto del usuario.
   useEffect(() => {
-    const abrir = () => desbloquearAudio()
-    window.addEventListener('pointerdown', abrir, { once: true })
-    window.addEventListener('keydown', abrir, { once: true })
+    document.documentElement.lang = language
+  }, [language])
+
+  useEffect(() => {
+    const unlock = () => unlockAudio()
+    window.addEventListener('pointerdown', unlock, { once: true })
+    window.addEventListener('keydown', unlock, { once: true })
     return () => {
-      window.removeEventListener('pointerdown', abrir)
-      window.removeEventListener('keydown', abrir)
+      window.removeEventListener('pointerdown', unlock)
+      window.removeEventListener('keydown', unlock)
     }
   }, [])
 
   return (
     <BrowserRouter>
-      <ProveedorContenido pais={pais} cargando={<Cargando />}>
-        <MusicaDeFondo />
+      <ContentProvider country={country} loading={<Loading />}>
+        <SkipLink />
+        <LiveRegion />
+        <BackgroundMusic />
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="/menu" element={<Menu />} />
-          <Route path="/niveles" element={<Niveles />} />
-          <Route path="/juego/:nivelId" element={<Juego />} />
-          <Route path="/libre" element={<Libre />} />
-          <Route path="/libre/partida" element={<Juego libre />} />
-          <Route path="/historias" element={<Historias />} />
-          <Route path="/ajustes" element={<Ajustes />} />
+          <Route path="/levels" element={<Levels />} />
+          <Route path="/game/:levelId" element={<Game />} />
+          <Route path="/free" element={<FreePlay />} />
+          <Route path="/free/match" element={<Game free />} />
+          <Route path="/stories" element={<Stories />} />
+          <Route path="/settings" element={<Settings />} />
           <Route path="/tests" element={<Tests />} />
-          <Route path="/quiz/:nivel" element={<Quiz />} />
-          <Route path="/logros" element={<Logros />} />
+          <Route path="/quiz/:level" element={<Quiz />} />
+          <Route path="/achievements" element={<Achievements />} />
           <Route path="*" element={<Navigate to="/menu" replace />} />
         </Routes>
-      </ProveedorContenido>
+      </ContentProvider>
     </BrowserRouter>
   )
 }
 
-/** La intro tiene su propia pista; el resto del juego comparte una. */
-function MusicaDeFondo() {
+function BackgroundMusic() {
   const { pathname } = useLocation()
-  const enPartida =
-    pathname.startsWith('/juego/') || pathname === '/libre/partida'
+  const inMatch =
+    pathname.startsWith('/game/') || pathname === '/free/match'
 
   useEffect(() => {
-    reproducirMusica(pathname === '/' ? 'intro' : 'juego')
-    atenuarMusicaEnPartida(enPartida)
-  }, [pathname, enPartida])
+    playMusic(pathname === '/' ? 'intro' : 'game')
+    dimMusicInMatch(inMatch)
+  }, [pathname, inMatch])
 
   return null
 }
 
-function Cargando() {
+function Loading() {
   return (
-    <div className="pantalla-cargando">
-      <span className="cargando-marca">Memory History</span>
+    <div className="screen-loading">
+      <span className="loading-brand">Memory History</span>
     </div>
   )
 }

@@ -1,0 +1,310 @@
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Modal } from '../components/Modal'
+import { STAR_TIP } from '../components/Stars'
+import {
+  COUNTRY_NAME,
+  COUNTRIES,
+  countryAvailable,
+  useContent,
+} from '../data/content'
+import { unlockedStories, totalStars } from '../data/progression'
+import { creditsText } from '../content/legal/credits'
+import { termsText } from '../content/legal/terms'
+import { setSetting, progressFor, useSave } from '../lib/save'
+import { playSound } from '../lib/audio'
+import { useT } from '../lib/i18n'
+import type { CountryCode, Language } from '../types'
+
+export function Menu() {
+  const navigate = useNavigate()
+  const t = useT()
+  const { levels, stories, country } = useContent()
+
+  const settings = useSave((state) => state.settings)
+  const progress = useSave(() => progressFor(settings.country))
+
+  const [creditsOpen, setCreditsOpen] = useState(false)
+  const [countryPickerOpen, setCountryPickerOpen] = useState(false)
+  const [guideOpen, setGuideOpen] = useState(false)
+
+  const stars = totalStars(progress)
+  const maximum = levels.length * 3
+  const unlocked = unlockedStories(stories, levels, progress).size
+
+  const go = (path: string) => {
+    playSound('transition')
+    navigate(path)
+  }
+
+  return (
+    <main id="main-content" className="screen screen-menu" tabIndex={-1}>
+      <header className="menu-header">
+        <div className="country-picker">
+          <p className="country-picker-label">{t('countries')}</p>
+          <button
+            type="button"
+            className="country-current"
+            onClick={() => {
+              playSound('transition')
+              setCountryPickerOpen(true)
+            }}
+          >
+            {country.bandera && (
+              <img
+                className="country-flag-lg"
+                src={country.bandera}
+                alt=""
+                draggable={false}
+              />
+            )}
+            <span className="country-current-name">
+              {settings.language === 'es' ? country.es : country.en}
+            </span>
+          </button>
+        </div>
+        <h1 className="menu-title">Memory History</h1>
+        <div className="star-counter">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d={STAR_TIP} />
+          </svg>
+          <span>{t('starsOf', { a: stars, b: maximum })}</span>
+        </div>
+      </header>
+
+      <nav className="menu-buttons">
+        <button type="button" className="btn-primary" onClick={() => go('/levels')}>
+          {t('play')}
+        </button>
+        <button type="button" className="btn-secondary" onClick={() => go('/stories')}>
+          {t('stories')}
+          <span className="btn-note">{unlocked}/{stories.length}</span>
+        </button>
+        <button type="button" className="btn-secondary" onClick={() => go('/tests')}>
+          {t('tests')}
+        </button>
+        <button type="button" className="btn-secondary" onClick={() => go('/achievements')}>
+          {t('achievements')}
+        </button>
+        <button type="button" className="btn-secondary" onClick={() => go('/free')}>
+          {t('freePlay')}
+        </button>
+        <button type="button" className="btn-secondary" onClick={() => go('/settings')}>
+          {t('settings')}
+        </button>
+      </nav>
+
+      <footer className="menu-footer">
+        <button
+          type="button"
+          className="link-subtle"
+          onClick={() => setCreditsOpen(true)}
+        >
+          {t('credits')}
+        </button>
+      </footer>
+
+      <button
+        type="button"
+        className="help-button"
+        aria-label={t('help')}
+        title={t('help')}
+        onClick={() => {
+          playSound('button')
+          setGuideOpen(true)
+        }}
+      >
+        ?
+      </button>
+
+      <Onboarding />
+
+      <HowToPlay open={guideOpen} onClose={() => setGuideOpen(false)} />
+
+      <Modal open={countryPickerOpen} onClose={() => setCountryPickerOpen(false)}>
+        <h2 className="modal-title">{t('chooseCountry')}</h2>
+        <CountryPicker
+          current={settings.country}
+          onPick={(code) => {
+            playSound('button')
+            setSetting('country', code)
+            setCountryPickerOpen(false)
+          }}
+        />
+        <button
+          type="button"
+          className="btn-secondary"
+          onClick={() => setCountryPickerOpen(false)}
+        >
+          {t('close')}
+        </button>
+      </Modal>
+
+      <Modal open={creditsOpen} onClose={() => setCreditsOpen(false)}>
+        <h2 className="modal-title">{t('credits')}</h2>
+        <pre className="credits-body">{creditsText(settings.language)}</pre>
+        <button
+          type="button"
+          className="btn-primary"
+          onClick={() => setCreditsOpen(false)}
+        >
+          {t('close')}
+        </button>
+      </Modal>
+    </main>
+  )
+}
+
+interface CountryPickerProps {
+  current: CountryCode
+  onPick: (code: CountryCode) => void
+}
+
+function CountryPicker({ current, onPick }: CountryPickerProps) {
+  const t = useT()
+
+  return (
+    <div className="country-list">
+      {COUNTRIES.map((code) => {
+        const ready = countryAvailable(code)
+        const flag = `/imagenes/banderas/${code.toLowerCase()}.webp`
+        return (
+          <button
+            key={code}
+            type="button"
+            className="country-tile"
+            data-active={code === current}
+            disabled={!ready}
+            onClick={() => onPick(code)}
+          >
+            <img
+              className="country-flag country-flag-list"
+              src={flag}
+              alt=""
+              draggable={false}
+            />
+            <span className="country-tile-name">{COUNTRY_NAME[code]}</span>
+            {!ready && (
+              <span className="country-tile-detail">{t('countryNotExported')}</span>
+            )}
+          </button>
+        )
+      })}
+    </div>
+  )
+}
+
+interface HowToPlayProps {
+  open: boolean
+  onClose?: () => void
+  buttonLabel?: 'continue' | 'close'
+  onConfirm?: () => void
+}
+
+function HowToPlay({
+  open,
+  onClose,
+  buttonLabel = 'close',
+  onConfirm,
+}: HowToPlayProps) {
+  const t = useT()
+  if (!open) return null
+
+  return (
+    <Modal open onClose={onClose} width="wide">
+      <h2 className="modal-title">{t('howToPlay')}</h2>
+      <ol className="guide-steps">
+        <li>{t('guideStep1')}</li>
+        <li>{t('guideStep2')}</li>
+        <li>{t('guideStep3')}</li>
+        <li>{t('guideStep4')}</li>
+        <li>{t('guideStep5')}</li>
+      </ol>
+      <p className="modal-text-muted">{t('guideFooter')}</p>
+      <button
+        type="button"
+        className="btn-primary"
+        onClick={() => {
+          playSound('button')
+          onConfirm?.()
+          onClose?.()
+        }}
+      >
+        {t(buttonLabel)}
+      </button>
+    </Modal>
+  )
+}
+
+function Onboarding() {
+  const t = useT()
+  const settings = useSave((state) => state.settings)
+  const [accepted, setAccepted] = useState(false)
+
+  if (!settings.languageChosen) {
+    return (
+      <Modal open>
+        <h2 className="modal-title">{t('chooseLanguage')}</h2>
+        <div className="language-row">
+          {(['es', 'en'] as Language[]).map((language) => (
+            <button
+              key={language}
+              type="button"
+              className="btn-secondary"
+              onClick={() => {
+                playSound('button')
+                setSetting('language', language)
+                setSetting('languageChosen', true)
+              }}
+            >
+              {language === 'es' ? 'Español' : 'English'}
+            </button>
+          ))}
+        </div>
+      </Modal>
+    )
+  }
+
+  if (!settings.guideSeen) {
+    return (
+      <HowToPlay
+        open
+        buttonLabel="continue"
+        onConfirm={() => setSetting('guideSeen', true)}
+      />
+    )
+  }
+
+  if (!settings.termsAccepted) {
+    return (
+      <Modal open width="wide">
+        <h2 className="modal-title">{t('termsTitle')}</h2>
+        <p className="modal-text-muted">{t('termsHelp')}</p>
+        <div className="terms-body" tabIndex={0}>
+          {termsText()}
+        </div>
+        <label className="checkbox">
+          <input
+            type="checkbox"
+            checked={accepted}
+            onChange={(event) => setAccepted(event.target.checked)}
+          />
+          <span>{t('termsAccept')}</span>
+        </label>
+        <button
+          type="button"
+          className="btn-primary"
+          disabled={!accepted}
+          onClick={() => {
+            playSound('button')
+            setSetting('termsAccepted', true)
+          }}
+        >
+          {t('startExploring')}
+        </button>
+      </Modal>
+    )
+  }
+
+  return null
+}

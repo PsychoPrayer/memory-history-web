@@ -1,6 +1,11 @@
 /// <reference types="vite/client" />
 
 declare module '*.md?raw' {
-  const contenido: string
-  export default contenido
+  const content: string
+  export default content
+}
+
+declare module '*.md' {
+  const content: string
+  export default content
 }

@@ -1,283 +1,314 @@
-import { leerEstado } from './almacen'
+import { readState } from './save'
 
-/**
- * Música y efectos.
- *
- * La música de fondo es la del Unity original. Los clics de UI, victoria,
- * derrota y transición se sintetizan aquí: tonos cortos, genéricos.
- * Solo se conservan del original los SFX que encajan (volteo, botón, sección).
- */
+export type Track = 'intro' | 'game'
 
-export type Pista = 'intro' | 'juego'
+export type SoundEffect =
+  | 'card'
+  | 'button'
+  | 'transition'
+  | 'victory'
+  | 'defeat'
+  | 'section'
+  | 'match'
+  | 'miss'
+  | 'star'
+  | 'urgency'
 
-export type Efecto =
-  | 'carta'
-  | 'boton'
-  | 'transicion'
-  | 'victoria'
-  | 'derrota'
-  | 'seccion'
-  | 'acierto'
-  | 'fallo'
-  | 'estrella'
-  | 'apremio'
-
-const MUSICA: Record<Pista, string> = {
+const MUSIC: Record<Track, string> = {
   intro: '/audio/MusicaLogin.mp3',
-  juego: '/audio/MusicaJuegoVenezuela.mp3',
+  game: '/audio/MusicaJuegoVenezuela.mp3',
 }
 
-/** Solo los efectos que aún merecen el archivo original. */
-const ARCHIVOS: Partial<Record<Efecto, string>> = {
-  carta: '/audio/Carta.mp3',
-  boton: '/audio/BotonNormal.mp3',
-  seccion: '/audio/EndVictory.mp3',
+const FILES: Partial<Record<SoundEffect, string>> = {
+  card: '/audio/Carta.mp3',
+  section: '/audio/EndVictory.mp3',
 }
 
-// ---------------------------------------------------------------------------
-// Contexto
-// ---------------------------------------------------------------------------
+/** Skip leading silence baked into the Unity MP3 exports. */
+const FILE_START_OFFSET: Partial<Record<SoundEffect, number>> = {
+  card: 0.02,
+}
 
-let contexto: AudioContext | null = null
-let habilitado = false
+let context: AudioContext | null = null
+let enabled = false
+const buffers = new Map<string, AudioBuffer>()
+const bufferLoads = new Map<string, Promise<AudioBuffer | null>>()
 
-function ctx(): AudioContext | null {
+function audioContext(): AudioContext | null {
   if (typeof window === 'undefined') return null
-  if (!contexto) {
+  if (!context) {
     const Constructor =
       window.AudioContext ??
       (window as unknown as { webkitAudioContext?: typeof AudioContext })
         .webkitAudioContext
     if (!Constructor) return null
-    contexto = new Constructor()
+    context = new Constructor()
   }
-  if (contexto.state === 'suspended') void contexto.resume()
-  return contexto
+  if (context.state === 'suspended') void context.resume()
+  return context
 }
 
-export function desbloquearAudio() {
-  if (habilitado) return
-  habilitado = true
-  ctx()
-  if (pistaPendiente) {
-    const pista = pistaPendiente
-    pistaPendiente = null
-    reproducirMusica(pista)
+async function loadBuffer(path: string): Promise<AudioBuffer | null> {
+  const cached = buffers.get(path)
+  if (cached) return cached
+
+  const pending = bufferLoads.get(path)
+  if (pending) return pending
+
+  const load = (async () => {
+    try {
+      const response = await fetch(path)
+      if (!response.ok) return null
+      const raw = await response.arrayBuffer()
+      const ctx = audioContext()
+      if (!ctx) return null
+      const buffer = await ctx.decodeAudioData(raw.slice(0))
+      buffers.set(path, buffer)
+      return buffer
+    } catch {
+      return null
+    } finally {
+      bufferLoads.delete(path)
+    }
+  })()
+
+  bufferLoads.set(path, load)
+  return load
+}
+
+function playBuffer(buffer: AudioBuffer, volume: number, offset = 0) {
+  const ctx = audioContext()
+  if (!ctx) return
+
+  const source = ctx.createBufferSource()
+  source.buffer = buffer
+
+  const gain = ctx.createGain()
+  gain.gain.value = Math.max(0, Math.min(1, volume))
+
+  source.connect(gain).connect(ctx.destination)
+  const startAt = Math.min(Math.max(0, offset), Math.max(0, buffer.duration - 0.01))
+  source.start(0, startAt)
+}
+
+function warmEffectFiles() {
+  for (const path of Object.values(FILES)) {
+    if (path) void loadBuffer(path)
   }
 }
 
-function volumenMusica() {
-  return leerEstado().ajustes.volumenMusica
+export function unlockAudio() {
+  if (enabled) return
+  enabled = true
+  audioContext()
+  warmEffectFiles()
+  if (pendingTrack) {
+    const track = pendingTrack
+    pendingTrack = null
+    playMusic(track)
+  }
 }
 
-function volumenEfectos() {
-  return leerEstado().ajustes.volumenEfectos
+function musicVolume() {
+  return readState().settings.musicVolume
 }
 
-// ---------------------------------------------------------------------------
-// Música
-// ---------------------------------------------------------------------------
-
-let elementoMusica: HTMLAudioElement | null = null
-let fuenteActual: string | null = null
-let pistaPendiente: Pista | null = null
-/** En partida baja a la mitad para no tapar el tablero. */
-let atenuacionPartida = 1
-
-function volumenMusicaAplicado() {
-  return Math.min(1, Math.max(0, volumenMusica() * 0.85 * atenuacionPartida))
+function effectsVolume() {
+  return readState().settings.effectsVolume
 }
 
-function detenerElemento(elemento: HTMLAudioElement | null) {
-  if (!elemento) return
-  elemento.pause()
-  elemento.loop = false
-  elemento.src = ''
-  elemento.load()
+let musicElement: HTMLAudioElement | null = null
+let currentSource: string | null = null
+let pendingTrack: Track | null = null
+let matchDim = 1
+
+function appliedMusicVolume() {
+  return Math.min(1, Math.max(0, musicVolume() * 0.85 * matchDim))
 }
 
-export function reproducirMusica(pista: Pista) {
+function stopElement(element: HTMLAudioElement | null) {
+  if (!element) return
+  element.pause()
+  element.loop = false
+  element.src = ''
+  element.load()
+}
+
+export function playMusic(track: Track) {
   if (typeof Audio === 'undefined') return
-  if (!habilitado) {
-    pistaPendiente = pista
+  if (!enabled) {
+    pendingTrack = track
     return
   }
-  const fuente = MUSICA[pista]
-  if (fuenteActual === fuente && elementoMusica && !elementoMusica.paused) {
-    elementoMusica.volume = volumenMusicaAplicado()
+  const source = MUSIC[track]
+  if (currentSource === source && musicElement && !musicElement.paused) {
+    musicElement.volume = appliedMusicVolume()
     return
   }
 
-  pararMusica()
-  const elemento = new Audio(fuente)
-  elemento.loop = true
-  elemento.volume = volumenMusicaAplicado()
+  stopMusic()
+  const element = new Audio(source)
+  element.loop = true
+  element.volume = appliedMusicVolume()
 
-  void elemento.play().catch(() => {
-    pistaPendiente = pista
+  void element.play().catch(() => {
+    pendingTrack = track
   })
-  elementoMusica = elemento
-  fuenteActual = fuente
+  musicElement = element
+  currentSource = source
 }
 
-/** Mitad de volumen mientras se juega un nivel; volumen normal fuera. */
-export function atenuarMusicaEnPartida(activo: boolean) {
-  atenuacionPartida = activo ? 0.5 : 1
-  if (elementoMusica) elementoMusica.volume = volumenMusicaAplicado()
+export function dimMusicInMatch(active: boolean) {
+  matchDim = active ? 0.5 : 1
+  if (musicElement) musicElement.volume = appliedMusicVolume()
 }
 
-export function pararMusica() {
-  detenerElemento(elementoMusica)
-  elementoMusica = null
-  fuenteActual = null
+export function stopMusic() {
+  stopElement(musicElement)
+  musicElement = null
+  currentSource = null
 }
 
-export function ajustarVolumenMusica(valor: number) {
-  if (elementoMusica) {
-    elementoMusica.volume = Math.min(1, Math.max(0, valor * 0.85 * atenuacionPartida))
+export function setMusicVolume(value: number) {
+  if (musicElement) {
+    musicElement.volume = Math.min(1, Math.max(0, value * 0.85 * matchDim))
   }
 }
 
 if (import.meta.hot) {
-  import.meta.hot.dispose(() => pararMusica())
+  import.meta.hot.dispose(() => stopMusic())
 }
 
-// ---------------------------------------------------------------------------
-// Efectos con archivo
-// ---------------------------------------------------------------------------
-
-const precargados = new Map<string, HTMLAudioElement>()
-
-function reproducirArchivo(ruta: string, volumen: number) {
-  let base = precargados.get(ruta)
-  if (!base) {
-    base = new Audio(ruta)
-    base.preload = 'auto'
-    precargados.set(ruta, base)
-  }
-  const copia = base.cloneNode() as HTMLAudioElement
-  copia.volume = volumen
-  void copia.play().catch(() => {})
+interface Tone {
+  from: number
+  to?: number
+  duration: number
+  type?: OscillatorType
+  volume?: number
+  delay?: number
 }
 
-// ---------------------------------------------------------------------------
-// Efectos sintetizados
-// ---------------------------------------------------------------------------
+function tone({ from, to, duration, type = 'sine', volume = 1, delay = 0 }: Tone) {
+  const ctx = audioContext()
+  if (!ctx) return
 
-interface Tono {
-  de: number
-  a?: number
-  duracion: number
-  tipo?: OscillatorType
-  volumen?: number
-  retraso?: number
+  const start = ctx.currentTime + delay
+  const end = start + duration
+
+  const oscillator = ctx.createOscillator()
+  oscillator.type = type
+  oscillator.frequency.setValueAtTime(from, start)
+  if (to !== undefined) oscillator.frequency.exponentialRampToValueAtTime(Math.max(1, to), end)
+
+  const gain = ctx.createGain()
+  const peak = Math.max(0.0001, volume * effectsVolume() * 0.28)
+  gain.gain.setValueAtTime(0.0001, start)
+  gain.gain.exponentialRampToValueAtTime(peak, start + 0.012)
+  gain.gain.exponentialRampToValueAtTime(0.0001, end)
+
+  oscillator.connect(gain).connect(ctx.destination)
+  oscillator.start(start)
+  oscillator.stop(end + 0.02)
 }
 
-function tono({ de, a, duracion, tipo = 'sine', volumen = 1, retraso = 0 }: Tono) {
-  const contexto = ctx()
-  if (!contexto) return
+function noiseBurst(volume = 1) {
+  const ctx = audioContext()
+  if (!ctx) return
 
-  const inicio = contexto.currentTime + retraso
-  const fin = inicio + duracion
-
-  const oscilador = contexto.createOscillator()
-  oscilador.type = tipo
-  oscilador.frequency.setValueAtTime(de, inicio)
-  if (a !== undefined) oscilador.frequency.exponentialRampToValueAtTime(Math.max(1, a), fin)
-
-  const ganancia = contexto.createGain()
-  const pico = Math.max(0.0001, volumen * volumenEfectos() * 0.28)
-  ganancia.gain.setValueAtTime(0.0001, inicio)
-  ganancia.gain.exponentialRampToValueAtTime(pico, inicio + 0.012)
-  ganancia.gain.exponentialRampToValueAtTime(0.0001, fin)
-
-  oscilador.connect(ganancia).connect(contexto.destination)
-  oscilador.start(inicio)
-  oscilador.stop(fin + 0.02)
-}
-
-function golpe(volumen = 1) {
-  const contexto = ctx()
-  if (!contexto) return
-
-  const duracion = 0.18
-  const muestras = Math.floor(contexto.sampleRate * duracion)
-  const buffer = contexto.createBuffer(1, muestras, contexto.sampleRate)
-  const datos = buffer.getChannelData(0)
-  for (let i = 0; i < muestras; i += 1) {
-    datos[i] = (Math.random() * 2 - 1) * (1 - i / muestras) ** 3
+  const duration = 0.18
+  const samples = Math.floor(ctx.sampleRate * duration)
+  const buffer = ctx.createBuffer(1, samples, ctx.sampleRate)
+  const data = buffer.getChannelData(0)
+  for (let i = 0; i < samples; i += 1) {
+    data[i] = (Math.random() * 2 - 1) * (1 - i / samples) ** 3
   }
 
-  const fuente = contexto.createBufferSource()
-  fuente.buffer = buffer
+  const source = ctx.createBufferSource()
+  source.buffer = buffer
 
-  const filtro = contexto.createBiquadFilter()
-  filtro.type = 'lowpass'
-  filtro.frequency.value = 900
+  const filter = ctx.createBiquadFilter()
+  filter.type = 'lowpass'
+  filter.frequency.value = 900
 
-  const ganancia = contexto.createGain()
-  ganancia.gain.value = volumen * volumenEfectos() * 0.4
+  const gain = ctx.createGain()
+  gain.gain.value = volume * effectsVolume() * 0.4
 
-  fuente.connect(filtro).connect(ganancia).connect(contexto.destination)
-  fuente.start()
+  source.connect(filter).connect(gain).connect(ctx.destination)
+  source.start()
 }
 
-const SINTETIZADOS: Partial<Record<Efecto, () => void>> = {
-  // Pop suave al cambiar de pantalla. Genérico, sin papel.
-  transicion: () => {
-    tono({ de: 520, a: 780, duracion: 0.09, tipo: 'sine', volumen: 0.45 })
-    tono({ de: 780, a: 520, duracion: 0.1, tipo: 'triangle', volumen: 0.25, retraso: 0.04 })
+const SYNTHESIZED: Partial<Record<SoundEffect, () => void>> = {
+  /** Same family as menu navigation — Web Audio, no MP3 decode lag. */
+  button: () => {
+    tone({ from: 520, to: 780, duration: 0.09, type: 'sine', volume: 0.45 })
+    tone({ from: 780, to: 520, duration: 0.1, type: 'triangle', volume: 0.25, delay: 0.04 })
   },
-  // Tres notas alegres, cortas: “¡bien!”.
-  victoria: () => {
-    tono({ de: 523.25, duracion: 0.12, tipo: 'triangle', volumen: 0.85 })
-    tono({ de: 659.25, duracion: 0.12, tipo: 'triangle', volumen: 0.8, retraso: 0.1 })
-    tono({ de: 783.99, duracion: 0.22, tipo: 'triangle', volumen: 0.9, retraso: 0.2 })
+  transition: () => {
+    tone({ from: 520, to: 780, duration: 0.09, type: 'sine', volume: 0.45 })
+    tone({ from: 780, to: 520, duration: 0.1, type: 'triangle', volume: 0.25, delay: 0.04 })
   },
-  // Dos notas que bajan un poco, sin drama.
-  derrota: () => {
-    tono({ de: 392, a: 294, duracion: 0.22, tipo: 'sine', volumen: 0.7 })
-    tono({ de: 294, a: 220, duracion: 0.28, tipo: 'sine', volumen: 0.55, retraso: 0.14 })
+  victory: () => {
+    tone({ from: 523.25, duration: 0.12, type: 'triangle', volume: 0.85 })
+    tone({ from: 659.25, duration: 0.12, type: 'triangle', volume: 0.8, delay: 0.1 })
+    tone({ from: 783.99, duration: 0.22, type: 'triangle', volume: 0.9, delay: 0.2 })
   },
-  acierto: () => {
-    tono({ de: 660, duracion: 0.1, tipo: 'triangle', volumen: 0.8 })
-    tono({ de: 990, duracion: 0.16, tipo: 'triangle', volumen: 0.7, retraso: 0.07 })
+  defeat: () => {
+    tone({ from: 392, to: 294, duration: 0.22, type: 'sine', volume: 0.7 })
+    tone({ from: 294, to: 220, duration: 0.28, type: 'sine', volume: 0.55, delay: 0.14 })
   },
-  fallo: () => {
-    golpe(0.9)
-    tono({ de: 200, a: 120, duracion: 0.2, tipo: 'sine', volumen: 0.6 })
+  match: () => {
+    tone({ from: 660, duration: 0.1, type: 'triangle', volume: 0.8 })
+    tone({ from: 990, duration: 0.16, type: 'triangle', volume: 0.7, delay: 0.07 })
   },
-  estrella: () => {
-    tono({ de: 1320, duracion: 0.28, tipo: 'sine', volumen: 0.9 })
-    tono({ de: 1980, duracion: 0.22, tipo: 'sine', volumen: 0.35, retraso: 0.03 })
+  miss: () => {
+    noiseBurst(0.9)
+    tone({ from: 200, to: 120, duration: 0.2, type: 'sine', volume: 0.6 })
   },
-  apremio: () => {
-    tono({ de: 880, duracion: 0.07, tipo: 'square', volumen: 0.35 })
+  star: () => {
+    tone({ from: 1320, duration: 0.28, type: 'sine', volume: 0.9 })
+    tone({ from: 1980, duration: 0.22, type: 'sine', volume: 0.35, delay: 0.03 })
+  },
+  urgency: () => {
+    tone({ from: 880, duration: 0.07, type: 'square', volume: 0.35 })
   },
 }
 
-export function sonar(efecto: Efecto) {
-  if (!habilitado) return
-  if (volumenEfectos() <= 0) return
-
-  const archivo = ARCHIVOS[efecto]
-  if (archivo) {
-    reproducirArchivo(archivo, volumenEfectos())
+function playFileEffect(effect: SoundEffect, path: string) {
+  const volume = effectsVolume()
+  const offset = FILE_START_OFFSET[effect] ?? 0
+  const ready = buffers.get(path)
+  if (ready) {
+    playBuffer(ready, volume, offset)
     return
   }
-  SINTETIZADOS[efecto]?.()
+
+  // First tap after unlock: decode then play; later taps hit the cache.
+  void loadBuffer(path).then((buffer) => {
+    if (buffer) playBuffer(buffer, volume, offset)
+  })
 }
 
-export function sonarEstrellas(cuantas: number) {
-  for (let i = 0; i < cuantas; i += 1) {
-    const contexto = ctx()
-    if (!contexto) return
-    tono({
-      de: 1046 * (1 + i * 0.26),
-      duracion: 0.3,
-      tipo: 'sine',
-      volumen: 0.9,
-      retraso: 0.18 * i,
+export function playSound(effect: SoundEffect) {
+  if (!enabled) return
+  if (effectsVolume() <= 0) return
+
+  const file = FILES[effect]
+  if (file) {
+    playFileEffect(effect, file)
+    return
+  }
+  SYNTHESIZED[effect]?.()
+}
+
+export function playStarSound(count: number) {
+  for (let i = 0; i < count; i += 1) {
+    if (!audioContext()) return
+    tone({
+      from: 1046 * (1 + i * 0.26),
+      duration: 0.3,
+      type: 'sine',
+      volume: 0.9,
+      delay: 0.18 * i,
     })
   }
 }

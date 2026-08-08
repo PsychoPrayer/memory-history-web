@@ -7,13 +7,14 @@
    ========================================================================== */
 
 :root {
-  /* Papel envejecido. El crema de Unity (#D7D3CB) es el punto medio. */
+  /* Aged paper. Unity cream (#D7D3CB) is the midpoint. */
   --papel: #e2d6bb;
   --papel-claro: #f1e8d2;
-  /* Tinta ferrogálica: pardo muy oscuro, nunca negro puro ni azul. */
+  /* Iron-gall ink: very dark brown, never pure black or blue. */
   --tinta: #2b2116;
   --tinta-media: #50412d;
-  --tinta-suave: #8b7857;
+  /* Darker soft ink so muted labels meet WCAG AA on paper. */
+  --tinta-suave: #5c4a32;
 
   --oro: #9a6f27;
   --oro-claro: #c99f45;
@@ -24,11 +25,11 @@
   --versales: 'IM Fell English SC', 'IM Fell English', Georgia, serif;
   --texto: 'EB Garamond', 'Iowan Old Style', Georgia, serif;
 
-  /* Un libro no tiene bordes redondeados. Solo el papel cortado a mano. */
+  /* A book has no rounded corners. Just hand-cut paper. */
   --radio: 0;
   --filete: 1px solid rgba(43, 33, 22, 0.38);
   --filete-tenue: 1px solid rgba(43, 33, 22, 0.18);
-  /* Ancho máximo compartido: hoja con sombra y marco dorado. */
+  /* Shared max width: shadowed sheet and gold frame. */
   --hoja-max: 62rem;
 
   color-scheme: light;
@@ -53,17 +54,17 @@ body {
   color: var(--tinta);
   background-color: var(--papel);
   background-image:
-    /* Manchas de humedad en las esquinas. */
+    /* Moisture stains in the corners. */
     radial-gradient(ellipse 60% 45% at 4% 3%, rgba(140, 105, 55, 0.16), transparent 70%),
     radial-gradient(ellipse 55% 40% at 97% 96%, rgba(140, 105, 55, 0.14), transparent 70%),
     radial-gradient(ellipse 40% 30% at 92% 8%, rgba(120, 88, 45, 0.1), transparent 70%),
-    /* Fibra del papel verjurado. */
+    /* Laid-paper fiber. */
     repeating-linear-gradient(90deg, rgba(43, 33, 22, 0.028) 0 1px, transparent 1px 3px);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Grano de papel por encima de todo, sin interceptar el ratón. */
+/* Paper grain overlay; does not intercept pointer events. */
 body::after {
   content: '';
   position: fixed;
@@ -81,19 +82,51 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid var(--vino);
-  outline-offset: 2px;
+  outline: 3px solid var(--vino);
+  outline-offset: 3px;
 }
 
-/* ---------- Botones ------------------------------------------------------
+.skip-link {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 100;
+  padding: 0.65rem 1.1rem;
+  transform: translateY(-150%);
+  border: 2px solid var(--tinta);
+  background: var(--papel-claro);
+  color: var(--tinta);
+  font-family: var(--versales);
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Buttons -------------------------------------------------------
    Un botón impreso: rectángulo con filete doble y la etiqueta en versales.
    Al pasar por encima la tinta se satura; al pulsar, se hunde en el papel.
    -------------------------------------------------------------------------- */
 
-.boton-principal,
-.boton-secundario,
-.boton-peligro {
+.btn-primary,
+.btn-secondary,
+.btn-danger {
   position: relative;
+  min-height: 2.75rem;
   padding: 0.6rem 1.7rem;
   border-radius: var(--radio);
   font-family: var(--versales);
@@ -103,10 +136,10 @@ button {
   transition: background 0.16s ease, color 0.16s ease, box-shadow 0.16s ease;
 }
 
-/* Filete interior: la segunda raya de una portada grabada. */
-.boton-principal::after,
-.boton-secundario::after,
-.boton-peligro::after {
+/* Inner rule: second line of an engraved cover. */
+.btn-primary::after,
+.btn-secondary::after,
+.btn-danger::after {
   content: '';
   position: absolute;
   inset: 3px;
@@ -115,54 +148,56 @@ button {
   pointer-events: none;
 }
 
-.boton-principal {
+.btn-primary {
   border: 2px solid var(--tinta);
   background: var(--tinta);
   color: var(--papel-claro);
 }
 
-.boton-principal:hover:not(:disabled) {
+.btn-primary:hover:not(:disabled) {
   background: #16100a;
 }
 
-.boton-secundario {
-  border: 1px solid rgba(43, 33, 22, 0.5);
-  background: rgba(241, 232, 210, 0.5);
+.btn-secondary {
+  border: 2px solid rgba(43, 33, 22, 0.72);
+  background: rgba(241, 232, 210, 0.85);
   color: var(--tinta);
 }
 
-.boton-secundario:hover:not(:disabled) {
+.btn-secondary:hover:not(:disabled) {
   background: rgba(241, 232, 210, 0.95);
   box-shadow: inset 0 0 0 1px rgba(43, 33, 22, 0.35);
 }
 
-.boton-peligro {
+.btn-danger {
   border: 1px solid rgba(109, 37, 33, 0.6);
   background: rgba(109, 37, 33, 0.07);
   color: var(--vino);
 }
 
-.boton-peligro:hover {
+.btn-danger:hover {
   background: rgba(109, 37, 33, 0.16);
 }
 
-.boton-principal:active:not(:disabled),
-.boton-secundario:active:not(:disabled),
-.boton-peligro:active:not(:disabled) {
+.btn-primary:active:not(:disabled),
+.btn-secondary:active:not(:disabled),
+.btn-danger:active:not(:disabled) {
   box-shadow: inset 0 2px 5px rgba(43, 33, 22, 0.35);
 }
 
-.boton-principal:disabled,
-.boton-secundario:disabled {
+.btn-primary:disabled,
+.btn-secondary:disabled {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.boton-ancho {
+.btn-wide {
   width: min(22rem, 100%);
 }
 
-.boton-fantasma {
+.btn-ghost {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
   padding: 0.4rem 0.8rem;
   border: 1px solid transparent;
   border-radius: var(--radio);
@@ -175,17 +210,17 @@ button {
   transition: border-color 0.16s ease, color 0.16s ease;
 }
 
-.boton-fantasma:hover:not(:disabled) {
+.btn-ghost:hover:not(:disabled) {
   border-color: rgba(43, 33, 22, 0.3);
   color: var(--tinta);
 }
 
-.boton-fantasma:disabled {
+.btn-ghost:disabled {
   opacity: 0.28;
   cursor: default;
 }
 
-.boton-nota {
+.btn-note {
   margin-left: 0.5rem;
   font-family: var(--texto);
   font-size: 0.86rem;
@@ -194,7 +229,7 @@ button {
   color: var(--tinta-suave);
 }
 
-.enlace-discreto {
+.link-subtle {
   padding: 0;
   border: none;
   background: none;
@@ -208,12 +243,13 @@ button {
   cursor: pointer;
 }
 
-.enlace-discreto:hover {
+.link-subtle:hover {
   color: var(--tinta);
 }
 
-/* Pestaña de índice, como las lengüetas de un archivador o un misal. */
-.pestana {
+/* Index tab, like a binder or missal tongue. */
+.tab {
+  min-height: 2.75rem;
   padding: 0.35rem 1rem 0.4rem;
   border: 1px solid rgba(43, 33, 22, 0.32);
   border-bottom-color: transparent;
@@ -227,28 +263,28 @@ button {
   transition: background 0.18s ease, color 0.18s ease;
 }
 
-.pestana:hover {
+.tab:hover {
   background: rgba(241, 232, 210, 0.8);
   color: var(--tinta);
 }
 
-.pestana[data-activa='true'] {
+.tab[data-active='true'] {
   background: var(--tinta);
   border-color: var(--tinta);
   color: var(--papel-claro);
 }
 
-.pestana:disabled {
+.tab:disabled {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-/* ---------- Estructura de pantalla --------------------------------------
+/* ---------- Screen structure ----------------------------------------------
    Cada pantalla es una hoja: filete alrededor y sombra de encuadernación
    en el lomo izquierdo.
    -------------------------------------------------------------------------- */
 
-.pantalla {
+.screen {
   position: relative;
   min-height: 100%;
   width: min(var(--hoja-max), 100%);
@@ -263,21 +299,30 @@ button {
   box-shadow: 0 0 0 1px rgba(43, 33, 22, 0.14);
 }
 
-.cabecera {
-  position: sticky;
+.header {
+  position: fixed;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 20;
+  box-sizing: border-box;
   display: flex;
   align-items: baseline;
   gap: 1rem;
-  margin: 0 calc(clamp(1.1rem, 4vw, 2.6rem) * -1);
+  width: min(var(--hoja-max), 100%);
+  margin: 0;
   padding: 0.8rem clamp(1.1rem, 4vw, 2.6rem) 0.55rem;
-  /* Doble filete bajo el titulillo, como la cabecera de un capítulo. */
+  /* Double rule under the running head, like a chapter header. */
   border-bottom: 3px double rgba(43, 33, 22, 0.4);
   background: var(--papel);
 }
 
-.cabecera-titulo {
+/* Room for the fixed navbar so content does not sit underneath. */
+.screen:has(> .header) {
+  padding-top: 4.25rem;
+}
+
+.header-title {
   flex: 1;
   margin: 0;
   font-family: var(--versales);
@@ -286,13 +331,13 @@ button {
   letter-spacing: 0.05em;
 }
 
-.cabecera-derecha {
+.header-right {
   display: flex;
   align-items: center;
   gap: 0.6rem;
 }
 
-.cabecera-contador {
+.header-counter {
   font-family: var(--texto);
   font-style: italic;
   font-size: 0.92rem;
@@ -300,8 +345,8 @@ button {
   color: var(--tinta-suave);
 }
 
-.pantalla-cargando,
-.pantalla-error {
+.screen-loading,
+.screen-error {
   min-height: 100%;
   display: grid;
   place-content: center;
@@ -310,7 +355,7 @@ button {
   text-align: center;
 }
 
-.cargando-marca {
+.loading-brand {
   font-family: var(--display);
   font-size: 1.9rem;
   letter-spacing: 0.04em;
@@ -318,21 +363,21 @@ button {
   animation: latir 1.6s ease-in-out infinite;
 }
 
-.pantalla-error h1 {
+.screen-error h1 {
   font-family: var(--display);
   font-weight: 400;
 }
 
-.pantalla-error pre {
+.screen-error pre {
   padding: 0.7rem 1.1rem;
   border: var(--filete);
   background: rgba(43, 33, 22, 0.06);
   font-size: 0.9rem;
 }
 
-/* ---------- Intro: la portada del libro ---------------------------------- */
+/* ---------- Intro: book cover --------------------------------------------- */
 
-.pantalla-intro {
+.screen-intro {
   position: relative;
   min-height: 100%;
   display: grid;
@@ -340,8 +385,8 @@ button {
   cursor: pointer;
 }
 
-/* Marco grabado de portada: filete grueso, aire, filete fino. */
-.pantalla-intro::before {
+/* Engraved cover frame: thick rule, air, thin rule. */
+.screen-intro::before {
   content: '';
   position: fixed;
   inset: clamp(1rem, 3vmin, 2.2rem);
@@ -359,7 +404,7 @@ button {
   animation: respirar 2.2s ease-in-out;
 }
 
-.intro-imagen {
+.intro-image {
   display: block;
   width: 100%;
   height: auto;
@@ -369,7 +414,7 @@ button {
   -webkit-user-drag: none;
 }
 
-.intro-saltar {
+.intro-skip {
   position: absolute;
   right: 1.6rem;
   bottom: 1.6rem;
@@ -384,10 +429,10 @@ button {
   cursor: pointer;
 }
 
-/* ---------- Menú: la portadilla ------------------------------------------ */
+/* ---------- Menu: title page ---------------------------------------------- */
 
-.pantalla-menu {
-  /* Holgura respecto al viewport; el filete dorado va pegado a esta hoja. */
+.screen-menu {
+  /* Viewport inset; gold rule is bound to this sheet. */
   --marco-aire: clamp(1rem, 2.8vmin, 2rem);
   align-items: center;
   justify-content: center;
@@ -401,8 +446,8 @@ button {
   overflow: auto;
 }
 
-/* Doble filete: mismo ancho que la caja con sombra (no a pantalla completa). */
-.pantalla-menu::before {
+/* Double rule: same width as the shadowed box (not fullscreen). */
+.screen-menu::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -414,14 +459,14 @@ button {
     inset 0 0 0 5px rgba(154, 111, 39, 0.25);
 }
 
-.menu-cabecera {
+.menu-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
 }
 
-.menu-titulo {
+.menu-title {
   margin: 0;
   font-family: var(--display);
   font-weight: 400;
@@ -430,8 +475,8 @@ button {
   letter-spacing: 0.01em;
 }
 
-/* Filigrana bajo el título: rombo entre dos filetes. */
-.menu-titulo::after {
+/* Filigree under the title: diamond between two rules. */
+.menu-title::after {
   content: '❖';
   display: block;
   margin-top: 0.5rem;
@@ -439,30 +484,30 @@ button {
   color: var(--oro);
 }
 
-.menu-botones {
+.menu-buttons {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.6rem;
   width: min(30rem, 100%);
 }
 
-.menu-botones .boton-principal {
+.menu-buttons .btn-primary {
   grid-column: 1 / -1;
   font-size: 1.2rem;
   padding: 0.8rem 1.6rem;
 }
 
 @media (max-width: 26rem) {
-  .menu-botones {
+  .menu-buttons {
     grid-template-columns: 1fr;
   }
 }
 
-.menu-pie {
+.menu-footer {
   margin-top: 0.4rem;
 }
 
-.contador-estrellas {
+.star-counter {
   display: inline-flex;
   align-items: center;
   gap: 0.42rem;
@@ -471,7 +516,7 @@ button {
   font-variant-numeric: tabular-nums;
 }
 
-.contador-estrellas svg {
+.star-counter svg {
   width: 1.05rem;
   height: 1.05rem;
   fill: var(--oro-claro);
@@ -479,21 +524,21 @@ button {
   stroke-width: 0.7;
 }
 
-.contador-estrellas span {
+.star-counter span {
   font-style: italic;
   color: var(--tinta-suave);
 }
 
-/* ---------- Selector de país --------------------------------------------- */
+/* ---------- Country picker ------------------------------------------------ */
 
-.selector-pais {
+.country-picker {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.35rem;
 }
 
-.selector-pais-etiqueta {
+.country-picker-label {
   margin: 0;
   font-family: var(--versales);
   font-size: 0.85rem;
@@ -501,13 +546,13 @@ button {
   color: var(--tinta-suave);
 }
 
-.pais-bandera {
+.country-flag {
   object-fit: cover;
   border: 1px solid rgba(43, 33, 22, 0.28);
   flex-shrink: 0;
 }
 
-.pais-bandera-grande {
+.country-flag-lg {
   width: clamp(3.6rem, 15vw, 5.2rem);
   height: auto;
   aspect-ratio: 3 / 2;
@@ -515,13 +560,13 @@ button {
   box-shadow: 0 2px 6px rgba(43, 33, 22, 0.22);
 }
 
-.pais-bandera-lista {
+.country-flag-list {
   width: 2.6rem;
   height: 1.75rem;
   aspect-ratio: 3 / 2;
 }
 
-.pais-actual {
+.country-current {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -534,26 +579,26 @@ button {
   transition: border-color 0.16s ease, color 0.16s ease, background 0.16s ease;
 }
 
-.pais-actual-nombre {
+.country-current-name {
   font-family: var(--versales);
   font-size: 0.95rem;
   letter-spacing: 0.14em;
 }
 
-.pais-actual:hover {
+.country-current:hover {
   border-color: var(--oro);
   color: var(--tinta);
   background: rgba(241, 232, 210, 0.95);
 }
 
-.lista-paises {
+.country-list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
 
-.ficha-pais {
+.country-tile {
   display: flex;
   align-items: center;
   gap: 0.9rem;
@@ -565,37 +610,37 @@ button {
   transition: background 0.16s ease, border-color 0.16s ease;
 }
 
-.ficha-pais:hover:not(:disabled) {
+.country-tile:hover:not(:disabled) {
   background: rgba(241, 232, 210, 0.9);
   border-color: var(--tinta);
 }
 
-.ficha-pais[data-activo='true'] {
+.country-tile[data-active='true'] {
   border-color: var(--tinta);
   box-shadow: inset 0 0 0 1px rgba(43, 33, 22, 0.35);
 }
 
-.ficha-pais:disabled {
+.country-tile:disabled {
   opacity: 0.42;
   cursor: not-allowed;
 }
 
-.ficha-pais-nombre {
+.country-tile-name {
   flex: 1;
   font-family: var(--display);
   font-size: 1.2rem;
 }
 
-.ficha-pais-detalle {
+.country-tile-detail {
   font-family: var(--texto);
   font-style: italic;
   font-size: 0.86rem;
   color: var(--tinta-suave);
 }
 
-/* ---------- Selección de niveles ------------------------------------------ */
+/* ---------- Level select: atlas plate ------------------------------------- */
 
-.pestanas-secciones {
+.section-tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem;
@@ -604,100 +649,307 @@ button {
   padding-bottom: 0;
 }
 
-.seccion-rotulo {
+.atlas-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  margin-top: 0.15rem;
+  padding: 0.55rem 0.15rem 0.35rem;
+  border-bottom: var(--filete-tenue);
+}
+
+.atlas-summary-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.atlas-summary-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.6rem;
   margin: 0;
-  text-align: center;
-  font-family: var(--display);
-  font-style: italic;
-  font-size: 1.05rem;
+}
+
+.atlas-summary-stats dt {
+  margin: 0;
+  font-family: var(--versales);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
   color: var(--tinta-suave);
 }
 
-.grupo-niveles {
+.atlas-summary-stats dd {
+  margin: 0.1rem 0 0;
   display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--tinta);
 }
 
-/* Titulillo con filetes a los lados, como un epígrafe de capítulo. */
-.grupo-cabecera h2 {
-  display: flex;
-  align-items: center;
-  gap: 0.9rem;
+.atlas-summary-left {
+  font-family: var(--texto);
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--tinta-suave);
+}
+
+.atlas-scroll {
+  width: 100%;
+  margin-top: 0.35rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x;
+  cursor: grab;
+  border: 1px solid rgba(43, 33, 22, 0.45);
+  background: #d8c7a4;
+  box-shadow:
+    inset 0 0 0 6px rgba(226, 214, 187, 0.55),
+    inset 0 0 0 7px rgba(43, 33, 22, 0.18),
+    0 10px 28px -18px rgba(20, 13, 6, 0.7);
+  scrollbar-color: rgba(43, 33, 22, 0.45) transparent;
+}
+
+.atlas-scroll[data-dragging='true'] {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.atlas-plate {
+  position: relative;
+  height: min(62vh, 34rem);
+  width: max(100%, calc(min(62vh, 34rem) * 1.95));
+  min-width: 100%;
+  overflow: hidden;
+  background: #d8c7a4;
+}
+
+.atlas-map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  pointer-events: none;
+  user-select: none;
+}
+
+.atlas-veil {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 75% 65% at 50% 45%, transparent 40%, rgba(43, 33, 22, 0.18) 100%),
+    linear-gradient(
+      180deg,
+      rgba(241, 232, 210, 0.12) 0%,
+      transparent 24%,
+      transparent 70%,
+      rgba(43, 33, 22, 0.12) 100%
+    );
+}
+
+.atlas-rank {
   margin: 0;
   font-family: var(--versales);
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  color: var(--tinta);
+}
+
+.atlas-meta {
+  margin: 0;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--tinta-suave);
+}
+
+.atlas-paths {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.atlas-path {
+  fill: none;
+  stroke-width: 0.55;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1.4 1.1;
+  opacity: 0.72;
+}
+
+.atlas-path-normal {
+  stroke: rgba(154, 111, 39, 0.85);
+}
+
+.atlas-path-hard {
+  stroke: rgba(109, 37, 33, 0.78);
+}
+
+.atlas-route {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.atlas-marker-wrap {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.atlas-route-tag {
+  order: -1;
+  padding: 0.12rem 0.45rem;
+  border: 1px solid rgba(43, 33, 22, 0.4);
+  background: rgba(241, 232, 210, 0.94);
+  font-family: var(--versales);
+  font-size: 0.72rem;
   letter-spacing: 0.12em;
-  color: var(--tinta-media);
+  white-space: nowrap;
+  box-shadow: 0 2px 6px -2px rgba(20, 13, 6, 0.45);
 }
 
-.grupo-cabecera h2::before,
-.grupo-cabecera h2::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: rgba(43, 33, 22, 0.25);
+.atlas-route[data-tone='normal'] .atlas-route-tag {
+  color: #6d4a12;
+  border-color: rgba(154, 111, 39, 0.65);
 }
 
-.rejilla-niveles {
-  display: grid;
-  grid-template-columns: repeat(10, minmax(0, 1fr));
-  gap: 0.45rem;
+.atlas-route[data-tone='hard'] .atlas-route-tag {
+  color: var(--vino);
+  border-color: rgba(109, 37, 33, 0.55);
 }
 
-@media (max-width: 48rem) {
-  .rejilla-niveles {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
+.atlas-marker {
+  width: 3.55rem;
+  height: 3.55rem;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.18s ease;
 }
 
-/* Cada nivel es un sello lacrado sobre la hoja. */
-.ficha-nivel {
-  position: relative;
-  aspect-ratio: 1;
+.atlas-marker:hover:not(:disabled),
+.atlas-marker:focus-visible {
+  transform: translateY(-4%) scale(1.1);
+  z-index: 4;
+}
+
+.atlas-marker-face {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.1rem;
-  padding: 0.3rem;
-  border: 1px solid rgba(43, 33, 22, 0.35);
-  border-radius: var(--radio);
-  background: rgba(241, 232, 210, 0.6);
-  cursor: pointer;
-  overflow: hidden;
-  transition: background 0.18s ease, box-shadow 0.18s ease;
-}
-
-.ficha-nivel:hover:not(:disabled) {
+  gap: 0.08rem;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--tinta);
+  border-radius: 50%;
   background: var(--papel-claro);
-  box-shadow: inset 0 0 0 1px rgba(43, 33, 22, 0.4);
+  box-shadow:
+    0 0 0 2px rgba(241, 232, 210, 0.95),
+    0 5px 12px -2px rgba(20, 13, 6, 0.72);
 }
 
-.ficha-nivel[data-abierto='false'] {
+.atlas-route[data-tone='normal'] .atlas-marker[data-open='true'] .atlas-marker-face {
+  border-color: #6d4a12;
+  background: linear-gradient(165deg, #f3e0a8, #c9962e 55%, #8a6418);
+  color: #1d1408;
+}
+
+.atlas-route[data-tone='hard'] .atlas-marker[data-open='true'] .atlas-marker-face {
+  border-color: #3a1210;
+  background: linear-gradient(165deg, #e8b4a8, #9a3a32 55%, #5a1c18);
+  color: #fff8f0;
+}
+
+.atlas-marker[data-stars='3'] .atlas-marker-face {
+  box-shadow:
+    0 0 0 2px rgba(241, 232, 210, 0.95),
+    0 0 0 4px rgba(201, 159, 69, 0.55),
+    0 5px 12px -2px rgba(20, 13, 6, 0.72);
+}
+
+.atlas-marker[data-open='false'] {
   cursor: not-allowed;
-  border-color: rgba(43, 33, 22, 0.16);
-  background-image: repeating-linear-gradient(
+}
+
+.atlas-marker[data-open='false'] .atlas-marker-face {
+  border-color: rgba(43, 33, 22, 0.4);
+  background: repeating-linear-gradient(
     -45deg,
-    rgba(203, 184, 148, 0.5) 0 5px,
-    rgba(241, 232, 210, 0.5) 5px 10px
+    #cbb894 0 5px,
+    #ddd0b2 5px 10px
   );
+  box-shadow:
+    0 0 0 2px rgba(241, 232, 210, 0.75),
+    0 3px 8px -2px rgba(20, 13, 6, 0.45);
 }
 
-.ficha-numero {
+.atlas-marker-number {
   font-family: var(--display);
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   line-height: 1;
-  color: var(--tinta);
+  font-weight: 700;
+  color: inherit;
+  text-shadow: 0 1px 0 rgba(241, 232, 210, 0.35);
 }
 
-.ficha-nivel[data-abierto='false'] .ficha-numero {
-  color: var(--tinta-suave);
+.atlas-route[data-tone='hard'] .atlas-marker[data-open='true'] .atlas-marker-number {
+  text-shadow: 0 1px 0 rgba(20, 8, 6, 0.45);
 }
 
-/* Candado dibujado en CSS, sin depender de ningún asset. */
-.ficha-candado {
+.atlas-marker[data-open='false'] .atlas-marker-number {
+  color: var(--tinta-media);
+  text-shadow: none;
+}
+
+.atlas-route[data-tone='normal'] .atlas-marker[data-open='true'] .star[data-earned='true'] {
+  fill: #2b2116;
+}
+
+.atlas-route[data-tone='hard'] .atlas-marker[data-open='true'] .star[data-earned='true'] {
+  fill: #f7edd6;
+}
+
+.atlas-route[data-tone='hard'] .atlas-marker[data-open='true'] .star {
+  fill: rgba(247, 237, 214, 0.35);
+}
+
+.atlas-marker .stars[data-size='pip'] {
+  transform: scale(0.78);
+  transform-origin: center top;
+}
+
+.atlas-marker .tile-lock {
+  margin-top: 0.15rem;
+}
+
+/* CSS-drawn lock; no asset dependency. */
+.tile-lock {
   width: 0.85rem;
   height: 0.72rem;
   margin-top: 0.35rem;
@@ -705,7 +957,7 @@ button {
   opacity: 0.5;
 }
 
-.ficha-candado::before {
+.tile-lock::before {
   content: '';
   display: block;
   width: 0.5rem;
@@ -716,64 +968,68 @@ button {
   border-radius: 999px 999px 0 0;
 }
 
-/* ---------- Historias: el álbum -------------------------------------------
+/* ---------- Stories: the album --------------------------------------------
    La foto no se pega con cinta: se sujeta con cuatro esquinas de cartulina,
    como en los álbumes de verdad. Las esquinas son triángulos en CSS.
    -------------------------------------------------------------------------- */
 
-.rejilla-historias {
+.story-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
   gap: 1.4rem 1rem;
+  margin-top: 1.1rem;
 }
 
-.ficha-historia {
+.story-tile {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.85rem;
-  padding: 0.6rem 0.5rem 0.9rem;
+  gap: 0.55rem;
+  width: 100%;
+  padding: 0.55rem 0.45rem 0.35rem;
   border: none;
   background: none;
   cursor: pointer;
   transition: transform 0.18s ease;
 }
 
-.ficha-historia:hover:not(:disabled) {
+.story-tile:hover:not(:disabled) {
   transform: rotate(-0.8deg);
 }
 
-/* Marco de la foto en la hoja del álbum. El hueco inferior deja aire al título
-   para que no se coma las esquinas de cartulina. */
-.ficha-historia::before {
-  content: '';
-  position: absolute;
-  inset: 0 0 2.2rem;
+/* Square album window: same size for open and locked slots. */
+.story-tile-frame {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1;
   background: var(--papel-claro);
   box-shadow: 0 1px 3px rgba(43, 33, 22, 0.28);
 }
 
-.ficha-historia img,
-.ficha-historia .ficha-candado,
-.ficha-historia .ficha-historia-nombre,
-.ficha-historia .insignia-nueva {
+.story-tile img,
+.story-tile .tile-lock,
+.story-tile .story-tile-name,
+.story-tile .badge-new {
   position: relative;
   z-index: 1;
 }
 
-.ficha-historia img {
+.story-tile img {
   width: 100%;
-  aspect-ratio: 1;
+  height: 100%;
   object-fit: contain;
   filter: sepia(0.16) saturate(0.92);
 }
 
-/* Las cuatro esquinas de cartulina. */
-.ficha-historia[data-abierta='true']::after {
+/* Four cardboard photo corners. */
+.story-tile[data-open='true'] .story-tile-frame::after {
   content: '';
   position: absolute;
-  inset: 0 0 2.2rem;
+  inset: 0;
   pointer-events: none;
   background-image:
     linear-gradient(135deg, rgba(43, 33, 22, 0.5) 0 0.55rem, transparent 0.55rem),
@@ -785,11 +1041,11 @@ button {
   background-repeat: no-repeat;
 }
 
-.ficha-historia[data-abierta='false'] {
+.story-tile[data-open='false'] {
   cursor: not-allowed;
 }
 
-.ficha-historia[data-abierta='false']::before {
+.story-tile[data-open='false'] .story-tile-frame {
   background-image: repeating-linear-gradient(
     -45deg,
     rgba(203, 184, 148, 0.55) 0 5px,
@@ -797,21 +1053,24 @@ button {
   );
 }
 
-.ficha-historia[data-abierta='false'] .ficha-candado {
+.story-tile[data-open='false'] .tile-lock {
   width: 1.4rem;
   height: 1.2rem;
-  margin: 2.2rem 0;
+  margin: 0;
 }
 
-.ficha-historia[data-abierta='false'] .ficha-candado::before {
+.story-tile[data-open='false'] .tile-lock::before {
   width: 0.85rem;
   height: 0.6rem;
   margin-top: -0.72rem;
 }
 
-/* Pie de foto manuscrito. */
-.ficha-historia-nombre {
-  margin-top: 0.15rem;
+/* Handwritten caption — always under the photo window. */
+.story-tile-name {
+  display: block;
+  width: 100%;
+  min-height: 2.4em;
+  margin: 0;
   font-family: var(--display);
   font-size: 0.95rem;
   font-style: italic;
@@ -820,7 +1079,11 @@ button {
   color: var(--tinta-media);
 }
 
-.insignia-nueva {
+.story-tile[data-open='false'] .story-tile-name {
+  color: var(--tinta-suave);
+}
+
+.badge-new {
   position: absolute;
   top: -0.5rem;
   right: -0.3rem;
@@ -833,15 +1096,15 @@ button {
   transform: rotate(6deg);
 }
 
-.detalle-historia {
+.story-detail {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.9rem;
 }
 
-/* La lámina del álbum: la foto sujeta por cuatro esquinas de cartulina. */
-.lamina {
+/* Album plate: photo held by four cardboard corners. */
+.plate {
   position: relative;
   width: min(15rem, 66%);
   padding: 0.7rem;
@@ -849,7 +1112,7 @@ button {
   box-shadow: 0 2px 6px rgba(43, 33, 22, 0.32);
 }
 
-.detalle-imagen {
+.detail-image {
   display: block;
   width: 100%;
   aspect-ratio: 1;
@@ -857,7 +1120,7 @@ button {
   filter: sepia(0.16) saturate(0.92);
 }
 
-.lamina-esquinas {
+.plate-corners {
   position: absolute;
   inset: 0;
   pointer-events: none;
@@ -871,7 +1134,7 @@ button {
   background-repeat: no-repeat;
 }
 
-.detalle-texto {
+.detail-text {
   max-height: 42vh;
   overflow-y: auto;
   text-align: left;
@@ -880,8 +1143,8 @@ button {
   color: var(--tinta-media);
 }
 
-/* Capitular: la primera letra del primer párrafo, como en un incunable. */
-.detalle-texto p:first-child::first-letter {
+/* Drop cap: first letter of the first paragraph, like an incunable. */
+.detail-text p:first-child::first-letter {
   float: left;
   margin: 0.32rem 0.35rem 0 0;
   font-family: var(--display);
@@ -890,13 +1153,13 @@ button {
   color: var(--vino);
 }
 
-.detalle-texto p {
+.detail-text p {
   margin: 0 0 0.9rem;
   text-align: justify;
   hyphens: auto;
 }
 
-.paginador {
+.pager {
   display: flex;
   align-items: center;
   gap: 0.9rem;
@@ -906,15 +1169,15 @@ button {
   color: var(--tinta-suave);
 }
 
-/* ---------- Ajustes y PancitoLandia --------------------------------------- */
+/* ---------- Settings and PancitoLandia ------------------------------------ */
 
-.grupo-ajuste {
+.settings-group {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
 
-.grupo-ajuste h2 {
+.settings-group h2 {
   margin: 0;
   font-family: var(--versales);
   font-size: 1rem;
@@ -923,31 +1186,65 @@ button {
   color: var(--tinta-media);
 }
 
-.fila-idiomas,
-.fila-opciones {
+.settings-help {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--tinta-media);
+}
+
+.settings-fieldset {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(43, 33, 22, 0.35);
+}
+
+.settings-fieldset legend {
+  padding: 0 0.35rem;
+  font-family: var(--versales);
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
+}
+
+.settings-choice {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 2.75rem;
+  cursor: pointer;
+}
+
+.settings-choice input {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--vino);
+}
+
+.language-row,
+.options-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
 }
 
-.deslizador {
+.slider {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.deslizador input {
+.slider input {
   flex: 1;
   accent-color: var(--vino);
 }
 
-.deslizador span {
+.slider span {
   min-width: 3rem;
   font-variant-numeric: tabular-nums;
   color: var(--tinta-media);
 }
 
-.cuerpo-terminos {
+.terms-body {
   max-height: min(42vh, 22rem);
   overflow-y: auto;
   margin: 0 0 1rem;
@@ -961,7 +1258,20 @@ button {
   background: color-mix(in srgb, var(--papel) 70%, var(--papel-claro));
 }
 
-.casilla {
+.credits-body {
+  margin: 0 0 1.2rem;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  text-align: center;
+  white-space: pre-wrap;
+  color: var(--tinta-media);
+}
+
+.checkbox {
   display: flex;
   align-items: flex-start;
   gap: 0.6rem;
@@ -972,39 +1282,62 @@ button {
   cursor: pointer;
 }
 
-.casilla input {
+.checkbox input {
   margin-top: 0.25rem;
   accent-color: var(--vino);
 }
 
-/* Muestrario de reversos de PancitoLandia. */
-.rejilla-reversos {
+/* PancitoLandia card-back picker. */
+.back-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(4.5rem, 1fr));
   gap: 0.5rem;
 }
 
-.ficha-reverso {
+.back-tile {
+  position: relative;
   aspect-ratio: 3 / 4;
   padding: 0;
-  border: 1px solid rgba(43, 33, 22, 0.3);
+  border: 2px solid rgba(43, 33, 22, 0.35);
   background: none;
   cursor: pointer;
   overflow: hidden;
-  transition: box-shadow 0.16s ease;
+  transition: border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
 }
 
-.ficha-reverso img {
+.back-tile img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.ficha-reverso[data-activo='true'] {
-  box-shadow: inset 0 0 0 3px var(--oro);
+.back-tile:hover {
+  border-color: rgba(43, 33, 22, 0.6);
 }
 
-.ficha-reverso-auto {
+.back-tile[data-active='true'] {
+  border-color: var(--oro);
+  box-shadow:
+    inset 0 0 0 3px var(--oro-claro),
+    0 0 0 2px var(--tinta);
+  transform: translateY(-2px);
+}
+
+.back-tile[data-active='true']::after {
+  content: '';
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  z-index: 1;
+  width: 0.85rem;
+  height: 0.85rem;
+  border: 2px solid var(--papel-claro);
+  border-radius: 50%;
+  background: var(--oro);
+  box-shadow: 0 0 0 1px rgba(43, 33, 22, 0.55);
+}
+
+.back-tile-auto {
   display: grid;
   place-items: center;
   padding: 0.4rem;
@@ -1017,16 +1350,21 @@ button {
   background: rgba(241, 232, 210, 0.5);
 }
 
-/* ---------- Tests y quiz --------------------------------------------------- */
+.back-tile-auto[data-active='true'] {
+  color: var(--tinta);
+  background: rgba(241, 232, 210, 0.95);
+}
 
-.lista-tests {
+/* ---------- Tests and quiz ------------------------------------------------ */
+
+.test-list {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-/* Los tests van como renglones de un índice, separados por filete. */
-.ficha-test {
+/* Tests as index rows, separated by a rule. */
+.test-tile {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -1039,20 +1377,20 @@ button {
   transition: background 0.16s ease;
 }
 
-.ficha-test:first-child {
+.test-tile:first-child {
   border-top: var(--filete-tenue);
 }
 
-.ficha-test:hover:not(:disabled) {
+.test-tile:hover:not(:disabled) {
   background: rgba(241, 232, 210, 0.7);
 }
 
-.ficha-test[data-abierto='false'] {
+.test-tile[data-open='false'] {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
-.ficha-test-numero {
+.test-tile-number {
   display: grid;
   place-items: center;
   width: 2.4rem;
@@ -1062,38 +1400,38 @@ button {
   font-size: 1.3rem;
 }
 
-.ficha-test-cuerpo {
+.test-tile-body {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
 }
 
-.ficha-test-nombre {
+.test-tile-name {
   font-family: var(--display);
   font-size: 1.15rem;
 }
 
-.ficha-test-detalle,
-.ficha-test-aviso {
+.test-tile-detail,
+.test-tile-notice {
   font-style: italic;
   font-size: 0.9rem;
   color: var(--tinta-suave);
 }
 
-.ficha-test-aviso {
+.test-tile-notice {
   color: var(--vino);
 }
 
-.ficha-test-nota {
+.test-tile-score {
   font-family: var(--display);
   font-size: 1.3rem;
   font-variant-numeric: tabular-nums;
   color: var(--verde);
 }
 
-/* La pregunta es una hoja suelta. */
-.hoja-pregunta {
+/* The question is a loose sheet. */
+.question-sheet {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
@@ -1103,7 +1441,7 @@ button {
   box-shadow: inset 0 0 0 4px rgba(226, 214, 187, 0.75), inset 0 0 0 5px rgba(43, 33, 22, 0.14);
 }
 
-.pregunta-enunciado {
+.question-prompt {
   margin: 0;
   font-family: var(--display);
   font-size: 1.45rem;
@@ -1111,13 +1449,13 @@ button {
   line-height: 1.35;
 }
 
-.lista-opciones {
+.option-list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.opcion {
+.option {
   display: flex;
   align-items: center;
   gap: 0.85rem;
@@ -1131,12 +1469,12 @@ button {
   transition: background 0.16s ease, border-color 0.16s ease;
 }
 
-.opcion:hover:not(:disabled) {
+.option:hover:not(:disabled) {
   background: rgba(241, 232, 210, 0.95);
   border-color: var(--tinta);
 }
 
-.opcion-letra {
+.option-letter {
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -1147,29 +1485,29 @@ button {
   font-size: 0.9rem;
 }
 
-.opcion[data-estado='correcta'] {
+.option[data-state='correct'] {
   border-color: var(--verde);
   background: rgba(74, 95, 56, 0.16);
 }
 
-.opcion[data-estado='correcta'] .opcion-letra {
+.option[data-state='correct'] .option-letter {
   background: var(--verde);
   border-color: var(--verde);
   color: var(--papel-claro);
 }
 
-.opcion[data-estado='incorrecta'] {
+.option[data-state='incorrect'] {
   border-color: var(--vino);
   background: rgba(109, 37, 33, 0.14);
 }
 
-.opcion[data-estado='incorrecta'] .opcion-letra {
+.option[data-state='incorrect'] .option-letter {
   background: var(--vino);
   border-color: var(--vino);
   color: var(--papel-claro);
 }
 
-.quiz-nota {
+.quiz-score {
   margin: 0.3rem 0 0.6rem;
   font-family: var(--display);
   font-size: 3.6rem;
@@ -1177,21 +1515,21 @@ button {
   color: var(--vino);
 }
 
-.quiz-nota span {
+.quiz-score span {
   font-size: 1.2rem;
   color: var(--tinta-suave);
 }
 
-/* ---------- Logros --------------------------------------------------------- */
+/* ---------- Achievements -------------------------------------------------- */
 
-.rejilla-logros {
+.achievement-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
   gap: 0.6rem;
 }
 
-/* Medallón grabado: cuanto más apagado, más lejos está de conseguirse. */
-.ficha-logro {
+/* Engraved medallion: dimmer means farther from unlocked. */
+.achievement-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1206,24 +1544,24 @@ button {
   transition: filter 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
 }
 
-.ficha-logro[data-conseguido='true'] {
+.achievement-tile[data-earned='true'] {
   filter: none;
   opacity: 1;
   border-color: var(--oro);
   box-shadow: inset 0 0 0 1px rgba(154, 111, 39, 0.35);
 }
 
-.ficha-logro:hover {
+.achievement-tile:hover {
   box-shadow: inset 0 0 0 1px rgba(43, 33, 22, 0.35);
 }
 
-.ficha-logro img {
+.achievement-tile img {
   width: 3rem;
   height: 3rem;
   object-fit: contain;
 }
 
-.ficha-logro-inicial {
+.achievement-tile-initial {
   display: grid;
   place-items: center;
   width: 3rem;
@@ -1234,14 +1572,14 @@ button {
   font-size: 1.5rem;
 }
 
-.ficha-logro-nombre {
+.achievement-tile-name {
   font-family: var(--display);
   font-size: 0.98rem;
   line-height: 1.25;
   text-align: center;
 }
 
-.barra-progreso {
+.progress-bar {
   width: 100%;
   height: 4px;
   border: 1px solid rgba(43, 33, 22, 0.28);
@@ -1249,15 +1587,15 @@ button {
   overflow: hidden;
 }
 
-.barra-progreso span {
+.progress-bar span {
   display: block;
   height: 100%;
   background: var(--tinta-media);
 }
 
-/* ---------- Partida --------------------------------------------------------- */
+/* ---------- Match --------------------------------------------------------- */
 
-.pantalla-juego {
+.screen-game {
   position: relative;
   width: 100%;
   min-height: 100%;
@@ -1270,7 +1608,7 @@ button {
   box-shadow: none;
 }
 
-.barra {
+.match-bar {
   position: fixed;
   top: 0;
   left: 0;
@@ -1280,19 +1618,20 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  margin: 0;
   padding: 0.6rem clamp(0.9rem, 3vw, 2rem);
   border-bottom: 3px double rgba(43, 33, 22, 0.4);
   background: var(--papel);
 }
 
-.barra-centro {
+.match-bar-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.3rem;
 }
 
-.barra-titulo {
+.match-bar-title {
   margin: 0;
   font-family: var(--versales);
   font-size: 0.88rem;
@@ -1300,67 +1639,67 @@ button {
   color: var(--tinta-suave);
 }
 
-.cronometro {
+.timer {
   font-family: var(--display);
   font-size: 1.7rem;
   font-variant-numeric: tabular-nums;
   line-height: 1;
 }
 
-/* Riel de tiempo como una regla grabada, no como una barra de progreso. */
-.cronometro-riel {
+/* Time rail as an engraved ruler, not a progress bar. */
+.timer-track {
   width: min(40vw, 20rem);
   height: 5px;
   border: 1px solid rgba(43, 33, 22, 0.35);
   overflow: hidden;
 }
 
-.cronometro-pulso {
+.timer-fill {
   height: 100%;
-  width: calc(var(--fraccion) * 100%);
+  width: calc(var(--fraction) * 100%);
   background: var(--tinta-media);
   transition: width 1s linear;
 }
 
-.barra-centro[data-apremio='true'] .cronometro {
+.match-bar-center[data-urgent='true'] .timer {
   color: var(--vino);
   animation: latir 1s ease-in-out infinite;
 }
 
-.barra-centro[data-apremio='true'] .cronometro-pulso {
+.match-bar-center[data-urgent='true'] .timer-fill {
   background: var(--vino);
 }
 
-.marcador {
+.scoreboard {
   display: flex;
   gap: 1.4rem;
   margin: 0;
 }
 
-.marcador dt {
+.scoreboard dt {
   font-family: var(--versales);
   font-size: 0.82rem;
   letter-spacing: 0.12em;
   color: var(--tinta-suave);
 }
 
-.marcador dd {
+.scoreboard dd {
   margin: 0.1rem 0 0;
   font-family: var(--display);
   font-size: 1.3rem;
   font-variant-numeric: tabular-nums;
 }
 
-.marcador dd span {
+.scoreboard dd span {
   font-size: 0.85rem;
   color: var(--tinta-suave);
 }
 
-.marcador dd[data-tono='fallo'] {
+.scoreboard dd[data-tone='fallo'] {
   color: var(--vino);
 }
 
-.aviso-vistazo {
+.peek-notice {
   position: fixed;
   bottom: 1.6rem;
   margin: 0;
@@ -1371,16 +1710,16 @@ button {
   animation: latir 1.4s ease-in-out infinite;
 }
 
-/* ---------- Tablero --------------------------------------------------------- */
+/* ---------- Board --------------------------------------------------------- */
 
 /*
  * Tamaño de carta = lo máximo que cabe en pantalla (ancho y alto), sin techo
  * fijo de rem: en PC las cartas crecen con el monitor. --cols/--rows permiten
  * volcar tableros altos a lo ancho en escritorio (ver media query abajo).
  */
-.tablero {
-  --cols: var(--columnas);
-  --rows: var(--filas);
+.board {
+  --cols: var(--columns);
+  --rows: var(--rows);
   --lado: min(
     calc((100vw - 2.5rem) / (var(--cols) * 1.1)),
     calc((100vh - 10.5rem) / (var(--rows) * 1.1))
@@ -1396,7 +1735,7 @@ button {
 }
 
 @supports (height: 100dvh) {
-  .tablero {
+  .board {
     --lado: min(
       calc((100vw - 2.5rem) / (var(--cols) * 1.1)),
       calc((100dvh - 10.5rem) / (var(--rows) * 1.1))
@@ -1404,17 +1743,17 @@ button {
   }
 }
 
-/* Escritorio: 4×6 → 6×4, 4×8 → 8×4, 5×8 → 8×5… aprovecha el ancho. */
+/* Desktop: 4×6 → 6×4, 4×8 → 8×4, 5×8 → 8×5… use the width. */
 @media (min-width: 48rem) {
-  .tablero[data-orientacion='alta'] {
-    --cols: var(--filas);
-    --rows: var(--columnas);
+  .board[data-orientation='tall'] {
+    --cols: var(--rows);
+    --rows: var(--columns);
   }
 }
 
 /* Tres capas para que las animaciones no se pisen: la de reparto vive en el
    botón, el temblor del fallo en el envoltorio y el giro 3D dentro. */
-.carta {
+.card {
   padding: 0;
   border: none;
   background: none;
@@ -1423,18 +1762,18 @@ button {
   animation-delay: calc(var(--i) * 22ms);
 }
 
-.carta:disabled {
+.card[aria-disabled='true'] {
   cursor: default;
 }
 
-.carta-sacudida {
+.card-shake {
   display: block;
   width: 100%;
   height: 100%;
   perspective: 900px;
 }
 
-.carta-giro {
+.card-flip {
   position: relative;
   display: block;
   width: 100%;
@@ -1443,15 +1782,15 @@ button {
   transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.25, 1);
 }
 
-.carta[data-boca='arriba'] .carta-giro {
+.card[data-face='up'] .card-flip {
   transform: rotateY(180deg);
 }
 
-.carta[data-boca='abajo']:hover .carta-giro {
+.card[data-face='down']:hover .card-flip {
   transform: translateY(-4px);
 }
 
-.carta-cara {
+.card-face {
   position: absolute;
   inset: 0;
   display: grid;
@@ -1464,10 +1803,10 @@ button {
 
 /* Dorso: se pinta con el reverso real del nivel cuando lo hay. El degradado
    de debajo cubre el hueco mientras carga y los tableros sin reverso. */
-.carta-dorso {
+.card-back {
   background-color: #3a2b1c;
   background-image:
-    var(--reverso, none),
+    var(--back, none),
     repeating-linear-gradient(45deg, rgba(201, 159, 69, 0.06) 0 2px, transparent 2px 7px);
   background-size: cover;
   background-position: center;
@@ -1476,7 +1815,7 @@ button {
     0 3px 8px -4px rgba(43, 33, 22, 0.7);
 }
 
-.dorso-emblema {
+.back-emblem {
   position: relative;
   width: 40%;
   aspect-ratio: 1;
@@ -1484,23 +1823,23 @@ button {
   transform: rotate(45deg);
 }
 
-/* Con reverso de verdad el emblema dibujado sobra. */
-.carta-dorso[data-con-imagen='true'] .dorso-emblema {
+/* With a real back image the drawn emblem is hidden. */
+.card-back[data-has-image='true'] .back-emblem {
   display: none;
 }
 
-.dorso-emblema::before {
+.back-emblem::before {
   content: '';
   position: absolute;
   inset: 22%;
   border: 1px solid rgba(201, 159, 69, 0.3);
 }
 
-/* Frente: papel crema con el tono propio de cada estampa. */
-.carta-frente {
+/* Face: cream paper with each stamp's own tint. */
+.card-front {
   transform: rotateY(180deg);
   background-image:
-    radial-gradient(circle at 50% 36%, hsl(var(--tono) 45% 74% / 0.42), transparent 72%),
+    radial-gradient(circle at 50% 36%, hsl(var(--hue) 45% 74% / 0.42), transparent 72%),
     linear-gradient(165deg, #f7edd6, #dfcfae);
   box-shadow:
     inset 0 0 0 1px rgba(154, 111, 39, 0.5),
@@ -1508,41 +1847,79 @@ button {
     0 3px 8px -4px rgba(43, 33, 22, 0.7);
 }
 
-.carta-imagen {
+.card-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.carta-inicial {
+.card-initial {
   font-family: var(--display);
   font-size: calc(var(--lado) * 0.3);
   color: var(--tinta);
 }
 
-.carta[data-estado='emparejada'] {
-  opacity: 0.5;
-  filter: sepia(0.3) saturate(0.6);
+.card[data-state='matched'] {
+  opacity: 0.72;
+  filter: sepia(0.25) saturate(0.7);
 }
 
-.carta[data-estado='emparejada'] .carta-frente {
+.card[data-state='matched'] .card-front {
   animation: acertar 0.75s ease-out;
-}
-
-.carta[data-estado='fallida'] .carta-sacudida {
-  animation: temblar 0.44s ease-in-out both;
-}
-
-.carta[data-estado='fallida'] .carta-frente {
   box-shadow:
-    inset 0 0 0 2px var(--vino),
-    inset 0 0 22px rgba(109, 37, 33, 0.26),
+    inset 0 0 0 3px var(--verde),
+    inset 0 0 0 6px rgba(247, 237, 214, 0.55),
     0 3px 8px -4px rgba(43, 33, 22, 0.7);
 }
 
-/* ---------- Modales: hojas sueltas sobre el libro --------------------------- */
+.card[data-state='failed'] .card-shake {
+  animation: temblar 0.44s ease-in-out both;
+}
 
-.velo {
+.card[data-state='failed'] .card-front {
+  box-shadow:
+    inset 0 0 0 3px var(--vino),
+    inset 0 0 22px rgba(109, 37, 33, 0.26),
+    0 3px 8px -4px rgba(43, 33, 22, 0.7);
+  background-image:
+    repeating-linear-gradient(
+      -45deg,
+      rgba(109, 37, 33, 0.12) 0 4px,
+      transparent 4px 10px
+    ),
+    radial-gradient(circle at 50% 36%, hsl(var(--hue) 45% 74% / 0.42), transparent 72%),
+    linear-gradient(165deg, #f7edd6, #dfcfae);
+}
+
+/* Non-color match/miss cue (shape + mark, not hue alone). */
+.card-mark {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.25rem;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  border: 2px solid currentColor;
+  background: var(--papel-claro);
+  font-family: var(--versales);
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.card-mark[data-kind='match'] {
+  color: var(--verde);
+  border-radius: 50%;
+}
+
+.card-mark[data-kind='miss'] {
+  color: var(--vino);
+}
+
+/* ---------- Modals: loose sheets on the book ------------------------------ */
+
+.overlay {
   position: fixed;
   inset: 0;
   z-index: 40;
@@ -1570,11 +1947,11 @@ button {
   animation: entrar-popup 0.42s cubic-bezier(0.2, 0.9, 0.25, 1.05);
 }
 
-.modal[data-ancho='ancho'] {
+.modal[data-width='wide'] {
   width: min(38rem, 100%);
 }
 
-.modal-titulo {
+.modal-title {
   margin: 0 0 1rem;
   font-family: var(--display);
   font-weight: 400;
@@ -1582,19 +1959,19 @@ button {
   line-height: 1.15;
 }
 
-.modal-texto {
+.modal-text {
   margin: 0 0 1rem;
   line-height: 1.65;
   color: var(--tinta-media);
 }
 
-.modal-texto-tenue {
+.modal-text-muted {
   font-style: italic;
   font-size: 0.92rem;
   color: var(--tinta-suave);
 }
 
-.modal-elogio {
+.modal-praise {
   margin: 0 0 1.1rem;
   font-family: var(--display);
   font-style: italic;
@@ -1602,7 +1979,7 @@ button {
   color: var(--vino);
 }
 
-.modal-acciones {
+.modal-actions {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1610,7 +1987,7 @@ button {
   margin-top: 0.4rem;
 }
 
-.resumen {
+.summary {
   display: flex;
   justify-content: center;
   gap: 2.5rem;
@@ -1619,22 +1996,22 @@ button {
   border-top: 3px double rgba(43, 33, 22, 0.32);
 }
 
-.resumen dt {
+.summary dt {
   font-family: var(--versales);
   font-size: 0.85rem;
   letter-spacing: 0.12em;
   color: var(--tinta-suave);
 }
 
-.resumen dd {
+.summary dd {
   margin: 0.2rem 0 0;
   font-family: var(--display);
   font-size: 1.5rem;
   font-variant-numeric: tabular-nums;
 }
 
-/* Ex libris: el premio de la historia va enmarcado como un sello de propiedad. */
-.premio-historia {
+/* Ex libris: story reward framed like an ownership stamp. */
+.reward-story {
   margin: 0 0 1.2rem;
   padding: 1rem 0.9rem;
   border: 1px solid rgba(154, 111, 39, 0.55);
@@ -1642,7 +2019,7 @@ button {
   background: rgba(201, 159, 69, 0.1);
 }
 
-.premio-titulo {
+.reward-title {
   margin: 0;
   font-family: var(--versales);
   font-size: 0.88rem;
@@ -1650,13 +2027,13 @@ button {
   color: var(--oro);
 }
 
-.premio-nombre {
+.reward-name {
   margin: 0.3rem 0 0;
   font-family: var(--display);
   font-size: 1.35rem;
 }
 
-.premio-presentacion {
+.reward-intro {
   margin: 0.5rem 0 0.9rem;
   font-family: var(--display);
   font-style: italic;
@@ -1665,25 +2042,25 @@ button {
   color: var(--tinta-media);
 }
 
-.estrellas {
+.stars {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 1.2rem;
 }
 
-.estrellas[data-tamano='pip'] {
+.stars[data-size='pip'] {
   gap: 0.12rem;
   margin: 0.3rem 0 0;
 }
 
-.estrellas[data-tamano='pip'] .estrella {
+.stars[data-size='pip'] .star {
   width: 0.66rem;
   height: 0.66rem;
   animation: none;
 }
 
-.estrella {
+.star {
   width: 2.5rem;
   height: 2.5rem;
   fill: rgba(43, 33, 22, 0.14);
@@ -1691,13 +2068,13 @@ button {
   animation-delay: calc(0.15s + var(--i) * 0.14s);
 }
 
-.estrella[data-ganada='true'] {
+.star[data-earned='true'] {
   fill: var(--oro-claro);
   stroke: var(--oro);
   stroke-width: 0.7;
 }
 
-/* ---------- Animaciones ------------------------------------------------- */
+/* ---------- Animations ---------------------------------------------------- */
 
 @keyframes repartir {
   from {
@@ -1778,9 +2155,9 @@ button {
   }
 }
 
-/* ---------- Guía de una hoja ---------------------------------------------- */
+/* ---------- One-page guide ------------------------------------------------ */
 
-.guia-pasos {
+.guide-steps {
   margin: 0 0 1rem;
   padding: 0 0 0 1.2rem;
   text-align: left;
@@ -1788,24 +2165,25 @@ button {
   color: var(--tinta-media);
 }
 
-.guia-pasos li {
+.guide-steps li {
   margin-bottom: 0.65rem;
 }
 
-.guia-pasos li::marker {
+.guide-steps li::marker {
   font-family: var(--versales);
   color: var(--oro);
 }
 
-.boton-ayuda {
-  position: fixed;
-  right: clamp(1.1rem, 3vmin, 2.2rem);
-  bottom: clamp(1.1rem, 3vmin, 2.2rem);
+/* Anchored inside the menu sheet so it stays within the gold frame. */
+.help-button {
+  position: absolute;
+  right: 1rem;
+  bottom: 2.75rem;
   z-index: 6;
   display: grid;
   place-items: center;
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 2.75rem;
+  height: 2.75rem;
   padding: 0;
   border: 1px solid rgba(43, 33, 22, 0.45);
   background: rgba(241, 232, 210, 0.94);
@@ -1818,26 +2196,26 @@ button {
   transition: background 0.16s ease, color 0.16s ease;
 }
 
-.boton-ayuda:hover {
+.help-button:hover {
   background: var(--tinta);
   color: var(--papel-claro);
 }
 
-/* ---------- Ex libris (premio de historia) -------------------------------- */
+/* ---------- Ex libris (story reward) -------------------------------------- */
 
-.exlibris {
+.ex-libris {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.35rem;
 }
 
-.lamina-premio {
+.plate-reward {
   width: min(11rem, 55%);
   margin: 0.6rem 0 0.4rem;
 }
 
-.boton-lupa {
+.zoom-button {
   position: absolute;
   right: 0.35rem;
   bottom: 0.35rem;
@@ -1854,18 +2232,18 @@ button {
   transition: background 0.16s ease, color 0.16s ease;
 }
 
-.boton-lupa svg {
+.zoom-button svg {
   width: 1.15rem;
   height: 1.15rem;
 }
 
-.boton-lupa:hover {
+.zoom-button:hover {
   background: var(--tinta);
   color: var(--papel-claro);
 }
 
-/* Visor a pantalla completa para el arte de las historias. */
-.visor {
+/* Fullscreen viewer for story art. */
+.viewer {
   position: fixed;
   inset: 0;
   z-index: 50;
@@ -1876,7 +2254,7 @@ button {
   animation: aparecer 0.22s ease-out;
 }
 
-.visor-imagen {
+.viewer-image {
   max-width: min(92vw, 36rem);
   max-height: min(82vh, 36rem);
   object-fit: contain;
@@ -1887,7 +2265,7 @@ button {
   filter: sepia(0.1) saturate(0.95);
 }
 
-.visor-cerrar {
+.viewer-close {
   position: absolute;
   top: max(0.8rem, env(safe-area-inset-top));
   right: max(0.8rem, env(safe-area-inset-right));
@@ -1901,14 +2279,14 @@ button {
   cursor: pointer;
 }
 
-.visor-cerrar:hover {
+.viewer-close:hover {
   background: rgba(43, 33, 22, 0.85);
 }
 
-/* ---------- Móvil --------------------------------------------------------- */
+/* ---------- Mobile -------------------------------------------------------- */
 
 @media (max-width: 40rem) {
-  .pantalla {
+  .screen {
     width: 100%;
     padding: 0.75rem 0.9rem 2.2rem;
     background:
@@ -1916,40 +2294,44 @@ button {
       rgba(241, 232, 210, 0.34);
   }
 
-  .cabecera {
-    margin: 0 -0.9rem;
+  .header {
+    width: 100%;
     padding: 0.65rem 0.9rem 0.45rem;
   }
 
-  .cabecera-titulo {
+  .screen:has(> .header) {
+    padding-top: 3.6rem;
+  }
+
+  .header-title {
     font-size: 1.25rem;
   }
 
-  .menu-titulo {
+  .menu-title {
     font-size: clamp(2.1rem, 12vw, 3.2rem);
   }
 
-  .menu-botones {
+  .menu-buttons {
     width: 100%;
     gap: 0.5rem;
   }
 
-  .barra {
+  .match-bar {
     gap: 0.5rem;
     padding: 0.45rem 0.6rem;
     padding-top: max(0.45rem, env(safe-area-inset-top));
   }
 
-  .barra-pausa {
+  .match-bar-pause {
     padding: 0.35rem 0.55rem;
     font-size: 0.9rem;
   }
 
-  .cronometro {
+  .timer {
     font-size: 1.35rem;
   }
 
-  .barra-titulo {
+  .match-bar-title {
     max-width: 28vw;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1957,32 +2339,32 @@ button {
     font-size: 0.75rem;
   }
 
-  .marcador {
+  .scoreboard {
     gap: 0.7rem;
   }
 
-  .marcador dt {
+  .scoreboard dt {
     font-size: 0.7rem;
   }
 
-  .marcador dd {
+  .scoreboard dd {
     font-size: 1.05rem;
   }
 
-  .cronometro-riel {
+  .timer-track {
     width: min(28vw, 8rem);
   }
 
-  .tablero {
-    --cols: var(--columnas);
-    --rows: var(--filas);
+  .board {
+    --cols: var(--columns);
+    --rows: var(--rows);
     margin-top: 3.2rem;
     gap: calc(var(--lado) * 0.08);
   }
 
-  /* Tableros grandes en móvil: más margen bajo la barra y cartas apretadas. */
-  .pantalla-juego[data-cartas='32'] .tablero,
-  .pantalla-juego[data-cartas='40'] .tablero {
+  /* Large boards on mobile: more margin under the bar, tighter cards. */
+  .screen-game[data-cards='32'] .board,
+  .screen-game[data-cards='40'] .board {
     --lado: min(
       calc((100vw - 1.2rem) / (var(--cols) * 1.08)),
       calc((100vh - 9rem) / (var(--rows) * 1.08)),
@@ -1996,11 +2378,11 @@ button {
     max-height: 90vh;
   }
 
-  .modal-titulo {
+  .modal-title {
     font-size: 1.55rem;
   }
 
-  .pestanas-secciones {
+  .section-tabs {
     justify-content: flex-start;
     overflow-x: auto;
     flex-wrap: nowrap;
@@ -2008,22 +2390,35 @@ button {
     padding-bottom: 0.2rem;
   }
 
-  .pestana {
+  .tab {
     flex: 0 0 auto;
     font-size: 0.88rem;
     padding: 0.3rem 0.75rem 0.35rem;
   }
 
-  .rejilla-niveles {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 0.35rem;
+  .atlas-plate {
+    height: min(56vh, 30rem);
+    width: max(100%, calc(min(56vh, 30rem) * 2.15));
   }
 
-  .ficha-numero {
-    font-size: 1.2rem;
+  .atlas-marker {
+    width: 3.1rem;
+    height: 3.1rem;
   }
 
-  .rejilla-historias {
+  .atlas-marker-number {
+    font-size: 1.15rem;
+  }
+
+  .atlas-rank {
+    font-size: 1.05rem;
+  }
+
+  .atlas-summary-stats dd {
+    font-size: 1.05rem;
+  }
+
+  .story-grid {
     grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
     gap: 1rem 0.7rem;
   }
@@ -2031,8 +2426,8 @@ button {
 
 @supports (height: 100dvh) {
   @media (max-width: 40rem) {
-    .pantalla-juego[data-cartas='32'] .tablero,
-    .pantalla-juego[data-cartas='40'] .tablero {
+    .screen-game[data-cards='32'] .board,
+    .screen-game[data-cards='40'] .board {
       --lado: min(
         calc((100vw - 1.2rem) / (var(--cols) * 1.08)),
         calc((100dvh - 9rem) / (var(--rows) * 1.08)),
@@ -2049,5 +2444,31 @@ button {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Instant face swap instead of 3D flip. */
+  .card-flip,
+  .card[data-face='up'] .card-flip,
+  .card[data-face='down']:hover .card-flip {
+    transition: none !important;
+    transform: none !important;
+  }
+
+  .card[data-face='up'] .card-back {
+    display: none;
+  }
+
+  .card[data-face='up'] .card-front {
+    transform: none;
+    backface-visibility: visible;
+  }
+
+  .card[data-face='down'] .card-front {
+    display: none;
+  }
+
+  .match-bar-center[data-urgent='true'] .timer {
+    animation: none !important;
   }
 }

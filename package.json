@@ -10,11 +10,11 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "exportar": "node herramientas/exportar.mjs",
-    "medios": "node herramientas/medios.mjs",
-    "contenido": "npm run exportar && npm run medios",
-    "empaquetar": "node herramientas/empaquetar.mjs",
-    "banderas": "node herramientas/banderas.mjs"
+    "export": "node tools/export.mjs",
+    "media": "node tools/media.mjs",
+    "content": "npm run export && npm run media",
+    "pack": "node tools/pack.mjs",
+    "flags": "node tools/flags.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

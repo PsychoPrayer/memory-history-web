@@ -1,0 +1,1028 @@
+[
+  {
+    "id": "1",
+    "titulo": "Mapa de España",
+    "imagen": "/imagenes/historias/mapa-de-espana.webp",
+    "es": {
+      "presentacion": "Descubre España: tierra de reinos, mares y culturas milenarias.",
+      "texto": [
+        "España es un país de la península ibérica con una historia que combina pueblos celtas, íberos, fenicios, romanos, visigodos y musulmanes antes de conformar la monarquía y la actual democracia. Su territorio abarca regiones muy distintas —desde los Pirineos hasta Andalucía, desde Galicia hasta las Islas Canarias— cada una con lengua, gastronomía y tradiciones propias. El mapa refleja esa diversidad: comunidades autónomas, costas atlánticas y mediterráneas, y ciudades que fueron capitales de imperios y de la cultura europea."
+      ]
+    },
+    "en": {
+      "presentacion": "Discover Spain: land of kingdoms, seas, and ancient cultures.",
+      "texto": [
+        "Spain is a country on the Iberian Peninsula whose history blends Celtic, Iberian, Phoenician, Roman, Visigothic, and Muslim peoples before shaping its monarchy and today’s democracy. Its land includes very different regions—from the Pyrenees to Andalusia, from Galicia to the Canary Islands—each with its own language, cuisine, and traditions. The map reflects that diversity: autonomous communities, Atlantic and Mediterranean coasts, and cities that were capitals of empires and of European culture."
+      ]
+    },
+    "nivelDesbloqueo": "12_1_normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "2",
+    "titulo": "Guitarra",
+    "imagen": "/imagenes/historias/guitarra.webp",
+    "es": {
+      "presentacion": "La guitarra española: seis cuerdas que cantan historia y pasión.",
+      "texto": [
+        "La guitarra española es uno de los instrumentos más reconocidos del mundo y un símbolo de la identidad musical del país. Sus raíces se remontan a la vihuela y al laúd del Renacimiento; en el siglo XIX la luthiería andaluza —especialmente en Cádiz y Sevilla— perfeccionó la guitarra flamenca y la clásica. Compositores como Francisco Tárrega y Paco de Lucía llevaron su sonido a escenarios internacionales. Hoy la guitarra acompaña el flamenco, el bolero, la copla y la música académica, uniendo tradición popular y arte culto."
+      ]
+    },
+    "en": {
+      "presentacion": "The Spanish guitar: six strings that sing history and passion.",
+      "texto": [
+        "The Spanish guitar is one of the world’s most recognized instruments and a symbol of the country’s musical identity. Its roots go back to the Renaissance vihuela and lute; in the nineteenth century Andalusian luthiers—especially in Cádiz and Seville—refined the flamenco and classical guitar. Composers such as Francisco Tárrega and Paco de Lucía brought its sound to international stages. Today the guitar accompanies flamenco, bolero, copla, and classical music, linking popular tradition and high art."
+      ]
+    },
+    "nivelDesbloqueo": "12_2_normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "3",
+    "titulo": "Ibiza",
+    "imagen": "/imagenes/historias/ibiza.webp",
+    "es": {
+      "presentacion": "Ibiza: isla de fenicios, murallas y mares infinitos.",
+      "texto": [
+        "Ibiza, en las Islas Baleares, combina patrimonio fenicio, romano y medieval con una cultura contemporánea mundialmente conocida. Los fenicios fundaron Ibiza (Eivissa) hacia el siglo VII a. C.; la ciudad amurallada Dalt Vila es Patrimonio de la Humanidad. Durante siglos fue escenario de piratas, comercio y defensa militar. En el siglo XX su paisaje y sus calas atrajeron artistas y viajeros; hoy es famosa por su música electrónica y sus fiestas, pero también conserva tradiciones como las pitiusas, la gastronomía marinera y las fiestas patronales."
+      ]
+    },
+    "en": {
+      "presentacion": "Ibiza: island of Phoenicians, walls, and endless seas.",
+      "texto": [
+        "Ibiza, in the Balearic Islands, blends Phoenician, Roman, and medieval heritage with a globally known contemporary culture. The Phoenicians founded Ibiza (Eivissa) around the seventh century BC; the walled city of Dalt Vila is a World Heritage Site. For centuries it was a stage for pirates, trade, and military defense. In the twentieth century its landscape and coves drew artists and travelers; today it is famous for electronic music and festivals, but it also preserves Pitiusan traditions, seafood cuisine, and patron saint celebrations."
+      ]
+    },
+    "nivelDesbloqueo": "12_3_normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "4",
+    "titulo": "Acueducto de Segovia",
+    "imagen": "/imagenes/historias/acueducto-de-segovia.webp",
+    "es": {
+      "presentacion": "Acueducto de Segovia: piedra romana que corona Castilla y España.",
+      "texto": [
+        "El Acueducto de Segovia es el monumento romano más emblemático de España y símbolo de la ciudad castellana de Segovia, Patrimonio de la Humanidad junto con su casco histórico y la Alcázar. Construido probablemente a principios del siglo II d. C., transportaba agua desde el río Frío con más de 800 metros de arcos de granito —hasta 28 metros de altura— sin mortero entre sus bloques. Domina la plaza del Azoguejo y evoca el esplendor de Hispania romana y la identidad de Castilla. Hoy es icono turístico y orgullo de la ingeniería antigua española."
+      ]
+    },
+    "en": {
+      "presentacion": "Segovia Aqueduct: Roman stone crowning Castile and Spain.",
+      "texto": [
+        "The Aqueduct of Segovia is Spain’s most emblematic Roman monument and a symbol of the Castilian city of Segovia, a World Heritage Site together with its old town and Alcázar. Probably built in the early second century AD, it carried water from the Frío River along more than 800 meters of granite arches—up to 28 meters high—with no mortar between its blocks. It dominates Plaza del Azoguejo and evokes Roman Hispania and Castile’s identity. Today it is a tourist icon and pride of Spanish ancient engineering."
+      ]
+    },
+    "nivelDesbloqueo": "12_4normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "5",
+    "titulo": "Tortilla española",
+    "imagen": "/imagenes/historias/tortilla-espanola.webp",
+    "es": {
+      "presentacion": "Tortilla española: patata, huevo y sabor de hogar.",
+      "texto": [
+        "La tortilla española —patata, huevo y aceite de oliva— es el plato casero más universal del país. Su origen exacto es debatido: algunos lo sitúan en Navarra o Extremadura a finales del siglo XIX, cuando la patata ya era alimento popular. Se sirve en bares como tapa, en picnics y en reuniones familiares, con o sin cebolla según la tradición regional. Más que una receta, representa la cocina sencilla y sabrosa que define la mesa española en todo el mundo."
+      ]
+    },
+    "en": {
+      "presentacion": "Spanish tortilla: potato, egg, and taste of home.",
+      "texto": [
+        "The Spanish tortilla—potato, egg, and olive oil—is the country’s most universal home dish. Its exact origin is debated: some place it in Navarre or Extremadura in the late nineteenth century, when the potato was already a common food. It is served in bars as a tapa, at picnics, and at family gatherings, with or without onion depending on regional tradition. More than a recipe, it represents the simple, flavorful cooking that defines the Spanish table worldwide."
+      ]
+    },
+    "nivelDesbloqueo": "12_5normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "6",
+    "titulo": "El cid campeador",
+    "imagen": "/imagenes/historias/el-cid-campeador.webp",
+    "es": {
+      "presentacion": "El Cid: honor castellano que cruzó la historia en verso.",
+      "texto": [
+        "Rodrigo Díaz de Vivar, el Cid Campeador, es el héroe medieval más legendario de España. Caballero castellano del siglo XI, luchó en la Reconquista y también como mercenario en territorios musulmanes y cristianos. La Cantar de mio Cid, poema épico de principios del siglo XIII, narra sus hazañas y convirtió su figura en símbolo de honor, valentía y lealtad. Valencia, Burgos y su enterramiento en el monasterio de San Pedro de Cardeña forman parte de su memoria histórica y literaria."
+      ]
+    },
+    "en": {
+      "presentacion": "El Cid: Castilian honor that crossed history in verse.",
+      "texto": [
+        "Rodrigo Díaz de Vivar, El Cid Campeador, is Spain’s most legendary medieval hero. An eleventh-century Castilian knight, he fought in the Reconquista and also as a mercenary in Muslim and Christian lands. The Cantar de mio Cid, an epic poem from the early thirteenth century, tells his deeds and made him a symbol of honor, courage, and loyalty. Valencia, Burgos, and his burial at San Pedro de Cardeña monastery are part of his historical and literary memory."
+      ]
+    },
+    "nivelDesbloqueo": "12_11dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "7",
+    "titulo": "Crema catalana",
+    "imagen": "/imagenes/historias/crema-catalana.webp",
+    "es": {
+      "presentacion": "Crema catalana: dulce quemado que endulza la tradición.",
+      "texto": [
+        "La crema catalana es el postre más emblemático de Cataluña: natillas aromatizadas con canela y limón, cubiertas con azúcar quemado al estilo de la crème brûlée francesa, pero con raíces medievales en la península. Aparece en recetarios del siglo XIV y se celebra cada 7 de marzo en el Día de la Crema Catalana. Es símbolo de la cocina casera catalana, servida en festividades, restaurantes y hogares, y refleja la identidad gastronómica de una región con fuerte tradición culinaria propia."
+      ]
+    },
+    "en": {
+      "presentacion": "Crema catalana: burnt sweet that flavors tradition.",
+      "texto": [
+        "Crema catalana is Catalonia’s most emblematic dessert: custard flavored with cinnamon and lemon, topped with caramelized sugar like French crème brûlée but with medieval roots on the peninsula. It appears in fourteenth-century cookbooks and is celebrated every March 7 on Crema Catalana Day. It symbolizes Catalan home cooking, served at festivals, restaurants, and homes, and reflects the gastronomic identity of a region with a strong culinary tradition."
+      ]
+    },
+    "nivelDesbloqueo": "12_12dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "8",
+    "titulo": "Las tomatinas",
+    "imagen": "/imagenes/historias/las-tomatinas.webp",
+    "es": {
+      "presentacion": "La Tomatina: rojo, risa y fiesta en Buñol cada agosto.",
+      "texto": [
+        "La Tomatina es la fiesta más famosa de Buñol (Valencia), celebrada el último miércoles de agosto desde mediados del siglo XX. Miles de personas se lanzan tomates en la plaza del pueblo en una batalla lúdica que dura poco más de una hora. Su origen popular se remonta a una pelea espontánea entre jóvenes en 1945; tras prohibiciones y permisos, se convirtió en evento turístico internacional. Representa el humor festivo valenciano y la cultura de las fiestas populares españolas."
+      ]
+    },
+    "en": {
+      "presentacion": "La Tomatina: red, laughter, and fiesta in Buñol each August.",
+      "texto": [
+        "La Tomatina is the most famous festival in Buñol (Valencia), held on the last Wednesday of August since the mid-twentieth century. Thousands of people throw tomatoes in the town square in a playful battle lasting just over an hour. Its popular origin goes back to a spontaneous fight among youths in 1945; after bans and permits, it became an international tourist event. It represents Valencian festive humor and Spain’s popular festival culture."
+      ]
+    },
+    "nivelDesbloqueo": "12_13dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "9",
+    "titulo": "Tapas",
+    "imagen": "/imagenes/historias/tapas.webp",
+    "es": {
+      "presentacion": "Tapea con amigos: pequeños bocados, grandes momentos.",
+      "texto": [
+        "Las tapas son la forma más conocida de comer socialmente en España: pequeñas porciones que acompañan la bebida en bares y tabernas. Su nombre podría venir de la tapa que cubría la copa para protegerla del polvo o de las moscas. Cada región tiene las suyas —jamón, croquetas, pimientos del padrón, pulpo, tortilla— y la cultura del tapeo convierte la calle en salón comedor. Las tapas reflejan la hospitalidad española y la importancia de compartir mesa y conversación."
+      ]
+    },
+    "en": {
+      "presentacion": "Tapeo with friends: small bites, big moments.",
+      "texto": [
+        "Tapas are Spain’s best-known way of social dining: small portions served with drinks in bars and taverns. The name may come from the cover placed over a glass to keep out dust or flies. Each region has its own—ham, croquettes, Padrón peppers, octopus, tortilla—and the tapeo culture turns the street into a dining room. Tapas reflect Spanish hospitality and the importance of sharing table and conversation."
+      ]
+    },
+    "nivelDesbloqueo": "12_14dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "10",
+    "titulo": "Las catedrales",
+    "imagen": "/imagenes/historias/las-catedrales.webp",
+    "es": {
+      "presentacion": "Arcos de piedra y mar: la catedral que esculpió el océano.",
+      "texto": [
+        "La playa de las Catedrales, en Ribadeo (Galicia), es uno de los paisajes costeros más espectaculares de España. Sus arcos y columnas de roca, esculpidos por el mar Cantábrico, recuerdan naves góticas en pleamar; en bajamar se puede caminar entre ellos. Declarada monumento natural, simboliza la relación entre el Atlántico y la cultura gallega, la pesca y las leyendas marineras. Es destino de peregrinos del Camino del Norte y de viajeros que buscan la belleza salvaje del litoral español."
+      ]
+    },
+    "en": {
+      "presentacion": "Stone arches and sea: the cathedral sculpted by the ocean.",
+      "texto": [
+        "Cathedrals Beach (Playa de las Catedrales) in Ribadeo (Galicia) is one of Spain’s most spectacular coastal landscapes. Its rock arches and pillars, carved by the Cantabrian Sea, resemble Gothic naves at high tide; at low tide you can walk among them. Declared a natural monument, it symbolizes the link between the Atlantic and Galician culture, fishing, and seafaring legends. It is a destination for pilgrims on the Northern Way and travelers seeking the wild beauty of the Spanish coast."
+      ]
+    },
+    "nivelDesbloqueo": "12_15dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "11",
+    "titulo": "Juan Sebastian Elcano",
+    "imagen": "/imagenes/historias/juan-sebastian-elcano.webp",
+    "es": {
+      "presentacion": "Elcano: el marino que dio la vuelta al mundo entero.",
+      "texto": [
+        "Juan Sebastián Elcano, guipuzcoano, completó la primera circunnavegación del mundo tras la muerte de Magallanes en 1521. Al mando de la Victoria, regresó a Sanlúcar de Barrameda en 1522 con supervivientes de la expedición que demostró que la Tierra es esférica y que el océano Pacífico podía cruzarse. Carlos I le nombró caballero y le concedió un escudo con la leyenda «Primus circumdedisti me». Su hazaña es orgullo naval español y símbolo de la era de los descubrimientos."
+      ]
+    },
+    "en": {
+      "presentacion": "Elcano: the sailor who went around the whole world.",
+      "texto": [
+        "Juan Sebastián Elcano, from Guipúzcoa, completed the first circumnavigation of the world after Magellan’s death in 1521. Commanding the Victoria, he returned to Sanlúcar de Barrameda in 1522 with survivors of the expedition that proved Earth is round and the Pacific could be crossed. Charles I knighted him and granted a coat of arms with the motto “You first encircled me.” His feat is a source of Spanish naval pride and a symbol of the Age of Discovery."
+      ]
+    },
+    "nivelDesbloqueo": "16_1normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "12",
+    "titulo": "Jamon Serrano",
+    "imagen": "/imagenes/historias/jamon-serrano.webp",
+    "es": {
+      "presentacion": "Jamón serrano: sal, tiempo y sabor de la montaña.",
+      "texto": [
+        "El jamón serrano es uno de los embutidos más emblemáticos de España, curado en la montaña con sal, tiempo y viento. Proviene de la tradición de conservar la pierna del cerdo desde la época romana y medieval; las denominaciones de origen —como Teruel o Trevélez— garantizan calidad. Se degusta en lonchas finas, en tapas y en celebraciones familiares. Junto al jamón ibérico, representa la cultura del cerdo en la península y el arte de la curación que define la gastronomía española."
+      ]
+    },
+    "en": {
+      "presentacion": "Serrano ham: salt, time, and mountain flavor.",
+      "texto": [
+        "Serrano ham is one of Spain’s most emblematic cured meats, aged in the mountains with salt, time, and wind. It comes from the tradition of preserving pork leg since Roman and medieval times; designations of origin—such as Teruel or Trevélez—guarantee quality. It is enjoyed in thin slices, as tapas, and at family celebrations. Alongside Iberian ham, it represents peninsula pork culture and the curing art that defines Spanish gastronomy."
+      ]
+    },
+    "nivelDesbloqueo": "16_2normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "13",
+    "titulo": "Aguila imperial iberica",
+    "imagen": "/imagenes/historias/aguila-imperial-iberica.webp",
+    "es": {
+      "presentacion": "Águila imperial: majestad alada de los cielos ibéricos.",
+      "texto": [
+        "El águila imperial ibérica es una de las aves más emblemáticas y amenazadas de España, endémica de la península ibérica. Habita dehesas y montes mediterráneos de Extremadura, Castilla y Andalucía, donde caza conejos y otras presas. Su población se recuperó gracias a programas de conservación en el siglo XXI tras décadas de declive. Es símbolo de la fauna española y de la lucha por proteger ecosistemas únicos ligados a la cultura del toro bravo, el corcho y el paisaje rural tradicional."
+      ]
+    },
+    "en": {
+      "presentacion": "Imperial eagle: winged majesty of Iberian skies.",
+      "texto": [
+        "The Spanish imperial eagle is one of Spain’s most emblematic and endangered birds, endemic to the Iberian Peninsula. It lives in dehesas and Mediterranean woodlands of Extremadura, Castile, and Andalusia, hunting rabbits and other prey. Its population recovered thanks to conservation programs in the twenty-first century after decades of decline. It symbolizes Spanish wildlife and efforts to protect unique ecosystems tied to fighting bull culture, cork oak, and traditional rural landscapes."
+      ]
+    },
+    "nivelDesbloqueo": "16_3normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "14",
+    "titulo": "Camino de santiago",
+    "imagen": "/imagenes/historias/camino-de-santiago.webp",
+    "es": {
+      "presentacion": "Camino de Santiago: pasos de fe hacia la concha sagrada.",
+      "texto": [
+        "El Camino de Santiago es una red de rutas de peregrinación que conduce a la catedral de Santiago de Compostela, donde según la tradición reposan los restos del apóstol Santiago. Desde la Edad Media millones de peregrinos han recorrido caminos desde Francia, Portugal y toda España buscando fe, penitencia o aventura. Declarado Patrimonio de la Humanidad, hoy une espiritualidad, turismo y encuentro cultural. La concha y la vieira son sus símbolos universales."
+      ]
+    },
+    "en": {
+      "presentacion": "Camino de Santiago: steps of faith toward the sacred shell.",
+      "texto": [
+        "The Camino de Santiago is a network of pilgrimage routes leading to Santiago de Compostela Cathedral, where tradition holds the remains of Saint James the Apostle rest. Since the Middle Ages millions of pilgrims have walked paths from France, Portugal, and all of Spain seeking faith, penance, or adventure. A World Heritage Site, it today blends spirituality, tourism, and cultural encounter. The scallop shell is its universal symbol."
+      ]
+    },
+    "nivelDesbloqueo": "16_4normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "15",
+    "titulo": "Tablao Flamenco",
+    "imagen": "/imagenes/historias/tablao-flamenco.webp",
+    "es": {
+      "presentacion": "Tablao flamenco: cante, taconeo y alma andaluza en vivo.",
+      "texto": [
+        "El tablao flamenco es el espacio donde se presenta el arte flamenco en directo: cante, baile y guitarra en un escenario íntimo, a menudo con servicio de comida y bebida. Surgió en Sevilla a mediados del siglo XX como evolución de las cafés cantantes del XIX. En tablaos de Andalucía y Madrid se conservan palos como la soleá, la bulería o la seguiriya, interpretados por artistas que mantienen viva una tradición declarada Patrimonio Inmaterial de la Humanidad en 2010."
+      ]
+    },
+    "en": {
+      "presentacion": "Flamenco tablao: song, footwork, and Andalusian soul live.",
+      "texto": [
+        "The flamenco tablao is the venue where flamenco is performed live: singing, dance, and guitar on an intimate stage, often with food and drink. It emerged in Seville in the mid-twentieth century from nineteenth-century café cantante culture. In tablaos across Andalusia and Madrid, styles such as soleá, bulería, and seguiriya are performed by artists keeping alive a tradition listed as Intangible Cultural Heritage in 2010."
+      ]
+    },
+    "nivelDesbloqueo": "16_5normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "16",
+    "titulo": "Paella",
+    "imagen": "/imagenes/historias/paella.webp",
+    "es": {
+      "presentacion": "Paella valenciana: arroz dorado que une a la familia.",
+      "texto": [
+        "La paella es el plato más internacional de la Comunidad Valenciana, cocinado en una paellera ancha con arroz, azafrán o colorante y ingredientes que varían según la zona: conejo, pollo, judías, garrofón, o mariscos en la paella marinera. Nació en la Albufera de Valencia como comida de labradores y pastoras; su nombre viene del latín patella (sartén). Hoy simboliza la gastronomía mediterránea española y la costumbre de cocinar y comer en familia al aire libre."
+      ]
+    },
+    "en": {
+      "presentacion": "Valencian paella: golden rice that brings family together.",
+      "texto": [
+        "Paella is the Valencian Community’s most international dish, cooked in a wide paellera with rice, saffron or coloring, and ingredients that vary by area: rabbit, chicken, beans, garrofón, or seafood in seafood paella. It was born in Valencia’s Albufera as farmworkers’ food; its name comes from Latin patella (pan). Today it symbolizes Spanish Mediterranean cuisine and the custom of cooking and eating outdoors with family."
+      ]
+    },
+    "nivelDesbloqueo": "16_11dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "17",
+    "titulo": "San Fermin",
+    "imagen": "/imagenes/historias/san-fermin.webp",
+    "es": {
+      "presentacion": "San Fermín: siete días de fiesta, tradición y encierro en Pamplona.",
+      "texto": [
+        "Las Fiestas de San Fermín son la celebración más famosa de Pamplona (Navarra), dedicadas al santo patrón de la ciudad. Se celebran del 6 al 14 de julio y atraen a visitantes de todo el mundo. El acto más conocido es el encierro: cada mañana los toros recorren las calles valladas hasta la plaza de toros, acompañados por corredores. La fiesta incluye el chupinazo de apertura, procesiones, gigantes y cabezudos, música de charangas y fuegos artificiales. Es una mezcla de tradición religiosa, cultura navarra y espíritu festivo reconocido internacionalmente."
+      ]
+    },
+    "en": {
+      "presentacion": "San Fermín: seven days of fiesta, tradition, and running in Pamplona.",
+      "texto": [
+        "The San Fermín Festival is the most famous celebration in Pamplona (Navarre), dedicated to the city's patron saint. It runs from July 6 to 14 and attracts visitors from around the world. The best-known event is the running of the bulls: each morning bulls run through barricaded streets to the bullring, accompanied by runners. The festival includes the opening chupinazo rocket, processions, giants and big heads, charanga music, and fireworks. It blends religious tradition, Navarrese culture, and a festive spirit recognized worldwide."
+      ]
+    },
+    "nivelDesbloqueo": "16_12dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "18",
+    "titulo": "Las fallas",
+    "imagen": "/imagenes/historias/las-fallas.webp",
+    "es": {
+      "presentacion": "Fallas de Valencia: fuego, arte y fiesta en marzo.",
+      "texto": [
+        "Las Fallas de Valencia son una fiesta declarada Patrimonio Inmaterial de la Humanidad que culmina el 19 de marzo, día de San José. Durante días la ciudad exhibe ninots —figuras satíricas de cartón y madera— que luego se queman en la Cremà. Hay mascletàs, ofrenda de flores a la Virgen y música de bandas. Originadas en la costumbre de los carpinteros de quemar leña sobrante, hoy son crítica social, arte efímero y la fiesta más ruidosa y colorida de España."
+      ]
+    },
+    "en": {
+      "presentacion": "Valencia Fallas: fire, art, and fiesta in March.",
+      "texto": [
+        "Las Fallas of Valencia are an Intangible Cultural Heritage festival culminating on March 19, Saint Joseph’s Day. For days the city displays ninots—satirical cardboard and wood figures—later burned in the Cremà. There are mascletàs, flower offerings to the Virgin, and band music. Originating from carpenters burning leftover wood, they are today social critique, ephemeral art, and Spain’s loudest, most colorful festival."
+      ]
+    },
+    "nivelDesbloqueo": "16_13dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "19",
+    "titulo": "Pablo Picaso",
+    "imagen": "/imagenes/historias/pablo-picaso.webp",
+    "es": {
+      "presentacion": "Picasso: genio malagueño que reinventó el arte moderno.",
+      "texto": [
+        "Pablo Ruiz Picasso, nacido en Málaga en 1881, es el artista español más influyente del siglo XX. Pintor, escultor y ceramista, pasó de la etapa azul y rosa al cubismo junto a Georges Braque, revolucionando la mirada occidental con obras como Las señoritas de Avignon y Guernica, denuncia del bombardeo de la villa vasca en 1937. Aunque vivió muchos años en Francia, mantuvo vínculos con España y legó obras esenciales al Museo Reina Sofía de Madrid."
+      ]
+    },
+    "en": {
+      "presentacion": "Picasso: Málaga genius who reinvented modern art.",
+      "texto": [
+        "Pablo Ruiz Picasso, born in Málaga in 1881, is the most influential Spanish artist of the twentieth century. Painter, sculptor, and ceramicist, he moved from Blue and Rose periods to Cubism with Georges Braque, revolutionizing Western vision with works such as Les Demoiselles d’Avignon and Guernica, a denunciation of the 1937 bombing of the Basque town. Though he lived many years in France, he kept ties with Spain and left essential works to Madrid’s Reina Sofía Museum."
+      ]
+    },
+    "nivelDesbloqueo": "16_14dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "20",
+    "titulo": "La giralda",
+    "imagen": "/imagenes/historias/la-giralda.webp",
+    "es": {
+      "presentacion": "La Giralda: torre de Sevilla donde mora y cristianismo se abrazan.",
+      "texto": [
+        "La Giralda es el campanario de la catedral de Sevilla, antiguo alminar de la mezquita almohade del siglo XII. Su nombre viene de la figura giratoria del «Giraldillo» que corona la torre, símbolo de la Fe triunfante. Tras la conquista castellana en 1248, la mezquita se convirtió en catedral gótica y renacentista; la Giralda se alzó como emblema de Sevilla y del mestizaje arquitectónico andalusí. Es una de las torres más bellas del mundo islámico y cristiano."
+      ]
+    },
+    "en": {
+      "presentacion": "La Giralda: Seville tower where Moor and Christian embrace.",
+      "texto": [
+        "La Giralda is the bell tower of Seville Cathedral, formerly the minaret of a twelfth-century Almohad mosque. Its name comes from the rotating “Giraldillo” figure atop the tower, symbol of triumphant Faith. After the Castilian conquest in 1248, the mosque became a Gothic and Renaissance cathedral; the Giralda rose as Seville’s emblem and Andalusian architectural blend. It is one of the finest towers of Islamic and Christian heritage."
+      ]
+    },
+    "nivelDesbloqueo": "16_15dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "21",
+    "titulo": "Batalla de Covadonga",
+    "imagen": "/imagenes/historias/batalla-de-covadonga.webp",
+    "es": {
+      "presentacion": "Covadonga: donde empezó la Reconquista en las montañas.",
+      "texto": [
+        "La batalla de Covadonga, en 722, es considerada el inicio de la Reconquista cristiana en la península ibérica. Según la tradición, el noble astur Pelayo derrotó a las tropas musulmanas en los montes de Asturias y fundó el reino de Asturias. Covadonga se convirtió en lugar sagrado con la cueva de la Virgen y la basílica. Este episodio simboliza la resistencia cristiana en el norte y la memoria de un hito que los reinos hispanos cristianos celebraron durante siglos."
+      ]
+    },
+    "en": {
+      "presentacion": "Covadonga: where the Reconquista began in the mountains.",
+      "texto": [
+        "The Battle of Covadonga in 722 is considered the start of the Christian Reconquista on the Iberian Peninsula. Tradition holds that Asturian noble Pelayo defeated Muslim forces in the Asturian mountains and founded the Kingdom of Asturias. Covadonga became a holy site with the Virgin’s cave and basilica. This episode symbolizes Christian resistance in the north and a milestone Hispanic Christian kingdoms celebrated for centuries."
+      ]
+    },
+    "nivelDesbloqueo": "20_1normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "22",
+    "titulo": "Diego Velazquez",
+    "imagen": "/imagenes/historias/diego-velazquez.webp",
+    "es": {
+      "presentacion": "Velázquez: luz y genio del Siglo de Oro español.",
+      "texto": [
+        "Diego Velázquez, sevillano del siglo XVII, fue el pintor más importante de la España del Siglo de Oro y pintor de cámara de Felipe IV. Obras como Las meninas, La rendición de Breda o Las hilanderas muestran su dominio de la luz, el retrato y la perspectiva. Formado en Sevilla, triunfó en la corte madrileña y influenció a artistas como Goya y a la pintura europea posterior. Su legado se concentra en el Museo del Prado, corazón de la colección real española."
+      ]
+    },
+    "en": {
+      "presentacion": "Velázquez: light and genius of Spain’s Golden Age.",
+      "texto": [
+        "Diego Velázquez, a seventeenth-century Sevillian, was the greatest painter of Spain’s Golden Age and court painter to Philip IV. Works such as Las Meninas, The Surrender of Breda, and The Spinners show his mastery of light, portraiture, and perspective. Trained in Seville, he triumphed at the Madrid court and influenced artists like Goya and later European painting. His legacy centers on the Prado Museum, heart of the Spanish royal collection."
+      ]
+    },
+    "nivelDesbloqueo": "20_2normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "23",
+    "titulo": "Los murcielago",
+    "imagen": "/imagenes/historias/los-murcielago.webp",
+    "es": {
+      "presentacion": "Murciélagos ibéricos: guardianes nocturnos de cuevas y bosques.",
+      "texto": [
+        "España alberga colonias de murciélagos en cuevas, puentes y edificios históricos, algunas de gran valor ecológico y arqueológico. En cuevas como la de Altamira o en espacios naturales protegidos conviven especies que controlan insectos y forman parte del equilibrio del ecosistema. En la cultura popular el murciélago aparece en leyendas nocturnas, pero hoy es símbolo de conservación. Su presencia recuerda la riqueza natural ibérica más allá de monumentos y ciudades."
+      ]
+    },
+    "en": {
+      "presentacion": "Iberian bats: night guardians of caves and forests.",
+      "texto": [
+        "Spain hosts bat colonies in caves, bridges, and historic buildings, some of great ecological and archaeological value. In caves such as Altamira or in protected natural areas, species that control insects form part of ecosystem balance. In popular culture the bat appears in night legends, but today it is a conservation symbol. Its presence recalls Iberian natural wealth beyond monuments and cities."
+      ]
+    },
+    "nivelDesbloqueo": "20_3normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "24",
+    "titulo": "Semana Santa",
+    "imagen": "/imagenes/historias/semana-santa.webp",
+    "es": {
+      "presentacion": "Semana Santa: fe, silencio y arte que llena las calles.",
+      "texto": [
+        "La Semana Santa en España conmemora la Pasión, Muerte y Resurrección de Cristo con procesiones de cofradías que salen a las calles con pasos, imágenes, nazarenos y bandas de música. Sevilla, Málaga, Valladolid y Zamora son ciudades emblemáticas, pero casi todo el país celebra con ritos propios. Mezcla fe católica, arte sacro y tradición popular; muchas procesiones son Patrimonio Inmaterial. Es una de las manifestaciones religiosas y culturales más intensas del calendario español."
+      ]
+    },
+    "en": {
+      "presentacion": "Holy Week: faith, silence, and art filling the streets.",
+      "texto": [
+        "Holy Week in Spain commemorates Christ’s Passion, Death, and Resurrection with brotherhood processions carrying floats, images, hooded penitents, and bands. Seville, Málaga, Valladolid, and Zamora are emblematic cities, but nearly the whole country celebrates with its own rites. It blends Catholic faith, sacred art, and popular tradition; many processions are Intangible Heritage. It is one of the most intense religious and cultural events on the Spanish calendar."
+      ]
+    },
+    "nivelDesbloqueo": "20_4normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "25",
+    "titulo": "Bodegas Ysios",
+    "imagen": "/imagenes/historias/bodegas-ysios.webp",
+    "es": {
+      "presentacion": "Bodegas Ysios: arquitectura y vino en la Rioja alavesa.",
+      "texto": [
+        "Las Bodegas Ysios, en Laguardia (Álava), son un icono contemporáneo de la Rioja Alavesa diseñado por Santiago Calatrava e inaugurado en 2001. Su fachada ondulada de aluminio y madera evoca barricas y el paisaje de viñedos entre la Sierra de Cantabria. Allí se elaboran vinos bajo la denominación de origen Rioja, heredera de la tradición romana y medieval del vino en Hispania. El edificio une arquitectura de vanguardia y la cultura vitivinícola que define gran parte del norte peninsular."
+      ]
+    },
+    "en": {
+      "presentacion": "Bodegas Ysios: architecture and wine in Rioja Alavesa.",
+      "texto": [
+        "Bodegas Ysios in Laguardia (Álava) is a contemporary icon of Rioja Alavesa designed by Santiago Calatrava and opened in 2001. Its undulating aluminum and wood façade evokes barrels and vineyard landscapes below the Cantabrian range. Wines are made there under the Rioja designation, heir to Roman and medieval wine tradition in Hispania. The building joins avant-garde architecture and wine culture that defines much of the northern peninsula."
+      ]
+    },
+    "nivelDesbloqueo": "20_5normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "26",
+    "titulo": "Miguelitos",
+    "imagen": "/imagenes/historias/miguelitos.webp",
+    "es": {
+      "presentacion": "Miguelitos: hojaldre y crema que endulzan Castilla.",
+      "texto": [
+        "Los miguelitos son un dulce de hojaldre relleno de crema pastelera, creados en la década de 1960 por Miguel y Rosa, pasteleros de La Adrada (Ávila). Su éxito llevó la marca a toda España y se convirtieron en referencia de la repostería industrial artesanal. Crujientes por fuera y suaves por dentro, se asocian a desayunos, meriendas y recuerdos de viaje por Castilla. Representan cómo una receta local puede transformarse en símbolo gastronómico nacional."
+      ]
+    },
+    "en": {
+      "presentacion": "Miguelitos: puff pastry and cream sweetening Castile.",
+      "texto": [
+        "Miguelitos are puff pastry filled with custard, created in the 1960s by Miguel and Rosa, bakers in La Adrada (Ávila). Their success spread the brand across Spain and made them a reference of artisan-style industrial pastry. Crisp outside and soft inside, they are linked to breakfasts, snacks, and travel memories through Castile. They show how a local recipe can become a national gastronomic symbol."
+      ]
+    },
+    "nivelDesbloqueo": "20_11dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "27",
+    "titulo": "El Teide",
+    "imagen": "/imagenes/historias/el-teide.webp",
+    "es": {
+      "presentacion": "El Teide: volcán sagrado que corona las Islas Canarias.",
+      "texto": [
+        "El Teide, en Tenerife (Canarias), es el pico más alto de España con 3.715 metros y un volcán activo dormido. Los guanches lo llamaban Echeyde y lo consideraban morada de espíritus; tras la conquista castellana se convirtió en símbolo de las islas. Su parque nacional, Patrimonio de la Humanidad, alberga paisajes lunares, flora endémica y observatorios astronómicos. El Teide representa la naturaleza canaria y el vínculo entre cultura aborigen, ciencia y turismo."
+      ]
+    },
+    "en": {
+      "presentacion": "Mount Teide: sacred volcano crowning the Canary Islands.",
+      "texto": [
+        "Mount Teide in Tenerife (Canary Islands) is Spain’s highest peak at 3,715 meters and a dormant active volcano. The Guanches called it Echeyde and considered it home of spirits; after the Castilian conquest it became a symbol of the islands. Its national park, a World Heritage Site, holds lunar landscapes, endemic flora, and astronomical observatories. Teide represents Canarian nature and the link between aboriginal culture, science, and tourism."
+      ]
+    },
+    "nivelDesbloqueo": "20_12dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "28",
+    "titulo": "Feria de Abril",
+    "imagen": "/imagenes/historias/feria-de-abril.webp",
+    "es": {
+      "presentacion": "Feria de Abril: color, caballo y alegría sevillana.",
+      "texto": [
+        "La Feria de Abril de Sevilla es una fiesta popular que sigue a la Semana Santa, con casetas, trajes de flamenca, caballos y música sevillanas. Nació en el siglo XIX como feria ganadera y se trasladó al barrio de Los Remedios; hoy dura casi una semana de día y noche. Es muestra del carácter festivo andaluz, del vino fino, las tapas y el baile. Millones de visitantes viven allí la imagen más colorida de Sevilla y de la cultura andaluza."
+      ]
+    },
+    "en": {
+      "presentacion": "April Fair: color, horses, and Sevillian joy.",
+      "texto": [
+        "Seville’s April Fair is a popular festival after Holy Week, with tents, flamenco dresses, horses, and sevillanas music. It began in the nineteenth century as a livestock fair and moved to Los Remedios; today it lasts nearly a week day and night. It shows Andalusian festive spirit, fino sherry, tapas, and dance. Millions of visitors experience Seville’s and Andalusian culture at its most colorful."
+      ]
+    },
+    "nivelDesbloqueo": "20_13dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "29",
+    "titulo": "La Alhambra",
+    "imagen": "/imagenes/historias/la-alhambra.webp",
+    "es": {
+      "presentacion": "La Alhambra: palacio de leyendas en Granada eterna.",
+      "texto": [
+        "La Alhambra de Granada es el conjunto palaciego y fortaleza nazarí más famoso del mundo islámico medieval en Europa. Construida entre los siglos XIII y XIV por reyes como Muhammad I y Yusuf I, destaca el Patio de los Leones, la Sala de los Abencerrajes y los jardines del Generalife. Tras 1492 pasó a los Reyes Católicos, que respetaron gran parte de su estructura. Patrimonio de la Humanidad, simboliza la España morisca y la convivencia histórica de culturas en Andalucía."
+      ]
+    },
+    "en": {
+      "presentacion": "The Alhambra: palace of legends in eternal Granada.",
+      "texto": [
+        "The Alhambra of Granada is the most famous Nasrid palace and fortress complex of medieval Islamic Europe. Built between the thirteenth and fourteenth centuries by rulers such as Muhammad I and Yusuf I, highlights include the Court of the Lions, Hall of the Abencerrajes, and Generalife gardens. After 1492 it passed to the Catholic Monarchs, who largely preserved its structure. A World Heritage Site, it symbolizes Moorish Spain and historical coexistence of cultures in Andalusia."
+      ]
+    },
+    "nivelDesbloqueo": "20_14dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "30",
+    "titulo": "Aceite de oliva",
+    "imagen": "/imagenes/historias/aceite-de-oliva.webp",
+    "es": {
+      "presentacion": "Aceite de oliva: oro líquido de la dieta mediterránea.",
+      "texto": [
+        "España es el mayor productor mundial de aceite de oliva, con siglos de tradición desde fenicios, griegos y romanos en el Mediterráneo. Regiones como Jaén, Córdoba o Cataluña elaboran aceites virgen extra con denominaciones de origen protegidas. El olivo define paisajes, dieta mediterránea —Patrimonio Inmaterial— y la cocina diaria: ensaladas, tostadas, gazpacho y conservas. El aceite español es emblema de salud, cultura rural y exportación de prestigio."
+      ]
+    },
+    "en": {
+      "presentacion": "Olive oil: liquid gold of the Mediterranean diet.",
+      "texto": [
+        "Spain is the world’s largest olive oil producer, with centuries of tradition since Phoenicians, Greeks, and Romans in the Mediterranean. Regions such as Jaén, Córdoba, and Catalonia make extra virgin oils with protected designations. The olive tree shapes landscapes, the Mediterranean diet—Intangible Heritage—and daily cooking: salads, toast, gazpacho, and preserves. Spanish oil is an emblem of health, rural culture, and prestigious export."
+      ]
+    },
+    "nivelDesbloqueo": "20_15dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "31",
+    "titulo": "Batalla de Rocroi",
+    "imagen": "/imagenes/historias/batalla-de-rocroi.webp",
+    "es": {
+      "presentacion": "Rocroi: batalla que cambió el poder en Europa.",
+      "texto": [
+        "La batalla de Rocroi, en 1643 durante la Guerra de los Treinta Años, enfrentó al ejército español con las tropas francesas en los Países Bajos españoles (hoy Bélgica). La victoria francesa marcó el declive de la hegemonía militar española en Europa y el ascenso de Francia bajo Luis XIII y Richelieu. Para España fue una derrota simbólica que los historiadores asocian al fin del «Siglo de Oro» político y militar, aunque el imperio mantuvo territorios durante más tiempo."
+      ]
+    },
+    "en": {
+      "presentacion": "Rocroi: the battle that shifted power in Europe.",
+      "texto": [
+        "The Battle of Rocroi in 1643 during the Thirty Years’ War pitted the Spanish army against French forces in the Spanish Netherlands (today Belgium). French victory marked the decline of Spanish military hegemony in Europe and France’s rise under Louis XIII and Richelieu. For Spain it was a symbolic defeat historians link to the end of political and military “Golden Age,” though the empire held territories longer."
+      ]
+    },
+    "nivelDesbloqueo": "24_1normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "32",
+    "titulo": "Calle Laurel",
+    "imagen": "/imagenes/historias/calle-laurel.webp",
+    "es": {
+      "presentacion": "Calle Laurel: vino, pinchos y fiesta en Logroño.",
+      "texto": [
+        "La calle Laurel, en Logroño (La Rioja), es una de las calles de pinchos más famosas de España. En pocas centenas de metros docenas de bares sirven tapas creativas —patatas riojanas, champiñones, croquetas— acompañadas de vino de la denominación Rioja. La tradición del «pincho» logroñés transformó el ocio nocturno en ritual social y turístico. Calle Laurel representa la cultura del vino español y la hospitalidad de la mesa riojana."
+      ]
+    },
+    "en": {
+      "presentacion": "Calle Laurel: wine, pinchos, and fiesta in Logroño.",
+      "texto": [
+        "Calle Laurel in Logroño (La Rioja) is one of Spain’s most famous pinchos streets. In a few hundred meters dozens of bars serve creative tapas—Rioja potatoes, mushrooms, croquettes—with Rioja designation wine. Logroño’s pincho tradition turned nightlife into a social and tourist ritual. Calle Laurel represents Spanish wine culture and Riojan table hospitality."
+      ]
+    },
+    "nivelDesbloqueo": "24_2normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "33",
+    "titulo": "Churros",
+    "imagen": "/imagenes/historias/churros.webp",
+    "es": {
+      "presentacion": "Churros con chocolate: desayuno dulce de toda España.",
+      "texto": [
+        "Los churros son masa frita alargada, a menudo espolvoreada con azúcar y servida con chocolate espeso para mojar. Llegaron a España probablemente desde Portugal o con influencia morisca; se popularizaron como desayuno de trabajadores y en ferias. Las «churrerías» son institución en Madrid, Andalucía y toda la península. En San Isidro o en la playa, el churro con chocolate es ritual cotidiano que une tradición popular y sabor reconfortante."
+      ]
+    },
+    "en": {
+      "presentacion": "Churros with chocolate: Spain’s sweet morning treat.",
+      "texto": [
+        "Churros are elongated fried dough, often dusted with sugar and served with thick hot chocolate for dipping. They likely reached Spain from Portugal or with Moorish influence; they became popular as workers’ breakfast and at fairs. Churrerías are institutions in Madrid, Andalusia, and across the peninsula. At San Isidro or the beach, churros with chocolate are a daily ritual linking popular tradition and comfort food."
+      ]
+    },
+    "nivelDesbloqueo": "24_3normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "34",
+    "titulo": "Ciudad Encantada",
+    "imagen": "/imagenes/historias/ciudad-encantada.webp",
+    "es": {
+      "presentacion": "Ciudad Encantada: piedras que cuentan historias en Cuenca.",
+      "texto": [
+        "La Ciudad Encantada, en Cuenca (Castilla-La Mancha), es un conjunto de formaciones rocosas calizas erosionadas por el viento y el agua que parecen animales, objetos o figuras humanas. Declarada monumento natural, ha inspirado leyendas y rutas de senderismo. Se visita junto al paisaje serrano y la arquitectura medieval de Cuenca, ciudad Patrimonio de la Humanidad. Representa la geología y el imaginario popular de la España interior."
+      ]
+    },
+    "en": {
+      "presentacion": "Enchanted City: stones that tell stories in Cuenca.",
+      "texto": [
+        "The Enchanted City in Cuenca (Castilla-La Mancha) is a set of limestone rock formations eroded by wind and water that resemble animals, objects, or human figures. A natural monument, it has inspired legends and hiking routes. It is visited alongside mountain scenery and Cuenca’s medieval architecture, a World Heritage city. It represents geology and popular imagination of inland Spain."
+      ]
+    },
+    "nivelDesbloqueo": "24_4normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "35",
+    "titulo": "Clavel",
+    "imagen": "/imagenes/cartas/clavel.webp",
+    "es": {
+      "presentacion": "Clavel español: flor de pasión, fe y fiesta.",
+      "texto": [
+        "El clavel es una de las flores más queridas en España, símbolo de amor, pasión y devoción popular. En el Día de la Madre y en las cruces de mayo se usan claveles rojos y blancos; en Andalucía adornan procesiones y trajes de flamenca. Su cultivo ornamental tiene tradición en el Mediterráneo desde la antigüedad. El clavel aparece en poesía, copla y heráldica, y representa la estética festiva y sentimental de la cultura española."
+      ]
+    },
+    "en": {
+      "presentacion": "Spanish carnation: flower of passion, faith, and fiesta.",
+      "texto": [
+        "The carnation is one of Spain’s most beloved flowers, a symbol of love, passion, and popular devotion. On Mother’s Day and May crosses, red and white carnations are used; in Andalusia they adorn processions and flamenco dress. Ornamental cultivation has Mediterranean tradition since antiquity. The carnation appears in poetry, copla, and heraldry, representing the festive and sentimental aesthetics of Spanish culture."
+      ]
+    },
+    "nivelDesbloqueo": "24_5normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "36",
+    "titulo": "Cristobal Colon",
+    "imagen": "/imagenes/historias/cristobal-colon.webp",
+    "es": {
+      "presentacion": "Colón: la nave que unió dos mundos en 1492.",
+      "texto": [
+        "Cristóbal Colón, navegante genovés al servicio de los Reyes Católicos, zarpó en 1492 de Palos de la Frontera y llegó a América el 12 de octubre, abriendo el contacto permanente entre Europa y el Nuevo Mundo. Su expedición cambió el comercio, la cartografía y el destino de España como imperio global. Su figura es polémica hoy por el impacto en pueblos indígenas, pero sigue siendo central en la memoria histórica del descubrimiento y en monumentos como el de Barcelona o Madrid."
+      ]
+    },
+    "en": {
+      "presentacion": "Columbus: the voyage that joined two worlds in 1492.",
+      "texto": [
+        "Christopher Columbus, a Genoese navigator in service of the Catholic Monarchs, sailed from Palos de la Frontera in 1492 and reached the Americas on October 12, opening permanent contact between Europe and the New World. His voyage changed trade, cartography, and Spain’s destiny as a global empire. His figure is controversial today for impact on indigenous peoples, but remains central in historical memory of the Discovery and in monuments in Barcelona and Madrid."
+      ]
+    },
+    "nivelDesbloqueo": "24_11dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "37",
+    "titulo": "Don Pelayo",
+    "imagen": "/imagenes/historias/don-pelayo.webp",
+    "es": {
+      "presentacion": "Don Pelayo: primer rey que resistió en Asturias.",
+      "texto": [
+        "Don Pelayo, según la crónica asturiana, fue el noble que lideró la resistencia cristiana contra el dominio musulmán tras la batalla de Guadalete en 711 y venció en Covadonga hacia 722. Se le considera primer rey de Asturias y fundador del reino que inició la Reconquista. Su figura mezcla historia y leyenda, pero es fundamental en la memoria nacional española y en el santuario de Covadonga, lugar de peregrinación y símbolo del origen cristiano del norte peninsular."
+      ]
+    },
+    "en": {
+      "presentacion": "Don Pelayo: first king who resisted in Asturias.",
+      "texto": [
+        "Don Pelayo, according to Asturian chronicle, was the noble who led Christian resistance against Muslim rule after the Battle of Guadalete in 711 and won at Covadonga around 722. He is considered first King of Asturias and founder of the kingdom that began the Reconquista. His figure blends history and legend but is central to Spanish national memory and the Covadonga sanctuary, a pilgrimage site symbolizing the Christian origin of the northern peninsula."
+      ]
+    },
+    "nivelDesbloqueo": "24_12dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "38",
+    "titulo": "El faro de hercules",
+    "imagen": "/imagenes/historias/el-faro-de-hercules.webp",
+    "es": {
+      "presentacion": "Faro de Hércules: luz romana que aún guía el Atlántico.",
+      "texto": [
+        "La Torre de Hércules, en La Coruña (Galicia), es el faro en funcionamiento más antiguo del mundo, de origen romano del siglo I d. C. Según la leyenda fue levantada por Hércules tras vencer a Gerión; los romanos la reedificaron para guiar la navegación del Atlántico. Patrimonio de la Humanidad, rodea un paseo marítimo y el paisaje galego. Simboliza el legado romano en la costa atlántica y la relación histórica de España con el mar."
+      ]
+    },
+    "en": {
+      "presentacion": "Tower of Hercules: Roman light still guiding the Atlantic.",
+      "texto": [
+        "The Tower of Hercules in A Coruña (Galicia) is the world’s oldest working lighthouse, of Roman origin from the first century AD. Legend says Hercules built it after defeating Geryon; the Romans rebuilt it to guide Atlantic navigation. A World Heritage Site, it overlooks a seafront promenade and Galician landscape. It symbolizes Roman legacy on the Atlantic coast and Spain’s historical bond with the sea."
+      ]
+    },
+    "nivelDesbloqueo": "24_13dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "39",
+    "titulo": "El misterio de Elche",
+    "imagen": "/imagenes/historias/el-misterio-de-elche.webp",
+    "es": {
+      "presentacion": "Misterio de Elche: teatro sagrado que vive cada agosto.",
+      "texto": [
+        "El Misterio de Elche es un drama litúrgico cantado en valenciano que representa la Asunción de la Virgen María, representado cada 14 y 15 de agosto en la Basílica de Santa María de Elche. Es la única obra teatral medieval conservada en Europa que sigue interpretándose en su lugar de origen. Declarado Patrimonio Oral e Inmaterial de la Humanidad, combina música, teatro y devoción mariana. Es joya de la cultura valenciana y ejemplo único del teatro sacro español."
+      ]
+    },
+    "en": {
+      "presentacion": "Mystery of Elche: sacred theater alive each August.",
+      "texto": [
+        "El Misteri d’Elx is a liturgical drama sung in Valencian depicting the Assumption of the Virgin Mary, performed every August 14 and 15 at the Basilica of Santa María in Elche. It is the only medieval theatrical work in Europe still performed in its place of origin. Listed as Oral and Intangible Heritage, it blends music, theater, and Marian devotion. It is a jewel of Valencian culture and a unique example of Spanish sacred theater."
+      ]
+    },
+    "nivelDesbloqueo": "24_14dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "40",
+    "titulo": "Fiesta de moros y christianos",
+    "imagen": "/imagenes/historias/fiesta-de-moros-y-christianos.webp",
+    "es": {
+      "presentacion": "Moros y Cristianos: desfiles que reviven la Reconquista.",
+      "texto": [
+        "Las fiestas de Moros y Cristianos recrean en muchas localidades —especialmente en Alicante y Valencia— las batallas entre ejércitos cristianos y musulmanes de la Reconquista con desfiles, trajes, pólvora y música. La más famosa es la de Alcoy, declarada de Interés Turístico Internacional. Mezclan tradición medieval, teatro callejero y identidad local. Representan la memoria histórica de la convivencia y el conflicto entre culturas en la España mediterránea."
+      ]
+    },
+    "en": {
+      "presentacion": "Moors and Christians: parades that revive the Reconquista.",
+      "texto": [
+        "Moors and Christians festivals recreate in many towns—especially in Alicante and Valencia—battles between Christian and Muslim armies of the Reconquista with parades, costumes, gunpowder, and music. The most famous is Alcoy’s, of International Tourist Interest. They blend medieval tradition, street theater, and local identity. They represent historical memory of coexistence and conflict between cultures in Mediterranean Spain."
+      ]
+    },
+    "nivelDesbloqueo": "24_15dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "41",
+    "titulo": "Gazpacho",
+    "imagen": "/imagenes/historias/gazpacho.webp",
+    "es": {
+      "presentacion": "Gazpacho andaluz: frescura de tomate y olivo en verano.",
+      "texto": [
+        "El gazpacho es una sopa fría andaluza hecha con tomate, pimiento, pepino, ajo, aceite de oliva y vinagre, ideal para el verano mediterráneo. Sus raíces se remontan a sopas romanas y árabes de pan y aceite; la versión actual con verduras se popularizó en el siglo XIX. Se sirve en jarras, con tropezones o en versión «salmorejo» más espeso. Es símbolo de la cocina refrescante del sur y de la dieta mediterránea española."
+      ]
+    },
+    "en": {
+      "presentacion": "Andalusian gazpacho: tomato and olive freshness in summer.",
+      "texto": [
+        "Gazpacho is a cold Andalusian soup made with tomato, pepper, cucumber, garlic, olive oil, and vinegar, ideal for the Mediterranean summer. Its roots go back to Roman and Arab bread-and-oil soups; the current vegetable version spread in the nineteenth century. It is served in jugs, with garnishes, or as thicker “salmorejo.” It symbolizes southern refreshing cuisine and the Spanish Mediterranean diet."
+      ]
+    },
+    "nivelDesbloqueo": "28_1normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "42",
+    "titulo": "Hernan Cortez",
+    "imagen": "/imagenes/historias/hernan-cortez.webp",
+    "es": {
+      "presentacion": "Cortés: la conquista que cambió México y España.",
+      "texto": [
+        "Hernán Cortés, extremeño del siglo XVI, lideró la expedición que en 1519 desembarcó en México y, aliado con pueblos sometidos por los aztecas, tomó Tenochtitlan en 1521. Su conquista amplió el Imperio español en América y transformó el comercio, la religión y la cultura de dos continentes. Figura polémica por la violencia colonial, es estudiado como agente del expansionismo de Carlos V y como símbolo de la era de los conquistadores españoles."
+      ]
+    },
+    "en": {
+      "presentacion": "Cortés: the conquest that changed Mexico and Spain.",
+      "texto": [
+        "Hernán Cortés, an Extremaduran of the sixteenth century, led the 1519 expedition that landed in Mexico and, allied with peoples subjugated by the Aztecs, took Tenochtitlan in 1521. His conquest expanded the Spanish Empire in America and transformed trade, religion, and culture on two continents. A controversial figure for colonial violence, he is studied as an agent of Charles V’s expansion and a symbol of the era of Spanish conquistadors."
+      ]
+    },
+    "nivelDesbloqueo": "28_2normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "43",
+    "titulo": "Isabel la catolica",
+    "imagen": "/imagenes/historias/isabel-la-catolica.webp",
+    "es": {
+      "presentacion": "Isabel la Católica: reina que unió reinos y abrió mares.",
+      "texto": [
+        "Isabel I de Castilla (1451–1504), junto a Fernando de Aragón, unificó gran parte de la península, conquistó Granada en 1492 y apoyó el viaje de Colón. Impulsó la Inquisición, la centralización real y la expansión ultramarina. Con ella y su esposo los Reyes Católicos sentaron las bases del Estado moderno español. Su reinado marca el fin de la Edad Media peninsular y el inicio de España como potencia global, con luces y sombras en la historia europea."
+      ]
+    },
+    "en": {
+      "presentacion": "Isabella the Catholic: queen who united realms and opened seas.",
+      "texto": [
+        "Isabella I of Castile (1451–1504), with Ferdinand of Aragon, unified much of the peninsula, conquered Granada in 1492, and supported Columbus’s voyage. She promoted the Inquisition, royal centralization, and overseas expansion. With her husband the Catholic Monarchs laid foundations of the modern Spanish state. Her reign marks the end of peninsular Middle Ages and Spain’s rise as a global power, with light and shadow in European history."
+      ]
+    },
+    "nivelDesbloqueo": "28_3normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "44",
+    "titulo": "La sagrada familia",
+    "imagen": "/imagenes/historias/la-sagrada-familia.webp",
+    "es": {
+      "presentacion": "Sagrada Familia: el templo infinito de Gaudí en Barcelona.",
+      "texto": [
+        "La Sagrada Familia es la basílica expiatoria de Barcelona diseñada por Antoni Gaudí, iniciada en 1882 y aún en construcción. Gaudí dedicó sus últimos años al proyecto, inspirado en la naturaleza, la fe católica y el modernismo catalán. Sus fachadas narran la vida de Cristo; el interior evoca un bosque de piedra. Patrimonio de la Humanidad, es el monumento más visitado de España y símbolo de la creatividad arquitectónica catalana en el mundo."
+      ]
+    },
+    "en": {
+      "presentacion": "Sagrada Família: Gaudí’s endless temple in Barcelona.",
+      "texto": [
+        "La Sagrada Família is Barcelona’s expiatory basilica designed by Antoni Gaudí, begun in 1882 and still under construction. Gaudí devoted his final years to the project, inspired by nature, Catholic faith, and Catalan modernism. Its façades narrate Christ’s life; the interior evokes a stone forest. A World Heritage Site, it is Spain’s most visited monument and a symbol of Catalan architectural creativity worldwide."
+      ]
+    },
+    "nivelDesbloqueo": "28_4normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "45",
+    "titulo": "Mezquita de Cordoba",
+    "imagen": "/imagenes/historias/mezquita-de-cordoba.webp",
+    "es": {
+      "presentacion": "Mezquita de Córdoba: arcos donde convivieron tres culturas.",
+      "texto": [
+        "La Mezquita-Catedral de Córdoba fue la gran mezquita omeya de al-Ándalus, iniciada en el siglo VIII y ampliada por Abd al-Rahman III. Sus arcos de herradura bicolor y su mihrab son joyas del arte islámico. Tras la conquista castellana en 1236 se erigió una catedral gótica en su interior, creando un espacio único de superposición de culturas. Patrimonio de la Humanidad, representa la Córdoba califal y la memoria de tres religiones en la España medieval."
+      ]
+    },
+    "en": {
+      "presentacion": "Córdoba Mosque: arches where three cultures met.",
+      "texto": [
+        "The Mosque-Cathedral of Córdoba was the great Umayyad mosque of al-Andalus, begun in the eighth century and expanded by Abd al-Rahman III. Its two-tone horseshoe arches and mihrab are jewels of Islamic art. After the Castilian conquest in 1236 a Gothic cathedral was built inside, creating a unique layering of cultures. A World Heritage Site, it represents caliphal Córdoba and memory of three faiths in medieval Spain."
+      ]
+    },
+    "nivelDesbloqueo": "28_5normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "46",
+    "titulo": "Miguel de cervantes",
+    "imagen": "/imagenes/historias/miguel-de-cervantes.webp",
+    "es": {
+      "presentacion": "Cervantes: padre del Quijote y de la novela moderna.",
+      "texto": [
+        "Miguel de Cervantes Saavedra (1547–1616) es el máximo escritor de la literatura española y autor de Don Quijote de la Mancha, considerada la primera novela moderna. Soldado, prisionero en Argel y escribano, reflejó en su obra la España del Siglo de Oro con humor y profundidad. El Quijote y Sancho Panza son iconos universales de la utopía y la realidad. Su natalicio se celebra el Día del Idioma Español; su legado define la cultura hispana en el mundo."
+      ]
+    },
+    "en": {
+      "presentacion": "Cervantes: father of Quixote and the modern novel.",
+      "texto": [
+        "Miguel de Cervantes Saavedra (1547–1616) is the greatest writer of Spanish literature and author of Don Quixote, considered the first modern novel. Soldier, prisoner in Algiers, and civil servant, he reflected Golden Age Spain with humor and depth. Quixote and Sancho are universal icons of utopia and reality. His birthday marks Spanish Language Day; his legacy defines Hispanic culture worldwide."
+      ]
+    },
+    "nivelDesbloqueo": "28_11dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "47",
+    "titulo": "Museo del prado",
+    "imagen": "/imagenes/historias/museo-del-prado.webp",
+    "es": {
+      "presentacion": "Museo del Prado: tesoro de pintura en el corazón de Madrid.",
+      "texto": [
+        "El Museo del Prado, en Madrid, alberga una de las mejores colecciones de pintura europea, con obras maestras de Velázquez, Goya, El Greco, Rubens y Titian. Nació en el siglo XIX a partir de la colección real de los Borbones y el edificio neoclásico de Juan de Villanueva. Es símbolo del Siglo de Oro español y de la cultura artística nacional. Millones de visitantes contemplan allí Las meninas, El jardín de las delicias y el legado pictórico de siglos."
+      ]
+    },
+    "en": {
+      "presentacion": "Prado Museum: painting treasure in the heart of Madrid.",
+      "texto": [
+        "The Prado Museum in Madrid holds one of the finest European painting collections, with masterpieces by Velázquez, Goya, El Greco, Rubens, and Titian. It was born in the nineteenth century from the Bourbon royal collection and Juan de Villanueva’s neoclassical building. It symbolizes Spain’s Golden Age and national artistic culture. Millions view Las Meninas, The Garden of Earthly Delights, and centuries of pictorial legacy there."
+      ]
+    },
+    "nivelDesbloqueo": "28_12dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "48",
+    "titulo": "Pulpo a la gallega",
+    "imagen": "/imagenes/historias/pulpo-a-la-gallega.webp",
+    "es": {
+      "presentacion": "Pulpo a la gallega: sabor del mar en cada bocado.",
+      "texto": [
+        "El pulpo a la gallega (pulpo a feira) es el plato emblemático de Galicia: pulpo cocido, cortado en rodajas, aliñado con aceite de oliva, pimentón dulce y sal gruesa, servido en plato de madera. Se prepara en festas patronales y mercados con calderos de cobre. La pesca del pulpo con «percebes» y nasas forma parte de la economía costera. Representa la cocina atlántica española y la identidad marítima de un pueblo ligado al Cantábrico."
+      ]
+    },
+    "en": {
+      "presentacion": "Galician octopus: taste of the sea in every bite.",
+      "texto": [
+        "Pulpo a la gallega (fair-style octopus) is Galicia’s emblematic dish: boiled octopus sliced, dressed with olive oil, sweet paprika, and coarse salt, served on a wooden plate. It is made at patron saint festivals and markets in copper cauldrons. Octopus fishing with pots is part of coastal economy. It represents Spanish Atlantic cuisine and the maritime identity of a people tied to the Cantabrian Sea."
+      ]
+    },
+    "nivelDesbloqueo": "28_13dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "49",
+    "titulo": "Queso manchego",
+    "imagen": "/imagenes/historias/queso-manchego.webp",
+    "es": {
+      "presentacion": "Queso manchego: sabor de La Mancha en cada lonja.",
+      "texto": [
+        "El queso manchego, con denominación de origen protegida, se elabora en La Mancha con leche de oveja manchega. Su textura va de semicurado a curado, con sabores intensos que acompañan el vino y el membrillo. La tradición quesera de la región se documenta desde siglos y aparece en Don Quijote. Es uno de los quesos españoles más exportados y símbolo del paisaje de molinos, campos secos y cultura castellano-manchega."
+      ]
+    },
+    "en": {
+      "presentacion": "Manchego cheese: La Mancha flavor in every slice.",
+      "texto": [
+        "Manchego cheese, with protected designation of origin, is made in La Mancha from Manchega sheep’s milk. Its texture ranges from semi-cured to aged, with intense flavors paired with wine and quince paste. Regional cheese tradition is documented for centuries and appears in Don Quixote. It is one of Spain’s most exported cheeses and a symbol of windmills, dry fields, and Castilian-La Mancha culture."
+      ]
+    },
+    "nivelDesbloqueo": "28_14dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "50",
+    "titulo": "Semana grande bilbao",
+    "imagen": "/imagenes/historias/semana-grande-bilbao.webp",
+    "es": {
+      "presentacion": "Semana Grande: nueve días de fiesta vasca en Bilbao.",
+      "texto": [
+        "La Semana Grande (Aste Nagusia) de Bilbao es la fiesta mayor vasca, celebrada nueve días a partir del primer sábado tras el 15 de agosto. Incluye conciertos en la plaza del Teatro Arriaga, fuegos artificiales, gigantes y cabezudos, y la Marijaia, figura femenina que simboliza la fiesta. Combina tradición vasca, música popular y vida urbana. Es uno de los eventos culturales más importantes del País Vasco y muestra la identidad festiva de Bilbao al mundo."
+      ]
+    },
+    "en": {
+      "presentacion": "Semana Grande: nine days of Basque fiesta in Bilbao.",
+      "texto": [
+        "Semana Grande (Aste Nagusia) in Bilbao is the great Basque festival, celebrated nine days from the first Saturday after August 15. It includes concerts at Arriaga Theater square, fireworks, giants and big heads, and Marijaia, a female figure symbolizing the fiesta. It blends Basque tradition, popular music, and urban life. It is one of the Basque Country’s main cultural events and shows Bilbao’s festive identity to the world."
+      ]
+    },
+    "nivelDesbloqueo": "28_15dificil",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "51",
+    "titulo": "Rosca de reyes",
+    "imagen": "/imagenes/historias/rosca-de-reyes.webp",
+    "es": {
+      "presentacion": "Roscón de Reyes: dulce anillo de magia en enero.",
+      "texto": [
+        "El roscón de Reyes es el dulce tradicional del 6 de enero, Día de Reyes, cuando los niños reciben regalos de los Magos. Es masa fermentada en forma de anillo, cubierta de frutas confitadas y azúcar, con figurita y haba escondidas: quien encuentra la figura es «rey»; quien encuentra la haba paga el roscón. La costumbre se extendió desde Francia y se arraigó en toda España. Representa la Navidad extendida y la alegría familiar de las fiestas."
+      ]
+    },
+    "en": {
+      "presentacion": "Three Kings cake: sweet ring of magic in January.",
+      "texto": [
+        "Roscón de Reyes is the traditional cake of January 6, Three Kings’ Day, when children receive gifts from the Magi. It is ring-shaped fermented dough topped with candied fruit and sugar, with a figurine and bean hidden inside: whoever finds the figurine is “king”; whoever finds the bean pays for the cake. The custom spread from France and took root across Spain. It represents extended Christmas and family joy of the holidays."
+      ]
+    },
+    "nivelDesbloqueo": "32_1normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "52",
+    "titulo": "Sangria",
+    "imagen": "/imagenes/historias/sangria.webp",
+    "es": {
+      "presentacion": "Sangría: vino, fruta y brisa de verano español.",
+      "texto": [
+        "La sangría es una bebida refrescante a base de vino tinto, fruta troceada, azúcar y a veces canela o gaseosa, muy asociada al turismo y a las terrazas españolas en verano. Su nombre evoca el color de la sangre; variantes incluyen sangría blanca con vino de verano. Aunque popularizada internacionalmente en el siglo XX, tiene raíces en la mezcla de vino y fruta en la península. Simboliza la convivencia veraniega y la cultura del vino español al aire libre."
+      ]
+    },
+    "en": {
+      "presentacion": "Sangría: wine, fruit, and Spanish summer breeze.",
+      "texto": [
+        "Sangría is a refreshing drink based on red wine, chopped fruit, sugar, and sometimes cinnamon or soda, closely tied to tourism and Spanish summer terraces. Its name evokes the color of blood; variants include white sangría with white wine. Though internationally popularized in the twentieth century, it has roots in wine-and-fruit mixes on the peninsula. It symbolizes summer social life and Spanish outdoor wine culture."
+      ]
+    },
+    "nivelDesbloqueo": "32_2normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "53",
+    "titulo": "vinos",
+    "imagen": "/imagenes/historias/vinos.webp",
+    "es": {
+      "presentacion": "Vinos de España: crianza, tierra y tradición en cada copa.",
+      "texto": [
+        "España es la tercera productora mundial de vino y posee más de setenta denominaciones de origen, desde Rioja y Ribera del Duero hasta Jerez, Priorat y Rías Baixas. El vino acompaña la historia desde los romanos y monasterios medievales hasta la exportación global actual. Cada región aporta uvas, crianzas y rituales —la vendimia, la cata, las bodegas subterráneas—. El vino español es patrimonio cultural, economía rural y símbolo de hospitalidad en la mesa."
+      ]
+    },
+    "en": {
+      "presentacion": "Spanish wines: aging, land, and tradition in every glass.",
+      "texto": [
+        "Spain is the world’s third-largest wine producer and has more than seventy designations of origin, from Rioja and Ribera del Duero to Jerez, Priorat, and Rías Baixas. Wine runs through history from Romans and medieval monasteries to today’s global export. Each region offers grapes, aging styles, and rituals—harvest, tasting, underground cellars. Spanish wine is cultural heritage, rural economy, and a symbol of hospitality at the table."
+      ]
+    },
+    "nivelDesbloqueo": "32_3normal",
+    "abiertaPorDefecto": false
+  },
+  {
+    "id": "54",
+    "titulo": "Turron de alicante",
+    "imagen": "/imagenes/historias/turron-de-alicante.webp",
+    "es": {
+      "presentacion": "Turrón de Alicante: almendra y miel que endulzan la Navidad.",
+      "texto": [
+        "El turrón de Alicante es el turrón duro clásico de almendra entera y miel, originario de la Comunidad Valenciana y consumido especialmente en Navidad. La tradición turronera de Jijona y Alicante tiene siglos de historia, con regulación de denominación de origen «Turrón de Alicante» y «Turrón de Jijona» (blando). Los árabes introdujeron almendra y miel en la península; los maestros turroneros perfeccionaron el oficio. Es dulce navideño por excelencia y exportación gastronómica española."
+      ]
+    },
+    "en": {
+      "presentacion": "Alicante turrón: almond and honey sweetening Christmas.",
+      "texto": [
+        "Alicante turrón is the classic hard nougat of whole almonds and honey, from the Valencian Community and eaten especially at Christmas. The turrón tradition of Jijona and Alicante has centuries of history, with protected designations “Turrón de Alicante” and soft “Turrón de Jijona.” Arabs introduced almond and honey to the peninsula; master turroneros refined the craft. It is the Christmas sweet par excellence and a Spanish gastronomic export."
+      ]
+    },
+    "nivelDesbloqueo": "32_4normal",
+    "abiertaPorDefecto": false
+  }
+]
