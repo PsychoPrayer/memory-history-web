@@ -174,6 +174,26 @@ const es = {
   tipVictory: '¡Bien hecho! Cada victoria te acerca a nuevas historias.',
   tipFirstStory:
     '¡Tu primera historia! Léela cuando quieras en Historias… o ahora mismo.',
+  cloudAccount: 'Cuenta en la nube',
+  cloudAccountHelp:
+    'Inicia sesión para guardar tu progreso entre dispositivos. Sin cuenta, el juego sigue funcionando solo en este navegador.',
+  cloudDisabled: 'Nube no configurada',
+  cloudDisabledHelp:
+    'Faltan las claves de Supabase en el entorno. El progreso se guarda solo en este dispositivo.',
+  cloudSignedOut: 'Sin sesión',
+  cloudSyncing: 'Sincronizando…',
+  cloudSynced: 'Sincronizado',
+  cloudError: 'Error de sincronización',
+  cloudEmail: 'Correo',
+  cloudPassword: 'Contraseña',
+  cloudSignIn: 'Entrar',
+  cloudSignUp: 'Crear cuenta',
+  cloudSignOut: 'Cerrar sesión',
+  cloudSyncNow: 'Sincronizar ahora',
+  cloudNeedAccount: 'Crear cuenta',
+  cloudHaveAccount: 'Ya tengo cuenta',
+  cloudConfirmEmail:
+    'Revisa tu correo para confirmar la cuenta. Luego podrás entrar.',
 } as const
 
 const en: Record<keyof typeof es, string> = {
@@ -346,6 +366,25 @@ const en: Record<keyof typeof es, string> = {
   niceToMeetYou: 'Nice to meet you',
   tipVictory: 'Nice work! Every win brings you closer to new stories.',
   tipFirstStory: 'Your first story! Read it whenever in Stories… or right now.',
+  cloudAccount: 'Cloud account',
+  cloudAccountHelp:
+    'Sign in to keep your progress across devices. Without an account, the game still works in this browser only.',
+  cloudDisabled: 'Cloud not configured',
+  cloudDisabledHelp:
+    'Supabase keys are missing from the environment. Progress stays on this device only.',
+  cloudSignedOut: 'Signed out',
+  cloudSyncing: 'Syncing…',
+  cloudSynced: 'Synced',
+  cloudError: 'Sync error',
+  cloudEmail: 'Email',
+  cloudPassword: 'Password',
+  cloudSignIn: 'Sign in',
+  cloudSignUp: 'Create account',
+  cloudSignOut: 'Sign out',
+  cloudSyncNow: 'Sync now',
+  cloudNeedAccount: 'Create account',
+  cloudHaveAccount: 'I already have an account',
+  cloudConfirmEmail: 'Check your email to confirm the account, then sign in.',
 }
 
 export const TEXTS = { es, en }

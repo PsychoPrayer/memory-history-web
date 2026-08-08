@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { CloudAccount } from '../components/CloudAccount'
 import { Header } from '../components/Header'
 import { Modal } from '../components/Modal'
 import {
@@ -66,6 +67,8 @@ export function Settings() {
           onRelease={() => playSound('match')}
         />
       </section>
+
+      <CloudAccount />
 
       <section className="settings-group">
         <h2>{t('accessibility')}</h2>

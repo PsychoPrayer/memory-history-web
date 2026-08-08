@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 import { ContentProvider } from './data/content'
 import { useSave } from './lib/save'
+import { initCloudSync } from './lib/cloudSync'
 import {
   dimMusicInMatch,
   unlockAudio,
@@ -33,6 +34,8 @@ export default function App() {
   useEffect(() => {
     document.documentElement.lang = language
   }, [language])
+
+  useEffect(() => initCloudSync(), [])
 
   useEffect(() => {
     const unlock = () => unlockAudio()

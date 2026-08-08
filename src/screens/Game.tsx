@@ -7,7 +7,7 @@ import { Board } from '../components/Board'
 import { PancitoCallout } from '../components/PancitoGuide'
 import { ZoomButton, ImageViewer } from '../components/ImageViewer'
 import { useDeck, useContent } from '../data/content'
-import { sectionComplete, sectionsFrom } from '../data/progression'
+import { isBeaten, sectionComplete, sectionsFrom } from '../data/progression'
 import {
   markRewardShown,
   markSectionCelebrated,
@@ -123,13 +123,16 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
     let sectionText: string | null = null
 
     if (level) {
+      /* Replay: level already cleared — never re-award the story popup. */
+      const firstClear = !isBeaten(progress, level.id)
+
       recordVictory(country, level.id, {
         stars: result.stars,
         bestTime: result.seconds,
         fewestMistakes: result.mistakes,
       })
 
-      if (level.historiaPremio) {
+      if (firstClear && level.historiaPremio) {
         const found = stories.find((s) => s.id === level.historiaPremio)
         if (found && !progress.rewardsShown.includes(found.id)) {
           story = found
@@ -149,6 +152,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
         },
       }
       if (
+        firstClear &&
         section &&
         sectionComplete(section, progressAfter) &&
         !progress.sectionsCelebrated.includes(level.cartas)
@@ -194,6 +198,10 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
   const next = level
     ? levels.find((other) => other.numero === level.numero + 1)
     : undefined
+
+  const dismissPendingStory = () => {
+    if (newStory) markRewardShown(country, newStory.id)
+  }
 
   const advanceFromResult = () => {
     markTipSeen('victory-first')
@@ -389,6 +397,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
                 className="btn-secondary"
                 onClick={() => {
                   markTipSeen('victory-first')
+                  dismissPendingStory()
                   match.restart()
                 }}
               >
@@ -399,6 +408,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
                 className="btn-secondary"
                 onClick={() => {
                   markTipSeen('victory-first')
+                  dismissPendingStory()
                   navigate(levelsExit)
                 }}
               >

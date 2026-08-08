@@ -52,6 +52,8 @@ export interface FreeSettings {
 
 export interface SavedState {
   version: number
+  /** Epoch ms; used to prefer newer settings when merging cloud saves. */
+  updatedAt: number
   settings: SettingsData
   free: FreeSettings
   countries: Record<string, CountryProgress>
@@ -79,6 +81,7 @@ function browserLanguage(): Language {
 function initialState(): SavedState {
   return {
     version: VERSION,
+    updatedAt: Date.now(),
     settings: {
       language: browserLanguage(),
       country: 'VE',
@@ -171,6 +174,9 @@ function migrate(raw: Record<string, unknown>): SavedState {
     }
   }
 
+  if (typeof raw.updatedAt === 'number') base.updatedAt = raw.updatedAt
+  else base.updatedAt = Date.now()
+
   return base
 }
 
@@ -215,13 +221,16 @@ function load(): SavedState {
   }
 }
 
+let suppressCloudSync = false
+
 function persist() {
+  state = { ...state, updatedAt: Date.now() }
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
   } catch {
     // Private browsing or quota full: match continues, just won't save.
   }
-  syncHandler?.(state)
+  if (!suppressCloudSync) syncHandler?.(state)
   for (const listener of listeners) listener()
 }
 
@@ -234,6 +243,20 @@ export function registerSync(fn: SyncHandler | null) {
 
 export function readState(): SavedState {
   return state
+}
+
+/** Replace local save (e.g. after cloud merge) without pushing back to the cloud. */
+export function hydrateState(next: SavedState, options?: { syncCloud?: boolean }) {
+  state = migrate(next as unknown as Record<string, unknown>)
+  suppressCloudSync = !options?.syncCloud
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
+  } catch {
+    /* ignore */
+  }
+  for (const listener of listeners) listener()
+  suppressCloudSync = false
+  if (options?.syncCloud) syncHandler?.(state)
 }
 
 export function update(change: (previous: SavedState) => SavedState) {

@@ -100,9 +100,25 @@ Todo el progreso vive en `localStorage` bajo la clave `memoryhistory.guardado`, 
 único objeto con el progreso separado por país. Unity lo repartía en decenas de claves
 sueltas de PlayerPrefs.
 
-`registrarSincronizador()` en `src/lib/almacen.ts` es el enganche para Supabase: recibe
-el estado completo en cada escritura. Mientras no se registre nada, el juego funciona
-entero contra el disco local.
+El progreso sigue en `localStorage`. Con Supabase configurado, `initCloudSync()` en
+`src/lib/cloudSync.ts` sube el guardado al iniciar sesión y lo fusiona (mejores
+estrellas, uniones de historias) entre nube y dispositivo.
+
+### Supabase (cuentas + sync)
+
+1. Crea un proyecto en [supabase.com](https://supabase.com).
+2. En SQL Editor, ejecuta `supabase/schema.sql`.
+3. Authentication → Providers: deja **Email** activo. Para pruebas locales puedes
+   desactivar “Confirm email”.
+4. Copia Project URL y anon key a `.env` (usa `.env.example` como plantilla):
+
+```
+VITE_SUPABASE_URL=https://xxxx.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJ...
+```
+
+5. En Vercel, añade las mismas variables de entorno y redeploy.
+6. En el juego: Configuración → Cuenta en la nube.
 
 ## Estructura
 
@@ -123,7 +139,5 @@ public/           imagenes/ y audio/ generados por el paso de medios
 
 ## Pendiente
 
-- Cuentas de usuario con Supabase y sincronización del progreso en la nube
-- España y EE.UU. como catálogos adicionales (el exportador ya los acepta)
-- El catálogo de España declara 75 cartas en Unity pero solo hay 73 imágenes en disco;
-  hay que reconciliarlo antes de portarlo
+- Pulido opcional de auth (recuperar contraseña, OAuth)
+- Revisar confirmación de email / plantillas en Supabase para producción
