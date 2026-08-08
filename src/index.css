@@ -274,6 +274,11 @@ button {
   color: var(--papel-claro);
 }
 
+.tab[data-next='true']:not([data-active='true']) {
+  border-color: var(--oro);
+  box-shadow: inset 0 -2px 0 var(--oro-claro);
+}
+
 .tab:disabled {
   opacity: 0.35;
   cursor: not-allowed;
@@ -856,6 +861,20 @@ button {
 .atlas-marker:focus-visible {
   transform: translateY(-4%) scale(1.1);
   z-index: 4;
+}
+
+.atlas-marker[data-next='true'] {
+  z-index: 5;
+  animation: atlas-next-pulse 2.4s ease-in-out infinite;
+}
+
+.atlas-marker[data-next='true'] .atlas-marker-face {
+  border-color: var(--oro-claro);
+  box-shadow:
+    0 0 0 2px rgba(241, 232, 210, 0.98),
+    0 0 0 5px rgba(201, 159, 69, 0.45),
+    0 0 18px 2px rgba(201, 159, 69, 0.55),
+    0 5px 12px -2px rgba(20, 13, 6, 0.72);
 }
 
 .atlas-marker-face {
@@ -1441,12 +1460,41 @@ button {
   box-shadow: inset 0 0 0 4px rgba(226, 214, 187, 0.75), inset 0 0 0 5px rgba(43, 33, 22, 0.14);
 }
 
+.question-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.plate-question {
+  width: min(16rem, 72%);
+  margin: 0 auto;
+}
+
+.question-story-label {
+  margin: 0;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--tinta-suave);
+  text-align: center;
+}
+
 .question-prompt {
   margin: 0;
   font-family: var(--display);
   font-size: 1.45rem;
   font-weight: 400;
   line-height: 1.35;
+}
+
+.story-actions {
+  margin-top: 0.8rem;
+}
+
+.share-note {
+  margin: 0.2rem 0 0;
 }
 
 .option-list {
@@ -2152,6 +2200,18 @@ button {
 @keyframes latir {
   50% {
     opacity: 0.5;
+  }
+}
+
+@keyframes atlas-next-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.08);
+    filter: brightness(1.12);
   }
 }
 

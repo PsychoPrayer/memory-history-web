@@ -364,36 +364,31 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
                 >
                   {t('continue')}
                 </button>
-              ) : (
-                <>
-                  {next ? (
-                    <button
-                      type="button"
-                      className="btn-primary"
-                      onClick={() =>
-                        navigate(`/game/${encodeURIComponent(next.id)}`)
-                      }
-                    >
-                      {t('next')}
-                    </button>
-                  ) : (
-                    <button
-                      type="button"
-                      className="btn-primary"
-                      onClick={match.restart}
-                    >
-                      {t('restart')}
-                    </button>
-                  )}
-                  <button
-                    type="button"
-                    className="btn-secondary"
-                    onClick={() => navigate(levelsExit)}
-                  >
-                    {t('toLevels')}
-                  </button>
-                </>
-              )}
+              ) : next ? (
+                <button
+                  type="button"
+                  className="btn-primary"
+                  onClick={() =>
+                    navigate(`/game/${encodeURIComponent(next.id)}`)
+                  }
+                >
+                  {t('next')}
+                </button>
+              ) : null}
+              <button
+                type="button"
+                className="btn-secondary"
+                onClick={match.restart}
+              >
+                {t('improveScore')}
+              </button>
+              <button
+                type="button"
+                className="btn-secondary"
+                onClick={() => navigate(levelsExit)}
+              >
+                {t('toLevels')}
+              </button>
             </div>
           </>
         )}
@@ -488,11 +483,14 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
             >
               {t('next')}
             </button>
-          ) : (
-            <button type="button" className="btn-primary" onClick={match.restart}>
-              {t('restart')}
-            </button>
-          )}
+          ) : null}
+          <button
+            type="button"
+            className={next ? 'btn-secondary' : 'btn-primary'}
+            onClick={match.restart}
+          >
+            {t('improveScore')}
+          </button>
           <button
             type="button"
             className="btn-secondary"

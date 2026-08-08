@@ -155,6 +155,12 @@ const es = {
   atlasCount: '{a}/{b}',
   atlasRemaining: 'faltan {n}',
   stars: 'Estrellas',
+  shareStory: 'Compartir',
+  shareStoryText: 'Descubrí «{title}» en Memory History.',
+  shareCopied: 'Enlace copiado',
+  improveScore: 'Mejorar puntuación',
+  aboutThisStory: 'Historia: {title}',
+  nextMission: 'Siguiente misión',
 } as const
 
 const en: Record<keyof typeof es, string> = {
@@ -310,6 +316,12 @@ const en: Record<keyof typeof es, string> = {
   atlasCount: '{a}/{b}',
   atlasRemaining: '{n} left',
   stars: 'Stars',
+  shareStory: 'Share',
+  shareStoryText: 'I found “{title}” in Memory History.',
+  shareCopied: 'Link copied',
+  improveScore: 'Improve score',
+  aboutThisStory: 'Story: {title}',
+  nextMission: 'Next mission',
 }
 
 export const TEXTS = { es, en }

@@ -7,6 +7,7 @@ import { unlockedStories } from '../data/progression'
 import { markStoryRead, progressFor, useSave } from '../lib/save'
 import { playSound } from '../lib/audio'
 import { useLanguage, useT } from '../lib/i18n'
+import { gameUrl, shareStoryLink } from '../lib/share'
 import type { Story } from '../types'
 
 export function Stories() {
@@ -25,15 +26,31 @@ export function Stories() {
   const [open, setOpen] = useState<Story | null>(null)
   const [page, setPage] = useState(0)
   const [enlarged, setEnlarged] = useState<string | null>(null)
+  const [shareNote, setShareNote] = useState<string | null>(null)
 
   const show = (story: Story) => {
     playSound('transition')
     setOpen(story)
     setPage(0)
+    setShareNote(null)
     markStoryRead(country, story.id)
   }
 
   const pages = open ? open[language].texto : []
+
+  const shareOpen = async () => {
+    if (!open) return
+    playSound('button')
+    const result = await shareStoryLink({
+      title: open.titulo,
+      text: t('shareStoryText', { title: open.titulo }),
+      url: gameUrl('/stories'),
+    })
+    if (result === 'copied') {
+      setShareNote(t('shareCopied'))
+      window.setTimeout(() => setShareNote(null), 2200)
+    }
+  }
 
   return (
     <main id="main-content" className="screen screen-stories" tabIndex={-1}>
@@ -123,9 +140,19 @@ export function Stories() {
               </div>
             )}
 
-            <button type="button" className="btn-primary" onClick={() => setOpen(null)}>
-              {t('close')}
-            </button>
+            <div className="modal-actions story-actions">
+              <button type="button" className="btn-secondary" onClick={shareOpen}>
+                {t('shareStory')}
+              </button>
+              <button type="button" className="btn-primary" onClick={() => setOpen(null)}>
+                {t('close')}
+              </button>
+              {shareNote && (
+                <p className="modal-text modal-text-muted share-note" role="status">
+                  {shareNote}
+                </p>
+              )}
+            </div>
           </article>
         )}
       </Modal>

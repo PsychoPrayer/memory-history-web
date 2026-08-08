@@ -12,6 +12,7 @@ import { Stars } from '../components/Stars'
 import { useContent } from '../data/content'
 import {
   isUnlocked,
+  isBeaten,
   starsFor,
   sectionsFrom,
   unlockedStories,
@@ -108,14 +109,32 @@ export function Levels() {
 
   const sections = useMemo(() => sectionsFrom(levels), [levels])
 
+  /** Next mission: first unlocked level not yet cleared, by campaign order. */
+  const nextMissionId = useMemo(() => {
+    const ordered = [...levels].sort((a, b) => a.numero - b.numero)
+    const pending = ordered.find(
+      (level) => isUnlocked(level, levels, progress) && !isBeaten(progress, level.id),
+    )
+    if (pending) return pending.id
+    // All cleared: nudge the first that still lacks 3 stars.
+    return (
+      ordered.find(
+        (level) =>
+          isUnlocked(level, levels, progress) && starsFor(progress, level.id) < 3,
+      )?.id ?? null
+    )
+  }, [levels, progress])
+
   const initial = useMemo(() => {
+    const nextLevel = levels.find((level) => level.id === nextMissionId)
+    if (nextLevel) return nextLevel.cartas
     const pending = sections.find((section) =>
       [...section.normal, ...section.hard].some(
         (level) => starsFor(progress, level.id) === 0,
       ),
     )
     return pending?.cards ?? sections[0]?.cards ?? 12
-  }, [sections, progress])
+  }, [levels, nextMissionId, sections, progress])
 
   const [active, setActive] = useState(initial)
   const section = sections.find((s) => s.cards === active) ?? sections[0]
@@ -184,20 +203,26 @@ export function Levels() {
       <Header title={t('levels')} />
 
       <nav className="section-tabs" aria-label={t('levels')}>
-        {sections.map((other) => (
-          <button
-            key={other.cards}
-            type="button"
-            className="tab"
-            data-active={other.cards === active}
-            onClick={() => {
-              playSound('transition')
-              setActive(other.cards)
-            }}
-          >
-            {t(sectionKey(other.cards))}
-          </button>
-        ))}
+        {sections.map((other) => {
+          const hasNext = levels.some(
+            (level) => level.id === nextMissionId && level.cartas === other.cards,
+          )
+          return (
+            <button
+              key={other.cards}
+              type="button"
+              className="tab"
+              data-active={other.cards === active}
+              data-next={hasNext || undefined}
+              onClick={() => {
+                playSound('transition')
+                setActive(other.cards)
+              }}
+            >
+              {t(sectionKey(other.cards))}
+            </button>
+          )
+        })}
       </nav>
 
       <div className="atlas-summary">
@@ -267,6 +292,7 @@ export function Levels() {
             levels={section.normal}
             positions={routes.normal}
             all={levels}
+            nextMissionId={nextMissionId}
           />
           <AtlasRoute
             label={t('hard')}
@@ -274,6 +300,7 @@ export function Levels() {
             levels={section.hard}
             positions={routes.hard}
             all={levels}
+            nextMissionId={nextMissionId}
           />
         </section>
       </div>
@@ -287,9 +314,17 @@ interface AtlasRouteProps {
   levels: Level[]
   positions: MarkerXY[]
   all: Level[]
+  nextMissionId: string | null
 }
 
-function AtlasRoute({ label, tone, levels, positions, all }: AtlasRouteProps) {
+function AtlasRoute({
+  label,
+  tone,
+  levels,
+  positions,
+  all,
+  nextMissionId,
+}: AtlasRouteProps) {
   const navigate = useNavigate()
   const t = useT()
   const country = useSave((state) => state.settings.country)
@@ -300,11 +335,17 @@ function AtlasRoute({ label, tone, levels, positions, all }: AtlasRouteProps) {
       {levels.map((level, index) => {
         const open = isUnlocked(level, all, progress)
         const stars = starsFor(progress, level.id)
+        const isNext = level.id === nextMissionId
         const [x, y] = positions[index] ?? positions[positions.length - 1]
         const style = { left: `${x}%`, top: `${y}%` } as CSSProperties
 
         return (
-          <div key={level.id} className="atlas-marker-wrap" style={style}>
+          <div
+            key={level.id}
+            className="atlas-marker-wrap"
+            style={style}
+            data-next={isNext || undefined}
+          >
             {index === 0 && (
               <span className="atlas-route-tag" aria-hidden="true">
                 {label}
@@ -315,11 +356,14 @@ function AtlasRoute({ label, tone, levels, positions, all }: AtlasRouteProps) {
               className="atlas-marker"
               data-open={open}
               data-stars={stars}
+              data-next={isNext || undefined}
               disabled={!open}
               title={open ? level.nombre : t('completePrevious')}
               aria-label={
                 open
-                  ? `${t('level')} ${level.numero}. ${t('starsOf', { a: stars, b: 3 })}`
+                  ? `${t('level')} ${level.numero}. ${t('starsOf', { a: stars, b: 3 })}${
+                      isNext ? `. ${t('nextMission')}` : ''
+                    }`
                   : `${t('level')} ${level.numero}. ${t('locked')}`
               }
               onClick={() => {

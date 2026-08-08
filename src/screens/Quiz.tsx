@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Header } from '../components/Header'
 import { Modal } from '../components/Modal'
+import { ZoomButton, ImageViewer } from '../components/ImageViewer'
 import { useContent } from '../data/content'
 import { progressFor, recordTest, useSave } from '../lib/save'
 import { playSound } from '../lib/audio'
@@ -15,7 +16,7 @@ export function Quiz() {
   const navigate = useNavigate()
   const t = useT()
   const language = useLanguage()
-  const { tests, questions } = useContent()
+  const { tests, questions, stories } = useContent()
 
   const country = useSave((state) => state.settings.country)
   const progress = useSave(() => progressFor(country))
@@ -27,6 +28,7 @@ export function Quiz() {
   const [correct, setCorrect] = useState(0)
   const [picked, setPicked] = useState<number | null>(null)
   const [finished, setFinished] = useState(false)
+  const [enlarged, setEnlarged] = useState<string | null>(null)
   const savedRef = useRef(false)
 
   const batch = useMemo(() => {
@@ -55,6 +57,7 @@ export function Quiz() {
   if (!test || batch.length === 0) return null
 
   const question = batch[index]
+  const story = stories.find((entry) => entry.id === question.historia)
   const prompt = question[language].enunciado || question.es.enunciado
   const options = question[language].opciones.length
     ? question[language].opciones
@@ -97,6 +100,23 @@ export function Quiz() {
       />
 
       <article className="question-sheet">
+        {story?.imagen && (
+          <div className="question-visual">
+            <div className="plate plate-question">
+              <img
+                className="detail-image"
+                src={story.imagen}
+                alt={story.titulo}
+              />
+              <span className="plate-corners" aria-hidden="true" />
+              <ZoomButton onClick={() => setEnlarged(story.imagen)} />
+            </div>
+            <p className="question-story-label">
+              {t('aboutThisStory', { title: story.titulo })}
+            </p>
+          </div>
+        )}
+
         <h2 className="question-prompt">{prompt}</h2>
 
         <div className="option-list">
@@ -132,7 +152,10 @@ export function Quiz() {
 
       <Modal open={finished}>
         <h2 className="modal-title">{t('yourScore')}</h2>
-        <p className="quiz-score">{score}<span>/10</span></p>
+        <p className="quiz-score">
+          {score}
+          <span>/10</span>
+        </p>
         <p className="modal-text">{scoreMessage(score, t)}</p>
         <p className="modal-text modal-text-muted">
           {correct} / {batch.length}
@@ -153,6 +176,12 @@ export function Quiz() {
           <p className="modal-text modal-text-muted">{t('testCompleted')}</p>
         )}
       </Modal>
+
+      <ImageViewer
+        src={enlarged}
+        alt={story?.titulo ?? ''}
+        onClose={() => setEnlarged(null)}
+      />
     </main>
   )
 }
