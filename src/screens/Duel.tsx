@@ -77,7 +77,7 @@ export function Duel() {
   const [hubMode, setHubMode] = useState<HubMode>('home')
   const [joinCode, setJoinCode] = useState('')
   const [usernameDraft, setUsernameDraft] = useState('')
-  const inviteJoinAttempted = useRef<string | null>(null)
+  const inviteJoinInFlight = useRef(false)
 
   useEffect(() => subscribeCloud((_status, nextUser) => setUser(nextUser)), [])
 
@@ -92,6 +92,15 @@ export function Duel() {
     setHubMode('join')
     setSearchParams({}, { replace: true })
   }, [searchParams, setSearchParams])
+
+  const abortInviteJoin = () => {
+    forgetInviteCode()
+    inviteJoinInFlight.current = false
+    setJoiningInvite(false)
+    setJoinCode('')
+    setHubMode('home')
+    setError(null)
+  }
 
   useEffect(() => {
     if (!match?.rules.country) return
@@ -157,35 +166,44 @@ export function Duel() {
 
   /* Auto-join from shared invite link once the player is ready. */
   useEffect(() => {
-    if (!user || !profile || match || joiningInvite) return
+    if (!user || !profile || match) return
     const code = recalledInviteCode()
-    if (!code) return
-    if (inviteJoinAttempted.current === code) return
-    inviteJoinAttempted.current = code
-    let cancelled = false
+    if (!code || inviteJoinInFlight.current) return
+
+    let active = true
+    inviteJoinInFlight.current = true
     setJoiningInvite(true)
     setError(null)
-    void joinDuel(code)
+
+    const joinWithTimeout = Promise.race([
+      joinDuel(code),
+      new Promise<never>((_, reject) => {
+        window.setTimeout(() => reject(new Error('JOIN_TIMEOUT')), 12000)
+      }),
+    ])
+
+    void joinWithTimeout
       .then((next) => {
-        if (cancelled) return
         forgetInviteCode()
         rememberDuelRoom(next.id)
-        setMatch(next)
+        if (active) setMatch(next)
       })
       .catch(() => {
-        if (cancelled) return
         forgetInviteCode()
+        if (!active) return
         setHubMode('join')
         setJoinCode(code)
         setError(t('duelJoinFailed'))
       })
       .finally(() => {
-        if (!cancelled) setJoiningInvite(false)
+        inviteJoinInFlight.current = false
+        setJoiningInvite(false)
       })
+
     return () => {
-      cancelled = true
+      active = false
     }
-  }, [user, profile, match, joiningInvite, t])
+  }, [user?.id, profile?.user_id, match?.id, t])
 
   const refreshMatch = useRef<() => Promise<void>>(async () => undefined)
 
@@ -404,9 +422,23 @@ export function Duel() {
   if (!match) {
     if (joiningInvite) {
       return (
-        <Shell title={t('duel')} onBack={goMenu}>
+        <Shell title={t('duel')} onBack={() => {
+          abortInviteJoin()
+          goMenu()
+        }}>
           <PancitoPanel pose="wait" body={t('duelJoiningInvite')} />
           <p className="duel-code">{joinCode || recalledInviteCode() || '…'}</p>
+          <p className="duel-muted">{t('duelJoiningInviteHelp')}</p>
+          <button
+            type="button"
+            className="btn-secondary"
+            onClick={() => {
+              playSound('button')
+              abortInviteJoin()
+            }}
+          >
+            {t('duelCancelJoin')}
+          </button>
         </Shell>
       )
     }

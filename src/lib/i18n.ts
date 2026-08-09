@@ -237,6 +237,9 @@ const es = {
   duelInviteCopied: 'Enlace de sala copiado',
   duelInviteFailed: 'No se pudo compartir. Copia el código a mano.',
   duelJoiningInvite: 'Entrando en la sala…',
+  duelJoiningInviteHelp:
+    'Si se queda colgado, cancela e inténtalo de nuevo. La sala puede estar llena o cerrada.',
+  duelCancelJoin: 'Cancelar entrada',
   duelJoinFailed: 'Sala no encontrada o ya completa.',
   duelLobby: 'Sala de duelo',
   duelHost: 'Anfitrión',
@@ -520,6 +523,9 @@ const en: Record<keyof typeof es, string> = {
   duelInviteCopied: 'Room link copied',
   duelInviteFailed: 'Could not share. Copy the code by hand.',
   duelJoiningInvite: 'Joining the room…',
+  duelJoiningInviteHelp:
+    'If this hangs, cancel and try again. The room may be full or closed.',
+  duelCancelJoin: 'Cancel join',
   duelJoinFailed: 'Room not found or already full.',
   duelLobby: 'Duel lobby',
   duelHost: 'Host',
