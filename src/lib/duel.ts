@@ -523,6 +523,25 @@ const INVITE_STORAGE_KEY = 'mh-duel-invite'
 /** Invite links expire so a closed room cannot trap a guest forever. */
 const INVITE_TTL_MS = 10 * 60 * 1000
 
+/** How long a mid-match room may be auto-resumed after leaving Duel. */
+const RESUME_ACTIVE_MS = 5 * 60 * 1000
+
+/**
+ * Lobby / finished: always safe to reopen.
+ * Countdown / playing / awaiting: only if the match was touched recently,
+ * so an abandoned game does not yank you back into a board.
+ */
+export function isDuelRoomResumable(match: DuelMatch): boolean {
+  if (match.status === 'cancelled') return false
+  if (match.status === 'lobby' || match.status === 'finished') return true
+
+  const stamp = match.updated_at || match.starts_at
+  if (!stamp) return false
+  const age = Date.now() - new Date(stamp).getTime()
+  if (Number.isNaN(age) || age < 0) return false
+  return age <= RESUME_ACTIVE_MS
+}
+
 export function rememberDuelRoom(matchId: string) {
   try {
     sessionStorage.setItem(ROOM_STORAGE_KEY, matchId)

@@ -28,6 +28,7 @@ import {
   fetchResults,
   forgetDuelRoom,
   forgetInviteCode,
+  isDuelRoomResumable,
   isHost,
   isValidUsername,
   joinDuel,
@@ -137,7 +138,7 @@ export function Duel() {
     }
   }, [user?.id])
 
-  /* Rejoin the same room after refresh / leaving the duel screen briefly. */
+  /* Rejoin the same room after refresh / a short leave — not abandoned matches. */
   useEffect(() => {
     if (!user || !profile || match) return
     if (recalledInviteCode()) return
@@ -145,7 +146,7 @@ export function Duel() {
     if (!roomId) return
     let cancelled = false
     void fetchMatch(roomId)
-      .then((next) => {
+      .then(async (next) => {
         if (cancelled || !next) {
           forgetDuelRoom()
           return
@@ -153,6 +154,18 @@ export function Duel() {
         const inRoom = next.host_id === user.id || next.guest_id === user.id
         if (!inRoom || next.status === 'cancelled') {
           forgetDuelRoom()
+          return
+        }
+        if (!isDuelRoomResumable(next)) {
+          forgetDuelRoom()
+          /* Free the seat so the rival is not stuck in a ghost match. */
+          if (
+            next.status === 'playing' ||
+            next.status === 'countdown' ||
+            next.status === 'awaiting_results'
+          ) {
+            void leaveDuel(next.id).catch(() => undefined)
+          }
           return
         }
         setMatch(next)
