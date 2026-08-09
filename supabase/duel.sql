@@ -169,7 +169,8 @@ $$;
 revoke all on function public.join_duel(text) from public;
 grant execute on function public.join_duel(text) to authenticated;
 
--- Compare both results and update wins/losses.
+-- Compare both results by score and update wins/losses.
+-- score = greatest(0, 10000 − seconds×10 − mistakes×150); 1 mistake = 15s.
 create or replace function public.resolve_duel(p_match_id uuid)
 returns public.duel_matches
 language plpgsql
@@ -180,6 +181,8 @@ declare
   m public.duel_matches;
   host_r public.duel_results;
   guest_r public.duel_results;
+  host_score integer := 0;
+  guest_score integer := 0;
   winner uuid;
   draw boolean := false;
 begin
@@ -214,24 +217,40 @@ begin
     return m;
   end if;
 
+  if host_r.completed and not host_r.forfeited then
+    host_score := greatest(
+      0,
+      10000
+        - (host_r.duration_ms / 1000) * 10
+        - host_r.mistakes * 150
+    );
+  end if;
+
+  if guest_r.completed and not guest_r.forfeited then
+    guest_score := greatest(
+      0,
+      10000
+        - (guest_r.duration_ms / 1000) * 10
+        - guest_r.mistakes * 150
+    );
+  end if;
+
   -- Forfeit loses to a non-forfeit opponent.
   if host_r.forfeited and not guest_r.forfeited then
     winner := m.guest_id;
   elsif guest_r.forfeited and not host_r.forfeited then
     winner := m.host_id;
+  elsif host_r.forfeited and guest_r.forfeited then
+    draw := true;
   elsif host_r.completed and not guest_r.completed then
     winner := m.host_id;
   elsif guest_r.completed and not host_r.completed then
     winner := m.guest_id;
   elsif not host_r.completed and not guest_r.completed then
     draw := true;
-  elsif host_r.mistakes < guest_r.mistakes then
+  elsif host_score > guest_score then
     winner := m.host_id;
-  elsif guest_r.mistakes < host_r.mistakes then
-    winner := m.guest_id;
-  elsif host_r.duration_ms < guest_r.duration_ms then
-    winner := m.host_id;
-  elsif guest_r.duration_ms < host_r.duration_ms then
+  elsif guest_score > host_score then
     winner := m.guest_id;
   else
     draw := true;

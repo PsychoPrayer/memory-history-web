@@ -62,6 +62,7 @@ import { useT } from '../lib/i18n'
 import { progressFor, setSetting, useSave } from '../lib/save'
 import { shareDuelInvite } from '../lib/share'
 import { isSupabaseConfigured } from '../lib/supabase'
+import { duelScoreBreakdown } from '../lib/duelScore'
 import { freeRules, rulesFromLevel, useMatch } from '../lib/useMatch'
 import type { FreeDeck, Level, Stars as StarCount } from '../types'
 
@@ -936,6 +937,12 @@ function LobbyRoom({
         }
       />
 
+      <aside className="duel-score-rules" aria-label={t('duelScoreRulesTitle')}>
+        <h3>{t('duelScoreRulesTitle')}</h3>
+        <p>{t('duelScoreRulesBody')}</p>
+        <p className="duel-score-example">{t('duelScoreExample')}</p>
+      </aside>
+
       {host ? (
         <>
           <label className="cloud-field">
@@ -1494,6 +1501,15 @@ function ResultCard({
 }) {
   const t = useT()
   const avatar = avatarById(avatarId)
+  const score = result
+    ? duelScoreBreakdown({
+        completed: result.completed,
+        forfeited: result.forfeited,
+        durationMs: result.duration_ms,
+        mistakes: result.mistakes,
+      })
+    : null
+
   return (
     <div className="duel-result-card" data-highlight={highlight}>
       <div className="duel-result-head">
@@ -1506,8 +1522,14 @@ function ResultCard({
         <p>{t('duelForfeited')}</p>
       ) : (
         <>
+          <p className="duel-score-total">
+            <span>{t('duelScore')}</span>
+            <strong>
+              {score?.eligible ? score.total : t('duelScoreIneligible')}
+            </strong>
+          </p>
           <Stars count={result.stars as StarCount} />
-          <dl className="summary">
+          <dl className="summary duel-result-data">
             <div>
               <dt>{t('yourTime')}</dt>
               <dd>{formatTime(Math.round(result.duration_ms / 1000))}</dd>
