@@ -19,7 +19,6 @@ import { isUnlocked } from '../data/progression'
 import { formatTime } from '../lib/board'
 import {
   bothReady,
-  cancelMatch,
   claimUsername,
   createDuel,
   duelErrorMessage,
@@ -27,11 +26,16 @@ import {
   fetchMyProfile,
   fetchProfiles,
   fetchResults,
+  forgetDuelRoom,
   isHost,
   isValidUsername,
   joinDuel,
+  leaveDuel,
   markPlaying,
   opponentId,
+  recalledDuelRoom,
+  rememberDuelRoom,
+  rematchDuel,
   setReady,
   startCountdown,
   submitDuelResult,
@@ -103,16 +107,71 @@ export function Duel() {
     }
   }, [user?.id])
 
+  /* Rejoin the same room after refresh / leaving the duel screen briefly. */
+  useEffect(() => {
+    if (!user || !profile || match) return
+    const roomId = recalledDuelRoom()
+    if (!roomId) return
+    let cancelled = false
+    void fetchMatch(roomId)
+      .then((next) => {
+        if (cancelled || !next) {
+          forgetDuelRoom()
+          return
+        }
+        const inRoom = next.host_id === user.id || next.guest_id === user.id
+        if (!inRoom || next.status === 'cancelled') {
+          forgetDuelRoom()
+          return
+        }
+        setMatch(next)
+      })
+      .catch(() => {
+        forgetDuelRoom()
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [user, profile, match])
+
   const refreshMatch = useRef<() => Promise<void>>(async () => undefined)
 
   useEffect(() => {
     if (!match?.id) return
+    rememberDuelRoom(match.id)
     let cancelled = false
 
     const load = async () => {
       try {
         const next = await fetchMatch(match.id)
         if (cancelled || !next) return
+        if (next.status === 'cancelled') {
+          forgetDuelRoom()
+          setMatch(null)
+          setResults([])
+          return
+        }
+        /* Host notices guest left — stay in lobby with open seat. */
+        if (
+          next.host_id === user?.id &&
+          !next.guest_id &&
+          next.status === 'lobby'
+        ) {
+          setMatch(next)
+          setResults([])
+          setProfiles(await fetchProfiles([next.host_id]))
+          return
+        }
+        if (
+          user &&
+          next.host_id !== user.id &&
+          next.guest_id !== user.id
+        ) {
+          forgetDuelRoom()
+          setMatch(null)
+          setResults([])
+          return
+        }
         setMatch(next)
         const nextResults = await fetchResults(next.id)
         if (cancelled) return
@@ -122,7 +181,7 @@ export function Duel() {
         if (!cancelled) setProfiles(nextProfiles)
       } catch (err) {
         if (!cancelled) {
-          setError(err instanceof Error ? err.message : 'duelError')
+          setError(duelErrorMessage(err, 'duelError'))
         }
       }
     }
@@ -140,7 +199,30 @@ export function Duel() {
       window.clearInterval(poll)
       unsubscribe()
     }
-  }, [match?.id])
+  }, [match?.id, user?.id])
+
+  const clearRoom = () => {
+    forgetDuelRoom()
+    setMatch(null)
+    setResults([])
+  }
+
+  const exitRoom = async () => {
+    if (!match) {
+      clearRoom()
+      return
+    }
+    setBusy(true)
+    try {
+      await leaveDuel(match.id)
+    } catch {
+      /* still leave locally */
+    } finally {
+      setBusy(false)
+      clearRoom()
+      if (user) void fetchMyProfile(user.id).then(setProfile)
+    }
+  }
 
   const goMenu = () => {
     playSound('transition')
@@ -295,9 +377,12 @@ export function Duel() {
                 setBusy(true)
                 playSound('button')
                 void createDuel(user, { country, levelId: '' })
-                  .then(setMatch)
+                  .then((next) => {
+                    rememberDuelRoom(next.id)
+                    setMatch(next)
+                  })
                   .catch((err) =>
-                    setError(err instanceof Error ? err.message : t('duelError')),
+                    setError(duelErrorMessage(err, t('duelError'))),
                   )
                   .finally(() => setBusy(false))
               }}
@@ -324,7 +409,10 @@ export function Duel() {
               setBusy(true)
               playSound('button')
               void joinDuel(joinCode)
-                .then(setMatch)
+                .then((next) => {
+                  rememberDuelRoom(next.id)
+                  setMatch(next)
+                })
                 .catch(() => setError(t('duelJoinFailed')))
                 .finally(() => setBusy(false))
             }}
@@ -385,15 +473,14 @@ export function Duel() {
           profile={profile}
           profiles={profiles}
           onLeave={() => {
-            setMatch(null)
-            setResults([])
-            goMenu()
+            void exitRoom().then(goMenu)
           }}
         />
       )
     }
     return (
       <DuelPlay
+        key={`${match.id}-${match.starts_at ?? 'live'}`}
         match={match}
         userId={user.id}
         onSubmitted={async () => {
@@ -410,7 +497,7 @@ export function Duel() {
             })
             await refreshMatch.current()
           } catch (err) {
-            setError(err instanceof Error ? err.message : t('duelError'))
+            setError(duelErrorMessage(err, t('duelError')))
           }
         }}
       />
@@ -424,11 +511,32 @@ export function Duel() {
         userId={user.id}
         results={results}
         profiles={profiles}
-        onDone={() => {
+        busy={busy}
+        onRematch={async () => {
+          setBusy(true)
+          setError(null)
+          playSound('button')
+          try {
+            const next = await rematchDuel(match.id)
+            setResults([])
+            setMatch(next)
+            void fetchMyProfile(user.id).then(setProfile)
+          } catch (err) {
+            const message = duelErrorMessage(err, t('duelError'))
+            /* Other player already reset the room — just sync. */
+            if (/not finished|no.*terminad/i.test(message)) {
+              await refreshMatch.current()
+              void fetchMyProfile(user.id).then(setProfile)
+            } else {
+              setError(message)
+            }
+          } finally {
+            setBusy(false)
+          }
+        }}
+        onLeaveRoom={async () => {
           playSound('transition')
-          setMatch(null)
-          setResults([])
-          void fetchMyProfile(user.id).then(setProfile)
+          await exitRoom()
         }}
       />
     )
@@ -443,7 +551,7 @@ export function Duel() {
           className="btn-primary"
           onClick={() => {
             playSound('button')
-            setMatch(null)
+            clearRoom()
           }}
         >
           {t('duelBackToHub')}
@@ -462,19 +570,8 @@ export function Duel() {
       error={error}
       onError={setError}
       setBusy={setBusy}
-      onLeave={async () => {
-        setBusy(true)
-        try {
-          if (isHost(match, user.id) && !match.guest_id) {
-            await cancelMatch(match.id)
-          }
-        } catch {
-          /* ignore */
-        } finally {
-          setBusy(false)
-          setMatch(null)
-          setResults([])
-        }
+      onLeave={() => {
+        void exitRoom()
       }}
     />
   )
@@ -921,13 +1018,17 @@ function VerdictRoom({
   userId,
   results,
   profiles,
-  onDone,
+  busy,
+  onRematch,
+  onLeaveRoom,
 }: {
   match: DuelMatch
   userId: string
   results: DuelResult[]
   profiles: DuelProfile[]
-  onDone: () => void
+  busy: boolean
+  onRematch: () => void
+  onLeaveRoom: () => void
 }) {
   const t = useT()
   const mine = results.find((r) => r.user_id === userId)
@@ -949,11 +1050,12 @@ function VerdictRoom({
       : t('duelPancitoLose')
 
   return (
-    <Shell title={t('duelVerdict')} onBack={onDone}>
+    <Shell title={t('duelVerdict')} onBack={onLeaveRoom}>
       <div className="duel-verdict">
         <PancitoSprite pose={pose} className="duel-verdict-pancito" />
         <h2 className="modal-title">{headline}</h2>
         <p className="duel-pancito-text">{speech}</p>
+        <p className="duel-muted">{t('duelStayInRoom', { code: match.code })}</p>
       </div>
 
       <div className="duel-result-grid">
@@ -969,9 +1071,24 @@ function VerdictRoom({
         />
       </div>
 
-      <button type="button" className="btn-primary" onClick={onDone}>
-        {t('duelBackToHub')}
-      </button>
+      <div className="duel-actions">
+        <button
+          type="button"
+          className="btn-primary"
+          disabled={busy}
+          onClick={onRematch}
+        >
+          {t('duelRematch')}
+        </button>
+        <button
+          type="button"
+          className="btn-secondary"
+          disabled={busy}
+          onClick={onLeaveRoom}
+        >
+          {t('duelLeaveRoom')}
+        </button>
+      </div>
     </Shell>
   )
 }

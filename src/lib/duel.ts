@@ -363,6 +363,50 @@ export async function submitDuelResult(
   return mapMatch(data as Record<string, unknown>)
 }
 
+export async function rematchDuel(matchId: string): Promise<DuelMatch> {
+  const supabase = requireClient()
+  const { data, error } = await supabase.rpc('rematch_duel', {
+    p_match_id: matchId,
+  })
+  if (error) throw error
+  return mapMatch(data as Record<string, unknown>)
+}
+
+export async function leaveDuel(matchId: string): Promise<DuelMatch> {
+  const supabase = requireClient()
+  const { data, error } = await supabase.rpc('leave_duel', {
+    p_match_id: matchId,
+  })
+  if (error) throw error
+  return mapMatch(data as Record<string, unknown>)
+}
+
+const ROOM_STORAGE_KEY = 'mh-duel-room'
+
+export function rememberDuelRoom(matchId: string) {
+  try {
+    sessionStorage.setItem(ROOM_STORAGE_KEY, matchId)
+  } catch {
+    /* ignore */
+  }
+}
+
+export function forgetDuelRoom() {
+  try {
+    sessionStorage.removeItem(ROOM_STORAGE_KEY)
+  } catch {
+    /* ignore */
+  }
+}
+
+export function recalledDuelRoom(): string | null {
+  try {
+    return sessionStorage.getItem(ROOM_STORAGE_KEY)
+  } catch {
+    return null
+  }
+}
+
 export function subscribeToMatch(
   matchId: string,
   onChange: () => void,
