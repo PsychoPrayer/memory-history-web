@@ -23,6 +23,11 @@ export function Stories() {
     [stories, levels, progress],
   )
 
+  const openStories = useMemo(
+    () => stories.filter((story) => unlocked.has(story.id)),
+    [stories, unlocked],
+  )
+
   const [open, setOpen] = useState<Story | null>(null)
   const [page, setPage] = useState(0)
   const [enlarged, setEnlarged] = useState<string | null>(null)
@@ -33,7 +38,19 @@ export function Stories() {
     setOpen(story)
     setPage(0)
     setShareNote(null)
+    setEnlarged(null)
     markStoryRead(country, story.id)
+  }
+
+  const openIndex = open ? openStories.findIndex((story) => story.id === open.id) : -1
+  const hasPrevStory = openIndex > 0
+  const hasNextStory = openIndex >= 0 && openIndex < openStories.length - 1
+
+  const goStory = (delta: number) => {
+    if (openIndex < 0) return
+    const next = openStories[openIndex + delta]
+    if (!next) return
+    show(next)
   }
 
   const pages = open ? open[language].texto : []
@@ -102,6 +119,35 @@ export function Stories() {
       <Modal open={open !== null} onClose={() => setOpen(null)} width="wide">
         {open && (
           <article className="story-detail">
+            <div className="story-browse" role="navigation" aria-label={t('stories')}>
+              <button
+                type="button"
+                className="btn-ghost story-browse-arrow"
+                disabled={!hasPrevStory}
+                aria-label={t('previousStory')}
+                title={t('previousStory')}
+                onClick={() => goStory(-1)}
+              >
+                ←
+              </button>
+              <span className="story-browse-count">
+                {t('storyOf', {
+                  a: Math.max(1, openIndex + 1),
+                  b: openStories.length,
+                })}
+              </span>
+              <button
+                type="button"
+                className="btn-ghost story-browse-arrow"
+                disabled={!hasNextStory}
+                aria-label={t('nextStory')}
+                title={t('nextStory')}
+                onClick={() => goStory(1)}
+              >
+                →
+              </button>
+            </div>
+
             {open.imagen && (
               <div className="plate">
                 <img className="detail-image" src={open.imagen} alt={open.titulo} />

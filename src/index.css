@@ -1206,6 +1206,28 @@ button {
   gap: 0.9rem;
 }
 
+.story-browse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.story-browse-arrow {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  font-size: 1.35rem;
+}
+
+.story-browse-count {
+  font-family: var(--versales);
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
+  color: var(--tinta-suave);
+  font-variant-numeric: tabular-nums;
+}
+
 /* Album plate: photo held by four cardboard corners. */
 .plate {
   position: relative;

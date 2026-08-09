@@ -210,6 +210,9 @@ const es = {
     'Todas las estrellas del país. Un atlas completo — pancito saluda.',
   sectionTrophy: 'Trofeo de sección',
   campaignTrophy: 'Todas las estrellas',
+  previousStory: 'Historia anterior',
+  nextStory: 'Historia siguiente',
+  storyOf: '{a} de {b}',
 } as const
 
 const en: Record<keyof typeof es, string> = {
@@ -415,6 +418,9 @@ const en: Record<keyof typeof es, string> = {
   trophyCampaignBody: 'Every star in this country. A full atlas — Pancito salutes.',
   sectionTrophy: 'Section trophy',
   campaignTrophy: 'All stars',
+  previousStory: 'Previous story',
+  nextStory: 'Next story',
+  storyOf: '{a} of {b}',
 }
 
 export const TEXTS = { es, en }

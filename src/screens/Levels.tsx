@@ -412,7 +412,11 @@ function AtlasRoute({
               data-stars={stars}
               data-next={isNext || undefined}
               disabled={!open}
-              title={open ? level.nombre : t('completePrevious')}
+              title={
+                open
+                  ? `${t('level')} ${level.numero}`
+                  : t('completePrevious')
+              }
               aria-label={
                 open
                   ? `${t('level')} ${level.numero}. ${t('starsOf', { a: stars, b: 3 })}${

@@ -316,7 +316,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
   return (
     <main id="main-content" className="screen screen-game" data-cards={rules.cards} tabIndex={-1}>
       <MatchBar
-        title={level?.nombre ?? t('freePlay')}
+        title={level ? `${t('level')} ${level.numero}` : t('freePlay')}
         remaining={match.remaining}
         elapsed={match.elapsed}
         noLimit={match.noLimit}

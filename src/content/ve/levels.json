@@ -106,7 +106,7 @@
   },
   {
     "id": "12_11dificil",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 6",
     "numero": 6,
     "cartas": 12,
     "dificil": true,
@@ -127,7 +127,7 @@
   },
   {
     "id": "12_12dificil",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 7",
     "numero": 7,
     "cartas": 12,
     "dificil": true,
@@ -148,7 +148,7 @@
   },
   {
     "id": "12_13dificil",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 8",
     "numero": 8,
     "cartas": 12,
     "dificil": true,
@@ -169,7 +169,7 @@
   },
   {
     "id": "12_14dificil",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 9",
     "numero": 9,
     "cartas": 12,
     "dificil": true,
@@ -190,7 +190,7 @@
   },
   {
     "id": "12_15dificil",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 10",
     "numero": 10,
     "cartas": 12,
     "dificil": true,
@@ -211,7 +211,7 @@
   },
   {
     "id": "16_1normal",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 11",
     "numero": 11,
     "cartas": 16,
     "dificil": false,
@@ -232,7 +232,7 @@
   },
   {
     "id": "16_2normal",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 12",
     "numero": 12,
     "cartas": 16,
     "dificil": false,
@@ -253,7 +253,7 @@
   },
   {
     "id": "16_3normal",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 13",
     "numero": 13,
     "cartas": 16,
     "dificil": false,
@@ -274,7 +274,7 @@
   },
   {
     "id": "16_4normal",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 14",
     "numero": 14,
     "cartas": 16,
     "dificil": false,
@@ -295,7 +295,7 @@
   },
   {
     "id": "16_5normal",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 15",
     "numero": 15,
     "cartas": 16,
     "dificil": false,
@@ -316,7 +316,7 @@
   },
   {
     "id": "16_11dificil",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 16",
     "numero": 16,
     "cartas": 16,
     "dificil": true,
@@ -337,7 +337,7 @@
   },
   {
     "id": "16_12dificil",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 17",
     "numero": 17,
     "cartas": 16,
     "dificil": true,
@@ -358,7 +358,7 @@
   },
   {
     "id": "16_13dificil",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 18",
     "numero": 18,
     "cartas": 16,
     "dificil": true,
@@ -379,7 +379,7 @@
   },
   {
     "id": "16_14dificil",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 19",
     "numero": 19,
     "cartas": 16,
     "dificil": true,
@@ -400,7 +400,7 @@
   },
   {
     "id": "16_15dificil",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 20",
     "numero": 20,
     "cartas": 16,
     "dificil": true,
@@ -421,7 +421,7 @@
   },
   {
     "id": "20_1normal",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 21",
     "numero": 21,
     "cartas": 20,
     "dificil": false,
@@ -442,7 +442,7 @@
   },
   {
     "id": "20_2normal",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 22",
     "numero": 22,
     "cartas": 20,
     "dificil": false,
@@ -463,7 +463,7 @@
   },
   {
     "id": "20_3normal",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 23",
     "numero": 23,
     "cartas": 20,
     "dificil": false,
@@ -484,7 +484,7 @@
   },
   {
     "id": "20_4normal",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 24",
     "numero": 24,
     "cartas": 20,
     "dificil": false,
@@ -505,7 +505,7 @@
   },
   {
     "id": "20_5normal",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 25",
     "numero": 25,
     "cartas": 20,
     "dificil": false,
@@ -526,7 +526,7 @@
   },
   {
     "id": "20_11dificil",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 26",
     "numero": 26,
     "cartas": 20,
     "dificil": true,
@@ -547,7 +547,7 @@
   },
   {
     "id": "20_12dificil",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 27",
     "numero": 27,
     "cartas": 20,
     "dificil": true,
@@ -568,7 +568,7 @@
   },
   {
     "id": "20_13dificil",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 28",
     "numero": 28,
     "cartas": 20,
     "dificil": true,
@@ -589,7 +589,7 @@
   },
   {
     "id": "20_14dificil",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 29",
     "numero": 29,
     "cartas": 20,
     "dificil": true,
@@ -610,7 +610,7 @@
   },
   {
     "id": "20_15dificil",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 30",
     "numero": 30,
     "cartas": 20,
     "dificil": true,
@@ -631,7 +631,7 @@
   },
   {
     "id": "24_1normal",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 31",
     "numero": 31,
     "cartas": 24,
     "dificil": false,
@@ -652,7 +652,7 @@
   },
   {
     "id": "24_2normal",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 32",
     "numero": 32,
     "cartas": 24,
     "dificil": false,
@@ -673,7 +673,7 @@
   },
   {
     "id": "24_3normal",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 33",
     "numero": 33,
     "cartas": 24,
     "dificil": false,
@@ -694,7 +694,7 @@
   },
   {
     "id": "24_4normal",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 34",
     "numero": 34,
     "cartas": 24,
     "dificil": false,
@@ -715,7 +715,7 @@
   },
   {
     "id": "24_5normal",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 35",
     "numero": 35,
     "cartas": 24,
     "dificil": false,
@@ -736,7 +736,7 @@
   },
   {
     "id": "24_11dificil",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 36",
     "numero": 36,
     "cartas": 24,
     "dificil": true,
@@ -757,7 +757,7 @@
   },
   {
     "id": "24_12dificil",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 37",
     "numero": 37,
     "cartas": 24,
     "dificil": true,
@@ -778,7 +778,7 @@
   },
   {
     "id": "24_13dificil",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 38",
     "numero": 38,
     "cartas": 24,
     "dificil": true,
@@ -799,7 +799,7 @@
   },
   {
     "id": "24_14dificil",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 39",
     "numero": 39,
     "cartas": 24,
     "dificil": true,
@@ -820,7 +820,7 @@
   },
   {
     "id": "24_15dificil",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 40",
     "numero": 40,
     "cartas": 24,
     "dificil": true,
@@ -841,7 +841,7 @@
   },
   {
     "id": "28_1normal",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 41",
     "numero": 41,
     "cartas": 28,
     "dificil": false,
@@ -862,7 +862,7 @@
   },
   {
     "id": "28_2normal",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 42",
     "numero": 42,
     "cartas": 28,
     "dificil": false,
@@ -883,7 +883,7 @@
   },
   {
     "id": "28_3normal",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 43",
     "numero": 43,
     "cartas": 28,
     "dificil": false,
@@ -904,7 +904,7 @@
   },
   {
     "id": "28_4normal",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 44",
     "numero": 44,
     "cartas": 28,
     "dificil": false,
@@ -925,7 +925,7 @@
   },
   {
     "id": "28_5normal",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 45",
     "numero": 45,
     "cartas": 28,
     "dificil": false,
@@ -946,7 +946,7 @@
   },
   {
     "id": "28_11dificil",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 46",
     "numero": 46,
     "cartas": 28,
     "dificil": true,
@@ -967,7 +967,7 @@
   },
   {
     "id": "28_12dificil",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 47",
     "numero": 47,
     "cartas": 28,
     "dificil": true,
@@ -988,7 +988,7 @@
   },
   {
     "id": "28_13dificil",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 48",
     "numero": 48,
     "cartas": 28,
     "dificil": true,
@@ -1009,7 +1009,7 @@
   },
   {
     "id": "28_14dificil",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 49",
     "numero": 49,
     "cartas": 28,
     "dificil": true,
@@ -1030,7 +1030,7 @@
   },
   {
     "id": "28_15dificil",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 50",
     "numero": 50,
     "cartas": 28,
     "dificil": true,
@@ -1051,7 +1051,7 @@
   },
   {
     "id": "32_1normal",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 51",
     "numero": 51,
     "cartas": 32,
     "dificil": false,
@@ -1072,7 +1072,7 @@
   },
   {
     "id": "32_2normal",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 52",
     "numero": 52,
     "cartas": 32,
     "dificil": false,
@@ -1093,7 +1093,7 @@
   },
   {
     "id": "32_3normal",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 53",
     "numero": 53,
     "cartas": 32,
     "dificil": false,
@@ -1114,7 +1114,7 @@
   },
   {
     "id": "32_4normal",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 54",
     "numero": 54,
     "cartas": 32,
     "dificil": false,
@@ -1135,7 +1135,7 @@
   },
   {
     "id": "32_5normal",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 55",
     "numero": 55,
     "cartas": 32,
     "dificil": false,
@@ -1156,7 +1156,7 @@
   },
   {
     "id": "32_11dificil",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 56",
     "numero": 56,
     "cartas": 32,
     "dificil": true,
@@ -1177,7 +1177,7 @@
   },
   {
     "id": "32_12dificil",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 57",
     "numero": 57,
     "cartas": 32,
     "dificil": true,
@@ -1198,7 +1198,7 @@
   },
   {
     "id": "32_13dificil",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 58",
     "numero": 58,
     "cartas": 32,
     "dificil": true,
@@ -1219,7 +1219,7 @@
   },
   {
     "id": "32_14dificil",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 59",
     "numero": 59,
     "cartas": 32,
     "dificil": true,
@@ -1240,7 +1240,7 @@
   },
   {
     "id": "32_15dificil",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 60",
     "numero": 60,
     "cartas": 32,
     "dificil": true,
@@ -1261,7 +1261,7 @@
   },
   {
     "id": "40_1normal",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 61",
     "numero": 61,
     "cartas": 40,
     "dificil": false,
@@ -1282,7 +1282,7 @@
   },
   {
     "id": "40_2normal",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 62",
     "numero": 62,
     "cartas": 40,
     "dificil": false,
@@ -1303,7 +1303,7 @@
   },
   {
     "id": "40_3normal",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 63",
     "numero": 63,
     "cartas": 40,
     "dificil": false,
@@ -1324,7 +1324,7 @@
   },
   {
     "id": "40_4normal",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 64",
     "numero": 64,
     "cartas": 40,
     "dificil": false,
@@ -1345,7 +1345,7 @@
   },
   {
     "id": "40_5normal",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 65",
     "numero": 65,
     "cartas": 40,
     "dificil": false,
@@ -1366,7 +1366,7 @@
   },
   {
     "id": "40_11dificil",
-    "nombre": "Nivel 1",
+    "nombre": "Nivel 66",
     "numero": 66,
     "cartas": 40,
     "dificil": true,
@@ -1387,7 +1387,7 @@
   },
   {
     "id": "40_12dificil",
-    "nombre": "Nivel 2",
+    "nombre": "Nivel 67",
     "numero": 67,
     "cartas": 40,
     "dificil": true,
@@ -1408,7 +1408,7 @@
   },
   {
     "id": "40_13dificil",
-    "nombre": "Nivel 3",
+    "nombre": "Nivel 68",
     "numero": 68,
     "cartas": 40,
     "dificil": true,
@@ -1429,7 +1429,7 @@
   },
   {
     "id": "40_14dificil",
-    "nombre": "Nivel 4",
+    "nombre": "Nivel 69",
     "numero": 69,
     "cartas": 40,
     "dificil": true,
@@ -1450,7 +1450,7 @@
   },
   {
     "id": "40_15dificil",
-    "nombre": "Nivel 5",
+    "nombre": "Nivel 70",
     "numero": 70,
     "cartas": 40,
     "dificil": true,
