@@ -44,7 +44,8 @@ export function Stories() {
     const result = await shareStoryLink({
       title: open.titulo,
       text: t('shareStoryText', { title: open.titulo }),
-      url: gameUrl('/stories'),
+      url: gameUrl('/'),
+      imageUrl: open.imagen || null,
     })
     if (result === 'copied') {
       setShareNote(t('shareCopied'))

@@ -27,6 +27,8 @@ export interface MatchRules {
   peekSeconds: number
   mistakes: ErrorThresholds
   back: string | null
+  /** Hard campaign: first `cards/2` misses do not count toward stars. */
+  hard: boolean
 }
 
 export function rulesFromLevel(level: Level): MatchRules {
@@ -38,6 +40,7 @@ export function rulesFromLevel(level: Level): MatchRules {
     peekSeconds: level.vistazoSeg,
     mistakes: level.errores,
     back: level.reverso,
+    hard: level.dificil,
   }
 }
 
@@ -50,7 +53,15 @@ export function freeRules(config: FreeMatch): MatchRules {
     peekSeconds: config.peekSeconds,
     mistakes: { tres: 0, dos: 0, una: 0 },
     back: config.back,
+    hard: false,
   }
+}
+
+/** Hard levels forgive one miss per pair (exploration) before stars are scored. */
+export function scoringMistakes(mistakes: number, rules: MatchRules): number {
+  if (!rules.hard) return mistakes
+  const grace = Math.floor(rules.cards / 2)
+  return Math.max(0, mistakes - grace)
 }
 
 export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
@@ -199,12 +210,13 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
 
   const result: Result | null = useMemo(() => {
     if (phase !== 'won' && phase !== 'lost') return null
+    const scored = scoringMistakes(mistakes, rules)
     return {
-      stars: phase === 'won' ? computeStars(mistakes, rules.mistakes) : 0,
+      stars: phase === 'won' ? computeStars(scored, rules.mistakes) : 0,
       seconds: elapsed,
       mistakes,
     }
-  }, [elapsed, mistakes, phase, rules.mistakes])
+  }, [elapsed, mistakes, phase, rules])
 
   const pause = useCallback(() => {
     setPaused(true)

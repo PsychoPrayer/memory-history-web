@@ -1,3 +1,4 @@
+import { Modal } from './Modal'
 import { markTipSeen, useSave } from '../lib/save'
 import { playSound } from '../lib/audio'
 import { useT, type TextKey } from '../lib/i18n'
@@ -34,7 +35,7 @@ interface PancitoTipProps {
   className?: string
 }
 
-/** Dismissible tip bubble with Pancito. Shown once per tipId. */
+/** Full-screen dimmed tip (same overlay language as help). Once per tipId. */
 export function PancitoTip({
   tipId,
   textKey,
@@ -46,23 +47,23 @@ export function PancitoTip({
 
   if (tipsSeen.includes(tipId)) return null
 
+  const dismiss = () => {
+    playSound('button')
+    markTipSeen(tipId)
+  }
+
   return (
-    <aside className={`pancito-tip ${className}`.trim()} role="status">
-      <PancitoSprite pose={pose} className="pancito-tip-sprite" />
-      <div className="pancito-tip-bubble">
-        <p>{t(textKey)}</p>
-        <button
-          type="button"
-          className="pancito-tip-dismiss"
-          onClick={() => {
-            playSound('button')
-            markTipSeen(tipId)
-          }}
-        >
-          {t('gotIt')}
-        </button>
+    <Modal open onClose={dismiss}>
+      <div className={`pancito-tip pancito-tip-modal ${className}`.trim()}>
+        <PancitoSprite pose={pose} className="pancito-tip-sprite" />
+        <div className="pancito-tip-bubble">
+          <p>{t(textKey)}</p>
+          <button type="button" className="btn-primary pancito-tip-dismiss" onClick={dismiss}>
+            {t('gotIt')}
+          </button>
+        </div>
       </div>
-    </aside>
+    </Modal>
   )
 }
 

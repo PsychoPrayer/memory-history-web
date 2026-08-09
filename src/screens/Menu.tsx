@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Modal } from '../components/Modal'
+import { DonateButton } from '../components/DonateButton'
 import { PancitoSprite, PancitoTip } from '../components/PancitoGuide'
 import { STAR_TIP } from '../components/Stars'
 import {
@@ -103,6 +104,7 @@ export function Menu() {
       </nav>
 
       <footer className="menu-footer">
+        <DonateButton />
         <button
           type="button"
           className="link-subtle"
@@ -151,13 +153,17 @@ export function Menu() {
       <Modal open={creditsOpen} onClose={() => setCreditsOpen(false)}>
         <h2 className="modal-title">{t('credits')}</h2>
         <pre className="credits-body">{creditsText(settings.language)}</pre>
-        <button
-          type="button"
-          className="btn-primary"
-          onClick={() => setCreditsOpen(false)}
-        >
-          {t('close')}
-        </button>
+        <p className="donate-blurb">{t('donateBlurb')}</p>
+        <div className="modal-actions">
+          <DonateButton variant="button" />
+          <button
+            type="button"
+            className="btn-primary"
+            onClick={() => setCreditsOpen(false)}
+          >
+            {t('close')}
+          </button>
+        </div>
       </Modal>
     </main>
   )

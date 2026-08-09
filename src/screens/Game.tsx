@@ -4,10 +4,16 @@ import { MatchBar } from '../components/MatchBar'
 import { Stars } from '../components/Stars'
 import { Modal } from '../components/Modal'
 import { Board } from '../components/Board'
-import { PancitoCallout } from '../components/PancitoGuide'
+import { PancitoCallout, PancitoSprite } from '../components/PancitoGuide'
 import { ZoomButton, ImageViewer } from '../components/ImageViewer'
 import { useDeck, useContent } from '../data/content'
-import { isBeaten, sectionComplete, sectionsFrom } from '../data/progression'
+import {
+  isBeaten,
+  sectionComplete,
+  sectionPerfect,
+  campaignPerfect,
+  sectionsFrom,
+} from '../data/progression'
 import {
   markRewardShown,
   markSectionCelebrated,
@@ -27,7 +33,7 @@ interface Props {
 }
 
 type ConfirmAction = 'quit' | 'restart' | null
-type VictoryStep = 'result' | 'story' | 'section'
+type VictoryStep = 'result' | 'story' | 'section' | 'trophySection' | 'trophyCampaign'
 
 export function Game({ free = false }: Props) {
   const { levelId } = useParams()
@@ -99,10 +105,11 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
   const { levels, stories, sections } = useContent()
 
   const country = useSave((state) => state.settings.country)
+  const tipsSeen = useSave((state) => state.settings.tipsSeen ?? [])
   const progress = useSave(() => progressFor(country))
 
   const match = useMatch(rules, deck)
-  const { phase, result } = match
+  const { phase, result, pause, resume } = match
 
   const levelsExit = level ? '/levels' : '/free'
   const savedRef = useRef<string | null>(null)
@@ -111,6 +118,17 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
   const [sectionMessage, setSectionMessage] = useState<string | null>(null)
   const [newStory, setNewStory] = useState<Story | null>(null)
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null)
+  const [pendingTrophySection, setPendingTrophySection] = useState(false)
+  const [pendingTrophyCampaign, setPendingTrophyCampaign] = useState(false)
+
+  const hardIntroOpen = Boolean(
+    level?.dificil && !tipsSeen.includes('hard-mode-intro'),
+  )
+
+  useEffect(() => {
+    if (!hardIntroOpen) return
+    if (phase === 'playing' || phase === 'peek') pause()
+  }, [hardIntroOpen, phase, pause])
 
   useEffect(() => {
     if (phase !== 'won' || !result) return
@@ -121,10 +139,13 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
 
     let story: Story | null = null
     let sectionText: string | null = null
+    let trophySection = false
+    let trophyCampaign = false
 
     if (level) {
       /* Replay: level already cleared — never re-award the story popup. */
       const firstClear = !isBeaten(progress, level.id)
+      const previousStars = progress.levels[level.id]?.stars ?? 0
 
       recordVictory(country, level.id, {
         stars: result.stars,
@@ -145,7 +166,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
         levels: {
           ...progress.levels,
           [level.id]: {
-            stars: result.stars,
+            stars: Math.max(previousStars, result.stars) as typeof result.stars,
             bestTime: result.seconds,
             fewestMistakes: result.mistakes,
           },
@@ -161,10 +182,27 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
         sectionText = message ? message[language] : t('sectionComplete')
         markSectionCelebrated(country, level.cartas)
       }
+
+      const sectionTip = `trophy-section-${level.cartas}`
+      if (
+        section &&
+        sectionPerfect(section, progressAfter) &&
+        !tipsSeen.includes(sectionTip)
+      ) {
+        trophySection = true
+      }
+      if (
+        campaignPerfect(levels, progressAfter) &&
+        !tipsSeen.includes('trophy-campaign')
+      ) {
+        trophyCampaign = true
+      }
     }
 
     setNewStory(story)
     setSectionMessage(sectionText)
+    setPendingTrophySection(trophySection)
+    setPendingTrophyCampaign(trophyCampaign)
     setVictoryStep('result')
   }, [
     country,
@@ -178,6 +216,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
     sections,
     stories,
     t,
+    tipsSeen,
   ])
 
   useEffect(() => {
@@ -186,12 +225,16 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
       setVictoryStep(null)
       setNewStory(null)
       setSectionMessage(null)
+      setPendingTrophySection(false)
+      setPendingTrophyCampaign(false)
       setConfirmAction(null)
     }
     if (phase === 'lost') {
       setVictoryStep(null)
       setNewStory(null)
       setSectionMessage(null)
+      setPendingTrophySection(false)
+      setPendingTrophyCampaign(false)
     }
   }, [phase])
 
@@ -201,6 +244,20 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
 
   const dismissPendingStory = () => {
     if (newStory) markRewardShown(country, newStory.id)
+  }
+
+  const advanceToTrophiesOrDone = () => {
+    if (pendingTrophySection) {
+      playSound('section')
+      setVictoryStep('trophySection')
+      return
+    }
+    if (pendingTrophyCampaign) {
+      playSound('section')
+      setVictoryStep('trophyCampaign')
+      return
+    }
+    setVictoryStep(null)
   }
 
   const advanceFromResult = () => {
@@ -215,7 +272,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
       setVictoryStep('section')
       return
     }
-    setVictoryStep(null)
+    advanceToTrophiesOrDone()
   }
 
   const advanceFromStory = () => {
@@ -226,6 +283,27 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
       setVictoryStep('section')
       return
     }
+    advanceToTrophiesOrDone()
+  }
+
+  const advanceFromSection = () => {
+    advanceToTrophiesOrDone()
+  }
+
+  const advanceFromTrophySection = () => {
+    if (level) markTipSeen(`trophy-section-${level.cartas}`)
+    setPendingTrophySection(false)
+    if (pendingTrophyCampaign) {
+      playSound('section')
+      setVictoryStep('trophyCampaign')
+      return
+    }
+    setVictoryStep(null)
+  }
+
+  const advanceFromTrophyCampaign = () => {
+    markTipSeen('trophy-campaign')
+    setPendingTrophyCampaign(false)
     setVictoryStep(null)
   }
 
@@ -261,7 +339,37 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
       {match.revealAll && <p className="peek-notice">{t('memorize')}</p>}
 
       <Modal
-        open={match.paused && confirmAction === null && match.phase === 'playing'}
+        open={hardIntroOpen}
+        onClose={() => {
+          markTipSeen('hard-mode-intro')
+          resume()
+        }}
+      >
+        <div className="hard-intro">
+          <PancitoSprite pose="wait" className="hard-intro-sprite" />
+          <h2 className="modal-title">{t('hardModeTitle')}</h2>
+          <p className="modal-text">{t('hardModeBody')}</p>
+          <button
+            type="button"
+            className="btn-primary"
+            onClick={() => {
+              playSound('button')
+              markTipSeen('hard-mode-intro')
+              resume()
+            }}
+          >
+            {t('continue')}
+          </button>
+        </div>
+      </Modal>
+
+      <Modal
+        open={
+          match.paused &&
+          !hardIntroOpen &&
+          confirmAction === null &&
+          match.phase === 'playing'
+        }
         onClose={match.resume}
       >
         <h2 className="modal-title">{t('paused')}</h2>
@@ -457,32 +565,36 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
         <p className="modal-text-muted">{t('sectionCompleteFooter')}</p>
         <p className="modal-text">{sectionMessage}</p>
         <div className="modal-actions">
-          {next ? (
-            <button
-              type="button"
-              className="btn-primary"
-              onClick={() => navigate(`/game/${encodeURIComponent(next.id)}`)}
-            >
-              {t('next')}
-            </button>
-          ) : (
-            <button
-              type="button"
-              className="btn-primary"
-              onClick={() => navigate(levelsExit)}
-            >
-              {t('toLevels')}
-            </button>
-          )}
-          {next && (
-            <button
-              type="button"
-              className="btn-secondary"
-              onClick={() => navigate(levelsExit)}
-            >
-              {t('toLevels')}
-            </button>
-          )}
+          <button type="button" className="btn-primary" onClick={advanceFromSection}>
+            {t('continue')}
+          </button>
+        </div>
+      </Modal>
+
+      <Modal open={victoryStep === 'trophySection'}>
+        <div className="trophy-modal">
+          <span className="trophy-glyph" aria-hidden="true">
+            ♛
+          </span>
+          <h2 className="modal-title">{t('trophySectionTitle')}</h2>
+          <p className="modal-text">{t('trophySectionBody')}</p>
+          <button type="button" className="btn-primary" onClick={advanceFromTrophySection}>
+            {t('continue')}
+          </button>
+        </div>
+      </Modal>
+
+      <Modal open={victoryStep === 'trophyCampaign'}>
+        <div className="trophy-modal">
+          <span className="trophy-glyph trophy-glyph-master" aria-hidden="true">
+            ★
+          </span>
+          <PancitoSprite pose="happy" className="trophy-pancito" />
+          <h2 className="modal-title">{t('trophyCampaignTitle')}</h2>
+          <p className="modal-text">{t('trophyCampaignBody')}</p>
+          <button type="button" className="btn-primary" onClick={advanceFromTrophyCampaign}>
+            {t('continue')}
+          </button>
         </div>
       </Modal>
 

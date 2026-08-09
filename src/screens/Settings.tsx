@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CloudAccount } from '../components/CloudAccount'
+import { DonateButton } from '../components/DonateButton'
 import { Header } from '../components/Header'
 import { Modal } from '../components/Modal'
+import { isDonateConfigured } from '../lib/donate'
 import {
   clearProgress,
   setSetting,
@@ -95,6 +97,14 @@ export function Settings() {
           ))}
         </fieldset>
       </section>
+
+      {isDonateConfigured() && (
+        <section className="settings-group">
+          <h2>{t('donate')}</h2>
+          <p className="settings-help">{t('donateBlurb')}</p>
+          <DonateButton variant="button" />
+        </section>
+      )}
 
       <section className="settings-group">
         <button

@@ -17,6 +17,9 @@ import {
   starsFor,
   sectionsFrom,
   unlockedStories,
+  sectionPerfect,
+  campaignPerfect,
+  isSectionUnlocked,
 } from '../data/progression'
 import { progressFor, useSave } from '../lib/save'
 import { playSound } from '../lib/audio'
@@ -144,8 +147,18 @@ export function Levels() {
   }, [levels, nextMissionId, sections, progress])
 
   const [active, setActive] = useState(initial)
+
+  useEffect(() => {
+    const index = sections.findIndex((s) => s.cards === active)
+    if (index >= 0 && !isSectionUnlocked(index, sections, progress)) {
+      const open = sections.findIndex((_, i) => isSectionUnlocked(i, sections, progress))
+      if (open >= 0) setActive(sections[open].cards)
+    }
+  }, [active, sections, progress])
+
   const section = sections.find((s) => s.cards === active) ?? sections[0]
   const routes = ATLAS_ROUTES[country]
+  const allStarsDone = campaignPerfect(levels, progress)
 
   const sectionLevels = useMemo(
     () => (section ? [...section.normal, ...section.hard] : []),
@@ -210,10 +223,14 @@ export function Levels() {
       <Header title={t('levels')} />
 
       <nav className="section-tabs" aria-label={t('levels')}>
-        {sections.map((other) => {
-          const hasNext = levels.some(
-            (level) => level.id === nextMissionId && level.cartas === other.cards,
-          )
+        {sections.map((other, index) => {
+          const open = isSectionUnlocked(index, sections, progress)
+          const hasNext =
+            open &&
+            levels.some(
+              (level) => level.id === nextMissionId && level.cartas === other.cards,
+            )
+          const perfect = open && sectionPerfect(other, progress)
           return (
             <button
               key={other.cards}
@@ -221,11 +238,22 @@ export function Levels() {
               className="tab"
               data-active={other.cards === active}
               data-next={hasNext || undefined}
+              data-locked={!open || undefined}
+              data-trophy={perfect || undefined}
+              disabled={!open}
+              title={open ? undefined : t('sectionLocked')}
+              aria-label={
+                open
+                  ? `${t(sectionKey(other.cards))}${perfect ? `. ${t('sectionTrophy')}` : ''}`
+                  : `${t(sectionKey(other.cards))}. ${t('sectionLocked')}`
+              }
               onClick={() => {
                 playSound('transition')
                 setActive(other.cards)
               }}
             >
+              {!open && <span className="tab-lock" aria-hidden="true" />}
+              {perfect && <span className="tab-trophy" aria-hidden="true" />}
               {t(sectionKey(other.cards))}
             </button>
           )
@@ -241,7 +269,19 @@ export function Levels() {
 
       <div className="atlas-summary">
         <div className="atlas-summary-main">
-          <p className="atlas-rank">{t(sectionKey(section.cards))}</p>
+          <p className="atlas-rank">
+            {t(sectionKey(section.cards))}
+            {sectionPerfect(section, progress) && (
+              <span className="summary-trophy" title={t('sectionTrophy')} aria-label={t('sectionTrophy')}>
+                ♛
+              </span>
+            )}
+            {allStarsDone && (
+              <span className="summary-trophy summary-trophy-master" title={t('campaignTrophy')} aria-label={t('campaignTrophy')}>
+                ★
+              </span>
+            )}
+          </p>
           <p className="atlas-meta">{t('cardsCount', { n: section.cards })}</p>
         </div>
         <dl className="atlas-summary-stats">

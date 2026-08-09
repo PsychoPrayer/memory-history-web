@@ -194,6 +194,22 @@ const es = {
   cloudHaveAccount: 'Ya tengo cuenta',
   cloudConfirmEmail:
     'Revisa tu correo para confirmar la cuenta. Luego podrás entrar.',
+  donate: 'Donar',
+  donateHelp: 'Apoya Memory History en Ko-fi. Se abre en una pestaña nueva.',
+  donateBlurb:
+    'Si el juego te gusta, puedes invitar a un café y ayudar a mantenerlo vivo.',
+  hardModeTitle: 'Niveles difíciles',
+  hardModeBody:
+    'A partir de aquí no verás las imágenes al empezar. Empareja de memoria. Los primeros fallos (tantos como pares haya) sirven para explorar y no cuentan para las estrellas.',
+  sectionLocked: 'Completa la sección anterior para abrir esta',
+  trophySectionTitle: '¡Trofeo de sección!',
+  trophySectionBody:
+    'Has conseguido las 3 estrellas en todos los niveles de esta sección.',
+  trophyCampaignTitle: '¡Trofeo de maestro!',
+  trophyCampaignBody:
+    'Todas las estrellas del país. Un atlas completo — pancito saluda.',
+  sectionTrophy: 'Trofeo de sección',
+  campaignTrophy: 'Todas las estrellas',
 } as const
 
 const en: Record<keyof typeof es, string> = {
@@ -385,6 +401,20 @@ const en: Record<keyof typeof es, string> = {
   cloudNeedAccount: 'Create account',
   cloudHaveAccount: 'I already have an account',
   cloudConfirmEmail: 'Check your email to confirm the account, then sign in.',
+  donate: 'Donate',
+  donateHelp: 'Support Memory History on Ko-fi. Opens in a new tab.',
+  donateBlurb:
+    'If you enjoy the game, you can buy us a coffee and help keep it going.',
+  hardModeTitle: 'Hard levels',
+  hardModeBody:
+    'From here on, cards stay face-down at the start. Match from memory. The first misses (one per pair) are for exploring and do not count toward stars.',
+  sectionLocked: 'Clear the previous section to unlock this one',
+  trophySectionTitle: 'Section trophy!',
+  trophySectionBody: 'You earned 3 stars on every level in this section.',
+  trophyCampaignTitle: 'Master trophy!',
+  trophyCampaignBody: 'Every star in this country. A full atlas — Pancito salutes.',
+  sectionTrophy: 'Section trophy',
+  campaignTrophy: 'All stars',
 }
 
 export const TEXTS = { es, en }

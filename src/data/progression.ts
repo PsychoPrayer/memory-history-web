@@ -75,6 +75,28 @@ export function sectionComplete(section: Section, progress: CountryProgress): bo
   return all.length > 0 && all.every((level) => isBeaten(progress, level.id))
 }
 
+/** Every level in the section has 3 stars. */
+export function sectionPerfect(section: Section, progress: CountryProgress): boolean {
+  const all = [...section.normal, ...section.hard]
+  return all.length > 0 && all.every((level) => starsFor(progress, level.id) >= 3)
+}
+
+/** Every campaign level has 3 stars. */
+export function campaignPerfect(levels: Level[], progress: CountryProgress): boolean {
+  return levels.length > 0 && levels.every((level) => starsFor(progress, level.id) >= 3)
+}
+
+/** First section is always open; later ones need the previous section cleared. */
+export function isSectionUnlocked(
+  sectionIndex: number,
+  sections: Section[],
+  progress: CountryProgress,
+): boolean {
+  if (sectionIndex <= 0) return true
+  const previous = sections[sectionIndex - 1]
+  return previous ? sectionComplete(previous, progress) : true
+}
+
 export function unlockedStories(
   stories: Story[],
   levels: Level[],
