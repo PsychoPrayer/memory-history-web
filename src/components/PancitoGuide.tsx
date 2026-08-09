@@ -8,6 +8,8 @@ export const PANCITO_POSES = {
   point: '/imagenes/ui/pancito/point.webp',
   wait: '/imagenes/ui/pancito/wait.webp',
   guide: '/imagenes/ui/pancito/guide.webp',
+  /** Unity “Pancito molido” — used for duel defeat. */
+  defeated: '/imagenes/ui/pancito/defeated.webp',
 } as const
 
 export type PancitoPose = keyof typeof PANCITO_POSES

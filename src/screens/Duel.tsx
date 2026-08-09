@@ -40,6 +40,7 @@ import {
   rememberDuelRoom,
   rememberInviteCode,
   rematchDuel,
+  rematchVotes,
   setReady,
   startCountdown,
   submitDuelResult,
@@ -288,6 +289,47 @@ export function Duel() {
     setMatch(null)
     setResults([])
   }
+
+  const rematchStarting = useRef(false)
+
+  /* Both players must vote "Otra ronda" before the next match starts. */
+  useEffect(() => {
+    if (!match || !user || match.status !== 'finished') {
+      rematchStarting.current = false
+      return
+    }
+    if (!bothReady(match) || rematchStarting.current) return
+    rematchStarting.current = true
+    setBusy(true)
+    setError(null)
+    void rematchDuel(match.id)
+      .then((next) => {
+        setResults([])
+        setMatch(next)
+        void fetchMyProfile(user.id).then(setProfile)
+      })
+      .catch((err) => {
+        rematchStarting.current = false
+        const message = duelErrorMessage(err, t('duelError'))
+        if (
+          message === 'REMATCH_SETUP_NEEDED' ||
+          message === 'DUEL_SETUP_NEEDED' ||
+          /rematch_duel|Could not find the function|schema cache/i.test(message)
+        ) {
+          setError(t('duelRematchSetupNeeded'))
+        } else {
+          setError(message)
+        }
+      })
+      .finally(() => setBusy(false))
+  }, [
+    match?.id,
+    match?.status,
+    match?.host_ready,
+    match?.guest_ready,
+    user?.id,
+    t,
+  ])
 
   const exitRoom = async () => {
     if (!match) {
@@ -616,6 +658,7 @@ export function Duel() {
   }
 
   if (match.status === 'finished') {
+    const votes = rematchVotes(match, user.id)
     return (
       <VerdictRoom
         match={match}
@@ -624,35 +667,17 @@ export function Duel() {
         profiles={profiles}
         busy={busy}
         error={error}
-        onRematch={async () => {
+        iAmReady={votes.iAmReady}
+        theyAreReady={votes.theyAreReady}
+        onRematchVote={async () => {
           setBusy(true)
           setError(null)
           playSound('button')
           try {
-            const next = await rematchDuel(match.id)
-            setResults([])
-            setMatch(next)
-            void fetchMyProfile(user.id).then(setProfile)
+            await setReady(match, user.id, !votes.iAmReady)
+            await refreshMatch.current()
           } catch (err) {
-            const message = duelErrorMessage(err, t('duelError'))
-            /* Other player already reset the room — just sync. */
-            if (
-              /not finished|no.*terminad|Match is not finished/i.test(message)
-            ) {
-              setResults([])
-              await refreshMatch.current()
-              void fetchMyProfile(user.id).then(setProfile)
-            } else if (
-              message === 'REMATCH_SETUP_NEEDED' ||
-              message === 'DUEL_SETUP_NEEDED' ||
-              /rematch_duel|Could not find the function|schema cache/i.test(
-                message,
-              )
-            ) {
-              setError(t('duelRematchSetupNeeded'))
-            } else {
-              setError(message)
-            }
+            setError(duelErrorMessage(err, t('duelError')))
           } finally {
             setBusy(false)
           }
@@ -717,6 +742,7 @@ function Shell({
           {t('back')}
         </button>
         <h1 className="duel-title">{title}</h1>
+        <span className="duel-header-spacer" aria-hidden="true" />
       </header>
       <div className="duel-body">{children}</div>
     </main>
@@ -727,7 +753,7 @@ function PancitoPanel({
   pose,
   body,
 }: {
-  pose: 'happy' | 'wait' | 'guide' | 'point'
+  pose: 'happy' | 'wait' | 'guide' | 'point' | 'defeated'
   body: string
 }) {
   return (
@@ -1171,7 +1197,9 @@ function VerdictRoom({
   profiles,
   busy,
   error,
-  onRematch,
+  iAmReady,
+  theyAreReady,
+  onRematchVote,
   onLeaveRoom,
 }: {
   match: DuelMatch
@@ -1180,7 +1208,9 @@ function VerdictRoom({
   profiles: DuelProfile[]
   busy: boolean
   error: string | null
-  onRematch: () => void
+  iAmReady: boolean
+  theyAreReady: boolean
+  onRematchVote: () => void
   onLeaveRoom: () => void
 }) {
   const t = useT()
@@ -1188,7 +1218,7 @@ function VerdictRoom({
   const theirs = results.find((r) => r.user_id !== userId)
   const won = match.winner_id === userId
   const lost = Boolean(match.winner_id && match.winner_id !== userId)
-  const pose = match.is_draw ? 'guide' : won ? 'happy' : 'wait'
+  const pose = match.is_draw ? 'guide' : won ? 'happy' : 'defeated'
   const headline = match.is_draw
     ? t('duelDraw')
     : won
@@ -1201,6 +1231,14 @@ function VerdictRoom({
     : won
       ? t('duelPancitoWin')
       : t('duelPancitoLose')
+
+  const rematchHint = iAmReady
+    ? theyAreReady
+      ? t('duelRematchStarting')
+      : t('duelRematchWaitingRival')
+    : theyAreReady
+      ? t('duelRematchRivalWaiting')
+      : t('duelRematchNeedBoth')
 
   return (
     <Shell title={t('duelVerdict')} onBack={onLeaveRoom}>
@@ -1224,6 +1262,10 @@ function VerdictRoom({
         />
       </div>
 
+      <p className="duel-rematch-status" data-ready={iAmReady && theyAreReady}>
+        {rematchHint}
+      </p>
+
       {error && (
         <p className="cloud-form-error" role="alert">
           {error}
@@ -1233,11 +1275,11 @@ function VerdictRoom({
       <div className="duel-actions">
         <button
           type="button"
-          className="btn-primary"
-          disabled={busy}
-          onClick={onRematch}
+          className={iAmReady ? 'btn-secondary' : 'btn-primary'}
+          disabled={busy || (iAmReady && theyAreReady)}
+          onClick={onRematchVote}
         >
-          {t('duelRematch')}
+          {iAmReady ? t('duelRematchCancel') : t('duelRematch')}
         </button>
         <button
           type="button"

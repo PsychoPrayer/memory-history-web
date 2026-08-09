@@ -241,6 +241,8 @@ begin
     status = 'finished',
     winner_id = winner,
     is_draw = draw,
+    host_ready = false,
+    guest_ready = false,
     updated_at = now()
   where id = p_match_id
   returning * into m;

@@ -302,8 +302,17 @@ export async function setReady(
     .from('duel_matches')
     .update(patch)
     .eq('id', match.id)
-    .eq('status', 'lobby')
+    /* Lobby ready-up, or mutual rematch vote after a finished duel. */
+    .in('status', ['lobby', 'finished'])
   if (error) throw error
+}
+
+export function rematchVotes(match: DuelMatch, userId: string) {
+  const iAmReady = isHost(match, userId) ? match.host_ready : match.guest_ready
+  const theyAreReady = isHost(match, userId)
+    ? match.guest_ready
+    : match.host_ready
+  return { iAmReady, theyAreReady, bothReady: iAmReady && theyAreReady }
 }
 
 export async function startCountdown(matchId: string): Promise<void> {
@@ -372,7 +381,27 @@ export async function submitDuelResult(
     p_match_id: matchId,
   })
   if (error) throw error
-  return mapMatch(data as Record<string, unknown>)
+  let mapped = mapMatch(data as Record<string, unknown>)
+
+  /* Ensure rematch votes start clean (older resolve_duel left ready=true). */
+  if (
+    mapped.status === 'finished' &&
+    (mapped.host_ready || mapped.guest_ready)
+  ) {
+    await supabase
+      .from('duel_matches')
+      .update({
+        host_ready: false,
+        guest_ready: false,
+        updated_at: new Date().toISOString(),
+      })
+      .eq('id', matchId)
+      .eq('status', 'finished')
+    const refreshed = await fetchMatch(matchId)
+    if (refreshed) mapped = refreshed
+  }
+
+  return mapped
 }
 
 async function rematchDuelClient(matchId: string): Promise<DuelMatch> {
