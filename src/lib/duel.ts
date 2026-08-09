@@ -1,6 +1,6 @@
 import type { RealtimeChannel, User } from '@supabase/supabase-js'
 import { getSupabase } from './supabase'
-import type { CountryCode } from '../types'
+import type { CountryCode, FreeDeck } from '../types'
 
 export type DuelStatus =
   | 'lobby'
@@ -10,9 +10,44 @@ export type DuelStatus =
   | 'finished'
   | 'cancelled'
 
+/** Pack for the duel board: campaign countries or PancitoLandia free deck. */
 export interface DuelRules {
-  country: CountryCode
+  country: FreeDeck
+  /** Campaign level id, or `pl:{cardCount}` for PancitoLandia. */
   levelId: string
+}
+
+export const DUEL_FREE_CARD_COUNTS = [12, 16, 20, 24, 28, 32, 40] as const
+
+export function isCampaignDuelPack(pack: FreeDeck): pack is CountryCode {
+  return pack !== 'PL'
+}
+
+export function plDuelLevelId(cards: number): string {
+  return `pl:${cards}`
+}
+
+export function parsePlDuelCards(levelId: string): number | null {
+  const match = /^pl:(\d+)$/.exec(levelId)
+  if (!match) return null
+  const cards = Number(match[1])
+  return Number.isFinite(cards) && cards > 0 ? cards : null
+}
+
+export function gridForDuelCards(cards: number): {
+  columns: number
+  rows: number
+} {
+  const presets: Record<number, { columns: number; rows: number }> = {
+    12: { columns: 4, rows: 3 },
+    16: { columns: 4, rows: 4 },
+    20: { columns: 5, rows: 4 },
+    24: { columns: 6, rows: 4 },
+    28: { columns: 7, rows: 4 },
+    32: { columns: 8, rows: 4 },
+    40: { columns: 8, rows: 5 },
+  }
+  return presets[cards] ?? { columns: 4, rows: Math.max(1, Math.ceil(cards / 4)) }
 }
 
 export interface DuelProfile {
@@ -120,8 +155,11 @@ function asRules(value: unknown): DuelRules {
     return { country: 'VE', levelId: '' }
   }
   const record = value as Record<string, unknown>
-  const raw = typeof record.country === 'string' ? record.country.toUpperCase() : 'VE'
-  const country = (raw === 'ES' || raw === 'EU' ? raw : 'VE') as CountryCode
+  const raw =
+    typeof record.country === 'string' ? record.country.toUpperCase() : 'VE'
+  const country = (
+    raw === 'ES' || raw === 'EU' || raw === 'PL' ? raw : 'VE'
+  ) as FreeDeck
   const levelId = typeof record.levelId === 'string' ? record.levelId : ''
   return { country, levelId }
 }

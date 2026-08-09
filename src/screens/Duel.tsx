@@ -9,12 +9,19 @@ import { Modal } from '../components/Modal'
 import { PancitoSprite } from '../components/PancitoGuide'
 import { Stars } from '../components/Stars'
 import { avatarById } from '../lib/avatars'
-import { useContent } from '../data/content'
+import {
+  DECKS,
+  DECK_NAME,
+  deckAvailable,
+  loadContent,
+  useDeck,
+} from '../data/content'
 import { isUnlocked } from '../data/progression'
 import { formatTime } from '../lib/board'
 import {
   bothReady,
   createDuel,
+  DUEL_FREE_CARD_COUNTS,
   duelErrorMessage,
   fetchMatch,
   fetchMyProfile,
@@ -22,6 +29,8 @@ import {
   fetchResults,
   forgetDuelRoom,
   forgetInviteCode,
+  gridForDuelCards,
+  isCampaignDuelPack,
   isDuelRoomResumable,
   isHost,
   joinDuel,
@@ -29,6 +38,8 @@ import {
   markPlaying,
   normalizeRoomCode,
   opponentId,
+  parsePlDuelCards,
+  plDuelLevelId,
   recalledDuelRoom,
   recalledInviteCode,
   rememberDuelRoom,
@@ -51,8 +62,8 @@ import { useT } from '../lib/i18n'
 import { progressFor, setSetting, useSave } from '../lib/save'
 import { shareDuelInvite } from '../lib/share'
 import { isSupabaseConfigured } from '../lib/supabase'
-import { rulesFromLevel, useMatch } from '../lib/useMatch'
-import type { Stars as StarCount } from '../types'
+import { freeRules, rulesFromLevel, useMatch } from '../lib/useMatch'
+import type { FreeDeck, Level, Stars as StarCount } from '../types'
 
 type HubMode = 'home' | 'join'
 
@@ -100,9 +111,10 @@ export function Duel() {
   }
 
   useEffect(() => {
-    if (!match?.rules.country) return
-    if (match.rules.country !== country) {
-      setSetting('country', match.rules.country)
+    const pack = match?.rules.country
+    if (!pack || !isCampaignDuelPack(pack)) return
+    if (pack !== country) {
+      setSetting('country', pack)
     }
   }, [match?.rules.country, country])
 
@@ -788,19 +800,62 @@ function LobbyRoom({
   onLeave: () => void
 }) {
   const t = useT()
-  const { levels } = useContent()
-  const country = useSave((state) => state.settings.country)
-  const progress = useSave(() => progressFor(country))
+  const pack = match.rules.country
+  const progress = useSave(() =>
+    isCampaignDuelPack(pack) ? progressFor(pack) : progressFor('VE'),
+  )
   const host = isHost(match, userId)
   const ready = host ? match.host_ready : match.guest_ready
   const localName = useSave((state) => state.settings.playerName)
   const localAvatar = useSave((state) => state.settings.avatarId)
   const [shareNote, setShareNote] = useState<string | null>(null)
+  const [packLevels, setPackLevels] = useState<Level[]>([])
+
+  useEffect(() => {
+    if (!isCampaignDuelPack(pack)) {
+      setPackLevels([])
+      return
+    }
+    let active = true
+    void loadContent(pack)
+      .then((content) => {
+        if (active) setPackLevels(content.levels)
+      })
+      .catch(() => {
+        if (active) setPackLevels([])
+      })
+    return () => {
+      active = false
+    }
+  }, [pack])
+
   const unlocked = useMemo(
-    () => levels.filter((level) => isUnlocked(level, levels, progress)),
-    [levels, progress],
+    () =>
+      packLevels.filter((level) => isUnlocked(level, packLevels, progress)),
+    [packLevels, progress],
   )
-  const selected = levels.find((level) => level.id === match.rules.levelId)
+  const selected = packLevels.find((level) => level.id === match.rules.levelId)
+  const plCards = pack === 'PL' ? parsePlDuelCards(match.rules.levelId) : null
+  const deckLabel = DECK_NAME[pack] ?? pack
+  const selectionDetail =
+    pack === 'PL'
+      ? plCards
+        ? t('cardsCount', { n: plCards })
+        : null
+      : selected
+        ? t('duelLevelSelected', { n: selected.numero })
+        : null
+
+  const patchRules = (next: { country: FreeDeck; levelId: string }) => {
+    onError(null)
+    setBusy(true)
+    playSound('button')
+    void updateMatchRules(match.id, next)
+      .catch((err) =>
+        onError(err instanceof Error ? err.message : t('duelError')),
+      )
+      .finally(() => setBusy(false))
+  }
 
   const hostName =
     match.host_id === userId
@@ -882,37 +937,78 @@ function LobbyRoom({
       />
 
       {host ? (
-        <label className="cloud-field">
-          <span>{t('duelChooseLevel')}</span>
-          <select
-            value={match.rules.levelId}
-            disabled={busy}
-            onChange={(event) => {
-              const levelId = event.target.value
-              onError(null)
-              setBusy(true)
-              playSound('button')
-              void updateMatchRules(match.id, { country, levelId })
-                .catch((err) =>
-                  onError(err instanceof Error ? err.message : t('duelError')),
-                )
-                .finally(() => setBusy(false))
-            }}
-          >
-            <option value="">{t('duelPickLevel')}</option>
-            {unlocked.map((level) => (
-              <option key={level.id} value={level.id}>
-                {t('level')} {level.numero}
-                {level.dificil ? ` (${t('hard')})` : ''} ·{' '}
-                {t('cardsCount', { n: level.cartas })}
-              </option>
-            ))}
-          </select>
-        </label>
+        <>
+          <label className="cloud-field">
+            <span>{t('duelChooseDeck')}</span>
+            <select
+              value={pack}
+              disabled={busy}
+              onChange={(event) => {
+                const next = event.target.value as FreeDeck
+                if (!deckAvailable(next)) return
+                patchRules({ country: next, levelId: '' })
+              }}
+            >
+              {DECKS.filter(deckAvailable).map((code) => (
+                <option key={code} value={code}>
+                  {DECK_NAME[code]}
+                </option>
+              ))}
+            </select>
+          </label>
+          {pack === 'PL' ? (
+            <label className="cloud-field">
+              <span>{t('duelChooseLevel')}</span>
+              <select
+                value={match.rules.levelId}
+                disabled={busy}
+                onChange={(event) => {
+                  patchRules({
+                    country: 'PL',
+                    levelId: event.target.value,
+                  })
+                }}
+              >
+                <option value="">{t('duelPickCards')}</option>
+                {DUEL_FREE_CARD_COUNTS.map((count) => (
+                  <option key={count} value={plDuelLevelId(count)}>
+                    {t('cardsCount', { n: count })}
+                  </option>
+                ))}
+              </select>
+            </label>
+          ) : (
+            <label className="cloud-field">
+              <span>{t('duelChooseLevel')}</span>
+              <select
+                value={match.rules.levelId}
+                disabled={busy}
+                onChange={(event) => {
+                  patchRules({
+                    country: pack,
+                    levelId: event.target.value,
+                  })
+                }}
+              >
+                <option value="">{t('duelPickLevel')}</option>
+                {unlocked.map((level) => (
+                  <option key={level.id} value={level.id}>
+                    {t('level')} {level.numero}
+                    {level.dificil ? ` (${t('hard')})` : ''} ·{' '}
+                    {t('cardsCount', { n: level.cartas })}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+        </>
       ) : (
         <p className="duel-level-line">
-          {selected
-            ? t('duelLevelSelected', { n: selected.numero })
+          {selectionDetail
+            ? t('duelDeckSelected', {
+                deck: deckLabel,
+                detail: selectionDetail,
+              })
             : t('duelHostPickingLevel')}
         </p>
       )}
@@ -990,17 +1086,65 @@ function DuelPlay({
   onForfeit: () => Promise<void>
 }) {
   const t = useT()
-  const { cards, levels } = useContent()
-  const level = levels.find((item) => item.id === match.rules.levelId)
+  const pack = match.rules.country
+  const deckCards = useDeck(pack)
+  const [campaignLevels, setCampaignLevels] = useState<Level[] | null>(null)
+  const plCards = pack === 'PL' ? parsePlDuelCards(match.rules.levelId) : null
   const [countdown, setCountdown] = useState<number | null>(null)
   const [live, setLive] = useState(false)
   const submitted = useRef(false)
   const playingMarked = useRef(false)
 
-  const rules = useMemo(
-    () => (level ? rulesFromLevel(level) : null),
-    [level],
-  )
+  useEffect(() => {
+    if (!isCampaignDuelPack(pack)) {
+      setCampaignLevels([])
+      return
+    }
+    let active = true
+    setCampaignLevels(null)
+    void loadContent(pack)
+      .then((content) => {
+        if (active) setCampaignLevels(content.levels)
+      })
+      .catch(() => {
+        if (active) setCampaignLevels([])
+      })
+    return () => {
+      active = false
+    }
+  }, [pack])
+
+  const level =
+    pack === 'PL' || !campaignLevels
+      ? null
+      : campaignLevels.find((item) => item.id === match.rules.levelId)
+
+  const rules = useMemo(() => {
+    if (pack === 'PL') {
+      if (!plCards) return null
+      const grid = gridForDuelCards(plCards)
+      return freeRules({
+        cards: plCards,
+        columns: grid.columns,
+        rows: grid.rows,
+        seconds: 0,
+        peekSeconds: 2.5,
+        back: null,
+      })
+    }
+    if (campaignLevels === null) return null
+    return level ? rulesFromLevel(level) : null
+  }, [campaignLevels, level, pack, plCards])
+
+  const boardTitle = useMemo(() => {
+    if (pack === 'PL' && plCards) {
+      return `${t('duel')} · ${DECK_NAME.PL} · ${t('cardsCount', { n: plCards })}`
+    }
+    if (level) {
+      return `${t('duel')} · ${DECK_NAME[pack] ?? pack} · ${t('level')} ${level.numero}`
+    }
+    return t('duel')
+  }, [level, pack, plCards, t])
 
   useEffect(() => {
     const startsAt = match.starts_at
@@ -1031,7 +1175,20 @@ function DuelPlay({
     return () => window.clearInterval(id)
   }, [match.id, match.starts_at, match.host_id, userId])
 
-  if (!level || !rules) {
+  const loadingBoard =
+    !deckCards ||
+    (isCampaignDuelPack(pack) && campaignLevels === null) ||
+    (pack === 'PL' && !plCards && Boolean(match.rules.levelId))
+
+  if (loadingBoard) {
+    return (
+      <Shell title={t('duel')} onBack={() => void onForfeit()}>
+        <PancitoPanel pose="wait" body={t('duelPancitoCountdown')} />
+      </Shell>
+    )
+  }
+
+  if (!rules || !deckCards.length) {
     return (
       <Shell title={t('duel')} onBack={() => void onForfeit()}>
         <PancitoPanel pose="wait" body={t('duelLevelMissing')} />
@@ -1051,9 +1208,9 @@ function DuelPlay({
 
   return (
     <DuelBoard
-      levelNumero={level.numero}
+      title={boardTitle}
       rules={rules}
-      deck={cards}
+      deck={deckCards}
       onFinish={async (payload) => {
         if (submitted.current) return
         submitted.current = true
@@ -1070,13 +1227,13 @@ function DuelPlay({
 }
 
 function DuelBoard({
-  levelNumero,
+  title,
   rules,
   deck,
   onFinish,
   onForfeit,
 }: {
-  levelNumero: number
+  title: string
   rules: ReturnType<typeof rulesFromLevel>
   deck: Parameters<typeof useMatch>[1]
   onFinish: (payload: {
@@ -1116,7 +1273,7 @@ function DuelBoard({
       tabIndex={-1}
     >
       <MatchBar
-        title={`${t('duel')} · ${t('level')} ${levelNumero}`}
+        title={title}
         remaining={match.remaining}
         elapsed={match.elapsed}
         noLimit={match.noLimit}
