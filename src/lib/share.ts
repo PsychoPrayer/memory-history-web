@@ -110,6 +110,43 @@ export async function buildStoryShareCard(input: {
   })
 }
 
+export function duelInviteUrl(code: string): string {
+  const clean = code.trim().toUpperCase()
+  return gameUrl(`/duel?code=${encodeURIComponent(clean)}`)
+}
+
+export async function shareDuelInvite(input: {
+  code: string
+  text: string
+}): Promise<'shared' | 'copied' | 'failed'> {
+  const url = duelInviteUrl(input.code)
+  const message = `${input.text}\n${url}`
+
+  if (typeof navigator !== 'undefined' && typeof navigator.share === 'function') {
+    try {
+      await navigator.share({
+        title: 'Memory History',
+        text: input.text,
+        url,
+      })
+      return 'shared'
+    } catch (error) {
+      if ((error as Error).name === 'AbortError') return 'failed'
+    }
+  }
+
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(message)
+      return 'copied'
+    }
+  } catch {
+    /* fall through */
+  }
+
+  return 'failed'
+}
+
 export async function shareStoryLink(input: {
   title: string
   text: string

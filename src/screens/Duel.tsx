@@ -6,7 +6,7 @@ import {
   type FormEvent,
   type ReactNode,
 } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import type { User } from '@supabase/supabase-js'
 import { Board } from '../components/Board'
 import { CloudAccount } from '../components/CloudAccount'
@@ -27,14 +27,18 @@ import {
   fetchProfiles,
   fetchResults,
   forgetDuelRoom,
+  forgetInviteCode,
   isHost,
   isValidUsername,
   joinDuel,
   leaveDuel,
   markPlaying,
+  normalizeRoomCode,
   opponentId,
   recalledDuelRoom,
+  recalledInviteCode,
   rememberDuelRoom,
+  rememberInviteCode,
   rematchDuel,
   setReady,
   startCountdown,
@@ -49,6 +53,7 @@ import { getCloudStatus, subscribeCloud } from '../lib/cloudSync'
 import { playSound } from '../lib/audio'
 import { useT } from '../lib/i18n'
 import { progressFor, setSetting, useSave } from '../lib/save'
+import { shareDuelInvite } from '../lib/share'
 import { isSupabaseConfigured } from '../lib/supabase'
 import { rulesFromLevel, useMatch } from '../lib/useMatch'
 import type { Stars as StarCount } from '../types'
@@ -57,6 +62,7 @@ type HubMode = 'home' | 'join'
 
 export function Duel() {
   const navigate = useNavigate()
+  const [searchParams, setSearchParams] = useSearchParams()
   const t = useT()
   const country = useSave((state) => state.settings.country)
   const [user, setUser] = useState<User | null>(getCloudStatus().user)
@@ -67,11 +73,25 @@ export function Duel() {
   const [profiles, setProfiles] = useState<DuelProfile[]>([])
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
+  const [joiningInvite, setJoiningInvite] = useState(false)
   const [hubMode, setHubMode] = useState<HubMode>('home')
   const [joinCode, setJoinCode] = useState('')
   const [usernameDraft, setUsernameDraft] = useState('')
+  const inviteJoinAttempted = useRef<string | null>(null)
 
   useEffect(() => subscribeCloud((_status, nextUser) => setUser(nextUser)), [])
+
+  /* Capture ?code= from invite links (survives login / username setup). */
+  useEffect(() => {
+    const raw = searchParams.get('code')
+    if (!raw) return
+    const code = normalizeRoomCode(raw)
+    if (!code) return
+    rememberInviteCode(code)
+    setJoinCode(code)
+    setHubMode('join')
+    setSearchParams({}, { replace: true })
+  }, [searchParams, setSearchParams])
 
   useEffect(() => {
     if (!match?.rules.country) return
@@ -110,6 +130,7 @@ export function Duel() {
   /* Rejoin the same room after refresh / leaving the duel screen briefly. */
   useEffect(() => {
     if (!user || !profile || match) return
+    if (recalledInviteCode()) return
     const roomId = recalledDuelRoom()
     if (!roomId) return
     let cancelled = false
@@ -133,6 +154,38 @@ export function Duel() {
       cancelled = true
     }
   }, [user, profile, match])
+
+  /* Auto-join from shared invite link once the player is ready. */
+  useEffect(() => {
+    if (!user || !profile || match || joiningInvite) return
+    const code = recalledInviteCode()
+    if (!code) return
+    if (inviteJoinAttempted.current === code) return
+    inviteJoinAttempted.current = code
+    let cancelled = false
+    setJoiningInvite(true)
+    setError(null)
+    void joinDuel(code)
+      .then((next) => {
+        if (cancelled) return
+        forgetInviteCode()
+        rememberDuelRoom(next.id)
+        setMatch(next)
+      })
+      .catch(() => {
+        if (cancelled) return
+        forgetInviteCode()
+        setHubMode('join')
+        setJoinCode(code)
+        setError(t('duelJoinFailed'))
+      })
+      .finally(() => {
+        if (!cancelled) setJoiningInvite(false)
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [user, profile, match, joiningInvite, t])
 
   const refreshMatch = useRef<() => Promise<void>>(async () => undefined)
 
@@ -349,6 +402,15 @@ export function Duel() {
   }
 
   if (!match) {
+    if (joiningInvite) {
+      return (
+        <Shell title={t('duel')} onBack={goMenu}>
+          <PancitoPanel pose="wait" body={t('duelJoiningInvite')} />
+          <p className="duel-code">{joinCode || recalledInviteCode() || '…'}</p>
+        </Shell>
+      )
+    }
+
     return (
       <Shell title={t('duel')} onBack={goMenu}>
         <div className="duel-profile-card">
@@ -647,11 +709,23 @@ function LobbyRoom({
   const progress = useSave(() => progressFor(country))
   const host = isHost(match, userId)
   const ready = host ? match.host_ready : match.guest_ready
+  const [shareNote, setShareNote] = useState<string | null>(null)
   const unlocked = useMemo(
     () => levels.filter((level) => isUnlocked(level, levels, progress)),
     [levels, progress],
   )
   const selected = levels.find((level) => level.id === match.rules.levelId)
+
+  const shareInvite = async () => {
+    playSound('button')
+    setShareNote(null)
+    const result = await shareDuelInvite({
+      code: match.code,
+      text: t('duelInviteText', { code: match.code }),
+    })
+    if (result === 'copied') setShareNote(t('duelInviteCopied'))
+    else if (result === 'failed') setShareNote(t('duelInviteFailed'))
+  }
 
   return (
     <Shell title={t('duelLobby')} onBack={onLeave}>
@@ -659,6 +733,17 @@ function LobbyRoom({
         <p className="duel-code-label">{t('duelRoomCode')}</p>
         <p className="duel-code">{match.code}</p>
         <p className="duel-muted">{t('duelShareCode')}</p>
+        <button
+          type="button"
+          className="btn-primary duel-share-btn"
+          disabled={busy}
+          onClick={() => {
+            void shareInvite()
+          }}
+        >
+          {t('duelShareInvite')}
+        </button>
+        {shareNote && <p className="duel-share-note">{shareNote}</p>}
       </div>
 
       <div className="duel-vs">

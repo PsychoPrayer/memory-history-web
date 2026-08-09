@@ -382,6 +382,7 @@ export async function leaveDuel(matchId: string): Promise<DuelMatch> {
 }
 
 const ROOM_STORAGE_KEY = 'mh-duel-room'
+const INVITE_STORAGE_KEY = 'mh-duel-invite'
 
 export function rememberDuelRoom(matchId: string) {
   try {
@@ -402,6 +403,36 @@ export function forgetDuelRoom() {
 export function recalledDuelRoom(): string | null {
   try {
     return sessionStorage.getItem(ROOM_STORAGE_KEY)
+  } catch {
+    return null
+  }
+}
+
+export function normalizeRoomCode(raw: string): string {
+  return raw.trim().toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 8)
+}
+
+export function rememberInviteCode(code: string) {
+  const clean = normalizeRoomCode(code)
+  if (!clean) return
+  try {
+    sessionStorage.setItem(INVITE_STORAGE_KEY, clean)
+  } catch {
+    /* ignore */
+  }
+}
+
+export function forgetInviteCode() {
+  try {
+    sessionStorage.removeItem(INVITE_STORAGE_KEY)
+  } catch {
+    /* ignore */
+  }
+}
+
+export function recalledInviteCode(): string | null {
+  try {
+    return sessionStorage.getItem(INVITE_STORAGE_KEY)
   } catch {
     return null
   }
