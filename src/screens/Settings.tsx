@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { AvatarPicker, PlayerBadge } from '../components/AvatarPicker'
 import { CloudAccount } from '../components/CloudAccount'
 import { DonateButton } from '../components/DonateButton'
 import { Header } from '../components/Header'
@@ -20,10 +21,32 @@ export function Settings() {
   const navigate = useNavigate()
   const settings = useSave((state) => state.settings)
   const [confirming, setConfirming] = useState(false)
+  const [profileOpen, setProfileOpen] = useState(false)
 
   return (
     <main id="main-content" className="screen screen-settings" tabIndex={-1}>
       <Header title={t('settings')} />
+
+      <section className="settings-group">
+        <h2>{t('yourProfile')}</h2>
+        <p className="settings-help">{t('yourProfileHelp')}</p>
+        <div className="settings-profile-row">
+          <PlayerBadge
+            name={settings.playerName}
+            avatarId={settings.avatarId}
+          />
+          <button
+            type="button"
+            className="btn-secondary"
+            onClick={() => {
+              playSound('button')
+              setProfileOpen(true)
+            }}
+          >
+            {t('editProfile')}
+          </button>
+        </div>
+      </section>
 
       <section className="settings-group">
         <h2>{t('language')}</h2>
@@ -139,6 +162,16 @@ export function Settings() {
             {t('no')}
           </button>
         </div>
+      </Modal>
+
+      <Modal open={profileOpen} onClose={() => setProfileOpen(false)} width="wide">
+        <h2 className="modal-title">{t('yourProfile')}</h2>
+        <AvatarPicker
+          initialName={settings.playerName}
+          initialAvatarId={settings.avatarId}
+          submitLabel="save"
+          onSaved={() => setProfileOpen(false)}
+        />
       </Modal>
     </main>
   )

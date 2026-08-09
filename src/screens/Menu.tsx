@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { AvatarPicker, PlayerBadge } from '../components/AvatarPicker'
 import { Modal } from '../components/Modal'
 import { DonateButton } from '../components/DonateButton'
 import { PancitoSprite, PancitoTip } from '../components/PancitoGuide'
@@ -29,6 +30,7 @@ export function Menu() {
   const [creditsOpen, setCreditsOpen] = useState(false)
   const [countryPickerOpen, setCountryPickerOpen] = useState(false)
   const [guideOpen, setGuideOpen] = useState(false)
+  const [profileOpen, setProfileOpen] = useState(false)
 
   const stars = totalStars(progress)
   const maximum = levels.length * 3
@@ -42,6 +44,22 @@ export function Menu() {
   return (
     <main id="main-content" className="screen screen-menu" tabIndex={-1}>
       <header className="menu-header">
+        <div className="menu-header-top">
+          <PlayerBadge
+            name={settings.playerName}
+            avatarId={settings.avatarId}
+            onClick={() => {
+              playSound('button')
+              setProfileOpen(true)
+            }}
+          />
+          <div className="star-counter">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d={STAR_TIP} />
+            </svg>
+            <span>{t('starsOf', { a: stars, b: maximum })}</span>
+          </div>
+        </div>
         <div className="country-picker">
           <p className="country-picker-label">{t('countries')}</p>
           <button
@@ -66,12 +84,6 @@ export function Menu() {
           </button>
         </div>
         <h1 className="menu-title">Memory History</h1>
-        <div className="star-counter">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d={STAR_TIP} />
-          </svg>
-          <span>{t('starsOf', { a: stars, b: maximum })}</span>
-        </div>
       </header>
 
       <PancitoTip
@@ -151,6 +163,17 @@ export function Menu() {
         >
           {t('close')}
         </button>
+      </Modal>
+
+      <Modal open={profileOpen} onClose={() => setProfileOpen(false)} width="wide">
+        <h2 className="modal-title">{t('yourProfile')}</h2>
+        <p className="modal-text-muted">{t('yourProfileHelp')}</p>
+        <AvatarPicker
+          initialName={settings.playerName}
+          initialAvatarId={settings.avatarId}
+          submitLabel="save"
+          onSaved={() => setProfileOpen(false)}
+        />
       </Modal>
 
       <Modal open={creditsOpen} onClose={() => setCreditsOpen(false)}>
@@ -303,6 +326,20 @@ function Onboarding() {
             {t('niceToMeetYou')}
           </button>
         </div>
+      </Modal>
+    )
+  }
+
+  if (!settings.profileSetupDone) {
+    return (
+      <Modal open width="wide">
+        <h2 className="modal-title">{t('yourProfile')}</h2>
+        <p className="modal-text-muted">{t('profileSetupHelp')}</p>
+        <AvatarPicker
+          initialName={settings.playerName}
+          initialAvatarId={settings.avatarId}
+          submitLabel="continue"
+        />
       </Modal>
     )
   }

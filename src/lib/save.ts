@@ -40,6 +40,12 @@ export interface SettingsData {
   guideSeen: boolean
   /** Dismissed Pancito tip ids (e.g. menu-country, levels-next). */
   tipsSeen: string[]
+  /** Local player display name (menu + profile). */
+  playerName: string
+  /** Avatar id from `lib/avatars` (pl:… or ui:…). */
+  avatarId: string
+  /** Name + avatar chosen at least once. */
+  profileSetupDone: boolean
 }
 
 export interface FreeSettings {
@@ -93,6 +99,9 @@ function initialState(): SavedState {
       pancitoMet: false,
       guideSeen: false,
       tipsSeen: [],
+      playerName: '',
+      avatarId: 'ui:happy',
+      profileSetupDone: false,
     },
     free: {
       cards: 16,
@@ -123,6 +132,10 @@ function migrate(raw: Record<string, unknown>): SavedState {
       /* Returning players already past onboarding skip the meet modal. */
       pancitoMet: Boolean(old.guiaVista),
       tipsSeen: base.settings.tipsSeen,
+      playerName: '',
+      avatarId: 'ui:happy',
+      /* Legacy saves: ask once for avatar/name. */
+      profileSetupDone: false,
     }
   } else if (raw.settings && typeof raw.settings === 'object') {
     const incoming = raw.settings as Partial<SettingsData>
@@ -139,6 +152,19 @@ function migrate(raw: Record<string, unknown>): SavedState {
       tipsSeen: Array.isArray(incoming.tipsSeen)
         ? incoming.tipsSeen
         : base.settings.tipsSeen,
+      playerName:
+        typeof incoming.playerName === 'string'
+          ? incoming.playerName
+          : base.settings.playerName,
+      avatarId:
+        typeof incoming.avatarId === 'string'
+          ? incoming.avatarId
+          : base.settings.avatarId,
+      profileSetupDone: Boolean(
+        incoming.profileSetupDone ??
+          (typeof incoming.playerName === 'string' &&
+            incoming.playerName.trim().length >= 2),
+      ),
     }
   }
 

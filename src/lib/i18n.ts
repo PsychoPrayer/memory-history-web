@@ -215,6 +215,18 @@ const es = {
   nextStory: 'Historia siguiente',
   storyOf: '{a} de {b}',
 
+  yourProfile: 'Tu perfil',
+  yourProfileHelp: 'Nombre y avatar de Pancito. Puedes cambiarlos cuando quieras.',
+  profileSetupHelp:
+    'Elige cómo te verán: un nombre y un avatar de PancitoLandia.',
+  playerName: 'Tu nombre',
+  playerNamePlaceholder: 'Tu nombre',
+  playerNameHelp: '2–16 caracteres.',
+  playerAnonymous: 'Jugador',
+  chooseAvatar: 'Elige tu avatar',
+  editProfile: 'Editar perfil',
+  save: 'Guardar',
+
   duel: 'Duelo',
   duelNeedAccount:
     'Para duelos en tiempo real necesitas una cuenta en la nube. Pancito no arbitra fantasmas.',
@@ -508,6 +520,17 @@ const en: Record<keyof typeof es, string> = {
   previousStory: 'Previous story',
   nextStory: 'Next story',
   storyOf: '{a} of {b}',
+
+  yourProfile: 'Your profile',
+  yourProfileHelp: 'Your name and Pancito avatar. Change them anytime.',
+  profileSetupHelp: 'Choose how you’ll appear: a name and a PancitoLandia avatar.',
+  playerName: 'Your name',
+  playerNamePlaceholder: 'Your name',
+  playerNameHelp: '2–16 characters.',
+  playerAnonymous: 'Player',
+  chooseAvatar: 'Choose your avatar',
+  editProfile: 'Edit profile',
+  save: 'Save',
 
   duel: 'Duel',
   duelNeedAccount:

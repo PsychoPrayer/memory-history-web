@@ -78,8 +78,13 @@ export function Duel() {
   const [joiningInvite, setJoiningInvite] = useState(false)
   const [hubMode, setHubMode] = useState<HubMode>('home')
   const [joinCode, setJoinCode] = useState('')
+  const playerName = useSave((state) => state.settings.playerName)
   const [usernameDraft, setUsernameDraft] = useState('')
   const inviteJoinInFlight = useRef(false)
+
+  useEffect(() => {
+    if (!usernameDraft && playerName) setUsernameDraft(playerName)
+  }, [playerName, usernameDraft])
 
   useEffect(() => subscribeCloud((_status, nextUser) => setUser(nextUser)), [])
 
