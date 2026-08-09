@@ -274,7 +274,7 @@ const es = {
   duelLeaveRoom: 'Salir de la sala',
   duelStayInRoom: 'Misma sala · código {code}. Otra ronda arranca la cuenta atrás sola.',
   duelRematchSetupNeeded:
-    'Falta actualizar rematch en Supabase. Ejecuta supabase/duel_rematch.sql en el SQL Editor y pulsa otra vez.',
+    'Falta instalar “Otra ronda” en Supabase. Abre SQL Editor, pega todo supabase/duel_rematch.sql, Run, y vuelve a pulsar Otra ronda.',
   duelCancelled: 'La sala se canceló.',
   duelRecord: '{w} V · {l} D · {d} E',
   duelForfeit: 'Abandonar',
@@ -562,7 +562,7 @@ const en: Record<keyof typeof es, string> = {
   duelLeaveRoom: 'Leave room',
   duelStayInRoom: 'Same room · code {code}. Rematch starts the countdown on its own.',
   duelRematchSetupNeeded:
-    'Rematch is not installed in Supabase yet. Run supabase/duel_rematch.sql in the SQL Editor, then try again.',
+    'Rematch is not installed in Supabase yet. Open SQL Editor, paste all of supabase/duel_rematch.sql, Run, then tap Rematch again.',
   duelCancelled: 'The room was cancelled.',
   duelRecord: '{w} W · {l} L · {d} D',
   duelForfeit: 'Forfeit',

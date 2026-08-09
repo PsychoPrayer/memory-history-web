@@ -75,16 +75,24 @@ export function duelErrorMessage(err: unknown, fallback = 'Duel error'): string 
     const message = typeof record.message === 'string' ? record.message : ''
     if (message) {
       if (
-        /duel_profiles|duel_matches|duel_results|schema cache|does not exist|Could not find the table/i.test(
+        /rematch_duel|leave_duel|REMATCH_SETUP_NEEDED|Could not find the function/i.test(
           message,
         )
+      ) {
+        return 'REMATCH_SETUP_NEEDED'
+      }
+      if (
+        /Could not find the table.*duel_|relation ["']?public\.duel_/i.test(message) ||
+        (/duel_profiles/i.test(message) && /schema cache|does not exist/i.test(message))
       ) {
         return 'DUEL_SETUP_NEEDED'
       }
       return message
     }
   }
-  if (err instanceof Error && err.message) return err.message
+  if (err instanceof Error && err.message) {
+    return duelErrorMessage({ message: err.message }, fallback)
+  }
   return fallback
 }
 
@@ -345,16 +353,20 @@ export async function submitDuelResult(
   input: SubmitDuelResultInput,
 ): Promise<DuelMatch> {
   const supabase = requireClient()
-  const { error: insertError } = await supabase.from('duel_results').insert({
-    match_id: matchId,
-    user_id: userId,
-    completed: input.completed,
-    forfeited: Boolean(input.forfeited),
-    duration_ms: Math.max(0, Math.round(input.durationMs)),
-    mistakes: Math.max(0, input.mistakes),
-    stars: Math.min(3, Math.max(0, input.stars)),
-  })
-  if (insertError && insertError.code !== '23505') throw insertError
+  const { error: upsertError } = await supabase.from('duel_results').upsert(
+    {
+      match_id: matchId,
+      user_id: userId,
+      completed: input.completed,
+      forfeited: Boolean(input.forfeited),
+      duration_ms: Math.max(0, Math.round(input.durationMs)),
+      mistakes: Math.max(0, input.mistakes),
+      stars: Math.min(3, Math.max(0, input.stars)),
+      finished_at: new Date().toISOString(),
+    },
+    { onConflict: 'match_id,user_id' },
+  )
+  if (upsertError) throw upsertError
 
   const { data, error } = await supabase.rpc('resolve_duel', {
     p_match_id: matchId,
@@ -363,13 +375,63 @@ export async function submitDuelResult(
   return mapMatch(data as Record<string, unknown>)
 }
 
+async function rematchDuelClient(matchId: string): Promise<DuelMatch> {
+  const supabase = requireClient()
+  const current = await fetchMatch(matchId)
+  if (!current) throw new Error('REMATCH_SETUP_NEEDED')
+  if (
+    current.status === 'lobby' ||
+    current.status === 'countdown' ||
+    current.status === 'playing'
+  ) {
+    return current
+  }
+  if (current.status !== 'finished') throw new Error('Match is not finished')
+
+  const { error: deleteError } = await supabase
+    .from('duel_results')
+    .delete()
+    .eq('match_id', matchId)
+  if (deleteError) throw new Error('REMATCH_SETUP_NEEDED')
+
+  const levelId = current.rules.levelId
+  const patch = levelId
+    ? {
+        status: 'countdown' as const,
+        host_ready: true,
+        guest_ready: true,
+        starts_at: new Date(Date.now() + 3500).toISOString(),
+        winner_id: null,
+        is_draw: false,
+        updated_at: new Date().toISOString(),
+      }
+    : {
+        status: 'lobby' as const,
+        host_ready: false,
+        guest_ready: false,
+        starts_at: null,
+        winner_id: null,
+        is_draw: false,
+        updated_at: new Date().toISOString(),
+      }
+
+  const { data, error } = await supabase
+    .from('duel_matches')
+    .update(patch)
+    .eq('id', matchId)
+    .select('*')
+    .single()
+  if (error || !data) throw new Error('REMATCH_SETUP_NEEDED')
+  return mapMatch(data as Record<string, unknown>)
+}
+
 export async function rematchDuel(matchId: string): Promise<DuelMatch> {
   const supabase = requireClient()
   const { data, error } = await supabase.rpc('rematch_duel', {
     p_match_id: matchId,
   })
-  if (error) throw error
-  return mapMatch(data as Record<string, unknown>)
+  if (!error && data) return mapMatch(data as Record<string, unknown>)
+  return rematchDuelClient(matchId)
 }
 
 export async function leaveDuel(matchId: string): Promise<DuelMatch> {
@@ -377,8 +439,54 @@ export async function leaveDuel(matchId: string): Promise<DuelMatch> {
   const { data, error } = await supabase.rpc('leave_duel', {
     p_match_id: matchId,
   })
-  if (error) throw error
-  return mapMatch(data as Record<string, unknown>)
+  if (!error && data) return mapMatch(data as Record<string, unknown>)
+
+  const current = await fetchMatch(matchId)
+  if (!current) throw error ?? new Error('Match not found')
+
+  const { data: sessionData } = await supabase.auth.getSession()
+  const userId = sessionData.session?.user.id
+  if (!userId) throw new Error('Not authenticated')
+
+  if (current.host_id === userId) {
+    await supabase.from('duel_results').delete().eq('match_id', matchId)
+    const { data: updated, error: upError } = await supabase
+      .from('duel_matches')
+      .update({
+        status: 'cancelled',
+        guest_id: null,
+        host_ready: false,
+        guest_ready: false,
+        starts_at: null,
+        winner_id: null,
+        is_draw: false,
+        updated_at: new Date().toISOString(),
+      })
+      .eq('id', matchId)
+      .select('*')
+      .single()
+    if (upError || !updated) throw upError ?? new Error('Could not leave')
+    return mapMatch(updated as Record<string, unknown>)
+  }
+
+  await supabase.from('duel_results').delete().eq('match_id', matchId)
+  const { data: updated, error: upError } = await supabase
+    .from('duel_matches')
+    .update({
+      guest_id: null,
+      status: 'lobby',
+      host_ready: false,
+      guest_ready: false,
+      starts_at: null,
+      winner_id: null,
+      is_draw: false,
+      updated_at: new Date().toISOString(),
+    })
+    .eq('id', matchId)
+    .select('*')
+    .single()
+  if (upError || !updated) throw upError ?? new Error('Could not leave')
+  return mapMatch(updated as Record<string, unknown>)
 }
 
 const ROOM_STORAGE_KEY = 'mh-duel-room'

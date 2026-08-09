@@ -643,6 +643,8 @@ export function Duel() {
               await refreshMatch.current()
               void fetchMyProfile(user.id).then(setProfile)
             } else if (
+              message === 'REMATCH_SETUP_NEEDED' ||
+              message === 'DUEL_SETUP_NEEDED' ||
               /rematch_duel|Could not find the function|schema cache/i.test(
                 message,
               )

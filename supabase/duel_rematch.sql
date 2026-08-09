@@ -1,7 +1,28 @@
--- Rematch / leave helpers for existing duel installs.
--- Run (or re-run) in Supabase SQL Editor — safe to run multiple times.
+-- REQUIRED for "Otra ronda". Run all of this in Supabase → SQL Editor → Run.
+-- Safe to re-run.
 
--- Otra ronda: same room + players, wipe results, start countdown if level set.
+-- Allow players to clear results when rematching (client fallback + RPC).
+drop policy if exists "Players delete results for rematch" on public.duel_results;
+create policy "Players delete results for rematch"
+  on public.duel_results for delete
+  to authenticated
+  using (
+    exists (
+      select 1 from public.duel_matches m
+      where m.id = match_id
+        and (m.host_id = auth.uid() or m.guest_id = auth.uid())
+        and m.status in ('finished', 'lobby', 'cancelled')
+    )
+  );
+
+-- Also allow upsert updates on own result rows.
+drop policy if exists "Players update own result" on public.duel_results;
+create policy "Players update own result"
+  on public.duel_results for update
+  to authenticated
+  using (user_id = auth.uid())
+  with check (user_id = auth.uid());
+
 create or replace function public.rematch_duel(p_match_id uuid)
 returns public.duel_matches
 language plpgsql
@@ -24,7 +45,6 @@ begin
     raise exception 'Not a player in this match';
   end if;
 
-  /* Idempotent: if someone already rematched, return current row. */
   if m.status in ('lobby', 'countdown', 'playing') then
     return m;
   end if;
@@ -37,7 +57,6 @@ begin
   end if;
 
   level_id := coalesce(m.rules->>'levelId', '');
-
   delete from public.duel_results where match_id = p_match_id;
 
   if level_id <> '' then
@@ -73,7 +92,6 @@ $$;
 revoke all on function public.rematch_duel(uuid) from public;
 grant execute on function public.rematch_duel(uuid) to authenticated;
 
--- Leave room: guest frees seat; host cancels the room.
 create or replace function public.leave_duel(p_match_id uuid)
 returns public.duel_matches
 language plpgsql
