@@ -5,7 +5,7 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Quién fue el principal autor del borrador de la Declaración de Independencia?",
+      "enunciado": "¿Quién fue el principal autor del texto de la Declaración de Independencia?",
       "opciones": [
         "George Washington.",
         "Benjamin Franklin.",
@@ -14,7 +14,7 @@
       ]
     },
     "en": {
-      "enunciado": "Who was the principal author of the draft of the Declaration of Independence?",
+      "enunciado": "Who was the principal author of the text of the Declaration of Independence?",
       "opciones": [
         "George Washington.",
         "Benjamin Franklin.",
@@ -29,7 +29,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué dos padres fundadores y ex-presidentes murieron exactamente el mismo día, el 4 de julio de 1826 (50 aniversario de la firma)?",
+      "enunciado": "¿Qué dos padres fundadores y expresidentes murieron el mismo día, el 4 de julio de 1826?",
       "opciones": [
         "George Washington y Alexander Hamilton.",
         "Thomas Jefferson y John Adams",
@@ -38,7 +38,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which two Founding Fathers and former presidents died on the exact same day—July 4, 1826 (the 50th anniversary of the signing)?",
+      "enunciado": "Which two Founding Fathers and former presidents died on the same day, July 4, 1826?",
       "opciones": [
         "George Washington and Alexander Hamilton.",
         "Thomas Jefferson and John Adams",
@@ -53,7 +53,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿En qué ciudad se firmó originalmente la Declaración de Independencia?",
+      "enunciado": "¿En qué ciudad se adoptó la Declaración de Independencia en 1776?",
       "opciones": [
         "Washington D.C.",
         "Nueva York.",
@@ -62,7 +62,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which city was the Declaration of Independence originally signed?",
+      "enunciado": "In which city was the Declaration of Independence adopted in 1776?",
       "opciones": [
         "Washington D.C.",
         "New York.",
@@ -81,7 +81,7 @@
       "opciones": [
         "Flores de colores.",
         "Rayas marineras.",
-        "Cuadros rojos y blancos (Gingham)",
+        "Cuadros rojos y blancos",
         "Color sólido verde bosque."
       ]
     },
@@ -90,7 +90,7 @@
       "opciones": [
         "Colorful floral prints.",
         "Nautical stripes.",
-        "Red and white checks (Gingham)",
+        "Red and white checks",
         "Solid forest green."
       ]
     }
@@ -101,7 +101,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál de estos platos es considerado un \"imprescindible\" en un picnic clásico estadounidense por su facilidad de transporte y sabor?",
+      "enunciado": "¿Cuál de estos platos es un clásico fácil de llevar en un picnic estadounidense?",
       "opciones": [
         "Sopa de cebolla caliente.",
         "Helado de vainilla derretido.",
@@ -110,7 +110,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which of these dishes is considered a \"must-have\" at a classic American picnic due to its portability and flavor?",
+      "enunciado": "Which of these dishes is a classic, easy-to-carry food at an American picnic?",
       "opciones": [
         "Hot onion soup.",
         "Melted vanilla ice cream.",
@@ -125,21 +125,21 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿En qué famoso parque de la ciudad de Nueva York se encuentra el \"Sheep Meadow\", uno de los lugares más populares del mundo para hacer un picnic urbano?",
+      "enunciado": "¿En qué famoso parque de Nueva York está el Sheep Meadow, un lugar muy popular para picnic?",
       "opciones": [
         "Prospect Park.",
         "Central Park",
         "Bryant Park.",
-        "High Line Park"
+        "High Line."
       ]
     },
     "en": {
-      "enunciado": "In which famous New York City park is \"Sheep Meadow\" located—one of the most popular spots in the world for an urban picnic?",
+      "enunciado": "In which famous New York City park is Sheep Meadow, a very popular picnic spot?",
       "opciones": [
         "Prospect Park.",
         "Central Park",
         "Bryant Park.",
-        "High Line Park."
+        "High Line."
       ]
     }
   },
@@ -197,16 +197,16 @@
     "numero": 3,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Cuál es el río más largo de los Estados Unidos, que fluye desde las Rocosas hasta el río Misisipi?",
+      "enunciado": "¿Cuál es el río más largo de los Estados Unidos, que nace en las Rocosas y desemboca en el Misisipi?",
       "opciones": [
         "Río Grande.",
         "Río Colorado.",
         "Río Hudson.",
-        "Rio Musuri"
+        "Río Misuri"
       ]
     },
     "en": {
-      "enunciado": "What is the longest river in the United States, flowing from the Rocky Mountains to the Mississippi River?",
+      "enunciado": "What is the longest river in the United States, rising in the Rockies and flowing into the Mississippi?",
       "opciones": [
         "Rio Grande.",
         "Colorado River.",
@@ -245,7 +245,7 @@
     "numero": 2,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Aproximadamente cuántos años de historia geológica están expuestos en las capas de roca más profundas del cañón?",
+      "enunciado": "¿Cuántos años de historia de la Tierra muestran, más o menos, las capas más profundas del cañón?",
       "opciones": [
         "10 millones de años.",
         "500 millones de años.",
@@ -254,7 +254,7 @@
       ]
     },
     "en": {
-      "enunciado": "Approximately how many years of geological history are exposed in the deepest rock layers of the canyon?",
+      "enunciado": "About how many years of Earth's history do the canyon's deepest rock layers show?",
       "opciones": [
         "10 million years.",
         "500 million years.",
@@ -341,19 +341,19 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué factor ambiental principal llevó a la especie al borde de la extinción en el siglo XX?",
+      "enunciado": "¿Qué factor llevó a las águilas calvas casi a la extinción en el siglo XX?",
       "opciones": [
         "La caza excesiva por sus plumas.",
-        "El uso del pesticida DDT, que debilitaba los cascarones de sus huevos",
+        "El pesticida DDT, que debilitaba la cáscara de sus huevos",
         "La pérdida de hábitat debido a la deforestación.",
         "Una enfermedad viral que afectaba solo a las aves rapaces."
       ]
     },
     "en": {
-      "enunciado": "What primary environmental factor drove the species to the brink of extinction in the 20th century?",
+      "enunciado": "What factor nearly drove bald eagles to extinction in the 20th century?",
       "opciones": [
         "Excessive hunting for their feathers.",
-        "The use of the pesticide DDT, which weakened their eggshells.",
+        "The pesticide DDT, which weakened their eggshells",
         "Habitat loss due to deforestation.",
         "A viral disease that affected only birds of prey."
       ]
@@ -389,7 +389,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿En qué ciudad pronunció Lincoln su discurso más famoso, que comienza con la frase \"Hace cuatro veintenas y siete años...\"?",
+      "enunciado": "¿En qué lugar pronunció Lincoln su discurso más famoso, que empieza con \"Hace cuatro veintenas y siete años...\"?",
       "opciones": [
         "Washington D.C.",
         "Richmond.",
@@ -398,7 +398,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which city did Lincoln deliver his most famous speech, which begins with the phrase \"Four score and seven years ago...\"?",
+      "enunciado": "Where did Lincoln deliver his most famous speech, which begins \"Four score and seven years ago...\"?",
       "opciones": [
         "Washington D.C.",
         "Richmond.",
@@ -437,20 +437,20 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es la única frase oficial que Smokey Bear ha utilizado en sus campañas desde 1944 (con una pequeña variación en 2001)?",
+      "enunciado": "¿Cuál es la famosa frase de las campañas de Smokey Bear?",
       "opciones": [
         "\"Cuida los árboles, son vida\".",
         "\"El fuego es el enemigo del bosque\".",
-        "\"Solo TÚ puedes prevenir los incendios forestales\"",
+        "Solo TÚ puedes prevenir los incendios forestales",
         "\"No dejes rastro en la naturaleza\"."
       ]
     },
     "en": {
-      "enunciado": "What is the only official catchphrase Smokey Bear has used in his campaigns since 1944 (with a slight variation in 2001)?",
+      "enunciado": "What is Smokey Bear's famous campaign catchphrase?",
       "opciones": [
         "\"Care for the trees; they are life.\"",
         "\"Fire is the forest's enemy.\"",
-        "\"Only YOU Can Prevent Forest Fires\"",
+        "Only YOU Can Prevent Forest Fires",
         "\"Leave no trace in nature.\""
       ]
     }
@@ -461,19 +461,19 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "Smokey Bear es tan famoso que el Servicio Postal de los EE. UU. le asignó algo que muy pocas personas o personajes tienen. ¿Qué es?",
+      "enunciado": "Smokey Bear es tan famoso que el correo de EE. UU. le dio algo muy poco habitual. ¿Qué fue?",
       "opciones": [
         "Su propio avión privado.",
-        "Su propio código postal (ZIP Code) exclusivo",
+        "Su propio código postal exclusivo",
         "Una oficina de correos dentro de una cueva.",
         "El derecho a enviar cartas gratis de por vida."
       ]
     },
     "en": {
-      "enunciado": "Smokey Bear is so famous that the U.S. Postal Service assigned him something that very few people or characters possess. What is it?",
+      "enunciado": "Smokey Bear is so famous that the U.S. mail service gave him something very unusual. What was it?",
       "opciones": [
         "His own private plane.",
-        "His own exclusive postal code (ZIP Code)",
+        "His own exclusive ZIP code",
         "A post office inside a cave.",
         "The right to send letters for free for life."
       ]
@@ -490,7 +490,7 @@
         "Oso Grizzly.",
         "Oso Negro Americano",
         "Oso Pardo de Alaska.",
-        "Osos Kodiak"
+        "Oso Kodiak."
       ]
     },
     "en": {
@@ -499,7 +499,7 @@
         "Grizzly Bear.",
         "American Black Bear",
         "Alaskan Brown Bear.",
-        "Kodiak Bear."
+        "Kodiak bear."
       ]
     }
   },
@@ -509,7 +509,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿En qué ciudad estadounidense terminaba oficialmente la Ruta 66, marcada hoy por un famoso letrero en su muelle?",
+      "enunciado": "¿En qué ciudad terminaba oficialmente la Ruta 66, marcada hoy por un letrero en el muelle?",
       "opciones": [
         "Los Ángeles.",
         "Santa Mónica",
@@ -518,7 +518,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which U.S. city did Route 66 officially end—a spot marked today by a famous sign on its pier?",
+      "enunciado": "In which city did Route 66 officially end, marked today by a sign on the pier?",
       "opciones": [
         "Los Angeles.",
         "Santa Monica",
@@ -533,7 +533,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Quién apodó a la Ruta 66 como \"La Carretera Madre\" (The Mother Road) en su famosa novela de 1939, Las uvas de la ira?",
+      "enunciado": "¿Quién apodó a la Ruta 66 como \"La Carretera Madre\" en su novela de 1939 Las uvas de la ira?",
       "opciones": [
         "Mark Twain.",
         "Jack Kerouac.",
@@ -542,7 +542,7 @@
       ]
     },
     "en": {
-      "enunciado": "Who nicknamed Route 66 \"The Mother Road\" in his famous 1939 novel, *The Grapes of Wrath*?",
+      "enunciado": "Who nicknamed Route 66 \"The Mother Road\" in his 1939 novel The Grapes of Wrath?",
       "opciones": [
         "Mark Twain.",
         "Jack Kerouac.",
@@ -581,7 +581,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cómo se llama el trofeo que recibe el equipo ganador del Super Bowl cada año?",
+      "enunciado": "¿Cómo se llama el trofeo que recibe el equipo ganador del Super Bowl?",
       "opciones": [
         "Copa Stanley.",
         "Trofeo Vince Lombardi",
@@ -590,7 +590,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the name of the trophy awarded to the winning team of the Super Bowl each year?",
+      "enunciado": "What is the name of the trophy given to the Super Bowl winning team?",
       "opciones": [
         "Stanley Cup.",
         "Vince Lombardi Trophy",
@@ -605,7 +605,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuántas yardas debe avanzar un equipo en cuatro oportunidades (downs) para obtener un nuevo set de jugadas?",
+      "enunciado": "¿Cuántas yardas debe avanzar un equipo en cuatro intentos para conseguir otra serie de jugadas?",
       "opciones": [
         "5 yardas.",
         "10 yardas",
@@ -614,7 +614,7 @@
       ]
     },
     "en": {
-      "enunciado": "How many yards must a team advance in four opportunities (downs) to earn a new set of downs?",
+      "enunciado": "How many yards must a team advance in four downs to earn another set of downs?",
       "opciones": [
         "5 yards.",
         "10 yards",
@@ -749,20 +749,20 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "Además de ser aviadora, ¿en qué otra industria incursionó Amelia diseñando sus propios productos?",
+      "enunciado": "Además de ser aviadora, ¿en qué otra industria diseñó Amelia sus propios productos?",
       "opciones": [
         "En la industria automotriz.",
         "En la fabricación de relojes de precisión.",
-        "En la moda y el diseño de equipaje",
+        "En la moda",
         "En la producción de cosméticos para deportistas."
       ]
     },
     "en": {
-      "enunciado": "In addition to being an aviator, in which other industry did Amelia venture by designing her own products?",
+      "enunciado": "Besides flying, in which other industry did Amelia design her own products?",
       "opciones": [
         "The automotive industry.",
         "Precision watchmaking.",
-        "Fashion and luggage design",
+        "Fashion",
         "Cosmetics for athletes."
       ]
     }
@@ -821,7 +821,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál es el estado de la Unión que tiene al Apple Pie como su postre oficial oficial?",
+      "enunciado": "¿Cuál es el estado de la Unión que tiene al apple pie como su postre oficial?",
       "opciones": [
         "Nueva York.",
         "Vermont",
@@ -917,19 +917,19 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "Para demostrar que el puente era seguro tras su inauguración, ¿qué famoso circo cruzó 21 animales por él en 1884?",
+      "enunciado": "Para demostrar que el puente era seguro, ¿qué famoso circo cruzó elefantes por él en 1884?",
       "opciones": [
         "Un desfile de caballos de carrera.",
-        "El circo de P.T. Barnum con una manada de elefantes",
+        "El circo de P.T. Barnum",
         "Una caravana de camellos del Sahara.",
         "Un grupo de leones enjaulados."
       ]
     },
     "en": {
-      "enunciado": "To demonstrate that the bridge was safe following its inauguration, which famous circus led 21 animals across it in 1884?",
+      "enunciado": "To show the bridge was safe, which famous circus walked elephants across it in 1884?",
       "opciones": [
         "A parade of racehorses.",
-        "P.T. Barnum's circus with a herd of elephants",
+        "P.T. Barnum's circus",
         "A caravan of camels from the Sahara.",
         "A group of caged lions."
       ]
@@ -941,7 +941,7 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es la función principal de la joroba de músculo que los Grizzly tienen en sus hombros?",
+      "enunciado": "¿Para qué sirve principalmente la joroba de músculo de los hombros del grizzly?",
       "opciones": [
         "Almacenar grasa para la hibernación.",
         "Ayudarles a nadar en ríos caudalosos.",
@@ -950,7 +950,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the primary function of the muscle hump that grizzlies have on their shoulders?",
+      "enunciado": "What is the main job of the muscle hump on a grizzly's shoulders?",
       "opciones": [
         "To store fat for hibernation.",
         "To help them swim in fast-flowing rivers.",
@@ -1061,21 +1061,21 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué famoso inventor compitió con Thomas Edison para construir la primera central hidroeléctrica a gran escala en el Niágara?",
+      "enunciado": "¿Qué famoso inventor trabajó con corriente alterna frente a Edison en la primera gran central hidroeléctrica del Niágara?",
       "opciones": [
         "Alexander Graham Bell.",
         "Nikola Tesla",
         "Guglielmo Marconi.",
-        "George Washington (usando el sistema Tesla)."
+        "Samuel Morse."
       ]
     },
     "en": {
-      "enunciado": "Which famous inventor competed with Thomas Edison to build the first large-scale hydroelectric power plant at Niagara?",
+      "enunciado": "Which famous inventor worked with alternating current against Edison on the first large hydroelectric plant at Niagara?",
       "opciones": [
         "Alexander Graham Bell.",
         "Nikola Tesla",
         "Guglielmo Marconi.",
-        "George Westinghouse (using Tesla's system)."
+        "Samuel Morse."
       ]
     }
   },
@@ -1085,21 +1085,21 @@
     "numero": 1,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Aproximadamente cuántos años le toma a un saguaro promedio desarrollar su primer brazo lateral?",
+      "enunciado": "¿Cuántos años suele tardar un saguaro en desarrollar su primer brazo?",
       "opciones": [
         "10 años.",
         "25 años.",
         "50 años.",
-        "75 a 100 años"
+        "Unos 75 años"
       ]
     },
     "en": {
-      "enunciado": "Approximately how many years does it take for an average saguaro to develop its first lateral arm?",
+      "enunciado": "About how many years does a saguaro usually take to grow its first arm?",
       "opciones": [
         "10 years.",
         "25 years.",
         "50 years.",
-        "75 to 100 years"
+        "About 75 years"
       ]
     }
   },
@@ -1157,16 +1157,16 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué se encuentra en la cúspide de la cúpula del Capitolio, mirando hacia el este?",
+      "enunciado": "¿Qué estatua corona la cúpula del Capitolio, mirando hacia el este?",
       "opciones": [
         "Una bandera de oro sólido.",
         "Un águila calva de bronce.",
-        "La Estatua de la Libertad (Freedom Statue)",
+        "La Estatua Freedom (Libertad del Capitolio)",
         "Una linterna de gas original."
       ]
     },
     "en": {
-      "enunciado": "What sits atop the Capitol dome, facing east?",
+      "enunciado": "What statue sits atop the Capitol dome, facing east?",
       "opciones": [
         "A solid gold flag.",
         "A bronze bald eagle.",
@@ -1205,19 +1205,19 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Por qué el Capitolio se encuentra en el centro geográfico del diseño original de Washington D.C.?",
+      "enunciado": "¿Por qué el Capitolio está en el centro del diseño original de Washington D.C.?",
       "opciones": [
         "Para que fuera más fácil de defender.",
-        "Para dividir la ciudad en sus cuatro cuadrantes (NW, NE, SW, SE)",
+        "Para dividir la ciudad en cuatro cuadrantes",
         "Porque era el punto más alto de la ciudad.",
         "Fue una decisión puramente estética de Thomas Jefferson."
       ]
     },
     "en": {
-      "enunciado": "Why is the Capitol located at the geographic center of the original design for Washington, D.C.?",
+      "enunciado": "Why is the Capitol at the center of the original design of Washington, D.C.?",
       "opciones": [
         "To make it easier to defend.",
-        "To divide the city into its four quadrants (NW, NE, SW, SE)",
+        "To divide the city into four quadrants",
         "Because it was the highest point in the city.",
         "It was a purely aesthetic decision by Thomas Jefferson."
       ]
@@ -1253,7 +1253,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué inspirado poeta escribió \"The Star-Spangled Banner\" (el himno nacional) tras ver la bandera ondear después de un bombardeo en 1814?",
+      "enunciado": "¿Qué poeta escribió \"The Star-Spangled Banner\" tras ver la bandera ondear después de un bombardeo en 1814?",
       "opciones": [
         "Walt Whitman.",
         "Robert Frost.",
@@ -1262,7 +1262,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which inspired poet wrote \"The Star-Spangled Banner\" (the national anthem) after seeing the flag waving following a bombardment in 1814?",
+      "enunciado": "Which poet wrote \"The Star-Spangled Banner\" after seeing the flag still waving after a bombardment in 1814?",
       "opciones": [
         "Walt Whitman.",
         "Robert Frost.",
@@ -1280,7 +1280,7 @@
       "enunciado": "¿Qué representan específicamente las 13 franjas horizontales en el diseño de la bandera?",
       "opciones": [
         "Los firmantes principales de la Constitución.",
-        "Las 13 batallas mas importantes de la Revolución.",
+        "Las 13 batallas más importantes de la Revolución.",
         "Las colonias originales que declararon su independencia.",
         "Los primeros 13 estados en unirse tras la Guerra Civil."
       ]
@@ -1349,7 +1349,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿De qué material está recubierta la llama de la antorcha actual (instalada en la restauración de 1986)?",
+      "enunciado": "¿De qué material está recubierta la llama de la antorcha actual de la estatua?",
       "opciones": [
         "Cobre pintado de amarillo.",
         "Vidrio ámbar soplado.",
@@ -1358,7 +1358,7 @@
       ]
     },
     "en": {
-      "enunciado": "What material covers the flame of the current torch (installed during the 1986 restoration)?",
+      "enunciado": "What material covers the flame of the statue's current torch?",
       "opciones": [
         "Copper painted yellow.",
         "Blown amber glass.",
@@ -1397,16 +1397,16 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "Durante el aterrizaje, el transbordador no tenía motores encendidos. ¿Cómo se le llamaba comúnmente debido a su falta de propulsión en esa fase?",
+      "enunciado": "En el aterrizaje el transbordador iba sin motores. ¿Cómo se le llamaba por eso?",
       "opciones": [
         "El Halcón de Hierro.",
-        "El Ladrillo Volador (Flying Brick)",
+        "El Ladrillo Volador",
         "La Saeta Silenciosa.",
         "El Planeador de Titanio."
       ]
     },
     "en": {
-      "enunciado": "During landing, the shuttle had no engines running. What was it commonly called due to its lack of propulsion during that phase?",
+      "enunciado": "On landing the shuttle had no engines running. What nickname did it get for that?",
       "opciones": [
         "The Iron Falcon.",
         "The Flying Brick",
@@ -1421,21 +1421,21 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué parte del sistema del transbordador era la única que NO se recuperaba ni se reutilizaba después del lanzamiento?",
+      "enunciado": "¿Qué parte del sistema del transbordador NO se recuperaba ni se reutilizaba tras el lanzamiento?",
       "opciones": [
-        "El Orbitador.",
-        "Los Cohetes Aceleradores Sólidos (SRB).",
-        "El Tanque Externo naranja",
+        "El orbitador.",
+        "Los cohetes aceleradores sólidos.",
+        "El tanque externo naranja",
         "Los motores principales."
       ]
     },
     "en": {
-      "enunciado": "Which part of the shuttle system was the only one that was NOT recovered or reused after launch?",
+      "enunciado": "Which part of the shuttle system was NOT recovered or reused after launch?",
       "opciones": [
-        "The Orbiter.",
-        "The Solid Rocket Boosters (SRBs).",
-        "The orange External Tank",
-        "The main engines"
+        "The orbiter.",
+        "The solid rocket boosters.",
+        "The orange external tank",
+        "The main engines."
       ]
     }
   },
@@ -1469,7 +1469,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cómo se llama la línea imaginaria que atraviesa las Rocosas y separa las cuencas hidrográficas que desembocan en océanos diferentes?",
+      "enunciado": "¿Cómo se llama la línea que atraviesa las Rocosas y separa las aguas que van a océanos distintos?",
       "opciones": [
         "La Línea de Fuego.",
         "El Meridiano del Oeste.",
@@ -1478,7 +1478,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the name of the imaginary line that traverses the Rockies and separates the drainage basins that flow into different oceans?",
+      "enunciado": "What is the name of the line that runs through the Rockies and splits waters flowing to different oceans?",
       "opciones": [
         "The Line of Fire.",
         "The Western Meridian.",
@@ -1493,19 +1493,19 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué fenómeno geológico principal formó la estructura básica de las Rocosas hace aproximadamente 80 a 55 millones de años?",
+      "enunciado": "¿Qué fenómeno geológico principal formó la estructura básica de las Rocosas hace decenas de millones de años?",
       "opciones": [
         "Impactos de meteoritos masivos.",
-        "La Orogenia Laramide (colisión de placas tectónicas)",
+        "El choque y el empuje de placas tectónicas",
         "Erupciones volcánicas en cadena.",
-        "El peso de los glaciares de la Edad de Hielo"
+        "El peso de los glaciares de la Edad de Hielo."
       ]
     },
     "en": {
-      "enunciado": "What major geological phenomenon formed the basic structure of the Rockies approximately 80 to 55 million years ago?",
+      "enunciado": "What major geological process formed the basic structure of the Rockies tens of millions of years ago?",
       "opciones": [
         "Massive meteorite impacts.",
-        "The Laramide Orogeny (collision of tectonic plates)",
+        "The collision and uplift of tectonic plates",
         "A chain of volcanic eruptions.",
         "The weight of Ice Age glaciers."
       ]
@@ -1517,19 +1517,19 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿A qué familia de aves pertenece técnicamente el correcaminos?",
+      "enunciado": "¿A qué familia de aves pertenece el correcaminos?",
       "opciones": [
         "Al de los halcones.",
-        "Al de los cucos (Cuculidae)",
+        "A la de los cucos",
         "Al de las avestruces.",
         "Al de los faisanes."
       ]
     },
     "en": {
-      "enunciado": "To which family of birds does the roadrunner technically belong?",
+      "enunciado": "To which bird family does the roadrunner belong?",
       "opciones": [
         "The hawks.",
-        "The cuckoos (Cuculidae)",
+        "The cuckoos",
         "The ostriches.",
         "The pheasants."
       ]
@@ -1565,19 +1565,19 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué característica física única tienen las huellas del correcaminos?",
+      "enunciado": "¿Qué tienen de especial las huellas del correcaminos?",
       "opciones": [
         "Solo tienen dos dedos hacia adelante.",
-        "Son zigodáctilas (dos dedos hacia adelante y dos hacia atrás)",
+        "Dos dedos hacia adelante y dos hacia atrás",
         "Tienen una membrana entre los dedos.",
         "No dejan huella en la arena fina."
       ]
     },
     "en": {
-      "enunciado": "What unique physical characteristic do the roadrunner's footprints possess?",
+      "enunciado": "What is special about a roadrunner's footprints?",
       "opciones": [
         "They have only two toes pointing forward.",
-        "They are zygodactyl (two toes pointing forward and two pointing backward)",
+        "Two toes point forward and two point backward",
         "They have webbing between the toes.",
         "They leave no imprint in fine sand."
       ]
@@ -1589,7 +1589,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál es el nombre del árbol individual más grande del mundo (por volumen) que se encuentra en el Parque Nacional de las Secuoyas?",
+      "enunciado": "¿Cómo se llama el árbol más grande del mundo por volumen, en el Parque Nacional de las Secuoyas?",
       "opciones": [
         "Hyperion.",
         "General Sherman",
@@ -1598,7 +1598,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the name of the largest individual tree in the world (by volume) found in Sequoia National Park?",
+      "enunciado": "What is the name of the world's largest tree by volume, found in Sequoia National Park?",
       "opciones": [
         "Hyperion.",
         "General Sherman",
@@ -1685,19 +1685,19 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cómo se llama el evento de rodeo en el que un jinete debe saltar de su caballo para derribar a un novillo sujetándolo por los cuernos?",
+      "enunciado": "¿Cómo se llama el evento de rodeo en el que el jinete salta del caballo y derriba a un novillo por los cuernos?",
       "opciones": [
         "Lazo doble.",
-        "Derribo de novillo o \"Steer Wrestling\"",
+        "Derribo de novillo",
         "Marcaje de becerros.",
         "Rodeo de rescate."
       ]
     },
     "en": {
-      "enunciado": "What is the name of the rodeo event in which a rider must jump from their horse to wrestle a steer to the ground by grabbing it by the horns?",
+      "enunciado": "What rodeo event has a rider jump from a horse and wrestle a steer down by the horns?",
       "opciones": [
         "Team Roping.",
-        "Steer Wrestling",
+        "Steer wrestling",
         "Calf Roping.",
         "Rescue Rodeo."
       ]
@@ -1709,7 +1709,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es la ciudad de Nevada conocida por albergar las Finales Nacionales de Rodeo (NFR), el evento más importante del mundo en este deporte?",
+      "enunciado": "¿Qué ciudad de Nevada alberga las Finales Nacionales de Rodeo, el gran evento del deporte?",
       "opciones": [
         "Reno.",
         "Carson City.",
@@ -1718,7 +1718,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which city in Nevada is known for hosting the National Finals Rodeo (NFR)—the most important event in the world for this sport?",
+      "enunciado": "Which Nevada city hosts the National Finals Rodeo, the sport's biggest event?",
       "opciones": [
         "Reno.",
         "Carson City.",
@@ -1757,16 +1757,16 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cómo se conocen colectivamente las primeras diez enmiendas a la Constitución, que garantizan libertades individuales?",
+      "enunciado": "¿Cómo se conocen las primeras diez enmiendas a la Constitución, que protegen libertades individuales?",
       "opciones": [
         "El Gran Compromiso.",
-        "La Carta de Derechos (Bill of Rights)",
+        "La Carta de Derechos",
         "El Pacto de Libertad.",
         "Los Artículos de la Libertad."
       ]
     },
     "en": {
-      "enunciado": "What are the first ten amendments to the Constitution—which guarantee individual liberties—collectively known as?",
+      "enunciado": "What are the first ten amendments to the Constitution, which protect individual liberties, called?",
       "opciones": [
         "The Great Compromise.",
         "The Bill of Rights",
@@ -1805,7 +1805,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿En qué conflicto bélico se utilizó por primera vez de forma masiva el famoso cartel del Tío Sam diciendo \"I Want YOU\"?",
+      "enunciado": "¿En qué guerra se usó por primera vez a gran escala el cartel del Tío Sam diciendo \"I Want YOU\"?",
       "opciones": [
         "Guerra Civil Americana.",
         "Primera Guerra Mundial",
@@ -1814,7 +1814,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which military conflict was the famous Uncle Sam poster—saying \"I Want YOU\"—first used on a massive scale?",
+      "enunciado": "In which war was the Uncle Sam \"I Want YOU\" poster first used on a massive scale?",
       "opciones": [
         "American Civil War.",
         "World War I",
@@ -1901,20 +1901,20 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cómo se llama la estructura donde viven los castores, construida con palos y lodo en medio del estanque?",
+      "enunciado": "¿Cómo se llama la casa de palos y lodo donde viven los castores en el estanque?",
       "opciones": [
         "Dique.",
         "Madriguera subterránea.",
-        "Madriguera o \"Lodge\"",
+        "Madriguera",
         "Nido flotante."
       ]
     },
     "en": {
-      "enunciado": "What is the name of the structure where beavers live—built from sticks and mud in the middle of the pond?",
+      "enunciado": "What is the stick-and-mud home beavers build in the pond called?",
       "opciones": [
         "Dam.",
         "Underground burrow.",
-        "Lodge.",
+        "A lodge",
         "Floating nest"
       ]
     }
@@ -1925,20 +1925,20 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál es la función principal de la cola plana del castor además de servir como timón?",
+      "enunciado": "Además de servir de timón, ¿para qué usa el castor su cola plana?",
       "opciones": [
         "Almacenar comida para el invierno.",
-        "Golpear el agua para avisar de un peligro a otros castores",
+        "Golpear el agua para avisar de un peligro",
         "Cavar túneles en el lodo.",
         "Atrapar peces pequeños."
       ]
     },
     "en": {
-      "enunciado": "What is the primary function of the beaver's flat tail, aside from serving as a rudder?",
+      "enunciado": "Besides steering, what else does a beaver use its flat tail for?",
       "opciones": [
         "To store food for the winter.",
-        "Slapping the water to warn other beavers of danger.",
-        "Digging tunnel in the mud.",
+        "Slapping the water to warn other beavers of danger",
+        "Digging tunnels in the mud.",
         "Catching small fish."
       ]
     }
@@ -1973,19 +1973,19 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál fue el seudónimo que utilizó Franklin para escribir su famoso almanaque lleno de consejos y refranes?",
+      "enunciado": "¿Con qué seudónimo publicó Franklin su famoso almanaque de consejos y refranes?",
       "opciones": [
         "Benjamin el Sabio.",
-        "Richard Saunders (Poor Richard)",
+        "Poor Richard",
         "El Silencioso.",
         "Thomas Paine."
       ]
     },
     "en": {
-      "enunciado": "What pseudonym did Franklin use to write his famous almanac, filled with advice and proverbs?",
+      "enunciado": "Under what pen name did Franklin publish his famous almanac of advice and proverbs?",
       "opciones": [
         "Benjamin the Wise.",
-        "Richard Saunders (Poor Richard)",
+        "Poor Richard",
         "The Silent One.",
         "Thomas Paine."
       ]
@@ -2024,7 +2024,7 @@
       "enunciado": "¿Cómo se llamaba el módulo lunar en el que aterrizaron Armstrong y Aldrin?",
       "opciones": [
         "Columbia.",
-        "Eagle (El Águila)",
+        "Eagle",
         "Discovery.",
         "Odyssey."
       ]
@@ -2069,7 +2069,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿En qué zona específica de la Luna ocurrió el histórico alunizaje?",
+      "enunciado": "¿En qué zona de la Luna ocurrió el alunizaje del Apolo 11?",
       "opciones": [
         "Océano de las Tormentas.",
         "Mar de la Tranquilidad",
@@ -2078,10 +2078,10 @@
       ]
     },
     "en": {
-      "enunciado": "In which specific area of ​​the Moon did the historic lunar landing take place?",
+      "enunciado": "In which area of the Moon did the Apollo 11 landing take place?",
       "opciones": [
         "Ocean of Storms.",
-        "Sea of ​​Tranquility",
+        "Sea of Tranquility",
         "Copernicus Crater.",
         "Lunar Appalachian Mountains."
       ]
@@ -2117,7 +2117,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál era el nombre oficial que recibía la parte trasera del barco, donde se ubicaba la gran rueda de paletas que lo impulsaba?",
+      "enunciado": "¿Cómo se llama la parte trasera del barco, donde iba a menudo la gran rueda de paletas?",
       "opciones": [
         "Proa.",
         "Estribor.",
@@ -2126,7 +2126,7 @@
       ]
     },
     "en": {
-      "enunciado": "What was the official name for the rear section of the boat—the area where the large paddle wheel providing propulsion was located?",
+      "enunciado": "What is the rear of the boat called—the part where the big paddle wheel often sat?",
       "opciones": [
         "Bow.",
         "Starboard.",
@@ -2165,19 +2165,19 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué grupo de naciones formó una influyente confederación democrática en el noreste que sirvió de inspiración para los Padres Fundadores de EE. UU.?",
+      "enunciado": "¿Qué confederación democrática del noreste inspiró a los Padres Fundadores?",
       "opciones": [
         "Los Apaches.",
-        "La Confederación Iroquesa (Haudenosaunee)",
+        "La Confederación Iroquesa",
         "Los Cheroquis.",
         "Los Seminolas."
       ]
     },
     "en": {
-      "enunciado": "Which group of nations formed an influential democratic confederacy in the Northeast that served as an inspiration to the Founding Fathers of the United States?",
+      "enunciado": "Which democratic confederacy in the Northeast inspired the Founding Fathers?",
       "opciones": [
         "The Apaches.",
-        "The Iroquois Confederacy (Haudenosaunee)",
+        "The Iroquois Confederacy",
         "The Cherokees.",
         "The Seminoles."
       ]
@@ -2194,7 +2194,7 @@
         "Pueblo.",
         "Iglú.",
         "Tipi",
-        "Longhouse (Casa Larga)."
+        "Casa larga."
       ]
     },
     "en": {
@@ -2261,16 +2261,16 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "Existe una cámara \"secreta\" detrás de la cabeza de Abraham Lincoln. ¿Cómo se llama?",
+      "enunciado": "Hay una cámara escondida detrás de la cabeza de Lincoln. ¿Cómo se llama?",
       "opciones": [
         "El Búnker Presidencial.",
-        "El Salón de los Registros (Hall of Records)",
+        "El Salón de los Registros",
         "La Bóveda de la Libertad.",
         "El Almacén de Borglum."
       ]
     },
     "en": {
-      "enunciado": "There is a \"secret\" chamber located behind Abraham Lincoln's head. What is it called?",
+      "enunciado": "There is a hidden chamber behind Lincoln's head. What is it called?",
       "opciones": [
         "The Presidential Bunker",
         "The Hall of Records",
@@ -2405,19 +2405,19 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "Existe un mito popular sobre la dentadura de Washington. ¿De qué material estaban hechas realmente sus prótesis dentales más famosas?",
+      "enunciado": "Hay un mito sobre los dientes de Washington. ¿De qué estaban hechas realmente sus prótesis más famosas?",
       "opciones": [
         "De madera de cerezo.",
-        "De una mezcla de marfil de hipopótamo, oro y dientes humanos",
+        "Marfil, metal y dientes humanos",
         "De porcelana fina importada de China.",
         "De plata pura."
       ]
     },
     "en": {
-      "enunciado": "There is a popular myth regarding Washington's teeth. What material were his most famous dental prosthetics actually made of?",
+      "enunciado": "There is a myth about Washington's teeth. What were his most famous dentures actually made of?",
       "opciones": [
         "Cherry wood.",
-        "A mixture of hippopotamus ivory, gold, and human teeth",
+        "Ivory, metal, and human teeth",
         "Fine porcelain imported from China.",
         "Pure silver."
       ]
@@ -2453,21 +2453,21 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es el nombre científico correcto del animal comúnmente llamado búfalo en Norteamérica?",
+      "enunciado": "¿Cuál es el nombre correcto del animal al que a menudo se llama \"búfalo\" en Norteamérica?",
       "opciones": [
-        "Syncerus caffer.",
-        "Bubalus bubalis.",
-        "Bison bison",
-        "Taurotragus oryxs."
+        "Búfalo de agua.",
+        "Búfalo africano.",
+        "Bisonte americano",
+        "Yak de las praderas."
       ]
     },
     "en": {
-      "enunciado": "What is the correct scientific name for the animal commonly referred to as the buffalo in North America?",
+      "enunciado": "What is the correct name for the animal often called a \"buffalo\" in North America?",
       "opciones": [
-        "Syncerus caffer.",
-        "Bubalus bubalis.",
-        "Bison bison",
-        "Taurotragus oryxs."
+        "Water buffalo.",
+        "African buffalo.",
+        "American bison",
+        "Prairie yak."
       ]
     }
   },
@@ -2525,7 +2525,7 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es el porcentaje mínimo de maíz que debe tener la mezcla de granos para ser considerado Bourbon?",
+      "enunciado": "Para ser Bourbon, ¿qué porcentaje mínimo de maíz debe tener la mezcla de granos?",
       "opciones": [
         "30%",
         "45%",
@@ -2534,7 +2534,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the minimum percentage of corn required in the grain mixture for a whiskey to be considered Bourbon?",
+      "enunciado": "To be called Bourbon, what minimum percentage of corn must the grain mix contain?",
       "opciones": [
         "30%",
         "45%",
@@ -2645,7 +2645,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué característica física le permite al cocodrilo vivir en agua salada a diferencia del caimán?",
+      "enunciado": "¿Qué característica física le permite al cocodrilo vivir en agua salada, a diferencia del caimán?",
       "opciones": [
         "Sus escamas son más gruesas.",
         "Posee glándulas de sal en la lengua que filtran el exceso",
@@ -2654,10 +2654,10 @@
       ]
     },
     "en": {
-      "enunciado": "What physical characteristic allows the crocodile to live in saltwater, unlike the caiman?",
+      "enunciado": "What physical characteristic allows the crocodile to live in saltwater, unlike the alligator?",
       "opciones": [
         "Its scales are thicker.",
-        "It possesses salt glands on its tongue that filter out the excess.",
+        "It has salt glands on its tongue that filter out the excess.",
         "It can close its gills.",
         "It does not drink water from its environment."
       ]
@@ -2693,19 +2693,19 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Por qué el puente se llama \"Golden Gate\" (Puerta Dorada) si es de color naranja?",
+      "enunciado": "¿Por qué se llama Golden Gate el puente si es de color naranja?",
       "opciones": [
         "Por las minas de oro encontradas debajo de sus pilares.",
-        "Por el nombre del estrecho de agua que cruza",
+        "Por el nombre del estrecho que cruza",
         "Porque originalmente iba a ser recubierto con láminas de oro.",
         "En honor a la fiebre del oro de 1849."
       ]
     },
     "en": {
-      "enunciado": "Why is the bridge called the \"Golden Gate\" if it is orange?",
+      "enunciado": "Why is the bridge called the Golden Gate if it is orange?",
       "opciones": [
         "Because of gold mines found beneath its piers.",
-        "Because of the name of the water strait it crosses",
+        "It is named for the strait it crosses",
         "Because it was originally intended to be clad in gold leaf.",
         "In honor of the 1849 Gold Rush."
       ]
@@ -2765,7 +2765,7 @@
     "numero": 2,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Cuál es el número que se repite constantemente en el diseño del sello (flechas, estrellas, niveles de la pirámide) en honor a las colonias originales?",
+      "enunciado": "¿Qué número se repite en el diseño del sello en honor a las colonias originales?",
       "opciones": [
         "7.",
         "10.",
@@ -2774,7 +2774,7 @@
       ]
     },
     "en": {
-      "enunciado": "What number is repeated consistently throughout the seal's design (arrows, stars, pyramid tiers) in honor of the original colonies?",
+      "enunciado": "What number is repeated in the seal's design in honor of the original colonies?",
       "opciones": [
         "7.",
         "10.",
@@ -2789,21 +2789,21 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué figura animal propuso Benjamin Franklin originalmente para el sello antes de que se eligiera al águila calva?",
+      "enunciado": "¿Qué aparece en el reverso del Gran Sello, el lado que se ve en el billete de un dólar?",
       "opciones": [
-        "El León.",
-        "El Bisonte.",
-        "El Pavo",
-        "El Halcón."
+        "Un león rampante.",
+        "Un barco vikingo.",
+        "Una pirámide inacabada con el Ojo de la Providencia",
+        "Un mapa de las trece colonias."
       ]
     },
     "en": {
-      "enunciado": "What animal figure did Benjamin Franklin originally propose for the seal before the bald eagle was chosen?",
+      "enunciado": "What appears on the reverse of the Great Seal, the side shown on the one-dollar bill?",
       "opciones": [
-        "The Lion.",
-        "The Bison.",
-        "The Turkey",
-        "The Falcon."
+        "A rampant lion.",
+        "A Viking ship.",
+        "An unfinished pyramid with the Eye of Providence",
+        "A map of the thirteen colonies."
       ]
     }
   },
@@ -2813,20 +2813,20 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cómo se llama la escala utilizada por los meteorólogos para clasificar la intensidad de un tornado basada en el daño que causa?",
+      "enunciado": "¿Cómo se llama la escala que usa el daño causado para clasificar la fuerza de un tornado?",
       "opciones": [
         "Escala Richter.",
         "Escala Saffir-Simpson.",
-        "Escala Fujita Mejorada (EF)",
+        "Escala Fujita Mejorada",
         "Escala de Beaufort."
       ]
     },
     "en": {
-      "enunciado": "What is the name of the scale used by meteorologists to classify a tornado's intensity based on the damage it causes?",
+      "enunciado": "What scale uses the damage caused to rate a tornado's strength?",
       "opciones": [
         "Richter Scale.",
         "Saffir-Simpson Scale.",
-        "Enhanced Fujita (EF) Scale",
+        "Enhanced Fujita Scale",
         "Beaufort Scale."
       ]
     }
@@ -2837,21 +2837,21 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es el estado de EE. UU. que, históricamente, registra el mayor número de tornados por cada 10,000 millas cuadradas?",
+      "enunciado": "¿Cómo se llama la región del centro de EE. UU. famosa por sus tornados frecuentes e intensos?",
       "opciones": [
-        "California.",
-        "Nueva York.",
-        "Florida (aunque suelen ser más débiles que los de las llanuras)",
-        "Alaska."
+        "El Cinturón del Sol.",
+        "La Costa Este.",
+        "Tornado Alley",
+        "El Triángulo de las Bermudas."
       ]
     },
     "en": {
-      "enunciado": "Which U.S. state historically records the highest number of tornadoes per 10,000 square miles?",
+      "enunciado": "What is the name of the central U.S. region famous for frequent, intense tornadoes?",
       "opciones": [
-        "California.",
-        "New York.",
-        "Florida (though they tend to be weaker than those on the plains)",
-        "Alaska."
+        "The Sun Belt.",
+        "The East Coast.",
+        "Tornado Alley",
+        "The Bermuda Triangle."
       ]
     }
   },
@@ -2909,21 +2909,21 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es el único artista que tiene una estrella en las cinco categorías del Paseo de la Fama (Cine, TV, Música, Radio y Teatro)?",
+      "enunciado": "¿En qué año se quitaron las últimas cuatro letras del cartel \"Hollywoodland\" para dejarlo en \"Hollywood\"?",
       "opciones": [
-        "Frank Sinatra.",
-        "Walt Disney.",
-        "Gene Autry",
-        "Michael Jackson."
+        "1923.",
+        "1935.",
+        "1949",
+        "1969."
       ]
     },
     "en": {
-      "enunciado": "Who is the only artist to hold a star in all five categories on the Walk of Fame (Film, TV, Music, Radio, and Theater)?",
+      "enunciado": "In what year were the last four letters removed from the \"Hollywoodland\" sign, leaving \"Hollywood\"?",
       "opciones": [
-        "Frank Sinatra.",
-        "Walt Disney.",
-        "Gene Autry",
-        "Michael Jackson."
+        "1923.",
+        "1935.",
+        "1949",
+        "1969."
       ]
     }
   },
@@ -2981,7 +2981,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "Según la tradición del hot dog estilo Chicago, ¿cuál es el ingrediente que está \"estrictamente prohibido\" añadir?",
+      "enunciado": "En un hot dog al estilo Chicago, ¿qué ingrediente está estrictamente prohibido?",
       "opciones": [
         "Mostaza.",
         "Cebolla blanca.",
@@ -2990,7 +2990,7 @@
       ]
     },
     "en": {
-      "enunciado": "According to Chicago-style hot dog tradition, which ingredient is \"strictly forbidden\" to add?",
+      "enunciado": "On a Chicago-style hot dog, which ingredient is strictly forbidden?",
       "opciones": [
         "Mustard.",
         "White onion.",
@@ -3029,16 +3029,16 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál es el nombre original que tenía la campana antes de que se popularizara como \"Campana de la Libertad\"?",
+      "enunciado": "¿Cómo se llamaba la campana antes de conocerse como Campana de la Libertad?",
       "opciones": [
         "Campana de la Revolución.",
-        "Campana de la Casa de Estado (State House Bell)",
+        "Campana de la Casa de Estado",
         "Campana de Pensilvania.",
         "Campana de la Unión."
       ]
     },
     "en": {
-      "enunciado": "What was the bell's original name before it became popularly known as the \"Liberty Bell\"?",
+      "enunciado": "What was the bell called before it became known as the Liberty Bell?",
       "opciones": [
         "Revolution Bell.",
         "State House Bell",
@@ -3125,16 +3125,16 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál es el punto más profundo del río Mississippi, alcanzando aproximadamente los 60 metros (200 pies)?",
+      "enunciado": "¿Dónde está el punto más profundo del río Misisipi, de unos 60 metros?",
       "opciones": [
         "Cerca de St. Louis, Missouri.",
-        "Cerca de Algiers Point en Nueva Orleans",
+        "Cerca de Algiers Point, en Nueva Orleans",
         "En el Lago Itasca.",
         "Bajo el arco de St. Louis."
       ]
     },
     "en": {
-      "enunciado": "What is the deepest point of the Mississippi River, reaching approximately 60 meters (200 feet)?",
+      "enunciado": "Where is the deepest point of the Mississippi River, about 200 feet deep?",
       "opciones": [
         "Near St. Louis, Missouri.",
         "Near Algiers Point in New Orleans",
@@ -3173,19 +3173,19 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué característica física distingue a los alces de otros miembros de la familia de los ciervos (como los uapitíes o los renos)?",
+      "enunciado": "¿Qué distingue las astas del alce de las de otros ciervos, como el uapití?",
       "opciones": [
         "Tienen manchas blancas en el lomo.",
-        "Tienen astas anchas y planas en forma de mano (palmeadas)",
+        "Son anchas y planas, como una mano abierta",
         "No tienen cola.",
         "Sus ojos cambian de color en invierno."
       ]
     },
     "en": {
-      "enunciado": "What physical characteristic distinguishes moose from other members of the deer family (such as elk or reindeer)?",
+      "enunciado": "What distinguishes a moose's antlers from those of other deer, such as elk?",
       "opciones": [
         "They have white spots on their backs.",
-        "They have broad, flat, hand-shaped (palmate) antlers.",
+        "They are broad and flat, like an open hand",
         "They have no tail.",
         "Their eyes change color in winter."
       ]
@@ -3197,19 +3197,19 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cómo se llama el pliegue de piel cubierto de pelo que cuelga de la garganta del alce?",
+      "enunciado": "¿Cómo se llama el pliegue de piel con pelo que cuelga de la garganta del alce?",
       "opciones": [
         "Papada.",
-        "Campana o \"Dewlap\"",
+        "Campana",
         "Cresta.",
         "Barba de bosque."
       ]
     },
     "en": {
-      "enunciado": "What is the name of the hair-covered fold of skin that hangs from a moose's throat?",
+      "enunciado": "What is the hair-covered fold of skin hanging from a moose's throat called?",
       "opciones": [
         "Wattle.",
-        "Bell or \"Dewlap.\"",
+        "Bell",
         "Crest.",
         "Forest beard."
       ]
@@ -3293,21 +3293,21 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cómo se llamaban los famosos cigarros baratos que fumaban los conductores de estas carretas y cuyo nombre es una abreviatura de \"Conestoga\"?",
+      "enunciado": "¿Cómo se llamaban los cigarros baratos que fumaban los conductores de estas carretas, cuyo nombre abrevia \"Conestoga\"?",
       "opciones": [
         "Cubanos.",
         "Stogies",
         "Puros del Valle.",
-        "Rodillos de Lona"
+        "Rodillos de Lona."
       ]
     },
     "en": {
-      "enunciado": "What were the famous, inexpensive cigars called that were smoked by the drivers of these wagons—and whose name is an abbreviation of \"Conestoga\"?",
+      "enunciado": "What were the inexpensive cigars smoked by these wagon drivers called—a nickname shortened from \"Conestoga\"?",
       "opciones": [
-        "Cubanos.",
+        "Cubans.",
         "Stogies",
-        "Puros del Valle.",
-        "Canvas Rollers."
+        "Valley cigars.",
+        "Canvas rollers."
       ]
     }
   },
@@ -3413,7 +3413,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál es el apodo histórico del estadio original (y que heredó el actual)?",
+      "enunciado": "¿Cuál es el apodo histórico del Yankee Stadium original, heredado por el actual?",
       "opciones": [
         "El Diamante del Bronx",
         "La Casa que Ruth construyó",
@@ -3422,7 +3422,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the historic nickname of the original stadium (a name inherited by the current one)?",
+      "enunciado": "What is the historic nickname of the original Yankee Stadium, later used for the current one?",
       "opciones": [
         "The Bronx Diamond",
         "The House That Ruth Built",
@@ -3461,16 +3461,16 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Aproximadamente cuántos galones (litros) de agua expulsa Old Faithful en una sola erupción?",
+      "enunciado": "¿Cuántos litros de agua expulsa Old Faithful en una sola erupción, aproximadamente?",
       "opciones": [
         "Entre 500 y 1,000 litros.",
         "Alrededor de 5,000 litros.",
-        "Entre 14,000 y 32,000 litros",
+        "Entre 14.000 y 32.000 litros",
         "Más de 100,000 litros."
       ]
     },
     "en": {
-      "enunciado": "Approximately how many gallons (liters) of water does Old Faithful expel in a single eruption?",
+      "enunciado": "About how many liters of water does Old Faithful shoot out in a single eruption?",
       "opciones": [
         "Between 500 and 1,000 liters.",
         "Around 5,000 liters.",
@@ -3533,7 +3533,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿De qué material estaban hechos realmente los costados del USS Constitution que hacían rebotar las balas de cañón?",
+      "enunciado": "¿De qué material estaban hechos los costados del USS Constitution que hacían rebotar las balas?",
       "opciones": [
         "Hierro forjado.",
         "Capas densas de roble blanco y roble vivo",
@@ -3542,10 +3542,10 @@
       ]
     },
     "en": {
-      "enunciado": "What material were the USS Constitution's sides actually made of that caused cannonballs to bounce off?",
+      "enunciado": "What were the USS Constitution's sides made of that made cannonballs bounce off?",
       "opciones": [
         "Wrought iron.",
-        "Dense layers of white oak and live oak",
+        "Thick layers of white oak and live oak",
         "Early rolled steel.",
         "Teak wood reinforced with copper."
       ]
@@ -3605,20 +3605,20 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es el récord aproximado de envergadura (de punta a punta) que pueden alcanzar los cuernos de un ejemplar excepcional de Texas Longhorn?",
+      "enunciado": "Según la historia, ¿qué envergadura pueden alcanzar los cuernos de un Texas Longhorn de punta a punta?",
       "opciones": [
         "1 metro.",
-        "1.5 metros.",
-        "Más de 2.5 metros",
+        "1,5 metros.",
+        "Más de 2 metros",
         "4 metros."
       ]
     },
     "en": {
-      "enunciado": "What is the approximate record span (tip-to-tip) that the horns of an exceptional Texas Longhorn specimen can reach?",
+      "enunciado": "According to the story, what tip-to-tip span can a Texas Longhorn's horns reach?",
       "opciones": [
         "1 meter.",
         "1.5 meters.",
-        "More than 2.5 meters",
+        "More than 2 meters",
         "4 meters."
       ]
     }
@@ -3725,19 +3725,19 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué hizo Wyatt Earp en sus últimos años de vida en Los Ángeles, California?",
+      "enunciado": "¿Qué hizo Wyatt Earp en sus últimos años en Los Ángeles?",
       "opciones": [
         "Fue elegido alcalde de la ciudad.",
-        "Asesoró a directores y actores en las primeras películas de vaqueros",
+        "Asesoró las primeras películas del Oeste",
         "Se convirtió en un ermitaño en el desierto.",
         "Abrió una academia de tiro para la policía local."
       ]
     },
     "en": {
-      "enunciado": "What did Wyatt Earp do during his final years in Los Angeles, California?",
+      "enunciado": "What did Wyatt Earp do in his later years in Los Angeles?",
       "opciones": [
         "He was elected mayor of the city.",
-        "Advised directors and actors on early Western films",
+        "Advised early Western films",
         "Became a hermit in the desert.",
         "Opened a shooting academy for the local police."
       ]
@@ -3749,7 +3749,7 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál de estos famosos personajes fue el sheriff protagonista del legendario tiroteo en el O.K. Corral?",
+      "enunciado": "¿Cuál de estos personajes fue el agente de la ley protagonista del tiroteo en el O.K. Corral?",
       "opciones": [
         "Billy the Kid.",
         "Jesse James.",
@@ -3758,7 +3758,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which of these famous figures was the sheriff at the center of the legendary shootout at the O.K. Corral?",
+      "enunciado": "Which of these famous figures was the lawman at the center of the shootout at the O.K. Corral?",
       "opciones": [
         "Billy the Kid.",
         "Jesse James.",
@@ -3825,7 +3825,7 @@
       "opciones": [
         "Ser el primer actor de rock en llegar a Hollywood.",
         "Inventar el género del Gospel moderno.",
-        "Actuar como un puente artístico entre géneros como el R&B y el Country.",
+        "Unir estilos como el R&B y el country",
         "Ser el dueño de la discográfica Sun Records."
       ]
     },
@@ -3834,7 +3834,7 @@
       "opciones": [
         "Being the first rock performer to make it to Hollywood.",
         "Inventing the modern Gospel genre.",
-        "Acting as an artistic bridge between genres such as R&B and Country.",
+        "Bridging styles such as R&B and country",
         "Owning the Sun Records label."
       ]
     }

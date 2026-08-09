@@ -113,9 +113,27 @@ export function Menu() {
         <button type="button" className="btn-secondary" onClick={() => go('/duel')}>
           {t('duel')}
         </button>
-        <button type="button" className="btn-secondary" onClick={() => go('/settings')}>
-          {t('settings')}
-        </button>
+        <div className="menu-settings-row">
+          <button
+            type="button"
+            className="btn-secondary"
+            onClick={() => go('/settings')}
+          >
+            {t('settings')}
+          </button>
+          <button
+            type="button"
+            className="help-button"
+            aria-label={t('help')}
+            title={t('help')}
+            onClick={() => {
+              playSound('button')
+              setGuideOpen(true)
+            }}
+          >
+            ?
+          </button>
+        </div>
       </nav>
 
       <footer className="menu-footer">
@@ -128,19 +146,6 @@ export function Menu() {
           {t('credits')}
         </button>
       </footer>
-
-      <button
-        type="button"
-        className="help-button"
-        aria-label={t('help')}
-        title={t('help')}
-        onClick={() => {
-          playSound('button')
-          setGuideOpen(true)
-        }}
-      >
-        ?
-      </button>
 
       <Onboarding />
 

@@ -676,7 +676,7 @@ button {
 .menu-buttons {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.6rem;
+  gap: 0.75rem;
   width: min(30rem, 100%);
 }
 
@@ -686,9 +686,31 @@ button {
   padding: 0.8rem 1.6rem;
 }
 
+.menu-settings-row {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.menu-settings-row .btn-secondary {
+  width: 100%;
+}
+
+.menu-settings-row .help-button {
+  position: static;
+  width: 2.75rem;
+  height: auto;
+  min-height: 2.75rem;
+  align-self: stretch;
+  box-shadow: none;
+}
+
 @media (max-width: 26rem) {
   .menu-buttons {
     grid-template-columns: 1fr;
+    gap: 0.85rem;
   }
 }
 
@@ -2560,12 +2582,7 @@ button {
   color: var(--oro);
 }
 
-/* Anchored inside the menu sheet so it stays within the gold frame. */
 .help-button {
-  position: absolute;
-  right: 1rem;
-  bottom: 2.75rem;
-  z-index: 6;
   display: grid;
   place-items: center;
   width: 2.75rem;
@@ -2578,7 +2595,6 @@ button {
   line-height: 1;
   color: var(--tinta);
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(43, 33, 22, 0.18);
   transition: background 0.16s ease, color 0.16s ease;
 }
 
@@ -2725,8 +2741,16 @@ button {
   color: var(--papel-claro);
 }
 
+/*
+ * Hard route paints after normal route (same z-index). Lift the whole route
+ * that holds the next mission so Pancito never sits under later markers.
+ */
+.atlas-route:has(.atlas-marker-wrap[data-next='true']) {
+  z-index: 12;
+}
+
 .atlas-marker-wrap[data-next='true'] {
-  z-index: 6;
+  z-index: 14;
 }
 
 /* Sit beside the marker so southern pins don't clip under the plate. */
@@ -2734,6 +2758,7 @@ button {
   position: absolute;
   left: calc(100% - 0.35rem);
   top: 42%;
+  z-index: 16;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2967,13 +2992,51 @@ button {
     font-size: 1.25rem;
   }
 
+  .screen-menu {
+    gap: 1.15rem;
+    width: min(var(--hoja-max), calc(100% - 1.1rem));
+    max-height: none;
+    min-height: calc(100dvh - 1.1rem);
+    margin: 0.55rem auto;
+    padding: max(0.85rem, env(safe-area-inset-top)) 0.95rem
+      max(1.4rem, env(safe-area-inset-bottom));
+  }
+
+  .menu-header {
+    gap: 0.7rem;
+    width: 100%;
+  }
+
+  .menu-header-top {
+    gap: 0.55rem;
+    padding-inline: 0.1rem;
+  }
+
   .menu-title {
     font-size: clamp(2.1rem, 12vw, 3.2rem);
   }
 
   .menu-buttons {
     width: 100%;
-    gap: 0.5rem;
+    gap: 0.85rem;
+  }
+
+  .menu-settings-row {
+    gap: 0.85rem;
+  }
+
+  .menu-footer {
+    gap: 0.85rem 1.2rem;
+    margin-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .country-picker {
+    gap: 0.35rem;
+  }
+
+  .country-current {
+    min-height: 2.85rem;
   }
 
   .match-bar {

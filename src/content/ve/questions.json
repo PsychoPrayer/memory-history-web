@@ -53,7 +53,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Por qué el Araguaney es considerado un árbol caducifolio?",
+      "enunciado": "¿Por qué se dice que el Araguaney pierde sus hojas (es caducifolio)?",
       "opciones": [
         "Porque sus flores cambian de color según la estación.",
         "Porque florece durante todo el año sin interrupción.",
@@ -62,7 +62,7 @@
       ]
     },
     "en": {
-      "enunciado": "Why is the Araguaney considered a deciduous tree?",
+      "enunciado": "Why is the Araguaney said to lose its leaves (deciduous)?",
       "opciones": [
         "Because its flowers change color according to the season.",
         "Because it blooms throughout the year without interruption.",
@@ -273,7 +273,7 @@
       "opciones": [
         "Bosques nublados y helechos gigantes.",
         "Manglares y palmeras de coco.",
-        "Vegetación xerófila como cujíes y cardones",
+        "Plantas de zonas secas, como cujíes y cardones",
         "Pinos y vegetación de páramo."
       ]
     },
@@ -282,8 +282,8 @@
       "opciones": [
         "Cloud forests and giant ferns.",
         "Mangroves and coconut palms.",
-        "Xerophilous vegetation such as cujíes and cardones",
-        "Pines and páramo vegetation."
+        "Dry-land plants, such as cují trees and cardones",
+        "Pines and highland páramo plants."
       ]
     }
   },
@@ -511,19 +511,19 @@
     "es": {
       "enunciado": "¿Cuál es el nombre indígena del Cerro El Ávila?",
       "opciones": [
-        "Guaraira Repano.",
+        "Pico Naiguatá.",
         "Waraira Repano",
-        "Naiguatá.",
-        "Galipán."
+        "Galipán.",
+        "El Ávila Viejo."
       ]
     },
     "en": {
       "enunciado": "What is the indigenous name of El Ávila Hill?",
       "opciones": [
-        "Guaraira Repano.",
+        "Pico Naiguatá.",
         "Waraira Repano",
-        "Naiguatá.",
-        "Galipán."
+        "Galipán.",
+        "Old Ávila."
       ]
     }
   },
@@ -1659,14 +1659,14 @@
     "id": "story39_question1",
     "historia": "39",
     "numero": 1,
-    "correcta": 0,
+    "correcta": 2,
     "es": {
       "enunciado": "¿Cuál es la altura total del Salto Ángel?",
       "opciones": [
         "500 metros",
         "807 metros",
-        "979 metros (Respuesta Correcta)",
-        "1,200 metros"
+        "979 metros",
+        "1.200 metros"
       ]
     },
     "en": {
@@ -1674,7 +1674,7 @@
       "opciones": [
         "500 meters",
         "807 meters",
-        "979 meters (Correct Answer)",
+        "979 meters",
         "1,200 meters"
       ]
     }
@@ -1683,13 +1683,13 @@
     "id": "story39_question2",
     "historia": "39",
     "numero": 2,
-    "correcta": 0,
+    "correcta": 2,
     "es": {
       "enunciado": "¿Quién fue el primer descriptor documentado del Salto Ángel en 1910?",
       "opciones": [
         "Jimmie Angel",
         "Charles Lindbergh",
-        "Ernesto Sánchez La Cruz (Respuesta Correcta)",
+        "Ernesto Sánchez La Cruz",
         "Alexander von Humboldt"
       ]
     },
@@ -1697,8 +1697,8 @@
       "enunciado": "Who was the first documented describer of Angel Falls in 1910?",
       "opciones": [
         "Jimmie Angel",
-        "Charles Lindbergh •",
-        "Ernesto Sánchez La Cruz (Correct Answer)",
+        "Charles Lindbergh",
+        "Ernesto Sánchez La Cruz",
         "Alexander von Humboldt"
       ]
     }
@@ -1707,12 +1707,12 @@
     "id": "story39_question3",
     "historia": "39",
     "numero": 3,
-    "correcta": 0,
+    "correcta": 1,
     "es": {
       "enunciado": "¿Cómo se llama el tepuy desde el que cae el Salto Ángel y qué significa su nombre pemón?",
       "opciones": [
         "Roraima (Madre de las Aguas)",
-        "Auyantepuy (Montaña del Diablo) (Respuesta Correcta)",
+        "Auyantepuy (Montaña del Diablo)",
         "Kukenán (Lugar de los Muertos)",
         "Chimantá (Lugar del Sol)"
       ]
@@ -1721,7 +1721,7 @@
       "enunciado": "What is the name of the tepui from which Angel Falls falls and what does its Pemon name mean?",
       "opciones": [
         "Roraima (Mother of Waters)",
-        "Auyantepuy (Devil's Mountain) (Correct Answer)",
+        "Auyantepuy (Devil's Mountain)",
         "Kukenán (Place of the Dead)",
         "Chimantá (Place of the Sun)"
       ]
@@ -1731,13 +1731,13 @@
     "id": "story40_question1",
     "historia": "40",
     "numero": 1,
-    "correcta": 0,
+    "correcta": 2,
     "es": {
       "enunciado": "¿Cuál es el grupo indígena más numeroso de Venezuela?",
       "opciones": [
         "Warao",
         "Pemón",
-        "Wayuu (Respuesta Correcta)",
+        "Wayuu",
         "Yanomami"
       ]
     },
@@ -1746,7 +1746,7 @@
       "opciones": [
         "Warao",
         "Pemón",
-        "Wayuu (Correct Answer)",
+        "Wayuu",
         "Yanomami"
       ]
     }
@@ -1755,22 +1755,22 @@
     "id": "story40_question2",
     "historia": "40",
     "numero": 2,
-    "correcta": 0,
+    "correcta": 2,
     "es": {
-      "enunciado": "¿En qué región de Venezuela se concentra la mayor población indígena del país?",
+      "enunciado": "Según la historia, ¿en qué región se concentran muchos pueblos indígenas distintos (Amazonas, Bolívar y Delta Amacuro)?",
       "opciones": [
         "Los Andes",
         "Los Llanos",
-        "Guayana (Respuesta Correcta)",
+        "Guayana",
         "La Costa"
       ]
     },
     "en": {
-      "enunciado": "In which region of Venezuela is the largest indigenous population of the country concentrated?",
+      "enunciado": "According to the story, in which region are many different indigenous peoples concentrated (Amazonas, Bolívar, and Delta Amacuro)?",
       "opciones": [
         "The Andes",
         "The Llanos",
-        "Guayana (Correct Answer)",
+        "Guayana",
         "The Coast"
       ]
     }
@@ -1779,23 +1779,23 @@
     "id": "story40_question3",
     "historia": "40",
     "numero": 3,
-    "correcta": 0,
+    "correcta": 2,
     "es": {
-      "enunciado": "¿Qué instrumento musical tradicional, hecho con cañas de bambú, es característico de los pueblos indígenas de la Guayana?",
+      "enunciado": "Según el censo mencionado en la historia, ¿alrededor de cuántos pueblos indígenas distintos viven en Venezuela?",
       "opciones": [
-        "Maracas",
-        "Cuatro",
-        "Flauta de Pan (carrizo) (Respuesta Correcta)",
-        "Tambor"
+        "Alrededor de 10",
+        "Alrededor de 25",
+        "Alrededor de 51",
+        "Alrededor de 100"
       ]
     },
     "en": {
-      "enunciado": "Which traditional musical instrument, made of bamboo reeds, is characteristic of the indigenous peoples of Guayana?",
+      "enunciado": "According to the census mentioned in the story, about how many different indigenous peoples live in Venezuela?",
       "opciones": [
-        "Maracas",
-        "Cuatro",
-        "Pan Flute (reed) (Correct Answer)",
-        "Drum"
+        "Around 10",
+        "Around 25",
+        "Around 51",
+        "Around 100"
       ]
     }
   },
@@ -2019,23 +2019,23 @@
     "id": "story44_question1",
     "historia": "44",
     "numero": 1,
-    "correcta": 2,
+    "correcta": 1,
     "es": {
-      "enunciado": "¿Cómo se llama esta historia?",
+      "enunciado": "¿En qué año fue declarado Parque Nacional el Archipiélago de Los Roques?",
       "opciones": [
-        "Pelota",
-        "Independencia",
-        "Playas",
-        "Papagayos"
+        "1960",
+        "1972",
+        "1985",
+        "1999"
       ]
     },
     "en": {
-      "enunciado": "What is the name of this story?",
+      "enunciado": "In what year was the Los Roques Archipelago declared a National Park?",
       "opciones": [
-        "Pelota",
-        "Independencia",
-        "Playas",
-        "Papagayos"
+        "1960",
+        "1972",
+        "1985",
+        "1999"
       ]
     }
   },
@@ -2045,21 +2045,21 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué tipo de elemento es \"Playas\"?",
+      "enunciado": "¿Con qué apodo se conoce a la Isla de Margarita en la historia?",
       "opciones": [
-        "Ciudad",
-        "Historia",
-        "Ave",
-        "Montaña"
+        "La Isla de la Fantasía",
+        "El Faro del Caribe",
+        "La Perla del Caribe",
+        "La Tierra del Sol"
       ]
     },
     "en": {
-      "enunciado": "What type of element is \"Playas\"?",
+      "enunciado": "By what nickname is Margarita Island known in the story?",
       "opciones": [
-        "City",
-        "History",
-        "Bird",
-        "Mountain"
+        "Fantasy Island",
+        "The Caribbean Lighthouse",
+        "The Pearl of the Caribbean",
+        "The Land of the Sun"
       ]
     }
   },
@@ -2067,23 +2067,23 @@
     "id": "story44_question3",
     "historia": "44",
     "numero": 3,
-    "correcta": 1,
+    "correcta": 2,
     "es": {
-      "enunciado": "¿En qué país se ubica esta historia?",
+      "enunciado": "¿En qué estado se encuentran Playa Medina y Playa Colorada?",
       "opciones": [
-        "Colombia",
-        "Venezuela",
-        "México",
-        "Perú"
+        "Falcón",
+        "Nueva Esparta",
+        "Sucre",
+        "Zulia"
       ]
     },
     "en": {
-      "enunciado": "In which country does this story take place?",
+      "enunciado": "In which state are Playa Medina and Playa Colorada found?",
       "opciones": [
-        "Colombia",
-        "Venezuela",
-        "Mexico",
-        "Peru"
+        "Falcón",
+        "Nueva Esparta",
+        "Sucre",
+        "Zulia"
       ]
     }
   },
@@ -2165,7 +2165,7 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es el tiempo mínimo de envejecimiento en barricas que exige la D.O.C. para que un producto sea llamado \"Ron de Venezuela\"?",
+      "enunciado": "¿Cuál es el tiempo mínimo de envejecimiento en barricas que exige la Denominación de Origen Controlada (D.O.C., sello de calidad) para llamar a un producto \"Ron de Venezuela\"?",
       "opciones": [
         "6 meses.",
         "1 año.",
@@ -2174,7 +2174,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the minimum barrel aging time required by the D.O.C. for a product to be called \"Rum of Venezuela\"?",
+      "enunciado": "What is the minimum barrel aging time required by the Controlled Designation of Origin (D.O.C., quality seal) for a product to be called \"Rum of Venezuela\"?",
       "opciones": [
         "6 months.",
         "1 year.",
@@ -3032,7 +3032,7 @@
       "enunciado": "¿De qué instrumentos ibéricos se deriva el cuatro venezolano?",
       "opciones": [
         "El laúd árabe",
-        "La guitarra barroca y otros cordófonos ibéricos",
+        "La guitarra barroca y otros instrumentos de cuerda ibéricos",
         "La vihuela española solamente",
         "El arpa europea"
       ]
@@ -3041,7 +3041,7 @@
       "enunciado": "From which Iberian instruments does the Venezuelan cuatro derive?",
       "opciones": [
         "The Arabic lute",
-        "The baroque guitar and other Iberian chordophones",
+        "The baroque guitar and other Iberian string instruments",
         "The Spanish vihuela only",
         "The European harp"
       ]
@@ -3130,16 +3130,16 @@
         "Canela",
         "Leche condensada",
         "Barquillo",
-        "Coco rallado y nueces"
+        "Chocolate y nueces"
       ]
     },
     "en": {
-      "enunciado": "Which of these is NOT a typical chicha topping mentioned in the Story?",
+      "enunciado": "Which of these is NOT a typical chicha topping mentioned in the story?",
       "opciones": [
         "Cinnamon",
         "Condensed milk",
         "Wafer",
-        "Shredded coconut and nuts"
+        "Chocolate and nuts"
       ]
     }
   },
@@ -3171,22 +3171,22 @@
     "id": "story8_question1",
     "historia": "8",
     "numero": 1,
-    "correcta": 2,
+    "correcta": 1,
     "es": {
-      "enunciado": "¿Dónde nace el río Orinoco?",
+      "enunciado": "¿Dónde nace el río Orinoco, según la historia?",
       "opciones": [
         "En los Andes venezolanos",
         "En el cerro Delgado Chalbaud, Guayana",
-        "En el estado Amazonas",
+        "En el Delta del Orinoco",
         "En Colombia"
       ]
     },
     "en": {
-      "enunciado": "Where does the Orinoco River originate?",
+      "enunciado": "Where does the Orinoco River originate, according to the story?",
       "opciones": [
         "In the Venezuelan Andes",
         "At Cerro Delgado Chalbaud, Guayana",
-        "In Amazonas state",
+        "In the Orinoco Delta",
         "In Colombia"
       ]
     }
@@ -3461,21 +3461,21 @@
     "numero": 1,
     "correcta": 0,
     "es": {
-      "enunciado": "¿Cuál es el nombre científico del Cardenalito mencionado en el texto?",
+      "enunciado": "Según la historia, ¿cómo se llama científicamente el Cardenalito?",
       "opciones": [
         "Spinus cucullatus",
-        "Icterus icterus",
-        "Cattleya mossiae",
-        "Handroanthus chrysanthus"
+        "Icterus icterus (el turpial)",
+        "Cattleya mossiae (la orquídea)",
+        "Handroanthus chrysanthus (el araguaney)"
       ]
     },
     "en": {
-      "enunciado": "What is the scientific name of the Cardenalito mentioned in the text?",
+      "enunciado": "According to the story, what is the scientific name of the Cardenalito?",
       "opciones": [
         "Spinus cucullatus",
-        "Icterus icterus",
-        "Cattleya mossiae",
-        "Handroanthus chrysanthus"
+        "Icterus icterus (the troupial)",
+        "Cattleya mossiae (the orchid)",
+        "Handroanthus chrysanthus (the araguaney)"
       ]
     }
   },
@@ -3518,7 +3518,7 @@
       ]
     },
     "en": {
-      "enunciado": "In what currently conservation status is the Cardenalito?",
+      "enunciado": "What is the current conservation status of the Cardenalito?",
       "opciones": [
         "Least concern",
         "Vulnerable",
@@ -3535,8 +3535,8 @@
     "es": {
       "enunciado": "¿Con qué se tiñe la masa de la hallaca para darle su color amarillo característico?",
       "opciones": [
-        "Achiote",
-        "Onoto",
+        "Chocolate",
+        "Onoto (achiote)",
         "Cúrcuma",
         "Azafrán"
       ]
@@ -3544,8 +3544,8 @@
     "en": {
       "enunciado": "What is used to dye the hallaca dough to give it its characteristic yellow color?",
       "opciones": [
-        "Achiote",
-        "Onoto",
+        "Chocolate",
+        "Onoto (annatto/achiote)",
         "Turmeric",
         "Saffron"
       ]
@@ -3653,21 +3653,21 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuántos metros de altura tiene el Puente de Angostura sobre el nivel del río?",
+      "enunciado": "¿Qué estados conecta el Puente de Angostura al unir las riberas del Orinoco?",
       "opciones": [
-        "234 metros",
-        "57 metros",
-        "5 metros",
-        "23 metros"
+        "Amazonas y Delta Amacuro",
+        "Anzoátegui y Bolívar",
+        "Apure y Guárico",
+        "Sucre y Monagas"
       ]
     },
     "en": {
-      "enunciado": "How many meters high is the Angostura Bridge above the river level?",
+      "enunciado": "Which states does the Angostura Bridge connect by linking the banks of the Orinoco?",
       "opciones": [
-        "234 meters",
-        "57 meters",
-        "5 meters",
-        "23 meters"
+        "Amazonas and Delta Amacuro",
+        "Anzoátegui and Bolívar",
+        "Apure and Guárico",
+        "Sucre and Monagas"
       ]
     }
   },
@@ -3773,20 +3773,20 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Para qué se usa el sebucán al preparar el casabe?",
+      "enunciado": "¿Para qué se usa el sebucán (una prensa cilíndrica indígena) al preparar el casabe?",
       "opciones": [
         "Para hornear la torta",
         "Para endulzar la masa",
-        "Para exprimir el yare tóxico",
+        "Para exprimir el yare (líquido tóxico)",
         "Para fermentar la yuca"
       ]
     },
     "en": {
-      "enunciado": "What is the sebucán used for when making casabe?",
+      "enunciado": "What is the sebucán (a traditional cylindrical press) used for when making casabe?",
       "opciones": [
         "To bake the cake",
         "To sweeten the dough",
-        "To squeeze out the toxic yare",
+        "To squeeze out the yare (toxic liquid)",
         "To ferment the cassava"
       ]
     }

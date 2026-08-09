@@ -29,7 +29,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué regiones menciona el mapa de España como extremos geográficos?",
+      "enunciado": "¿Qué extremos geográficos menciona el texto sobre España?",
       "opciones": [
         "Cantabria y Murcia",
         "Los Pirineos y Andalucía",
@@ -38,7 +38,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which regions does Spain's map mention as geographic extremes?",
+      "enunciado": "Which geographic extremes does the text mention about Spain?",
       "opciones": [
         "Cantabria and Murcia",
         "The Pyrenees and Andalusia",
@@ -53,7 +53,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué pueblos formaron la historia de España antes de la monarquía actual?",
+      "enunciado": "¿Qué pueblos ayudaron a formar la historia de España antes de la monarquía actual?",
       "opciones": [
         "Vikingos, mongoles y persas",
         "Aztecas, incas y mayas",
@@ -62,7 +62,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which peoples shaped Spain's history before today's monarchy?",
+      "enunciado": "Which peoples helped shape Spain's history before today's monarchy?",
       "opciones": [
         "Vikings, Mongols, and Persians",
         "Aztecs, Incas, and Maya",
@@ -77,7 +77,7 @@
     "numero": 1,
     "correcta": 3,
     "es": {
-      "enunciado": "¿De qué instrumentos renacentistas proviene la guitarra española?",
+      "enunciado": "¿De qué instrumentos de cuerda del Renacimiento proviene la guitarra española?",
       "opciones": [
         "El arpa y la flauta",
         "El violín y el violonchelo",
@@ -86,7 +86,7 @@
       ]
     },
     "en": {
-      "enunciado": "From which Renaissance instruments does the Spanish guitar descend?",
+      "enunciado": "From which Renaissance string instruments does the Spanish guitar descend?",
       "opciones": [
         "The harp and the flute",
         "The violin and the cello",
@@ -101,7 +101,7 @@
     "numero": 2,
     "correcta": 0,
     "es": {
-      "enunciado": "¿En qué ciudades andaluzas se perfeccionó la luthiería de la guitarra en el siglo XIX?",
+      "enunciado": "¿En qué ciudades andaluzas se perfeccionó la fabricación artesanal de la guitarra en el siglo XIX?",
       "opciones": [
         "Cádiz y Sevilla",
         "Granada y Málaga",
@@ -110,7 +110,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which Andalusian cities was guitar luthiery refined in the 19th century?",
+      "enunciado": "In which Andalusian cities was artisan guitar making refined in the 19th century?",
       "opciones": [
         "Cádiz and Seville",
         "Granada and Málaga",
@@ -173,7 +173,7 @@
     "numero": 2,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Quién fundó Ibiza (Eivissa) hacia el siglo VII a. C.?",
+      "enunciado": "¿Quiénes fundaron Ibiza hacia el siglo VII a. C.?",
       "opciones": [
         "Los romanos",
         "Los visigodos",
@@ -182,7 +182,7 @@
       ]
     },
     "en": {
-      "enunciado": "Who founded Ibiza (Eivissa) around the 7th century BC?",
+      "enunciado": "Who founded Ibiza around the 7th century BC?",
       "opciones": [
         "The Romans",
         "The Visigoths",
@@ -269,16 +269,16 @@
     "numero": 3,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Qué característica técnica destaca en los bloques del acueducto?",
+      "enunciado": "¿Qué detalle técnico destaca en los bloques de piedra del acueducto?",
       "opciones": [
         "Están unidos con hierro forjado",
         "Fueron traídos desde Roma",
         "Se construyeron con ladrillo romano",
-        "No llevan mortero entre ellos"
+        "No llevan argamasa entre ellos"
       ]
     },
     "en": {
-      "enunciado": "What technical feature stands out in the aqueduct's blocks?",
+      "enunciado": "What technical detail stands out in the aqueduct's stone blocks?",
       "opciones": [
         "They are joined with wrought iron",
         "They were brought from Rome",
@@ -511,7 +511,7 @@
     "es": {
       "enunciado": "¿En qué municipio valenciano se celebra La Tomatina?",
       "opciones": [
-        "Valencia capital",
+        "La ciudad de Valencia",
         "Buñol",
         "Gandía",
         "Alicante"
@@ -520,7 +520,7 @@
     "en": {
       "enunciado": "In which Valencian town is La Tomatina held?",
       "opciones": [
-        "Valencia city",
+        "The city of Valencia",
         "Buñol",
         "Gandía",
         "Alicante"
@@ -727,7 +727,7 @@
     "es": {
       "enunciado": "¿Qué hizo Juan Sebastián Elcano tras la muerte de Magallanes?",
       "opciones": [
-        "Completó la primera circunnavegación del mundo",
+        "Completó la primera vuelta al mundo",
         "Descubrió América en 1492",
         "Conquistó Tenochtitlan",
         "Diseñó el Acueducto de Segovia"
@@ -736,7 +736,7 @@
     "en": {
       "enunciado": "What did Juan Sebastián Elcano do after Magellan's death?",
       "opciones": [
-        "Completed the first circumnavigation of the world",
+        "Completed the first voyage around the world",
         "Discovered America in 1492",
         "Conquered Tenochtitlan",
         "Designed the Segovia Aqueduct"
@@ -821,7 +821,7 @@
     "numero": 2,
     "correcta": 0,
     "es": {
-      "enunciado": "¿Qué denominaciones de origen se mencionan para el jamón serrano?",
+      "enunciado": "¿Qué denominaciones de origen del jamón serrano menciona la historia?",
       "opciones": [
         "Teruel o Trevélez",
         "Rioja o Ribera del Duero",
@@ -830,7 +830,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which designations of origin are mentioned for serrano ham?",
+      "enunciado": "Which serrano ham designations of origin does the story mention?",
       "opciones": [
         "Teruel or Trevélez",
         "Rioja or Ribera del Duero",
@@ -869,7 +869,7 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Dónde es endémica el águila imperial ibérica?",
+      "enunciado": "¿Dónde vive de forma natural el águila imperial ibérica?",
       "opciones": [
         "Islas Canarias",
         "Alpes europeos",
@@ -878,7 +878,7 @@
       ]
     },
     "en": {
-      "enunciado": "Where is the Spanish imperial eagle endemic?",
+      "enunciado": "Where does the Spanish imperial eagle live in the wild?",
       "opciones": [
         "Canary Islands",
         "European Alps",
@@ -898,7 +898,7 @@
         "Playas urbanas",
         "Viñedos riojanos",
         "Picos nevados alpinos",
-        "Dehesas y montes mediterráneos"
+        "Campos abiertos con encinas y montes mediterráneos"
       ]
     },
     "en": {
@@ -907,7 +907,7 @@
         "Urban beaches",
         "Rioja vineyards",
         "Alpine snowy peaks",
-        "Dehesas and Mediterranean woodlands"
+        "Open oak woodlands and Mediterranean hills"
       ]
     }
   },
@@ -917,7 +917,7 @@
     "numero": 3,
     "correcta": 0,
     "es": {
-      "enunciado": "¿Cuándo se recuperó su población gracias a programas de conservación?",
+      "enunciado": "¿Cuándo se recuperó la población del águila imperial gracias a programas de conservación?",
       "opciones": [
         "En el siglo XXI",
         "En el siglo XIX",
@@ -926,7 +926,7 @@
       ]
     },
     "en": {
-      "enunciado": "When did its population recover thanks to conservation programs?",
+      "enunciado": "When did the imperial eagle population recover thanks to conservation programs?",
       "opciones": [
         "In the 21st century",
         "In the 19th century",
@@ -1016,7 +1016,7 @@
       "enunciado": "¿Qué artes se presentan en un tablao flamenco?",
       "opciones": [
         "Cante, baile y guitarra",
-        "Tauromaquia y rejoneo",
+        "Corridas de toros",
         "Pintura y escultura",
         "Teatro clásico griego"
       ]
@@ -1025,7 +1025,7 @@
       "enunciado": "Which arts are performed in a flamenco tablao?",
       "opciones": [
         "Singing, dance, and guitar",
-        "Bullfighting and rejoneo",
+        "Bullfighting",
         "Painting and sculpture",
         "Classical Greek theater"
       ]
@@ -1133,19 +1133,19 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿De qué palabra latina proviene el nombre paella?",
+      "enunciado": "¿De qué palabra latina que significa «sartén» proviene el nombre paella?",
       "opciones": [
         "Patria",
-        "Patella (sartén)",
+        "Patella",
         "Pastor",
         "Paloma"
       ]
     },
     "en": {
-      "enunciado": "From which Latin word does the name paella come?",
+      "enunciado": "From which Latin word meaning “pan” does the name paella come?",
       "opciones": [
         "Patria",
-        "Patella (pan)",
+        "Patella",
         "Pastor",
         "Paloma"
       ]
@@ -1205,7 +1205,7 @@
     "numero": 3,
     "correcta": 0,
     "es": {
-      "enunciado": "¿Cómo se llama el acto más famoso en el que toros y corredores recorren las calles de Pamplona cada mañana?",
+      "enunciado": "¿Cómo se llama el acto en el que toros y corredores recorren las calles de Pamplona cada mañana?",
       "opciones": [
         "El encierro",
         "La Tomatina",
@@ -1214,7 +1214,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the famous daily event in which bulls and runners go through Pamplona's streets each morning?",
+      "enunciado": "What is the event in which bulls and runners go through Pamplona's streets each morning?",
       "opciones": [
         "The running of the bulls",
         "La Tomatina",
@@ -1232,7 +1232,7 @@
       "enunciado": "¿Cuándo culminan las Fallas de Valencia?",
       "opciones": [
         "El 6 de enero",
-        "El 19 de marzo, día de San José",
+        "El 19 de marzo",
         "El último miércoles de agosto",
         "El 15 de agosto"
       ]
@@ -1241,7 +1241,7 @@
       "enunciado": "When do Valencia's Fallas culminate?",
       "opciones": [
         "January 6",
-        "March 19, Saint Joseph's Day",
+        "March 19",
         "The last Wednesday of August",
         "August 15"
       ]
@@ -1253,7 +1253,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cómo se llaman las figuras satíricas que se queman en la Cremà?",
+      "enunciado": "¿Cómo se llaman las figuras satíricas que se queman en la Cremà de las Fallas?",
       "opciones": [
         "Gigantes",
         "Percebes",
@@ -1262,7 +1262,7 @@
       ]
     },
     "en": {
-      "enunciado": "What are the satirical figures burned in the Cremà called?",
+      "enunciado": "What are the satirical figures burned in the Fallas Cremà called?",
       "opciones": [
         "Giants",
         "Barnacles",
@@ -1397,21 +1397,21 @@
     "numero": 2,
     "correcta": 0,
     "es": {
-      "enunciado": "¿Qué era la Giralda antes de ser campanario cristiano?",
+      "enunciado": "¿Qué era la Giralda antes de ser el campanario cristiano de Sevilla?",
       "opciones": [
-        "Alminar de una mezquita almohade",
-        "Faro romano",
-        "Palacio nazarí",
-        "Castillo templario"
+        "La torre de llamada de una mezquita musulmana",
+        "Un faro romano",
+        "Un palacio nazarí",
+        "Un castillo templario"
       ]
     },
     "en": {
-      "enunciado": "What was La Giralda before becoming a Christian bell tower?",
+      "enunciado": "What was La Giralda before becoming Seville’s Christian bell tower?",
       "opciones": [
-        "Minaret of an Almohad mosque",
-        "Roman lighthouse",
-        "Nasrid palace",
-        "Templar castle"
+        "The call-to-prayer tower of a Muslim mosque",
+        "A Roman lighthouse",
+        "A Nasrid palace",
+        "A Templar castle"
       ]
     }
   },
@@ -1637,7 +1637,7 @@
     "numero": 3,
     "correcta": 0,
     "es": {
-      "enunciado": "¿Qué simbolizan hoy los murciélagos en la descripción?",
+      "enunciado": "¿Qué simbolizan hoy los murciélagos según la historia?",
       "opciones": [
         "Conservación",
         "Deportes de riesgo",
@@ -1646,7 +1646,7 @@
       ]
     },
     "en": {
-      "enunciado": "What do bats symbolize today in the description?",
+      "enunciado": "What do bats symbolize today according to the story?",
       "opciones": [
         "Conservation",
         "Extreme sports",
@@ -1712,7 +1712,7 @@
       "enunciado": "¿Qué elementos acompañan las procesiones de Semana Santa?",
       "opciones": [
         "Tomates y camiones de agua",
-        "Toros y caballos alazanes",
+        "Toros y caballos",
         "Ninots y mascletàs",
         "Pasos, nazarenos y bandas de música"
       ]
@@ -1721,7 +1721,7 @@
       "enunciado": "What elements accompany Holy Week processions?",
       "opciones": [
         "Tomatoes and water trucks",
-        "Bulls and chestnut horses",
+        "Bulls and horses",
         "Ninots and mascletàs",
         "Floats, hooded penitents, and bands"
       ]
@@ -1925,7 +1925,7 @@
     "numero": 3,
     "correcta": 0,
     "es": {
-      "enunciado": "¿Cómo llamaban los guanches al Teide?",
+      "enunciado": "¿Cómo llamaban los antiguos habitantes de Canarias, los guanches, al Teide?",
       "opciones": [
         "Echeyde",
         "Guanche",
@@ -1934,7 +1934,7 @@
       ]
     },
     "en": {
-      "enunciado": "What did the Guanches call Teide?",
+      "enunciado": "What did the Guanches, the ancient people of the Canary Islands, call Teide?",
       "opciones": [
         "Echeyde",
         "Guanche",
@@ -2074,7 +2074,7 @@
         "Omeya",
         "Almohade",
         "Nazarí",
-        "Abadí"
+        "Abasí"
       ]
     },
     "en": {
@@ -2355,23 +2355,23 @@
     "id": "story33_question3",
     "historia": "33",
     "numero": 3,
-    "correcta": 0,
+    "correcta": 2,
     "es": {
       "enunciado": "¿En qué consiste básicamente un churro?",
       "opciones": [
-        "Helado",
-        "Masa horneada",
-        "Masa frita alargada",
-        "Galleta"
+        "Un helado",
+        "Una masa horneada",
+        "Una masa frita alargada",
+        "Una galleta"
       ]
     },
     "en": {
-      "enunciado": "What is a churro basically made of?",
+      "enunciado": "What is a churro basically?",
       "opciones": [
-        "Ice cream",
-        "Baked dough",
-        "Elongated fried dough",
-        "Cookie"
+        "An ice cream",
+        "A baked dough",
+        "An elongated fried dough",
+        "A cookie"
       ]
     }
   },
@@ -2464,7 +2464,7 @@
     "en": {
       "enunciado": "On which May celebration are carnations traditionally used on decorated crosses?",
       "opciones": [
-        "May crosses",
+        "May Crosses",
         "San Juan",
         "Corpus Christi",
         "All Saints' Day"
@@ -2501,7 +2501,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿En qué región adornan especialmente procesiones y trajes de flamenca?",
+      "enunciado": "¿En qué región adornan los claveles especialmente procesiones y trajes de flamenca?",
       "opciones": [
         "Galicia",
         "Cataluña",
@@ -2510,7 +2510,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which region do they especially adorn processions and flamenco dress?",
+      "enunciado": "In which region do carnations especially adorn processions and flamenco dress?",
       "opciones": [
         "Galicia",
         "Catalonia",
@@ -2643,23 +2643,23 @@
     "id": "story37_question3",
     "historia": "37",
     "numero": 3,
-    "correcta": 0,
+    "correcta": 2,
     "es": {
       "enunciado": "¿Qué proceso histórico se asocia al reinado de Don Pelayo?",
       "opciones": [
-        "Guerra Civil",
-        "Descubrimiento de América",
-        "Reconquista",
-        "Ilustración"
+        "La Guerra Civil",
+        "El descubrimiento de América",
+        "La Reconquista",
+        "La Ilustración"
       ]
     },
     "en": {
       "enunciado": "Which historical process is associated with Don Pelayo's reign?",
       "opciones": [
-        "Civil War",
-        "Discovery of America",
-        "Reconquista",
-        "Enlightenment"
+        "The Civil War",
+        "The discovery of America",
+        "The Reconquista",
+        "The Enlightenment"
       ]
     }
   },
@@ -2672,7 +2672,7 @@
       "enunciado": "¿En qué ciudad gallega está la Torre de Hércules?",
       "opciones": [
         "Vigo",
-        "La Coruña",
+        "A Coruña",
         "Santiago",
         "Lugo"
       ]
@@ -2715,7 +2715,7 @@
     "id": "story38_question3",
     "historia": "38",
     "numero": 3,
-    "correcta": 3,
+    "correcta": 1,
     "es": {
       "enunciado": "¿Qué distinción internacional posee la Torre de Hércules?",
       "opciones": [
@@ -2885,7 +2885,7 @@
     "numero": 1,
     "correcta": 0,
     "es": {
-      "enunciado": "¿De qué región es originario el gazpacho andaluz moderno?",
+      "enunciado": "¿De qué región es originario el gazpacho moderno?",
       "opciones": [
         "Andalucía",
         "Galicia",
@@ -2894,7 +2894,7 @@
       ]
     },
     "en": {
-      "enunciado": "From which region does modern Andalusian gazpacho originate?",
+      "enunciado": "From which region does modern gazpacho originate?",
       "opciones": [
         "Andalusia",
         "Galicia",
@@ -2931,9 +2931,9 @@
     "id": "story41_question3",
     "historia": "41",
     "numero": 3,
-    "correcta": 2,
+    "correcta": 1,
     "es": {
-      "enunciado": "¿Cómo se llama la versión más espesa del gazpacho cordobés?",
+      "enunciado": "¿Cómo se llama la versión más espesa del gazpacho típica de Córdoba?",
       "opciones": [
         "Ajoblanco",
         "Salmorejo",
@@ -2942,7 +2942,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the thicker Córdoba version of gazpacho called?",
+      "enunciado": "What is the thicker Córdoba-style version of gazpacho called?",
       "opciones": [
         "Ajoblanco",
         "Salmorejo",
@@ -3075,7 +3075,7 @@
     "id": "story43_question3",
     "historia": "43",
     "numero": 3,
-    "correcta": 0,
+    "correcta": 2,
     "es": {
       "enunciado": "¿Qué viaje histórico apoyó Isabel en 1492?",
       "opciones": [
@@ -3291,7 +3291,7 @@
     "id": "story46_question3",
     "historia": "46",
     "numero": 3,
-    "correcta": 1,
+    "correcta": 2,
     "es": {
       "enunciado": "¿Qué día conmemora el natalicio de Cervantes en la ONU?",
       "opciones": [
@@ -3341,7 +3341,7 @@
     "numero": 2,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Qué pintor español autor de Las meninas tiene obras destacadas en el Prado?",
+      "enunciado": "¿Qué pintor español, autor de Las meninas, tiene obras destacadas en el Prado?",
       "opciones": [
         "Goya",
         "Picasso",
@@ -3413,7 +3413,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Con qué especia se aliña tradicionalmente el pulpo a feira?",
+      "enunciado": "¿Con qué especia se aliña tradicionalmente el pulpo a la gallega?",
       "opciones": [
         "Azafrán",
         "Comino",
@@ -3422,7 +3422,7 @@
       ]
     },
     "en": {
-      "enunciado": "With which spice is fair-style octopus traditionally dressed?",
+      "enunciado": "With which spice is Galician-style octopus traditionally dressed?",
       "opciones": [
         "Saffron",
         "Cumin",
@@ -3483,7 +3483,7 @@
     "id": "story49_question2",
     "historia": "49",
     "numero": 2,
-    "correcta": 1,
+    "correcta": 0,
     "es": {
       "enunciado": "¿En qué región tiene denominación de origen el queso manchego?",
       "opciones": [
@@ -3507,7 +3507,7 @@
     "id": "story49_question3",
     "historia": "49",
     "numero": 3,
-    "correcta": 2,
+    "correcta": 1,
     "es": {
       "enunciado": "¿En qué novela clásica aparece la tradición quesera manchega?",
       "opciones": [
@@ -3533,7 +3533,7 @@
     "numero": 1,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Cómo se llama la Semana Grande en euskera?",
+      "enunciado": "¿Cómo se llama la Semana Grande de Bilbao en euskera?",
       "opciones": [
         "San Fermín",
         "La Tomatina",
@@ -3542,7 +3542,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is Semana Grande called in Basque?",
+      "enunciado": "What is Bilbao’s Semana Grande called in Basque?",
       "opciones": [
         "San Fermín",
         "La Tomatina",
@@ -3651,7 +3651,7 @@
     "id": "story51_question3",
     "historia": "51",
     "numero": 3,
-    "correcta": 0,
+    "correcta": 2,
     "es": {
       "enunciado": "¿Qué se esconde en el roscón además de la haba?",
       "opciones": [
@@ -3725,7 +3725,7 @@
     "numero": 3,
     "correcta": 3,
     "es": {
-      "enunciado": "¿En qué estación se asocia especialmente a las terrazas españolas?",
+      "enunciado": "¿En qué estación se asocia especialmente la sangría a las terrazas españolas?",
       "opciones": [
         "Invierno",
         "Otoño",
@@ -3734,7 +3734,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which season is it especially linked to Spanish terraces?",
+      "enunciado": "In which season is sangría especially linked to Spanish terraces?",
       "opciones": [
         "Winter",
         "Autumn",
