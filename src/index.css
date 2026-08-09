@@ -1812,16 +1812,24 @@ button {
 /* ---------- Match --------------------------------------------------------- */
 
 .screen-game {
+  --match-bar-space: 4.75rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  max-width: none;
   min-height: 100%;
+  height: 100dvh;
   margin: 0;
-  padding: 1rem;
-  align-items: center;
-  justify-content: center;
-  gap: 1.3rem;
+  padding: 0.35rem 0.5rem 0.5rem;
+  padding-top: calc(var(--match-bar-space) + 0.25rem);
+  align-items: stretch;
+  justify-content: stretch;
+  gap: 0;
   background: none;
   box-shadow: none;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .match-bar {
@@ -1929,34 +1937,53 @@ button {
 /* ---------- Board --------------------------------------------------------- */
 
 /*
- * Tamaño de carta = lo máximo que cabe en pantalla (ancho y alto), sin techo
- * fijo de rem: en PC las cartas crecen con el monitor. --cols/--rows permiten
- * volcar tableros altos a lo ancho en escritorio (ver media query abajo).
+ * board-shell fills the viewport under the match bar; Board.tsx measures it
+ * and sets --lado in px. CSS fallback keeps a decent size before JS runs.
  */
+.board-shell {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .board {
   --cols: var(--columns);
   --rows: var(--rows);
+  --gap-ratio: 0.08;
   --lado: min(
-    calc((100vw - 2.5rem) / (var(--cols) * 1.1)),
-    calc((100vh - 10.5rem) / (var(--rows) * 1.1))
+    calc(
+      (100vw - 1rem) /
+        (var(--cols) + (var(--cols) - 1) * var(--gap-ratio))
+    ),
+    calc(
+      (100dvh - var(--match-bar-space, 4.75rem) - 0.75rem) /
+        (var(--rows) + (var(--rows) - 1) * var(--gap-ratio))
+    )
   );
 
   display: grid;
   grid-template-columns: repeat(var(--cols), var(--lado));
   grid-auto-rows: var(--lado);
-  gap: calc(var(--lado) * 0.09);
+  gap: calc(var(--lado) * var(--gap-ratio));
   justify-content: center;
   align-content: center;
-  margin-top: 3.5rem;
+  margin: 0;
 }
 
-@supports (height: 100dvh) {
-  .board {
-    --lado: min(
-      calc((100vw - 2.5rem) / (var(--cols) * 1.1)),
-      calc((100dvh - 10.5rem) / (var(--rows) * 1.1))
-    );
-  }
+.board[data-cards='20'],
+.board[data-cards='24'],
+.board[data-cards='28'],
+.board[data-cards='32'],
+.board[data-cards='40'] {
+  --gap-ratio: 0.06;
+}
+
+.board[data-cards='32'],
+.board[data-cards='40'] {
+  --gap-ratio: 0.05;
 }
 
 /* Desktop: 4×6 → 6×4, 4×8 → 8×4, 5×8 → 8×5… use the width. */
@@ -2857,21 +2884,13 @@ button {
     width: min(28vw, 8rem);
   }
 
+  .screen-game {
+    --match-bar-space: 4.35rem;
+  }
+
   .board {
     --cols: var(--columns);
     --rows: var(--rows);
-    margin-top: 3.2rem;
-    gap: calc(var(--lado) * 0.08);
-  }
-
-  /* Large boards on mobile: more margin under the bar, tighter cards. */
-  .screen-game[data-cards='32'] .board,
-  .screen-game[data-cards='40'] .board {
-    --lado: min(
-      calc((100vw - 1.2rem) / (var(--cols) * 1.08)),
-      calc((100vh - 9rem) / (var(--rows) * 1.08)),
-      4.8rem
-    );
   }
 
   .modal {
@@ -2922,19 +2941,6 @@ button {
   .story-grid {
     grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
     gap: 1rem 0.7rem;
-  }
-}
-
-@supports (height: 100dvh) {
-  @media (max-width: 40rem) {
-    .screen-game[data-cards='32'] .board,
-    .screen-game[data-cards='40'] .board {
-      --lado: min(
-        calc((100vw - 1.2rem) / (var(--cols) * 1.08)),
-        calc((100dvh - 9rem) / (var(--rows) * 1.08)),
-        4.8rem
-      );
-    }
   }
 }
 
