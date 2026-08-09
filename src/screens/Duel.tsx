@@ -178,7 +178,7 @@ export function Duel() {
     const joinWithTimeout = Promise.race([
       joinDuel(code),
       new Promise<never>((_, reject) => {
-        window.setTimeout(() => reject(new Error('JOIN_TIMEOUT')), 12000)
+        window.setTimeout(() => reject(new Error('JOIN_TIMEOUT')), 8000)
       }),
     ])
 
@@ -191,8 +191,8 @@ export function Duel() {
       .catch(() => {
         forgetInviteCode()
         if (!active) return
-        setHubMode('join')
-        setJoinCode(code)
+        setHubMode('home')
+        setJoinCode('')
         setError(t('duelJoinFailed'))
       })
       .finally(() => {
@@ -296,6 +296,7 @@ export function Duel() {
   }
 
   const goMenu = () => {
+    if (!match) abortInviteJoin()
     playSound('transition')
     navigate('/menu')
   }
@@ -422,16 +423,20 @@ export function Duel() {
   if (!match) {
     if (joiningInvite) {
       return (
-        <Shell title={t('duel')} onBack={() => {
-          abortInviteJoin()
-          goMenu()
-        }}>
+        <Shell
+          title={t('duel')}
+          onBack={() => {
+            abortInviteJoin()
+            playSound('transition')
+            navigate('/menu')
+          }}
+        >
           <PancitoPanel pose="wait" body={t('duelJoiningInvite')} />
           <p className="duel-code">{joinCode || recalledInviteCode() || '…'}</p>
           <p className="duel-muted">{t('duelJoiningInviteHelp')}</p>
           <button
             type="button"
-            className="btn-secondary"
+            className="btn-primary"
             onClick={() => {
               playSound('button')
               abortInviteJoin()

@@ -383,6 +383,8 @@ export async function leaveDuel(matchId: string): Promise<DuelMatch> {
 
 const ROOM_STORAGE_KEY = 'mh-duel-room'
 const INVITE_STORAGE_KEY = 'mh-duel-invite'
+/** Invite links expire so a closed room cannot trap a guest forever. */
+const INVITE_TTL_MS = 10 * 60 * 1000
 
 export function rememberDuelRoom(matchId: string) {
   try {
@@ -416,7 +418,10 @@ export function rememberInviteCode(code: string) {
   const clean = normalizeRoomCode(code)
   if (!clean) return
   try {
-    sessionStorage.setItem(INVITE_STORAGE_KEY, clean)
+    sessionStorage.setItem(
+      INVITE_STORAGE_KEY,
+      JSON.stringify({ code: clean, at: Date.now() }),
+    )
   } catch {
     /* ignore */
   }
@@ -432,8 +437,32 @@ export function forgetInviteCode() {
 
 export function recalledInviteCode(): string | null {
   try {
-    return sessionStorage.getItem(INVITE_STORAGE_KEY)
+    const raw = sessionStorage.getItem(INVITE_STORAGE_KEY)
+    if (!raw) return null
+
+    /* Legacy: plain code string from earlier builds. */
+    if (raw.length <= 8 && !raw.startsWith('{')) {
+      const clean = normalizeRoomCode(raw)
+      if (!clean) {
+        forgetInviteCode()
+        return null
+      }
+      /* Treat legacy invites as expired so stuck guests self-heal. */
+      forgetInviteCode()
+      return null
+    }
+
+    const parsed = JSON.parse(raw) as { code?: unknown; at?: unknown }
+    const code =
+      typeof parsed.code === 'string' ? normalizeRoomCode(parsed.code) : ''
+    const at = typeof parsed.at === 'number' ? parsed.at : 0
+    if (!code || !at || Date.now() - at > INVITE_TTL_MS) {
+      forgetInviteCode()
+      return null
+    }
+    return code
   } catch {
+    forgetInviteCode()
     return null
   }
 }
