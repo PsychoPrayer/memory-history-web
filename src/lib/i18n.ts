@@ -237,6 +237,9 @@ const es = {
   duelUsernameHelp: '3–16 caracteres: letras, números o _.',
   duelUsernameTaken: 'Ese nombre ya está ocupado.',
   duelSaveUsername: 'Guardar nombre',
+  duelNeedLocalProfile:
+    'Primero elige tu nombre y avatar en el menú. Ese mismo perfil se usa en los duelos.',
+  duelGoSetProfile: 'Ir al menú',
   duelIntro:
     'Crea una sala, comparte el código y enfrentad el mismo nivel. Cada uno en su pantalla; Pancito decide el ganador.',
   duelCreateRoom: 'Crear sala',
@@ -541,6 +544,9 @@ const en: Record<keyof typeof es, string> = {
   duelUsernameHelp: '3–16 characters: letters, numbers, or _.',
   duelUsernameTaken: 'That username is taken.',
   duelSaveUsername: 'Save username',
+  duelNeedLocalProfile:
+    'First pick your name and avatar in the menu. That same profile is used in duels.',
+  duelGoSetProfile: 'Go to menu',
   duelIntro:
     'Create a room, share the code, and play the same level. Each on your own screen — Pancito picks the winner.',
   duelCreateRoom: 'Create room',

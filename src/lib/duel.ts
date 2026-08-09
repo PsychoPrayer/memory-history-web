@@ -18,6 +18,8 @@ export interface DuelRules {
 export interface DuelProfile {
   user_id: string
   username: string
+  /** Avatar id from local catalog (`pl:…` / `ui:…`). */
+  avatar_id: string | null
   wins: number
   losses: number
   draws: number
@@ -146,11 +148,28 @@ function mapProfile(row: Record<string, unknown>): DuelProfile {
   return {
     user_id: String(row.user_id),
     username: String(row.username),
+    avatar_id:
+      typeof row.avatar_id === 'string' && row.avatar_id
+        ? row.avatar_id
+        : null,
     wins: Number(row.wins) || 0,
     losses: Number(row.losses) || 0,
     draws: Number(row.draws) || 0,
     updated_at: String(row.updated_at),
   }
+}
+
+/** Map a display name to a duel username (letters, numbers, _). */
+export function duelUsernameFromPlayerName(name: string): string {
+  let clean = name
+    .trim()
+    .normalize('NFD')
+    .replace(/\p{M}/gu, '')
+    .replace(/[^A-Za-z0-9_]/g, '_')
+    .replace(/_+/g, '_')
+    .replace(/^_|_$/g, '')
+  if (clean.length < 3) clean = `${clean}player`.slice(0, 16)
+  return clean.slice(0, 16)
 }
 
 function mapResult(row: Record<string, unknown>): DuelResult {
@@ -188,29 +207,65 @@ export async function fetchProfiles(userIds: string[]): Promise<DuelProfile[]> {
   return (data ?? []).map((row) => mapProfile(row as Record<string, unknown>))
 }
 
-export async function claimUsername(user: User, username: string): Promise<DuelProfile> {
+export async function claimUsername(
+  user: User,
+  username: string,
+  avatarId?: string | null,
+): Promise<DuelProfile> {
   const supabase = requireClient()
   const clean = normalizeUsername(username)
   if (!isValidUsername(clean)) {
     throw new Error('Invalid username')
   }
+  const payload: Record<string, unknown> = {
+    user_id: user.id,
+    username: clean,
+    updated_at: new Date().toISOString(),
+  }
+  if (avatarId) payload.avatar_id = avatarId
+
   const { data, error } = await supabase
     .from('duel_profiles')
-    .upsert(
-      {
-        user_id: user.id,
-        username: clean,
-        updated_at: new Date().toISOString(),
-      },
-      { onConflict: 'user_id' },
-    )
+    .upsert(payload, { onConflict: 'user_id' })
     .select('*')
     .single()
   if (error) {
     if (error.code === '23505') throw new Error('USERNAME_TAKEN')
+    /* Column missing until duel_avatar.sql is applied — retry without avatar. */
+    if (avatarId && /avatar_id/i.test(error.message)) {
+      return claimUsername(user, username, null)
+    }
     throw new Error(duelErrorMessage(error, error.message || 'Duel error'))
   }
   return mapProfile(data as Record<string, unknown>)
+}
+
+/**
+ * Keep cloud duel profile aligned with the local menu name + avatar.
+ */
+export async function syncDuelProfile(
+  user: User,
+  playerName: string,
+  avatarId: string,
+): Promise<DuelProfile> {
+  const existing = await fetchMyProfile(user.id)
+  const preferred = duelUsernameFromPlayerName(playerName)
+  const username = existing?.username || preferred
+
+  try {
+    return await claimUsername(user, username, avatarId)
+  } catch (err) {
+    if (
+      err instanceof Error &&
+      err.message === 'USERNAME_TAKEN' &&
+      !existing
+    ) {
+      const suffix = String(Math.floor(Math.random() * 900) + 100)
+      const fallback = `${preferred.slice(0, 12)}${suffix}`
+      return claimUsername(user, fallback, avatarId)
+    }
+    throw err
+  }
 }
 
 export async function createDuel(

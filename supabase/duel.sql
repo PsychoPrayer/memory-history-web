@@ -5,6 +5,7 @@
 create table if not exists public.duel_profiles (
   user_id uuid primary key references auth.users (id) on delete cascade,
   username text not null,
+  avatar_id text,
   wins int not null default 0 check (wins >= 0),
   losses int not null default 0 check (losses >= 0),
   draws int not null default 0 check (draws >= 0),

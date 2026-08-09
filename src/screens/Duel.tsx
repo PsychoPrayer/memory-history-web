@@ -1,25 +1,19 @@
-import {
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-  type FormEvent,
-  type ReactNode,
-} from 'react'
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import type { User } from '@supabase/supabase-js'
+import { PlayerBadge } from '../components/AvatarPicker'
 import { Board } from '../components/Board'
 import { CloudAccount } from '../components/CloudAccount'
 import { MatchBar } from '../components/MatchBar'
 import { Modal } from '../components/Modal'
 import { PancitoSprite } from '../components/PancitoGuide'
 import { Stars } from '../components/Stars'
+import { avatarById } from '../lib/avatars'
 import { useContent } from '../data/content'
 import { isUnlocked } from '../data/progression'
 import { formatTime } from '../lib/board'
 import {
   bothReady,
-  claimUsername,
   createDuel,
   duelErrorMessage,
   fetchMatch,
@@ -30,7 +24,6 @@ import {
   forgetInviteCode,
   isDuelRoomResumable,
   isHost,
-  isValidUsername,
   joinDuel,
   leaveDuel,
   markPlaying,
@@ -46,6 +39,7 @@ import {
   startCountdown,
   submitDuelResult,
   subscribeToMatch,
+  syncDuelProfile,
   updateMatchRules,
   type DuelMatch,
   type DuelProfile,
@@ -79,12 +73,8 @@ export function Duel() {
   const [hubMode, setHubMode] = useState<HubMode>('home')
   const [joinCode, setJoinCode] = useState('')
   const playerName = useSave((state) => state.settings.playerName)
-  const [usernameDraft, setUsernameDraft] = useState('')
+  const avatarId = useSave((state) => state.settings.avatarId)
   const inviteJoinInFlight = useRef(false)
-
-  useEffect(() => {
-    if (!usernameDraft && playerName) setUsernameDraft(playerName)
-  }, [playerName, usernameDraft])
 
   useEffect(() => subscribeCloud((_status, nextUser) => setUser(nextUser)), [])
 
@@ -125,23 +115,31 @@ export function Duel() {
     let cancelled = false
     setProfileLoading(true)
     setError(null)
-    void fetchMyProfile(user.id)
-      .then((next) => {
+
+    const load = async () => {
+      try {
+        if (playerName.trim().length >= 2) {
+          const synced = await syncDuelProfile(user, playerName, avatarId)
+          if (!cancelled) setProfile(synced)
+          return
+        }
+        const next = await fetchMyProfile(user.id)
         if (!cancelled) setProfile(next)
-      })
-      .catch((err) => {
+      } catch (err) {
         if (!cancelled) {
           setProfile(null)
           setError(duelErrorMessage(err, 'duelError'))
         }
-      })
-      .finally(() => {
-        setProfileLoading(false)
-      })
+      } finally {
+        if (!cancelled) setProfileLoading(false)
+      }
+    }
+
+    void load()
     return () => {
       cancelled = true
     }
-  }, [user?.id])
+  }, [user?.id, playerName, avatarId])
 
   /* Rejoin the same room after refresh / a short leave — not abandoned matches. */
   useEffect(() => {
@@ -415,78 +413,25 @@ export function Duel() {
               <li>{t('duelSetupStep2')}</li>
               <li>{t('duelSetupStep3')}</li>
             </ol>
-            <button
-              type="button"
-              className="btn-secondary"
-              onClick={() => {
-                playSound('button')
-                setError(null)
-                setProfileLoading(true)
-                void fetchMyProfile(user.id)
-                  .then(setProfile)
-                  .catch((err) =>
-                    setError(duelErrorMessage(err, t('duelError'))),
-                  )
-                  .finally(() => setProfileLoading(false))
-              }}
-            >
-              {t('tryAgain')}
-            </button>
           </>
         ) : (
-          <>
-            <PancitoPanel pose="happy" body={t('duelPickUsername')} />
-            <form
-              className="cloud-form"
-              onSubmit={(event: FormEvent) => {
-                event.preventDefault()
-                setError(null)
-                setBusy(true)
-                playSound('button')
-                void claimUsername(user, usernameDraft)
-                  .then(setProfile)
-                  .catch((err) => {
-                    const message = duelErrorMessage(err, t('duelError'))
-                    if (message === 'USERNAME_TAKEN') {
-                      setError(t('duelUsernameTaken'))
-                    } else if (message === 'DUEL_SETUP_NEEDED') {
-                      setError('DUEL_SETUP_NEEDED')
-                    } else {
-                      setError(message)
-                    }
-                  })
-                  .finally(() => setBusy(false))
-              }}
-            >
-              <label className="cloud-field">
-                <span>{t('duelUsername')}</span>
-                <input
-                  value={usernameDraft}
-                  onChange={(event) => setUsernameDraft(event.target.value)}
-                  minLength={3}
-                  maxLength={16}
-                  pattern="[A-Za-z0-9_]{3,16}"
-                  required
-                  autoComplete="username"
-                  placeholder="PancitoFan"
-                />
-              </label>
-              <p className="settings-help">{t('duelUsernameHelp')}</p>
-              {error && (
-                <p className="cloud-form-error" role="alert">
-                  {error}
-                </p>
-              )}
-              <button
-                type="submit"
-                className="btn-primary"
-                disabled={busy || !isValidUsername(usernameDraft)}
-              >
-                {t('duelSaveUsername')}
-              </button>
-            </form>
-          </>
+          <PancitoPanel pose="guide" body={t('duelNeedLocalProfile')} />
         )}
+        {error && error !== 'DUEL_SETUP_NEEDED' && (
+          <p className="cloud-form-error" role="alert">
+            {error === 'duelError' ? t('duelError') : error}
+          </p>
+        )}
+        <button
+          type="button"
+          className="btn-primary"
+          onClick={() => {
+            playSound('transition')
+            navigate('/menu')
+          }}
+        >
+          {t('duelGoSetProfile')}
+        </button>
       </Shell>
     )
   }
@@ -522,17 +467,14 @@ export function Duel() {
     return (
       <Shell title={t('duel')} onBack={goMenu}>
         <div className="duel-profile-card">
-          <PancitoSprite pose="happy" className="duel-profile-sprite" />
-          <div>
-            <p className="duel-username">{profile.username}</p>
-            <p className="duel-record">
-              {t('duelRecord', {
-                w: profile.wins,
-                l: profile.losses,
-                d: profile.draws,
-              })}
-            </p>
-          </div>
+          <PlayerBadge name={playerName || profile.username} avatarId={avatarId} />
+          <p className="duel-record">
+            {t('duelRecord', {
+              w: profile.wins,
+              l: profile.losses,
+              d: profile.draws,
+            })}
+          </p>
         </div>
         <PancitoPanel pose="guide" body={t('duelIntro')} />
 
@@ -683,6 +625,8 @@ export function Duel() {
         userId={user.id}
         results={results}
         profiles={profiles}
+        localName={playerName}
+        localAvatarId={avatarId}
         busy={busy}
         error={error}
         iAmReady={votes.iAmReady}
@@ -787,6 +731,41 @@ function profileName(profiles: DuelProfile[], userId: string | null | undefined)
   return profiles.find((p) => p.user_id === userId)?.username ?? '…'
 }
 
+function profileAvatar(
+  profiles: DuelProfile[],
+  userId: string | null | undefined,
+  fallbackId = 'ui:happy',
+) {
+  if (!userId) return avatarById(fallbackId)
+  const id =
+    profiles.find((p) => p.user_id === userId)?.avatar_id ?? fallbackId
+  return avatarById(id)
+}
+
+function DuelPlayerCard({
+  role,
+  name,
+  avatarId,
+  readyLabel,
+  ready,
+}: {
+  role: string
+  name: string
+  avatarId: string
+  readyLabel: string
+  ready: boolean
+}) {
+  const avatar = avatarById(avatarId)
+  return (
+    <div className="duel-player">
+      <span className="duel-player-role">{role}</span>
+      <img className="duel-player-avatar" src={avatar.image} alt="" draggable={false} />
+      <strong>{name}</strong>
+      <span data-ready={ready}>{readyLabel}</span>
+    </div>
+  )
+}
+
 function LobbyRoom({
   match,
   userId,
@@ -814,12 +793,32 @@ function LobbyRoom({
   const progress = useSave(() => progressFor(country))
   const host = isHost(match, userId)
   const ready = host ? match.host_ready : match.guest_ready
+  const localName = useSave((state) => state.settings.playerName)
+  const localAvatar = useSave((state) => state.settings.avatarId)
   const [shareNote, setShareNote] = useState<string | null>(null)
   const unlocked = useMemo(
     () => levels.filter((level) => isUnlocked(level, levels, progress)),
     [levels, progress],
   )
   const selected = levels.find((level) => level.id === match.rules.levelId)
+
+  const hostName =
+    match.host_id === userId
+      ? localName || profile.username
+      : profileName(profiles, match.host_id)
+  const guestName = match.guest_id
+    ? match.guest_id === userId
+      ? localName || profile.username
+      : profileName(profiles, match.guest_id)
+    : t('duelWaitingOpponent')
+  const hostAvatar =
+    match.host_id === userId
+      ? localAvatar
+      : profileAvatar(profiles, match.host_id).id
+  const guestAvatar =
+    match.guest_id === userId
+      ? localAvatar
+      : profileAvatar(profiles, match.guest_id).id
 
   const shareInvite = async () => {
     playSound('button')
@@ -852,29 +851,27 @@ function LobbyRoom({
       </div>
 
       <div className="duel-vs">
-        <div className="duel-player">
-          <span className="duel-player-role">{t('duelHost')}</span>
-          <strong>{profileName(profiles, match.host_id)}</strong>
-          <span data-ready={match.host_ready}>
-            {match.host_ready ? t('duelReady') : t('duelNotReady')}
-          </span>
-        </div>
+        <DuelPlayerCard
+          role={t('duelHost')}
+          name={hostName}
+          avatarId={hostAvatar}
+          ready={match.host_ready}
+          readyLabel={match.host_ready ? t('duelReady') : t('duelNotReady')}
+        />
         <span className="duel-vs-mark">VS</span>
-        <div className="duel-player">
-          <span className="duel-player-role">{t('duelGuest')}</span>
-          <strong>
-            {match.guest_id
-              ? profileName(profiles, match.guest_id)
-              : t('duelWaitingOpponent')}
-          </strong>
-          <span data-ready={match.guest_ready}>
-            {match.guest_id
+        <DuelPlayerCard
+          role={t('duelGuest')}
+          name={guestName}
+          avatarId={guestAvatar}
+          ready={match.guest_ready}
+          readyLabel={
+            match.guest_id
               ? match.guest_ready
                 ? t('duelReady')
                 : t('duelNotReady')
-              : '—'}
-          </span>
-        </div>
+              : '—'
+          }
+        />
       </div>
 
       <PancitoPanel
@@ -964,11 +961,19 @@ function LobbyRoom({
           </button>
         )}
       </div>
-      <p className="duel-muted">{t('duelRecord', {
-        w: profile.wins,
-        l: profile.losses,
-        d: profile.draws,
-      })}</p>
+      <div className="duel-profile-card duel-profile-card-compact">
+        <PlayerBadge
+          name={localName || profile.username}
+          avatarId={localAvatar}
+        />
+        <p className="duel-record">
+          {t('duelRecord', {
+            w: profile.wins,
+            l: profile.losses,
+            d: profile.draws,
+          })}
+        </p>
+      </div>
     </Shell>
   )
 }
@@ -1213,6 +1218,8 @@ function VerdictRoom({
   userId,
   results,
   profiles,
+  localName,
+  localAvatarId,
   busy,
   error,
   iAmReady,
@@ -1224,6 +1231,8 @@ function VerdictRoom({
   userId: string
   results: DuelResult[]
   profiles: DuelProfile[]
+  localName: string
+  localAvatarId: string
   busy: boolean
   error: string | null
   iAmReady: boolean
@@ -1234,6 +1243,7 @@ function VerdictRoom({
   const t = useT()
   const mine = results.find((r) => r.user_id === userId)
   const theirs = results.find((r) => r.user_id !== userId)
+  const rivalId = opponentId(match, userId)
   const won = match.winner_id === userId
   const lost = Boolean(match.winner_id && match.winner_id !== userId)
   const pose = match.is_draw ? 'guide' : won ? 'happy' : 'defeated'
@@ -1269,12 +1279,14 @@ function VerdictRoom({
 
       <div className="duel-result-grid">
         <ResultCard
-          title={profileName(profiles, userId)}
+          title={localName || profileName(profiles, userId)}
+          avatarId={localAvatarId}
           result={mine}
           highlight={won}
         />
         <ResultCard
-          title={profileName(profiles, opponentId(match, userId))}
+          title={profileName(profiles, rivalId)}
+          avatarId={profileAvatar(profiles, rivalId).id}
           result={theirs}
           highlight={lost}
         />
@@ -1314,17 +1326,23 @@ function VerdictRoom({
 
 function ResultCard({
   title,
+  avatarId,
   result,
   highlight,
 }: {
   title: string
+  avatarId: string
   result: DuelResult | undefined
   highlight: boolean
 }) {
   const t = useT()
+  const avatar = avatarById(avatarId)
   return (
     <div className="duel-result-card" data-highlight={highlight}>
-      <h3>{title}</h3>
+      <div className="duel-result-head">
+        <img src={avatar.image} alt="" draggable={false} />
+        <h3>{title}</h3>
+      </div>
       {!result ? (
         <p className="duel-muted">—</p>
       ) : result.forfeited ? (
