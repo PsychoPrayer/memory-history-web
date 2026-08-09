@@ -244,12 +244,23 @@ export function Duel() {
           return
         }
         setMatch(next)
-        const nextResults = await fetchResults(next.id)
-        if (cancelled) return
-        setResults(nextResults)
         const ids = [next.host_id, next.guest_id].filter(Boolean) as string[]
         const nextProfiles = await fetchProfiles(ids)
-        if (!cancelled) setProfiles(nextProfiles)
+        if (cancelled) return
+        setProfiles(nextProfiles)
+
+        /* Fresh rounds must not keep previous results (blocks rematch UI). */
+        if (
+          next.status === 'lobby' ||
+          next.status === 'countdown' ||
+          next.status === 'playing'
+        ) {
+          setResults([])
+          return
+        }
+
+        const nextResults = await fetchResults(next.id)
+        if (!cancelled) setResults(nextResults)
       } catch (err) {
         if (!cancelled) {
           setError(duelErrorMessage(err, 'duelError'))
@@ -565,7 +576,8 @@ export function Duel() {
     match.status === 'awaiting_results'
   ) {
     const myResult = results.find((r) => r.user_id === user.id)
-    if (myResult) {
+    /* Only wait after submitting — never during a fresh countdown/play. */
+    if (myResult && match.status === 'awaiting_results') {
       return (
         <WaitingRoom
           match={match}
@@ -579,7 +591,7 @@ export function Duel() {
     }
     return (
       <DuelPlay
-        key={`${match.id}-${match.starts_at ?? 'live'}`}
+        key={`${match.id}-${match.starts_at ?? 'live'}-${match.updated_at}`}
         match={match}
         userId={user.id}
         onSubmitted={async () => {
@@ -611,6 +623,7 @@ export function Duel() {
         results={results}
         profiles={profiles}
         busy={busy}
+        error={error}
         onRematch={async () => {
           setBusy(true)
           setError(null)
@@ -623,9 +636,18 @@ export function Duel() {
           } catch (err) {
             const message = duelErrorMessage(err, t('duelError'))
             /* Other player already reset the room — just sync. */
-            if (/not finished|no.*terminad/i.test(message)) {
+            if (
+              /not finished|no.*terminad|Match is not finished/i.test(message)
+            ) {
+              setResults([])
               await refreshMatch.current()
               void fetchMyProfile(user.id).then(setProfile)
+            } else if (
+              /rematch_duel|Could not find the function|schema cache/i.test(
+                message,
+              )
+            ) {
+              setError(t('duelRematchSetupNeeded'))
             } else {
               setError(message)
             }
@@ -1141,6 +1163,7 @@ function VerdictRoom({
   results,
   profiles,
   busy,
+  error,
   onRematch,
   onLeaveRoom,
 }: {
@@ -1149,6 +1172,7 @@ function VerdictRoom({
   results: DuelResult[]
   profiles: DuelProfile[]
   busy: boolean
+  error: string | null
   onRematch: () => void
   onLeaveRoom: () => void
 }) {
@@ -1192,6 +1216,12 @@ function VerdictRoom({
           highlight={lost}
         />
       </div>
+
+      {error && (
+        <p className="cloud-form-error" role="alert">
+          {error}
+        </p>
+      )}
 
       <div className="duel-actions">
         <button

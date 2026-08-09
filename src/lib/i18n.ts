@@ -272,7 +272,9 @@ const es = {
   duelBackToHub: 'Volver a duelos',
   duelRematch: 'Otra ronda',
   duelLeaveRoom: 'Salir de la sala',
-  duelStayInRoom: 'Misma sala · código {code}. Sin volver a escribirlo.',
+  duelStayInRoom: 'Misma sala · código {code}. Otra ronda arranca la cuenta atrás sola.',
+  duelRematchSetupNeeded:
+    'Falta actualizar rematch en Supabase. Ejecuta supabase/duel_rematch.sql en el SQL Editor y pulsa otra vez.',
   duelCancelled: 'La sala se canceló.',
   duelRecord: '{w} V · {l} D · {d} E',
   duelForfeit: 'Abandonar',
@@ -558,7 +560,9 @@ const en: Record<keyof typeof es, string> = {
   duelBackToHub: 'Back to duels',
   duelRematch: 'Rematch',
   duelLeaveRoom: 'Leave room',
-  duelStayInRoom: 'Same room · code {code}. No need to type it again.',
+  duelStayInRoom: 'Same room · code {code}. Rematch starts the countdown on its own.',
+  duelRematchSetupNeeded:
+    'Rematch is not installed in Supabase yet. Run supabase/duel_rematch.sql in the SQL Editor, then try again.',
   duelCancelled: 'The room was cancelled.',
   duelRecord: '{w} W · {l} L · {d} D',
   duelForfeit: 'Forfeit',
