@@ -1,5 +1,7 @@
 -- Memory History cloud save
 -- Run this once in the Supabase SQL editor (Dashboard → SQL → New query).
+-- For real-time duels, also run supabase/duel.sql and enable Realtime
+-- on duel_matches + duel_results (Database → Publications).
 
 create table if not exists public.saves (
   user_id uuid primary key references auth.users (id) on delete cascade,

@@ -26,6 +26,7 @@ import { Tests } from './screens/Tests'
 import { Quiz } from './screens/Quiz'
 import { Achievements } from './screens/Achievements'
 import { FreePlay } from './screens/FreePlay'
+import { Duel } from './screens/Duel'
 
 export default function App() {
   const country = useSave((state) => state.settings.country)
@@ -65,6 +66,7 @@ export default function App() {
           <Route path="/tests" element={<Tests />} />
           <Route path="/quiz/:level" element={<Quiz />} />
           <Route path="/achievements" element={<Achievements />} />
+          <Route path="/duel" element={<Duel />} />
           <Route path="*" element={<Navigate to="/menu" replace />} />
         </Routes>
       </ContentProvider>

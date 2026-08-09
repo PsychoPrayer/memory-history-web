@@ -98,6 +98,9 @@ export function Menu() {
         <button type="button" className="btn-secondary" onClick={() => go('/free')}>
           {t('freePlay')}
         </button>
+        <button type="button" className="btn-secondary" onClick={() => go('/duel')}>
+          {t('duel')}
+        </button>
         <button type="button" className="btn-secondary" onClick={() => go('/settings')}>
           {t('settings')}
         </button>

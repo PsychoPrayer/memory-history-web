@@ -1,3 +1,4 @@
+import { useCallback } from 'react'
 import { useSave } from './save'
 import type { Language } from '../types'
 
@@ -213,6 +214,74 @@ const es = {
   previousStory: 'Historia anterior',
   nextStory: 'Historia siguiente',
   storyOf: '{a} de {b}',
+
+  duel: 'Duelo',
+  duelNeedAccount:
+    'Para duelos en tiempo real necesitas una cuenta en la nube. Pancito no arbitra fantasmas.',
+  duelLoading: 'Preparando la arena…',
+  duelPickUsername:
+    'Elige un nombre de usuario. Así te encontrarán tus rivales.',
+  duelUsername: 'Nombre de usuario',
+  duelUsernameHelp: '3–16 caracteres: letras, números o _.',
+  duelUsernameTaken: 'Ese nombre ya está ocupado.',
+  duelSaveUsername: 'Guardar nombre',
+  duelIntro:
+    'Crea una sala, comparte el código y enfrentad el mismo nivel. Cada uno en su pantalla; Pancito decide el ganador.',
+  duelCreateRoom: 'Crear sala',
+  duelJoinRoom: 'Unirse con código',
+  duelJoin: 'Entrar',
+  duelRoomCode: 'Código de sala',
+  duelShareCode: 'Comparte este código con tu rival.',
+  duelJoinFailed: 'Sala no encontrada o ya completa.',
+  duelLobby: 'Sala de duelo',
+  duelHost: 'Anfitrión',
+  duelGuest: 'Invitado',
+  duelWaitingOpponent: 'Esperando rival…',
+  duelReady: 'Listo',
+  duelNotReady: 'No listo',
+  duelReadyUp: '¡Estoy listo!',
+  duelUnready: 'Aún no',
+  duelStart: 'Empezar duelo',
+  duelChooseLevel: 'Nivel del duelo',
+  duelPickLevel: 'Elige un nivel',
+  duelLevelSelected: 'Nivel {n}',
+  duelHostPickingLevel: 'El anfitrión elige el nivel…',
+  duelPancitoLobbyWait: 'Pancito: espera a tu rival. Sin dos jugadores no hay juicio.',
+  duelPancitoLobbyReady: 'Pancito: elegid nivel, marcaos listos y que empiece el duelo.',
+  duelPancitoCountdown: 'Pancito da la salida…',
+  duelPancitoWaiting: 'Ya terminaste. Pancito espera al otro para dictar sentencia.',
+  duelPancitoJudging: 'Pancito está revisando los resultados…',
+  duelPancitoWin: 'Pancito: victoria clara. Bien jugado, Jefe.',
+  duelPancitoLose: 'Pancito: esta vez no. El rival fue más limpio o más rápido.',
+  duelPancitoDraw: 'Pancito: empate técnico. Respeto a ambos.',
+  duelWaitingTitle: 'Esperando rival',
+  duelWaitingFor: 'Esperando a {name}…',
+  duelVerdict: 'Veredicto',
+  duelYouWin: '¡Ganaste el duelo!',
+  duelYouLose: 'Derrota',
+  duelDraw: 'Empate',
+  duelFinished: 'Duelo terminado',
+  duelBackToHub: 'Volver a duelos',
+  duelCancelled: 'La sala se canceló.',
+  duelRecord: '{w} V · {l} D · {d} E',
+  duelForfeit: 'Abandonar',
+  duelForfeitTitle: '¿Abandonar el duelo?',
+  duelForfeitBody: 'Cuenta como derrota si tu rival termina la partida.',
+  duelForfeited: 'Abandonó',
+  duelSubmitting: 'Enviando resultado…',
+  duelLevelMissing: 'Ese nivel no está en tu contenido. Cambia de país o elige otro nivel.',
+  duelCompleted: 'Completado',
+  duelNotCompleted: 'No completado',
+  duelError: 'Error de duelo',
+  duelCards: 'cartas',
+  duelSetupNeeded:
+    'Las tablas de duelo aún no existen en Supabase. Sin eso Pancito no puede guardar tu nombre ni crear salas.',
+  duelSetupStep1:
+    'Abre tu proyecto en supabase.com → SQL Editor → New query.',
+  duelSetupStep2:
+    'Copia todo el archivo supabase/duel.sql del repo, pégalo y pulsa Run.',
+  duelSetupStep3:
+    'Database → Publications → supabase_realtime → marca duel_matches y duel_results. Luego vuelve aquí y pulsa Reintentar.',
 } as const
 
 const en: Record<keyof typeof es, string> = {
@@ -421,6 +490,73 @@ const en: Record<keyof typeof es, string> = {
   previousStory: 'Previous story',
   nextStory: 'Next story',
   storyOf: '{a} of {b}',
+
+  duel: 'Duel',
+  duelNeedAccount:
+    'Real-time duels need a cloud account. Pancito does not referee ghosts.',
+  duelLoading: 'Preparing the arena…',
+  duelPickUsername: 'Pick a username so rivals can find you.',
+  duelUsername: 'Username',
+  duelUsernameHelp: '3–16 characters: letters, numbers, or _.',
+  duelUsernameTaken: 'That username is taken.',
+  duelSaveUsername: 'Save username',
+  duelIntro:
+    'Create a room, share the code, and play the same level. Each on your own screen — Pancito picks the winner.',
+  duelCreateRoom: 'Create room',
+  duelJoinRoom: 'Join with code',
+  duelJoin: 'Join',
+  duelRoomCode: 'Room code',
+  duelShareCode: 'Share this code with your rival.',
+  duelJoinFailed: 'Room not found or already full.',
+  duelLobby: 'Duel lobby',
+  duelHost: 'Host',
+  duelGuest: 'Guest',
+  duelWaitingOpponent: 'Waiting for rival…',
+  duelReady: 'Ready',
+  duelNotReady: 'Not ready',
+  duelReadyUp: 'Ready up!',
+  duelUnready: 'Not yet',
+  duelStart: 'Start duel',
+  duelChooseLevel: 'Duel level',
+  duelPickLevel: 'Pick a level',
+  duelLevelSelected: 'Level {n}',
+  duelHostPickingLevel: 'Host is picking the level…',
+  duelPancitoLobbyWait: 'Pancito: wait for your rival. No second player, no verdict.',
+  duelPancitoLobbyReady: 'Pancito: pick a level, ready up, then start the duel.',
+  duelPancitoCountdown: 'Pancito starts the race…',
+  duelPancitoWaiting: 'You’re done. Pancito waits for the other before judging.',
+  duelPancitoJudging: 'Pancito is reviewing the results…',
+  duelPancitoWin: 'Pancito: clear win. Nice work, Chief.',
+  duelPancitoLose: 'Pancito: not this time. Cleaner or faster rival.',
+  duelPancitoDraw: 'Pancito: technical draw. Respect to both.',
+  duelWaitingTitle: 'Waiting for rival',
+  duelWaitingFor: 'Waiting for {name}…',
+  duelVerdict: 'Verdict',
+  duelYouWin: 'You won the duel!',
+  duelYouLose: 'Defeat',
+  duelDraw: 'Draw',
+  duelFinished: 'Duel finished',
+  duelBackToHub: 'Back to duels',
+  duelCancelled: 'The room was cancelled.',
+  duelRecord: '{w} W · {l} L · {d} D',
+  duelForfeit: 'Forfeit',
+  duelForfeitTitle: 'Forfeit the duel?',
+  duelForfeitBody: 'Counts as a loss if your rival finishes the match.',
+  duelForfeited: 'Forfeited',
+  duelSubmitting: 'Submitting result…',
+  duelLevelMissing: 'That level is missing from your content. Switch country or pick another level.',
+  duelCompleted: 'Completed',
+  duelNotCompleted: 'Not completed',
+  duelError: 'Duel error',
+  duelCards: 'cards',
+  duelSetupNeeded:
+    'Duel tables are not in Supabase yet. Without them Pancito cannot save your name or create rooms.',
+  duelSetupStep1:
+    'Open your project on supabase.com → SQL Editor → New query.',
+  duelSetupStep2:
+    'Copy the whole supabase/duel.sql file from the repo, paste it, and click Run.',
+  duelSetupStep3:
+    'Database → Publications → supabase_realtime → enable duel_matches and duel_results. Then come back and tap Try again.',
 }
 
 export const TEXTS = { es, en }
@@ -448,6 +584,9 @@ export function useLanguage(): Language {
 
 export function useT() {
   const language = useLanguage()
-  return (key: TextKey, substitutions?: Substitutions) =>
-    translate(language, key, substitutions)
+  return useCallback(
+    (key: TextKey, substitutions?: Substitutions) =>
+      translate(language, key, substitutions),
+    [language],
+  )
 }
