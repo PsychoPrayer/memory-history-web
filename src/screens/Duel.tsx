@@ -591,7 +591,7 @@ export function Duel() {
     }
     return (
       <DuelPlay
-        key={`${match.id}-${match.starts_at ?? 'live'}-${match.updated_at}`}
+        key={`${match.id}-${match.starts_at ?? 'live'}`}
         match={match}
         userId={user.id}
         onSubmitted={async () => {
@@ -952,18 +952,23 @@ function DuelPlay({
   )
 
   useEffect(() => {
-    if (!match.starts_at) {
+    const startsAt = match.starts_at
+    const matchId = match.id
+    const host = isHost(match, userId)
+
+    if (!startsAt) {
       setLive(true)
       return
     }
+
     const tick = () => {
-      const left = Math.ceil((new Date(match.starts_at!).getTime() - Date.now()) / 1000)
+      const left = Math.ceil((new Date(startsAt).getTime() - Date.now()) / 1000)
       if (left <= 0) {
         setCountdown(0)
         setLive(true)
-        if (isHost(match, userId) && !playingMarked.current) {
+        if (host && !playingMarked.current) {
           playingMarked.current = true
-          void markPlaying(match.id)
+          void markPlaying(matchId)
         }
         return
       }
@@ -973,7 +978,7 @@ function DuelPlay({
     tick()
     const id = window.setInterval(tick, 200)
     return () => window.clearInterval(id)
-  }, [match, userId])
+  }, [match.id, match.starts_at, match.host_id, userId])
 
   if (!level || !rules) {
     return (
