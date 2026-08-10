@@ -1685,7 +1685,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Quién fue el primer descriptor documentado del Salto Ángel en 1910?",
+      "enunciado": "¿Quién fue el primer descubridor documentado del Salto Ángel en 1910?",
       "opciones": [
         "Jimmie Angel",
         "Charles Lindbergh",
@@ -1694,7 +1694,7 @@
       ]
     },
     "en": {
-      "enunciado": "Who was the first documented describer of Angel Falls in 1910?",
+      "enunciado": "Who was the first documented discoverer of Angel Falls in 1910?",
       "opciones": [
         "Jimmie Angel",
         "Charles Lindbergh",

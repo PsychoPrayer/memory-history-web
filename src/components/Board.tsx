@@ -64,9 +64,13 @@ export function Board({ tiles, columns, rows, back, revealing, onFlip }: Props) 
       if (width < 8 || height < 8) return
       const widthFactor = navColumns + (navColumns - 1) * gapRatio
       const heightFactor = navRows + (navRows - 1) * gapRatio
-      const next = Math.min(width / widthFactor, height / heightFactor)
-      /* Floor to device pixels to avoid sub-pixel overflow scroll. */
-      const px = Math.max(40, Math.floor(next * (window.devicePixelRatio || 1)) / (window.devicePixelRatio || 1))
+      /* Slight shrink so gaps never force page scroll on mobile Safari. */
+      const next = Math.min(width / widthFactor, height / heightFactor) * 0.98
+      const dpr = window.devicePixelRatio || 1
+      const px = Math.max(
+        22,
+        Math.floor(next * dpr) / dpr,
+      )
       setLado(px)
     }
 
@@ -74,9 +78,11 @@ export function Board({ tiles, columns, rows, back, revealing, onFlip }: Props) 
     const observer = new ResizeObserver(measure)
     observer.observe(shell)
     window.addEventListener('orientationchange', measure)
+    window.visualViewport?.addEventListener('resize', measure)
     return () => {
       observer.disconnect()
       window.removeEventListener('orientationchange', measure)
+      window.visualViewport?.removeEventListener('resize', measure)
     }
   }, [navColumns, navRows, gapRatio])
 
