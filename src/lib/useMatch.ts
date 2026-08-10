@@ -9,7 +9,7 @@ import type {
   ErrorThresholds,
 } from '../types'
 import { computeStars } from '../data/progression'
-import { buildBoard } from './board'
+import { buildBoard, reshuffleUnmatched } from './board'
 import { playSound } from './audio'
 import { announce } from './a11y'
 import { translate, useLanguage } from './i18n'
@@ -17,6 +17,7 @@ import { translate, useLanguage } from './i18n'
 const MATCH_DELAY = 380
 const FAIL_MARK_DELAY = 460
 const FAIL_FLIP_BACK_DELAY = 1100
+const HINT_SHOW_MS = 2200
 
 export interface MatchRules {
   cards: number
@@ -74,6 +75,8 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
   const [mistakes, setMistakes] = useState(0)
   const [elapsed, setElapsed] = useState(0)
   const [comparing, setComparing] = useState(false)
+  const [fogTick, setFogTick] = useState(0)
+  const [hintUsed, setHintUsed] = useState(false)
 
   const timers = useRef<number[]>([])
   const lastWarning = useRef(Infinity)
@@ -101,6 +104,8 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
     setElapsed(0)
     setComparing(false)
     lastWarning.current = Infinity
+    setFogTick(0)
+    setHintUsed(false)
   }, [catalog, clearTimers, rules.cards, rules.peekSeconds])
 
   useEffect(() => {
@@ -187,6 +192,10 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
       playSound('miss')
       announce(translate(language, 'pairMissed'))
 
+      const nextMistakes = mistakes + 1
+      const scored = scoringMistakes(nextMistakes, rules)
+      const fogBoard = rules.hard && scored > rules.mistakes.tres
+
       schedule(() => {
         setTiles((current) =>
           current.map((t) => (inPlay(t) ? { ...t, state: 'failed' as const } : t)),
@@ -194,14 +203,74 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
       }, FAIL_MARK_DELAY)
 
       schedule(() => {
-        setTiles((current) =>
-          current.map((t) => (inPlay(t) ? { ...t, state: 'hidden' as const } : t)),
-        )
+        setTiles((current) => {
+          const closed = current.map((t) =>
+            inPlay(t) ? { ...t, state: 'hidden' as const } : t,
+          )
+          if (!fogBoard) return closed
+          announce(translate(language, 'hardFog'))
+          playSound('urgency')
+          setFogTick((tick) => tick + 1)
+          return reshuffleUnmatched(closed)
+        })
         setComparing(false)
       }, FAIL_FLIP_BACK_DELAY)
     },
-    [comparing, language, phase, paused, schedule, tiles],
+    [comparing, language, mistakes, phase, paused, rules, schedule, tiles],
   )
+
+  const requestHint = useCallback(() => {
+    if (hintUsed || phase !== 'playing' || paused || comparing) return false
+
+    const closedFlips = tiles.map((tile) =>
+      tile.state === 'flipped' ? { ...tile, state: 'hidden' as const } : tile,
+    )
+    const groups = new Map<string, BoardTile[]>()
+    for (const tile of closedFlips) {
+      if (tile.state !== 'hidden') continue
+      const list = groups.get(tile.card.id) ?? []
+      list.push(tile)
+      groups.set(tile.card.id, list)
+    }
+    const candidates = [...groups.values()].filter((group) => group.length >= 2)
+    if (candidates.length === 0) return false
+
+    const pair = candidates[Math.floor(Math.random() * candidates.length)]!.slice(
+      0,
+      2,
+    )
+    const keys = new Set(pair.map((tile) => tile.key))
+    const name = pair[0]!.card.nombre
+
+    setHintUsed(true)
+    setComparing(true)
+    playSound('match')
+    announce(translate(language, 'hintRevealed', { name }))
+    setTiles(
+      closedFlips.map((tile) =>
+        keys.has(tile.key) ? { ...tile, state: 'hinted' as const } : tile,
+      ),
+    )
+
+    schedule(() => {
+      setTiles((current) =>
+        current.map((tile) =>
+          tile.state === 'hinted' ? { ...tile, state: 'hidden' as const } : tile,
+        ),
+      )
+      setComparing(false)
+    }, HINT_SHOW_MS)
+
+    return true
+  }, [
+    comparing,
+    hintUsed,
+    language,
+    paused,
+    phase,
+    schedule,
+    tiles,
+  ])
 
   const pairsMade = useMemo(
     () => tiles.filter((tile) => tile.state === 'matched').length / 2,
@@ -239,6 +308,9 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
     revealAll: phase === 'peek',
     pairsMade,
     totalPairs: rules.cards / 2,
+    fogTick,
+    hintUsed,
+    requestHint,
     result,
     flip,
     restart,

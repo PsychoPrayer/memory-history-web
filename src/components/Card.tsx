@@ -44,7 +44,9 @@ export function Card({
         ? `${card.nombre}. ${t('matchedMark')}`
         : state === 'failed'
           ? `${card.nombre}. ${t('missedMark')}`
-          : card.nombre
+          : state === 'hinted'
+            ? `${card.nombre}. ${t('hintMark')}`
+            : card.nombre
       : t('faceDownCard')
   const label = `${position}. ${faceLabel}`
 
@@ -116,6 +118,11 @@ export function Card({
             {state === 'failed' && (
               <span className="card-mark" data-kind="miss" aria-hidden="true">
                 ✕
+              </span>
+            )}
+            {state === 'hinted' && (
+              <span className="card-mark" data-kind="hint" aria-hidden="true">
+                ?
               </span>
             )}
           </span>

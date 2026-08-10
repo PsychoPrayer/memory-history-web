@@ -34,3 +34,18 @@ export function formatTime(seconds: number): string {
   const minutes = Math.floor(safe / 60)
   return `${minutes}:${String(safe % 60).padStart(2, '0')}`
 }
+
+/**
+ * Keep matched tiles in place; reshuffle and hide the rest (hard-mode fog).
+ */
+export function reshuffleUnmatched(tiles: BoardTile[]): BoardTile[] {
+  const unmatched = shuffle(
+    tiles
+      .filter((tile) => tile.state !== 'matched')
+      .map((tile) => ({ ...tile, state: 'hidden' as const })),
+  )
+  let index = 0
+  return tiles.map((tile) =>
+    tile.state === 'matched' ? tile : unmatched[index++]!,
+  )
+}

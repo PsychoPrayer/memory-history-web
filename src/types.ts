@@ -127,7 +127,7 @@ export interface CountryContent {
 // Match state
 // ---------------------------------------------------------------------------
 
-export type CardState = 'hidden' | 'flipped' | 'matched' | 'failed'
+export type CardState = 'hidden' | 'flipped' | 'matched' | 'failed' | 'hinted'
 
 export type MatchPhase = 'peek' | 'playing' | 'won' | 'lost'
 

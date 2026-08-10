@@ -8,12 +8,12 @@
     "columnas": 3,
     "filas": 4,
     "segundos": 60,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 3,
-      "dos": 6,
-      "una": 9
+      "tres": 2,
+      "dos": 4,
+      "una": 6
     },
     "historiaPremio": "1",
     "requisito": null,
@@ -29,12 +29,12 @@
     "columnas": 3,
     "filas": 4,
     "segundos": 60,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 3,
-      "dos": 6,
-      "una": 9
+      "tres": 2,
+      "dos": 4,
+      "una": 6
     },
     "historiaPremio": "2",
     "requisito": null,
@@ -50,12 +50,12 @@
     "columnas": 3,
     "filas": 4,
     "segundos": 55,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 3,
-      "dos": 6,
-      "una": 9
+      "tres": 2,
+      "dos": 4,
+      "una": 6
     },
     "historiaPremio": "3",
     "requisito": null,
@@ -71,12 +71,12 @@
     "columnas": 3,
     "filas": 4,
     "segundos": 55,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 3,
-      "dos": 6,
-      "una": 9
+      "tres": 2,
+      "dos": 4,
+      "una": 6
     },
     "historiaPremio": "4",
     "requisito": null,
@@ -92,12 +92,12 @@
     "columnas": 3,
     "filas": 4,
     "segundos": 50,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 3,
-      "dos": 6,
-      "una": 9
+      "tres": 2,
+      "dos": 4,
+      "una": 6
     },
     "historiaPremio": "5",
     "requisito": null,
@@ -116,9 +116,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 4,
-      "dos": 7,
-      "una": 9
+      "tres": 2,
+      "dos": 4,
+      "una": 6
     },
     "historiaPremio": "6",
     "requisito": null,
@@ -137,9 +137,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 4,
-      "dos": 7,
-      "una": 9
+      "tres": 2,
+      "dos": 4,
+      "una": 6
     },
     "historiaPremio": "7",
     "requisito": null,
@@ -158,9 +158,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 4,
-      "dos": 7,
-      "una": 9
+      "tres": 2,
+      "dos": 4,
+      "una": 6
     },
     "historiaPremio": "8",
     "requisito": null,
@@ -179,9 +179,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 4,
-      "dos": 7,
-      "una": 9
+      "tres": 2,
+      "dos": 4,
+      "una": 6
     },
     "historiaPremio": "9",
     "requisito": null,
@@ -200,9 +200,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 4,
-      "dos": 7,
-      "una": 9
+      "tres": 2,
+      "dos": 4,
+      "una": 6
     },
     "historiaPremio": "10",
     "requisito": null,
@@ -218,12 +218,12 @@
     "columnas": 4,
     "filas": 4,
     "segundos": 60,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 8,
-      "dos": 12,
-      "una": 16
+      "tres": 3,
+      "dos": 6,
+      "una": 9
     },
     "historiaPremio": "11",
     "requisito": null,
@@ -239,12 +239,12 @@
     "columnas": 4,
     "filas": 4,
     "segundos": 60,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 8,
-      "dos": 12,
-      "una": 16
+      "tres": 3,
+      "dos": 6,
+      "una": 9
     },
     "historiaPremio": "12",
     "requisito": null,
@@ -260,12 +260,12 @@
     "columnas": 4,
     "filas": 4,
     "segundos": 55,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 8,
-      "dos": 12,
-      "una": 16
+      "tres": 3,
+      "dos": 6,
+      "una": 9
     },
     "historiaPremio": "13",
     "requisito": null,
@@ -281,12 +281,12 @@
     "columnas": 4,
     "filas": 4,
     "segundos": 55,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 8,
-      "dos": 12,
-      "una": 16
+      "tres": 3,
+      "dos": 6,
+      "una": 9
     },
     "historiaPremio": "14",
     "requisito": null,
@@ -302,12 +302,12 @@
     "columnas": 4,
     "filas": 4,
     "segundos": 55,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 8,
-      "dos": 12,
-      "una": 16
+      "tres": 3,
+      "dos": 6,
+      "una": 9
     },
     "historiaPremio": "15",
     "requisito": null,
@@ -326,9 +326,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 8,
-      "dos": 12,
-      "una": 16
+      "tres": 3,
+      "dos": 6,
+      "una": 9
     },
     "historiaPremio": "16",
     "requisito": null,
@@ -347,9 +347,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 8,
-      "dos": 12,
-      "una": 16
+      "tres": 3,
+      "dos": 6,
+      "una": 9
     },
     "historiaPremio": "17",
     "requisito": null,
@@ -368,9 +368,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 8,
-      "dos": 12,
-      "una": 16
+      "tres": 3,
+      "dos": 6,
+      "una": 9
     },
     "historiaPremio": "18",
     "requisito": null,
@@ -389,9 +389,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 8,
-      "dos": 12,
-      "una": 16
+      "tres": 3,
+      "dos": 6,
+      "una": 9
     },
     "historiaPremio": "19",
     "requisito": null,
@@ -410,9 +410,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 8,
-      "dos": 12,
-      "una": 16
+      "tres": 3,
+      "dos": 6,
+      "una": 9
     },
     "historiaPremio": "20",
     "requisito": null,
@@ -428,12 +428,12 @@
     "columnas": 4,
     "filas": 5,
     "segundos": 60,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 9,
-      "dos": 14,
-      "una": 18
+      "tres": 5,
+      "dos": 9,
+      "una": 13
     },
     "historiaPremio": "21",
     "requisito": null,
@@ -449,12 +449,12 @@
     "columnas": 4,
     "filas": 5,
     "segundos": 55,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 9,
-      "dos": 14,
-      "una": 18
+      "tres": 5,
+      "dos": 9,
+      "una": 13
     },
     "historiaPremio": "22",
     "requisito": null,
@@ -470,12 +470,12 @@
     "columnas": 4,
     "filas": 5,
     "segundos": 55,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 9,
-      "dos": 14,
-      "una": 18
+      "tres": 5,
+      "dos": 9,
+      "una": 13
     },
     "historiaPremio": "23",
     "requisito": null,
@@ -491,12 +491,12 @@
     "columnas": 4,
     "filas": 5,
     "segundos": 55,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 9,
-      "dos": 14,
-      "una": 18
+      "tres": 5,
+      "dos": 9,
+      "una": 13
     },
     "historiaPremio": "24",
     "requisito": null,
@@ -512,12 +512,12 @@
     "columnas": 4,
     "filas": 5,
     "segundos": 50,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 9,
-      "dos": 14,
-      "una": 18
+      "tres": 5,
+      "dos": 9,
+      "una": 13
     },
     "historiaPremio": "25",
     "requisito": null,
@@ -536,9 +536,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 12,
-      "dos": 18,
-      "una": 22
+      "tres": 5,
+      "dos": 9,
+      "una": 13
     },
     "historiaPremio": "26",
     "requisito": null,
@@ -557,9 +557,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 12,
-      "dos": 18,
-      "una": 22
+      "tres": 5,
+      "dos": 9,
+      "una": 13
     },
     "historiaPremio": "27",
     "requisito": null,
@@ -578,9 +578,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 12,
-      "dos": 18,
-      "una": 22
+      "tres": 5,
+      "dos": 9,
+      "una": 13
     },
     "historiaPremio": "28",
     "requisito": null,
@@ -599,9 +599,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 12,
-      "dos": 18,
-      "una": 22
+      "tres": 5,
+      "dos": 9,
+      "una": 13
     },
     "historiaPremio": "29",
     "requisito": null,
@@ -620,9 +620,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 12,
-      "dos": 18,
-      "una": 22
+      "tres": 5,
+      "dos": 9,
+      "una": 13
     },
     "historiaPremio": "30",
     "requisito": null,
@@ -638,12 +638,12 @@
     "columnas": 4,
     "filas": 6,
     "segundos": 70,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 12,
-      "dos": 18,
-      "una": 22
+      "tres": 7,
+      "dos": 12,
+      "una": 17
     },
     "historiaPremio": "31",
     "requisito": null,
@@ -659,12 +659,12 @@
     "columnas": 4,
     "filas": 6,
     "segundos": 70,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 12,
-      "dos": 18,
-      "una": 22
+      "tres": 7,
+      "dos": 12,
+      "una": 17
     },
     "historiaPremio": "32",
     "requisito": null,
@@ -680,12 +680,12 @@
     "columnas": 4,
     "filas": 6,
     "segundos": 70,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 12,
-      "dos": 18,
-      "una": 22
+      "tres": 7,
+      "dos": 12,
+      "una": 17
     },
     "historiaPremio": "33",
     "requisito": null,
@@ -701,12 +701,12 @@
     "columnas": 4,
     "filas": 6,
     "segundos": 65,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 12,
-      "dos": 18,
-      "una": 22
+      "tres": 7,
+      "dos": 12,
+      "una": 17
     },
     "historiaPremio": "34",
     "requisito": null,
@@ -722,12 +722,12 @@
     "columnas": 4,
     "filas": 6,
     "segundos": 65,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 12,
-      "dos": 18,
-      "una": 22
+      "tres": 7,
+      "dos": 12,
+      "una": 17
     },
     "historiaPremio": "35",
     "requisito": null,
@@ -746,9 +746,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 22,
-      "una": 26
+      "tres": 7,
+      "dos": 12,
+      "una": 17
     },
     "historiaPremio": "36",
     "requisito": null,
@@ -767,9 +767,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 22,
-      "una": 26
+      "tres": 7,
+      "dos": 12,
+      "una": 17
     },
     "historiaPremio": "37",
     "requisito": null,
@@ -788,9 +788,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 22,
-      "una": 26
+      "tres": 7,
+      "dos": 12,
+      "una": 17
     },
     "historiaPremio": "38",
     "requisito": null,
@@ -809,9 +809,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 22,
-      "una": 26
+      "tres": 7,
+      "dos": 12,
+      "una": 17
     },
     "historiaPremio": "39",
     "requisito": null,
@@ -830,9 +830,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 22,
-      "una": 26
+      "tres": 7,
+      "dos": 12,
+      "una": 17
     },
     "historiaPremio": "40",
     "requisito": null,
@@ -848,12 +848,12 @@
     "columnas": 4,
     "filas": 7,
     "segundos": 80,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 22,
-      "una": 26
+      "tres": 10,
+      "dos": 16,
+      "una": 22
     },
     "historiaPremio": "41",
     "requisito": null,
@@ -869,12 +869,12 @@
     "columnas": 4,
     "filas": 7,
     "segundos": 80,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 22,
-      "una": 26
+      "tres": 10,
+      "dos": 16,
+      "una": 22
     },
     "historiaPremio": "42",
     "requisito": null,
@@ -890,12 +890,12 @@
     "columnas": 4,
     "filas": 7,
     "segundos": 80,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 22,
-      "una": 26
+      "tres": 10,
+      "dos": 16,
+      "una": 22
     },
     "historiaPremio": "43",
     "requisito": null,
@@ -911,12 +911,12 @@
     "columnas": 4,
     "filas": 7,
     "segundos": 75,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 22,
-      "una": 26
+      "tres": 10,
+      "dos": 16,
+      "una": 22
     },
     "historiaPremio": "44",
     "requisito": null,
@@ -932,12 +932,12 @@
     "columnas": 4,
     "filas": 7,
     "segundos": 75,
-    "vistazoSeg": 2.5,
+    "vistazoSeg": 1.5,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 22,
-      "una": 26
+      "tres": 10,
+      "dos": 16,
+      "una": 22
     },
     "historiaPremio": "45",
     "requisito": null,
@@ -956,9 +956,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 20,
-      "una": 24
+      "tres": 10,
+      "dos": 16,
+      "una": 22
     },
     "historiaPremio": "46",
     "requisito": null,
@@ -977,9 +977,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 20,
-      "una": 24
+      "tres": 10,
+      "dos": 16,
+      "una": 22
     },
     "historiaPremio": "47",
     "requisito": null,
@@ -998,9 +998,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 20,
-      "una": 24
+      "tres": 10,
+      "dos": 16,
+      "una": 22
     },
     "historiaPremio": "48",
     "requisito": null,
@@ -1019,9 +1019,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 20,
-      "una": 24
+      "tres": 10,
+      "dos": 16,
+      "una": 22
     },
     "historiaPremio": "49",
     "requisito": null,
@@ -1040,9 +1040,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 14,
-      "dos": 20,
-      "una": 24
+      "tres": 10,
+      "dos": 16,
+      "una": 22
     },
     "historiaPremio": "50",
     "requisito": null,
@@ -1058,11 +1058,11 @@
     "columnas": 4,
     "filas": 8,
     "segundos": 90,
-    "vistazoSeg": 3,
+    "vistazoSeg": 2,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
+      "tres": 15,
+      "dos": 23,
       "una": 30
     },
     "historiaPremio": "51",
@@ -1079,11 +1079,11 @@
     "columnas": 4,
     "filas": 8,
     "segundos": 90,
-    "vistazoSeg": 3,
+    "vistazoSeg": 2,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
+      "tres": 15,
+      "dos": 23,
       "una": 30
     },
     "historiaPremio": "52",
@@ -1100,11 +1100,11 @@
     "columnas": 4,
     "filas": 8,
     "segundos": 90,
-    "vistazoSeg": 3,
+    "vistazoSeg": 2,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
+      "tres": 15,
+      "dos": 23,
       "una": 30
     },
     "historiaPremio": "53",
@@ -1121,11 +1121,11 @@
     "columnas": 4,
     "filas": 8,
     "segundos": 85,
-    "vistazoSeg": 3,
+    "vistazoSeg": 2,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
+      "tres": 15,
+      "dos": 23,
       "una": 30
     },
     "historiaPremio": "54",
@@ -1142,11 +1142,11 @@
     "columnas": 4,
     "filas": 8,
     "segundos": 85,
-    "vistazoSeg": 3,
+    "vistazoSeg": 2,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
+      "tres": 15,
+      "dos": 23,
       "una": 30
     },
     "historiaPremio": null,
@@ -1166,8 +1166,8 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
+      "tres": 15,
+      "dos": 23,
       "una": 30
     },
     "historiaPremio": null,
@@ -1187,8 +1187,8 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
+      "tres": 15,
+      "dos": 23,
       "una": 30
     },
     "historiaPremio": null,
@@ -1208,8 +1208,8 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
+      "tres": 15,
+      "dos": 23,
       "una": 30
     },
     "historiaPremio": null,
@@ -1229,8 +1229,8 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
+      "tres": 15,
+      "dos": 23,
       "una": 30
     },
     "historiaPremio": null,
@@ -1250,8 +1250,8 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
+      "tres": 15,
+      "dos": 23,
       "una": 30
     },
     "historiaPremio": null,
@@ -1268,12 +1268,12 @@
     "columnas": 5,
     "filas": 8,
     "segundos": 120,
-    "vistazoSeg": 3,
+    "vistazoSeg": 2,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
-      "una": 30
+      "tres": 18,
+      "dos": 27,
+      "una": 35
     },
     "historiaPremio": null,
     "requisito": null,
@@ -1289,12 +1289,12 @@
     "columnas": 5,
     "filas": 8,
     "segundos": 120,
-    "vistazoSeg": 3,
+    "vistazoSeg": 2,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
-      "una": 30
+      "tres": 18,
+      "dos": 27,
+      "una": 35
     },
     "historiaPremio": null,
     "requisito": null,
@@ -1310,12 +1310,12 @@
     "columnas": 5,
     "filas": 8,
     "segundos": 120,
-    "vistazoSeg": 3,
+    "vistazoSeg": 2,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
-      "una": 30
+      "tres": 18,
+      "dos": 27,
+      "una": 35
     },
     "historiaPremio": null,
     "requisito": null,
@@ -1331,12 +1331,12 @@
     "columnas": 5,
     "filas": 8,
     "segundos": 120,
-    "vistazoSeg": 3,
+    "vistazoSeg": 2,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
-      "una": 30
+      "tres": 18,
+      "dos": 27,
+      "una": 35
     },
     "historiaPremio": null,
     "requisito": null,
@@ -1352,12 +1352,12 @@
     "columnas": 5,
     "filas": 8,
     "segundos": 110,
-    "vistazoSeg": 3,
+    "vistazoSeg": 2,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 16,
-      "dos": 24,
-      "una": 30
+      "tres": 18,
+      "dos": 27,
+      "una": 35
     },
     "historiaPremio": null,
     "requisito": null,
@@ -1376,9 +1376,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 25,
-      "dos": 30,
-      "una": 40
+      "tres": 18,
+      "dos": 27,
+      "una": 35
     },
     "historiaPremio": null,
     "requisito": null,
@@ -1397,9 +1397,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 25,
-      "dos": 30,
-      "una": 40
+      "tres": 18,
+      "dos": 27,
+      "una": 35
     },
     "historiaPremio": null,
     "requisito": null,
@@ -1418,9 +1418,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 25,
-      "dos": 30,
-      "una": 40
+      "tres": 18,
+      "dos": 27,
+      "una": 35
     },
     "historiaPremio": null,
     "requisito": null,
@@ -1439,9 +1439,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 25,
-      "dos": 30,
-      "una": 40
+      "tres": 18,
+      "dos": 27,
+      "una": 35
     },
     "historiaPremio": null,
     "requisito": null,
@@ -1460,9 +1460,9 @@
     "vistazoSeg": 0,
     "volteoSeg": 0.3,
     "errores": {
-      "tres": 25,
-      "dos": 30,
-      "una": 40
+      "tres": 18,
+      "dos": 27,
+      "una": 35
     },
     "historiaPremio": null,
     "requisito": null,

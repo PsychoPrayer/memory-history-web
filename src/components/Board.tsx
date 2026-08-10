@@ -9,6 +9,7 @@ interface Props {
   rows: number
   back: string | null
   revealing: boolean
+  fogTick?: number
   onFlip: (key: string) => void
 }
 
@@ -37,7 +38,15 @@ function gapRatioFor(cardCount: number): number {
   return 0.08
 }
 
-export function Board({ tiles, columns, rows, back, revealing, onFlip }: Props) {
+export function Board({
+  tiles,
+  columns,
+  rows,
+  back,
+  revealing,
+  fogTick = 0,
+  onFlip,
+}: Props) {
   const t = useT()
   const orientation = rows > columns ? 'tall' : 'wide'
   const desktopWide = useDesktopWide()
@@ -48,12 +57,20 @@ export function Board({ tiles, columns, rows, back, revealing, onFlip }: Props) 
 
   const [focusIndex, setFocusIndex] = useState(0)
   const [lado, setLado] = useState<number | null>(null)
+  const [fogging, setFogging] = useState(false)
   const shellRef = useRef<HTMLDivElement>(null)
   const gridRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (focusIndex >= tiles.length) setFocusIndex(0)
   }, [focusIndex, tiles.length])
+
+  useEffect(() => {
+    if (fogTick <= 0) return
+    setFogging(true)
+    const id = window.setTimeout(() => setFogging(false), 780)
+    return () => window.clearTimeout(id)
+  }, [fogTick])
 
   useEffect(() => {
     const shell = shellRef.current
@@ -115,13 +132,18 @@ export function Board({ tiles, columns, rows, back, revealing, onFlip }: Props) 
   } as CSSProperties
 
   return (
-    <div className="board-shell" ref={shellRef}>
+    <div
+      className="board-shell"
+      ref={shellRef}
+      data-fog={fogging || undefined}
+    >
       <div
         ref={gridRef}
         className="board"
         style={style}
         data-orientation={orientation}
         data-cards={tiles.length}
+        data-fog={fogging || undefined}
         role="grid"
         aria-label={t('memoryBoard')}
         aria-rowcount={navRows}
