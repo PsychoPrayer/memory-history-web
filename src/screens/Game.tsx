@@ -333,7 +333,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
         rows={rules.rows}
         back={rules.back}
         revealing={match.revealAll}
-        fogTick={match.fogTick}
+        fogPhase={match.fogPhase}
         onFlip={match.flip}
       />
 

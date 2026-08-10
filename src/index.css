@@ -532,6 +532,54 @@ button {
   width: 100%;
 }
 
+.menu-header-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.mute-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 2.75rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid rgba(43, 33, 22, 0.35);
+  background: rgba(255, 248, 235, 0.85);
+  color: var(--tinta);
+  font: inherit;
+  cursor: pointer;
+}
+
+.mute-button:hover,
+.mute-button:focus-visible {
+  border-color: var(--vino);
+}
+
+.mute-button[aria-pressed='true'] {
+  border-color: var(--vino);
+  color: var(--vino);
+}
+
+.mute-button-compact {
+  width: 2.75rem;
+  min-width: 2.75rem;
+  padding: 0.35rem;
+}
+
+.mute-button-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex-shrink: 0;
+}
+
+.mute-button-label {
+  font-family: var(--versales);
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+}
+
 .player-badge {
   display: inline-flex;
   align-items: center;
@@ -2146,7 +2194,7 @@ button {
   position: relative;
 }
 
-.board-shell[data-fog='true']::after {
+.board-shell[data-fog]::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -2155,18 +2203,27 @@ button {
   background:
     radial-gradient(
       ellipse 70% 60% at 50% 45%,
-      rgba(241, 232, 210, 0.55),
-      rgba(43, 33, 22, 0.28) 70%
+      rgba(241, 232, 210, 0.5),
+      rgba(43, 33, 22, 0.22) 70%
     );
-  animation: board-fog-veil 0.78s ease-out forwards;
+  animation: board-fog-veil 1.5s ease-out forwards;
 }
 
-.board[data-fog='true'] {
-  animation: board-fog-shake 0.78s ease-in-out;
+/* Only unmatched cards move; matched pairs stay still. */
+.board[data-fog='out'] .card:not([data-state='matched']) {
+  animation: card-fog-shrink 0.55s ease-in forwards;
+  z-index: 4;
 }
 
-.board[data-fog='true'] .card:not([data-state='matched']) {
-  animation: card-fog-swap 0.78s cubic-bezier(0.22, 0.9, 0.28, 1);
+.board[data-fog='in'] .card:not([data-state='matched']) {
+  animation: card-fog-grow 0.95s cubic-bezier(0.22, 0.9, 0.28, 1) both;
+  z-index: 4;
+}
+
+.board[data-fog] .card[data-state='matched'] {
+  animation: none;
+  filter: none;
+  transform: none;
 }
 
 .board {
@@ -2569,7 +2626,7 @@ button {
   0% {
     opacity: 0;
   }
-  35% {
+  25% {
     opacity: 1;
   }
   100% {
@@ -2577,35 +2634,24 @@ button {
   }
 }
 
-@keyframes board-fog-shake {
-  0%,
+@keyframes card-fog-shrink {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
   100% {
-    transform: translate(0, 0) scale(1);
-  }
-  20% {
-    transform: translate(-0.35%, 0.4%) scale(0.985);
-  }
-  45% {
-    transform: translate(0.4%, -0.3%) scale(0.99);
-  }
-  70% {
-    transform: translate(-0.2%, 0.2%) scale(0.995);
+    transform: scale(0.15);
+    opacity: 0.35;
   }
 }
 
-@keyframes card-fog-swap {
+@keyframes card-fog-grow {
   0% {
-    transform: scale(1) rotate(0deg);
-    filter: brightness(1);
-  }
-  35% {
-    transform: scale(0.82) rotate(-6deg);
-    filter: brightness(0.7);
-    opacity: 0.55;
+    transform: scale(0.15);
+    opacity: 0.35;
   }
   100% {
-    transform: scale(1) rotate(0deg);
-    filter: brightness(1);
+    transform: scale(1);
     opacity: 1;
   }
 }

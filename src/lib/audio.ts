@@ -110,11 +110,24 @@ export function unlockAudio() {
 }
 
 function musicVolume() {
-  return readState().settings.musicVolume
+  const settings = readState().settings
+  if (settings.muted) return 0
+  return settings.musicVolume
 }
 
 function effectsVolume() {
-  return readState().settings.effectsVolume
+  const settings = readState().settings
+  if (settings.muted) return 0
+  return settings.effectsVolume
+}
+
+export function isMuted() {
+  return Boolean(readState().settings.muted)
+}
+
+/** Call after toggling `settings.muted` so looping music updates immediately. */
+export function syncMuteToMusic() {
+  if (musicElement) musicElement.volume = appliedMusicVolume()
 }
 
 let musicElement: HTMLAudioElement | null = null
@@ -290,7 +303,7 @@ function playFileEffect(effect: SoundEffect, path: string) {
 
 export function playSound(effect: SoundEffect) {
   if (!enabled) return
-  if (effectsVolume() <= 0) return
+  if (isMuted() || effectsVolume() <= 0) return
 
   const file = FILES[effect]
   if (file) {
@@ -301,6 +314,7 @@ export function playSound(effect: SoundEffect) {
 }
 
 export function playStarSound(count: number) {
+  if (isMuted() || effectsVolume() <= 0) return
   for (let i = 0; i < count; i += 1) {
     if (!audioContext()) return
     tone({

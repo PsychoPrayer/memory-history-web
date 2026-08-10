@@ -12,7 +12,8 @@ import {
   useSave,
   type TimeAssist,
 } from '../lib/save'
-import { setMusicVolume, playSound } from '../lib/audio'
+import { setMusicVolume, playSound, syncMuteToMusic } from '../lib/audio'
+import { MuteButton } from '../components/MuteButton'
 import { useT } from '../lib/i18n'
 import type { Language } from '../types'
 
@@ -70,6 +71,12 @@ export function Settings() {
       </section>
 
       <section className="settings-group">
+        <h2>{t('mute')}</h2>
+        <p className="settings-help">{t('muteHelp')}</p>
+        <MuteButton />
+      </section>
+
+      <section className="settings-group">
         <h2 id="music-volume-label">{t('music')}</h2>
         <Slider
           labelledBy="music-volume-label"
@@ -77,7 +84,8 @@ export function Settings() {
           value={settings.musicVolume}
           onChange={(value) => {
             setSetting('musicVolume', value)
-            setMusicVolume(value)
+            if (!settings.muted) setMusicVolume(value)
+            else syncMuteToMusic()
           }}
         />
       </section>

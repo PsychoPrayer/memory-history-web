@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AvatarPicker, PlayerBadge } from '../components/AvatarPicker'
+import { MuteButton } from '../components/MuteButton'
 import { Modal } from '../components/Modal'
 import { DonateButton } from '../components/DonateButton'
 import { PancitoSprite, PancitoTip } from '../components/PancitoGuide'
@@ -53,11 +54,14 @@ export function Menu() {
               setProfileOpen(true)
             }}
           />
-          <div className="star-counter">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d={STAR_TIP} />
-            </svg>
-            <span>{t('starsOf', { a: stars, b: maximum })}</span>
+          <div className="menu-header-tools">
+            <MuteButton compact />
+            <div className="star-counter">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d={STAR_TIP} />
+              </svg>
+              <span>{t('starsOf', { a: stars, b: maximum })}</span>
+            </div>
           </div>
         </div>
         <div className="country-picker">

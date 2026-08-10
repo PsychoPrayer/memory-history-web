@@ -18,6 +18,10 @@ const MATCH_DELAY = 380
 const FAIL_MARK_DELAY = 460
 const FAIL_FLIP_BACK_DELAY = 1100
 const HINT_SHOW_MS = 2200
+const FOG_SHRINK_MS = 550
+const FOG_GROW_MS = 950
+
+export type FogPhase = null | 'out' | 'in'
 
 export interface MatchRules {
   cards: number
@@ -75,7 +79,8 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
   const [mistakes, setMistakes] = useState(0)
   const [elapsed, setElapsed] = useState(0)
   const [comparing, setComparing] = useState(false)
-  const [fogTick, setFogTick] = useState(0)
+  const [fogPhase, setFogPhase] = useState<FogPhase>(null)
+  const [fogSpent, setFogSpent] = useState(false)
   const [hintUsed, setHintUsed] = useState(false)
 
   const timers = useRef<number[]>([])
@@ -104,7 +109,8 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
     setElapsed(0)
     setComparing(false)
     lastWarning.current = Infinity
-    setFogTick(0)
+    setFogPhase(null)
+    setFogSpent(false)
     setHintUsed(false)
   }, [catalog, clearTimers, rules.cards, rules.peekSeconds])
 
@@ -194,7 +200,9 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
 
       const nextMistakes = mistakes + 1
       const scored = scoringMistakes(nextMistakes, rules)
-      const fogBoard = rules.hard && scored > rules.mistakes.tres
+      /* Only once per match: the miss that costs the third star. */
+      const triggerFog =
+        rules.hard && !fogSpent && scored > rules.mistakes.tres
 
       schedule(() => {
         setTiles((current) =>
@@ -203,20 +211,43 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
       }, FAIL_MARK_DELAY)
 
       schedule(() => {
-        setTiles((current) => {
-          const closed = current.map((t) =>
+        setTiles((current) =>
+          current.map((t) =>
             inPlay(t) ? { ...t, state: 'hidden' as const } : t,
-          )
-          if (!fogBoard) return closed
-          announce(translate(language, 'hardFog'))
-          playSound('urgency')
-          setFogTick((tick) => tick + 1)
-          return reshuffleUnmatched(closed)
-        })
-        setComparing(false)
+          ),
+        )
+
+        if (!triggerFog) {
+          setComparing(false)
+          return
+        }
+
+        setFogSpent(true)
+        setFogPhase('out')
+        announce(translate(language, 'hardFog'))
+        playSound('urgency')
+
+        schedule(() => {
+          setTiles((current) => reshuffleUnmatched(current))
+          setFogPhase('in')
+          schedule(() => {
+            setFogPhase(null)
+            setComparing(false)
+          }, FOG_GROW_MS)
+        }, FOG_SHRINK_MS)
       }, FAIL_FLIP_BACK_DELAY)
     },
-    [comparing, language, mistakes, phase, paused, rules, schedule, tiles],
+    [
+      comparing,
+      fogSpent,
+      language,
+      mistakes,
+      phase,
+      paused,
+      rules,
+      schedule,
+      tiles,
+    ],
   )
 
   const requestHint = useCallback(() => {
@@ -308,7 +339,7 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
     revealAll: phase === 'peek',
     pairsMade,
     totalPairs: rules.cards / 2,
-    fogTick,
+    fogPhase,
     hintUsed,
     requestHint,
     result,

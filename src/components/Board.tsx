@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import type { BoardTile } from '../types'
 import { useT } from '../lib/i18n'
+import type { FogPhase } from '../lib/useMatch'
 import { Card } from './Card'
 
 interface Props {
@@ -9,7 +10,7 @@ interface Props {
   rows: number
   back: string | null
   revealing: boolean
-  fogTick?: number
+  fogPhase?: FogPhase
   onFlip: (key: string) => void
 }
 
@@ -44,7 +45,7 @@ export function Board({
   rows,
   back,
   revealing,
-  fogTick = 0,
+  fogPhase = null,
   onFlip,
 }: Props) {
   const t = useT()
@@ -57,20 +58,12 @@ export function Board({
 
   const [focusIndex, setFocusIndex] = useState(0)
   const [lado, setLado] = useState<number | null>(null)
-  const [fogging, setFogging] = useState(false)
   const shellRef = useRef<HTMLDivElement>(null)
   const gridRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (focusIndex >= tiles.length) setFocusIndex(0)
   }, [focusIndex, tiles.length])
-
-  useEffect(() => {
-    if (fogTick <= 0) return
-    setFogging(true)
-    const id = window.setTimeout(() => setFogging(false), 780)
-    return () => window.clearTimeout(id)
-  }, [fogTick])
 
   useEffect(() => {
     const shell = shellRef.current
@@ -135,7 +128,7 @@ export function Board({
     <div
       className="board-shell"
       ref={shellRef}
-      data-fog={fogging || undefined}
+      data-fog={fogPhase || undefined}
     >
       <div
         ref={gridRef}
@@ -143,7 +136,7 @@ export function Board({
         style={style}
         data-orientation={orientation}
         data-cards={tiles.length}
-        data-fog={fogging || undefined}
+        data-fog={fogPhase || undefined}
         role="grid"
         aria-label={t('memoryBoard')}
         aria-rowcount={navRows}

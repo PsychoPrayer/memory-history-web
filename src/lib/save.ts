@@ -32,6 +32,8 @@ export interface SettingsData {
   country: CountryCode
   musicVolume: number
   effectsVolume: number
+  /** Silence music and effects without changing saved volume sliders. */
+  muted: boolean
   timeAssist: TimeAssist
   languageChosen: boolean
   termsAccepted: boolean
@@ -93,6 +95,7 @@ function initialState(): SavedState {
       country: 'VE',
       musicVolume: 0.6,
       effectsVolume: 0.8,
+      muted: false,
       timeAssist: 'default',
       languageChosen: false,
       termsAccepted: false,
@@ -125,6 +128,7 @@ function migrate(raw: Record<string, unknown>): SavedState {
       country: (old.pais as CountryCode) ?? base.settings.country,
       musicVolume: (old.volumenMusica as number) ?? base.settings.musicVolume,
       effectsVolume: (old.volumenEfectos as number) ?? base.settings.effectsVolume,
+      muted: Boolean(old.silenciado ?? old.muted),
       timeAssist: base.settings.timeAssist,
       languageChosen: (old.idiomaElegido as boolean) ?? base.settings.languageChosen,
       termsAccepted: (old.terminosAceptados as boolean) ?? base.settings.termsAccepted,
@@ -165,6 +169,7 @@ function migrate(raw: Record<string, unknown>): SavedState {
           (typeof incoming.playerName === 'string' &&
             incoming.playerName.trim().length >= 2),
       ),
+      muted: Boolean(incoming.muted),
     }
   }
 
