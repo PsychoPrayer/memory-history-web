@@ -1,5 +1,7 @@
 -- REQUIRED for "Otra ronda". Run all of this in Supabase → SQL Editor → Run.
 -- Safe to re-run.
+-- Rematch returns both players to the lobby so the host can keep or change
+-- deck/level before ready-up (does not auto-start countdown).
 
 -- Reset ready flags when a duel finishes (so rematch needs both votes).
 -- Ranking uses score: 10000 − seconds×10 − mistakes×150 (1 mistake = 15s).
@@ -145,7 +147,6 @@ set search_path = public
 as $$
 declare
   m public.duel_matches;
-  level_id text;
 begin
   if auth.uid() is null then
     raise exception 'Not authenticated';
@@ -170,34 +171,20 @@ begin
     raise exception 'Opponent left the room';
   end if;
 
-  level_id := coalesce(m.rules->>'levelId', '');
   delete from public.duel_results where match_id = p_match_id;
 
-  if level_id <> '' then
-    update public.duel_matches
-    set
-      status = 'countdown',
-      host_ready = true,
-      guest_ready = true,
-      starts_at = now() + interval '3.5 seconds',
-      winner_id = null,
-      is_draw = false,
-      updated_at = now()
-    where id = p_match_id
-    returning * into m;
-  else
-    update public.duel_matches
-    set
-      status = 'lobby',
-      host_ready = false,
-      guest_ready = false,
-      starts_at = null,
-      winner_id = null,
-      is_draw = false,
-      updated_at = now()
-    where id = p_match_id
-    returning * into m;
-  end if;
+  /* Always return to lobby so the host can keep or change deck/level. */
+  update public.duel_matches
+  set
+    status = 'lobby',
+    host_ready = false,
+    guest_ready = false,
+    starts_at = null,
+    winner_id = null,
+    is_draw = false,
+    updated_at = now()
+  where id = p_match_id
+  returning * into m;
 
   return m;
 end;

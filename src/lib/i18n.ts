@@ -307,10 +307,11 @@ const es = {
   duelBackToHub: 'Volver a duelos',
   duelRematch: 'Otra ronda',
   duelRematchCancel: 'Cancelar otra ronda',
-  duelRematchNeedBoth: 'Los dos debéis pulsar Otra ronda para empezar.',
+  duelRematchNeedBoth:
+    'Los dos debéis pulsar Otra ronda. Volvéis a la sala: el anfitrión puede cambiar baraja y nivel.',
   duelRematchWaitingRival: 'Listo. Esperando a que tu rival acepte…',
   duelRematchRivalWaiting: 'Tu rival ya quiere otra ronda. ¿Aceptas?',
-  duelRematchStarting: '¡Los dos listos! Arrancando…',
+  duelRematchStarting: '¡Los dos listos! Volviendo a la sala…',
   duelLeaveRoom: 'Salir de la sala',
   duelStayInRoom: 'Misma sala · código {code}.',
   duelRematchSetupNeeded:
@@ -634,10 +635,11 @@ const en: Record<keyof typeof es, string> = {
   duelBackToHub: 'Back to duels',
   duelRematch: 'Rematch',
   duelRematchCancel: 'Cancel rematch',
-  duelRematchNeedBoth: 'Both of you must tap Rematch to start.',
+  duelRematchNeedBoth:
+    'Both of you must tap Rematch. You return to the lobby — the host can change deck and level.',
   duelRematchWaitingRival: 'Ready. Waiting for your rival to accept…',
   duelRematchRivalWaiting: 'Your rival wants a rematch. Accept?',
-  duelRematchStarting: 'Both ready! Starting…',
+  duelRematchStarting: 'Both ready! Returning to the lobby…',
   duelLeaveRoom: 'Leave room',
   duelStayInRoom: 'Same room · code {code}.',
   duelRematchSetupNeeded:

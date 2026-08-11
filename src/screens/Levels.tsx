@@ -341,7 +341,6 @@ export function Levels() {
           </svg>
 
           <AtlasRoute
-            label={t('normal')}
             tone="normal"
             levels={section.normal}
             positions={routes.normal}
@@ -349,7 +348,6 @@ export function Levels() {
             nextMissionId={nextMissionId}
           />
           <AtlasRoute
-            label={t('hard')}
             tone="hard"
             levels={section.hard}
             positions={routes.hard}
@@ -363,7 +361,6 @@ export function Levels() {
 }
 
 interface AtlasRouteProps {
-  label: string
   tone: 'normal' | 'hard'
   levels: Level[]
   positions: MarkerXY[]
@@ -372,7 +369,6 @@ interface AtlasRouteProps {
 }
 
 function AtlasRoute({
-  label,
   tone,
   levels,
   positions,
@@ -400,11 +396,6 @@ function AtlasRoute({
             style={style}
             data-next={isNext || undefined}
           >
-            {index === 0 && (
-              <span className="atlas-route-tag" aria-hidden="true">
-                {label}
-              </span>
-            )}
             <button
               type="button"
               className="atlas-marker"

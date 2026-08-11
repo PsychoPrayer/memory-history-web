@@ -2125,31 +2125,44 @@ button {
 }
 
 .peek-notice {
-  position: fixed;
-  bottom: 1.6rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0.85rem;
+  transform: translateX(-50%);
+  z-index: 16;
   margin: 0;
   font-family: var(--versales);
   font-size: 1rem;
   letter-spacing: 0.2em;
   color: var(--oro);
   animation: latir 1.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Reserved strip under the board so PISTA never covers a card. */
+.hint-dock {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 0.2rem max(0.55rem, env(safe-area-inset-right)) 0.35rem;
+  padding-bottom: max(0.35rem, env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  z-index: 18;
 }
 
 .hint-pancito {
-  position: fixed;
-  right: max(0.65rem, env(safe-area-inset-right));
-  bottom: max(0.75rem, env(safe-area-inset-bottom));
-  z-index: 18;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.15rem;
-  padding: 0.35rem 0.45rem 0.4rem;
+  gap: 0.1rem;
+  padding: 0.25rem 0.4rem 0.3rem;
   border: 1px solid rgba(43, 33, 22, 0.35);
-  background: rgba(241, 232, 210, 0.94);
+  background: rgba(241, 232, 210, 0.96);
   color: var(--tinta);
   cursor: pointer;
-  box-shadow: 0 4px 14px -4px rgba(20, 13, 6, 0.45);
+  box-shadow: 0 3px 10px -4px rgba(20, 13, 6, 0.4);
   font: inherit;
 }
 
@@ -2164,7 +2177,7 @@ button {
 }
 
 .hint-pancito-sprite {
-  width: 3.6rem;
+  width: 2.85rem;
   height: auto;
 }
 

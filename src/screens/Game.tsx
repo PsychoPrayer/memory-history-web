@@ -338,27 +338,29 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
       />
 
       {match.phase === 'playing' && !match.paused && (
-        <button
-          type="button"
-          className="hint-pancito"
-          disabled={match.hintUsed || match.pairsMade >= match.totalPairs}
-          title={t('hintHelp')}
-          aria-label={
-            match.hintUsed ? t('hintUsed') : `${t('hintAsk')}. ${t('hintHelp')}`
-          }
-          onClick={() => {
-            playSound('button')
-            match.requestHint()
-          }}
-        >
-          <PancitoSprite
-            pose={match.hintUsed ? 'wait' : 'point'}
-            className="hint-pancito-sprite"
-          />
-          <span className="hint-pancito-label">
-            {match.hintUsed ? t('hintUsed') : t('hintAsk')}
-          </span>
-        </button>
+        <div className="hint-dock">
+          <button
+            type="button"
+            className="hint-pancito"
+            disabled={match.hintUsed || match.pairsMade >= match.totalPairs}
+            title={t('hintHelp')}
+            aria-label={
+              match.hintUsed ? t('hintUsed') : `${t('hintAsk')}. ${t('hintHelp')}`
+            }
+            onClick={() => {
+              playSound('button')
+              match.requestHint()
+            }}
+          >
+            <PancitoSprite
+              pose={match.hintUsed ? 'wait' : 'point'}
+              className="hint-pancito-sprite"
+            />
+            <span className="hint-pancito-label">
+              {match.hintUsed ? t('hintUsed') : t('hintAsk')}
+            </span>
+          </button>
+        </div>
       )}
 
       {match.revealAll && <p className="peek-notice">{t('memorize')}</p>}

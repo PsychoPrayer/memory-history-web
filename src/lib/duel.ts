@@ -516,30 +516,18 @@ async function rematchDuelClient(matchId: string): Promise<DuelMatch> {
     .eq('match_id', matchId)
   if (deleteError) throw new Error('REMATCH_SETUP_NEEDED')
 
-  const levelId = current.rules.levelId
-  const patch = levelId
-    ? {
-        status: 'countdown' as const,
-        host_ready: true,
-        guest_ready: true,
-        starts_at: new Date(Date.now() + 3500).toISOString(),
-        winner_id: null,
-        is_draw: false,
-        updated_at: new Date().toISOString(),
-      }
-    : {
-        status: 'lobby' as const,
-        host_ready: false,
-        guest_ready: false,
-        starts_at: null,
-        winner_id: null,
-        is_draw: false,
-        updated_at: new Date().toISOString(),
-      }
-
+  /* Back to lobby so the host can keep or change deck/level before ready-up. */
   const { data, error } = await supabase
     .from('duel_matches')
-    .update(patch)
+    .update({
+      status: 'lobby' as const,
+      host_ready: false,
+      guest_ready: false,
+      starts_at: null,
+      winner_id: null,
+      is_draw: false,
+      updated_at: new Date().toISOString(),
+    })
     .eq('id', matchId)
     .select('*')
     .single()

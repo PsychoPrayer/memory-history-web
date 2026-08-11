@@ -1,7 +1,7 @@
 {
   "name": "memory-history-web",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.4.0",
   "type": "module",
   "engines": {
     "node": ">=20"
@@ -14,9 +14,14 @@
     "media": "node tools/media.mjs",
     "content": "npm run export && npm run media",
     "pack": "node tools/pack.mjs",
-    "flags": "node tools/flags.mjs"
+    "flags": "node tools/flags.mjs",
+    "cap:sync": "npm run build && npx cap sync",
+    "cap:ios": "npm run build && npx cap sync ios && npx cap open ios",
+    "cap:android": "npm run build && npx cap sync android && npx cap open android"
   },
   "dependencies": {
+    "@capacitor/core": "^8.5.0",
+    "@capacitor/ios": "^8.5.0",
     "@supabase/supabase-js": "^2.112.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -24,6 +29,8 @@
     "tslib": "^2.8.1"
   },
   "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.5.0",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",

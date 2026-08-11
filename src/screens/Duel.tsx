@@ -321,7 +321,7 @@ export function Duel() {
 
   const rematchStarting = useRef(false)
 
-  /* Both players must vote "Otra ronda" before the next match starts. */
+  /* Both vote rematch → lobby (host can change deck/level, then ready-up). */
   useEffect(() => {
     if (!match || !user || match.status !== 'finished') {
       rematchStarting.current = false
