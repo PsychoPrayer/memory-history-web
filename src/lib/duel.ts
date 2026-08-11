@@ -501,14 +501,29 @@ async function rematchDuelClient(matchId: string): Promise<DuelMatch> {
   const supabase = requireClient()
   const current = await fetchMatch(matchId)
   if (!current) throw new Error('REMATCH_SETUP_NEEDED')
-  if (
-    current.status === 'lobby' ||
-    current.status === 'countdown' ||
-    current.status === 'playing'
-  ) {
+  if (current.status === 'lobby') {
+    /* Already in lobby — clear leftover ready flags from a partial rematch. */
+    if (current.host_ready || current.guest_ready) {
+      const { data, error } = await supabase
+        .from('duel_matches')
+        .update({
+          host_ready: false,
+          guest_ready: false,
+          starts_at: null,
+          updated_at: new Date().toISOString(),
+        })
+        .eq('id', matchId)
+        .eq('status', 'lobby')
+        .select('*')
+        .single()
+      if (!error && data) return mapMatch(data as Record<string, unknown>)
+    }
     return current
   }
-  if (current.status !== 'finished') throw new Error('Match is not finished')
+  if (current.status === 'playing') return current
+  if (current.status !== 'finished' && current.status !== 'countdown') {
+    throw new Error('Match is not finished')
+  }
 
   const { error: deleteError } = await supabase
     .from('duel_results')
@@ -516,7 +531,7 @@ async function rematchDuelClient(matchId: string): Promise<DuelMatch> {
     .eq('match_id', matchId)
   if (deleteError) throw new Error('REMATCH_SETUP_NEEDED')
 
-  /* Back to lobby so the host can keep or change deck/level before ready-up. */
+  /* Always lobby: host can keep or change deck/level before ready-up. */
   const { data, error } = await supabase
     .from('duel_matches')
     .update({
@@ -529,18 +544,34 @@ async function rematchDuelClient(matchId: string): Promise<DuelMatch> {
       updated_at: new Date().toISOString(),
     })
     .eq('id', matchId)
+    .in('status', ['finished', 'countdown'])
     .select('*')
     .single()
   if (error || !data) throw new Error('REMATCH_SETUP_NEEDED')
   return mapMatch(data as Record<string, unknown>)
 }
 
+/**
+ * Start another round in the same room.
+ * Always returns to lobby (never auto-countdown) so the host can change deck/level.
+ * Corrects older rematch_duel RPCs that jump straight into countdown.
+ */
 export async function rematchDuel(matchId: string): Promise<DuelMatch> {
   const supabase = requireClient()
   const { data, error } = await supabase.rpc('rematch_duel', {
     p_match_id: matchId,
   })
-  if (!error && data) return mapMatch(data as Record<string, unknown>)
+
+  let next: DuelMatch | null = null
+  if (!error && data) {
+    next = mapMatch(data as Record<string, unknown>)
+  }
+
+  /* Old Supabase RPC auto-starts countdown with the same level — pull back. */
+  if (next && next.status === 'lobby' && !next.host_ready && !next.guest_ready) {
+    return next
+  }
+
   return rematchDuelClient(matchId)
 }
 
