@@ -223,6 +223,20 @@ function asRules(value: unknown): DuelRules {
   }
 }
 
+/**
+ * Shared board seed for a duel round.
+ * Same match id + starts_at → identical card layout for both players.
+ */
+export function duelBoardSeed(match: DuelMatch): number {
+  const key = `${match.id}:${match.starts_at ?? match.updated_at}`
+  let hash = 2166136261
+  for (let i = 0; i < key.length; i += 1) {
+    hash ^= key.charCodeAt(i)
+    hash = Math.imul(hash, 16777619)
+  }
+  return (hash >>> 0) || 1
+}
+
 function mapMatch(row: Record<string, unknown>): DuelMatch {
   return {
     id: String(row.id),

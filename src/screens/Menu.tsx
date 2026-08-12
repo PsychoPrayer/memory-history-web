@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AvatarPicker, PlayerBadge } from '../components/AvatarPicker'
 import { MuteButton } from '../components/MuteButton'
@@ -12,7 +12,7 @@ import {
   countryAvailable,
   useContent,
 } from '../data/content'
-import { unlockedStories, totalStars } from '../data/progression'
+import { unlockedStories, totalStars, achievementProgress, summarizePlayer } from '../data/progression'
 import { creditsText } from '../content/legal/credits'
 import { termsText } from '../content/legal/terms'
 import { setSetting, progressFor, useSave } from '../lib/save'
@@ -23,7 +23,7 @@ import type { CountryCode, Language } from '../types'
 export function Menu() {
   const navigate = useNavigate()
   const t = useT()
-  const { levels, stories, country } = useContent()
+  const { levels, stories, country, tests, achievements } = useContent()
 
   const settings = useSave((state) => state.settings)
   const progress = useSave(() => progressFor(settings.country))
@@ -37,6 +37,20 @@ export function Menu() {
   const maximum = levels.length * 3
   const unlocked = unlockedStories(stories, levels, progress).size
   const allStoriesDone = unlocked > 0 && unlocked >= stories.length
+
+  const summary = useMemo(
+    () => summarizePlayer(levels, stories, progress),
+    [levels, stories, progress],
+  )
+  const achievementsEarned = achievements.filter(
+    (item) => achievementProgress(item, summary) >= item.objetivo,
+  ).length
+  const allAchievementsDone =
+    achievements.length > 0 && achievementsEarned >= achievements.length
+  const testsPerfect = tests.filter(
+    (test) => (progress.tests[String(test.nivel)]?.bestScore ?? 0) >= 10,
+  ).length
+  const allTestsPerfect = tests.length > 0 && testsPerfect >= tests.length
 
   const go = (path: string) => {
     playSound('transition')
@@ -114,11 +128,31 @@ export function Menu() {
             {unlocked}/{stories.length}
           </span>
         </button>
-        <button type="button" className="btn-secondary" onClick={() => go('/tests')}>
+        <button
+          type="button"
+          className="btn-secondary"
+          data-trophy={allTestsPerfect || undefined}
+          onClick={() => go('/tests')}
+        >
+          {allTestsPerfect && <span className="tab-trophy" aria-hidden="true" />}
           {t('tests')}
+          <span className="btn-note">
+            {testsPerfect}/{tests.length}
+          </span>
         </button>
-        <button type="button" className="btn-secondary" onClick={() => go('/achievements')}>
+        <button
+          type="button"
+          className="btn-secondary"
+          data-trophy={allAchievementsDone || undefined}
+          onClick={() => go('/achievements')}
+        >
+          {allAchievementsDone && (
+            <span className="tab-trophy" aria-hidden="true" />
+          )}
           {t('achievements')}
+          <span className="btn-note">
+            {achievementsEarned}/{achievements.length}
+          </span>
         </button>
         <button type="button" className="btn-secondary" onClick={() => go('/free')}>
           {t('freePlay')}

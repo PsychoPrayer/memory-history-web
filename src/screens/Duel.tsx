@@ -22,6 +22,7 @@ import {
   defaultDuelRules,
   DUEL_FREE_CARD_COUNTS,
   DUEL_PEEK_SECONDS,
+  duelBoardSeed,
   duelErrorMessage,
   duelRulesComplete,
   fetchMatch,
@@ -1251,6 +1252,7 @@ function DuelPlay({
       title={boardTitle}
       rules={rules}
       deck={deckCards}
+      seed={duelBoardSeed(match)}
       onFinish={async (payload) => {
         if (submitted.current) return
         submitted.current = true
@@ -1270,12 +1272,14 @@ function DuelBoard({
   title,
   rules,
   deck,
+  seed,
   onFinish,
   onForfeit,
 }: {
   title: string
   rules: ReturnType<typeof freeRules>
   deck: Parameters<typeof useMatch>[1]
+  seed: number
   onFinish: (payload: {
     completed: boolean
     forfeited?: boolean
@@ -1286,7 +1290,7 @@ function DuelBoard({
   onForfeit: () => Promise<void>
 }) {
   const t = useT()
-  const match = useMatch(rules, deck)
+  const match = useMatch(rules, deck, { seed })
   const { phase, result } = match
   const [confirmQuit, setConfirmQuit] = useState(false)
   const sent = useRef(false)

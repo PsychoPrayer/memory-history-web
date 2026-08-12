@@ -34,6 +34,15 @@ export function Achievements() {
         right={
           <span className="header-counter">
             {earned}/{achievements.length}
+            {earned > 0 && earned >= achievements.length && (
+              <span
+                className="summary-trophy summary-trophy-stories"
+                title={t('achievementsAllTrophy')}
+                aria-label={t('achievementsAllTrophy')}
+              >
+                ♛
+              </span>
+            )}
           </span>
         }
       />
@@ -57,6 +66,15 @@ export function Achievements() {
                 setOpen(achievement)
               }}
             >
+              {earnedItem && (
+                <span
+                  className="tile-trophy"
+                  title={t('achievementsTrophy')}
+                  aria-label={t('achievementsTrophy')}
+                >
+                  ♛
+                </span>
+              )}
               {achievement.icono ? (
                 <img
                   src={achievement.icono}

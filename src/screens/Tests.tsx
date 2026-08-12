@@ -20,15 +20,37 @@ export function Tests() {
     [stories, levels, progress],
   )
 
+  const perfectCount = tests.filter(
+    (test) => (progress.tests[String(test.nivel)]?.bestScore ?? 0) >= 10,
+  ).length
+  const allTestsPerfect = tests.length > 0 && perfectCount >= tests.length
+
   return (
     <main id="main-content" className="screen screen-tests" tabIndex={-1}>
-      <Header title={t('tests')} />
+      <Header
+        title={t('tests')}
+        right={
+          <span className="header-counter">
+            {perfectCount}/{tests.length}
+            {allTestsPerfect && (
+              <span
+                className="summary-trophy summary-trophy-stories"
+                title={t('testsAllTrophy')}
+                aria-label={t('testsAllTrophy')}
+              >
+                ♛
+              </span>
+            )}
+          </span>
+        }
+      />
 
       <div className="test-list">
         {tests.map((test) => {
           const reason = blockReason(test, tests, unlocked, progress)
           const open = reason === null
           const record = progress.tests[String(test.nivel)]
+          const perfect = (record?.bestScore ?? 0) >= 10
 
           return (
             <button
@@ -36,6 +58,7 @@ export function Tests() {
               type="button"
               className="test-tile"
               data-open={open}
+              data-perfect={perfect || undefined}
               disabled={!open}
               onClick={() => {
                 playSound('transition')
@@ -46,6 +69,15 @@ export function Tests() {
               <span className="test-tile-body">
                 <span className="test-tile-name">
                   {t('test')} {test.nivel}
+                  {perfect && (
+                    <span
+                      className="summary-trophy"
+                      title={t('testsPerfectTrophy')}
+                      aria-label={t('testsPerfectTrophy')}
+                    >
+                      ♛
+                    </span>
+                  )}
                 </span>
                 <span className="test-tile-detail">
                   {t('stories')} {test.desdeHistoria}–{test.hastaHistoria}

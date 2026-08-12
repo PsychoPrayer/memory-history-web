@@ -69,9 +69,14 @@ export function scoringMistakes(mistakes: number, rules: MatchRules): number {
   return Math.max(0, mistakes - grace)
 }
 
-export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
+export function useMatch(
+  rules: MatchRules,
+  catalog: CardCatalog[],
+  options?: { seed?: number },
+) {
   const language = useLanguage()
-  const [tiles, setTiles] = useState(() => buildBoard(catalog, rules.cards))
+  const seed = options?.seed
+  const [tiles, setTiles] = useState(() => buildBoard(catalog, rules.cards, seed))
   const [phase, setPhase] = useState<MatchPhase>(
     rules.peekSeconds > 0 ? 'peek' : 'playing',
   )
@@ -102,7 +107,7 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
 
   const restart = useCallback(() => {
     clearTimers()
-    setTiles(buildBoard(catalog, rules.cards))
+    setTiles(buildBoard(catalog, rules.cards, seed))
     setPhase(rules.peekSeconds > 0 ? 'peek' : 'playing')
     setPaused(false)
     setMistakes(0)
@@ -112,7 +117,7 @@ export function useMatch(rules: MatchRules, catalog: CardCatalog[]) {
     setFogPhase(null)
     setFogSpent(false)
     setHintUsed(false)
-  }, [catalog, clearTimers, rules.cards, rules.peekSeconds])
+  }, [catalog, clearTimers, rules.cards, rules.peekSeconds, seed])
 
   useEffect(() => {
     if (phase !== 'peek') return

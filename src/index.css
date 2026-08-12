@@ -1815,6 +1815,9 @@ button {
 }
 
 .test-tile-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
   font-family: var(--display);
   font-size: 1.15rem;
 }
@@ -1835,6 +1838,14 @@ button {
   font-size: 1.3rem;
   font-variant-numeric: tabular-nums;
   color: var(--verde);
+}
+
+.test-tile[data-perfect='true'] {
+  border-bottom-color: rgba(154, 111, 39, 0.45);
+}
+
+.test-tile[data-perfect='true'] .test-tile-score {
+  color: var(--oro);
 }
 
 /* The question is a loose sheet. */
@@ -1966,6 +1977,7 @@ button {
 
 /* Engraved medallion: dimmer means farther from unlocked. */
 .achievement-tile {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1978,6 +1990,16 @@ button {
   filter: grayscale(0.85);
   opacity: 0.6;
   transition: filter 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tile-trophy {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.4rem;
+  color: var(--oro);
+  font-size: 1.05rem;
+  line-height: 1;
+  pointer-events: none;
 }
 
 .achievement-tile[data-earned='true'] {
