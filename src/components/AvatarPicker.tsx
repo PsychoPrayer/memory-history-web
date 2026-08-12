@@ -66,6 +66,14 @@ export function AvatarPicker({
       </label>
       <p className="settings-help">{t('playerNameHelp')}</p>
 
+      <button
+        type="submit"
+        className="btn-primary avatar-picker-save"
+        disabled={!isValidPlayerName(name)}
+      >
+        {t(submitLabel)}
+      </button>
+
       <p className="avatar-picker-label">{t('chooseAvatar')}</p>
       <div className="avatar-grid" role="listbox" aria-label={t('chooseAvatar')}>
         {options.map((option) => (
@@ -80,14 +88,6 @@ export function AvatarPicker({
           />
         ))}
       </div>
-
-      <button
-        type="submit"
-        className="btn-primary"
-        disabled={!isValidPlayerName(name)}
-      >
-        {t(submitLabel)}
-      </button>
     </form>
   )
 }

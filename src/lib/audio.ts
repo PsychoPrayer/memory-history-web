@@ -126,8 +126,20 @@ export function isMuted() {
 }
 
 /** Call after toggling `settings.muted` so looping music updates immediately. */
-export function syncMuteToMusic() {
-  if (musicElement) musicElement.volume = appliedMusicVolume()
+export function syncMuteToMusic(forcedMuted?: boolean) {
+  if (!musicElement) return
+  const muted = forcedMuted ?? isMuted()
+  if (muted) {
+    musicElement.volume = 0
+    musicElement.pause()
+    return
+  }
+  musicElement.volume = appliedMusicVolume()
+  if (musicElement.paused && enabled) {
+    void musicElement.play().catch(() => {
+      /* autoplay blocked until next gesture */
+    })
+  }
 }
 
 let musicElement: HTMLAudioElement | null = null
@@ -154,8 +166,16 @@ export function playMusic(track: Track) {
     return
   }
   const source = MUSIC[track]
-  if (currentSource === source && musicElement && !musicElement.paused) {
+  if (currentSource === source && musicElement) {
     musicElement.volume = appliedMusicVolume()
+    if (isMuted()) {
+      musicElement.pause()
+      return
+    }
+    if (!musicElement.paused) return
+    void musicElement.play().catch(() => {
+      pendingTrack = track
+    })
     return
   }
 
@@ -163,17 +183,28 @@ export function playMusic(track: Track) {
   const element = new Audio(source)
   element.loop = true
   element.volume = appliedMusicVolume()
+  musicElement = element
+  currentSource = source
+
+  /* iOS ignores HTMLAudioElement.volume — pause instead of “silent” play. */
+  if (isMuted() || appliedMusicVolume() <= 0) {
+    return
+  }
 
   void element.play().catch(() => {
     pendingTrack = track
   })
-  musicElement = element
-  currentSource = source
 }
 
 export function dimMusicInMatch(active: boolean) {
   matchDim = active ? 0.5 : 1
-  if (musicElement) musicElement.volume = appliedMusicVolume()
+  if (!musicElement) return
+  if (isMuted()) {
+    musicElement.volume = 0
+    musicElement.pause()
+    return
+  }
+  musicElement.volume = appliedMusicVolume()
 }
 
 export function stopMusic() {
@@ -183,9 +214,13 @@ export function stopMusic() {
 }
 
 export function setMusicVolume(value: number) {
-  if (musicElement) {
-    musicElement.volume = Math.min(1, Math.max(0, value * 0.85 * matchDim))
+  if (!musicElement) return
+  if (isMuted()) {
+    musicElement.volume = 0
+    musicElement.pause()
+    return
   }
+  musicElement.volume = Math.min(1, Math.max(0, value * 0.85 * matchDim))
 }
 
 if (import.meta.hot) {

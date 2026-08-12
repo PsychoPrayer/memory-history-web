@@ -669,6 +669,10 @@ button {
   letter-spacing: 0.08em;
 }
 
+.avatar-picker-save {
+  align-self: stretch;
+}
+
 .avatar-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(5.2rem, 1fr));

@@ -13,6 +13,7 @@ import {
   dimMusicInMatch,
   unlockAudio,
   playMusic,
+  syncMuteToMusic,
 } from './lib/audio'
 import { LiveRegion } from './components/LiveRegion'
 import { SkipLink } from './components/SkipLink'
@@ -76,6 +77,7 @@ export default function App() {
 
 function BackgroundMusic() {
   const { pathname } = useLocation()
+  const muted = useSave((state) => Boolean(state.settings.muted))
   const inMatch =
     pathname.startsWith('/game/') || pathname === '/free/match'
 
@@ -83,6 +85,10 @@ function BackgroundMusic() {
     playMusic(pathname === '/' ? 'intro' : 'game')
     dimMusicInMatch(inMatch)
   }, [pathname, inMatch])
+
+  useEffect(() => {
+    syncMuteToMusic(muted)
+  }, [muted])
 
   return null
 }

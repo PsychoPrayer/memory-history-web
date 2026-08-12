@@ -24,7 +24,7 @@ export function MuteButton({ className = '', compact = false }: Props) {
         unlockAudio()
         const next = !muted
         setSetting('muted', next)
-        syncMuteToMusic()
+        syncMuteToMusic(next)
       }}
     >
       <svg className="mute-button-icon" viewBox="0 0 24 24" aria-hidden="true">
