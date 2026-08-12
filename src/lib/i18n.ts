@@ -280,10 +280,19 @@ const es = {
   duelPickCards: 'Elige cuántas cartas',
   duelLevelSelected: 'Nivel {n}',
   duelDeckSelected: '{deck} · {detail}',
-  duelHostPickingLevel: 'El anfitrión elige la baraja y el nivel…',
+  duelHostPickingLevel: 'El anfitrión elige la baraja y las reglas…',
+  duelPeekSeconds: 'Segundos de volteo',
+  duelRulesTitle: 'Reglas de la siguiente ronda',
+  duelRulesHelp:
+    'El anfitrión puede dejarlas o cambiarlas antes de Otra ronda. Luego listos en la sala.',
+  duelRulesSummary:
+    '{deck} · {cards} cartas · vistazo {peek} · reverso {back}',
+  duelPeekOn: '{n} s',
+  duelPeekOff: 'no',
+  duelBackDefault: 'automático',
   duelPancitoLobbyWait: 'Pancito: espera a tu rival. Sin dos jugadores no hay juicio.',
   duelPancitoLobbyReady:
-    'Pancito: elegid baraja (sí, PancitoLandia cuenta), nivel, marcaos listos y al duelo.',
+    'Pancito: elegid país, cartas, vistazo, tiempo de volteo y reverso; marcaos listos y al duelo.',
   duelScoreRulesTitle: 'Cómo se puntúa',
   duelScoreRulesBody:
     'Puntos = 10000 − (segundos × 10) − (errores × 150). Un error vale 15 segundos. Gana quien tenga más puntos al completar el tablero.',
@@ -308,7 +317,7 @@ const es = {
   duelRematch: 'Otra ronda',
   duelRematchCancel: 'Cancelar otra ronda',
   duelRematchNeedBoth:
-    'Los dos debéis pulsar Otra ronda. Volvéis a la sala: el anfitrión puede cambiar baraja y nivel.',
+    'Los dos debéis pulsar Otra ronda. Antes, el anfitrión puede cambiar país, cartas y vistazo abajo.',
   duelRematchWaitingRival: 'Listo. Esperando a que tu rival acepte…',
   duelRematchRivalWaiting: 'Tu rival ya quiere otra ronda. ¿Aceptas?',
   duelRematchStarting: '¡Los dos listos! Volviendo a la sala…',
@@ -608,10 +617,19 @@ const en: Record<keyof typeof es, string> = {
   duelPickCards: 'Pick how many cards',
   duelLevelSelected: 'Level {n}',
   duelDeckSelected: '{deck} · {detail}',
-  duelHostPickingLevel: 'Host is picking the deck and level…',
+  duelHostPickingLevel: 'The host is choosing the deck and rules…',
+  duelPeekSeconds: 'Peek duration',
+  duelRulesTitle: 'Next round rules',
+  duelRulesHelp:
+    'The host can keep or change these before Rematch. Then ready up in the lobby.',
+  duelRulesSummary:
+    '{deck} · {cards} cards · peek {peek} · back {back}',
+  duelPeekOn: '{n} s',
+  duelPeekOff: 'off',
+  duelBackDefault: 'default',
   duelPancitoLobbyWait: 'Pancito: wait for your rival. No second player, no verdict.',
   duelPancitoLobbyReady:
-    'Pancito: pick a deck (yes, PancitoLandia counts), level, ready up, then duel.',
+    'Pancito: pick country, cards, peek, peek time and card back; ready up, then duel.',
   duelScoreRulesTitle: 'How scoring works',
   duelScoreRulesBody:
     'Score = 10000 − (seconds × 10) − (mistakes × 150). One mistake equals 15 seconds. Highest score after clearing the board wins.',
@@ -636,7 +654,7 @@ const en: Record<keyof typeof es, string> = {
   duelRematch: 'Rematch',
   duelRematchCancel: 'Cancel rematch',
   duelRematchNeedBoth:
-    'Both of you must tap Rematch. You return to the lobby — the host can change deck and level.',
+    'Both of you must tap Rematch. Before that, the host can change country, cards and peek below.',
   duelRematchWaitingRival: 'Ready. Waiting for your rival to accept…',
   duelRematchRivalWaiting: 'Your rival wants a rematch. Accept?',
   duelRematchStarting: 'Both ready! Returning to the lobby…',

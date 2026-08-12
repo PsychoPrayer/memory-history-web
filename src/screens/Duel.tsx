@@ -7,22 +7,23 @@ import { CloudAccount } from '../components/CloudAccount'
 import { MatchBar } from '../components/MatchBar'
 import { Modal } from '../components/Modal'
 import { PancitoSprite } from '../components/PancitoGuide'
-import { Stars } from '../components/Stars'
 import { avatarById } from '../lib/avatars'
 import {
   DECKS,
   DECK_NAME,
   deckAvailable,
-  loadContent,
+  useBacks,
   useDeck,
 } from '../data/content'
-import { isUnlocked } from '../data/progression'
 import { formatTime } from '../lib/board'
 import {
   bothReady,
   createDuel,
+  defaultDuelRules,
   DUEL_FREE_CARD_COUNTS,
+  DUEL_PEEK_SECONDS,
   duelErrorMessage,
+  duelRulesComplete,
   fetchMatch,
   fetchMyProfile,
   fetchProfiles,
@@ -38,8 +39,6 @@ import {
   markPlaying,
   normalizeRoomCode,
   opponentId,
-  parsePlDuelCards,
-  plDuelLevelId,
   recalledDuelRoom,
   recalledInviteCode,
   rememberDuelRoom,
@@ -55,16 +54,17 @@ import {
   type DuelMatch,
   type DuelProfile,
   type DuelResult,
+  type DuelRules,
 } from '../lib/duel'
 import { getCloudStatus, subscribeCloud } from '../lib/cloudSync'
 import { playSound } from '../lib/audio'
 import { useT } from '../lib/i18n'
-import { progressFor, setSetting, useSave } from '../lib/save'
+import { setSetting, useSave } from '../lib/save'
 import { shareDuelInvite } from '../lib/share'
 import { isSupabaseConfigured } from '../lib/supabase'
 import { duelScoreBreakdown } from '../lib/duelScore'
-import { freeRules, rulesFromLevel, useMatch } from '../lib/useMatch'
-import type { FreeDeck, Level, Stars as StarCount } from '../types'
+import { freeRules, useMatch } from '../lib/useMatch'
+import type { FreeDeck } from '../types'
 
 type HubMode = 'home' | 'join'
 
@@ -489,7 +489,7 @@ export function Duel() {
             })}
           </p>
         </div>
-        <PancitoPanel pose="guide" body={t('duelIntro')} />
+        <p className="duel-intro">{t('duelIntro')}</p>
 
         {hubMode === 'home' ? (
           <div className="duel-actions">
@@ -501,7 +501,7 @@ export function Duel() {
                 setError(null)
                 setBusy(true)
                 playSound('button')
-                void createDuel(user, { country, levelId: '' })
+                void createDuel(user, defaultDuelRules(country))
                   .then((next) => {
                     rememberDuelRoom(next.id)
                     setMatch(next)
@@ -642,6 +642,8 @@ export function Duel() {
         localAvatarId={avatarId}
         busy={busy}
         error={error}
+        onError={setError}
+        setBusy={setBusy}
         iAmReady={votes.iAmReady}
         theyAreReady={votes.theyAreReady}
         onRematchVote={async () => {
@@ -779,6 +781,181 @@ function DuelPlayerCard({
   )
 }
 
+function formatDuelPeekLabel(
+  rules: DuelRules,
+  t: (key: 'duelPeekOn' | 'duelPeekOff', vars?: Record<string, string | number>) => string,
+) {
+  if (!rules.peek) return t('duelPeekOff')
+  return t('duelPeekOn', { n: rules.peekSeconds })
+}
+
+function DuelRulesSummary({ rules }: { rules: DuelRules }) {
+  const t = useT()
+  const deck = DECK_NAME[rules.country] ?? rules.country
+  return (
+    <p className="duel-level-line">
+      {t('duelRulesSummary', {
+        deck,
+        cards: rules.cards,
+        peek: formatDuelPeekLabel(rules, t),
+        back: rules.back ? '✓' : t('duelBackDefault'),
+      })}
+    </p>
+  )
+}
+
+function DuelRulesEditor({
+  rules,
+  disabled,
+  onChange,
+}: {
+  rules: DuelRules
+  disabled?: boolean
+  onChange: (next: DuelRules) => void
+}) {
+  const t = useT()
+  const backs = useBacks()
+
+  return (
+    <div className="duel-rules-editor">
+      <section className="settings-group">
+        <h2>{t('deck')}</h2>
+        <div className="options-row">
+          {DECKS.filter(deckAvailable).map((code) => (
+            <button
+              key={code}
+              type="button"
+              className="tab"
+              data-active={rules.country === code}
+              disabled={disabled}
+              onClick={() => {
+                if (rules.country === code) return
+                onChange({ ...rules, country: code as FreeDeck })
+              }}
+            >
+              {DECK_NAME[code]}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="settings-group">
+        <h2>{t('cardCount')}</h2>
+        <div className="options-row">
+          {DUEL_FREE_CARD_COUNTS.map((cards) => (
+            <button
+              key={cards}
+              type="button"
+              className="tab"
+              data-active={rules.cards === cards}
+              disabled={disabled}
+              onClick={() => {
+                if (rules.cards === cards) return
+                onChange({ ...rules, cards })
+              }}
+            >
+              {cards}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="settings-group">
+        <h2>{t('openingGlance')}</h2>
+        <div className="options-row">
+          <button
+            type="button"
+            className="tab"
+            data-active={rules.peek}
+            disabled={disabled}
+            onClick={() => {
+              if (rules.peek) return
+              onChange({
+                ...rules,
+                peek: true,
+                peekSeconds:
+                  rules.peekSeconds > 0 ? rules.peekSeconds : 2.5,
+              })
+            }}
+          >
+            {t('yes')}
+          </button>
+          <button
+            type="button"
+            className="tab"
+            data-active={!rules.peek}
+            disabled={disabled}
+            onClick={() => {
+              if (!rules.peek) return
+              onChange({ ...rules, peek: false, peekSeconds: 0 })
+            }}
+          >
+            {t('no')}
+          </button>
+        </div>
+      </section>
+
+      {rules.peek && (
+        <section className="settings-group">
+          <h2>{t('duelPeekSeconds')}</h2>
+          <div className="options-row">
+            {DUEL_PEEK_SECONDS.map((seconds) => (
+              <button
+                key={seconds}
+                type="button"
+                className="tab"
+                data-active={rules.peekSeconds === seconds}
+                disabled={disabled}
+                onClick={() => {
+                  if (rules.peekSeconds === seconds) return
+                  onChange({ ...rules, peek: true, peekSeconds: seconds })
+                }}
+              >
+                {seconds}s
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {Object.keys(backs).length > 0 && (
+        <section className="settings-group">
+          <h2>{t('cardBack')}</h2>
+          <div className="back-grid">
+            <button
+              type="button"
+              className="back-tile back-tile-auto"
+              data-active={rules.back === null}
+              disabled={disabled}
+              onClick={() => {
+                if (rules.back === null) return
+                onChange({ ...rules, back: null })
+              }}
+            >
+              {t('duelBackDefault')}
+            </button>
+            {Object.entries(backs).map(([key, url]) => (
+              <button
+                key={key}
+                type="button"
+                className="back-tile"
+                data-active={rules.back === url}
+                disabled={disabled}
+                onClick={() => {
+                  if (rules.back === url) return
+                  onChange({ ...rules, back: url })
+                }}
+              >
+                <img src={url} alt="" loading="lazy" />
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
+  )
+}
+
 function LobbyRoom({
   match,
   userId,
@@ -801,53 +978,14 @@ function LobbyRoom({
   onLeave: () => void
 }) {
   const t = useT()
-  const pack = match.rules.country
-  const progress = useSave(() =>
-    isCampaignDuelPack(pack) ? progressFor(pack) : progressFor('VE'),
-  )
   const host = isHost(match, userId)
   const ready = host ? match.host_ready : match.guest_ready
   const localName = useSave((state) => state.settings.playerName)
   const localAvatar = useSave((state) => state.settings.avatarId)
   const [shareNote, setShareNote] = useState<string | null>(null)
-  const [packLevels, setPackLevels] = useState<Level[]>([])
+  const rulesReady = duelRulesComplete(match.rules)
 
-  useEffect(() => {
-    if (!isCampaignDuelPack(pack)) {
-      setPackLevels([])
-      return
-    }
-    let active = true
-    void loadContent(pack)
-      .then((content) => {
-        if (active) setPackLevels(content.levels)
-      })
-      .catch(() => {
-        if (active) setPackLevels([])
-      })
-    return () => {
-      active = false
-    }
-  }, [pack])
-
-  const unlocked = useMemo(
-    () =>
-      packLevels.filter((level) => isUnlocked(level, packLevels, progress)),
-    [packLevels, progress],
-  )
-  const selected = packLevels.find((level) => level.id === match.rules.levelId)
-  const plCards = pack === 'PL' ? parsePlDuelCards(match.rules.levelId) : null
-  const deckLabel = DECK_NAME[pack] ?? pack
-  const selectionDetail =
-    pack === 'PL'
-      ? plCards
-        ? t('cardsCount', { n: plCards })
-        : null
-      : selected
-        ? t('duelLevelSelected', { n: selected.numero })
-        : null
-
-  const patchRules = (next: { country: FreeDeck; levelId: string }) => {
+  const patchRules = (next: DuelRules) => {
     onError(null)
     setBusy(true)
     playSound('button')
@@ -944,80 +1082,13 @@ function LobbyRoom({
       </aside>
 
       {host ? (
-        <>
-          <label className="cloud-field">
-            <span>{t('duelChooseDeck')}</span>
-            <select
-              value={pack}
-              disabled={busy}
-              onChange={(event) => {
-                const next = event.target.value as FreeDeck
-                if (!deckAvailable(next)) return
-                patchRules({ country: next, levelId: '' })
-              }}
-            >
-              {DECKS.filter(deckAvailable).map((code) => (
-                <option key={code} value={code}>
-                  {DECK_NAME[code]}
-                </option>
-              ))}
-            </select>
-          </label>
-          {pack === 'PL' ? (
-            <label className="cloud-field">
-              <span>{t('duelChooseLevel')}</span>
-              <select
-                value={match.rules.levelId}
-                disabled={busy}
-                onChange={(event) => {
-                  patchRules({
-                    country: 'PL',
-                    levelId: event.target.value,
-                  })
-                }}
-              >
-                <option value="">{t('duelPickCards')}</option>
-                {DUEL_FREE_CARD_COUNTS.map((count) => (
-                  <option key={count} value={plDuelLevelId(count)}>
-                    {t('cardsCount', { n: count })}
-                  </option>
-                ))}
-              </select>
-            </label>
-          ) : (
-            <label className="cloud-field">
-              <span>{t('duelChooseLevel')}</span>
-              <select
-                value={match.rules.levelId}
-                disabled={busy}
-                onChange={(event) => {
-                  patchRules({
-                    country: pack,
-                    levelId: event.target.value,
-                  })
-                }}
-              >
-                <option value="">{t('duelPickLevel')}</option>
-                {unlocked.map((level) => (
-                  <option key={level.id} value={level.id}>
-                    {t('level')} {level.numero}
-                    {level.dificil ? ` (${t('hard')})` : ''} ·{' '}
-                    {t('cardsCount', { n: level.cartas })}
-                  </option>
-                ))}
-              </select>
-            </label>
-          )}
-        </>
+        <DuelRulesEditor
+          rules={match.rules}
+          disabled={busy}
+          onChange={patchRules}
+        />
       ) : (
-        <p className="duel-level-line">
-          {selectionDetail
-            ? t('duelDeckSelected', {
-                deck: deckLabel,
-                detail: selectionDetail,
-              })
-            : t('duelHostPickingLevel')}
-        </p>
+        <DuelRulesSummary rules={match.rules} />
       )}
 
       {error && (
@@ -1030,7 +1101,7 @@ function LobbyRoom({
         <button
           type="button"
           className="btn-secondary"
-          disabled={busy || !match.rules.levelId || !match.guest_id}
+          disabled={busy || !rulesReady || !match.guest_id}
           onClick={() => {
             onError(null)
             setBusy(true)
@@ -1048,7 +1119,7 @@ function LobbyRoom({
           <button
             type="button"
             className="btn-primary"
-            disabled={busy || !bothReady(match) || !match.rules.levelId}
+            disabled={busy || !bothReady(match) || !rulesReady}
             onClick={() => {
               onError(null)
               setBusy(true)
@@ -1095,63 +1166,30 @@ function DuelPlay({
   const t = useT()
   const pack = match.rules.country
   const deckCards = useDeck(pack)
-  const [campaignLevels, setCampaignLevels] = useState<Level[] | null>(null)
-  const plCards = pack === 'PL' ? parsePlDuelCards(match.rules.levelId) : null
   const [countdown, setCountdown] = useState<number | null>(null)
   const [live, setLive] = useState(false)
   const submitted = useRef(false)
   const playingMarked = useRef(false)
 
-  useEffect(() => {
-    if (!isCampaignDuelPack(pack)) {
-      setCampaignLevels([])
-      return
-    }
-    let active = true
-    setCampaignLevels(null)
-    void loadContent(pack)
-      .then((content) => {
-        if (active) setCampaignLevels(content.levels)
-      })
-      .catch(() => {
-        if (active) setCampaignLevels([])
-      })
-    return () => {
-      active = false
-    }
-  }, [pack])
-
-  const level =
-    pack === 'PL' || !campaignLevels
-      ? null
-      : campaignLevels.find((item) => item.id === match.rules.levelId)
-
   const rules = useMemo(() => {
-    if (pack === 'PL') {
-      if (!plCards) return null
-      const grid = gridForDuelCards(plCards)
-      return freeRules({
-        cards: plCards,
-        columns: grid.columns,
-        rows: grid.rows,
-        seconds: 0,
-        peekSeconds: 2.5,
-        back: null,
-      })
-    }
-    if (campaignLevels === null) return null
-    return level ? rulesFromLevel(level) : null
-  }, [campaignLevels, level, pack, plCards])
+    if (!duelRulesComplete(match.rules)) return null
+    const grid = gridForDuelCards(match.rules.cards)
+    return freeRules({
+      cards: match.rules.cards,
+      columns: grid.columns,
+      rows: grid.rows,
+      seconds: 0,
+      peekSeconds: match.rules.peek ? match.rules.peekSeconds : 0,
+      back: match.rules.back,
+    })
+  }, [match.rules])
 
   const boardTitle = useMemo(() => {
-    if (pack === 'PL' && plCards) {
-      return `${t('duel')} · ${DECK_NAME.PL} · ${t('cardsCount', { n: plCards })}`
-    }
-    if (level) {
-      return `${t('duel')} · ${DECK_NAME[pack] ?? pack} · ${t('level')} ${level.numero}`
-    }
-    return t('duel')
-  }, [level, pack, plCards, t])
+    if (!duelRulesComplete(match.rules)) return t('duel')
+    return `${t('duel')} · ${DECK_NAME[pack] ?? pack} · ${t('cardsCount', {
+      n: match.rules.cards,
+    })}`
+  }, [match.rules, pack, t])
 
   useEffect(() => {
     const startsAt = match.starts_at
@@ -1182,12 +1220,7 @@ function DuelPlay({
     return () => window.clearInterval(id)
   }, [match.id, match.starts_at, match.host_id, userId])
 
-  const loadingBoard =
-    !deckCards ||
-    (isCampaignDuelPack(pack) && campaignLevels === null) ||
-    (pack === 'PL' && !plCards && Boolean(match.rules.levelId))
-
-  if (loadingBoard) {
+  if (!deckCards) {
     return (
       <Shell title={t('duel')} onBack={() => void onForfeit()}>
         <PancitoPanel pose="wait" body={t('duelPancitoCountdown')} />
@@ -1241,7 +1274,7 @@ function DuelBoard({
   onForfeit,
 }: {
   title: string
-  rules: ReturnType<typeof rulesFromLevel>
+  rules: ReturnType<typeof freeRules>
   deck: Parameters<typeof useMatch>[1]
   onFinish: (payload: {
     completed: boolean
@@ -1386,6 +1419,8 @@ function VerdictRoom({
   localAvatarId,
   busy,
   error,
+  onError,
+  setBusy,
   iAmReady,
   theyAreReady,
   onRematchVote,
@@ -1399,12 +1434,15 @@ function VerdictRoom({
   localAvatarId: string
   busy: boolean
   error: string | null
+  onError: (value: string | null) => void
+  setBusy: (value: boolean) => void
   iAmReady: boolean
   theyAreReady: boolean
   onRematchVote: () => void
   onLeaveRoom: () => void
 }) {
   const t = useT()
+  const host = isHost(match, userId)
   const mine = results.find((r) => r.user_id === userId)
   const theirs = results.find((r) => r.user_id !== userId)
   const rivalId = opponentId(match, userId)
@@ -1432,6 +1470,17 @@ function VerdictRoom({
       ? t('duelRematchRivalWaiting')
       : t('duelRematchNeedBoth')
 
+  const patchRules = (next: DuelRules) => {
+    onError(null)
+    setBusy(true)
+    playSound('button')
+    void updateMatchRules(match.id, next)
+      .catch((err) =>
+        onError(err instanceof Error ? err.message : t('duelError')),
+      )
+      .finally(() => setBusy(false))
+  }
+
   return (
     <Shell title={t('duelVerdict')} onBack={onLeaveRoom}>
       <div className="duel-verdict">
@@ -1455,6 +1504,20 @@ function VerdictRoom({
           highlight={lost}
         />
       </div>
+
+      <section className="duel-next-rules" aria-label={t('duelRulesTitle')}>
+        <h3>{t('duelRulesTitle')}</h3>
+        <p className="duel-muted">{t('duelRulesHelp')}</p>
+        {host ? (
+          <DuelRulesEditor
+            rules={match.rules}
+            disabled={busy || (iAmReady && theyAreReady)}
+            onChange={patchRules}
+          />
+        ) : (
+          <DuelRulesSummary rules={match.rules} />
+        )}
+      </section>
 
       <p className="duel-rematch-status" data-ready={iAmReady && theyAreReady}>
         {rematchHint}
@@ -1528,7 +1591,6 @@ function ResultCard({
               {score?.eligible ? score.total : t('duelScoreIneligible')}
             </strong>
           </p>
-          <Stars count={result.stars as StarCount} />
           <dl className="summary duel-result-data">
             <div>
               <dt>{t('yourTime')}</dt>

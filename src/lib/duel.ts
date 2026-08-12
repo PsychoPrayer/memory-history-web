@@ -13,25 +13,39 @@ export type DuelStatus =
 /** Pack for the duel board: campaign countries or PancitoLandia free deck. */
 export interface DuelRules {
   country: FreeDeck
-  /** Campaign level id, or `pl:{cardCount}` for PancitoLandia. */
-  levelId: string
+  cards: number
+  /** Opening glance before play. */
+  peek: boolean
+  /** Peek duration in seconds when `peek` is true (3 / 2.5 / 2 / 1). */
+  peekSeconds: number
+  /** Card back image URL, or null for default. */
+  back: string | null
 }
 
 export const DUEL_FREE_CARD_COUNTS = [12, 16, 20, 24, 28, 32, 40] as const
+export const DUEL_PEEK_SECONDS = [3, 2.5, 2, 1] as const
+
+export function defaultDuelRules(country: FreeDeck = 'VE'): DuelRules {
+  return {
+    country,
+    cards: 16,
+    peek: true,
+    peekSeconds: 2.5,
+    back: null,
+  }
+}
 
 export function isCampaignDuelPack(pack: FreeDeck): pack is CountryCode {
   return pack !== 'PL'
 }
 
-export function plDuelLevelId(cards: number): string {
-  return `pl:${cards}`
-}
-
-export function parsePlDuelCards(levelId: string): number | null {
-  const match = /^pl:(\d+)$/.exec(levelId)
-  if (!match) return null
-  const cards = Number(match[1])
-  return Number.isFinite(cards) && cards > 0 ? cards : null
+export function duelRulesComplete(rules: DuelRules): boolean {
+  const cardsOk = (DUEL_FREE_CARD_COUNTS as readonly number[]).includes(
+    rules.cards,
+  )
+  if (!cardsOk) return false
+  if (!rules.peek) return true
+  return (DUEL_PEEK_SECONDS as readonly number[]).includes(rules.peekSeconds)
 }
 
 export function gridForDuelCards(cards: number): {
@@ -48,6 +62,19 @@ export function gridForDuelCards(cards: number): {
     40: { columns: 8, rows: 5 },
   }
   return presets[cards] ?? { columns: 4, rows: Math.max(1, Math.ceil(cards / 4)) }
+}
+
+/** @deprecated Legacy PancitoLandia encoding; kept for rule migration. */
+export function plDuelLevelId(cards: number): string {
+  return `pl:${cards}`
+}
+
+/** @deprecated Legacy PancitoLandia encoding; kept for rule migration. */
+export function parsePlDuelCards(levelId: string): number | null {
+  const match = /^pl:(\d+)$/.exec(levelId)
+  if (!match) return null
+  const cards = Number(match[1])
+  return Number.isFinite(cards) && cards > 0 ? cards : null
 }
 
 export interface DuelProfile {
@@ -151,17 +178,49 @@ function randomCode(length = 6): string {
 }
 
 function asRules(value: unknown): DuelRules {
-  if (!value || typeof value !== 'object') {
-    return { country: 'VE', levelId: '' }
-  }
+  const base = defaultDuelRules('VE')
+  if (!value || typeof value !== 'object') return base
   const record = value as Record<string, unknown>
   const raw =
     typeof record.country === 'string' ? record.country.toUpperCase() : 'VE'
   const country = (
     raw === 'ES' || raw === 'EU' || raw === 'PL' ? raw : 'VE'
   ) as FreeDeck
-  const levelId = typeof record.levelId === 'string' ? record.levelId : ''
-  return { country, levelId }
+
+  let cards =
+    typeof record.cards === 'number' && Number.isFinite(record.cards)
+      ? Math.round(record.cards)
+      : 0
+  /* Migrate legacy { levelId: "pl:16" } or campaign level rooms. */
+  if (!cards && typeof record.levelId === 'string') {
+    cards = parsePlDuelCards(record.levelId) ?? 0
+  }
+  if (!(DUEL_FREE_CARD_COUNTS as readonly number[]).includes(cards)) {
+    cards = base.cards
+  }
+
+  const peek =
+    typeof record.peek === 'boolean' ? record.peek : base.peek
+  let peekSeconds =
+    typeof record.peekSeconds === 'number' && Number.isFinite(record.peekSeconds)
+      ? record.peekSeconds
+      : base.peekSeconds
+  if (peek && !(DUEL_PEEK_SECONDS as readonly number[]).includes(peekSeconds)) {
+    peekSeconds = base.peekSeconds
+  }
+
+  const back =
+    typeof record.back === 'string' && record.back.length > 0
+      ? record.back
+      : null
+
+  return {
+    country,
+    cards,
+    peek,
+    peekSeconds: peek ? peekSeconds : 0,
+    back,
+  }
 }
 
 function mapMatch(row: Record<string, unknown>): DuelMatch {
@@ -377,7 +436,8 @@ export async function updateMatchRules(
       updated_at: new Date().toISOString(),
     })
     .eq('id', matchId)
-    .eq('status', 'lobby')
+    /* Lobby setup, or tweak rules on the verdict screen before rematch. */
+    .in('status', ['lobby', 'finished'])
   if (error) throw error
 }
 
