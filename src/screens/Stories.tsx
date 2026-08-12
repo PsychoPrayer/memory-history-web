@@ -22,6 +22,7 @@ export function Stories() {
     () => unlockedStories(stories, levels, progress),
     [stories, levels, progress],
   )
+  const allStoriesDone = unlocked.size > 0 && unlocked.size >= stories.length
 
   const openStories = useMemo(
     () => stories.filter((story) => unlocked.has(story.id)),
@@ -77,6 +78,15 @@ export function Stories() {
         right={
           <span className="header-counter">
             {t('storiesRead', { a: unlocked.size, b: stories.length })}
+            {allStoriesDone && (
+              <span
+                className="summary-trophy summary-trophy-stories"
+                title={t('storiesTrophy')}
+                aria-label={t('storiesTrophy')}
+              >
+                ♛
+              </span>
+            )}
           </span>
         }
       />

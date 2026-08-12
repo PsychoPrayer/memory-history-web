@@ -36,6 +36,7 @@ export function Menu() {
   const stars = totalStars(progress)
   const maximum = levels.length * 3
   const unlocked = unlockedStories(stories, levels, progress).size
+  const allStoriesDone = unlocked > 0 && unlocked >= stories.length
 
   const go = (path: string) => {
     playSound('transition')
@@ -101,9 +102,17 @@ export function Menu() {
         <button type="button" className="btn-primary" onClick={() => go('/levels')}>
           {t('play')}
         </button>
-        <button type="button" className="btn-secondary" onClick={() => go('/stories')}>
+        <button
+          type="button"
+          className="btn-secondary"
+          data-trophy={allStoriesDone || undefined}
+          onClick={() => go('/stories')}
+        >
+          {allStoriesDone && <span className="tab-trophy" aria-hidden="true" />}
           {t('stories')}
-          <span className="btn-note">{unlocked}/{stories.length}</span>
+          <span className="btn-note">
+            {unlocked}/{stories.length}
+          </span>
         </button>
         <button type="button" className="btn-secondary" onClick={() => go('/tests')}>
           {t('tests')}

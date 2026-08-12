@@ -337,6 +337,18 @@ button {
   color: #6d4a12;
 }
 
+.summary-trophy-stories {
+  color: var(--oro);
+}
+
+.btn-secondary[data-trophy='true'] {
+  border-color: rgba(154, 111, 39, 0.65);
+}
+
+.btn-secondary .tab-trophy {
+  margin-right: 0.35rem;
+}
+
 /* ---------- Screen structure ----------------------------------------------
    Cada pantalla es una hoja: filete alrededor y sombra de encuadernación
    en el lomo izquierdo.
@@ -396,6 +408,9 @@ button {
 }
 
 .header-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
   font-family: var(--texto);
   font-style: italic;
   font-size: 0.92rem;
@@ -2139,53 +2154,41 @@ button {
   pointer-events: none;
 }
 
-/* Reserved strip under the board so PISTA never covers a card. */
-.hint-dock {
-  flex: 0 0 auto;
+.match-bar-left {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  padding: 0.2rem max(0.55rem, env(safe-area-inset-right)) 0.35rem;
-  padding-bottom: max(0.35rem, env(safe-area-inset-bottom));
-  box-sizing: border-box;
-  z-index: 18;
+  gap: 0.35rem;
+  flex: 0 0 auto;
 }
 
-.hint-pancito {
-  display: flex;
-  flex-direction: column;
+.match-bar-hint {
+  display: inline-flex;
   align-items: center;
-  gap: 0.1rem;
-  padding: 0.25rem 0.4rem 0.3rem;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  padding: 0;
   border: 1px solid rgba(43, 33, 22, 0.35);
   background: rgba(241, 232, 210, 0.96);
   color: var(--tinta);
   cursor: pointer;
-  box-shadow: 0 3px 10px -4px rgba(20, 13, 6, 0.4);
   font: inherit;
 }
 
-.hint-pancito:hover:not(:disabled),
-.hint-pancito:focus-visible:not(:disabled) {
+.match-bar-hint:hover:not(:disabled),
+.match-bar-hint:focus-visible:not(:disabled) {
   border-color: var(--oro);
+  color: var(--oro);
 }
 
-.hint-pancito:disabled {
-  opacity: 0.55;
+.match-bar-hint:disabled,
+.match-bar-hint[data-used] {
+  opacity: 0.4;
   cursor: default;
 }
 
-.hint-pancito-sprite {
-  width: 2.85rem;
-  height: auto;
-}
-
-.hint-pancito-label {
-  font-family: var(--versales);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.match-bar-hint-icon {
+  display: block;
 }
 
 /* ---------- Board --------------------------------------------------------- */
@@ -3250,6 +3253,11 @@ button {
     font-size: 0.85rem;
     min-height: 2.25rem;
     min-width: auto;
+  }
+
+  .match-bar-hint {
+    width: 2.25rem;
+    height: 2.25rem;
   }
 
   .timer {
