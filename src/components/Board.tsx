@@ -49,11 +49,17 @@ export function Board({
   onFlip,
 }: Props) {
   const t = useT()
+  /** Content grid shape: tall (more rows), wide (more columns), or square. */
   const orientation = rows > columns ? 'tall' : 'wide'
   const desktopWide = useDesktopWide()
-  /** Matches CSS: tall boards flip columns/rows on wide screens. */
-  const navColumns = orientation === 'tall' && desktopWide ? rows : columns
-  const navRows = orientation === 'tall' && desktopWide ? columns : rows
+  /*
+   * Phone: landscape grids (8×4, 6×4…) flip to portrait so cards read vertically.
+   * Desktop: tall grids flip to landscape to use the width (existing behavior).
+   */
+  const portraitOnPhone = !desktopWide && columns > rows
+  const landscapeOnDesktop = desktopWide && rows > columns
+  const navColumns = portraitOnPhone || landscapeOnDesktop ? rows : columns
+  const navRows = portraitOnPhone || landscapeOnDesktop ? columns : rows
   const gapRatio = gapRatioFor(tiles.length)
 
   const [focusIndex, setFocusIndex] = useState(0)

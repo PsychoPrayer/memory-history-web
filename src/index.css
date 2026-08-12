@@ -2286,7 +2286,15 @@ button {
   --gap-ratio: 0.05;
 }
 
-/* Desktop: 4×6 → 6×4, 4×8 → 8×4, 5×8 → 8×5… use the width. */
+/* Phone / narrow: landscape boards (8×4, 6×4…) become portrait. */
+@media (max-width: 47.999rem) {
+  .board[data-orientation='wide'] {
+    --cols: var(--rows);
+    --rows: var(--columns);
+  }
+}
+
+/* Desktop: tall boards (4×8…) become landscape to use the width. */
 @media (min-width: 48rem) {
   .board[data-orientation='tall'] {
     --cols: var(--rows);
@@ -3304,11 +3312,6 @@ button {
 
   .timer-track {
     width: min(28vw, 8rem);
-  }
-
-  .board {
-    --cols: var(--columns);
-    --rows: var(--rows);
   }
 
   .board-shell {
