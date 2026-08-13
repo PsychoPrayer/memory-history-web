@@ -317,105 +317,105 @@
   {
     "id": "ach_section_12_cards",
     "es": {
-      "titulo": "Conquista 12",
-      "descripcion": "Aprendiz"
+      "titulo": "Conquista: Aprendiz",
+      "descripcion": "Completa todos los niveles de la sección de 12 cartas."
     },
     "en": {
-      "titulo": "Conquest 12",
-      "descripcion": "Apprentice"
+      "titulo": "Conquest: Apprentice",
+      "descripcion": "Clear every level in the 12-card section."
     },
     "tipo": 34,
-    "objetivo": 12,
+    "objetivo": 1,
     "conProgreso": false,
     "icono": null
   },
   {
     "id": "ach_section_16_cards",
     "es": {
-      "titulo": "Conquista 16",
-      "descripcion": "Descubridor"
+      "titulo": "Conquista: Descubridor",
+      "descripcion": "Completa todos los niveles de la sección de 16 cartas."
     },
     "en": {
-      "titulo": "Conquest 16",
-      "descripcion": "Discoverer"
+      "titulo": "Conquest: Discoverer",
+      "descripcion": "Clear every level in the 16-card section."
     },
     "tipo": 34,
-    "objetivo": 16,
+    "objetivo": 1,
     "conProgreso": false,
     "icono": null
   },
   {
     "id": "ach_section_20_cards",
     "es": {
-      "titulo": "Conquista 20",
-      "descripcion": "Historiados"
+      "titulo": "Conquista: Historiador",
+      "descripcion": "Completa todos los niveles de la sección de 20 cartas."
     },
     "en": {
-      "titulo": "Conquest 20",
-      "descripcion": "Historian"
+      "titulo": "Conquest: Historian",
+      "descripcion": "Clear every level in the 20-card section."
     },
     "tipo": 34,
-    "objetivo": 20,
+    "objetivo": 1,
     "conProgreso": false,
     "icono": null
   },
   {
     "id": "ach_section_24_cards",
     "es": {
-      "titulo": "Conquista 24",
-      "descripcion": "Arqueologo"
+      "titulo": "Conquista: Arqueólogo",
+      "descripcion": "Completa todos los niveles de la sección de 24 cartas."
     },
     "en": {
-      "titulo": "Conquest 24",
-      "descripcion": "Archaeologist"
+      "titulo": "Conquest: Archaeologist",
+      "descripcion": "Clear every level in the 24-card section."
     },
     "tipo": 34,
-    "objetivo": 24,
+    "objetivo": 1,
     "conProgreso": false,
     "icono": null
   },
   {
     "id": "ach_section_28_cards",
     "es": {
-      "titulo": "Conquista 28",
-      "descripcion": "Expedicionario"
+      "titulo": "Conquista: Expedicionario",
+      "descripcion": "Completa todos los niveles de la sección de 28 cartas."
     },
     "en": {
-      "titulo": "Conquest 28",
-      "descripcion": "Expeditionary"
+      "titulo": "Conquest: Expeditionary",
+      "descripcion": "Clear every level in the 28-card section."
     },
     "tipo": 34,
-    "objetivo": 28,
+    "objetivo": 1,
     "conProgreso": false,
     "icono": null
   },
   {
     "id": "ach_section_32_cards",
     "es": {
-      "titulo": "Conquista 32",
-      "descripcion": "Maestro"
+      "titulo": "Conquista: Maestro",
+      "descripcion": "Completa todos los niveles de la sección de 32 cartas."
     },
     "en": {
-      "titulo": "Conquest 32",
-      "descripcion": "Master"
+      "titulo": "Conquest: Master",
+      "descripcion": "Clear every level in the 32-card section."
     },
     "tipo": 34,
-    "objetivo": 32,
+    "objetivo": 1,
     "conProgreso": false,
     "icono": null
   },
   {
     "id": "ach_section_40_cards",
     "es": {
-      "titulo": "Conquista 40",
-      "descripcion": "Erudito"
+      "titulo": "Conquista: Erudito",
+      "descripcion": "Completa todos los niveles de la sección de 40 cartas."
     },
     "en": {
-      "titulo": "Conquest 40",
-      "descripcion": "Scholar"
+      "titulo": "Conquest: Scholar",
+      "descripcion": "Clear every level in the 40-card section."
     },
     "tipo": 34,
-    "objetivo": 40,
+    "objetivo": 1,
     "conProgreso": false,
     "icono": null
   }

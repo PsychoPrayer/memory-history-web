@@ -225,7 +225,12 @@ export function achievementProgress(
   if (test) return summary.testsByLevel.has(Number(test[1])) ? 1 : 0
 
   const section = id.match(/^ach_section_(\d+)_cards$/)
-  if (section) return summary.completedSections.has(Number(section[1])) ? 1 : 0
+  if (section) {
+    /* Binary unlock; return objetivo so it works if content uses 1 or the card count. */
+    return summary.completedSections.has(Number(section[1]))
+      ? achievement.objetivo
+      : 0
+  }
 
   if (id.endsWith('_normal_levels')) return summary.normalLevels
   if (id.endsWith('_hard_levels')) return summary.hardLevels
