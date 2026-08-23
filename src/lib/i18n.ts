@@ -304,9 +304,9 @@ const es = {
     'Pancito: elegid país, cartas, vistazo, tiempo de volteo y reverso; marcaos listos y al duelo.',
   duelScoreRulesTitle: 'Cómo se puntúa',
   duelScoreRulesBody:
-    'Puntos = 10000 − (segundos × 10) − (errores × 150). Un error vale 15 segundos. Gana quien tenga más puntos al completar el tablero.',
+    'Puntos = 10000 − (segundos × 10) − (errores × 20). Un error vale 2 segundos. Gana quien tenga más puntos al completar el tablero.',
   duelScoreExample:
-    'Ejemplo: 60s y 0 errores = 9400. Si vas 3s más rápido pero con 1 error = 9280 → pierdes.',
+    'Ejemplo: 60s y 0 errores = 9400. 58s con 1 error = 9420 → ganas aunque fallaste una.',
   duelScore: 'Puntos',
   duelScoreIneligible: 'Sin puntuación',
   duelPancitoCountdown: 'Pancito da la salida…',
@@ -650,9 +650,9 @@ const en: Record<keyof typeof es, string> = {
     'Pancito: pick country, cards, peek, peek time and card back; ready up, then duel.',
   duelScoreRulesTitle: 'How scoring works',
   duelScoreRulesBody:
-    'Score = 10000 − (seconds × 10) − (mistakes × 150). One mistake equals 15 seconds. Highest score after clearing the board wins.',
+    'Score = 10000 − (seconds × 10) − (mistakes × 20). One mistake equals 2 seconds. Highest score after clearing the board wins.',
   duelScoreExample:
-    'Example: 60s and 0 mistakes = 9400. 3s faster but +1 mistake = 9280 → you lose.',
+    'Example: 60s and 0 mistakes = 9400. 58s with 1 mistake = 9420 → you still win.',
   duelScore: 'Score',
   duelScoreIneligible: 'No score',
   duelPancitoCountdown: 'Pancito starts the race…',

@@ -170,7 +170,7 @@ revoke all on function public.join_duel(text) from public;
 grant execute on function public.join_duel(text) to authenticated;
 
 -- Compare both results by score and update wins/losses.
--- score = greatest(0, 10000 − seconds×10 − mistakes×150); 1 mistake = 15s.
+-- score = greatest(0, 10000 − seconds×10 − mistakes×20); 1 mistake = 2s.
 create or replace function public.resolve_duel(p_match_id uuid)
 returns public.duel_matches
 language plpgsql
@@ -222,7 +222,7 @@ begin
       0,
       10000
         - (host_r.duration_ms / 1000) * 10
-        - host_r.mistakes * 150
+        - host_r.mistakes * 20
     );
   end if;
 
@@ -231,7 +231,7 @@ begin
       0,
       10000
         - (guest_r.duration_ms / 1000) * 10
-        - guest_r.mistakes * 150
+        - guest_r.mistakes * 20
     );
   end if;
 

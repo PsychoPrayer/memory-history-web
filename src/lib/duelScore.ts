@@ -3,13 +3,12 @@
  *
  * score = max(0, BASE − seconds×PER_SECOND − mistakes×PER_MISTAKE)
  *
- * With PER_MISTAKE = 150 and PER_SECOND = 10, one mistake equals 15 seconds.
- * Example: 3s faster but +1 mistake loses (you “owe” 12s of score).
+ * With PER_MISTAKE = 20 and PER_SECOND = 10, one mistake equals 2 seconds.
  */
 
 export const DUEL_SCORE_BASE = 10_000
 export const DUEL_SCORE_PER_SECOND = 10
-export const DUEL_SCORE_PER_MISTAKE = 150
+export const DUEL_SCORE_PER_MISTAKE = 20
 
 /** Seconds of race time that equal one mistake. */
 export const DUEL_MISTAKE_EQUALS_SECONDS =

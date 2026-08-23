@@ -4,7 +4,7 @@
 -- deck/level before ready-up (does not auto-start countdown).
 
 -- Reset ready flags when a duel finishes (so rematch needs both votes).
--- Ranking uses score: 10000 − seconds×10 − mistakes×150 (1 mistake = 15s).
+-- Ranking uses score: 10000 − seconds×10 − mistakes×20 (1 mistake = 2s).
 create or replace function public.resolve_duel(p_match_id uuid)
 returns public.duel_matches
 language plpgsql
@@ -56,7 +56,7 @@ begin
       0,
       10000
         - (host_r.duration_ms / 1000) * 10
-        - host_r.mistakes * 150
+        - host_r.mistakes * 20
     );
   end if;
 
@@ -65,7 +65,7 @@ begin
       0,
       10000
         - (guest_r.duration_ms / 1000) * 10
-        - guest_r.mistakes * 150
+        - guest_r.mistakes * 20
     );
   end if;
 

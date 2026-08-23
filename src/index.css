@@ -3227,6 +3227,14 @@ button {
     font-size: max(1rem, 16px);
   }
 
+  .screen-duel {
+    min-height: var(--app-height);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
+    padding-bottom: max(2rem, env(safe-area-inset-bottom, 0px));
+  }
+
   .screen {
     width: 100%;
     padding: 0.75rem 0.9rem 2.2rem;
