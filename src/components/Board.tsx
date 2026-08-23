@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import type { BoardTile } from '../types'
 import { useT } from '../lib/i18n'
 import type { FogPhase } from '../lib/useMatch'
+import { REFIT_EVENT } from '../lib/viewport'
 import { Card } from './Card'
 
 interface Props {
@@ -94,10 +95,12 @@ export function Board({
     const observer = new ResizeObserver(measure)
     observer.observe(shell)
     window.addEventListener('orientationchange', measure)
+    window.addEventListener(REFIT_EVENT, measure)
     window.visualViewport?.addEventListener('resize', measure)
     return () => {
       observer.disconnect()
       window.removeEventListener('orientationchange', measure)
+      window.removeEventListener(REFIT_EVENT, measure)
       window.visualViewport?.removeEventListener('resize', measure)
     }
   }, [navColumns, navRows, gapRatio])

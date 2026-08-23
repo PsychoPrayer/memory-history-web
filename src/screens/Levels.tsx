@@ -49,52 +49,52 @@ const ATLAS_ROUTES: Record<
   /* Venezuela — placed from the marked atlas guide. */
   VE: {
     normal: [
-      [28, 28], // 1 Maracaibo (further west)
-      [38, 30], // 2 east of Maracaibo
-      [52, 28], // 3 Caracas coast
-      [62, 28], // 4 Cumaná north-central
-      [72, 30], // 5 Cumaná east / Orinoco delta
+      [27.3, 26.9], // 1 Maracaibo (further west)
+      [37.7, 28.9], // 2 east of Maracaibo
+      [52.1, 26.9], // 3 Caracas coast
+      [62.5, 26.9], // 4 Cumaná north-central
+      [72.8, 28.9], // 5 Cumaná east / Orinoco delta
     ],
     hard: [
-      [32, 46], // 6 Los Llanos west
-      [48, 48], // 7 Los Llanos center
-      [54, 62], // 8 south-central (lower)
-      [64, 52], // 9 Guayana west
-      [74, 56], // 10 Guayana east
+      [31.5, 45.3], // 6 Los Llanos west
+      [48, 47.4], // 7 Los Llanos center
+      [54.2, 61.7], // 8 south-central (lower)
+      [64.5, 51.4], // 9 Guayana west
+      [74.8, 55.5], // 10 Guayana east
     ],
   },
   /* Spain — placed from the marked atlas guide. */
   ES: {
     normal: [
-      [33, 25], // 1 Galicia (Santiago)
-      [43, 23], // 2 Asturias
-      [50, 35], // 3 Castilla (north / Burgos)
-      [60, 28], // 4 Aragón (near Pyrenees)
-      [71, 30], // 5 Cataluña (coast)
+      [32.5, 23.8], // 1 Galicia (Santiago)
+      [42.8, 21.8], // 2 Asturias
+      [50.1, 34.1], // 3 Castilla (north / Burgos)
+      [60.4, 26.9], // 4 Aragón (near Pyrenees)
+      [71.7, 28.9], // 5 Cataluña (coast)
     ],
     hard: [
-      [37, 52], // 6 Extremadura
-      [51, 52], // 7 south of Madrid (Vielle / New Castile)
+      [36.6, 51.4], // 6 Extremadura
+      [51.1, 51.4], // 7 south of Madrid (Vielle / New Castile)
       [47, 78], // 8 Andalucía (Sevilla–Córdoba)
-      [64, 58], // 9 Murcia
-      [79, 49], // 10 Islas Baleares (Mallorca)
+      [64.5, 57.6], // 9 Murcia
+      [80, 48.4], // 10 Islas Baleares (Mallorca)
     ],
   },
   /* Continental US: avoid Canada, Mexico, deep ocean */
   EU: {
     normal: [
-      [20, 30], // Northwest
-      [34, 28], // Northern plains
-      [48, 30], // Upper Midwest
-      [62, 32], // Great Lakes
-      [76, 30], // Northeast
+      [19.1, 28.9], // Northwest
+      [33.5, 26.9], // Northern plains
+      [48, 28.9], // Upper Midwest
+      [62.5, 31], // Great Lakes
+      [76.9, 28.9], // Northeast
     ],
     hard: [
-      [18, 50], // California
-      [30, 56], // Southwest
-      [44, 60], // Texas
-      [58, 62], // Deep South
-      [70, 58], // Southeast / Florida approach
+      [17, 49.4], // California
+      [29.4, 55.5], // Southwest
+      [43.9, 59.6], // Texas
+      [58.3, 61.7], // Deep South
+      [70.7, 57.6], // Southeast / Florida approach
     ],
   },
 }

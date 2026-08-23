@@ -13,6 +13,7 @@ import {
   type TimeAssist,
 } from '../lib/save'
 import { setMusicVolume, playSound, syncMuteToMusic } from '../lib/audio'
+import { refitLayout } from '../lib/viewport'
 import { MuteButton } from '../components/MuteButton'
 import { useT } from '../lib/i18n'
 import type { Language } from '../types'
@@ -102,6 +103,21 @@ export function Settings() {
       </section>
 
       <CloudAccount />
+
+      <section className="settings-group">
+        <h2>{t('display')}</h2>
+        <p className="settings-help">{t('fitScreenHelp')}</p>
+        <button
+          type="button"
+          className="btn-secondary"
+          onClick={() => {
+            playSound('button')
+            refitLayout()
+          }}
+        >
+          {t('fitScreen')}
+        </button>
+      </section>
 
       <section className="settings-group">
         <h2>{t('accessibility')}</h2>

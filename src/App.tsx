@@ -17,6 +17,7 @@ import {
 } from './lib/audio'
 import { LiveRegion } from './components/LiveRegion'
 import { SkipLink } from './components/SkipLink'
+import { initViewportRefit } from './lib/viewport'
 import { Intro } from './screens/Intro'
 import { Menu } from './screens/Menu'
 import { Levels } from './screens/Levels'
@@ -38,6 +39,8 @@ export default function App() {
   }, [language])
 
   useEffect(() => initCloudSync(), [])
+
+  useEffect(() => initViewportRefit(), [])
 
   useEffect(() => {
     const unlock = () => unlockAudio()

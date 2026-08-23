@@ -144,6 +144,10 @@ const es = {
   announcedResumed: 'Partida reanudada',
   announcedVictory: 'Nivel superado',
   announcedDefeat: 'Se acabó el tiempo',
+  display: 'Pantalla',
+  fitScreen: 'Ajustar pantalla',
+  fitScreenHelp:
+    'Recalcula el tamaño del juego en este móvil. Úsalo si algo se ve cortado o demasiado grande tras girar el teléfono.',
   accessibility: 'Accesibilidad',
   timeAssist: 'Tiempo en los niveles',
   timeAssistDefault: 'Normal',
@@ -494,6 +498,10 @@ const en: Record<keyof typeof es, string> = {
   announcedResumed: 'Match resumed',
   announcedVictory: 'Level complete',
   announcedDefeat: "Time's up",
+  display: 'Display',
+  fitScreen: 'Fit screen',
+  fitScreenHelp:
+    'Recalculates the layout for this phone. Use it if something looks cropped or too large after rotating.',
   accessibility: 'Accessibility',
   timeAssist: 'Level timer',
   timeAssistDefault: 'Normal',
