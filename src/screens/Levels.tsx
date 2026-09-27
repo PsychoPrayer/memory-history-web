@@ -2,22 +2,22 @@ import {
   useEffect,
   useMemo,
   useRef,
-  useState,
   type CSSProperties,
   type PointerEvent as ReactPointerEvent,
 } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import { Header } from '../components/Header'
 import { PancitoPointer, PancitoTip } from '../components/PancitoGuide'
 import { Stars } from '../components/Stars'
 import { useContent } from '../data/content'
 import {
   isUnlocked,
-  isBeaten,
+  nextMissionId,
   starsFor,
   sectionsFrom,
   unlockedStories,
   sectionPerfect,
+  sectionStats,
   campaignPerfect,
   isSectionUnlocked,
 } from '../data/progression'
@@ -107,6 +107,7 @@ function pathD(points: MarkerXY[]): string {
 
 export function Levels() {
   const t = useT()
+  const params = useParams<{ cards: string }>()
   const { levels, stories } = useContent()
   const country = useSave((state) => state.settings.country)
   const progress = useSave(() => progressFor(country))
@@ -119,58 +120,22 @@ export function Levels() {
 
   const sections = useMemo(() => sectionsFrom(levels), [levels])
 
-  /** Next mission: first unlocked level not yet cleared, by campaign order. */
-  const nextMissionId = useMemo(() => {
-    const ordered = [...levels].sort((a, b) => a.numero - b.numero)
-    const pending = ordered.find(
-      (level) => isUnlocked(level, levels, progress) && !isBeaten(progress, level.id),
-    )
-    if (pending) return pending.id
-    // All cleared: nudge the first that still lacks 3 stars.
-    return (
-      ordered.find(
-        (level) =>
-          isUnlocked(level, levels, progress) && starsFor(progress, level.id) < 3,
-      )?.id ?? null
-    )
-  }, [levels, progress])
+  const nextMission = useMemo(() => nextMissionId(levels, progress), [levels, progress])
 
-  const initial = useMemo(() => {
-    const nextLevel = levels.find((level) => level.id === nextMissionId)
-    if (nextLevel) return nextLevel.cartas
-    const pending = sections.find((section) =>
-      [...section.normal, ...section.hard].some(
-        (level) => starsFor(progress, level.id) === 0,
-      ),
-    )
-    return pending?.cards ?? sections[0]?.cards ?? 12
-  }, [levels, nextMissionId, sections, progress])
-
-  const [active, setActive] = useState(initial)
-
-  useEffect(() => {
-    const index = sections.findIndex((s) => s.cards === active)
-    if (index >= 0 && !isSectionUnlocked(index, sections, progress)) {
-      const open = sections.findIndex((_, i) => isSectionUnlocked(i, sections, progress))
-      if (open >= 0) setActive(sections[open].cards)
-    }
-  }, [active, sections, progress])
-
-  const section = sections.find((s) => s.cards === active) ?? sections[0]
+  const active = Number(params.cards)
+  const sectionIndex = sections.findIndex((s) => s.cards === active)
+  const section = sectionIndex >= 0 ? sections[sectionIndex] : undefined
+  const sectionOpen =
+    sectionIndex >= 0 && isSectionUnlocked(sectionIndex, sections, progress)
   const routes = ATLAS_ROUTES[country]
   const allStarsDone = campaignPerfect(levels, progress)
 
-  const sectionLevels = useMemo(
-    () => (section ? [...section.normal, ...section.hard] : []),
-    [section],
+  const stats = useMemo(
+    () => (section ? sectionStats(section, progress) : null),
+    [section, progress],
   )
-
-  const starsEarned = useMemo(
-    () => sectionLevels.reduce((sum, level) => sum + starsFor(progress, level.id), 0),
-    [sectionLevels, progress],
-  )
-  const starsTotal = sectionLevels.length * 3
-  const starsLeft = Math.max(0, starsTotal - starsEarned)
+  const starsLeft = stats ? stats.starsTotal - stats.stars : 0
+  const missionsLeft = stats ? stats.missionsTotal - stats.missionsDone : 0
 
   const storiesOpen = useMemo(
     () => unlockedStories(stories, levels, progress).size,
@@ -216,49 +181,11 @@ export function Levels() {
     }
   }
 
-  if (!section) return null
+  if (!section || !stats || !sectionOpen) return <Navigate to="/levels" replace />
 
   return (
     <main id="main-content" className="screen screen-levels" tabIndex={-1}>
-      <Header title={t('levels')} />
-
-      <nav className="section-tabs" aria-label={t('levels')}>
-        {sections.map((other, index) => {
-          const open = isSectionUnlocked(index, sections, progress)
-          const hasNext =
-            open &&
-            levels.some(
-              (level) => level.id === nextMissionId && level.cartas === other.cards,
-            )
-          const perfect = open && sectionPerfect(other, progress)
-          return (
-            <button
-              key={other.cards}
-              type="button"
-              className="tab"
-              data-active={other.cards === active}
-              data-next={hasNext || undefined}
-              data-locked={!open || undefined}
-              data-trophy={perfect || undefined}
-              disabled={!open}
-              title={open ? undefined : t('sectionLocked')}
-              aria-label={
-                open
-                  ? `${t(sectionKey(other.cards))}${perfect ? `. ${t('sectionTrophy')}` : ''}`
-                  : `${t(sectionKey(other.cards))}. ${t('sectionLocked')}`
-              }
-              onClick={() => {
-                playSound('transition')
-                setActive(other.cards)
-              }}
-            >
-              {!open && <span className="tab-lock" aria-hidden="true" />}
-              {perfect && <span className="tab-trophy" aria-hidden="true" />}
-              {t(sectionKey(other.cards))}
-            </button>
-          )
-        })}
-      </nav>
+      <Header title={t(sectionKey(section.cards))} backTo="/levels" />
 
       <PancitoTip
         tipId="levels-atlas"
@@ -286,9 +213,18 @@ export function Levels() {
         </div>
         <dl className="atlas-summary-stats">
           <div>
+            <dt>{t('missions')}</dt>
+            <dd>
+              {t('atlasCount', { a: stats.missionsDone, b: stats.missionsTotal })}
+              <span className="atlas-summary-left">
+                {t('atlasRemaining', { n: missionsLeft })}
+              </span>
+            </dd>
+          </div>
+          <div>
             <dt>{t('stars')}</dt>
             <dd>
-              {t('atlasCount', { a: starsEarned, b: starsTotal })}
+              {t('atlasCount', { a: stats.stars, b: stats.starsTotal })}
               <span className="atlas-summary-left">
                 {t('atlasRemaining', { n: starsLeft })}
               </span>
@@ -345,14 +281,14 @@ export function Levels() {
             levels={section.normal}
             positions={routes.normal}
             all={levels}
-            nextMissionId={nextMissionId}
+            nextMissionId={nextMission}
           />
           <AtlasRoute
             tone="hard"
             levels={section.hard}
             positions={routes.hard}
             all={levels}
-            nextMissionId={nextMissionId}
+            nextMissionId={nextMission}
           />
         </section>
       </div>

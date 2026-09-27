@@ -20,6 +20,7 @@ import { SkipLink } from './components/SkipLink'
 import { initViewportRefit } from './lib/viewport'
 import { Intro } from './screens/Intro'
 import { Menu } from './screens/Menu'
+import { Sections } from './screens/Sections'
 import { Levels } from './screens/Levels'
 import { Game } from './screens/Game'
 import { Stories } from './screens/Stories'
@@ -61,7 +62,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="/menu" element={<Menu />} />
-          <Route path="/levels" element={<Levels />} />
+          <Route path="/levels" element={<Sections />} />
+          <Route path="/levels/:cards" element={<Levels />} />
           <Route path="/game/:levelId" element={<Game />} />
           <Route path="/free" element={<FreePlay />} />
           <Route path="/free/match" element={<Game free />} />

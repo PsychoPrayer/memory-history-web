@@ -75,6 +75,44 @@ export function sectionComplete(section: Section, progress: CountryProgress): bo
   return all.length > 0 && all.every((level) => isBeaten(progress, level.id))
 }
 
+/** First unlocked level not yet cleared; once all are cleared, the first without 3 stars. */
+export function nextMissionId(levels: Level[], progress: CountryProgress): string | null {
+  const ordered = [...levels].sort((a, b) => a.numero - b.numero)
+  const pending = ordered.find(
+    (level) => isUnlocked(level, levels, progress) && !isBeaten(progress, level.id),
+  )
+  if (pending) return pending.id
+  return (
+    ordered.find(
+      (level) => isUnlocked(level, levels, progress) && starsFor(progress, level.id) < 3,
+    )?.id ?? null
+  )
+}
+
+export interface SectionStats {
+  missionsDone: number
+  missionsTotal: number
+  stars: number
+  starsTotal: number
+}
+
+export function sectionStats(section: Section, progress: CountryProgress): SectionStats {
+  const all = [...section.normal, ...section.hard]
+  let missionsDone = 0
+  let stars = 0
+  for (const level of all) {
+    const earned = starsFor(progress, level.id)
+    if (earned > 0) missionsDone += 1
+    stars += earned
+  }
+  return {
+    missionsDone,
+    missionsTotal: all.length,
+    stars,
+    starsTotal: all.length * 3,
+  }
+}
+
 /** Every level in the section has 3 stars. */
 export function sectionPerfect(section: Section, progress: CountryProgress): boolean {
   const all = [...section.normal, ...section.hard]

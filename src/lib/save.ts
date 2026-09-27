@@ -37,6 +37,8 @@ export interface SettingsData {
   timeAssist: TimeAssist
   languageChosen: boolean
   termsAccepted: boolean
+  /** `TERMS_VERSION` last accepted; older values ask again. */
+  termsVersion: number
   /** First-run meet-Pancito modal completed. */
   pancitoMet: boolean
   guideSeen: boolean
@@ -99,6 +101,7 @@ function initialState(): SavedState {
       timeAssist: 'default',
       languageChosen: false,
       termsAccepted: false,
+      termsVersion: 0,
       pancitoMet: false,
       guideSeen: false,
       tipsSeen: [],
@@ -132,6 +135,7 @@ function migrate(raw: Record<string, unknown>): SavedState {
       timeAssist: base.settings.timeAssist,
       languageChosen: (old.idiomaElegido as boolean) ?? base.settings.languageChosen,
       termsAccepted: (old.terminosAceptados as boolean) ?? base.settings.termsAccepted,
+      termsVersion: base.settings.termsVersion,
       guideSeen: (old.guiaVista as boolean) ?? base.settings.guideSeen,
       /* Returning players already past onboarding skip the meet modal. */
       pancitoMet: Boolean(old.guiaVista),

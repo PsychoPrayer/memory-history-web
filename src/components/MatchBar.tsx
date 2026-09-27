@@ -1,4 +1,4 @@
-import type { CSSProperties } from 'react'
+import { useId, type CSSProperties } from 'react'
 import { formatTime } from '../lib/board'
 import { useT } from '../lib/i18n'
 
@@ -18,20 +18,90 @@ interface Props {
   hintDisabled?: boolean
 }
 
-function HintBulbIcon() {
+/** Lit glass bulb on a brass screw base; goes dark once the hint is spent. */
+function HintBulbIcon({ lit }: { lit: boolean }) {
+  const id = useId().replace(/:/g, '')
+  const glass = `${id}-glass`
+  const brass = `${id}-brass`
+  const halo = `${id}-halo`
+
   return (
     <svg
       className="match-bar-hint-icon"
-      viewBox="0 0 24 24"
-      width="1.15em"
-      height="1.15em"
+      viewBox="0 0 48 48"
+      data-lit={lit}
       aria-hidden="true"
       focusable="false"
     >
+      <defs>
+        <radialGradient id={glass} cx="0.42" cy="0.36" r="0.7">
+          {lit ? (
+            <>
+              <stop offset="0" stopColor="#fffdf0" />
+              <stop offset="0.35" stopColor="#ffe89a" />
+              <stop offset="0.75" stopColor="#f2b93b" />
+              <stop offset="1" stopColor="#c07d12" />
+            </>
+          ) : (
+            <>
+              <stop offset="0" stopColor="#f3eee2" />
+              <stop offset="0.6" stopColor="#cfc6b3" />
+              <stop offset="1" stopColor="#9a907c" />
+            </>
+          )}
+        </radialGradient>
+        <linearGradient id={brass} x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#7a5514" />
+          <stop offset="0.3" stopColor="#f4d98b" />
+          <stop offset="0.55" stopColor="#c9962e" />
+          <stop offset="1" stopColor="#6a4810" />
+        </linearGradient>
+        <radialGradient id={halo}>
+          <stop offset="0" stopColor="#ffe28a" stopOpacity="0.85" />
+          <stop offset="1" stopColor="#ffe28a" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+
+      {lit && (
+        <>
+          <circle className="hint-halo" cx="24" cy="18" r="17" fill={`url(#${halo})`} />
+          <g className="hint-rays" stroke="#b07a14" strokeWidth="2" strokeLinecap="round">
+            <path d="M24 1.5v3" />
+            <path d="M9.5 7.5l2.2 2.2" />
+            <path d="M38.5 7.5l-2.2 2.2" />
+            <path d="M3.5 19h3" />
+            <path d="M41.5 19h3" />
+          </g>
+        </>
+      )}
+
       <path
-        fill="currentColor"
-        d="M9 21h6v-1.5H9V21zm3-19a6 6 0 0 0-3.5 10.85c.55.42.9.97 1.05 1.55h4.9c.15-.58.5-1.13 1.05-1.55A6 6 0 0 0 12 2zm-1.7 11.4c-.22-.7-.6-1.32-1.15-1.75A4.5 4.5 0 1 1 16.85 11.65c-.55.43-.93 1.05-1.15 1.75H10.3z"
+        d="M18 31c0-3.6-6-6-6-12.6a12 12 0 0 1 24 0C36 25 30 27.4 30 31z"
+        fill={`url(#${glass})`}
+        stroke={lit ? '#9a6412' : '#7c725f'}
+        strokeWidth="1.2"
       />
+      <path
+        d="M20.5 30.5v-6.2l1.8-3 1.7 3 1.7-3 1.8 3v6.2"
+        fill="none"
+        stroke={lit ? '#a2560a' : '#6f6656'}
+        strokeWidth="1.3"
+        strokeLinejoin="round"
+      />
+      <ellipse
+        cx="18.6"
+        cy="14"
+        rx="2.6"
+        ry="4.6"
+        transform="rotate(28 18.6 14)"
+        fill="#fff"
+        opacity={lit ? 0.75 : 0.55}
+      />
+
+      <rect x="17" y="30.5" width="14" height="3.4" rx="1" fill={`url(#${brass})`} />
+      <rect x="17.8" y="34.2" width="12.4" height="2.6" rx="1.3" fill={`url(#${brass})`} />
+      <rect x="17.8" y="37.1" width="12.4" height="2.6" rx="1.3" fill={`url(#${brass})`} />
+      <path d="M20.5 40h7l-1.6 3.2h-3.8z" fill="#3a2a1a" />
     </svg>
   )
 }
@@ -79,7 +149,7 @@ export function MatchBar({
             }
             onClick={onHint}
           >
-            <HintBulbIcon />
+            <HintBulbIcon lit={!hintUsed && !hintDisabled} />
           </button>
         )}
       </div>

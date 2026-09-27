@@ -111,7 +111,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
   const match = useMatch(rules, deck)
   const { phase, result, pause, resume } = match
 
-  const levelsExit = level ? '/levels' : '/free'
+  const levelsExit = level ? `/levels/${level.cartas}` : '/free'
   const savedRef = useRef<string | null>(null)
   const [confirmAction, setConfirmAction] = useState<ConfirmAction>(null)
   const [victoryStep, setVictoryStep] = useState<VictoryStep | null>(null)

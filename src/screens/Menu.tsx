@@ -14,7 +14,7 @@ import {
 } from '../data/content'
 import { unlockedStories, totalStars, achievementProgress, summarizePlayer } from '../data/progression'
 import { creditsText } from '../content/legal/credits'
-import { termsText } from '../content/legal/terms'
+import { TERMS_VERSION, termsText } from '../content/legal/terms'
 import { setSetting, progressFor, useSave } from '../lib/save'
 import { playSound } from '../lib/audio'
 import { useT } from '../lib/i18n'
@@ -79,6 +79,7 @@ export function Menu() {
             </div>
           </div>
         </div>
+        <h1 className="menu-title">Memory History</h1>
         <div className="country-picker">
           <p className="country-picker-label">{t('countries')}</p>
           <button
@@ -102,7 +103,6 @@ export function Menu() {
             </span>
           </button>
         </div>
-        <h1 className="menu-title">Memory History</h1>
       </header>
 
       <PancitoTip
@@ -406,7 +406,7 @@ function Onboarding() {
     )
   }
 
-  if (!settings.termsAccepted) {
+  if (!settings.termsAccepted || (settings.termsVersion ?? 0) < TERMS_VERSION) {
     return (
       <Modal open width="wide">
         <h2 className="modal-title">{t('termsTitle')}</h2>
@@ -429,6 +429,7 @@ function Onboarding() {
           onClick={() => {
             playSound('button')
             setSetting('termsAccepted', true)
+            setSetting('termsVersion', TERMS_VERSION)
           }}
         >
           {t('startExploring')}

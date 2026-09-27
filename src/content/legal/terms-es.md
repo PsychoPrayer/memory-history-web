@@ -1,13 +1,13 @@
 # TÉRMINOS Y CONDICIONES DE USO
 ## MEMORY HISTORY 2
 
-**Fecha de última actualización:** [Fecha actual]
+**Fecha de última actualización:** 27 de septiembre de 2026
 
 ---
 
 ## 1. ACEPTACIÓN DE LOS TÉRMINOS
 
-Al descargar, instalar, acceder y/o utilizar esta aplicación móvil denominada "Memory History 2" (en adelante, "el Juego" o "la Aplicación"), usted (en adelante, "el Usuario" o "usted") acepta quedar vinculado legalmente por estos Términos y Condiciones de Uso (en adelante, "los Términos" o "este Acuerdo"). 
+Al descargar, instalar, acceder y/o utilizar esta aplicación denominada "Memory History 2" (en adelante, "el Juego" o "la Aplicación"), usted (en adelante, "el Usuario" o "usted") acepta quedar vinculado legalmente por estos Términos y Condiciones de Uso (en adelante, "los Términos" o "este Acuerdo"). 
 
 Si no está de acuerdo con alguna de las disposiciones contenidas en estos Términos, debe abstenerse inmediatamente de utilizar el Juego y desinstalarlo de su dispositivo.
 
@@ -17,7 +17,8 @@ El uso continuado del Juego después de la publicación de cualquier modificaci�
 
 ## 2. DEFINICIONES
 
-- **Aplicación/Juego:** Se refiere a "Memory History 2", una aplicación móvil de juego de memoria educativo.
+- **Aplicación/Juego:** Se refiere a "Memory History 2", un juego de memoria educativo disponible en versión web y móvil.
+- **Cuenta:** Registro opcional, creado con un nombre de usuario y una contraseña, que permite guardar el progreso en la nube.
 - **Contenido:** Incluye todos los textos, imágenes, gráficos, música, sonidos, código fuente, y cualquier otro material incluido en el Juego.
 - **Desarrollador:** La persona física o jurídica que ha desarrollado y distribuye esta aplicación.
 - **Usuario:** Cualquier persona que descarga, instala o utiliza el Juego.
@@ -64,38 +65,57 @@ El Juego contiene material protegido por derechos de autor. El uso no autorizado
 
 ## 5. PRIVACIDAD Y PROTECCIÓN DE DATOS
 
-### 5.1. No Recopilación de Datos Personales
+### 5.1. Juego sin Cuenta
 
-**IMPORTANTE:** Este Juego NO recopila, almacena, procesa ni utiliza ningún tipo de datos personales del Usuario. 
+Crear una cuenta es opcional. Si juega sin cuenta, el progreso del juego, los niveles completados y sus preferencias se guardan únicamente en el almacenamiento local de su navegador o dispositivo. Estos datos no se envían a ningún servidor y puede borrarlos en cualquier momento eliminando los datos del sitio o desinstalando el Juego.
+
+### 5.2. Cuenta en la Nube (Opcional)
+
+Si decide crear una cuenta para guardar su progreso entre dispositivos, el Juego solo le pide:
+
+- **Un nombre de usuario** elegido por usted;
+- **Una contraseña.**
+
+**El Juego NO solicita dirección de correo electrónico, número de teléfono, nombre real, fecha de nacimiento, ubicación ni ningún otro dato personal.** Le recomendamos no usar su nombre real ni datos personales como nombre de usuario.
+
+Con una cuenta, se almacenan en nuestros servidores:
+
+- Su nombre de usuario;
+- Su contraseña, guardada únicamente en forma cifrada (hash): el Desarrollador no puede verla;
+- Su progreso y configuración del juego (niveles, estrellas, historias leídas, logros y preferencias);
+- Si juega duelos: el nombre y el avatar que elija para los duelos, y los resultados de las partidas. Estos datos son visibles para los rivales con los que juegue;
+- Datos técnicos mínimos necesarios para mantener la sesión iniciada (por ejemplo, fechas de inicio de sesión y tokens de sesión guardados en su navegador).
+
+Estos datos se usan exclusivamente para que el Juego funcione: guardar y sincronizar su progreso y permitir los duelos. No se venden, no se usan con fines publicitarios y no se comparten con terceros, salvo con los proveedores técnicos indicados a continuación.
+
+### 5.3. Proveedores de Servicio
+
+El Juego utiliza los siguientes proveedores para funcionar:
+
+- **Supabase:** alojamiento de la base de datos y del sistema de cuentas;
+- **Vercel:** alojamiento de la versión web del Juego.
+
+Estos proveedores procesan los datos únicamente para prestar su servicio técnico y pueden registrar datos técnicos básicos de conexión (como la dirección IP) por motivos de seguridad y funcionamiento.
+
+### 5.4. Recuperación de la Cuenta
+
+Como el Juego no solicita correo electrónico, **no es posible recuperar una contraseña olvidada.** Usted es responsable de guardar su nombre de usuario y su contraseña de forma segura y de no compartirlos. Si pierde su contraseña, perderá el acceso al progreso guardado en la nube, aunque podrá seguir jugando y crear una cuenta nueva.
+
+### 5.5. Eliminación de Datos
+
+Puede solicitar en cualquier momento la eliminación de su cuenta y de todos los datos asociados escribiendo a pancitogamesdev@gmail.com (ver sección 17) e indicando su nombre de usuario. El progreso guardado localmente puede borrarlo usted mismo eliminando los datos del sitio o desinstalando el Juego.
+
+### 5.6. Lo que el Juego NO Hace
 
 El Juego:
-- No requiere registro de usuario;
-- No solicita ni almacena nombres, direcciones de correo electrónico, números de teléfono u otra información personal identificable;
 - No recopila información de ubicación geográfica (GPS);
 - No accede a la lista de contactos, fotos, archivos u otros datos del dispositivo;
 - No realiza seguimiento de actividad del usuario fuera del Juego;
-- No comparte información con terceros porque no existe información que compartir;
-- No utiliza cookies, identificadores de publicidad o tecnologías de seguimiento similares.
+- No muestra publicidad ni utiliza identificadores de publicidad o tecnologías de seguimiento publicitario.
 
-### 5.2. Datos Locales del Dispositivo
+### 5.7. Cumplimiento Legal
 
-El Juego puede almacenar datos localmente en su dispositivo (como progreso del juego, niveles completados, configuración de preferencias) únicamente en el almacenamiento local del dispositivo y bajo su exclusivo control. Estos datos:
-
-- Se almacenan exclusivamente en su dispositivo;
-- No se transmiten a servidores externos;
-- No son accesibles por el Desarrollador;
-- Pueden ser eliminados en cualquier momento desinstalando el Juego.
-
-### 5.3. Cumplimiento Legal
-
-Esta política de privacidad cumple con las siguientes regulaciones internacionales de protección de datos:
-
-- **Reglamento General de Protección de Datos (GDPR)** de la Unión Europea;
-- **California Consumer Privacy Act (CCPA)** de Estados Unidos;
-- **Children's Online Privacy Protection Act (COPPA)** de Estados Unidos;
-- Leyes nacionales de protección de datos donde sea aplicable.
-
-Dado que no se recopilan datos personales, no es necesario el consentimiento del usuario para el procesamiento de datos personales, ya que no existe tal procesamiento.
+El Desarrollador procura tratar los datos de acuerdo con las normas de protección de datos aplicables, como el Reglamento General de Protección de Datos (GDPR) de la Unión Europea, la California Consumer Privacy Act (CCPA) y la Children's Online Privacy Protection Act (COPPA) de Estados Unidos, minimizando los datos a lo estrictamente necesario. Al crear una cuenta, usted consiente el tratamiento de los datos descritos en esta sección con los fines indicados.
 
 ---
 
@@ -303,7 +323,7 @@ Los padres o tutores legales de menores que utilicen el Juego:
 
 ### 12.3. Cumplimiento COPPA
 
-Dado que el Juego no recopila datos personales, cumple con el Children's Online Privacy Protection Act (COPPA) de Estados Unidos, ya que no existe recopilación de información personal de menores de 13 años.
+El Juego se puede usar completo sin crear una cuenta. La cuenta opcional solo pide un nombre de usuario y una contraseña, sin correo electrónico ni otros datos personales. Se recomienda que los menores de 13 años creen una cuenta únicamente con el permiso de su padre, madre o tutor, y que no usen su nombre real como nombre de usuario.
 
 ---
 
@@ -338,7 +358,8 @@ Se recomienda revisar periódicamente estos Términos para estar informado de cu
 Usted puede terminar su uso del Juego en cualquier momento:
 
 - Desinstalando el Juego de su dispositivo;
-- Dejando de acceder o utilizar el Juego.
+- Dejando de acceder o utilizar el Juego;
+- Solicitando la eliminación de su cuenta, si tiene una (ver sección 5.5).
 
 ### 14.2. Terminación por el Desarrollador
 
@@ -363,17 +384,17 @@ Al terminar el uso del Juego:
 
 ### 15.1. Ley Aplicable
 
-Estos Términos se regirán e interpretarán de acuerdo con las leyes de [Jurisdicción/País del Desarrollador], sin dar efecto a sus principios de conflicto de leyes.
+Estos Términos se regirán e interpretarán de acuerdo con las leyes del Estado de Minnesota y las leyes federales aplicables de los Estados Unidos de América, sin dar efecto a sus principios de conflicto de leyes.
 
 ### 15.2. Jurisdicción y Foro
 
-Cualquier disputa, controversia o reclamación relacionada con o que surja de estos Términos o del uso del Juego será sometida a la jurisdicción exclusiva de los tribunales competentes de [Ciudad, Estado/Provincia, País del Desarrollador].
+Cualquier disputa, controversia o reclamación relacionada con o que surja de estos Términos o del uso del Juego será sometida a la jurisdicción exclusiva de los tribunales estatales o federales competentes con sede en el Condado de Washington (Stillwater), Minnesota, Estados Unidos de América, salvo que la ley de su país de residencia le otorgue un derecho irrenunciable a acudir a los tribunales de su domicilio.
 
 Usted acepta someterse a la jurisdicción personal de dichos tribunales y renuncia a cualquier objeción basada en la falta de jurisdicción personal o el lugar del foro.
 
 ### 15.3. Resolución de Disputas
 
-Antes de iniciar cualquier procedimiento legal, las partes acuerdan intentar resolver cualquier disputa mediante negociación de buena fe. Si la negociación no resulta en una resolución dentro de [número] días, entonces cualquiera de las partes puede proceder con acciones legales según se establece en esta sección.
+Antes de iniciar cualquier procedimiento legal, las partes acuerdan intentar resolver cualquier disputa mediante negociación de buena fe. Si la negociación no resulta en una resolución dentro de treinta (30) días desde que una de las partes notifique la disputa por escrito a la otra, entonces cualquiera de las partes puede proceder con acciones legales según se establece en esta sección.
 
 ---
 
@@ -409,11 +430,7 @@ El Desarrollador no será responsable por ningún incumplimiento o retraso en el
 
 Para cualquier pregunta, inquietud, comentario o notificación relacionada con estos Términos y Condiciones de Uso o con el Juego, puede contactar al Desarrollador en:
 
-**Correo Electrónico:** [correo electrónico de contacto]
-
-**Dirección Postal:** [dirección física si es aplicable]
-
-**Sitio Web:** [sitio web si es aplicable]
+**Correo Electrónico:** pancitogamesdev@gmail.com
 
 El Desarrollador hará esfuerzos razonables para responder a las consultas en un plazo razonable, pero no garantiza una respuesta inmediata.
 
@@ -434,9 +451,9 @@ Si no está de acuerdo con estos Términos, NO debe utilizar el Juego.
 
 **FIN DE LOS TÉRMINOS Y CONDICIONES DE USO**
 
-**Fecha de última actualización:** [Fecha actual]
+**Fecha de última actualización:** 27 de septiembre de 2026
 
-**Versión:** 1.0
+**Versión:** 2.0
 
 ---
 

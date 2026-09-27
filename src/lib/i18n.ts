@@ -120,7 +120,7 @@ const es = {
   howToPlay: 'Cómo se juega',
   help: 'Ayuda',
   guideStep1:
-    'Arriba del título está el país. Tócalo para cambiar (Venezuela, España, Estados Unidos…). Cada país guarda su propio progreso.',
+    'Debajo del título está el país. Tócalo para cambiar (Venezuela, España, Estados Unidos…). Cada país guarda su propio progreso.',
   guideStep2:
     'Pulsa Jugar para elegir un nivel de memoria. Empareja las cartas iguales antes de que se acabe el tiempo.',
   guideStep3:
@@ -167,6 +167,11 @@ const es = {
   memoryBoard: 'Tablero de memoria',
   atlasCount: '{a}/{b}',
   atlasRemaining: 'faltan {n}',
+  missions: 'Misiones',
+  missionsDone: '{a} de {b} misiones',
+  sectionsHelp: 'Elige una sección para abrir su mapa de misiones.',
+  sectionUnlockAfter: 'Completa {name} para abrirla',
+  sectionAllDone: 'Completada',
   stars: 'Estrellas',
   shareStory: 'Compartir',
   shareStoryText: 'Descubrí «{title}» en Memory History.',
@@ -177,7 +182,7 @@ const es = {
   gotIt: 'Entendido',
   thisWay: '¡Por aquí!',
   tipMenuPlay:
-    'Elige tu país arriba y pulsa Jugar para empezar la campaña.',
+    'Elige tu país debajo del título y pulsa Jugar para empezar la campaña.',
   tipLevelsAtlas:
     'Desliza el mapa y sigue el marcador dorado: ahí está tu siguiente misión.',
   meetPancitoTitle: '¡Hola! Soy Pancito',
@@ -197,7 +202,7 @@ const es = {
   cloudSyncing: 'Sincronizando…',
   cloudSynced: 'Sincronizado',
   cloudError: 'Error de sincronización',
-  cloudEmail: 'Correo',
+  cloudUsername: 'Usuario',
   cloudPassword: 'Contraseña',
   cloudSignIn: 'Entrar',
   cloudSignUp: 'Crear cuenta',
@@ -205,8 +210,13 @@ const es = {
   cloudSyncNow: 'Sincronizar ahora',
   cloudNeedAccount: 'Crear cuenta',
   cloudHaveAccount: 'Ya tengo cuenta',
-  cloudConfirmEmail:
-    'Revisa tu correo para confirmar la cuenta. Luego podrás entrar.',
+  cloudSignUpHelp:
+    'Solo necesitas un nombre de usuario y una contraseña, sin correo. Guarda bien tu contraseña: no se puede recuperar.',
+  cloudUsernameRules:
+    'El usuario debe tener de 3 a 16 caracteres: letras, números o guion bajo.',
+  cloudUsernameTaken: 'Ese nombre de usuario ya está en uso. Prueba con otro.',
+  cloudBadCredentials: 'Usuario o contraseña incorrectos.',
+  cloudWeakPassword: 'La contraseña es demasiado débil. Usa al menos 6 caracteres.',
   donate: 'Donar',
   donateHelp: 'Apoya Memory History en Ko-fi. Se abre en una pestaña nueva.',
   donateBlurb:
@@ -474,7 +484,7 @@ const en: Record<keyof typeof es, string> = {
   howToPlay: 'How to play',
   help: 'Help',
   guideStep1:
-    'Above the title is the country. Tap it to switch (Venezuela, Spain, United States…). Each country keeps its own progress.',
+    'Below the title is the country. Tap it to switch (Venezuela, Spain, United States…). Each country keeps its own progress.',
   guideStep2:
     'Tap Play to pick a memory level. Match equal cards before time runs out.',
   guideStep3:
@@ -520,6 +530,11 @@ const en: Record<keyof typeof es, string> = {
   memoryBoard: 'Memory board',
   atlasCount: '{a}/{b}',
   atlasRemaining: '{n} left',
+  missions: 'Missions',
+  missionsDone: '{a} of {b} missions',
+  sectionsHelp: 'Pick a section to open its mission map.',
+  sectionUnlockAfter: 'Clear {name} to open it',
+  sectionAllDone: 'Completed',
   stars: 'Stars',
   shareStory: 'Share',
   shareStoryText: 'I found “{title}” in Memory History.',
@@ -529,7 +544,7 @@ const en: Record<keyof typeof es, string> = {
   nextMission: 'Next mission',
   gotIt: 'Got it',
   thisWay: 'This way!',
-  tipMenuPlay: 'Pick your country up top, then tap Play to start the campaign.',
+  tipMenuPlay: 'Pick your country below the title, then tap Play to start the campaign.',
   tipLevelsAtlas:
     'Pan the map and follow the gold marker — that’s your next mission.',
   meetPancitoTitle: 'Hi! I’m Pancito',
@@ -548,7 +563,7 @@ const en: Record<keyof typeof es, string> = {
   cloudSyncing: 'Syncing…',
   cloudSynced: 'Synced',
   cloudError: 'Sync error',
-  cloudEmail: 'Email',
+  cloudUsername: 'Username',
   cloudPassword: 'Password',
   cloudSignIn: 'Sign in',
   cloudSignUp: 'Create account',
@@ -556,7 +571,13 @@ const en: Record<keyof typeof es, string> = {
   cloudSyncNow: 'Sync now',
   cloudNeedAccount: 'Create account',
   cloudHaveAccount: 'I already have an account',
-  cloudConfirmEmail: 'Check your email to confirm the account, then sign in.',
+  cloudSignUpHelp:
+    'All you need is a username and a password, no email. Keep your password safe: it cannot be recovered.',
+  cloudUsernameRules:
+    'Usernames need 3 to 16 characters: letters, numbers or underscore.',
+  cloudUsernameTaken: 'That username is already taken. Try another one.',
+  cloudBadCredentials: 'Wrong username or password.',
+  cloudWeakPassword: 'That password is too weak. Use at least 6 characters.',
   donate: 'Donate',
   donateHelp: 'Support Memory History on Ko-fi. Opens in a new tab.',
   donateBlurb:

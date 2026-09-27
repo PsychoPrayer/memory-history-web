@@ -1,5 +1,6 @@
 import { useEffect, useState, type FormEvent } from 'react'
 import {
+  accountLabel,
   getCloudStatus,
   signIn,
   signOut,
@@ -28,17 +29,30 @@ function statusLabel(status: CloudStatus, t: ReturnType<typeof useT>): string {
   }
 }
 
+function authErrorMessage(err: unknown, t: ReturnType<typeof useT>): string {
+  const message = err instanceof Error ? err.message : ''
+  const code = (err as { code?: string } | null)?.code
+  if (message === 'invalid_username') return t('cloudUsernameRules')
+  if (code === 'user_already_exists' || /already registered/i.test(message)) {
+    return t('cloudUsernameTaken')
+  }
+  if (code === 'invalid_credentials' || /invalid login credentials/i.test(message)) {
+    return t('cloudBadCredentials')
+  }
+  if (code === 'weak_password') return t('cloudWeakPassword')
+  return message || t('cloudError')
+}
+
 export function CloudAccount() {
   const t = useT()
   const [status, setStatus] = useState<CloudStatus>(getCloudStatus().status)
   const [user, setUser] = useState<User | null>(getCloudStatus().user)
   const [error, setError] = useState<string | undefined>(getCloudStatus().error)
   const [mode, setMode] = useState<'signin' | 'signup'>('signin')
-  const [email, setEmail] = useState('')
+  const [login, setLogin] = useState('')
   const [password, setPassword] = useState('')
   const [busy, setBusy] = useState(false)
   const [formError, setFormError] = useState<string | null>(null)
-  const [info, setInfo] = useState<string | null>(null)
 
   useEffect(() => subscribeCloud((next, nextUser, nextError) => {
     setStatus(next)
@@ -58,20 +72,16 @@ export function CloudAccount() {
   const onSubmit = async (event: FormEvent) => {
     event.preventDefault()
     setFormError(null)
-    setInfo(null)
     setBusy(true)
     playSound('button')
     try {
       if (mode === 'signin') {
-        await signIn(email.trim(), password)
+        await signIn(login, password)
       } else {
-        const result = await signUp(email.trim(), password)
-        if (result.user && !result.session) {
-          setInfo(t('cloudConfirmEmail'))
-        }
+        await signUp(login, password)
       }
     } catch (err) {
-      setFormError(err instanceof Error ? err.message : t('cloudError'))
+      setFormError(authErrorMessage(err, t))
     } finally {
       setBusy(false)
     }
@@ -83,7 +93,7 @@ export function CloudAccount() {
       <p className="settings-help">{t('cloudAccountHelp')}</p>
       <p className="cloud-status" data-status={status}>
         {statusLabel(status, t)}
-        {user?.email ? ` · ${user.email}` : ''}
+        {user ? ` · ${accountLabel(user)}` : ''}
       </p>
       {error && status === 'error' && (
         <p className="cloud-form-error" role="alert">
@@ -125,13 +135,16 @@ export function CloudAccount() {
       ) : (
         <form className="cloud-form" onSubmit={onSubmit}>
           <label className="cloud-field">
-            <span>{t('cloudEmail')}</span>
+            <span>{t('cloudUsername')}</span>
             <input
-              type="email"
-              autoComplete="email"
+              type="text"
+              autoComplete="username"
+              autoCapitalize="none"
+              autoCorrect="off"
+              spellCheck={false}
               required
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
+              value={login}
+              onChange={(event) => setLogin(event.target.value)}
             />
           </label>
           <label className="cloud-field">
@@ -145,12 +158,14 @@ export function CloudAccount() {
               onChange={(event) => setPassword(event.target.value)}
             />
           </label>
+          {mode === 'signup' && (
+            <p className="settings-help">{t('cloudSignUpHelp')}</p>
+          )}
           {formError && (
             <p className="cloud-form-error" role="alert">
               {formError}
             </p>
           )}
-          {info && <p className="cloud-form-info">{info}</p>}
           <div className="cloud-actions">
             <button type="submit" className="btn-primary" disabled={busy}>
               {mode === 'signin' ? t('cloudSignIn') : t('cloudSignUp')}
@@ -163,7 +178,6 @@ export function CloudAccount() {
                 playSound('button')
                 setMode(mode === 'signin' ? 'signup' : 'signin')
                 setFormError(null)
-                setInfo(null)
               }}
             >
               {mode === 'signin' ? t('cloudNeedAccount') : t('cloudHaveAccount')}

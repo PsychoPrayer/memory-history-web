@@ -108,8 +108,11 @@ estrellas, uniones de historias) entre nube y dispositivo.
 
 1. Crea un proyecto en [supabase.com](https://supabase.com).
 2. En SQL Editor, ejecuta `supabase/schema.sql`.
-3. Authentication → Providers: deja **Email** activo. Para pruebas locales puedes
-   desactivar “Confirm email”.
+3. Authentication → Providers → Email: déjalo activo y **desactiva “Confirm email”**.
+   Los jugadores solo eligen usuario y contraseña; el juego los convierte en un
+   correo interno `usuario@users.memoryhistory.app` que nunca recibe mensajes
+   (dominio configurable con `VITE_USERNAME_EMAIL_DOMAIN`). Las cuentas antiguas
+   con correo real siguen entrando escribiendo su correo en el campo de usuario.
 4. Copia Project URL y anon key a `.env` (usa `.env.example` como plantilla):
 
 ```
@@ -139,5 +142,4 @@ public/           imagenes/ y audio/ generados por el paso de medios
 
 ## Pendiente
 
-- Pulido opcional de auth (recuperar contraseña, OAuth)
-- Revisar confirmación de email / plantillas en Supabase para producción
+- Pulido opcional de auth (OAuth). Sin correo no hay recuperación de contraseña.

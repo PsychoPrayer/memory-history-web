@@ -150,17 +150,57 @@ export function initCloudSync() {
   }
 }
 
-export async function signUp(email: string, password: string) {
+/**
+ * Supabase Auth needs an email, but players only pick a username. We map each
+ * username to an internal address that never receives mail, so
+ * "Confirm email" must stay disabled in the Supabase dashboard.
+ */
+const USERNAME_EMAIL_DOMAIN =
+  (import.meta.env.VITE_USERNAME_EMAIL_DOMAIN as string | undefined)?.trim() ||
+  'users.memoryhistory.app'
+
+export const USERNAME_PATTERN = /^[a-z0-9_]{3,16}$/
+
+export function normalizeUsername(raw: string): string {
+  return raw.trim().toLowerCase()
+}
+
+function usernameToEmail(username: string): string {
+  return `${username}@${USERNAME_EMAIL_DOMAIN}`
+}
+
+/** Name to show for the signed-in player (legacy email accounts show their email). */
+export function accountLabel(account: User | null): string {
+  if (!account) return ''
+  const fromMeta = account.user_metadata?.username
+  if (typeof fromMeta === 'string' && fromMeta) return fromMeta
+  const email = account.email ?? ''
+  const suffix = `@${USERNAME_EMAIL_DOMAIN}`
+  return email.endsWith(suffix) ? email.slice(0, -suffix.length) : email
+}
+
+export async function signUp(rawUsername: string, password: string) {
   const supabase = getSupabase()
   if (!supabase) throw new Error('Supabase is not configured')
-  const { data, error } = await supabase.auth.signUp({ email, password })
+  const username = normalizeUsername(rawUsername)
+  if (!USERNAME_PATTERN.test(username)) throw new Error('invalid_username')
+  const { data, error } = await supabase.auth.signUp({
+    email: usernameToEmail(username),
+    password,
+    options: { data: { username } },
+  })
   if (error) throw error
   return data
 }
 
-export async function signIn(email: string, password: string) {
+/** Accepts a username, or an email for accounts created before usernames. */
+export async function signIn(login: string, password: string) {
   const supabase = getSupabase()
   if (!supabase) throw new Error('Supabase is not configured')
+  const trimmed = login.trim()
+  const email = trimmed.includes('@')
+    ? trimmed
+    : usernameToEmail(normalizeUsername(trimmed))
   const { data, error } = await supabase.auth.signInWithPassword({
     email,
     password,
