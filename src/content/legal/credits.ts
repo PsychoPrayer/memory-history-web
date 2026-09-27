@@ -15,7 +15,7 @@ Diego D. Cabrera Rojas
 Diseño Gráfico e Ilustración
 Irene Sánchez López
 
-Preservando la historia, una carta a la vez`
+Un pequeño juego de memoria sobre mucha historia`
 
 const CREDITS_EN = `Memory History
 
@@ -28,7 +28,7 @@ Diego D. Cabrera Rojas
 Graphic Design and Illustration
 Irene Sánchez López
 
-Preserving history, one card at a time`
+A little memory game about a lot of history`
 
 export function creditsText(language: Language): string {
   return language === 'en' ? CREDITS_EN : CREDITS_ES
