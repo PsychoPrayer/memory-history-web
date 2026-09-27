@@ -19,6 +19,8 @@ import type {
   Test,
 } from '../types'
 
+import { DAILY_ACHIEVEMENTS } from '../lib/daily'
+
 const MODULES = import.meta.glob<{ default: unknown }>('../content/**/*.json')
 
 export const COUNTRIES: readonly CountryCode[] = ['VE', 'ES', 'EU']
@@ -69,7 +71,7 @@ export function loadContent(code: CountryCode): Promise<CountryContent> {
       stories,
       questions,
       tests,
-      achievements,
+      achievements: [...achievements, ...DAILY_ACHIEVEMENTS],
       sections,
     }),
   )

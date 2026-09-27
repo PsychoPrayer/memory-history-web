@@ -1,10 +1,13 @@
 import { useMemo, useState, type FormEvent } from 'react'
 import {
   avatarById,
+  isAvatarUnlocked,
   isValidPlayerName,
   listAvatarOptions,
+  PRIZE_AVATAR_TOTAL,
   type AvatarOption,
 } from '../lib/avatars'
+import { prizeAvatarsEarned, useDailyStats } from '../lib/daily'
 import { playSound } from '../lib/audio'
 import { useT, type TextKey } from '../lib/i18n'
 import { setSetting } from '../lib/save'
@@ -27,6 +30,8 @@ export function AvatarPicker({
   const [name, setName] = useState(initialName)
   const [avatarId, setAvatarId] = useState(initialAvatarId)
   const selected = avatarById(avatarId)
+  const prizesEarned = prizeAvatarsEarned(useDailyStats())
+  const prizesShown = Math.min(prizesEarned, PRIZE_AVATAR_TOTAL)
 
   const onSubmit = (event: FormEvent) => {
     event.preventDefault()
@@ -75,18 +80,28 @@ export function AvatarPicker({
       </button>
 
       <p className="avatar-picker-label">{t('chooseAvatar')}</p>
+      <p className="avatar-prize-note">
+        {t('avatarPrizesNote', { a: prizesShown, b: PRIZE_AVATAR_TOTAL })}
+      </p>
       <div className="avatar-grid" role="listbox" aria-label={t('chooseAvatar')}>
-        {options.map((option) => (
-          <AvatarTile
-            key={option.id}
-            option={option}
-            selected={option.id === avatarId}
-            onSelect={() => {
-              playSound('button')
-              setAvatarId(option.id)
-            }}
-          />
-        ))}
+        {options.map((option) => {
+          /* A locked avatar someone already wears stays usable for them. */
+          const usable =
+            isAvatarUnlocked(option, prizesEarned) || option.id === initialAvatarId
+          return (
+            <AvatarTile
+              key={option.id}
+              option={option}
+              selected={option.id === avatarId}
+              locked={!usable}
+              lockedLabel={t('avatarLocked')}
+              onSelect={() => {
+                playSound('button')
+                setAvatarId(option.id)
+              }}
+            />
+          )
+        })}
       </div>
     </form>
   )
@@ -95,10 +110,14 @@ export function AvatarPicker({
 function AvatarTile({
   option,
   selected,
+  locked,
+  lockedLabel,
   onSelect,
 }: {
   option: AvatarOption
   selected: boolean
+  locked: boolean
+  lockedLabel: string
   onSelect: () => void
 }) {
   return (
@@ -107,12 +126,17 @@ function AvatarTile({
       className="avatar-tile"
       role="option"
       aria-selected={selected}
+      aria-disabled={locked || undefined}
+      aria-label={locked ? `${lockedLabel} ${option.prize}` : option.name}
       data-selected={selected}
-      title={option.name}
+      data-locked={locked || undefined}
+      disabled={locked}
+      title={locked ? lockedLabel : option.name}
       onClick={onSelect}
     >
-      <img src={option.image} alt="" draggable={false} />
-      <span>{option.name}</span>
+      <img src={option.image} alt="" draggable={false} loading="lazy" />
+      {locked && <span className="avatar-tile-lock" aria-hidden="true" />}
+      <span>{locked ? `#${option.prize}` : option.name}</span>
     </button>
   )
 }

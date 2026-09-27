@@ -1,5 +1,6 @@
 import type {
   CountryProgress,
+  DailyData,
   FreeSettings,
   LevelRecord,
   SavedState,
@@ -91,6 +92,23 @@ function preferNewerFree(a: FreeSettings, b: FreeSettings, aNewer: boolean): Fre
   return aNewer ? a : b
 }
 
+/** Official daily results never change once recorded, so a union keeps both devices' days. */
+function mergeDaily(a: DailyData | undefined, b: DailyData | undefined): DailyData {
+  const left = a ?? { results: {}, started: [] }
+  const right = b ?? { results: {}, started: [] }
+  const results: DailyData['results'] = { ...right.results }
+  for (const [key, result] of Object.entries(left.results)) {
+    const other = results[key]
+    results[key] = other
+      ? { ...(result.submitted ? result : other), submitted: result.submitted || other.submitted }
+      : result
+  }
+  return {
+    results,
+    started: unionStrings(left.started, right.started).sort().slice(-60),
+  }
+}
+
 /** Merge two saves: progress takes the best of both; settings/free follow the newer stamp. */
 export function mergeSavedStates(local: SavedState, remote: SavedState): SavedState {
   const localNewer = (local.updatedAt ?? 0) >= (remote.updatedAt ?? 0)
@@ -113,5 +131,6 @@ export function mergeSavedStates(local: SavedState, remote: SavedState): SavedSt
     settings: preferNewerSettings(local.settings, remote.settings, localNewer),
     free: preferNewerFree(local.free, remote.free, localNewer),
     countries,
+    daily: mergeDaily(local.daily, remote.daily),
   }
 }

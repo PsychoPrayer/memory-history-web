@@ -30,6 +30,8 @@ import { Quiz } from './screens/Quiz'
 import { Achievements } from './screens/Achievements'
 import { FreePlay } from './screens/FreePlay'
 import { Duel } from './screens/Duel'
+import { Daily } from './screens/Daily'
+import { DailyGame } from './screens/DailyGame'
 
 export default function App() {
   const country = useSave((state) => state.settings.country)
@@ -73,6 +75,8 @@ export default function App() {
           <Route path="/quiz/:level" element={<Quiz />} />
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/duel" element={<Duel />} />
+          <Route path="/daily" element={<Daily />} />
+          <Route path="/daily/play" element={<DailyGame />} />
           <Route path="*" element={<Navigate to="/menu" replace />} />
         </Routes>
       </ContentProvider>
@@ -84,7 +88,9 @@ function BackgroundMusic() {
   const { pathname } = useLocation()
   const muted = useSave((state) => Boolean(state.settings.muted))
   const inMatch =
-    pathname.startsWith('/game/') || pathname === '/free/match'
+    pathname.startsWith('/game/') ||
+    pathname === '/free/match' ||
+    pathname === '/daily/play'
 
   useEffect(() => {
     playMusic(pathname === '/' ? 'intro' : 'game')

@@ -120,8 +120,10 @@ VITE_SUPABASE_URL=https://xxxx.supabase.co
 VITE_SUPABASE_ANON_KEY=eyJ...
 ```
 
-5. En Vercel, añade las mismas variables de entorno y redeploy.
-6. En el juego: Configuración → Cuenta en la nube.
+5. Para la clasificación del Desafío del día, ejecuta también `supabase/daily.sql`
+   en el SQL Editor. Sin esa tabla el desafío funciona igual, solo sin clasificación.
+6. En Vercel, añade las mismas variables de entorno y redeploy.
+7. En el juego: Configuración → Cuenta en la nube.
 
 ## Estructura
 

@@ -60,6 +60,26 @@ export interface FreeSettings {
   back: string | null
 }
 
+/** Official (first) attempt at one day's challenge in one country. */
+export interface DailyResult {
+  /** UTC day, YYYY-MM-DD. */
+  day: string
+  country: CountryCode
+  cards: number
+  seconds: number
+  mistakes: number
+  stars: Stars
+  /** Sent to the cloud leaderboard. */
+  submitted: boolean
+}
+
+export interface DailyData {
+  /** Keyed by `day|country`. */
+  results: Record<string, DailyResult>
+  /** `day|country` keys whose official attempt has begun; replays are practice. */
+  started: string[]
+}
+
 export interface SavedState {
   version: number
   /** Epoch ms; used to prefer newer settings when merging cloud saves. */
@@ -67,6 +87,7 @@ export interface SavedState {
   settings: SettingsData
   free: FreeSettings
   countries: Record<string, CountryProgress>
+  daily: DailyData
 }
 
 const EMPTY_PROGRESS: CountryProgress = {
@@ -117,6 +138,7 @@ function initialState(): SavedState {
       back: null,
     },
     countries: {},
+    daily: { results: {}, started: [] },
   }
 }
 
@@ -206,6 +228,15 @@ function migrate(raw: Record<string, unknown>): SavedState {
         tests: migrateTestRecords(progress.tests),
         achievements: (progress.logros ?? progress.achievements ?? {}) as Record<string, number>,
       }
+    }
+  }
+
+  if (raw.daily && typeof raw.daily === 'object') {
+    const daily = raw.daily as Partial<DailyData>
+    base.daily = {
+      results:
+        daily.results && typeof daily.results === 'object' ? daily.results : {},
+      started: Array.isArray(daily.started) ? daily.started : [],
     }
   }
 
@@ -418,6 +449,49 @@ export function recordAchievements(
     ...progress,
     achievements: { ...progress.achievements, ...achievementProgress },
   }))
+}
+
+export function markDailyStarted(key: string) {
+  update((previous) =>
+    previous.daily.started.includes(key)
+      ? previous
+      : {
+          ...previous,
+          daily: {
+            ...previous.daily,
+            /* Keep the list short: only recent days matter. */
+            started: [...previous.daily.started, key].slice(-60),
+          },
+        },
+  )
+}
+
+export function recordDaily(key: string, result: DailyResult) {
+  update((previous) =>
+    previous.daily.results[key]
+      ? previous
+      : {
+          ...previous,
+          daily: {
+            ...previous.daily,
+            results: { ...previous.daily.results, [key]: result },
+          },
+        },
+  )
+}
+
+export function markDailySubmitted(key: string) {
+  update((previous) => {
+    const result = previous.daily.results[key]
+    if (!result || result.submitted) return previous
+    return {
+      ...previous,
+      daily: {
+        ...previous.daily,
+        results: { ...previous.daily.results, [key]: { ...result, submitted: true } },
+      },
+    }
+  })
 }
 
 export function clearProgress(country: CountryCode) {

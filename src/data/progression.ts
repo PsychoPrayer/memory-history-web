@@ -202,12 +202,15 @@ export interface PlayerSummary {
   testsCompleted: number
   testsByLevel: Set<number>
   completedSections: Set<number>
+  dailyDays: number
+  dailyBestStreak: number
 }
 
 export function summarizePlayer(
   levels: Level[],
   stories: Story[],
   progress: CountryProgress,
+  daily?: { daysPlayed: number; bestStreak: number },
 ): PlayerSummary {
   const open = unlockedStories(stories, levels, progress)
 
@@ -244,6 +247,8 @@ export function summarizePlayer(
     testsCompleted: testsByLevel.size,
     testsByLevel,
     completedSections,
+    dailyDays: daily?.daysPlayed ?? 0,
+    dailyBestStreak: daily?.bestStreak ?? 0,
   }
 }
 
@@ -252,6 +257,9 @@ export function achievementProgress(
   summary: PlayerSummary,
 ): number {
   const id = achievement.id
+
+  if (id.startsWith('ach_daily_days_')) return summary.dailyDays
+  if (id.startsWith('ach_daily_streak_')) return summary.dailyBestStreak
 
   if (id === 'ach_first_level') return Math.min(summary.totalLevels, 1)
   if (id === 'ach_perfect_level') return Math.min(summary.perfectLevels, 1)
