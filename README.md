@@ -122,8 +122,21 @@ VITE_SUPABASE_ANON_KEY=eyJ...
 
 5. Para la clasificación del Desafío del día, ejecuta también `supabase/daily.sql`
    en el SQL Editor. Sin esa tabla el desafío funciona igual, solo sin clasificación.
-6. En Vercel, añade las mismas variables de entorno y redeploy.
-7. En el juego: Configuración → Cuenta en la nube.
+6. Después ejecuta `supabase/accounts.sql`: códigos de recuperación, borrado de cuenta
+   desde el juego y reportes de nombres en la clasificación.
+7. En Vercel, añade las mismas variables de entorno y redeploy.
+8. En el juego: Configuración → Cuenta en la nube.
+
+Para moderar: los reportes están en la tabla `name_reports`. Con 3 reportes, las filas
+del jugador en `daily_results` pasan a `hidden = true`; ponlas en `false` para restaurarlas.
+
+### Web y app nativa
+
+- `npm run build`: versión web (Vercel). Rutas absolutas y service worker para jugar
+  sin conexión (`dist/sw.js`, generado desde `src/sw-template.js`).
+- `npm run build:native` (lo usan `cap:sync`, `cap:ios`, `cap:android`): rutas relativas
+  para Capacitor y sin service worker, porque la app ya lleva todos los archivos.
+- `node tools/icons.mjs`: regenera los iconos de `public/icons/`.
 
 ## Estructura
 
@@ -144,4 +157,4 @@ public/           imagenes/ y audio/ generados por el paso de medios
 
 ## Pendiente
 
-- Pulido opcional de auth (OAuth). Sin correo no hay recuperación de contraseña.
+- Pulido opcional de auth (OAuth).

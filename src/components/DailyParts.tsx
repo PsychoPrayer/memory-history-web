@@ -6,12 +6,17 @@ import { getCloudStatus, subscribeCloud } from '../lib/cloudSync'
 import { dailyKey, shiftDay, type DailyStats } from '../lib/daily'
 import {
   fetchLeaderboard,
+  reportPlayerName,
   submitDailyResult,
+  type LeaderboardRow,
   type LeaderboardState,
+  type ReportReason,
 } from '../lib/dailyCloud'
+import { Modal } from './Modal'
+import { playSound } from '../lib/audio'
 import { markDailySubmitted, readState, useSave } from '../lib/save'
 import { isSupabaseConfigured } from '../lib/supabase'
-import { useLanguage, useT } from '../lib/i18n'
+import { useLanguage, useT, type TextKey } from '../lib/i18n'
 import type { CountryCode } from '../types'
 
 /** Signed-in user id, kept in sync with the cloud session. */
@@ -91,6 +96,7 @@ export function LeaderboardView({ state }: { state: LeaderboardState }) {
   const t = useT()
   const navigate = useNavigate()
   const userId = useCloudUserId()
+  const [reporting, setReporting] = useState<LeaderboardRow | null>(null)
 
   if (state.status === 'loading') {
     return <p className="daily-muted">{t('dailyLoading')}</p>
@@ -130,6 +136,19 @@ export function LeaderboardView({ state }: { state: LeaderboardState }) {
                     })}
                   </small>
                 </span>
+                {userId && !mine ? (
+                  <button
+                    type="button"
+                    className="leaderboard-report"
+                    aria-label={`${t('reportName')}: ${row.name}`}
+                    title={t('reportName')}
+                    onClick={() => setReporting(row)}
+                  >
+                    ⚑
+                  </button>
+                ) : (
+                  <span className="leaderboard-report-spacer" aria-hidden="true" />
+                )}
               </li>
             )
           })}
@@ -148,7 +167,70 @@ export function LeaderboardView({ state }: { state: LeaderboardState }) {
           </button>
         </p>
       )}
+
+      <ReportModal row={reporting} onClose={() => setReporting(null)} />
     </div>
+  )
+}
+
+const REASONS: { value: ReportReason; label: TextKey }[] = [
+  { value: 'offensive', label: 'reportOffensive' },
+  { value: 'impersonation', label: 'reportImpersonation' },
+  { value: 'other', label: 'reportOther' },
+]
+
+function ReportModal({ row, onClose }: { row: LeaderboardRow | null; onClose: () => void }) {
+  const t = useT()
+  const [state, setState] = useState<'idle' | 'sending' | 'sent' | 'failed'>('idle')
+
+  const close = () => {
+    setState('idle')
+    onClose()
+  }
+
+  const send = async (reason: ReportReason) => {
+    if (!row) return
+    playSound('button')
+    setState('sending')
+    setState((await reportPlayerName(row.userId, row.name, reason)) ? 'sent' : 'failed')
+  }
+
+  return (
+    <Modal open={row !== null} onClose={state === 'sending' ? undefined : close}>
+      {row && (
+        <>
+          <h2 className="modal-title">{t('reportTitle', { name: row.name })}</h2>
+          {state === 'sent' ? (
+            <p className="modal-text">{t('reportThanks')}</p>
+          ) : (
+            <>
+              <p className="modal-text">{t('reportBody')}</p>
+              {state === 'failed' && (
+                <p className="cloud-form-error" role="alert">
+                  {t('reportFailed')}
+                </p>
+              )}
+              <div className="modal-actions report-reasons">
+                {REASONS.map((reason) => (
+                  <button
+                    key={reason.value}
+                    type="button"
+                    className="btn-secondary"
+                    disabled={state === 'sending'}
+                    onClick={() => void send(reason.value)}
+                  >
+                    {t(reason.label)}
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
+          <button type="button" className="btn-primary" onClick={close}>
+            {state === 'sent' ? t('close') : t('cancel')}
+          </button>
+        </>
+      )}
+    </Modal>
   )
 }
 

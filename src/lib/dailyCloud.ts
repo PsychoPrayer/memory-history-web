@@ -51,6 +51,26 @@ export async function submitDailyResult(
   return false
 }
 
+export type ReportReason = 'offensive' | 'impersonation' | 'other'
+
+/** One report per reporter and player; a repeat counts as already sent. */
+export async function reportPlayerName(
+  reportedId: string,
+  reportedName: string,
+  reason: ReportReason,
+): Promise<boolean> {
+  const supabase = getSupabase()
+  const user = getCloudStatus().user
+  if (!supabase || !user) return false
+  const { error } = await supabase.from('name_reports').insert({
+    reporter_id: user.id,
+    reported_id: reportedId,
+    reason,
+    reported_name: reportedName.slice(0, 40),
+  })
+  return !error || error.code === '23505'
+}
+
 export async function fetchLeaderboard(
   day: string,
   country: CountryCode,

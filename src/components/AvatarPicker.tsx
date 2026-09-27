@@ -8,6 +8,7 @@ import {
   type AvatarOption,
 } from '../lib/avatars'
 import { prizeAvatarsEarned, useDailyStats } from '../lib/daily'
+import { isNameBlocked } from '../lib/nameFilter'
 import { playSound } from '../lib/audio'
 import { useT, type TextKey } from '../lib/i18n'
 import { setSetting } from '../lib/save'
@@ -33,9 +34,11 @@ export function AvatarPicker({
   const prizesEarned = prizeAvatarsEarned(useDailyStats())
   const prizesShown = Math.min(prizesEarned, PRIZE_AVATAR_TOTAL)
 
+  const blocked = isNameBlocked(name)
+
   const onSubmit = (event: FormEvent) => {
     event.preventDefault()
-    if (!isValidPlayerName(name)) return
+    if (!isValidPlayerName(name) || blocked) return
     playSound('button')
     setSetting('playerName', name.trim())
     setSetting('avatarId', avatarId)
@@ -69,12 +72,18 @@ export function AvatarPicker({
           placeholder={t('playerNamePlaceholder')}
         />
       </label>
-      <p className="settings-help">{t('playerNameHelp')}</p>
+      {blocked ? (
+        <p className="cloud-form-error" role="alert">
+          {t('nameBlocked')}
+        </p>
+      ) : (
+        <p className="settings-help">{t('playerNameHelp')}</p>
+      )}
 
       <button
         type="submit"
         className="btn-primary avatar-picker-save"
-        disabled={!isValidPlayerName(name)}
+        disabled={!isValidPlayerName(name) || blocked}
       >
         {t(submitLabel)}
       </button>

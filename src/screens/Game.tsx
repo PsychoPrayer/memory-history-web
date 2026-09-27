@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { MatchBar } from '../components/MatchBar'
+import { LoadingGate } from '../components/LoadingGate'
 import { Stars } from '../components/Stars'
 import { Modal } from '../components/Modal'
 import { Board } from '../components/Board'
@@ -73,13 +74,14 @@ export function Game({ free = false }: Props) {
     `free-${freeSettings.deck}-${freeSettings.cards}-${freeSettings.seconds}`
 
   return (
-    <Match
-      key={key}
-      matchKey={key}
-      level={level ?? null}
-      rules={rules}
-      deck={free ? (freeDeck as CardCatalog[]) : cards}
-    />
+    <LoadingGate key={key} label={free ? 'loadingFree' : 'loadingBoard'}>
+      <Match
+        matchKey={key}
+        level={level ?? null}
+        rules={rules}
+        deck={free ? (freeDeck as CardCatalog[]) : cards}
+      />
+    </LoadingGate>
   )
 }
 

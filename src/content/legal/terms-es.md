@@ -1,460 +1,204 @@
-# TÉRMINOS Y CONDICIONES DE USO
-## MEMORY HISTORY 2
+# TÉRMINOS Y CONDICIONES DE USO Y POLÍTICA DE PRIVACIDAD
+## MEMORY HISTORY
 
-**Fecha de última actualización:** 27 de septiembre de 2026
-
----
-
-## 1. ACEPTACIÓN DE LOS TÉRMINOS
-
-Al descargar, instalar, acceder y/o utilizar esta aplicación denominada "Memory History 2" (en adelante, "el Juego" o "la Aplicación"), usted (en adelante, "el Usuario" o "usted") acepta quedar vinculado legalmente por estos Términos y Condiciones de Uso (en adelante, "los Términos" o "este Acuerdo"). 
-
-Si no está de acuerdo con alguna de las disposiciones contenidas en estos Términos, debe abstenerse inmediatamente de utilizar el Juego y desinstalarlo de su dispositivo.
-
-El uso continuado del Juego después de la publicación de cualquier modificación a estos Términos constituirá su aceptación de dichos cambios.
+**Fecha de última actualización:** 28 de septiembre de 2026
+**Versión:** 3.0
 
 ---
 
-## 2. DEFINICIONES
+## 1. ACEPTACIÓN
 
-- **Aplicación/Juego:** Se refiere a "Memory History 2", un juego de memoria educativo disponible en versión web y móvil.
-- **Cuenta:** Registro opcional, creado con un nombre de usuario y una contraseña, que permite guardar el progreso en la nube.
-- **Contenido:** Incluye todos los textos, imágenes, gráficos, música, sonidos, código fuente, y cualquier otro material incluido en el Juego.
-- **Desarrollador:** La persona física o jurídica que ha desarrollado y distribuye esta aplicación.
-- **Usuario:** Cualquier persona que descarga, instala o utiliza el Juego.
-- **Datos Personales:** Cualquier información que identifique o pueda identificar a una persona física.
+Al acceder, instalar o utilizar Memory History (en adelante, "el Juego"), en su versión web o en su versión para dispositivos móviles, usted (en adelante, "el Usuario") acepta estos Términos y Condiciones de Uso y esta Política de Privacidad (en conjunto, "los Términos").
+
+Si no está de acuerdo con alguna parte de estos Términos, no utilice el Juego.
 
 ---
 
-## 3. LICENCIA DE USO
+## 2. QUÉ ES MEMORY HISTORY
 
-Se le otorga una licencia limitada, no exclusiva, intransferible, revocable y no sublicenciable para descargar, instalar y utilizar el Juego únicamente para fines personales y no comerciales, de conformidad con estos Términos.
+Memory History es un juego de memoria educativo y gratuito, sin anuncios, sobre la historia y la cultura de distintos países. Incluye una campaña por niveles, historias ilustradas, tests, logros, un modo libre (PancitoLandia), duelos en tiempo real y un Desafío del día con clasificación.
 
-**Restricciones de la Licencia:**
-
-Usted NO podrá, bajo ninguna circunstancia:
-
-- Copiar, reproducir, duplicar o distribuir el Juego o cualquier parte del mismo;
-- Modificar, adaptar, traducir o crear obras derivadas basadas en el Juego;
-- Realizar ingeniería inversa, descompilar, desensamblar o intentar extraer el código fuente del Juego;
-- Vender, alquilar, arrendar, prestar, sublicenciar o transferir el Juego o sus derechos a terceros;
-- Eliminar, alterar u ocultar cualquier aviso de derechos de autor, marca registrada u otra propiedad intelectual incluida en el Juego;
-- Utilizar el Juego para fines comerciales, promocionales o publicitarios sin autorización previa y por escrito del Desarrollador;
-- Intentar obtener acceso no autorizado al Juego, sus sistemas o redes relacionadas.
-
-Cualquier uso del Juego que no esté expresamente permitido en estos Términos está prohibido.
+En estos Términos, "el Desarrollador" es el equipo que crea y mantiene el Juego (ver sección 16).
 
 ---
 
-## 4. PROPIEDAD INTELECTUAL Y DERECHOS DE AUTOR
+## 3. CUENTA OPCIONAL
 
-Todos los derechos, títulos e intereses relacionados con el Juego, incluyendo pero no limitándose a:
+### 3.1. Jugar sin cuenta
 
-- Código fuente, software y programación;
-- Gráficos, imágenes, ilustraciones, diseños y elementos visuales;
-- Música, efectos de sonido y audio;
-- Textos, historias, narraciones, preguntas y contenido educativo;
-- Marcas, nombres comerciales, logotipos y elementos distintivos;
-- Estructura, organización y funcionalidades del Juego;
+Todo el Juego puede usarse sin crear una cuenta, salvo las funciones que necesitan conexión con otros jugadores (duelos y clasificación del Desafío del día).
 
-son y permanecerán siendo propiedad exclusiva del Desarrollador y/o sus licenciantes, y están protegidos por las leyes de propiedad intelectual, derechos de autor, marcas registradas y otras leyes aplicables de jurisdicciones internacionales, incluyendo, sin limitación, el Convenio de Berna, el Tratado de la OMPI sobre Derecho de Autor, y las leyes locales de protección de propiedad intelectual.
+### 3.2. Crear una cuenta
 
-El Juego contiene material protegido por derechos de autor. El uso no autorizado de cualquier material protegido puede violar las leyes de derechos de autor, marcas registradas u otras leyes aplicables.
+La cuenta solo pide **un nombre de usuario y una contraseña**. El Juego **no solicita correo electrónico**, número de teléfono, nombre real, fecha de nacimiento ni ningún otro dato personal. Las cuentas creadas antes con correo electrónico siguen funcionando.
 
----
+### 3.3. Responsabilidad sobre la cuenta
 
-## 5. PRIVACIDAD Y PROTECCIÓN DE DATOS
+- Usted es responsable de guardar su nombre de usuario y su contraseña y de no compartirlos.
+- Al crear la cuenta, el Juego le muestra una sola vez un **código de recuperación**. Con su nombre de usuario y ese código puede elegir una contraseña nueva si olvida la actual; al usarlo, recibirá un código nuevo y se cerrará la sesión en los demás dispositivos. Desde Configuración puede crear un código nuevo, lo que anula el anterior.
+- Como el Juego no pide correo, **si pierde a la vez su contraseña y su código de recuperación, no será posible recuperar la cuenta** ni el progreso guardado en ella, aunque podrá seguir jugando y crear una cuenta nueva.
+- No use su nombre real ni datos personales como nombre de usuario o nombre de jugador.
 
-### 5.1. Juego sin Cuenta
+### 3.4. Vincular y elegir progreso
 
-Crear una cuenta es opcional. Si juega sin cuenta, el progreso del juego, los niveles completados y sus preferencias se guardan únicamente en el almacenamiento local de su navegador o dispositivo. Estos datos no se envían a ningún servidor y puede borrarlos en cualquier momento eliminando los datos del sitio o desinstalando el Juego.
-
-### 5.2. Cuenta en la Nube (Opcional)
-
-Si decide crear una cuenta para guardar su progreso entre dispositivos, el Juego solo le pide:
-
-- **Un nombre de usuario** elegido por usted;
-- **Una contraseña.**
-
-**El Juego NO solicita dirección de correo electrónico, número de teléfono, nombre real, fecha de nacimiento, ubicación ni ningún otro dato personal.** Le recomendamos no usar su nombre real ni datos personales como nombre de usuario.
-
-Con una cuenta, se almacenan en nuestros servidores:
-
-- Su nombre de usuario;
-- Su contraseña, guardada únicamente en forma cifrada (hash): el Desarrollador no puede verla;
-- Su progreso y configuración del juego (niveles, estrellas, historias leídas, logros y preferencias);
-- Si juega duelos: el nombre y el avatar que elija para los duelos, y los resultados de las partidas. Estos datos son visibles para los rivales con los que juegue;
-- Datos técnicos mínimos necesarios para mantener la sesión iniciada (por ejemplo, fechas de inicio de sesión y tokens de sesión guardados en su navegador).
-
-Estos datos se usan exclusivamente para que el Juego funcione: guardar y sincronizar su progreso y permitir los duelos. No se venden, no se usan con fines publicitarios y no se comparten con terceros, salvo con los proveedores técnicos indicados a continuación.
-
-### 5.3. Proveedores de Servicio
-
-El Juego utiliza los siguientes proveedores para funcionar:
-
-- **Supabase:** alojamiento de la base de datos y del sistema de cuentas;
-- **Vercel:** alojamiento de la versión web del Juego.
-
-Estos proveedores procesan los datos únicamente para prestar su servicio técnico y pueden registrar datos técnicos básicos de conexión (como la dirección IP) por motivos de seguridad y funcionamiento.
-
-### 5.4. Recuperación de la Cuenta
-
-Como el Juego no solicita correo electrónico, **no es posible recuperar una contraseña olvidada.** Usted es responsable de guardar su nombre de usuario y su contraseña de forma segura y de no compartirlos. Si pierde su contraseña, perderá el acceso al progreso guardado en la nube, aunque podrá seguir jugando y crear una cuenta nueva.
-
-### 5.5. Eliminación de Datos
-
-Puede solicitar en cualquier momento la eliminación de su cuenta y de todos los datos asociados escribiendo a pancitogamesdev@gmail.com (ver sección 17) e indicando su nombre de usuario. El progreso guardado localmente puede borrarlo usted mismo eliminando los datos del sitio o desinstalando el Juego.
-
-### 5.6. Lo que el Juego NO Hace
-
-El Juego:
-- No recopila información de ubicación geográfica (GPS);
-- No accede a la lista de contactos, fotos, archivos u otros datos del dispositivo;
-- No realiza seguimiento de actividad del usuario fuera del Juego;
-- No muestra publicidad ni utiliza identificadores de publicidad o tecnologías de seguimiento publicitario.
-
-### 5.7. Cumplimiento Legal
-
-El Desarrollador procura tratar los datos de acuerdo con las normas de protección de datos aplicables, como el Reglamento General de Protección de Datos (GDPR) de la Unión Europea, la California Consumer Privacy Act (CCPA) y la Children's Online Privacy Protection Act (COPPA) de Estados Unidos, minimizando los datos a lo estrictamente necesario. Al crear una cuenta, usted consiente el tratamiento de los datos descritos en esta sección con los fines indicados.
+Al crear una cuenta, el progreso guardado en el dispositivo se guarda en ella. Al iniciar sesión en un dispositivo que ya tiene progreso distinto, el Juego le permitirá combinar ambos, cargar el de la cuenta o conservar el del dispositivo. Las opciones que reemplazan progreso piden confirmación; el progreso reemplazado no se puede recuperar.
 
 ---
 
-## 6. CONTENIDO GENERADO CON INTELIGENCIA ARTIFICIAL
+## 4. PRIVACIDAD Y DATOS
 
-### 6.1. Uso de Tecnología de IA
+### 4.1. Datos que se guardan en su dispositivo
 
-El Juego utiliza tecnologías de Inteligencia Artificial (IA) para la creación de ciertos elementos del contenido, incluyendo pero no limitándose a:
+El progreso (niveles, estrellas, historias, tests, logros, desafíos) y las preferencias (idioma, volumen, nombre de jugador, avatar) se guardan en el almacenamiento local de su navegador o dispositivo. Puede borrarlos en cualquier momento eliminando los datos del sitio, desinstalando el Juego o desde Configuración → Reiniciar progreso.
 
-- Generación de imágenes e ilustraciones;
-- Creación de contenido textual descriptivo;
-- Optimización de elementos visuales y de diseño.
+### 4.2. Datos que se guardan con una cuenta
 
-### 6.2. Naturaleza del Contenido Generado por IA
+Si crea una cuenta, se almacenan en nuestros servidores:
 
-Usted reconoce y acepta que:
+- su nombre de usuario;
+- su contraseña y su código de recuperación, **solo en forma cifrada** (hash): nadie, ni el Desarrollador, puede leerlos;
+- los intentos de recuperación de cuenta (usuario, fecha y si fueron correctos), que se borran automáticamente a las 24 horas y solo sirven para frenar ataques;
+- una copia de su progreso y preferencias, para sincronizarlos entre dispositivos;
+- los datos técnicos mínimos para mantener la sesión (por ejemplo, la fecha de inicio de sesión y un token de sesión guardado en su dispositivo).
 
-- El contenido generado por IA es producido mediante algoritmos y modelos de aprendizaje automático;
-- Dicho contenido puede no ser original en el sentido tradicional de autoría humana;
-- El contenido puede estar basado en entrenamiento de modelos de IA con grandes conjuntos de datos públicos;
-- El Desarrollador no reclama autoría creativa tradicional sobre el contenido generado por IA, pero sí mantiene los derechos de uso y distribución del mismo como parte del Juego.
+### 4.3. Datos visibles para otros jugadores
 
-### 6.3. Limitaciones y Disclaimers del Contenido de IA
+- **Duelos:** su nombre de duelo, su avatar y el resultado de cada partida son visibles para el rival.
+- **Clasificación del Desafío del día:** si juega el desafío con la sesión iniciada, su **nombre de jugador, su avatar, su tiempo, sus errores y su puesto** se publican en la clasificación del día y son visibles para **cualquier persona** que abra el Juego.
 
-El contenido generado por IA:
-- Puede contener inexactitudes, errores o representaciones no perfectas;
-- No garantiza precisión absoluta en la representación de temas históricos, culturales o factuales;
-- Puede reflejar sesgos presentes en los datos de entrenamiento de los modelos de IA utilizados;
-- Se proporciona "tal cual" sin garantía de precisión o autenticidad.
+Elija un nombre de jugador que no revele su identidad si no desea que otros la conozcan.
 
----
+### 4.4. Para qué se usan los datos
 
-## 7. NATURALEZA DEL CONTENIDO EDUCATIVO E HISTÓRICO
+Los datos se usan **exclusivamente** para que el Juego funcione: guardar y sincronizar su progreso, permitir los duelos y mostrar la clasificación. **No se venden, no se usan para publicidad, no se usan para crear perfiles y no se comparten** con terceros, salvo con los proveedores técnicos de la sección 4.5.
 
-### 7.1. Propósito Educativo y Lúdico
+### 4.5. Proveedores técnicos
 
-Este Juego tiene un propósito educativo y de entretenimiento. El contenido histórico, cultural y educativo incluido en el Juego:
+- **Supabase:** base de datos y sistema de cuentas.
+- **Vercel:** alojamiento de la versión web.
+- **Google Fonts:** tipografías del Juego. Al cargarlas, Google recibe datos técnicos de conexión, como la dirección IP.
+- **Ko-fi:** solo si usted decide donar (ver sección 7).
 
-- **NO pretende ser históricamente correcto al 100%**, sino una representación cercana y aproximada basada en fuentes disponibles;
-- Está diseñado para ser educativo y entretenido, no como una fuente académica definitiva;
-- Puede contener simplificaciones, generalizaciones o interpretaciones del material histórico y cultural.
+Estos proveedores tratan los datos únicamente para prestar su servicio y pueden registrar datos técnicos básicos (como la dirección IP) por seguridad y funcionamiento, según sus propias políticas de privacidad.
 
-### 7.2. Fuentes de Información
+### 4.6. Lo que el Juego no hace
 
-El contenido histórico y cultural del Juego está basado en:
+El Juego no muestra publicidad; no usa cookies de publicidad ni de seguimiento; no recopila su ubicación; y no accede a sus contactos, fotos ni archivos.
 
-- Información disponible públicamente en Internet;
-- Fuentes educativas generales y enciclopedias públicas;
-- Conocimiento histórico y cultural ampliamente difundido;
-- Investigación de dominio público.
+### 4.7. Conservación y eliminación
 
-**El Desarrollador no garantiza:**
-- La exactitud absoluta de toda la información histórica;
-- La exhaustividad del contenido educativo;
-- Que la información esté actualizada con las últimas investigaciones académicas;
-- Que todas las representaciones sean completamente precisas.
+Los datos de la cuenta se conservan mientras la cuenta exista. Los resultados del Desafío del día se conservan para mostrar el historial de clasificaciones. Puede borrar en cualquier momento su cuenta y todos sus datos en la nube (progreso, resultados de la clasificación, duelos y código de recuperación) desde **Configuración → Cuenta en la nube → Borrar mi cuenta**. El borrado es inmediato y definitivo. Si no puede acceder a su cuenta, también puede pedirlo escribiendo a **pancitogamesdev@gmail.com** e indicando su nombre de usuario; atenderemos la solicitud en un plazo máximo de 30 días.
 
-Se recomienda a los Usuarios que, si necesitan información histórica precisa para fines académicos o profesionales, consulten fuentes académicas, libros de texto autorizados y recursos educativos oficiales.
+### 4.8. Sus derechos
 
-### 7.3. Responsabilidad del Usuario
-
-El Usuario reconoce que:
-
-- El Juego es un medio de entretenimiento y aprendizaje general;
-- No debe ser utilizado como única fuente para estudios académicos formales;
-- Cualquier decisión basada en la información del Juego es responsabilidad exclusiva del Usuario;
-- El Desarrollador no será responsable de decisiones académicas, profesionales o personales tomadas basándose en el contenido del Juego.
+Según la ley aplicable a su lugar de residencia (por ejemplo, el Reglamento General de Protección de Datos de la Unión Europea o las leyes de privacidad de los Estados Unidos), puede tener derecho a acceder a sus datos, rectificarlos, eliminarlos, oponerse a su tratamiento o recibir una copia. Para ejercer estos derechos, escriba a la dirección de la sección 16. Al crear una cuenta, usted consiente el tratamiento de los datos descritos en esta sección con los fines indicados.
 
 ---
 
-## 8. CONTENIDO RELIGIOSO Y CULTURAL
+## 5. MENORES DE EDAD
 
-### 8.1. Representación Cultural y Religiosa
-
-Este Juego incluye referencias y representaciones de elementos religiosos, culturales y tradicionales como parte integral de la representación cultural del país o región representada en el Juego.
-
-### 8.2. Intención No Ofensiva
-
-**IMPORTANTE:** El Juego:
-
-- **NO tiene la intención de ofender, ridiculizar o menospreciar** ninguna creencia religiosa, práctica espiritual o tradición cultural;
-- Presenta elementos religiosos únicamente como parte de la representación cultural e histórica;
-- Respeta la diversidad de creencias y prácticas religiosas;
-- No promueve ni desalienta ninguna religión o sistema de creencias específico;
-- Presenta información sobre tradiciones religiosas desde una perspectiva cultural y educativa neutral.
-
-### 8.3. Propósito Cultural
-
-Los elementos religiosos incluidos en el Juego:
-
-- Forman parte de la identidad cultural e histórica representada;
-- Son presentados con respeto y con fines educativos;
-- Reflejan prácticas y tradiciones históricas y culturales;
-- No constituyen una declaración de fe o posición religiosa del Desarrollador.
-
-### 8.4. Sensibilidad y Discreción del Usuario
-
-Si usted encuentra que algún contenido religioso o cultural en el Juego es inapropiado o ofensivo según sus creencias personales:
-
-- Tiene la libertad de dejar de utilizar el Juego;
-- Puede contactar al Desarrollador para expresar sus preocupaciones;
-- Reconoce que la inclusión de dicho contenido no constituye una intención de ofender.
-
-El Desarrollador se compromete a revisar cualquier preocupación legítima sobre el contenido, pero se reserva el derecho de mantener el contenido como parte de la representación cultural e histórica del Juego.
+El Juego es apto para todas las edades y puede usarse completo sin crear una cuenta. Los menores de 13 años (o de la edad mínima que establezca la ley de su país) deben crear una cuenta, jugar a los duelos o aparecer en la clasificación **solo con el permiso de su padre, madre o tutor**, y no deben usar su nombre real como nombre de usuario ni como nombre de jugador. Los padres o tutores son responsables de supervisar el uso del Juego por parte de los menores a su cargo. Si un padre, madre o tutor cree que un menor ha creado una cuenta sin su permiso, puede pedir su eliminación en la dirección de la sección 16.
 
 ---
 
-## 9. RESTRICCIONES DE USO
+## 6. USO ACEPTABLE
 
-Al utilizar el Juego, usted se compromete expresamente a NO:
+Al usar el Juego, usted se compromete a no:
 
-### 9.1. Uso Ilegal
+- usar nombres de usuario, nombres de jugador o de duelo ofensivos, discriminatorios, sexuales, violentos o que suplanten a otra persona;
+- manipular el Juego, sus resultados o la clasificación, ni enviar resultados falsos por medios técnicos;
+- intentar acceder sin autorización a cuentas, sistemas o datos ajenos, ni sobrecargar o interrumpir los servidores;
+- copiar, modificar, descompilar, vender o distribuir el Juego o su contenido sin autorización;
+- usar el Juego con fines ilegales.
 
-- Utilizar el Juego para cualquier propósito ilegal, fraudulento o no autorizado;
-- Violar cualquier ley, estatuto, ordenanza o regulación local, estatal, nacional o internacional;
-- Infringir derechos de propiedad intelectual de terceros;
-- Transmitir o distribuir malware, virus, código malicioso o cualquier otro software dañino.
+El Juego rechaza automáticamente algunos nombres ofensivos. Cualquier jugador con cuenta puede **reportar** un nombre inapropiado desde la clasificación; cuando un nombre recibe varios reportes de jugadores distintos, se oculta de la clasificación hasta que el Desarrollador lo revise. Los reportes guardan quién reporta, a quién, el motivo y el nombre reportado, y solo los ve el Desarrollador.
 
-### 9.2. Interferencia y Acceso No Autorizado
-
-- Intentar obtener acceso no autorizado al Juego, sus sistemas, servidores, redes o datos relacionados;
-- Interferir, interrumpir o deshabilitar el funcionamiento del Juego o de cualquier sistema o red conectada;
-- Realizar ataques de denegación de servicio (DoS) o cualquier otra acción que pueda sobrecargar o dañar los sistemas;
-- Intentar eludir cualquier medida de seguridad o autenticación.
-
-### 9.3. Uso Inapropiado del Contenido
-
-- Utilizar el contenido del Juego de manera que pueda difamar, calumniar, acosar, amenazar o violar los derechos de otros;
-- Utilizar el contenido para crear contenido falso, engañoso o difamatorio;
-- Modificar o manipular el contenido de manera que pueda causar confusión sobre su origen o autoría.
+El Desarrollador puede, sin previo aviso, cambiar nombres inapropiados, eliminar resultados sospechosos de la clasificación y suspender o eliminar las cuentas que incumplan estas normas.
 
 ---
 
-## 10. LIMITACIÓN DE RESPONSABILIDAD
+## 7. DONACIONES
 
-### 10.1. Sin Garantías
+El Juego es gratuito. Si lo desea, puede apoyar su desarrollo con una donación voluntaria a través de **Ko-fi**, una plataforma externa. Las donaciones:
 
-EL JUEGO SE PROPORCIONA "TAL CUAL" Y "SEGÚN DISPONIBILIDAD", SIN GARANTÍAS DE NINGÚN TIPO, YA SEAN EXPRESAS O IMPLÍCITAS. EL DESARROLLADOR, EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY, RENUNCIA A TODAS LAS GARANTÍAS, INCLUYENDO PERO NO LIMITÁNDOSE A:
+- son completamente voluntarias y no dan acceso a contenido, ventajas ni funciones adicionales dentro del Juego;
+- se procesan por Ko-fi y sus proveedores de pago, bajo sus propios términos y políticas de privacidad; el Desarrollador no recibe ni guarda los datos de su tarjeta ni de su medio de pago;
+- no son reembolsables salvo que la ley aplicable o las condiciones de Ko-fi establezcan lo contrario.
 
-- Garantías de comerciabilidad;
-- Garantías de idoneidad para un propósito particular;
-- Garantías de no infracción;
-- Garantías de que el Juego será ininterrumpido, puntual, seguro o libre de errores;
-- Garantías sobre la exactitud, completitud o confiabilidad de cualquier información o contenido;
-- Garantías de que los defectos serán corregidos.
-
-### 10.2. Limitación de Daños
-
-EN NINGÚN CASO EL DESARROLLADOR, SUS AFILIADOS, LICENCIANTES, PROVEEDORES DE SERVICIOS, EMPLEADOS, AGENTES, OFICIALES O DIRECTIVOS SERÁN RESPONSABLES ANTE USTED O CUALQUIER TERCERO POR:
-
-- Daños directos, indirectos, incidentales, especiales, consecuentes o punitivos;
-- Pérdida de beneficios, datos, uso, buena voluntad u otras pérdidas intangibles;
-- Daños resultantes del uso o la imposibilidad de uso del Juego;
-- Errores, defectos, interrupciones o retrasos en el Juego;
-- Virus, malware u otro código dañino que pueda transmitirse a través del Juego;
-- Decisiones tomadas o acciones realizadas basándose en la información o contenido del Juego;
-- Problemas técnicos o fallos de su dispositivo, conexión a Internet o software;
-- Cualquier otro daño relacionado con el uso del Juego.
-
-### 10.3. Límite Máximo de Responsabilidad
-
-En la máxima medida permitida por la ley, la responsabilidad total del Desarrollador hacia usted, independientemente de la teoría legal bajo la cual se reclame, no excederá la cantidad que usted pagó por el Juego, o si el Juego es gratuito, la responsabilidad estará limitada a CERO DÓLARES ($0.00).
-
-### 10.4. Exclusiones
-
-Algunas jurisdicciones no permiten la exclusión de ciertas garantías o la limitación de responsabilidad por daños incidentales o consecuentes, por lo que algunas de las limitaciones anteriores pueden no aplicarse a usted. En tales casos, la responsabilidad del Desarrollador estará limitada en la mayor medida permitida por la ley aplicable.
+Los menores de edad solo deben donar con el permiso de su padre, madre o tutor.
 
 ---
 
-## 11. EXENCIÓN DE RESPONSABILIDAD EDUCATIVA
+## 8. LICENCIA Y PROPIEDAD INTELECTUAL
 
-### 11.1. No Responsabilidad por Uso Académico
+Se le concede una licencia limitada, personal, no exclusiva, intransferible y revocable para usar el Juego con fines personales y no comerciales.
 
-El Desarrollador:
-
-- **NO se responsabiliza** por calificaciones, evaluaciones académicas o resultados educativos obtenidos utilizando información del Juego;
-- **NO garantiza** que el contenido sea adecuado para cualquier nivel educativo específico;
-- **NO es responsable** de decisiones educativas, profesionales o personales tomadas basándose en el contenido del Juego;
-- **NO proporciona** certificación académica, reconocimiento educativo oficial ni créditos académicos.
-
-### 11.2. Uso como Referencia
-
-Si el Juego se utiliza como material de referencia o educativo:
-
-- El Usuario acepta que es responsable de verificar la información con fuentes académicas autorizadas;
-- El contenido debe ser considerado como material complementario, no como fuente primaria;
-- Se recomienda consultar múltiples fuentes para información crítica.
+Todos los derechos sobre el Juego, incluidos el código, los gráficos, las ilustraciones, los personajes (como Pancito), la música, los sonidos, los textos, las historias, las preguntas, los nombres y los logotipos, pertenecen al Desarrollador o a sus licenciantes y están protegidos por las leyes de propiedad intelectual. Las marcas y productos reales que aparecen en algunas cartas pertenecen a sus respectivos titulares y se muestran solo con fines culturales y educativos.
 
 ---
 
-## 12. MENORES DE EDAD
+## 9. CONTENIDO CREADO CON INTELIGENCIA ARTIFICIAL
 
-### 12.1. Uso por Menores
-
-Este Juego puede ser utilizado por menores de edad bajo la supervisión de padres o tutores legales.
-
-### 12.2. Responsabilidad de los Padres/Tutores
-
-Los padres o tutores legales de menores que utilicen el Juego:
-
-- Son responsables de supervisar las actividades en línea del menor;
-- Aceptan estos Términos en nombre del menor;
-- Son responsables de asegurar que el menor comprenda y cumpla con estos Términos;
-- Reconocen que el contenido puede incluir referencias históricas, culturales o religiosas que deben ser contextualizadas para el menor según su edad y comprensión.
-
-### 12.3. Cumplimiento COPPA
-
-El Juego se puede usar completo sin crear una cuenta. La cuenta opcional solo pide un nombre de usuario y una contraseña, sin correo electrónico ni otros datos personales. Se recomienda que los menores de 13 años creen una cuenta únicamente con el permiso de su padre, madre o tutor, y que no usen su nombre real como nombre de usuario.
+Parte del contenido del Juego, como imágenes, ilustraciones y textos, se ha creado o mejorado con herramientas de inteligencia artificial y ha sido revisado por el equipo. Este contenido puede contener imprecisiones o representaciones no perfectas, y se ofrece "tal cual", sin garantía de exactitud.
 
 ---
 
-## 13. MODIFICACIONES DEL JUEGO Y DE LOS TÉRMINOS
+## 10. CONTENIDO HISTÓRICO, EDUCATIVO, CULTURAL Y RELIGIOSO
 
-### 13.1. Modificaciones del Juego
+### 10.1. Propósito educativo
 
-El Desarrollador se reserva el derecho de, en cualquier momento y sin previo aviso:
+El Juego tiene un propósito educativo y de entretenimiento. Su contenido histórico y cultural se basa en información pública y ampliamente difundida, **puede contener simplificaciones o interpretaciones** y no pretende ser exacto al 100 %. No debe usarse como única fuente para estudios académicos o profesionales; para eso, consulte fuentes académicas y oficiales.
 
-- Modificar, actualizar, cambiar o descontinuar cualquier aspecto del Juego;
-- Agregar, eliminar o modificar características, funcionalidades o contenido;
-- Realizar mantenimiento, actualizaciones o mejoras técnicas;
-- Corregir errores, bugs o problemas técnicos;
-- Modificar o descontinuar versiones específicas del Juego.
+### 10.2. Contenido cultural y religioso
 
-### 13.2. Modificaciones de los Términos
+El Juego incluye elementos religiosos, culturales y tradicionales como parte de la identidad histórica de cada país. Se presentan con respeto y desde una perspectiva cultural y educativa neutral, **sin intención de ofender** ninguna creencia, ni de promover o desalentar ninguna religión. Si algún contenido le parece inapropiado, puede escribirnos a la dirección de la sección 16 y lo revisaremos.
 
-El Desarrollador se reserva el derecho de modificar estos Términos en cualquier momento, a su sola discreción. Las modificaciones:
+---
 
-- Entrarán en vigor inmediatamente después de su publicación en el Juego o en la plataforma de distribución;
-- Serán comunicadas mediante actualización del Juego o notificación dentro de la aplicación;
-- El uso continuado del Juego después de la publicación de modificaciones constituirá su aceptación de los nuevos Términos.
+## 11. AUSENCIA DE GARANTÍAS
 
-Se recomienda revisar periódicamente estos Términos para estar informado de cualquier cambio.
+EL JUEGO SE OFRECE "TAL CUAL" Y "SEGÚN DISPONIBILIDAD", SIN GARANTÍAS DE NINGÚN TIPO, EXPRESAS O IMPLÍCITAS, EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY. El Desarrollador no garantiza que el Juego funcione sin interrupciones ni errores, que el progreso guardado en la nube esté siempre disponible, ni que el contenido sea exacto o completo. Le recomendamos no depender de un único dispositivo para conservar su progreso.
+
+---
+
+## 12. LIMITACIÓN DE RESPONSABILIDAD
+
+En la máxima medida permitida por la ley, el Desarrollador no será responsable de daños indirectos, incidentales, especiales o consecuentes, ni de la pérdida de datos, progreso o beneficios, derivados del uso o de la imposibilidad de usar el Juego. Dado que el Juego es gratuito, la responsabilidad total del Desarrollador frente a usted no superará la cantidad de cero dólares estadounidenses (USD 0,00), salvo que la ley aplicable exija otra cosa.
+
+Algunas jurisdicciones no permiten ciertas exclusiones o limitaciones de responsabilidad; en ese caso, se aplicarán en la mayor medida permitida por la ley.
+
+---
+
+## 13. CAMBIOS EN EL JUEGO Y EN LOS TÉRMINOS
+
+El Desarrollador puede modificar, ampliar o interrumpir el Juego o cualquiera de sus funciones en cualquier momento. También puede actualizar estos Términos; cuando lo haga, cambiará la fecha y la versión indicadas al principio y el Juego le pedirá que los lea y los acepte de nuevo antes de seguir jugando.
 
 ---
 
 ## 14. TERMINACIÓN
 
-### 14.1. Terminación por el Usuario
-
-Usted puede terminar su uso del Juego en cualquier momento:
-
-- Desinstalando el Juego de su dispositivo;
-- Dejando de acceder o utilizar el Juego;
-- Solicitando la eliminación de su cuenta, si tiene una (ver sección 5.5).
-
-### 14.2. Terminación por el Desarrollador
-
-El Desarrollador se reserva el derecho de, a su sola discreción y sin previo aviso:
-
-- Terminar o suspender su acceso al Juego;
-- Descontinuar o interrumpir el Juego en su totalidad;
-- Eliminar o modificar cualquier contenido del Juego;
-- Tomar acciones legales si detecta violación de estos Términos.
-
-### 14.3. Efectos de la Terminación
-
-Al terminar el uso del Juego:
-
-- Todos los derechos de uso concedidos en virtud de estos Términos cesarán inmediatamente;
-- Usted debe desinstalar y destruir todas las copias del Juego en su posesión;
-- Las secciones de estos Términos que por su naturaleza deben sobrevivir a la terminación seguirán en vigor (incluyendo, sin limitación, las secciones sobre Propiedad Intelectual, Limitación de Responsabilidad, y Legislación Aplicable).
+Puede dejar de usar el Juego en cualquier momento, borrar sus datos locales o borrar su cuenta (sección 4.7). El Desarrollador puede suspender o eliminar el acceso de quien incumpla estos Términos. Las secciones sobre propiedad intelectual, ausencia de garantías, limitación de responsabilidad y ley aplicable seguirán vigentes tras la terminación.
 
 ---
 
-## 15. LEGISLACIÓN APLICABLE Y JURISDICCIÓN
+## 15. LEY APLICABLE Y RESOLUCIÓN DE DISPUTAS
 
-### 15.1. Ley Aplicable
+Estos Términos se rigen por las leyes del Estado de Minnesota y por las leyes federales aplicables de los Estados Unidos de América, sin tener en cuenta sus normas sobre conflicto de leyes.
 
-Estos Términos se regirán e interpretarán de acuerdo con las leyes del Estado de Minnesota y las leyes federales aplicables de los Estados Unidos de América, sin dar efecto a sus principios de conflicto de leyes.
+Antes de iniciar cualquier procedimiento legal, las partes intentarán resolver la disputa de buena fe. Si no se resuelve en un plazo de treinta (30) días desde que una de las partes la notifique por escrito a la otra, cualquiera de ellas podrá acudir a los tribunales estatales o federales competentes con sede en el Condado de Washington (Stillwater), Minnesota, Estados Unidos de América.
 
-### 15.2. Jurisdicción y Foro
-
-Cualquier disputa, controversia o reclamación relacionada con o que surja de estos Términos o del uso del Juego será sometida a la jurisdicción exclusiva de los tribunales estatales o federales competentes con sede en el Condado de Washington (Stillwater), Minnesota, Estados Unidos de América, salvo que la ley de su país de residencia le otorgue un derecho irrenunciable a acudir a los tribunales de su domicilio.
-
-Usted acepta someterse a la jurisdicción personal de dichos tribunales y renuncia a cualquier objeción basada en la falta de jurisdicción personal o el lugar del foro.
-
-### 15.3. Resolución de Disputas
-
-Antes de iniciar cualquier procedimiento legal, las partes acuerdan intentar resolver cualquier disputa mediante negociación de buena fe. Si la negociación no resulta en una resolución dentro de treinta (30) días desde que una de las partes notifique la disputa por escrito a la otra, entonces cualquiera de las partes puede proceder con acciones legales según se establece en esta sección.
+Nada de lo anterior limita los derechos que, como consumidor, le otorgue de forma irrenunciable la ley de su país de residencia, incluido el derecho a acudir a los tribunales de su domicilio.
 
 ---
 
-## 16. DISPOSICIONES GENERALES
+## 16. CONTACTO
 
-### 16.1. Acuerdo Completo
+Para cualquier pregunta, solicitud de eliminación de datos o comentario sobre estos Términos o sobre el Juego, escriba a:
 
-Estos Términos constituyen el acuerdo completo y exclusivo entre usted y el Desarrollador con respecto al uso del Juego y reemplazan todos los acuerdos, entendimientos o comunicaciones previos, ya sean escritos u orales, relacionados con el mismo tema.
+**pancitogamesdev@gmail.com**
 
-### 16.2. Divisibilidad
-
-Si alguna disposición de estos Términos se considera inválida, ilegal o inaplicable por un tribunal competente, dicha disposición será modificada e interpretada para lograr los objetivos de dicha disposición en la mayor medida posible según la ley aplicable, y las disposiciones restantes permanecerán en pleno vigor y efecto.
-
-### 16.3. Renuncia
-
-El hecho de que el Desarrollador no ejerza o haga cumplir cualquier derecho o disposición de estos Términos no constituirá una renuncia a dicho derecho o disposición, ni afectará el derecho del Desarrollador a hacer cumplir dicho derecho o disposición posteriormente.
-
-### 16.4. Cesión
-
-Usted no puede ceder, transferir o subcontratar estos Términos o cualquier derecho u obligación aquí contemplados sin el consentimiento previo y por escrito del Desarrollador. El Desarrollador puede ceder estos Términos o cualquier derecho u obligación aquí contemplados sin su consentimiento.
-
-### 16.5. Relación entre las Partes
-
-Estos Términos no crean ninguna relación de sociedad, joint venture, empleo, agencia o fiduciaria entre usted y el Desarrollador.
-
-### 16.6. Fuerza Mayor
-
-El Desarrollador no será responsable por ningún incumplimiento o retraso en el cumplimiento debido a causas fuera de su control razonable, incluyendo pero no limitándose a actos de Dios, guerra, terrorismo, disturbios, embargos, actos de autoridades civiles o militares, fuego, inundaciones, accidentes, huelgas u otras disputas laborales, o escasez de materiales o servicios de transporte.
+Haremos lo posible por responder en un plazo razonable.
 
 ---
 
-## 17. CONTACTO
-
-Para cualquier pregunta, inquietud, comentario o notificación relacionada con estos Términos y Condiciones de Uso o con el Juego, puede contactar al Desarrollador en:
-
-**Correo Electrónico:** pancitogamesdev@gmail.com
-
-El Desarrollador hará esfuerzos razonables para responder a las consultas en un plazo razonable, pero no garantiza una respuesta inmediata.
-
----
-
-## 18. ACUERDO Y ACEPTACIÓN
-
-Al utilizar el Juego, usted declara y garantiza que:
-
-- Ha leído y entendido estos Términos y Condiciones de Uso;
-- Acepta quedar legalmente vinculado por estos Términos;
-- Tiene la capacidad legal para celebrar este Acuerdo (o, si es menor de edad, tiene el consentimiento de su padre o tutor legal);
-- Su uso del Juego será de conformidad con estos Términos y todas las leyes y regulaciones aplicables.
-
-Si no está de acuerdo con estos Términos, NO debe utilizar el Juego.
-
----
-
-**FIN DE LOS TÉRMINOS Y CONDICIONES DE USO**
-
-**Fecha de última actualización:** 27 de septiembre de 2026
-
-**Versión:** 2.0
-
----
-
-**NOTA IMPORTANTE:** Estos Términos y Condiciones han sido redactados para proporcionar protección legal general. Sin embargo, las leyes varían según la jurisdicción. Se recomienda encarecidamente consultar con un abogado calificado para asegurar que este documento cumpla con todas las leyes y regulaciones aplicables en su jurisdicción específica y para cualquier personalización adicional que pueda ser necesaria para su situación particular.
+Al marcar la casilla de aceptación, usted declara que ha leído y entendido estos Términos, que los acepta y que tiene capacidad legal para hacerlo o cuenta con el permiso de su padre, madre o tutor.

@@ -1768,6 +1768,15 @@ button {
   background: color-mix(in srgb, var(--papel) 70%, var(--papel-claro));
 }
 
+.terms-body.terms-page {
+  max-height: none;
+  overflow: visible;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  background: linear-gradient(180deg, rgba(255, 250, 238, 0.85), rgba(236, 224, 196, 0.8));
+  box-shadow: var(--brillo), var(--sombra-elevada);
+}
+
 .credits-body {
   margin: 0 0 1.2rem;
   padding: 0;
@@ -3546,6 +3555,111 @@ button {
     0 10px 16px -3px rgba(20, 13, 6, 0.72);
 }
 
+/* Tests: each test is a raised index card with a wax-seal number. */
+.test-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.test-tile,
+.test-tile:first-child {
+  padding: 0.85rem 0.9rem;
+  border: 1px solid rgba(43, 33, 22, 0.25);
+  background: linear-gradient(180deg, #fffaf0, #ecdfc2);
+  box-shadow:
+    var(--brillo),
+    0 4px 0 var(--papel-canto),
+    0 4px 0 1px rgba(43, 33, 22, 0.2),
+    0 8px 14px -6px rgba(20, 13, 6, 0.4);
+  transition: transform 0.14s ease, box-shadow 0.14s ease;
+}
+
+.test-tile:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: linear-gradient(180deg, #fffcf5, #f1e6cc);
+}
+
+.test-tile:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow: inset 0 2px 5px rgba(20, 13, 6, 0.25);
+}
+
+.test-tile[data-open='false'] {
+  opacity: 0.6;
+  background: linear-gradient(180deg, #e9dfc6, #d9ccad);
+  box-shadow: inset 0 2px 5px rgba(20, 13, 6, 0.2);
+}
+
+.test-tile-number {
+  border: 2px solid #3a1210;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #b44a42, var(--vino) 70%);
+  color: #fbeed6;
+  box-shadow:
+    inset 0 1px 1px rgba(255, 220, 200, 0.5),
+    0 2px 0 #3a1210,
+    0 4px 6px rgba(0, 0, 0, 0.35);
+}
+
+.test-tile[data-open='false'] .test-tile-number {
+  border-color: rgba(43, 33, 22, 0.4);
+  background: #cbb894;
+  color: var(--tinta-media);
+  box-shadow: none;
+}
+
+/* Quiz answers: raised paper plates that press in when chosen. */
+.option[data-state='neutral'] {
+  background: linear-gradient(180deg, #fffaf0, #ecdfc2);
+  box-shadow:
+    var(--brillo),
+    0 3px 0 var(--papel-canto),
+    0 3px 0 1px rgba(43, 33, 22, 0.2),
+    0 6px 12px -6px rgba(20, 13, 6, 0.4);
+  transition: transform 0.14s ease, box-shadow 0.14s ease, background 0.16s ease;
+}
+
+.option[data-state='neutral']:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: linear-gradient(180deg, #fffcf5, #f1e6cc);
+}
+
+.option[data-state='neutral']:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow: inset 0 2px 5px rgba(20, 13, 6, 0.25);
+}
+
+.option[data-state='correct'],
+.option[data-state='incorrect'] {
+  box-shadow: inset 0 2px 5px rgba(20, 13, 6, 0.2);
+}
+
+/* Achievements: medals; earned ones are struck in gold. */
+.achievement-tile {
+  background: linear-gradient(180deg, #f1e8d2, #e0d3b3);
+  box-shadow: inset 0 2px 4px rgba(20, 13, 6, 0.15);
+}
+
+.achievement-tile[data-earned='true'] {
+  background: linear-gradient(180deg, #fffaf0, #ecdfc2);
+  box-shadow:
+    var(--brillo),
+    0 4px 0 var(--papel-canto),
+    0 4px 0 1px rgba(154, 111, 39, 0.4),
+    0 10px 16px -8px rgba(20, 13, 6, 0.45);
+}
+
+.achievement-tile[data-earned='true'] .achievement-tile-initial {
+  border: 2px solid #8a6418;
+  background: radial-gradient(circle at 35% 30%, #f7df9a, #c9962e 60%, #8a6418);
+  color: #3a2a1a;
+  box-shadow:
+    inset 0 1px 1px rgba(255, 250, 230, 0.8),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.3),
+    0 3px 0 #5a3c0c;
+}
+
 /* ---------- Sections: bound volumes --------------------------------------- */
 
 .header-star {
@@ -3979,6 +4093,386 @@ button {
     transition: none;
     transform: none;
   }
+}
+
+/* ---------- Account: recovery, deletion, reports -------------------------- */
+
+.recovery-code {
+  margin: 0.4rem 0 1rem;
+  padding: 0.9rem 0.6rem;
+  border: 2px dashed #8a6418;
+  background: linear-gradient(180deg, #fff8e4, #f3e3b9);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: clamp(1.15rem, 5.4vw, 1.6rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #3a2a1a;
+  user-select: all;
+  box-shadow: inset 0 2px 6px rgba(90, 62, 20, 0.2);
+}
+
+.recovery-actions {
+  margin-bottom: 0.8rem;
+}
+
+.recovery-check {
+  justify-content: center;
+  margin-bottom: 0.9rem;
+}
+
+.cloud-subsection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding-top: 0.8rem;
+  border-top: var(--filete-tenue);
+}
+
+.cloud-forgot,
+.cloud-delete-link {
+  align-self: flex-start;
+}
+
+.cloud-delete-link {
+  margin-top: 0.4rem;
+  color: var(--vino);
+}
+
+.leaderboard-row {
+  grid-template-columns: 2rem 2.4rem minmax(0, 1fr) auto 1.8rem;
+}
+
+.leaderboard-report {
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 0;
+  border: 1px solid transparent;
+  background: none;
+  color: var(--tinta-suave);
+  font-size: 0.95rem;
+  cursor: pointer;
+  opacity: 0.55;
+}
+
+.leaderboard-report:hover,
+.leaderboard-report:focus-visible {
+  border-color: rgba(109, 37, 33, 0.4);
+  color: var(--vino);
+  opacity: 1;
+}
+
+.report-reasons {
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 0.8rem;
+}
+
+/* ---------- Offline and updates ------------------------------------------- */
+
+.app-banner {
+  position: fixed;
+  left: 50%;
+  bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  z-index: 45;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: max-content;
+  max-width: calc(100% - 1.5rem);
+  padding: 0.55rem 0.9rem;
+  transform: translateX(-50%);
+  border: 1px solid var(--cuero-oscuro);
+  background: linear-gradient(180deg, #4a3622, var(--cuero));
+  color: #f6ead0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  box-shadow: inset 0 1px 0 rgba(255, 230, 190, 0.25), 0 3px 0 var(--canto), var(--sombra-elevada);
+  animation: aparecer 0.3s ease-out;
+}
+
+.app-banner-dot {
+  flex-shrink: 0;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #d9a441;
+  box-shadow: 0 0 6px #d9a441;
+}
+
+.app-banner-action {
+  flex-shrink: 0;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #8a6418;
+  background: linear-gradient(180deg, #f6e2a8, #d9b35a);
+  color: #3a2a1a;
+  font-family: var(--versales);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 0 2px 0 #7a5514;
+}
+
+.app-banner-action:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* The match bar and board own the bottom edge during play; keep the notice clear of cards. */
+.screen-game ~ .app-banner-offline,
+body:has(.screen-game) .app-banner-offline {
+  top: calc(0.5rem + env(safe-area-inset-top, 0px));
+  bottom: auto;
+  opacity: 0.92;
+}
+
+.offline-progress {
+  position: relative;
+  height: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(43, 33, 22, 0.5);
+  background: rgba(43, 33, 22, 0.15);
+  box-shadow: inset 0 1px 3px rgba(20, 13, 6, 0.4);
+}
+
+.offline-progress span {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc(var(--done) * 100%);
+  background: linear-gradient(180deg, #f4d98b, #c9962e 60%, #8a6418);
+  transition: width 0.3s ease;
+}
+
+.offline-ready {
+  margin: 0;
+  font-family: var(--versales);
+  letter-spacing: 0.04em;
+  color: var(--verde);
+}
+
+/* ---------- Loading gate -------------------------------------------------- */
+
+.loading-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 45%, rgba(241, 232, 210, 0.9), transparent 75%),
+    var(--papel);
+  animation: aparecer 0.25s ease-out;
+}
+
+.loading-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  width: min(24rem, 100%);
+  text-align: center;
+}
+
+.loading-pancito {
+  width: 7.5rem;
+  height: auto;
+  filter: drop-shadow(0 10px 8px rgba(20, 13, 6, 0.3));
+  animation: loading-hop 0.9s ease-in-out infinite;
+}
+
+@keyframes loading-hop {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+.loading-title {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.6rem;
+  color: var(--tinta);
+  text-shadow: 0 1px 0 rgba(255, 248, 230, 0.8);
+}
+
+/* Leather track with a gold fill that stutters forward like a real load. */
+.loading-track {
+  position: relative;
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  border: 1px solid var(--cuero-oscuro);
+  background: linear-gradient(180deg, #2a1e12, var(--cuero));
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6), 0 1px 0 rgba(255, 248, 230, 0.7);
+}
+
+.loading-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 100%;
+  transform-origin: left center;
+  background:
+    linear-gradient(180deg, rgba(255, 250, 230, 0.55), transparent 55%),
+    linear-gradient(90deg, #c9962e, #f4d98b, #c9962e);
+  animation: loading-fill var(--loading-ms, 1500ms) linear forwards;
+}
+
+@keyframes loading-fill {
+  0% {
+    transform: scaleX(0.02);
+  }
+  25% {
+    transform: scaleX(0.38);
+  }
+  40% {
+    transform: scaleX(0.44);
+  }
+  70% {
+    transform: scaleX(0.8);
+  }
+  85% {
+    transform: scaleX(0.86);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.loading-tip {
+  margin: 0.4rem 0 0;
+  max-width: 22rem;
+  font-style: italic;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: var(--tinta-media);
+}
+
+.loading-tip-label {
+  font-family: var(--versales);
+  font-style: normal;
+  letter-spacing: 0.08em;
+  color: var(--oro);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-pancito {
+    animation: none;
+  }
+}
+
+/* ---------- Donate -------------------------------------------------------- */
+
+.donate-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.5rem;
+  padding: 0.35rem 1rem 0.35rem 0.8rem;
+  border: 1px solid #8a6418;
+  background: linear-gradient(180deg, #f6e2a8, #d9b35a);
+  color: #3a2a1a;
+  font-family: var(--versales);
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 250, 230, 0.8),
+    0 3px 0 #7a5514,
+    0 6px 12px -4px rgba(20, 13, 6, 0.45);
+  transition: transform 0.14s ease, box-shadow 0.14s ease;
+}
+
+.donate-link:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 250, 230, 0.85),
+    0 5px 0 #7a5514,
+    0 0 16px 2px rgba(233, 196, 106, 0.45),
+    0 10px 16px -4px rgba(20, 13, 6, 0.45);
+}
+
+.donate-link:active {
+  transform: translateY(3px);
+  box-shadow: inset 0 2px 4px rgba(90, 60, 12, 0.4);
+}
+
+.donate-cup {
+  width: 1.2em;
+  height: 1.2em;
+  flex-shrink: 0;
+}
+
+.donate-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.donate-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donate-modal-cup {
+  display: grid;
+  place-items: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  margin-bottom: 0.6rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f7df9a, #c9962e 60%, #8a6418);
+  color: #3a2a1a;
+  box-shadow:
+    inset 0 1px 1px rgba(255, 250, 230, 0.8),
+    0 3px 0 #5a3c0c,
+    0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+.donate-modal-cup .donate-cup {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+/* ---------- Coming-soon country ------------------------------------------- */
+
+.country-tile.country-tile-soon {
+  cursor: not-allowed;
+  background: linear-gradient(180deg, #d3c6a7, #bfb08e);
+  box-shadow: inset 0 2px 5px rgba(20, 13, 6, 0.3);
+  transform: none;
+}
+
+.country-tile.country-tile-soon:hover,
+.country-tile.country-tile-soon:active {
+  transform: none;
+  background: linear-gradient(180deg, #d3c6a7, #bfb08e);
+  box-shadow: inset 0 2px 5px rgba(20, 13, 6, 0.3);
+  border-color: rgba(43, 33, 22, 0.28);
+}
+
+.country-tile-soon .country-flag,
+.country-tile-soon .country-tile-name {
+  filter: grayscale(0.55) brightness(0.72);
+  opacity: 0.75;
+}
+
+.country-tile-soon-badge {
+  padding: 0.15rem 0.55rem;
+  border: 1px solid rgba(43, 33, 22, 0.45);
+  background: rgba(43, 33, 22, 0.78);
+  color: #f1e8d2;
+  font-family: var(--versales);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
 }
 
 /* ---------- Progress linking and sync choice ------------------------------ */

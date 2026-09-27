@@ -14,6 +14,7 @@ export type CloudStatus =
   | 'signedOut'
   | 'syncing'
   | 'synced'
+  | 'offline'
   | 'error'
 
 type StatusListener = (status: CloudStatus, user: User | null, error?: string) => void
@@ -157,6 +158,10 @@ function schedulePush(state: SavedState) {
         await pushRemote(user.id, state)
         setStatus('synced', user)
       } catch (error) {
+        if (!navigator.onLine) {
+          setStatus('offline', user)
+          return
+        }
         setStatus(
           'error',
           user,
@@ -190,6 +195,10 @@ async function pullAndMerge(session: Session, ask = false) {
     }
     setStatus('synced', session.user)
   } catch (error) {
+    if (!navigator.onLine) {
+      setStatus('offline', session.user)
+      return
+    }
     setStatus(
       'error',
       session.user,
@@ -207,6 +216,12 @@ export function initCloudSync() {
   }
 
   registerSync((state) => schedulePush(state))
+
+  /* Progress made offline is saved locally; push it as soon as we reconnect. */
+  const onOnline = () => {
+    if (user && !conflict) void syncNow()
+  }
+  window.addEventListener('online', onOnline)
 
   const {
     data: { subscription },
@@ -231,6 +246,7 @@ export function initCloudSync() {
 
   return () => {
     subscription.unsubscribe()
+    window.removeEventListener('online', onOnline)
     registerSync(null)
     if (pushTimer) clearTimeout(pushTimer)
   }
@@ -277,6 +293,57 @@ export async function signUp(rawUsername: string, password: string) {
   })
   if (error) throw error
   return data
+}
+
+function loginToEmail(login: string): string {
+  const trimmed = login.trim()
+  return trimmed.includes('@') ? trimmed : usernameToEmail(normalizeUsername(trimmed))
+}
+
+/** New recovery code for the signed-in player; replaces any earlier one. */
+export async function createRecoveryCode(): Promise<string> {
+  const supabase = getSupabase()
+  if (!supabase) throw new Error('Supabase is not configured')
+  const { data, error } = await supabase.rpc('create_recovery_code')
+  if (error) throw error
+  return data as string
+}
+
+export type RecoverResult =
+  | { ok: true; code: string }
+  | { ok: false; error: 'invalid_recovery' | 'too_many_attempts' | 'weak_password' | 'unavailable' }
+
+/**
+ * Sets a new password with the recovery code, then signs in. The server hands
+ * back a fresh code because the used one is spent.
+ */
+export async function recoverAccount(
+  login: string,
+  code: string,
+  newPassword: string,
+): Promise<RecoverResult> {
+  const supabase = getSupabase()
+  if (!supabase) return { ok: false, error: 'unavailable' }
+  const email = loginToEmail(login)
+  const { data, error } = await supabase.rpc('recover_account', {
+    p_login: email,
+    p_code: code,
+    p_new_password: newPassword,
+  })
+  if (error || !data) return { ok: false, error: 'unavailable' }
+  const result = data as RecoverResult
+  if (result.ok) await signIn(email, newPassword)
+  return result
+}
+
+/** Deletes the account and all its cloud data, then signs out. Local progress stays. */
+export async function deleteAccount() {
+  const supabase = getSupabase()
+  if (!supabase) throw new Error('Supabase is not configured')
+  const { error } = await supabase.rpc('delete_my_account')
+  if (error) throw error
+  if (pushTimer) clearTimeout(pushTimer)
+  await supabase.auth.signOut({ scope: 'local' })
 }
 
 /** Accepts a username, or an email for accounts created before usernames. */

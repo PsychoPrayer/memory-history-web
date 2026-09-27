@@ -2,10 +2,9 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AvatarPicker, PlayerBadge } from '../components/AvatarPicker'
 import { CloudAccount } from '../components/CloudAccount'
-import { DonateButton } from '../components/DonateButton'
+import { OfflineDownload } from '../components/OfflineDownload'
 import { Header } from '../components/Header'
 import { Modal } from '../components/Modal'
-import { isDonateConfigured } from '../lib/donate'
 import {
   clearProgress,
   setSetting,
@@ -104,6 +103,8 @@ export function Settings() {
 
       <CloudAccount />
 
+      <OfflineDownload />
+
       <section className="settings-group">
         <h2>{t('display')}</h2>
         <p className="settings-help">{t('fitScreenHelp')}</p>
@@ -145,13 +146,20 @@ export function Settings() {
         </fieldset>
       </section>
 
-      {isDonateConfigured() && (
-        <section className="settings-group">
-          <h2>{t('donate')}</h2>
-          <p className="settings-help">{t('donateBlurb')}</p>
-          <DonateButton variant="button" />
-        </section>
-      )}
+      <section className="settings-group">
+        <h2>{t('legalTitle')}</h2>
+        <p className="settings-help">{t('legalHelp')}</p>
+        <button
+          type="button"
+          className="btn-secondary"
+          onClick={() => {
+            playSound('transition')
+            navigate('/terms')
+          }}
+        >
+          {t('termsTitle')}
+        </button>
+      </section>
 
       <section className="settings-group">
         <button

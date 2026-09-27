@@ -494,6 +494,15 @@ export function markDailySubmitted(key: string) {
   })
 }
 
+/** Wipes progress in every country and the daily history; keeps settings and onboarding. */
+export function clearAllProgress() {
+  update((previous) => ({
+    ...previous,
+    countries: {},
+    daily: { results: {}, started: [] },
+  }))
+}
+
 export function clearProgress(country: CountryCode) {
   update((previous) => {
     const countries = { ...previous.countries }

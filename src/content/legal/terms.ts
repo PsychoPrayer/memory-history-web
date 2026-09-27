@@ -1,11 +1,13 @@
-import bruto from './terms-es.md?raw'
+import type { Language } from '../../types'
+import termsEs from './terms-es.md?raw'
+import termsEn from './terms-en.md?raw'
 
 /** Bump when the terms change so returning players accept them again. */
-export const TERMS_VERSION = 2
+export const TERMS_VERSION = 3
 
-/** Legal text from the original Unity project, ready to show on screen. */
-export function termsText(): string {
-  return bruto
+/** Legal text in the player's language, as plain text ready for the screen. */
+export function termsText(language: Language = 'es'): string {
+  return (language === 'en' ? termsEn : termsEs)
     .replace(/\r\n/g, '\n')
     .replace(/^#{1,6}\s*/gm, '')
     .replace(/\*\*(.*?)\*\*/g, '$1')

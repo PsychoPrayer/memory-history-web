@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { MatchBar } from '../components/MatchBar'
+import { LoadingGate } from '../components/LoadingGate'
 import { Board } from '../components/Board'
 import { Modal } from '../components/Modal'
 import { Stars } from '../components/Stars'
@@ -58,15 +59,17 @@ export function DailyGame() {
   const seed = useMemo(() => dailySeed(day, country), [day, country])
 
   return (
-    <DailyMatch
-      key={`${key}-${practice}`}
-      day={day}
-      resultKey={key}
-      practice={practice}
-      rules={rules}
-      seed={seed}
-      deck={cards}
-    />
+    <LoadingGate label="loadingDaily">
+      <DailyMatch
+        key={`${key}-${practice}`}
+        day={day}
+        resultKey={key}
+        practice={practice}
+        rules={rules}
+        seed={seed}
+        deck={cards}
+      />
+    </LoadingGate>
   )
 }
 

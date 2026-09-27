@@ -210,7 +210,10 @@ export function Menu() {
         <button
           type="button"
           className="link-subtle"
-          onClick={() => setCreditsOpen(true)}
+          onClick={() => {
+            playSound('button')
+            setCreditsOpen(true)
+          }}
         >
           {t('credits')}
         </button>
@@ -253,9 +256,7 @@ export function Menu() {
       <Modal open={creditsOpen} onClose={() => setCreditsOpen(false)}>
         <h2 className="modal-title">{t('credits')}</h2>
         <pre className="credits-body">{creditsText(settings.language)}</pre>
-        <p className="donate-blurb">{t('donateBlurb')}</p>
         <div className="modal-actions">
-          <DonateButton variant="button" />
           <button
             type="button"
             className="btn-primary"
@@ -304,9 +305,29 @@ function CountryPicker({ current, onPick }: CountryPickerProps) {
           </button>
         )
       })}
+      {COMING_SOON.map((country) => (
+        <div
+          key={country.flag}
+          className="country-tile country-tile-soon"
+          aria-disabled="true"
+          aria-label={`${country.name}. ${t('comingSoon')}`}
+        >
+          <img
+            className="country-flag country-flag-list"
+            src={country.flag}
+            alt=""
+            draggable={false}
+          />
+          <span className="country-tile-name">{country.name}</span>
+          <span className="country-tile-soon-badge">{t('comingSoon')}</span>
+        </div>
+      ))}
     </div>
   )
 }
+
+/** Countries announced in the picker but not playable yet. */
+const COMING_SOON = [{ name: 'Italia', flag: '/imagenes/banderas/it.svg' }]
 
 interface HowToPlayProps {
   open: boolean
@@ -434,7 +455,7 @@ function Onboarding() {
         <h2 className="modal-title">{t('termsTitle')}</h2>
         <p className="modal-text-muted">{t('termsHelp')}</p>
         <div className="terms-body" tabIndex={0}>
-          {termsText()}
+          {termsText(settings.language)}
         </div>
         <label className="checkbox">
           <input

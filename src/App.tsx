@@ -18,6 +18,8 @@ import {
 import { LiveRegion } from './components/LiveRegion'
 import { SkipLink } from './components/SkipLink'
 import { SyncChoice } from './components/SyncChoice'
+import { ConnectionBanners } from './components/ConnectionBanners'
+import { LoadingGate } from './components/LoadingGate'
 import { initViewportRefit } from './lib/viewport'
 import { Intro } from './screens/Intro'
 import { Menu } from './screens/Menu'
@@ -33,6 +35,7 @@ import { FreePlay } from './screens/FreePlay'
 import { Duel } from './screens/Duel'
 import { Daily } from './screens/Daily'
 import { DailyGame } from './screens/DailyGame'
+import { Terms } from './screens/Terms'
 
 export default function App() {
   const country = useSave((state) => state.settings.country)
@@ -63,22 +66,23 @@ export default function App() {
         <LiveRegion />
         <BackgroundMusic />
         <SyncChoice />
+        <ConnectionBanners />
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/levels" element={<Sections />} />
-          <Route path="/levels/:cards" element={<Levels />} />
+          <Route path="/levels/:cards" element={<LoadingGate label="loadingMap"><Levels /></LoadingGate>} />
           <Route path="/game/:levelId" element={<Game />} />
           <Route path="/free" element={<FreePlay />} />
           <Route path="/free/match" element={<Game free />} />
           <Route path="/stories" element={<Stories />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/tests" element={<Tests />} />
-          <Route path="/quiz/:level" element={<Quiz />} />
+          <Route path="/quiz/:level" element={<LoadingGate label="loadingQuiz"><Quiz /></LoadingGate>} />
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/duel" element={<Duel />} />
           <Route path="/daily" element={<Daily />} />
-          <Route path="/daily/play" element={<DailyGame />} />
+          <Route path="/daily/play" element={<DailyGame />} />`r`n          <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<Navigate to="/menu" replace />} />
         </Routes>
       </ContentProvider>
