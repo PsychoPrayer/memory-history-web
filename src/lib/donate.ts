@@ -1,7 +1,8 @@
-/** Ko-fi (or any donate) page. Set VITE_KOFI_URL in .env — e.g. https://ko-fi.com/tuusuario */
+/** Ko-fi page. Override with VITE_KOFI_URL in .env / Vercel if needed. */
+const DEFAULT_KOFI_URL = 'https://ko-fi.com/pancitogames'
 
 export function getDonateUrl(): string | null {
-  const url = (import.meta.env.VITE_KOFI_URL ?? '').trim()
+  const url = (import.meta.env.VITE_KOFI_URL ?? DEFAULT_KOFI_URL).trim()
   if (!url) return null
   try {
     const parsed = new URL(url)

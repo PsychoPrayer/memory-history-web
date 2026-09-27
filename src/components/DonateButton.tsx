@@ -37,8 +37,8 @@ function CupIcon() {
 }
 
 /**
- * Always visible. Opens a short note first; the Ko-fi link appears once
- * VITE_KOFI_URL is set, and until then the note says it is coming soon.
+ * Always visible. Opens a short note, then the Ko-fi link
+ * (default https://ko-fi.com/pancitogames, or VITE_KOFI_URL if set).
  */
 export function DonateButton({ variant = 'link', className = '' }: Props) {
   const t = useT()
