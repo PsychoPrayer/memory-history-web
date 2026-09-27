@@ -17,6 +17,7 @@ import {
 } from './lib/audio'
 import { LiveRegion } from './components/LiveRegion'
 import { SkipLink } from './components/SkipLink'
+import { SyncChoice } from './components/SyncChoice'
 import { initViewportRefit } from './lib/viewport'
 import { Intro } from './screens/Intro'
 import { Menu } from './screens/Menu'
@@ -61,6 +62,7 @@ export default function App() {
         <SkipLink />
         <LiveRegion />
         <BackgroundMusic />
+        <SyncChoice />
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="/menu" element={<Menu />} />

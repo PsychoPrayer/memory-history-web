@@ -1,4 +1,7 @@
-import { useEffect, useState, type FormEvent } from 'react'
+import { useEffect, useMemo, useState, type FormEvent } from 'react'
+import { SummaryList } from './SyncChoice'
+import { hasProgress, summarizeSave } from '../lib/saveSummary'
+import { useSave } from '../lib/save'
 import {
   accountLabel,
   getCloudStatus,
@@ -53,6 +56,10 @@ export function CloudAccount() {
   const [password, setPassword] = useState('')
   const [busy, setBusy] = useState(false)
   const [formError, setFormError] = useState<string | null>(null)
+  const [justCreated, setJustCreated] = useState(false)
+  const saved = useSave((state) => state)
+  const localSummary = useMemo(() => summarizeSave(saved), [saved])
+  const localHasProgress = hasProgress(localSummary)
 
   useEffect(() => subscribeCloud((next, nextUser, nextError) => {
     setStatus(next)
@@ -79,6 +86,7 @@ export function CloudAccount() {
         await signIn(login, password)
       } else {
         await signUp(login, password)
+        setJustCreated(true)
       }
     } catch (err) {
       setFormError(authErrorMessage(err, t))
@@ -99,6 +107,16 @@ export function CloudAccount() {
         <p className="cloud-form-error" role="alert">
           {error}
         </p>
+      )}
+
+      {user && justCreated && (
+        <p className="cloud-form-info" role="status">
+          {t('cloudSignUpDone', { name: accountLabel(user) })}
+        </p>
+      )}
+
+      {!user && mode === 'signin' && localHasProgress && (
+        <p className="cloud-nudge">{t('cloudUnsavedNudge')}</p>
       )}
 
       {user ? (
@@ -160,6 +178,18 @@ export function CloudAccount() {
           </label>
           {mode === 'signup' && (
             <p className="settings-help">{t('cloudSignUpHelp')}</p>
+          )}
+          {mode === 'signup' && localHasProgress && (
+            <div className="sync-carry">
+              <p className="sync-carry-title">{t('cloudCarryProgress')}</p>
+              <SummaryList summary={localSummary} />
+            </div>
+          )}
+          {mode === 'signin' && (
+            <p className="settings-help">
+              {t('cloudSignInEmailHint')}
+              {localHasProgress && ` ${t('cloudSignInChoiceHint')}`}
+            </p>
           )}
           {formError && (
             <p className="cloud-form-error" role="alert">

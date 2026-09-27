@@ -1,5 +1,6 @@
 import type { Session, User } from '@supabase/supabase-js'
 import { mergeSavedStates } from './mergeSave'
+import { hasProgress, sameSummary, summarizeSave } from './saveSummary'
 import { getSupabase, isSupabaseConfigured } from './supabase'
 import {
   hydrateState,
@@ -73,8 +74,80 @@ async function pushRemote(userId: string, state: SavedState) {
   if (error) throw error
 }
 
+/**
+ * Signing in on a device whose progress differs from the account's: the player
+ * picks what to keep. Until then nothing is pushed, so neither side is lost.
+ */
+export interface SyncConflict {
+  local: SavedState
+  remote: SavedState
+  accountName: string
+}
+
+/** account = load the cloud save here; merge = best of both; device = upload this device's. */
+export type SyncChoice = 'account' | 'merge' | 'device'
+
+let conflict: SyncConflict | null = null
+const conflictListeners = new Set<(value: SyncConflict | null) => void>()
+/** Set by an explicit sign-in so a background session refresh never prompts. */
+let askOnNextSignIn = false
+
+function setConflict(next: SyncConflict | null) {
+  conflict = next
+  for (const listener of conflictListeners) listener(conflict)
+}
+
+export function subscribeConflict(listener: (value: SyncConflict | null) => void) {
+  conflictListeners.add(listener)
+  listener(conflict)
+  return () => {
+    conflictListeners.delete(listener)
+  }
+}
+
+/** Keep onboarding done on this device even when adopting the account's save. */
+function adoptAccount(local: SavedState, remote: SavedState): SavedState {
+  const a = local.settings
+  const b = remote.settings
+  return {
+    ...remote,
+    updatedAt: Date.now(),
+    settings: {
+      ...b,
+      termsAccepted: a.termsAccepted || b.termsAccepted,
+      termsVersion: Math.max(a.termsVersion ?? 0, b.termsVersion ?? 0),
+      languageChosen: a.languageChosen || b.languageChosen,
+      pancitoMet: a.pancitoMet || b.pancitoMet,
+      guideSeen: a.guideSeen || b.guideSeen,
+      profileSetupDone: a.profileSetupDone || b.profileSetupDone,
+      tipsSeen: [...new Set([...(a.tipsSeen ?? []), ...(b.tipsSeen ?? [])])],
+    },
+  }
+}
+
+export async function resolveConflict(choice: SyncChoice) {
+  const pending = conflict
+  if (!pending || !user) return
+  const next =
+    choice === 'account'
+      ? adoptAccount(pending.local, pending.remote)
+      : choice === 'device'
+        ? { ...readState(), updatedAt: Date.now() }
+        : mergeSavedStates(readState(), pending.remote)
+
+  setStatus('syncing', user)
+  try {
+    hydrateState(next, { syncCloud: false })
+    await pushRemote(user.id, next)
+    setConflict(null)
+    setStatus('synced', user)
+  } catch (error) {
+    setStatus('error', user, error instanceof Error ? error.message : 'Cloud sync failed')
+  }
+}
+
 function schedulePush(state: SavedState) {
-  if (!user) return
+  if (!user || conflict) return
   if (pushTimer) clearTimeout(pushTimer)
   pushTimer = setTimeout(() => {
     void (async () => {
@@ -94,11 +167,20 @@ function schedulePush(state: SavedState) {
   }, 800)
 }
 
-async function pullAndMerge(session: Session) {
+async function pullAndMerge(session: Session, ask = false) {
   setStatus('syncing', session.user)
   try {
     const remote = await fetchRemote(session.user.id)
     const local = readState()
+    if (remote && ask) {
+      const mine = summarizeSave(local)
+      const theirs = summarizeSave(remote)
+      if (hasProgress(mine) && hasProgress(theirs) && !sameSummary(mine, theirs)) {
+        setConflict({ local, remote, accountName: accountLabel(session.user) })
+        setStatus('synced', session.user)
+        return
+      }
+    }
     if (remote) {
       const merged = mergeSavedStates(local, remote)
       hydrateState(merged, { syncCloud: false })
@@ -132,13 +214,17 @@ export function initCloudSync() {
     if (session) {
       user = session.user
       if (event === 'SIGNED_IN' || event === 'INITIAL_SESSION' || event === 'TOKEN_REFRESHED') {
-        if (event !== 'TOKEN_REFRESHED') void pullAndMerge(session)
-        else setStatus('synced', session.user)
+        if (event !== 'TOKEN_REFRESHED') {
+          const ask = event === 'SIGNED_IN' && askOnNextSignIn
+          askOnNextSignIn = false
+          void pullAndMerge(session, ask)
+        } else setStatus('synced', session.user)
       } else {
         setStatus('synced', session.user)
       }
     } else {
       if (pushTimer) clearTimeout(pushTimer)
+      setConflict(null)
       setStatus(isSupabaseConfigured() ? 'signedOut' : 'disabled', null)
     }
   })
@@ -201,11 +287,15 @@ export async function signIn(login: string, password: string) {
   const email = trimmed.includes('@')
     ? trimmed
     : usernameToEmail(normalizeUsername(trimmed))
+  askOnNextSignIn = true
   const { data, error } = await supabase.auth.signInWithPassword({
     email,
     password,
   })
-  if (error) throw error
+  if (error) {
+    askOnNextSignIn = false
+    throw error
+  }
   return data
 }
 
