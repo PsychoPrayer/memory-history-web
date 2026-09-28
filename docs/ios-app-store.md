@@ -45,4 +45,4 @@ Then Archive again (bump build number each upload).
 - Vite uses `base: './'` so assets load inside the native WebView.
 - Do not leave a `server.url` live-reload IP in production config.
 - Privacy labels: account / cloud save (Supabase) must match App Store Connect nutrition labels.
-- Android later: same `appId` as Play Console package name if replacing Unity there too.
+- Android Play package is `com.pancitogames.memoryhistory2` (legacy listing). iOS stays `com.pancitogames.memoryhistory`. `npm run cap:android` patches the Android id after sync.

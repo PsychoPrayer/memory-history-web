@@ -3,8 +3,9 @@ import type { CapacitorConfig } from '@capacitor/cli'
 /**
  * Native shell for App Store / Play Store.
  *
- * Bundle ID matches the live Unity listing (PancitoGames) so this build
- * replaces that app on App Store Connect / Play Console.
+ * iOS Bundle ID: com.pancitogames.memoryhistory (Unity / App Store).
+ * Android applicationId: com.pancitogames.memoryhistory2 (live Play listing).
+ * After `cap sync android`, run tools/patch-android-package.mjs (cap:android does it).
  */
 const config: CapacitorConfig = {
   appId: 'com.pancitogames.memoryhistory',
