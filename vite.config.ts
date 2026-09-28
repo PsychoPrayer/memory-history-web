@@ -78,7 +78,8 @@ export default defineConfig(({ mode }) => ({
   base: mode === 'native' ? './' : '/',
   plugins: [react(), offlineServiceWorker()],
   server: {
-    port: 5173,
+    /* Launchers may assign a free port through PORT. */
+    port: Number(process.env.PORT) || 5173,
     host: true,
   },
 }))
