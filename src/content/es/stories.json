@@ -77,7 +77,7 @@
   },
   {
     "id": "5",
-    "titulo": "Tortilla española",
+    "titulo": "Tortilla Española",
     "imagen": "/imagenes/historias/tortilla-espanola.webp",
     "es": {
       "presentacion": "Tortilla española: patata, huevo y sabor de hogar.",
@@ -96,7 +96,7 @@
   },
   {
     "id": "6",
-    "titulo": "El cid campeador",
+    "titulo": "El Cid Campeador",
     "imagen": "/imagenes/historias/el-cid-campeador.webp",
     "es": {
       "presentacion": "El Cid: honor castellano que cruzó la historia en verso.",
@@ -115,7 +115,7 @@
   },
   {
     "id": "7",
-    "titulo": "Crema catalana",
+    "titulo": "Crema Catalana",
     "imagen": "/imagenes/historias/crema-catalana.webp",
     "es": {
       "presentacion": "Crema catalana: dulce quemado que endulza la tradición.",
@@ -134,7 +134,7 @@
   },
   {
     "id": "8",
-    "titulo": "Las tomatinas",
+    "titulo": "La Tomatina",
     "imagen": "/imagenes/historias/las-tomatinas.webp",
     "es": {
       "presentacion": "La Tomatina: rojo, risa y fiesta en Buñol cada agosto.",
@@ -172,7 +172,7 @@
   },
   {
     "id": "10",
-    "titulo": "Las catedrales",
+    "titulo": "Las Catedrales",
     "imagen": "/imagenes/historias/las-catedrales.webp",
     "es": {
       "presentacion": "Arcos de piedra y mar: la catedral que esculpió el océano.",
@@ -191,7 +191,7 @@
   },
   {
     "id": "11",
-    "titulo": "Juan Sebastian Elcano",
+    "titulo": "Juan Sebastián Elcano",
     "imagen": "/imagenes/historias/juan-sebastian-elcano.webp",
     "es": {
       "presentacion": "Elcano: el marino que dio la vuelta al mundo entero.",
@@ -210,7 +210,7 @@
   },
   {
     "id": "12",
-    "titulo": "Jamon Serrano",
+    "titulo": "Jamón Serrano",
     "imagen": "/imagenes/historias/jamon-serrano.webp",
     "es": {
       "presentacion": "Jamón serrano: sal, tiempo y sabor de la montaña.",
@@ -229,7 +229,7 @@
   },
   {
     "id": "13",
-    "titulo": "Aguila imperial iberica",
+    "titulo": "Águila Imperial Ibérica",
     "imagen": "/imagenes/historias/aguila-imperial-iberica.webp",
     "es": {
       "presentacion": "Águila imperial: majestad alada de los cielos ibéricos.",
@@ -248,7 +248,7 @@
   },
   {
     "id": "14",
-    "titulo": "Camino de santiago",
+    "titulo": "Camino de Santiago",
     "imagen": "/imagenes/historias/camino-de-santiago.webp",
     "es": {
       "presentacion": "Camino de Santiago: pasos de fe hacia la concha sagrada.",
@@ -305,7 +305,7 @@
   },
   {
     "id": "17",
-    "titulo": "San Fermin",
+    "titulo": "San Fermín",
     "imagen": "/imagenes/historias/san-fermin.webp",
     "es": {
       "presentacion": "San Fermín: siete días de fiesta, tradición y encierro en Pamplona.",
@@ -324,7 +324,7 @@
   },
   {
     "id": "18",
-    "titulo": "Las fallas",
+    "titulo": "Las Fallas",
     "imagen": "/imagenes/historias/las-fallas.webp",
     "es": {
       "presentacion": "Fallas de Valencia: fuego, arte y fiesta en marzo.",
@@ -343,7 +343,7 @@
   },
   {
     "id": "19",
-    "titulo": "Pablo Picaso",
+    "titulo": "Pablo Picasso",
     "imagen": "/imagenes/historias/pablo-picaso.webp",
     "es": {
       "presentacion": "Picasso: genio malagueño que reinventó el arte moderno.",
@@ -362,7 +362,7 @@
   },
   {
     "id": "20",
-    "titulo": "La giralda",
+    "titulo": "La Giralda",
     "imagen": "/imagenes/historias/la-giralda.webp",
     "es": {
       "presentacion": "La Giralda: torre de Sevilla donde mora y cristianismo se abrazan.",
@@ -400,7 +400,7 @@
   },
   {
     "id": "22",
-    "titulo": "Diego Velazquez",
+    "titulo": "Diego Velázquez",
     "imagen": "/imagenes/historias/diego-velazquez.webp",
     "es": {
       "presentacion": "Velázquez: luz y genio del Siglo de Oro español.",
@@ -419,7 +419,7 @@
   },
   {
     "id": "23",
-    "titulo": "Los murcielago",
+    "titulo": "Los Murciélagos",
     "imagen": "/imagenes/historias/los-murcielago.webp",
     "es": {
       "presentacion": "Murciélagos ibéricos: guardianes nocturnos de cuevas y bosques.",
@@ -552,7 +552,7 @@
   },
   {
     "id": "30",
-    "titulo": "Aceite de oliva",
+    "titulo": "Aceite de Oliva",
     "imagen": "/imagenes/historias/aceite-de-oliva.webp",
     "es": {
       "presentacion": "Aceite de oliva: oro líquido de la dieta mediterránea.",
@@ -648,7 +648,7 @@
   {
     "id": "35",
     "titulo": "Clavel",
-    "imagen": "/imagenes/cartas/clavel.webp",
+    "imagen": "/imagenes/historias/clavel.webp",
     "es": {
       "presentacion": "Clavel español: flor de pasión, fe y fiesta.",
       "texto": [
@@ -666,7 +666,7 @@
   },
   {
     "id": "36",
-    "titulo": "Cristobal Colon",
+    "titulo": "Cristóbal Colón",
     "imagen": "/imagenes/historias/cristobal-colon.webp",
     "es": {
       "presentacion": "Colón: la nave que unió dos mundos en 1492.",
@@ -704,7 +704,7 @@
   },
   {
     "id": "38",
-    "titulo": "El faro de hercules",
+    "titulo": "El Faro de Hércules",
     "imagen": "/imagenes/historias/el-faro-de-hercules.webp",
     "es": {
       "presentacion": "Faro de Hércules: luz romana que aún guía el Atlántico.",
@@ -723,7 +723,7 @@
   },
   {
     "id": "39",
-    "titulo": "El misterio de Elche",
+    "titulo": "El Misterio de Elche",
     "imagen": "/imagenes/historias/el-misterio-de-elche.webp",
     "es": {
       "presentacion": "Misterio de Elche: teatro sagrado que vive cada agosto.",
@@ -742,7 +742,7 @@
   },
   {
     "id": "40",
-    "titulo": "Fiesta de moros y christianos",
+    "titulo": "Fiesta de Moros y Cristianos",
     "imagen": "/imagenes/historias/fiesta-de-moros-y-christianos.webp",
     "es": {
       "presentacion": "Moros y Cristianos: desfiles que reviven la Reconquista.",
@@ -780,7 +780,7 @@
   },
   {
     "id": "42",
-    "titulo": "Hernan Cortez",
+    "titulo": "Hernán Cortés",
     "imagen": "/imagenes/historias/hernan-cortez.webp",
     "es": {
       "presentacion": "Cortés: la conquista que cambió México y España.",
@@ -799,7 +799,7 @@
   },
   {
     "id": "43",
-    "titulo": "Isabel la catolica",
+    "titulo": "Isabel la Católica",
     "imagen": "/imagenes/historias/isabel-la-catolica.webp",
     "es": {
       "presentacion": "Isabel la Católica: reina que unió reinos y abrió mares.",
@@ -818,7 +818,7 @@
   },
   {
     "id": "44",
-    "titulo": "La sagrada familia",
+    "titulo": "La Sagrada Familia",
     "imagen": "/imagenes/historias/la-sagrada-familia.webp",
     "es": {
       "presentacion": "Sagrada Familia: el templo infinito de Gaudí en Barcelona.",
@@ -837,7 +837,7 @@
   },
   {
     "id": "45",
-    "titulo": "Mezquita de Cordoba",
+    "titulo": "Mezquita de Córdoba",
     "imagen": "/imagenes/historias/mezquita-de-cordoba.webp",
     "es": {
       "presentacion": "Mezquita de Córdoba: arcos donde convivieron tres culturas.",
@@ -856,7 +856,7 @@
   },
   {
     "id": "46",
-    "titulo": "Miguel de cervantes",
+    "titulo": "Miguel de Cervantes",
     "imagen": "/imagenes/historias/miguel-de-cervantes.webp",
     "es": {
       "presentacion": "Cervantes: padre del Quijote y de la novela moderna.",
@@ -875,7 +875,7 @@
   },
   {
     "id": "47",
-    "titulo": "Museo del prado",
+    "titulo": "Museo del Prado",
     "imagen": "/imagenes/historias/museo-del-prado.webp",
     "es": {
       "presentacion": "Museo del Prado: tesoro de pintura en el corazón de Madrid.",
@@ -894,7 +894,7 @@
   },
   {
     "id": "48",
-    "titulo": "Pulpo a la gallega",
+    "titulo": "Pulpo a la Gallega",
     "imagen": "/imagenes/historias/pulpo-a-la-gallega.webp",
     "es": {
       "presentacion": "Pulpo a la gallega: sabor del mar en cada bocado.",
@@ -913,7 +913,7 @@
   },
   {
     "id": "49",
-    "titulo": "Queso manchego",
+    "titulo": "Queso Manchego",
     "imagen": "/imagenes/historias/queso-manchego.webp",
     "es": {
       "presentacion": "Queso manchego: sabor de La Mancha en cada lonja.",
@@ -932,7 +932,7 @@
   },
   {
     "id": "50",
-    "titulo": "Semana grande bilbao",
+    "titulo": "Semana Grande de Bilbao",
     "imagen": "/imagenes/historias/semana-grande-bilbao.webp",
     "es": {
       "presentacion": "Semana Grande: nueve días de fiesta vasca en Bilbao.",
@@ -951,7 +951,7 @@
   },
   {
     "id": "51",
-    "titulo": "Rosca de reyes",
+    "titulo": "Roscón de Reyes",
     "imagen": "/imagenes/historias/rosca-de-reyes.webp",
     "es": {
       "presentacion": "Roscón de Reyes: dulce anillo de magia en enero.",
@@ -970,7 +970,7 @@
   },
   {
     "id": "52",
-    "titulo": "Sangria",
+    "titulo": "Sangría",
     "imagen": "/imagenes/historias/sangria.webp",
     "es": {
       "presentacion": "Sangría: vino, fruta y brisa de verano español.",
@@ -989,7 +989,7 @@
   },
   {
     "id": "53",
-    "titulo": "vinos",
+    "titulo": "Vinos",
     "imagen": "/imagenes/historias/vinos.webp",
     "es": {
       "presentacion": "Vinos de España: crianza, tierra y tradición en cada copa.",
@@ -1008,7 +1008,7 @@
   },
   {
     "id": "54",
-    "titulo": "Turron de alicante",
+    "titulo": "Turrón de Alicante",
     "imagen": "/imagenes/historias/turron-de-alicante.webp",
     "es": {
       "presentacion": "Turrón de Alicante: almendra y miel que endulzan la Navidad.",

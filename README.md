@@ -4,24 +4,28 @@ Reimplementación en React de **MemoryHistory2**, el proyecto de Unity. Mismo st
 PresupuestoApp: **React 18 + Vite 5 + TypeScript**, CSS global con variables, sin
 frameworks de estilos.
 
-MemoryHistory2 es la única fuente de verdad. El contenido (cartas, niveles, historias,
-preguntas, logros) no se escribe a mano: se exporta de ahí con un script y se consume
-como JSON.
+**Este repositorio es ahora la única fuente de verdad.** El contenido (cartas, niveles,
+historias, preguntas, logros) se edita directamente en `src/content/<país>/*.json`, y
+las imágenes y el audio en `public/`. El proyecto de Unity ya no se usa.
+
+> No ejecutes `npm run exportar`, `npm run medios` ni `npm run contenido`: leen de Unity
+> y sobrescribirían las correcciones hechas aquí (títulos, textos, imágenes nuevas).
+
+Para cambiar una imagen de historia, guárdala en `public/imagenes/historias/` como WebP
+(lado máximo 900 px, calidad 82) y apunta a ella el campo `imagen` de la historia.
 
 ## Puesta en marcha
 
 ```bash
 npm install
-npm run contenido   # exporta el contenido de Unity y prepara imágenes y audio
 npm run dev
 ```
 
 El servidor queda en http://localhost:5173.
 
-`npm run contenido` es obligatorio la primera vez. Sin él la app arranca pero enseña
-una pantalla que dice exactamente qué falta.
+## Histórico: el puente con Unity
 
-## El puente con Unity
+Así se generó el contenido inicial. Se conserva solo como referencia.
 
 El proyecto Unity se busca por defecto en `C:/Users/TechP/memoryhistory2/MemoryHistory2`.
 Se cambia con la variable de entorno `UNITY_PROJECT`.
@@ -147,7 +151,7 @@ src/
 │                 Logros, Ajustes, Libre
 ├── datos/        carga del contenido exportado y reglas de progresión
 ├── lib/          guardado, idiomas, audio, tablero y hook de partida
-├── contenido/    JSON generado por el exportador (no se edita a mano)
+├── contenido/    JSON del contenido de cada país (se edita aquí directamente)
 ├── index.css     todo el diseño
 └── tipos.ts      tipos compartidos
 

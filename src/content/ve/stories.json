@@ -134,7 +134,7 @@
   },
   {
     "id": "8",
-    "titulo": "Rio Orinoco",
+    "titulo": "Río Orinoco",
     "imagen": "/imagenes/historias/rio-orinoco.webp",
     "es": {
       "presentacion": "Navega el río Orinoco, la vida que fluye por Venezuela. Uno de los ríos más importantes de Sudamérica, cuna de ecosistemas únicos.",
@@ -153,7 +153,7 @@
   },
   {
     "id": "9",
-    "titulo": "Mucuchie",
+    "titulo": "Mucuchíes",
     "imagen": "/imagenes/historias/mucuchie.webp",
     "es": {
       "presentacion": "Conoce al Mucuchíes, el perro andino que acompañó a Bolívar. Nevado, el fiel compañero de la gesta libertadora.",
@@ -305,7 +305,7 @@
   },
   {
     "id": "17",
-    "titulo": "Chiguire",
+    "titulo": "Chigüire",
     "imagen": "/imagenes/historias/chiguire.webp",
     "es": {
       "presentacion": "Conoce al chigüire, el rey de los llanos. El roedor más grande del mundo, símbolo de la fauna venezolana.",
@@ -343,7 +343,7 @@
   },
   {
     "id": "19",
-    "titulo": "Medanos de Coro",
+    "titulo": "Médanos de Coro",
     "imagen": "/imagenes/historias/medanos-de-coro.webp",
     "es": {
       "presentacion": "Explora los Médanos de Coro, un desierto único en el Caribe. Dunas doradas moldeadas por el viento durante siglos.",
@@ -362,7 +362,7 @@
   },
   {
     "id": "20",
-    "titulo": "Los Tepuy",
+    "titulo": "Los Tepuyes",
     "imagen": "/imagenes/historias/los-tepuy.webp",
     "es": {
       "presentacion": "Asciende los tepuyes, montañas antiguas de 2,000 millones de años. Moradas de espíritus según la tradición pemón.",
@@ -381,7 +381,7 @@
   },
   {
     "id": "21",
-    "titulo": "Pabellon",
+    "titulo": "Pabellón",
     "imagen": "/imagenes/historias/pabellon.webp",
     "es": {
       "presentacion": "Saborea el pabellón criollo, el plato que evoca la bandera. Arroz, caraotas, carne mechada y plátano, sabor nacional.",
@@ -419,7 +419,7 @@
   },
   {
     "id": "23",
-    "titulo": "Avila",
+    "titulo": "Ávila",
     "imagen": "/imagenes/historias/avila.webp",
     "es": {
       "presentacion": "Sube el Ávila, Waraira Repano guardián de Caracas. La montaña que protege el valle y ofrece aventuras inolvidables.",
@@ -438,7 +438,7 @@
   },
   {
     "id": "24",
-    "titulo": "Orquidea",
+    "titulo": "Orquídea",
     "imagen": "/imagenes/historias/orquidea.webp",
     "es": {
       "presentacion": "Admira la orquídea, la Flor Nacional. La Cattleya mossiae, belleza que representa la naturaleza venezolana.",
@@ -457,7 +457,7 @@
   },
   {
     "id": "25",
-    "titulo": "Pan de Jamon",
+    "titulo": "Pan de Jamón",
     "imagen": "/imagenes/historias/pan-de-jamon.webp",
     "es": {
       "presentacion": "Disfruta el pan de jamón, el rey de la Navidad venezolana. Creación de Gustavo Ramella que endulza diciembre.",
@@ -571,7 +571,7 @@
   },
   {
     "id": "31",
-    "titulo": "Pico Bolivar",
+    "titulo": "Pico Bolívar",
     "imagen": "/imagenes/historias/pico-bolivar.webp",
     "es": {
       "presentacion": "Alcanza el Pico Bolívar, la cima de Venezuela. 4,978 metros de altura en los majestuosos Andes.",
@@ -590,7 +590,7 @@
   },
   {
     "id": "32",
-    "titulo": "El Silbon",
+    "titulo": "El Silbón",
     "imagen": "/imagenes/historias/el-silbon.webp",
     "es": {
       "presentacion": "Escucha la leyenda del Silbón, el fantasma de los llanos. Mitología popular que enseña valores y respeto.",
@@ -609,7 +609,7 @@
   },
   {
     "id": "33",
-    "titulo": "Luisa Caceres",
+    "titulo": "Luisa Cáceres",
     "imagen": "/imagenes/historias/luisa-caceres.webp",
     "es": {
       "presentacion": "Conoce a Luisa Cáceres, heroína de la independencia. Su valentía y sacrificio inspiraron la lucha libertadora.",
@@ -628,7 +628,7 @@
   },
   {
     "id": "34",
-    "titulo": "Manuelita Saenz",
+    "titulo": "Manuelita Sáenz",
     "imagen": "/imagenes/historias/manuelita-saenz.webp",
     "es": {
       "presentacion": "Descubre a Manuelita Sáenz, la Libertadora del Libertador. La mujer que salvó a Bolívar y desafió su época.",
@@ -685,7 +685,7 @@
   },
   {
     "id": "37",
-    "titulo": "Carnvales",
+    "titulo": "Carnavales",
     "imagen": "/imagenes/historias/carnvales.webp",
     "es": {
       "presentacion": "Celebra los Carnavales del Callao, fiesta de calipso y alegría. Tradición caribeña que llena de color y ritmo.",
@@ -723,7 +723,7 @@
   },
   {
     "id": "39",
-    "titulo": "Salto Angel",
+    "titulo": "Salto Ángel",
     "imagen": "/imagenes/historias/salto-angel.webp",
     "es": {
       "presentacion": "Maravíllate con el Salto Ángel, la cascada más alta del mundo. 979 metros de agua cayendo desde el Auyantepuy.",
@@ -742,7 +742,7 @@
   },
   {
     "id": "40",
-    "titulo": "Indigenas",
+    "titulo": "Indígenas",
     "imagen": "/imagenes/historias/indigenas.webp",
     "es": {
       "presentacion": "Conoce a los pueblos indígenas de Venezuela, guardianes de sabiduría ancestral. Warao, Wayúu, Pemón y más, riqueza cultural viva.",
@@ -780,7 +780,7 @@
   },
   {
     "id": "42",
-    "titulo": "Hotel Humbolt",
+    "titulo": "Hotel Humboldt",
     "imagen": "/imagenes/historias/hotel-humbolt.webp",
     "es": {
       "presentacion": "Descubre el Hotel Humboldt, joya arquitectónica en las alturas. Modernismo venezolano a más de 2,000 metros sobre el mar.",
@@ -837,7 +837,7 @@
   },
   {
     "id": "45",
-    "titulo": "Relampagos del Catatumbo",
+    "titulo": "Relámpago del Catatumbo",
     "imagen": "/imagenes/historias/relampagos-del-catatumbo.webp",
     "es": {
       "presentacion": "Observa el Relámpago del Catatumbo, fenómeno natural único. El Faro de Maracaibo, espectáculo de luz que ilumina las noches.",
@@ -875,7 +875,7 @@
   },
   {
     "id": "47",
-    "titulo": "Teleferico de Merida",
+    "titulo": "Teleférico de Mérida",
     "imagen": "/imagenes/historias/teleferico-de-merida.webp",
     "es": {
       "presentacion": "Viaja en el Teleférico de Mérida, el más alto y largo del mundo. De la ciudad a las nubes, aventura en los Andes.",
@@ -913,7 +913,7 @@
   },
   {
     "id": "49",
-    "titulo": "Petroleo",
+    "titulo": "Petróleo",
     "imagen": "/imagenes/historias/petroleo.webp",
     "es": {
       "presentacion": "Conoce la historia del petróleo en Venezuela, recurso que transformó al país. Del reventón de 1922 a la nacionalización de 1976..",
