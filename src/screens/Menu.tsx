@@ -19,6 +19,8 @@ import { setSetting, progressFor, useSave } from '../lib/save'
 import { playSound } from '../lib/audio'
 import { useT } from '../lib/i18n'
 import { streakLabel, todayResult, useDailyStats } from '../lib/daily'
+import { FEATURES } from '../lib/features'
+import { AccountPrompt } from '../components/AccountPrompt'
 import type { CountryCode, Language } from '../types'
 
 export function Menu() {
@@ -162,25 +164,29 @@ export function Menu() {
         <button type="button" className="btn-secondary" onClick={() => go('/free')}>
           {t('freePlay')}
         </button>
-        <button type="button" className="btn-secondary" onClick={() => go('/duel')}>
-          {t('duel')}
-        </button>
-        <button
-          type="button"
-          className="btn-secondary btn-daily"
-          data-pending={!dailyDone || undefined}
-          aria-label={`${t('dailyTitle')}. ${streakLabel(t, dailyStats.currentStreak)}${dailyDone ? '' : `. ${t('dailyPending')}`}`}
-          onClick={() => go('/daily')}
-        >
-          {!dailyDone && <span className="btn-daily-dot" aria-hidden="true" />}
-          {t('dailyShort')}
-          {dailyStats.currentStreak > 0 && (
-            <span className="btn-note btn-daily-streak" aria-hidden="true">
-              <FlameIcon />
-              {dailyStats.currentStreak}
-            </span>
-          )}
-        </button>
+        {FEATURES.duels && (
+          <button type="button" className="btn-secondary" onClick={() => go('/duel')}>
+            {t('duel')}
+          </button>
+        )}
+        {FEATURES.daily && (
+          <button
+            type="button"
+            className="btn-secondary btn-daily"
+            data-pending={!dailyDone || undefined}
+            aria-label={`${t('dailyTitle')}. ${streakLabel(t, dailyStats.currentStreak)}${dailyDone ? '' : `. ${t('dailyPending')}`}`}
+            onClick={() => go('/daily')}
+          >
+            {!dailyDone && <span className="btn-daily-dot" aria-hidden="true" />}
+            {t('dailyShort')}
+            {dailyStats.currentStreak > 0 && (
+              <span className="btn-note btn-daily-streak" aria-hidden="true">
+                <FlameIcon />
+                {dailyStats.currentStreak}
+              </span>
+            )}
+          </button>
+        )}
         <div className="menu-settings-row">
           <button
             type="button"
@@ -478,6 +484,9 @@ function Onboarding() {
       </Modal>
     )
   }
+
+  /* Last step: offer a cloud account, after Pancito's first menu tip. */
+  if ((settings.tipsSeen ?? []).includes('menu-play')) return <AccountPrompt />
 
   return null
 }

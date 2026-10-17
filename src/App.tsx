@@ -36,6 +36,7 @@ import { Duel } from './screens/Duel'
 import { Daily } from './screens/Daily'
 import { DailyGame } from './screens/DailyGame'
 import { Terms } from './screens/Terms'
+import { FEATURES } from './lib/features'
 
 export default function App() {
   const country = useSave((state) => state.settings.country)
@@ -80,9 +81,11 @@ export default function App() {
           <Route path="/tests" element={<Tests />} />
           <Route path="/quiz/:level" element={<LoadingGate label="loadingQuiz"><Quiz /></LoadingGate>} />
           <Route path="/achievements" element={<Achievements />} />
-          <Route path="/duel" element={<Duel />} />
-          <Route path="/daily" element={<Daily />} />
-          <Route path="/daily/play" element={<DailyGame />} />`r`n          <Route path="/terms" element={<Terms />} />
+          {/* Parked features (lib/features.ts): their URLs fall through to the menu. */}
+          {FEATURES.duels && <Route path="/duel" element={<Duel />} />}
+          {FEATURES.daily && <Route path="/daily" element={<Daily />} />}
+          {FEATURES.daily && <Route path="/daily/play" element={<DailyGame />} />}
+          <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<Navigate to="/menu" replace />} />
         </Routes>
       </ContentProvider>

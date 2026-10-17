@@ -9,6 +9,7 @@ import {
 } from '../lib/avatars'
 import { prizeAvatarsEarned, useDailyStats } from '../lib/daily'
 import { isNameBlocked } from '../lib/nameFilter'
+import { FEATURES } from '../lib/features'
 import { playSound } from '../lib/audio'
 import { useT, type TextKey } from '../lib/i18n'
 import { setSetting } from '../lib/save'
@@ -27,7 +28,15 @@ export function AvatarPicker({
   onSaved,
 }: AvatarPickerProps) {
   const t = useT()
-  const options = useMemo(() => listAvatarOptions(), [])
+  /* Prize avatars come from the daily challenge; while it is parked only the
+     free Pancitos show (plus a prize one the player already wears). */
+  const options = useMemo(
+    () =>
+      listAvatarOptions().filter(
+        (option) => FEATURES.daily || option.prize === 0 || option.id === initialAvatarId,
+      ),
+    [initialAvatarId],
+  )
   const [name, setName] = useState(initialName)
   const [avatarId, setAvatarId] = useState(initialAvatarId)
   const selected = avatarById(avatarId)
@@ -89,9 +98,11 @@ export function AvatarPicker({
       </button>
 
       <p className="avatar-picker-label">{t('chooseAvatar')}</p>
-      <p className="avatar-prize-note">
-        {t('avatarPrizesNote', { a: prizesShown, b: PRIZE_AVATAR_TOTAL })}
-      </p>
+      {FEATURES.daily && (
+        <p className="avatar-prize-note">
+          {t('avatarPrizesNote', { a: prizesShown, b: PRIZE_AVATAR_TOTAL })}
+        </p>
+      )}
       <div className="avatar-grid" role="listbox" aria-label={t('chooseAvatar')}>
         {options.map((option) => {
           /* A locked avatar someone already wears stays usable for them. */

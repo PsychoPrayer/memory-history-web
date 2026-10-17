@@ -9,6 +9,7 @@ import {
 import { summarizeSave, type SaveSummary } from '../lib/saveSummary'
 import { playSound } from '../lib/audio'
 import { useT } from '../lib/i18n'
+import { FEATURES } from '../lib/features'
 
 /** Shown after signing in when this device and the account both have different progress. */
 export function SyncChoice() {
@@ -136,10 +137,12 @@ export function SummaryList({ summary }: { summary: SaveSummary }) {
         <dt>{t('syncStories')}</dt>
         <dd>{summary.storiesRead}</dd>
       </div>
-      <div>
-        <dt>{t('syncDaily')}</dt>
-        <dd>{summary.dailyDays}</dd>
-      </div>
+      {FEATURES.daily && (
+        <div>
+          <dt>{t('syncDaily')}</dt>
+          <dd>{summary.dailyDays}</dd>
+        </div>
+      )}
     </dl>
   )
 }

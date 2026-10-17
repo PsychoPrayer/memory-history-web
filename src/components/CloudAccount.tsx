@@ -57,12 +57,12 @@ function authErrorMessage(err: unknown, t: ReturnType<typeof useT>): string {
   return message || t('cloudError')
 }
 
-export function CloudAccount() {
+export function CloudAccount({ initialMode = 'signin' }: { initialMode?: Mode } = {}) {
   const t = useT()
   const [status, setStatus] = useState<CloudStatus>(getCloudStatus().status)
   const [user, setUser] = useState<User | null>(getCloudStatus().user)
   const [error, setError] = useState<string | undefined>(getCloudStatus().error)
-  const [mode, setMode] = useState<Mode>('signin')
+  const [mode, setMode] = useState<Mode>(initialMode)
   const [login, setLogin] = useState('')
   const [password, setPassword] = useState('')
   const [code, setCode] = useState('')

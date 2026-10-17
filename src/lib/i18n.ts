@@ -320,7 +320,15 @@ const es = {
   reportImpersonation: 'Se hace pasar por otra persona',
   reportOther: 'Otro motivo',
   reportThanks: 'Gracias. Lo revisaremos.',
-  reportFailed: 'No se pudo enviar el reporte. Inténtalo más tarde.',  cloudCarryProgress: 'Tu progreso de este dispositivo se guardará en tu nuevo usuario:',
+  reportFailed: 'No se pudo enviar el reporte. Inténtalo más tarde.',  accountPromptTitle: '¿Guardamos tu progreso en la nube?',
+  accountPromptBody:
+    'Crea un usuario con nombre y contraseña (sin correo) y podrás seguir tu partida en cualquier dispositivo.',
+  accountPromptOptional:
+    'Es opcional: puedes jugar sin cuenta y crearla cuando quieras en Configuración.',
+  accountPromptYes: 'Sí, crear mi usuario',
+  accountPromptLater: 'Ahora no',
+  accountPromptCreateTitle: 'Crea tu usuario',
+  cloudCarryProgress: 'Tu progreso de este dispositivo se guardará en tu nuevo usuario:',
   cloudSignInEmailHint: '¿Tenías una cuenta con correo? Escribe tu correo en el campo Usuario.',
   cloudSignInChoiceHint:
     'Si tu cuenta ya tiene otro progreso guardado, podrás elegir cuál conservar.',
@@ -832,7 +840,15 @@ const en: Record<keyof typeof es, string> = {
   reportImpersonation: 'It impersonates someone else',
   reportOther: 'Another reason',
   reportThanks: 'Thank you. We will review it.',
-  reportFailed: 'The report could not be sent. Try again later.',  cloudCarryProgress: 'Your progress on this device will be saved to your new username:',
+  reportFailed: 'The report could not be sent. Try again later.',  accountPromptTitle: 'Save your progress in the cloud?',
+  accountPromptBody:
+    'Create a username and password (no email) and pick up your game on any device.',
+  accountPromptOptional:
+    'It is optional: you can play without an account and create one anytime in Settings.',
+  accountPromptYes: 'Yes, create my username',
+  accountPromptLater: 'Not now',
+  accountPromptCreateTitle: 'Create your username',
+  cloudCarryProgress: 'Your progress on this device will be saved to your new username:',
   cloudSignInEmailHint: 'Had an account with an email? Type your email in the Username field.',
   cloudSignInChoiceHint:
     'If your account already has different progress, you can choose which to keep.',

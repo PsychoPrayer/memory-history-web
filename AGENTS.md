@@ -22,13 +22,25 @@ explorador que guía al jugador.
   sección es un mapa antiguo con 10 niveles (5 normales y 5 difíciles). Ganar niveles da
   estrellas (1–3) y desbloquea **historias ilustradas**.
 - **Tests:** preguntas sobre las historias desbloqueadas.
-- **Desafío del día:** el mismo tablero para todos cada día (UTC), solo cuenta el primer
-  intento, cada error suma 3 s. Hay racha, pasaporte de sellos, clasificación y
-  **avatares de premio** (solo los 5 Pancitos base son libres; los demás se ganan aquí).
 - **PancitoLandia:** partida libre con una baraja de 59 Pancitos.
-- **Duelos** en tiempo real entre jugadores.
 - **Logros**, **pista** (bombilla, una por nivel) y **juego sin conexión**.
 - **Cuentas opcionales** con usuario y contraseña (sin correo) y código de recuperación.
+  Al terminar la bienvenida el juego **pregunta una vez** si quieres crearla
+  ("Sí, crear mi usuario" / "Ahora no"); siempre se puede hacer luego en Configuración.
+- **Avatares:** el jugador elige entre los 5 Pancitos.
+
+**El juego es para una sola persona y queremos mantenerlo simple y didáctico.**
+
+### Funciones aparcadas (no mostrar)
+
+Están construidas pero **apagadas** en `src/lib/features.ts` hasta que el proyecto
+esté más sólido. No aparecen en el menú y sus rutas llevan al menú. **No las actives ni
+las muestres** sin que Iván lo pida:
+
+- `duels`: duelos en tiempo real entre jugadores (`screens/Duel.tsx`, `lib/duel.ts`).
+- `daily`: desafío del día con clasificación, racha, pasaporte, logros propios y
+  **avatares de premio** (`screens/Daily*.tsx`, `lib/daily*.ts`). Con él apagado, el
+  selector solo ofrece los 5 Pancitos.
 
 Se publica como **web** (Vercel) y como **app nativa** para App Store y Google Play
 (Capacitor).
