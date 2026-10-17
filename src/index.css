@@ -893,27 +893,6 @@ button {
   margin-top: 0.4rem;
 }
 
-.link-donate {
-  color: var(--oro);
-  font-style: normal;
-  font-family: var(--versales);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-size: 0.88rem;
-}
-
-.link-donate:hover {
-  color: var(--tinta);
-}
-
-.donate-blurb {
-  margin: 0.5rem 0 0.85rem;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  color: var(--tinta-media);
-  text-align: center;
-}
-
 .star-counter {
   display: inline-flex;
   align-items: center;
@@ -1198,19 +1177,53 @@ button {
 
 .atlas-path {
   fill: none;
-  stroke-width: 0.55;
+  stroke-width: 0.95;
   stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 1.4 1.1;
-  opacity: 0.72;
+  stroke-dasharray: 1.6 1.2;
+}
+
+.atlas-path-halo {
+  fill: none;
+  stroke: rgba(246, 236, 210, 0.85);
+  stroke-width: 2;
+  stroke-linecap: round;
 }
 
 .atlas-path-normal {
-  stroke: rgba(154, 111, 39, 0.85);
+  stroke: #8a5f14;
 }
 
 .atlas-path-hard {
-  stroke: rgba(109, 37, 33, 0.78);
+  stroke: #7a1f1a;
+}
+
+/* The newest stretch of the route: appears, then its dashes march toward the next mission. */
+.atlas-paths g[data-latest='true'] {
+  animation: route-appear 0.9s ease-out 0.3s backwards;
+}
+
+.atlas-paths g[data-latest='true'] .atlas-path {
+  stroke-width: 1.15;
+  animation: route-march 1.4s linear 1.2s infinite;
+}
+
+@keyframes route-appear {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes route-march {
+  to {
+    stroke-dashoffset: -2.8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atlas-paths g[data-latest='true'],
+  .atlas-paths g[data-latest='true'] .atlas-path {
+    animation: none;
+  }
 }
 
 .atlas-route {
@@ -4364,81 +4377,6 @@ body:has(.screen-game) .app-banner-offline {
   .loading-pancito {
     animation: none;
   }
-}
-
-/* ---------- Donate -------------------------------------------------------- */
-
-.donate-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  min-height: 2.5rem;
-  padding: 0.35rem 1rem 0.35rem 0.8rem;
-  border: 1px solid #8a6418;
-  background: linear-gradient(180deg, #f6e2a8, #d9b35a);
-  color: #3a2a1a;
-  font-family: var(--versales);
-  font-size: 0.95rem;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 250, 230, 0.8),
-    0 3px 0 #7a5514,
-    0 6px 12px -4px rgba(20, 13, 6, 0.45);
-  transition: transform 0.14s ease, box-shadow 0.14s ease;
-}
-
-.donate-link:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 250, 230, 0.85),
-    0 5px 0 #7a5514,
-    0 0 16px 2px rgba(233, 196, 106, 0.45),
-    0 10px 16px -4px rgba(20, 13, 6, 0.45);
-}
-
-.donate-link:active {
-  transform: translateY(3px);
-  box-shadow: inset 0 2px 4px rgba(90, 60, 12, 0.4);
-}
-
-.donate-cup {
-  width: 1.2em;
-  height: 1.2em;
-  flex-shrink: 0;
-}
-
-.donate-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.45rem;
-}
-
-.donate-modal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.donate-modal-cup {
-  display: grid;
-  place-items: center;
-  width: 3.4rem;
-  height: 3.4rem;
-  margin-bottom: 0.6rem;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #f7df9a, #c9962e 60%, #8a6418);
-  color: #3a2a1a;
-  box-shadow:
-    inset 0 1px 1px rgba(255, 250, 230, 0.8),
-    0 3px 0 #5a3c0c,
-    0 6px 12px rgba(0, 0, 0, 0.35);
-}
-
-.donate-modal-cup .donate-cup {
-  width: 1.8rem;
-  height: 1.8rem;
 }
 
 /* ---------- Coming-soon country ------------------------------------------- */

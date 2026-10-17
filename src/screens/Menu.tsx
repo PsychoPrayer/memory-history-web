@@ -4,7 +4,6 @@ import { AvatarPicker, PlayerBadge } from '../components/AvatarPicker'
 import { MuteButton } from '../components/MuteButton'
 import { FlameIcon } from '../components/FlameIcon'
 import { Modal } from '../components/Modal'
-import { DonateButton } from '../components/DonateButton'
 import { PancitoSprite, PancitoTip } from '../components/PancitoGuide'
 import { STAR_TIP } from '../components/Stars'
 import {
@@ -206,7 +205,6 @@ export function Menu() {
       </nav>
 
       <footer className="menu-footer">
-        <DonateButton />
         <button
           type="button"
           className="link-subtle"

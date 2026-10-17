@@ -373,14 +373,6 @@ const es = {
   loadingTip6: 'Si juegas el desafío varios días seguidos, tu racha te regala avatares extra.',
   loadingTip7: 'Con un usuario, tu progreso te acompaña en cualquier dispositivo.',
   loadingTip8: 'Los tests se abren cuando desbloqueas un bloque de historias.',
-  donate: 'Donar',
-  donateCta: 'Invítanos un café',
-  donateTitle: 'Apoya Memory History',
-  donateSoon: 'Muy pronto podrás apoyarnos en Ko-fi. ¡Gracias por querer ayudar!',
-  donateGo: 'Ir a Ko-fi',
-  donateHelp: 'Apoya Memory History en Ko-fi. Se abre en una pestaña nueva.',
-  donateBlurb:
-    'Memory History es gratis y sin anuncios. Si te gusta, puedes invitarnos a un café: nos ayuda a pagar los servidores y a crear más países e historias.',
   hardModeTitle: 'Niveles difíciles',
   hardModeBody:
     'A partir de aquí no verás las imágenes al empezar. Empareja de memoria. Los primeros fallos (tantos como pares haya) sirven para explorar y no cuentan para las estrellas. Si pierdes las 3 estrellas, las cartas sin pareja se mezclan una sola vez.',
@@ -893,14 +885,6 @@ const en: Record<keyof typeof es, string> = {
   loadingTip6: 'Play the challenge several days in a row and your streak gives bonus avatars.',
   loadingTip7: 'With a username, your progress follows you to any device.',
   loadingTip8: 'Tests open once you unlock a block of stories.',
-  donate: 'Donate',
-  donateCta: 'Buy us a coffee',
-  donateTitle: 'Support Memory History',
-  donateSoon: 'Soon you will be able to support us on Ko-fi. Thanks for wanting to help!',
-  donateGo: 'Go to Ko-fi',
-  donateHelp: 'Support Memory History on Ko-fi. Opens in a new tab.',
-  donateBlurb:
-    'Memory History is free and ad-free. If you enjoy it, you can buy us a coffee: it helps pay for the servers and create more countries and stories.',
   hardModeTitle: 'Hard levels',
   hardModeBody:
     'From here on, cards stay face-down at the start. Match from memory. The first misses (one per pair) are for exploring and do not count toward stars. If you lose 3 stars, unmatched cards reshuffle once.',

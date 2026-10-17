@@ -1,8 +1,8 @@
 # TERMS AND CONDITIONS OF USE AND PRIVACY POLICY
 ## MEMORY HISTORY
 
-**Last updated:** September 28, 2026
-**Version:** 3.0
+**Last updated:** October 17, 2026
+**Version:** 3.1
 
 ---
 
@@ -18,7 +18,7 @@ If you do not agree with any part of these Terms, do not use the Game.
 
 Memory History is a free, ad-free educational memory game about the history and culture of different countries. It includes a level-based campaign, illustrated stories, tests, achievements, a free-play mode (PancitoLandia), real-time duels and a Daily challenge with a leaderboard.
 
-In these Terms, the "Developer" is the team that creates and maintains the Game (see section 16).
+In these Terms, the "Developer" is the team that creates and maintains the Game (see section 15).
 
 ---
 
@@ -77,7 +77,6 @@ Data is used **only** to make the Game work: saving and syncing your progress, e
 - **Supabase:** database and account system.
 - **Vercel:** hosting of the web version.
 - **Google Fonts:** the Game's typefaces. When they load, Google receives technical connection data such as your IP address.
-- **Ko-fi:** only if you choose to donate (see section 7).
 
 These providers process data only to deliver their service and may log basic technical data (such as your IP address) for security and operation, under their own privacy policies.
 
@@ -91,13 +90,13 @@ Account data is kept while the account exists. Daily challenge results are kept 
 
 ### 4.8. Your rights
 
-Depending on the law where you live (for example, the European Union's General Data Protection Regulation or United States privacy laws), you may have the right to access, correct or delete your data, to object to its processing or to receive a copy. To exercise these rights, write to the address in section 16. By creating an account, you consent to the processing of the data described in this section for the purposes stated.
+Depending on the law where you live (for example, the European Union's General Data Protection Regulation or United States privacy laws), you may have the right to access, correct or delete your data, to object to its processing or to receive a copy. To exercise these rights, write to the address in section 15. By creating an account, you consent to the processing of the data described in this section for the purposes stated.
 
 ---
 
 ## 5. MINORS
 
-The Game is suitable for all ages and can be used in full without an account. Children under 13 (or the minimum age set by the law of their country) should create an account, play duels or appear on the leaderboard **only with the permission of a parent or guardian**, and should not use their real name as a username or player name. Parents and guardians are responsible for supervising the use of the Game by minors in their care. A parent or guardian who believes a child created an account without permission can ask for its deletion at the address in section 16.
+The Game is suitable for all ages and can be used in full without an account. Children under 13 (or the minimum age set by the law of their country) should create an account, play duels or appear on the leaderboard **only with the permission of a parent or guardian**, and should not use their real name as a username or player name. Parents and guardians are responsible for supervising the use of the Game by minors in their care. A parent or guardian who believes a child created an account without permission can ask for its deletion at the address in section 15.
 
 ---
 
@@ -117,19 +116,7 @@ The Developer may, without notice, change inappropriate names, remove suspicious
 
 ---
 
-## 7. DONATIONS
-
-The Game is free. If you wish, you can support its development with a voluntary donation through **Ko-fi**, an external platform. Donations:
-
-- are entirely voluntary and do not unlock content, advantages or extra features in the Game;
-- are processed by Ko-fi and its payment providers under their own terms and privacy policies; the Developer never receives or stores your card or payment details;
-- are non-refundable unless applicable law or Ko-fi's terms say otherwise.
-
-Minors should only donate with the permission of a parent or guardian.
-
----
-
-## 8. LICENSE AND INTELLECTUAL PROPERTY
+## 7. LICENSE AND INTELLECTUAL PROPERTY
 
 You are granted a limited, personal, non-exclusive, non-transferable and revocable license to use the Game for personal, non-commercial purposes.
 
@@ -137,13 +124,13 @@ All rights in the Game, including the code, graphics, illustrations, characters 
 
 ---
 
-## 9. CONTENT CREATED WITH ARTIFICIAL INTELLIGENCE
+## 8. CONTENT CREATED WITH ARTIFICIAL INTELLIGENCE
 
 Some of the Game's content, such as images, illustrations and texts, was created or improved with artificial intelligence tools and reviewed by the team. This content may contain inaccuracies or imperfect depictions and is provided "as is", without any guarantee of accuracy.
 
 ---
 
-## 10. HISTORICAL, EDUCATIONAL, CULTURAL AND RELIGIOUS CONTENT
+## 9. HISTORICAL, EDUCATIONAL, CULTURAL AND RELIGIOUS CONTENT
 
 ### 10.1. Educational purpose
 
@@ -151,17 +138,17 @@ The Game is meant for learning and entertainment. Its historical and cultural co
 
 ### 10.2. Cultural and religious content
 
-The Game includes religious, cultural and traditional elements as part of each country's historical identity. They are presented respectfully and from a neutral cultural and educational perspective, **with no intention to offend** any belief, and without promoting or discouraging any religion. If you find any content inappropriate, you can write to the address in section 16 and we will review it.
+The Game includes religious, cultural and traditional elements as part of each country's historical identity. They are presented respectfully and from a neutral cultural and educational perspective, **with no intention to offend** any belief, and without promoting or discouraging any religion. If you find any content inappropriate, you can write to the address in section 15 and we will review it.
 
 ---
 
-## 11. NO WARRANTIES
+## 10. NO WARRANTIES
 
 THE GAME IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, TO THE FULLEST EXTENT PERMITTED BY LAW. The Developer does not guarantee that the Game will run without interruptions or errors, that progress saved in the cloud will always be available, or that the content is accurate or complete. We recommend not relying on a single device to keep your progress.
 
 ---
 
-## 12. LIMITATION OF LIABILITY
+## 11. LIMITATION OF LIABILITY
 
 To the fullest extent permitted by law, the Developer will not be liable for indirect, incidental, special or consequential damages, or for loss of data, progress or profits, arising from the use of or inability to use the Game. Because the Game is free, the Developer's total liability to you will not exceed zero United States dollars (USD 0.00), unless applicable law requires otherwise.
 
@@ -169,19 +156,19 @@ Some jurisdictions do not allow certain exclusions or limitations of liability; 
 
 ---
 
-## 13. CHANGES TO THE GAME AND THESE TERMS
+## 12. CHANGES TO THE GAME AND THESE TERMS
 
 The Developer may change, expand or discontinue the Game or any of its features at any time. The Developer may also update these Terms; when that happens, the date and version at the top will change and the Game will ask you to read and accept them again before you keep playing.
 
 ---
 
-## 14. TERMINATION
+## 13. TERMINATION
 
 You can stop using the Game at any time, delete your local data or delete your account (section 4.7). The Developer may suspend or remove access for anyone who breaks these Terms. The sections on intellectual property, no warranties, limitation of liability and governing law survive termination.
 
 ---
 
-## 15. GOVERNING LAW AND DISPUTES
+## 14. GOVERNING LAW AND DISPUTES
 
 These Terms are governed by the laws of the State of Minnesota and the applicable federal laws of the United States of America, without regard to conflict-of-law rules.
 
@@ -191,7 +178,7 @@ Nothing in this section limits any rights that the law of your country of reside
 
 ---
 
-## 16. CONTACT
+## 15. CONTACT
 
 For any question, data deletion request or comment about these Terms or the Game, write to:
 

@@ -99,10 +99,42 @@ const ATLAS_ROUTES: Record<
   },
 }
 
-function pathD(points: MarkerXY[]): string {
-  return points
-    .map(([x, y], index) => `${index === 0 ? 'M' : 'L'} ${x} ${y}`)
-    .join(' ')
+interface RouteSegment {
+  key: string
+  from: MarkerXY
+  to: MarkerXY
+  tone: 'normal' | 'hard'
+}
+
+/**
+ * The route grows with the player: a segment joins a level to the next one
+ * only once that next level is unlocked. Order follows the level numbers, so
+ * the last normal level links on to the first hard one.
+ */
+function unlockedSegments(
+  normal: Level[],
+  hard: Level[],
+  routes: { normal: MarkerXY[]; hard: MarkerXY[] },
+  all: Level[],
+  progress: ReturnType<typeof progressFor>,
+): RouteSegment[] {
+  const placed = [
+    ...normal.map((level, i) => ({ level, at: routes.normal[i] ?? routes.normal[routes.normal.length - 1] })),
+    ...hard.map((level, i) => ({ level, at: routes.hard[i] ?? routes.hard[routes.hard.length - 1] })),
+  ].sort((a, b) => a.level.numero - b.level.numero)
+
+  const segments: RouteSegment[] = []
+  for (let i = 1; i < placed.length; i += 1) {
+    const { level, at } = placed[i]!
+    if (!isUnlocked(level, all, progress)) continue
+    segments.push({
+      key: level.id,
+      from: placed[i - 1]!.at,
+      to: at,
+      tone: level.dificil ? 'hard' : 'normal',
+    })
+  }
+  return segments
 }
 
 export function Levels() {
@@ -129,6 +161,11 @@ export function Levels() {
     sectionIndex >= 0 && isSectionUnlocked(sectionIndex, sections, progress)
   const routes = ATLAS_ROUTES[country]
   const allStarsDone = campaignPerfect(levels, progress)
+  const segments = useMemo(
+    () =>
+      section ? unlockedSegments(section.normal, section.hard, routes, levels, progress) : [],
+    [section, routes, levels, progress],
+  )
 
   const stats = useMemo(
     () => (section ? sectionStats(section, progress) : null),
@@ -272,8 +309,22 @@ export function Levels() {
             preserveAspectRatio="none"
             aria-hidden="true"
           >
-            <path className="atlas-path atlas-path-normal" d={pathD(routes.normal)} />
-            <path className="atlas-path atlas-path-hard" d={pathD(routes.hard)} />
+            {segments.map((segment, index) => {
+              const latest = index === segments.length - 1
+              const ends = {
+                x1: segment.from[0],
+                y1: segment.from[1],
+                x2: segment.to[0],
+                y2: segment.to[1],
+              }
+              return (
+                <g key={segment.key} data-latest={latest || undefined}>
+                  {/* Paper-colored halo so the dashes read on any part of the map. */}
+                  <line className="atlas-path-halo" {...ends} />
+                  <line className={`atlas-path atlas-path-${segment.tone}`} {...ends} />
+                </g>
+              )
+            })}
           </svg>
 
           <AtlasRoute
