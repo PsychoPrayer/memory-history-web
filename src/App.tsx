@@ -3,7 +3,6 @@ import {
   BrowserRouter,
   Navigate,
   Route,
-  Routes,
   useLocation,
 } from 'react-router-dom'
 import { ContentProvider } from './data/content'
@@ -20,6 +19,8 @@ import { SkipLink } from './components/SkipLink'
 import { SyncChoice } from './components/SyncChoice'
 import { ConnectionBanners } from './components/ConnectionBanners'
 import { LoadingGate } from './components/LoadingGate'
+import { PageTurnRoutes } from './components/PageTurn'
+import { BookOpening } from './components/BookOpening'
 import { initViewportRefit } from './lib/viewport'
 import { Intro } from './screens/Intro'
 import { Menu } from './screens/Menu'
@@ -68,7 +69,7 @@ export default function App() {
         <BackgroundMusic />
         <SyncChoice />
         <ConnectionBanners />
-        <Routes>
+        <PageTurnRoutes>
           <Route path="/" element={<Intro />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/levels" element={<Sections />} />
@@ -87,7 +88,8 @@ export default function App() {
           {FEATURES.daily && <Route path="/daily/play" element={<DailyGame />} />}
           <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<Navigate to="/menu" replace />} />
-        </Routes>
+        </PageTurnRoutes>
+        <BookOpening />
       </ContentProvider>
     </BrowserRouter>
   )

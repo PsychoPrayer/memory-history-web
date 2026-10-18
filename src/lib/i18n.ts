@@ -524,6 +524,9 @@ const es = {
     'Copia todo el archivo supabase/duel.sql del repo, pégalo y pulsa Run.',
   duelSetupStep3:
     'Database → Publications → supabase_realtime → marca duel_matches y duel_results. Luego vuelve aquí y pulsa Reintentar.',
+  bookTitle: 'Libro de Exploración',
+  bookDiaryOf: 'Diario de viaje de',
+  bookOpenHint: 'Toca el libro para abrirlo',
 } as const
 
 const en: Record<keyof typeof es, string> = {
@@ -1040,6 +1043,9 @@ const en: Record<keyof typeof es, string> = {
     'Copy the whole supabase/duel.sql file from the repo, paste it, and click Run.',
   duelSetupStep3:
     'Database → Publications → supabase_realtime → enable duel_matches and duel_results. Then come back and tap Try again.',
+  bookTitle: 'Book of Exploration',
+  bookDiaryOf: 'Travel journal of',
+  bookOpenHint: 'Tap the book to open it',
 }
 
 export const TEXTS = { es, en }

@@ -13,6 +13,8 @@ export type SoundEffect =
   | 'miss'
   | 'star'
   | 'urgency'
+  | 'clasp'
+  | 'page'
 
 const MUSIC: Record<Track, string> = {
   intro: '/audio/MusicaLogin.mp3',
@@ -22,6 +24,7 @@ const MUSIC: Record<Track, string> = {
 const FILES: Partial<Record<SoundEffect, string>> = {
   card: '/audio/Carta.mp3',
   section: '/audio/EndVictory.mp3',
+  page: '/audio/Paper.mp3',
 }
 
 /** Skip leading silence baked into the Unity MP3 exports. */
@@ -315,6 +318,13 @@ const SYNTHESIZED: Partial<Record<SoundEffect, () => void>> = {
   star: () => {
     tone({ from: 1320, duration: 0.28, type: 'sine', volume: 0.9 })
     tone({ from: 1980, duration: 0.22, type: 'sine', volume: 0.35, delay: 0.03 })
+  },
+  /** Brass buckle snapping open: two metal ticks over a soft thud. */
+  clasp: () => {
+    tone({ from: 2600, to: 1900, duration: 0.04, type: 'square', volume: 0.35 })
+    tone({ from: 3400, to: 2800, duration: 0.05, type: 'triangle', volume: 0.45, delay: 0.06 })
+    tone({ from: 180, to: 90, duration: 0.16, type: 'sine', volume: 0.7, delay: 0.05 })
+    noiseBurst(0.5)
   },
   urgency: () => {
     tone({ from: 880, duration: 0.07, type: 'square', volume: 0.35 })

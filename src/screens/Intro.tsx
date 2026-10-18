@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useT } from '../lib/i18n'
+import { preloadBookImages } from '../components/BookOpening'
 
 const STEPS = [
   {
@@ -19,11 +20,17 @@ export function Intro() {
   const navigate = useNavigate()
   const t = useT()
   const [step, setStep] = useState(0)
+  // The menu opens with the book animation (components/BookOpening).
+  const enterBook = () => navigate('/menu', { replace: true, state: { openBook: true } })
+
+  useEffect(() => {
+    void preloadBookImages()
+  }, [])
 
   useEffect(() => {
     const id = window.setTimeout(() => {
       if (step + 1 < STEPS.length) setStep(step + 1)
-      else navigate('/menu', { replace: true })
+      else enterBook()
     }, STEPS[step].ms)
     return () => clearTimeout(id)
   }, [navigate, step])
@@ -31,7 +38,7 @@ export function Intro() {
   useEffect(() => {
     const skip = (event: KeyboardEvent) => {
       if (event.key === ' ' || event.key === 'Escape' || event.key === 'Enter') {
-        navigate('/menu', { replace: true })
+        enterBook()
       }
     }
     window.addEventListener('keydown', skip)
@@ -41,7 +48,7 @@ export function Intro() {
   const current = STEPS[step]
 
   return (
-    <main id="main-content" className="screen-intro" tabIndex={-1} onClick={() => navigate('/menu', { replace: true })}>
+    <main id="main-content" className="screen-intro" tabIndex={-1} onClick={() => enterBook()}>
       <div className="intro-logo" key={step}>
         <img
           className="intro-image"
