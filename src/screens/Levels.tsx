@@ -31,70 +31,68 @@ function sectionKey(cards: number): TextKey {
 }
 
 const ATLAS_MAP: Record<CountryCode, string> = {
-  VE: '/imagenes/atlas/ve.png',
-  ES: '/imagenes/atlas/es.png',
-  EU: '/imagenes/atlas/eu.png',
+  VE: '/imagenes/atlas/ve.webp',
+  ES: '/imagenes/atlas/es.webp',
+  EU: '/imagenes/atlas/eu.webp',
 }
 
 type MarkerXY = [number, number]
 
 /**
- * Marker positions as % of the map image (same aspect for all atlas plates).
- * Tuned so routes stay on the country landmass, not neighbors or ocean.
+ * Marker positions as % of the illustrated map (16:9). Each level sits on one
+ * of the places painted on the map, in an order that zigzags across it so the
+ * journey reads left to right when the map is panned on a phone.
  */
 const ATLAS_ROUTES: Record<
   CountryCode,
   { normal: MarkerXY[]; hard: MarkerXY[] }
 > = {
-  /* Venezuela — placed from the marked atlas guide. */
   VE: {
     normal: [
-      [27.3, 26.9], // 1 Maracaibo (further west)
-      [37.7, 28.9], // 2 east of Maracaibo
-      [52.1, 26.9], // 3 Caracas coast
-      [62.5, 26.9], // 4 Cumaná north-central
-      [72.8, 28.9], // 5 Cumaná east / Orinoco delta
+      [16, 50], // 1 Andean village under Pico Bolívar
+      [15, 26], // 2 stilt houses on Lake Maracaibo
+      [30, 22], // 3 Coro and its dunes
+      [40, 50], // 4 cattle ranch in Los Llanos
+      [51, 33], // 5 colonial Caracas under El Ávila
     ],
     hard: [
-      [31.5, 45.3], // 6 Los Llanos west
-      [48, 47.4], // 7 Los Llanos center
-      [54.2, 61.7], // 8 south-central (lower)
-      [64.5, 51.4], // 9 Guayana west
-      [74.8, 55.5], // 10 Guayana east
+      [60, 48], // 6 Ciudad Bolívar and the Angostura bridge
+      [70, 31], // 7 Margarita: Santa Rosa castle
+      [85, 52], // 8 Warao stilt houses in the Orinoco delta
+      [79, 81], // 9 Pemón village in La Gran Sabana
+      [57, 80], // 10 Angel Falls
     ],
   },
-  /* Spain — placed from the marked atlas guide. */
   ES: {
     normal: [
-      [32.5, 23.8], // 1 Galicia (Santiago)
-      [42.8, 21.8], // 2 Asturias
-      [50.1, 34.1], // 3 Castilla (north / Burgos)
-      [60.4, 26.9], // 4 Aragón (near Pyrenees)
-      [71.7, 28.9], // 5 Cataluña (coast)
+      [20, 22], // 1 Santiago de Compostela
+      [34, 20], // 2 Asturian village with hórreos
+      [52, 26], // 3 Segovia aqueduct and alcázar
+      [74, 23], // 4 Pyrenean stone village
+      [88, 33], // 5 Barcelona: Sagrada Familia
     ],
     hard: [
-      [36.6, 51.4], // 6 Extremadura
-      [51.1, 51.4], // 7 south of Madrid (Vielle / New Castile)
-      [47, 78], // 8 Andalucía (Sevilla–Córdoba)
-      [64.5, 57.6], // 9 Murcia
-      [80, 48.4], // 10 Islas Baleares (Mallorca)
+      [75, 70], // 6 Valencia: barracas by the Albufera
+      [61, 58], // 7 La Mancha windmills
+      [50, 52], // 8 Madrid: Royal Palace and Puerta de Alcalá
+      [52, 80], // 9 Granada: the Alhambra
+      [29, 77], // 10 Seville: the Giralda
     ],
   },
-  /* Continental US: avoid Canada, Mexico, deep ocean */
   EU: {
     normal: [
-      [19.1, 28.9], // Northwest
-      [33.5, 26.9], // Northern plains
-      [48, 28.9], // Upper Midwest
-      [62.5, 31], // Great Lakes
-      [76.9, 28.9], // Northeast
+      [13, 34], // 1 California mission among redwoods
+      [35, 22], // 2 Yellowstone cabin and geyser
+      [29, 48], // 3 Grand Canyon lookout
+      [33, 60], // 4 New Mexico adobe pueblo
+      [46, 72], // 5 Texas frontier town
     ],
     hard: [
-      [17, 49.4], // California
-      [29.4, 55.5], // Southwest
-      [43.9, 59.6], // Texas
-      [58.3, 61.7], // Deep South
-      [70.7, 57.6], // Southeast / Florida approach
+      [66, 72], // 6 New Orleans and the steamboat
+      [60, 49], // 7 Great Plains farm
+      [50, 27], // 8 Mount Rushmore
+      [81, 45], // 9 Washington: the Capitol
+      [89, 33], // 10 New York: Statue of Liberty
     ],
   },
 }
@@ -181,10 +179,13 @@ export function Levels() {
   const storiesTotal = stories.length
   const storiesLeft = Math.max(0, storiesTotal - storiesOpen)
 
+  // On a phone the map is wider than the screen: start on the next mission.
   useEffect(() => {
     const node = scrollRef.current
     if (!node) return
-    node.scrollLeft = Math.max(0, (node.scrollWidth - node.clientWidth) / 2)
+    const next = node.querySelector<HTMLElement>('.atlas-marker-wrap[data-next]')
+    const center = next ? next.offsetLeft : node.scrollWidth / 2
+    node.scrollLeft = Math.max(0, center - node.clientWidth / 2)
   }, [country, active])
 
   const onPointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {

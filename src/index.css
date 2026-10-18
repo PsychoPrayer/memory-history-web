@@ -1144,8 +1144,8 @@ button {
 }
 
 .atlas-plate {
-  /* Exact atlas PNG aspect (991×747 after matte crop) so % markers match landmasses. */
-  --atlas-ratio: 1.3266;
+  /* Exact aspect of the illustrated maps (1672×941) so % markers land on their places. */
+  --atlas-ratio: 1.7768;
   --atlas-height: min(62vh, 34rem);
   position: relative;
   height: var(--atlas-height);
@@ -1365,6 +1365,30 @@ button {
 
 .atlas-marker[data-open='false'] {
   cursor: not-allowed;
+}
+
+/* Until a level is won its coin is see-through, so the place painted under it shows. */
+.atlas-marker[data-stars='0'] {
+  opacity: 0.8;
+}
+
+.atlas-marker[data-stars='0']:hover:not(:disabled),
+.atlas-marker[data-stars='0']:focus-visible {
+  opacity: 0.9;
+}
+
+/* The map spreads wide: on a computer it fills the page, on a phone it pans. */
+.screen-levels {
+  --hoja-max: 100rem;
+}
+
+@media (min-width: 48rem) {
+  .atlas-plate {
+    --atlas-height: min(
+      calc(var(--app-height) - 14rem),
+      calc((min(var(--hoja-max), 100vw) - 7rem) / var(--atlas-ratio))
+    );
+  }
 }
 
 .atlas-marker[data-open='false'] .atlas-marker-face {

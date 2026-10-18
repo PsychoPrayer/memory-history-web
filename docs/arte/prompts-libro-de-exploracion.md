@@ -47,6 +47,7 @@ fondo, sin mesa y sin sombra proyectada.
 
 ### 0.4 Formatos
 - Libro y páginas: **vertical 2:3** (1200 × 1800 px).
+- Mapas: **horizontales**, lo más anchos posible (ideal 16:9).
 - Tableros de juego: **vertical 9:16** (1080 × 1920 px).
 - Pide siempre **PNG**. Para piezas sueltas, **fondo transparente**.
 - **Sin texto dentro de las imágenes** salvo que el prompt lo diga. La IA escribe con
@@ -193,66 +194,112 @@ Decoración: [DECORACIÓN]
 
 ## 5. Mapas nuevos de cada país
 
-Problemas del mapa actual: los niveles quedan amontonados y algunos se tapan, y el mapa
-es antiguo pero poco didáctico. Los nuevos mapas tienen que ser **ilustrados, con los
-lugares de las historias dibujados**, y con un **camino claro de 10 paradas** bien
-separadas.
+Estilo de referencia: el mapa de fantasía de tinta y acuarela con marco ornamental que
+propuso ChatGPT (adjúntalo como imagen de referencia). Cambios respecto a los mapas
+actuales:
+
+- **Horizontales y anchos**, para que en el ordenador llenen la pantalla. En el móvil el
+  mapa se verá a su altura y se podrá **deslizar de lado a lado** (eso lo hago yo en el
+  juego, empezando siempre por la siguiente misión).
+- **Cada nivel es un lugar típico de su región**: ciudades, pueblos, aldeas, misiones,
+  palafitos… no solo castillos.
+- **Sin caminos dibujados**: los caminos punteados los dibuja el juego y van apareciendo
+  a medida que desbloqueas niveles.
 
 ### Reglas para los 3 mapas
-- Vertical 2:3 (1200 × 1800): el mapa ocupa una página del libro.
-- **10 paradas vacías** (círculos de pergamino con borde dorado, sin números) unidas por
-  un camino punteado que serpentea por todo el país. Entre parada y parada debe haber
-  al menos el ancho de dos paradas, y ninguna debe tapar otra.
-- Las paradas 1 a 5 en la mitad superior y las 6 a 10 en la mitad inferior. Las 6 a 10
-  con borde rojo vino en lugar de dorado, porque son los niveles difíciles.
-- Lugares famosos dibujados como pequeñas viñetas en acuarela, cerca del camino pero
-  sin tapar las paradas.
-- Sin nombres de ciudades ni textos. Solo una cartela decorativa vacía para el nombre
-  del país.
-- Al recibirlos, mido dónde quedó cada parada y coloco los niveles encima.
+- Pide el formato más ancho que permita ChatGPT (ideal 16:9; si no, 3:2 horizontal,
+  1536 × 1024).
+- Exactamente **10 lugares**, más o menos del mismo tamaño, **muy separados** y lejos
+  del marco, con un **pequeño claro liso delante** de cada uno: ahí pongo el número del
+  nivel.
+- El recorrido va **de izquierda a derecha subiendo y bajando** (zigzag), para que en el
+  móvil el viaje se siga deslizando hacia la derecha.
+- **Sin textos, nombres ni números** en ninguna parte (la IA escribe con faltas).
+- Al recibirlos, mido dónde quedó cada lugar y coloco los niveles y los caminos.
+- Si un lugar sale repetido o falta, no lo corrijas: pide el mapa de nuevo en una
+  conversación nueva.
+
+### Prompt base (cambia solo lo que va entre corchetes)
 
 ```
 [BLOQUE DE ESTILO]
-Mapa ilustrado y didáctico de [PAÍS], estilo atlas antiguo de exploración en acuarela,
-vertical 2:3 (1200x1800). Silueta del país clara y reconocible, con relieve suave de
-montañas, ríos en azul tenue y mar con olas de grabado. Un camino punteado color tinta
-serpentea por todo el país uniendo 10 paradas vacías (círculos de pergamino de igual
-tamaño, sin números): paradas 1-5 con borde dorado en la mitad superior, paradas 6-10
-con borde rojo vino en la mitad inferior. Las paradas, bien separadas, nunca se tapan.
-Junto al camino, pequeñas viñetas en acuarela de: [LUGARES]. Una rosa de los vientos
-dorada en una esquina, un barco antiguo en el mar y una cartela vacía arriba para el
-nombre del país. Sin texto en ninguna parte.
+Mapa ilustrado de [PAÍS] para un juego educativo, en el estilo de la imagen de
+referencia: tinta marrón y acuarela suave sobre pergamino envejecido, marco ornamental
+dorado con entrelazados, rosa de los vientos en una esquina y una barra de escala
+decorativa SIN números.
+Formato HORIZONTAL panorámico, el más ancho que puedas (ideal 16:9). Vista cenital
+plana, sin perspectiva. La silueta de [PAÍS] reconocible y estilizada ocupa casi todo
+el ancho, con [GEOGRAFÍA].
+Dibuja exactamente 10 LUGARES como pequeñas viñetas del mismo tamaño, cada uno típico
+de su región (NO castillos genéricos), formando un recorrido de izquierda a derecha que
+sube y baja en zigzag:
+[LUGARES]
+Reglas: los 10 lugares muy separados entre sí (al menos el ancho de un lugar entre uno
+y otro) y lejos del marco; delante de cada lugar, un pequeño claro liso de hierba o
+tierra. NO dibujes caminos, carreteras ni líneas punteadas entre los lugares. Entre
+ellos, pequeños detalles de la región: [DETALLES]. Sin nombres, sin letras y sin
+números en ninguna parte.
 ```
 
-**Venezuela** — LUGARES: el Ávila sobre Caracas, el Salto Ángel, los tepuyes, los
-Médanos de Coro, el río Orinoco con toninas, el Pico Bolívar con el teleférico de
-Mérida, el relámpago del Catatumbo sobre el lago de Maracaibo, la Colonia Tovar, el
-Puente de Angostura, el Arco de Carabobo, una playa caribeña con palmeras, un araguaney
-en flor, un turpial, una guacamaya, un chigüire y una orquídea.
+### Venezuela
+- **GEOGRAFÍA:** el mar Caribe arriba con un barco antiguo, la cordillera de los Andes
+  al oeste, los llanos en el centro, el río Orinoco cruzando hacia el delta al este y
+  la selva con tepuyes al sureste.
+- **LUGARES:**
+  1. Palafitos de madera sobre el lago de Maracaibo, con el relámpago del Catatumbo al fondo.
+  2. Coro: casitas coloniales de colores junto a los médanos de arena.
+  3. Un pueblo andino de casas blancas y tejas con su iglesia, al pie del Pico Bolívar nevado.
+  4. Un hato llanero: casa de bahareque con corral, caballos y palmeras de moriche.
+  5. Caracas colonial: catedral y plaza con el cerro Ávila verde detrás.
+  6. Isla de Margarita: el castillo de Santa Rosa sobre un pueblo pesquero con peñeros.
+  7. Ciudad Bolívar: casco colonial a orillas del Orinoco con el puente de Angostura.
+  8. El delta del Orinoco: palafitos warao entre canales y manglares, con una curiara.
+  9. Canaima: el Salto Ángel cayendo desde un tepuy en la selva.
+  10. La Gran Sabana: aldea pemón de churuatas redondas con techo de paja frente al Roraima.
+- **DETALLES:** un turpial, guacamayas, chigüires, toninas en el Orinoco, araguaneyes
+  en flor amarilla, orquídeas y palmeras en la costa.
 
-**España** — LUGARES: el Acueducto de Segovia, la Sagrada Familia, la Alhambra, la
-Giralda, la Mezquita de Córdoba, la Torre de Hércules en A Coruña, la cueva de
-Covadonga en Asturias, el Camino de Santiago con su concha, la Ciudad Encantada de
-Cuenca, el Museo del Prado en Madrid, una falla en Valencia, los toros de San Fermín en
-Pamplona, la Tomatina en Buñol, las islas Baleares, un águila imperial ibérica, olivos
-en Andalucía y, en un recuadro aparte abajo, las islas Canarias con el Teide.
+### España
+- **GEOGRAFÍA:** el océano Atlántico a la izquierda y el mar Mediterráneo a la derecha
+  con barcos antiguos, los Pirineos al norte, la meseta en el centro y Sierra Nevada al
+  sur; Portugal y Francia apenas esbozados en tono pálido; las islas Baleares a la
+  derecha.
+- **LUGARES:**
+  1. Santiago de Compostela: la catedral con peregrinos y conchas.
+  2. Una aldea asturiana de montaña con hórreos de madera y vacas.
+  3. Segovia: el acueducto romano y el alcázar.
+  4. Sevilla: la Giralda entre casas blancas y naranjos.
+  5. Madrid: el Palacio Real y la Puerta de Alcalá.
+  6. La Mancha: molinos de viento blancos sobre una colina con un pequeño castillo.
+  7. Granada: la Alhambra con Sierra Nevada nevada detrás.
+  8. Valencia: barracas blancas de la huerta junto a la Albufera con barcas.
+  9. Un pueblo de piedra del Pirineo con iglesia románica.
+  10. Barcelona: la Sagrada Familia junto al puerto.
+- **DETALLES:** olivos, viñedos, ovejas, un águila imperial y campos de girasoles.
 
-**Estados Unidos** — LUGARES: la Estatua de la Libertad y el Empire State en Nueva York,
-el Puente de Brooklyn, la Campana de la Libertad en Filadelfia, el Capitolio en
-Washington, las Cataratas del Niágara, el Monte Rushmore, el géiser Old Faithful en
-Yellowstone, las Montañas Rocosas, el Gran Cañón, la Ruta 66, un saguaro en Arizona,
-secuoyas gigantes y el Golden Gate en California, el letrero de colinas de Hollywood
-(sin letras), el río Mississippi con un barco de vapor, un búfalo en las praderas, un
-águila calva y un cocodrilo en Florida.
+### Estados Unidos
+- **GEOGRAFÍA:** el océano Pacífico a la izquierda y el Atlántico a la derecha con
+  barcos antiguos, las Montañas Rocosas al oeste, las Grandes Llanuras en el centro,
+  el río Misisipi bajando hasta el golfo de México y los Grandes Lagos arriba.
+- **LUGARES:**
+  1. California: una misión española de adobe con campanario, entre secuoyas gigantes.
+  2. El Gran Cañón con un mirador de madera.
+  3. Yellowstone: una cabaña de troncos junto a un géiser.
+  4. Nuevo México: un pueblo de adobe de varios pisos con escaleras de madera.
+  5. El Monte Rushmore.
+  6. Texas: un pueblo del Oeste con saloon, molino de viento y vaqueros.
+  7. Las Grandes Llanuras: una granja con granero rojo, silo y campos de trigo.
+  8. Nueva Orleans: casas criollas con balcones de hierro y un barco de vapor en el Misisipi.
+  9. Washington: el Capitolio con su cúpula blanca.
+  10. Nueva York: la Estatua de la Libertad delante de los rascacielos.
+- **DETALLES:** búfalos, un águila calva, saguaros en el desierto, un faro en la costa
+  este, las cataratas del Niágara pequeñas junto a los Grandes Lagos y un cocodrilo en
+  Florida.
 
-**Italia** (cuando toque) — misma plantilla, con el Coliseo, la torre de Pisa, los
-canales de Venecia con góndolas, el Vesubio, la catedral de Florencia, olivos de la
-Toscana y Sicilia.
-
-> Opcional, para más variedad: un mapa por capítulo (7 por país), cada uno a una hora
-> del día o estación distinta (amanecer, día, atardecer, noche estrellada, otoño,
-> invierno con nieve, fiesta con farolillos). Usa el mapa base como referencia y pide
-> "el mismo mapa, mismo encuadre y mismas paradas, pero [ambiente]".
+**Italia** (cuando toque): misma plantilla, con el Coliseo, la torre de Pisa, Venecia
+con góndolas, el Vesubio sobre Nápoles, la catedral de Florencia, un pueblo de la
+Toscana entre cipreses, los trulli de Alberobello, las casas de colores de Cinque
+Terre, un pueblo de Sicilia y los Dolomitas.
 
 ---
 
