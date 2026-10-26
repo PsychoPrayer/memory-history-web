@@ -13,3 +13,9 @@ empaquetado/
 .DS_Store
 Thumbs.db
 *.log
+
+# Local builds, promo screenshots and IDE files (kept on disk, not in git)
+docs/android/
+docs/promo/
+android/.idea/
+.claude/

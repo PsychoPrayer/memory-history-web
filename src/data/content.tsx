@@ -19,8 +19,6 @@ import type {
   Test,
 } from '../types'
 
-import { DAILY_ACHIEVEMENTS } from '../lib/daily'
-import { FEATURES } from '../lib/features'
 
 const MODULES = import.meta.glob<{ default: unknown }>('../content/**/*.json')
 
@@ -72,7 +70,7 @@ export function loadContent(code: CountryCode): Promise<CountryContent> {
       stories,
       questions,
       tests,
-      achievements: FEATURES.daily ? [...achievements, ...DAILY_ACHIEVEMENTS] : achievements,
+      achievements,
       sections,
     }),
   )

@@ -1,0 +1,24 @@
+---
+description: All project code must be written in English
+alwaysApply: true
+---
+
+# English-only code
+
+The user may give instructions in Spanish. Always implement in **English**.
+
+## Must be English
+- File and folder names
+- React components, hooks, functions, variables, types
+- CSS class names and custom properties added going forward
+- Comments and commit messages
+- i18n **keys** (e.g. `play`, `settings`)
+
+## May stay Spanish
+- Player-facing strings in the `es` i18n object
+- Story/quiz narrative text inside content JSON
+- Legal terms document text
+- Legacy localStorage migration keys (read-only compatibility)
+- Unity export field names that match the exported schema until re-exported
+
+Do not introduce new Spanish identifiers in TypeScript, TSX, CSS, or tooling scripts.

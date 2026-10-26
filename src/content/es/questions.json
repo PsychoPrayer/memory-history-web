@@ -29,7 +29,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué extremos geográficos menciona el texto sobre España?",
+      "enunciado": "¿Qué dos zonas de España marcan sus extremos norte y sur?",
       "opciones": [
         "Cantabria y Murcia",
         "Los Pirineos y Andalucía",
@@ -38,7 +38,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which geographic extremes does the text mention about Spain?",
+      "enunciado": "Which two areas mark Spain's northern and southern extremes?",
       "opciones": [
         "Cantabria and Murcia",
         "The Pyrenees and Andalusia",
@@ -269,7 +269,7 @@
     "numero": 3,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Qué detalle técnico destaca en los bloques de piedra del acueducto?",
+      "enunciado": "¿Qué detalle técnico destaca en los bloques de piedra del Acueducto de Segovia?",
       "opciones": [
         "Están unidos con hierro forjado",
         "Fueron traídos desde Roma",
@@ -278,7 +278,7 @@
       ]
     },
     "en": {
-      "enunciado": "What technical detail stands out in the aqueduct's stone blocks?",
+      "enunciado": "What technical detail stands out in the stone blocks of the Aqueduct of Segovia?",
       "opciones": [
         "They are joined with wrought iron",
         "They were brought from Rome",
@@ -341,7 +341,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cómo se suele servir la tortilla en los bares españoles?",
+      "enunciado": "¿Cómo se suele servir la tortilla española en los bares?",
       "opciones": [
         "Como postre frío",
         "Como sopa caliente",
@@ -350,7 +350,7 @@
       ]
     },
     "en": {
-      "enunciado": "How is the tortilla usually served in Spanish bars?",
+      "enunciado": "How is the Spanish tortilla usually served in bars?",
       "opciones": [
         "As a cold dessert",
         "As a hot soup",
@@ -701,7 +701,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué se puede hacer entre los arcos en bajamar?",
+      "enunciado": "¿Qué se puede hacer entre los arcos de la playa de las Catedrales en bajamar?",
       "opciones": [
         "Esquiar sobre la arena",
         "Caminar entre ellos",
@@ -710,7 +710,7 @@
       ]
     },
     "en": {
-      "enunciado": "What can you do among the arches at low tide?",
+      "enunciado": "What can you do among the arches of Cathedrals Beach at low tide?",
       "opciones": [
         "Ski on the sand",
         "Walk among them",
@@ -761,7 +761,7 @@
       "enunciado": "What was the name of the ship Elcano commanded on his return?",
       "opciones": [
         "La Pinta",
-        "The Victoria",
+        "La Victoria",
         "La Santa María",
         "La Niña"
       ]
@@ -821,7 +821,7 @@
     "numero": 2,
     "correcta": 0,
     "es": {
-      "enunciado": "¿Qué denominaciones de origen del jamón serrano menciona la historia?",
+      "enunciado": "¿Cuáles de estos son lugares de origen protegido del jamón serrano?",
       "opciones": [
         "Teruel o Trevélez",
         "Rioja o Ribera del Duero",
@@ -830,7 +830,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which serrano ham designations of origin does the story mention?",
+      "enunciado": "Which of these are protected places of origin for serrano ham?",
       "opciones": [
         "Teruel or Trevélez",
         "Rioja or Ribera del Duero",
@@ -845,7 +845,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Desde cuándo existe la tradición de conservar la pierna del cerdo en España?",
+      "enunciado": "¿Desde cuándo se cura el jamón serrano en España?",
       "opciones": [
         "Desde el siglo XX",
         "Desde la época romana y medieval",
@@ -854,7 +854,7 @@
       ]
     },
     "en": {
-      "enunciado": "Since when has the tradition of preserving pork leg existed in Spain?",
+      "enunciado": "Since when has serrano ham been cured in Spain?",
       "opciones": [
         "Since the 20th century",
         "Since Roman and medieval times",
@@ -917,7 +917,7 @@
     "numero": 3,
     "correcta": 0,
     "es": {
-      "enunciado": "¿Cuándo se recuperó la población del águila imperial gracias a programas de conservación?",
+      "enunciado": "¿Cuándo se recuperó la población del águila imperial ibérica gracias a los programas de conservación?",
       "opciones": [
         "En el siglo XXI",
         "En el siglo XIX",
@@ -926,7 +926,7 @@
       ]
     },
     "en": {
-      "enunciado": "When did the imperial eagle population recover thanks to conservation programs?",
+      "enunciado": "When did the Spanish imperial eagle population recover thanks to conservation programs?",
       "opciones": [
         "In the 21st century",
         "In the 19th century",
@@ -1299,23 +1299,23 @@
     "id": "story19_question1",
     "historia": "19",
     "numero": 1,
-    "correcta": 0,
+    "correcta": 1,
     "es": {
-      "enunciado": "¿Dónde nació Pablo Picasso en 1881?",
+      "enunciado": "¿Con qué título se reconoce a Francisco de Goya en la historia del arte?",
       "opciones": [
-        "Málaga",
-        "Barcelona",
-        "Madrid",
-        "Sevilla"
+        "El escultor del Renacimiento",
+        "Maestro de la luz y la sombra",
+        "Fundador del paisaje abstracto",
+        "Pionero de la arquitectura gótica"
       ]
     },
     "en": {
-      "enunciado": "Where was Pablo Picasso born in 1881?",
+      "enunciado": "By what title is Francisco de Goya known in art history?",
       "opciones": [
-        "Málaga",
-        "Barcelona",
-        "Madrid",
-        "Seville"
+        "The Renaissance sculptor",
+        "Master of light and shadow",
+        "Founder of abstract landscape",
+        "Pioneer of Gothic architecture"
       ]
     }
   },
@@ -1325,21 +1325,21 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Con qué artista desarrolló Picasso el cubismo?",
+      "enunciado": "¿Cómo se llama la serie de grabados de Goya que muestra los horrores de la guerra?",
       "opciones": [
-        "Salvador Dalí",
-        "Georges Braque",
-        "Diego Velázquez",
-        "Joan Miró"
+        "Caprichos botánicos",
+        "Los desastres de la guerra",
+        "Crónicas de la corte",
+        "Fantasías del Mediterráneo"
       ]
     },
     "en": {
-      "enunciado": "With which artist did Picasso develop Cubism?",
+      "enunciado": "What is the name of Goya's print series showing the horrors of war?",
       "opciones": [
-        "Salvador Dalí",
-        "Georges Braque",
-        "Diego Velázquez",
-        "Joan Miró"
+        "Botanical Caprices",
+        "The Disasters of War",
+        "Court Chronicles",
+        "Mediterranean Fantasies"
       ]
     }
   },
@@ -1347,23 +1347,23 @@
     "id": "story19_question3",
     "historia": "19",
     "numero": 3,
-    "correcta": 2,
+    "correcta": 1,
     "es": {
-      "enunciado": "¿Qué obra de Picasso denuncia el bombardeo de una villa vasca en 1937?",
+      "enunciado": "Además de la pintura al óleo, ¿qué técnica dominó Goya para expresar su visión más crítica?",
       "opciones": [
-        "Las meninas",
-        "La persistencia de la memoria",
-        "Guernica",
-        "El jardín de las delicias"
+        "La litografía",
+        "El grabado y el aguafuerte",
+        "La vidriera",
+        "El mosaico bizantino"
       ]
     },
     "en": {
-      "enunciado": "Which Picasso work denounces the 1937 bombing of a Basque town?",
+      "enunciado": "Besides oil painting, which technique did Goya master to express his most critical vision?",
       "opciones": [
-        "Las Meninas",
-        "The Persistence of Memory",
-        "Guernica",
-        "The Garden of Earthly Delights"
+        "Lithography",
+        "Etching and engraving",
+        "Stained glass",
+        "Byzantine mosaic"
       ]
     }
   },
@@ -1613,7 +1613,7 @@
     "numero": 2,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Qué cueva famosa se menciona en relación con murciélagos y patrimonio?",
+      "enunciado": "¿En qué famosa cueva española, conocida por sus pinturas rupestres, viven también murciélagos?",
       "opciones": [
         "Cueva del Drach en Mallorca",
         "Cueva de Nerja",
@@ -1622,7 +1622,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which famous cave is mentioned in relation to bats and heritage?",
+      "enunciado": "In which famous Spanish cave, known for its cave paintings, do bats also live?",
       "opciones": [
         "Drach Cave in Mallorca",
         "Nerja Cave",
@@ -1637,7 +1637,7 @@
     "numero": 3,
     "correcta": 0,
     "es": {
-      "enunciado": "¿Qué simbolizan hoy los murciélagos según la historia?",
+      "enunciado": "¿Qué simbolizan hoy los murciélagos en España?",
       "opciones": [
         "Conservación",
         "Deportes de riesgo",
@@ -1646,7 +1646,7 @@
       ]
     },
     "en": {
-      "enunciado": "What do bats symbolize today according to the story?",
+      "enunciado": "What do bats symbolize in Spain today?",
       "opciones": [
         "Conservation",
         "Extreme sports",
@@ -1731,23 +1731,23 @@
     "id": "story25_question1",
     "historia": "25",
     "numero": 1,
-    "correcta": 0,
+    "correcta": 1,
     "es": {
-      "enunciado": "¿En qué localidad alavesa se encuentran las Bodegas Ysios?",
+      "enunciado": "¿En qué región de España está la Cueva de Altamira?",
       "opciones": [
-        "Laguardia",
-        "Vitoria-Gasteiz",
-        "Bilbao",
-        "Pamplona"
+        "Andalucía",
+        "Cantabria",
+        "Cataluña",
+        "Galicia"
       ]
     },
     "en": {
-      "enunciado": "In which Álava town are Bodegas Ysios located?",
+      "enunciado": "In which region of Spain is the Cave of Altamira?",
       "opciones": [
-        "Laguardia",
-        "Vitoria-Gasteiz",
-        "Bilbao",
-        "Pamplona"
+        "Andalusia",
+        "Cantabria",
+        "Catalonia",
+        "Galicia"
       ]
     }
   },
@@ -1755,23 +1755,23 @@
     "id": "story25_question2",
     "historia": "25",
     "numero": 2,
-    "correcta": 1,
+    "correcta": 2,
     "es": {
-      "enunciado": "¿Quién diseñó las Bodegas Ysios?",
+      "enunciado": "¿Qué animal aparece con más frecuencia en el famoso techo pintado de Altamira?",
       "opciones": [
-        "Antoni Gaudí",
-        "Santiago Calatrava",
-        "Felipe II",
-        "Pablo Picasso"
+        "El mamut lanudo",
+        "El reno",
+        "El bisonte",
+        "El jabalí"
       ]
     },
     "en": {
-      "enunciado": "Who designed Bodegas Ysios?",
+      "enunciado": "Which animal appears most often on the famous painted ceiling of Altamira?",
       "opciones": [
-        "Antoni Gaudí",
-        "Santiago Calatrava",
-        "Philip II",
-        "Pablo Picasso"
+        "The woolly mammoth",
+        "The reindeer",
+        "The bison",
+        "The wild boar"
       ]
     }
   },
@@ -1781,21 +1781,21 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Bajo qué denominación de origen se elaboran vinos en Ysios?",
+      "enunciado": "¿Qué técnica usaron los artistas de Altamira para dar volumen a sus pinturas?",
       "opciones": [
-        "Jerez-Xérès-Sherry",
-        "Priorat",
-        "Rioja",
-        "Rías Baixas"
+        "Pintura al óleo sobre lienzo",
+        "Luces eléctricas",
+        "Aprovechar los relieves de la roca",
+        "Mosaicos de piedra pulida"
       ]
     },
     "en": {
-      "enunciado": "Under which designation of origin are wines made at Ysios?",
+      "enunciado": "What technique did the Altamira artists use to give their paintings volume?",
       "opciones": [
-        "Jerez-Xérès-Sherry",
-        "Priorat",
-        "Rioja",
-        "Rías Baixas"
+        "Oil paint on canvas",
+        "Electric lights",
+        "Using the bumps of the rock",
+        "Polished stone mosaics"
       ]
     }
   },
@@ -2429,7 +2429,7 @@
     "numero": 3,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Qué agentes naturales esculpieron principalmente estas formaciones?",
+      "enunciado": "¿Qué agentes naturales esculpieron las rocas de la Ciudad Encantada?",
       "opciones": [
         "Volcanes y hielo",
         "Placas tectónicas",
@@ -2438,7 +2438,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which natural agents mainly sculpted these formations?",
+      "enunciado": "Which natural agents sculpted the rocks of the Enchanted City?",
       "opciones": [
         "Volcanoes and ice",
         "Tectonic plates",
@@ -2573,7 +2573,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿En qué fecha llegó a América según la tradición conmemorada en España?",
+      "enunciado": "¿En qué fecha llegó Cristóbal Colón a América, día que se conmemora en España?",
       "opciones": [
         "1 de enero",
         "12 de octubre",
@@ -2582,7 +2582,7 @@
       ]
     },
     "en": {
-      "enunciado": "On what date did he reach the Americas according to tradition commemorated in Spain?",
+      "enunciado": "On what date did Christopher Columbus reach the Americas, a day commemorated in Spain?",
       "opciones": [
         "January 1",
         "October 12",
@@ -2621,7 +2621,7 @@
     "numero": 2,
     "correcta": 3,
     "es": {
-      "enunciado": "¿De qué reino se le considera primer rey?",
+      "enunciado": "¿De qué reino se considera a Don Pelayo el primer rey?",
       "opciones": [
         "León",
         "Castilla",
@@ -2630,7 +2630,7 @@
       ]
     },
     "en": {
-      "enunciado": "Of which kingdom is he considered the first king?",
+      "enunciado": "Of which kingdom is Don Pelayo considered the first king?",
       "opciones": [
         "León",
         "Castile",
@@ -2693,7 +2693,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿De qué época es el origen romano del faro?",
+      "enunciado": "¿En qué siglo construyeron los romanos la Torre de Hércules?",
       "opciones": [
         "Siglo V a. C.",
         "Siglo XV",
@@ -2702,7 +2702,7 @@
       ]
     },
     "en": {
-      "enunciado": "From which era is the lighthouse's Roman origin?",
+      "enunciado": "In which century did the Romans build the Tower of Hercules?",
       "opciones": [
         "5th century BC",
         "15th century",
@@ -2789,21 +2789,21 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿En qué meses de agosto se representa tradicionalmente?",
+      "enunciado": "¿Qué días de agosto se representa tradicionalmente el Misterio de Elche?",
       "opciones": [
-        "1 y 2",
-        "10 y 11",
-        "14 y 15",
-        "20 y 21"
+        "1 y 2 de agosto",
+        "10 y 11 de agosto",
+        "14 y 15 de agosto",
+        "20 y 21 de agosto"
       ]
     },
     "en": {
-      "enunciado": "On which August dates is it traditionally performed?",
+      "enunciado": "On which days of August is the Mystery of Elche traditionally performed?",
       "opciones": [
-        "1 and 2",
-        "10 and 11",
-        "14 and 15",
-        "20 and 21"
+        "August 1 and 2",
+        "August 10 and 11",
+        "August 14 and 15",
+        "August 20 and 21"
       ]
     }
   },
@@ -2837,7 +2837,7 @@
     "numero": 2,
     "correcta": 0,
     "es": {
-      "enunciado": "¿En qué localidad alicantina es especialmente famosa esta fiesta?",
+      "enunciado": "¿En qué localidad alicantina es especialmente famosa la fiesta de Moros y Cristianos?",
       "opciones": [
         "Alcoy",
         "Benidorm",
@@ -2846,7 +2846,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which Alicante town is this festival especially famous?",
+      "enunciado": "In which Alicante town is the Moors and Christians festival especially famous?",
       "opciones": [
         "Alcoy",
         "Benidorm",
@@ -2861,7 +2861,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿En qué comunidades son muy habituales estas fiestas?",
+      "enunciado": "¿En qué zona de España son muy habituales las fiestas de Moros y Cristianos?",
       "opciones": [
         "Galicia y Asturias",
         "Alicante y Valencia",
@@ -2870,7 +2870,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which regions are these festivals very common?",
+      "enunciado": "In which part of Spain are Moors and Christians festivals very common?",
       "opciones": [
         "Galicia and Asturias",
         "Alicante and Valencia",
@@ -3077,7 +3077,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué viaje histórico apoyó Isabel en 1492?",
+      "enunciado": "¿Qué viaje histórico apoyó Isabel la Católica en 1492?",
       "opciones": [
         "La conquista de Flandes",
         "La vuelta al mundo de Magallanes",
@@ -3086,7 +3086,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which historic voyage did Isabella support in 1492?",
+      "enunciado": "Which historic voyage did Isabella the Catholic support in 1492?",
       "opciones": [
         "Conquest of Flanders",
         "Magellan's circumnavigation",
@@ -3125,7 +3125,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿En qué año se inició la construcción de la basílica?",
+      "enunciado": "¿En qué año se inició la construcción de la Sagrada Familia?",
       "opciones": [
         "1700",
         "1929",
@@ -3134,7 +3134,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which year did construction of the basilica begin?",
+      "enunciado": "In which year did construction of the Sagrada Família begin?",
       "opciones": [
         "1700",
         "1929",
@@ -3149,7 +3149,7 @@
     "numero": 3,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Qué estilo arquitectónico catalán define el proyecto?",
+      "enunciado": "¿Qué estilo arquitectónico catalán define la Sagrada Familia?",
       "opciones": [
         "Gótico puro",
         "Barroco",
@@ -3158,7 +3158,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which Catalan architectural style defines the project?",
+      "enunciado": "Which Catalan architectural style defines the Sagrada Família?",
       "opciones": [
         "Pure Gothic",
         "Baroque",
@@ -3197,7 +3197,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué califa amplió notablemente la mezquita en el siglo X?",
+      "enunciado": "¿Qué califa amplió notablemente la Mezquita de Córdoba en el siglo X?",
       "opciones": [
         "Almanzor",
         "Abd al-Rahman III",
@@ -3206,7 +3206,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which caliph notably expanded the mosque in the 10th century?",
+      "enunciado": "Which caliph notably expanded the Mosque of Córdoba in the 10th century?",
       "opciones": [
         "Almanzor",
         "Abd al-Rahman III",
@@ -3221,7 +3221,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿En qué año la ciudad pasó al dominio castellano?",
+      "enunciado": "¿En qué año pasó Córdoba al dominio castellano?",
       "opciones": [
         "711",
         "1085",
@@ -3230,7 +3230,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which year did the city pass to Castilian rule?",
+      "enunciado": "In which year did Córdoba pass to Castilian rule?",
       "opciones": [
         "711",
         "1085",
@@ -3293,7 +3293,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué día conmemora el natalicio de Cervantes en la ONU?",
+      "enunciado": "¿Qué día internacional dedica la ONU al idioma en que escribió Miguel de Cervantes?",
       "opciones": [
         "Día del Libro",
         "Día de la Hispanidad",
@@ -3302,7 +3302,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which day commemorates Cervantes's birthday at the UN?",
+      "enunciado": "Which international day does the UN dedicate to the language Miguel de Cervantes wrote in?",
       "opciones": [
         "Book Day",
         "Hispanic Day",
@@ -3437,7 +3437,7 @@
     "numero": 3,
     "correcta": 3,
     "es": {
-      "enunciado": "¿En qué tipo de plato se sirve tradicionalmente?",
+      "enunciado": "¿En qué tipo de plato se sirve tradicionalmente el pulpo a la gallega?",
       "opciones": [
         "Plato de porcelana",
         "Plato de papel",
@@ -3446,7 +3446,7 @@
       ]
     },
     "en": {
-      "enunciado": "On what type of plate is it traditionally served?",
+      "enunciado": "On what type of plate is Galician-style octopus traditionally served?",
       "opciones": [
         "Porcelain plate",
         "Paper plate",
@@ -3581,7 +3581,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuántos días dura aproximadamente la celebración?",
+      "enunciado": "¿Cuántos días dura aproximadamente la Semana Grande de Bilbao?",
       "opciones": [
         "Tres días",
         "Nueve días",
@@ -3590,7 +3590,7 @@
       ]
     },
     "en": {
-      "enunciado": "Approximately how many days does the celebration last?",
+      "enunciado": "Approximately how many days does Bilbao's Semana Grande last?",
       "opciones": [
         "Three days",
         "Nine days",
@@ -3629,7 +3629,7 @@
     "numero": 2,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Quién paga el roscón según la tradición si le toca la haba?",
+      "enunciado": "Según la tradición, ¿quién paga el roscón de Reyes?",
       "opciones": [
         "El más mayor",
         "El rey de la fiesta",
@@ -3638,7 +3638,7 @@
       ]
     },
     "en": {
-      "enunciado": "Who pays for the cake according to tradition if they get the bean?",
+      "enunciado": "According to tradition, who pays for the Three Kings cake?",
       "opciones": [
         "The eldest",
         "The party king",
@@ -3653,7 +3653,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué se esconde en el roscón además de la haba?",
+      "enunciado": "¿Qué se esconde en el roscón de Reyes además de la haba?",
       "opciones": [
         "Un anillo de plata",
         "Una moneda de oro",
@@ -3662,7 +3662,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is hidden in the cake besides the bean?",
+      "enunciado": "What is hidden in the Three Kings cake besides the bean?",
       "opciones": [
         "A silver ring",
         "A gold coin",
@@ -3747,23 +3747,23 @@
     "id": "story53_question1",
     "historia": "53",
     "numero": 1,
-    "correcta": 0,
+    "correcta": 1,
     "es": {
-      "enunciado": "¿Qué puesto ocupa España en producción mundial de vino?",
+      "enunciado": "¿Qué rey mandó construir el Monasterio de El Escorial en el siglo XVI?",
       "opciones": [
-        "Tercero",
-        "Primero",
-        "Décimo",
-        "No produce vino"
+        "Carlos V",
+        "Felipe II",
+        "Felipe IV",
+        "Fernando el Católico"
       ]
     },
     "en": {
-      "enunciado": "What rank does Spain hold in world wine production?",
+      "enunciado": "Which king commissioned the Monastery of El Escorial in the 16th century?",
       "opciones": [
-        "Third",
-        "First",
-        "Tenth",
-        "It does not produce wine"
+        "Charles V",
+        "Philip II",
+        "Philip IV",
+        "Ferdinand the Catholic"
       ]
     }
   },
@@ -3773,21 +3773,21 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál de estas es una denominación de origen española famosa?",
+      "enunciado": "¿En qué sierra de Madrid está el Monasterio de El Escorial?",
       "opciones": [
-        "Bordeaux",
-        "Rioja",
-        "Chianti",
-        "Napa Valley"
+        "Sierra de Gredos",
+        "Sierra de Guadarrama",
+        "Sierra Nevada",
+        "Picos de Europa"
       ]
     },
     "en": {
-      "enunciado": "Which of these is a famous Spanish designation of origin?",
+      "enunciado": "In which mountain range near Madrid is the Monastery of El Escorial?",
       "opciones": [
-        "Bordeaux",
-        "Rioja",
-        "Chianti",
-        "Napa Valley"
+        "Sierra de Gredos",
+        "Sierra de Guadarrama",
+        "Sierra Nevada",
+        "Picos de Europa"
       ]
     }
   },
@@ -3795,23 +3795,23 @@
     "id": "story53_question3",
     "historia": "53",
     "numero": 3,
-    "correcta": 2,
+    "correcta": 3,
     "es": {
-      "enunciado": "¿Cuántas denominaciones de origen aproximadamente tiene España?",
+      "enunciado": "¿Qué estilo arquitectónico caracteriza al Monasterio de El Escorial?",
       "opciones": [
-        "Menos de diez",
-        "Unas veinte",
-        "Más de setenta",
-        "Exactamente dos"
+        "Barroco churrigueresco",
+        "Mudéjar",
+        "Gótico flamígero",
+        "Herreriano"
       ]
     },
     "en": {
-      "enunciado": "Approximately how many designations of origin does Spain have?",
+      "enunciado": "Which architectural style characterizes the Monastery of El Escorial?",
       "opciones": [
-        "Fewer than ten",
-        "About twenty",
-        "More than seventy",
-        "Exactly two"
+        "Churrigueresque Baroque",
+        "Mudéjar",
+        "Flamboyant Gothic",
+        "Herrerian"
       ]
     }
   },

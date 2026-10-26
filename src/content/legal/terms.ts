@@ -3,7 +3,7 @@ import termsEs from './terms-es.md?raw'
 import termsEn from './terms-en.md?raw'
 
 /** Bump when the terms change so returning players accept them again. */
-export const TERMS_VERSION = 3
+export const TERMS_VERSION = 4
 
 /** Legal text in the player's language, as plain text ready for the screen. */
 export function termsText(language: Language = 'es'): string {

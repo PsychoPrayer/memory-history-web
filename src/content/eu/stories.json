@@ -20,18 +20,18 @@
   },
   {
     "id": "2",
-    "titulo": "El Picnic: El Sabor del Verano al Aire Libre",
-    "imagen": "/imagenes/historias/el-picnic-el-sabor-del-verano-al-aire-libre.webp",
+    "titulo": "Acción de Gracias: La Fiesta de la Cosecha",
+    "imagen": "/imagenes/historias/accion-de-gracias.webp",
     "es": {
-      "presentacion": "El Picnic: El Sabor del Verano al Aire Libre",
+      "presentacion": "Acción de Gracias: La Fiesta de la Cosecha",
       "texto": [
-        "El Picnic es una de las tradiciones más queridas y sencillas de la vida estadounidense, especialmente durante los meses de verano y en celebraciones como el 4 de Julio. Aunque la palabra tiene raíces francesas (pique-nique), en los Estados Unidos se convirtió en un evento social fundamental a finales del siglo XIX, transformando los parques públicos en comedores comunitarios. La imagen clásica de una manta de cuadros rojos y blancos extendida sobre el césped verde es un símbolo universal de ocio, familia y conexión con la naturaleza.\n\nMás allá de la comida, el picnic americano es un ritual de desconexión. Desde el Central Park en Nueva York hasta los parques nacionales del Oeste, las familias preparan cestas cargadas de sándwiches, ensalada de patata, fruta fresca y la infaltable limonada fría. Es un momento donde el tiempo parece detenerse, permitiendo juegos de frisbee, lectura bajo la sombra de un roble o simplemente disfrutar de la brisa. En una cultura que a menudo se mueve a un ritmo acelerado, el picnic permanece como un recordatorio de los placeres simples de compartir una comida bajo el cielo abierto."
+        "En el otoño de 1621, los colonos peregrinos de Plymouth y el pueblo nativo wampanoag se reunieron para celebrar una cosecha abundante. Tras sobrevivir a un invierno muy duro con la ayuda de Squanto y de los wampanoag, los colonos compartieron un banquete de tres días con el líder Massasoit y su gente. Comieron pavo silvestre, venado, maíz y calabazas, en una de las primeras celebraciones de Acción de Gracias de América."
       ]
     },
     "en": {
-      "presentacion": "The Picnic: The Taste of Summer Outdoors",
+      "presentacion": "Thanksgiving: The Harvest Feast",
       "texto": [
-        "The picnic is one of the most cherished and simple traditions of American life, especially during the summer months and during celebrations such as the Fourth of July. Although the word has French roots (*pique-nique*), in the United States it evolved into a fundamental social event by the late 19th century, transforming public parks into communal dining areas. The classic image of a red-and-white checkered blanket spread out over green grass stands as a universal symbol of leisure, family, and connection with nature.\n\nBeyond the food, the American picnic is a ritual of disconnection. From Central Park in New York to the national parks of the West, families pack baskets laden with sandwiches, potato salad, fresh fruit, and—the absolute essential—cold lemonade. It is a moment where time seems to stand still, allowing for games of Frisbee, reading in the shade of an oak tree, or simply enjoying the breeze. In a culture that often moves at a breakneck pace, the picnic remains a reminder of the simple pleasures of sharing a meal under the open sky."
+        "In the autumn of 1621, the Pilgrim settlers of Plymouth and the Wampanoag people gathered to celebrate a bountiful harvest. After surviving a harsh winter with the help of Squanto and the Wampanoag, the colonists shared a three-day feast with the leader Massasoit and his people. They ate wild turkey, venison, corn and squash, in one of the earliest Thanksgiving celebrations in America."
       ]
     },
     "nivelDesbloqueo": "12_2_normal",
@@ -115,18 +115,18 @@
   },
   {
     "id": "7",
-    "titulo": "Smokey Bear: El Guardián del Bosque",
-    "imagen": "/imagenes/historias/smokey-bear-el-guardian-del-bosque.webp",
+    "titulo": "John Muir: El Padre de los Parques Nacionales",
+    "imagen": "/imagenes/historias/john-muir-parques-nacionales.webp",
     "es": {
-      "presentacion": "Smokey Bear: El Guardián del Bosque",
+      "presentacion": "John Muir: El Padre de los Parques Nacionales",
       "texto": [
-        "Smokey Bear es mucho más que una mascota publicitaria; es el símbolo más duradero y exitoso de la conservación forestal en los Estados Unidos. Creado en 1944 por el Servicio Forestal de los EE. UU. y el Ad Council, Smokey nació de la necesidad de proteger los recursos madereros nacionales durante la Segunda Guerra Mundial. Con su icónico sombrero de campaña, sus vaqueros azules y su pala, Smokey se convirtió en la voz de la responsabilidad individual frente a la naturaleza, personificada en su famosa frase: \"Solo TÚ puedes prevenir los incendios forestales\".\n\nAunque comenzó como una ilustración, en 1950 la leyenda cobró vida cuando un cachorro de oso negro sobrevivió a un devastador incendio en las montañas de Capitán, Nuevo México. Encontrado aferrado a un árbol carbonizado, el cachorro fue nombrado Smokey y se convirtió en la cara viviente de la campaña, viviendo en el Zoológico Nacional de Washington D.C. hasta su muerte en 1976. Smokey Bear ha educado a generaciones sobre la importancia de apagar las fogatas y no jugar con fósforos, logrando reducir drásticamente el número de incendios causados accidentalmente por humanos en todo el país."
+        "John Muir nació en Escocia en 1838 y emigró de niño con su familia a Wisconsin. De joven caminó unos 1.600 kilómetros desde Kentucky hasta el golfo de México, y en 1868 llegó a California, donde se enamoró del valle de Yosemite y de la Sierra Nevada. Escribió artículos y libros que mostraron a todo el país la belleza de esos paisajes y el peligro de destruirlos.\n\nGracias en parte a su lucha, Yosemite fue declarado parque nacional en 1890. En 1903 el presidente Theodore Roosevelt acampó con él tres noches bajo las secuoyas, y aquel viaje le convenció de proteger millones de hectáreas de bosques. En 1916 se creó el Servicio de Parques Nacionales para cuidar estos espacios. Por eso a Muir se le llama el «Padre de los Parques Nacionales». Su frase más famosa es: «Las montañas me llaman y debo ir». En 1892 cofundó el Sierra Club, una de las primeras organizaciones dedicadas a proteger la naturaleza."
       ]
     },
     "en": {
-      "presentacion": "Smokey Bear: The Guardian of the Forest",
+      "presentacion": "John Muir: The Father of the National Parks",
       "texto": [
-        "Smokey Bear is much more than an advertising mascot; he is the most enduring and successful symbol of forest conservation in the United States. Created in 1944 by the U.S. Forest Service and the Ad Council, Smokey was born out of the need to protect national timber resources during World War II. With his iconic campaign hat, blue jeans, and shovel, Smokey became the voice of individual responsibility toward nature—embodied in his famous catchphrase: \"Only YOU Can Prevent Forest Fires.\" Although he began as an illustration, in 1950 the legend came to life when a black bear cub survived a devastating wildfire in the Capitan Mountains of New Mexico. Found clinging to a charred tree, the cub was named Smokey and became the living face of the campaign, residing at the National Zoo in Washington, D.C., until his death in 1976. Smokey Bear has educated generations about the importance of extinguishing campfires and not playing with matches, successfully drastically reducing the number of fires accidentally caused by humans across the country."
+        "John Muir was born in Scotland in 1838 and emigrated as a boy with his family to Wisconsin. As a young man he walked about 1,000 miles from Kentucky to the Gulf of Mexico, and in 1868 he reached California, where he fell in love with Yosemite Valley and the Sierra Nevada. He wrote articles and books that showed the whole country the beauty of those landscapes and the danger of destroying them.\n\nThanks in part to his efforts, Yosemite became a national park in 1890. In 1903 President Theodore Roosevelt camped with him for three nights under the sequoias, and that trip convinced him to protect millions of acres of forest. In 1916 the National Park Service was created to look after these places. That is why Muir is called the \"Father of the National Parks\". His most famous line is: \"The mountains are calling and I must go.\" In 1892 he co-founded the Sierra Club, one of the first organizations devoted to protecting nature."
       ]
     },
     "nivelDesbloqueo": "12_12dificil",
@@ -172,18 +172,18 @@
   },
   {
     "id": "10",
-    "titulo": "El Ford Modelo A: El Sucesor de una Leyenda",
-    "imagen": "/imagenes/historias/el-ford-modelo-a-el-sucesor-de-una-leyenda.webp",
+    "titulo": "El Ferrocarril Transcontinental: Uniendo Dos Océanos",
+    "imagen": "/imagenes/historias/ferrocarril-transcontinental.webp",
     "es": {
-      "presentacion": "El Ford Modelo A: El Sucesor de una Leyenda",
+      "presentacion": "El Ferrocarril Transcontinental: Uniendo Dos Océanos",
       "texto": [
-        "El Ford Modelo A (producido entre 1927 y 1931) fue el esperado sucesor del icónico Modelo T. Tras casi dos décadas de dominio del \"Lizzie\", Henry Ford se vio obligado a modernizarse ante la creciente competencia. El Modelo A no solo era más rápido y potente, sino que introdujo un diseño mucho más elegante y variado, disponible en una amplia gama de colores, a diferencia del famoso \"cualquier color siempre que sea negro\" de su predecesor.\n\nEste vehículo fue pionero en seguridad al ser el primer coche en utilizar vidrio de seguridad laminado en el parabrisas. Con su motor de 4 cilindros y una transmisión de tres velocidades mucho más fácil de manejar, el Modelo A se convirtió en un éxito instantáneo, vendiendo un millón de unidades en apenas seis meses. Su robustez y estilo lo han convertido en uno de los autos antiguos más queridos por los coleccionistas de todo el mundo, representando la transición de la industria automotriz hacia la modernidad."
+        "En mayo de 1869, la historia de Estados Unidos cambió para siempre cuando se colocó el \"Clavo de Oro\" en Promontory Summit, Utah. Dos grandes compañías de ferrocarril, la Union Pacific y la Central Pacific, unieron allí las vías que habían construido desde el este y desde el oeste. Este colosal proyecto, realizado en gran parte por miles de trabajadores inmigrantes chinos e irlandeses, redujo el viaje a través del continente de meses a solo unos días, y transformó el comercio, la migración y las comunicaciones de todo el país."
       ]
     },
     "en": {
-      "presentacion": "The Ford Model A: The Successor to a Legend",
+      "presentacion": "The Transcontinental Railroad: Joining Two Oceans",
       "texto": [
-        "The Ford Model A (produced between 1927 and 1931) was the long-awaited successor to the iconic Model T. After nearly two decades of dominance by \"Lizzie,\" Henry Ford was compelled to modernize in the face of growing competition. The Model A was not only faster and more powerful, but it also introduced a much more elegant and varied design, available in a wide range of colors—a stark contrast to its predecessor's famous \"any color, as long as it's black\" philosophy.\n\nThis vehicle was a safety pioneer, being the first car to utilize laminated safety glass in its windshield. With its 4-cylinder engine and a three-speed transmission that was much easier to operate, the Model A became an instant success, selling one million units in just six months. Its robustness and style have made it one of the most beloved vintage cars among collectors worldwide, representing the automotive industry's transition into the modern era."
+        "In May 1869, United States history changed forever when the \"Golden Spike\" was driven at Promontory Summit, Utah. Two major railroad companies, the Union Pacific and the Central Pacific, joined there the tracks they had built from the east and from the west. This colossal project, carried out largely by thousands of Chinese and Irish immigrant workers, cut cross-country travel from months to just a few days and transformed trade, migration and communication across the nation."
       ]
     },
     "nivelDesbloqueo": "12_15dificil",
@@ -609,18 +609,22 @@
   },
   {
     "id": "33",
-    "titulo": "El Colimbo Grande: El Espíritu de las Aguas del Norte",
-    "imagen": "/imagenes/historias/el-colimbo-grande-el-espiritu-de-las-aguas-del-norte.webp",
+    "titulo": "Alexander Graham Bell: El Inventor del Teléfono",
+    "imagen": "/imagenes/historias/alexander-graham-bell.webp",
     "es": {
-      "presentacion": "El Colimbo Grande: El Espíritu de las Aguas del Norte",
+      "presentacion": "Alexander Graham Bell: El Inventor del Teléfono",
       "texto": [
-        "El Colimbo Grande (Gavia immer), conocido en inglés como Loon, es un ave acuática emblemática de los lagos del norte de Estados Unidos y Canadá. Es famoso por su apariencia elegante con un patrón de \"tablero de ajedrez\" en blanco y negro, su distintivo collar y sus penetrantes ojos rojos. Pero lo que realmente lo define es su voz: un canto melancólico y fantasmal que resuena en las noches estrelladas, convirtiéndolo en el símbolo definitivo de la naturaleza virgen y salvaje.\n\nA diferencia de la mayoría de las aves, los colimbos tienen huesos sólidos (no huecos), lo que los convierte en buceadores excepcionales, capaces de sumergirse a más de 60 metros de profundidad para perseguir peces. Sin embargo, este peso extra tiene un costo: son torpes en tierra porque sus patas están situadas muy atrás en el cuerpo, y necesitan una larga \"pista de aterrizaje\" en el agua (hasta 200 metros) para poder despegar. Son padres dedicados que a menudo cargan a sus polluelos sobre sus espaldas para protegerlos de los depredadores, una imagen que personifica la tranquilidad de los lagos del norte."
+        "Alexander Graham Bell fue un profesor e inventor que quería ayudar a las personas a comunicarse a largas distancias. Pasó muchos años estudiando el sonido y el habla. En 1876, Bell inventó el teléfono, un aparato capaz de transmitir la voz a través de cables.",
+        "Un día, Bell pronunció las famosas palabras: «Señor Watson, venga aquí, quiero verle». Su ayudante, Thomas Watson, escuchó el mensaje a través del teléfono. Fue una de las primeras llamadas telefónicas de la historia.",
+        "El invento de Bell cambió el mundo. Las personas podían hablar con familiares, amigos y empresas sin tener que viajar. El teléfono se convirtió en uno de los inventos más importantes de la época moderna."
       ]
     },
     "en": {
-      "presentacion": "The Common Loon: The Spirit of the Northern Waters",
+      "presentacion": "Alexander Graham Bell: The Inventor of the Telephone",
       "texto": [
-        "The Common Loon (*Gavia immer*)—known in English simply as the \"Loon\"—is an iconic aquatic bird of the northern lakes of the United States and Canada. It is renowned for its elegant appearance, featuring a black-and-white \"checkerboard\" pattern, a distinctive collar, and piercing red eyes. But what truly defines it is its voice: a melancholic, ghostly call that echoes across starry nights, making it the ultimate symbol of wild, unspoiled nature.\n\nUnlike most birds, loons possess solid (rather than hollow) bones, making them exceptional divers capable of plunging to depths of over 60 meters in pursuit of fish. However, this extra weight comes at a cost: they are clumsy on land because their legs are positioned far back on their bodies, and they require a long \"runway\" on the water—up to 200 meters—in order to take flight. They are devoted parents who often carry their chicks on their backs to shield them from predators—an image that perfectly embodies the tranquility of the northern lakes."
+        "Alexander Graham Bell was a teacher and inventor who wanted to help people communicate over long distances. He spent many years studying sound and speech. In 1876, Bell invented the telephone, a device that could carry voices through wires.",
+        "One day, Bell spoke the famous words: \"Mr. Watson, come here, I want to see you.\" His assistant, Thomas Watson, heard the message through the telephone. It was one of the first telephone calls in history.",
+        "Bell's invention changed the world. People could now talk to family, friends and businesses without travelling. The telephone became one of the most important inventions of modern times."
       ]
     },
     "nivelDesbloqueo": "24_3normal",
@@ -666,18 +670,18 @@
   },
   {
     "id": "36",
-    "titulo": "Bourbon Whiskey: El Espíritu Nativo de América",
-    "imagen": "/imagenes/historias/bourbon-whiskey-el-espiritu-nativo-de-america.webp",
+    "titulo": "La Fiebre del Oro: El Sueño de California",
+    "imagen": "/imagenes/historias/fiebre-del-oro-de-california.webp",
     "es": {
-      "presentacion": "Bourbon Whiskey: El Espíritu Nativo de América",
+      "presentacion": "La Fiebre del Oro: El Sueño de California",
       "texto": [
-        "El Bourbon es mucho más que un destilado; es una herencia cultural protegida por la ley. En 1964, el Congreso de los Estados Unidos lo declaró como el \"Espíritu Nativo de América\". Para que un whiskey sea considerado legalmente como Bourbon, debe cumplir reglas estrictas: debe producirse en los Estados Unidos, su mezcla de granos (llamada mash bill) debe contener al menos un 51% de maíz, y debe envejecerse en barricas de roble blanco nuevas y carbonizadas.\n\nSu nombre proviene del histórico Condado de Bourbon en Kentucky, región que produce el 95% del suministro mundial gracias a su agua filtrada por piedra caliza, ideal para la destilación. El proceso de carbonización de la madera es el que le otorga su color ámbar profundo y sus notas características de vainilla, caramelo y madera ahumada. A diferencia de otros whiskies, al Bourbon no se le permite añadir colorantes ni saborizantes artificiales; todo su sabor proviene exclusivamente del grano, la levadura y el tiempo que pasa \"respirando\" dentro del roble."
+        "En enero de 1848, James W. Marshall descubrió brillantes pepitas de oro en el aserradero de Sutter (Sutter's Mill), en California. La noticia se extendió rápidamente y desencadenó una de las mayores migraciones de la historia. Solo en 1849 llegaron unas 90.000 personas de todo el mundo, conocidas como los \"forty-niners\", con la esperanza de hacerse ricas, y hacia 1855 ya eran unas 300.000. Aunque pocos encontraron grandes fortunas, la fiebre del oro transformó California, aceleró su llegada a la Unión como estado en 1850 y cambió para siempre la economía y la población de la región."
       ]
     },
     "en": {
-      "presentacion": "Bourbon Whiskey: America's Native Spirit",
+      "presentacion": "The Gold Rush: The California Dream",
       "texto": [
-        "Bourbon is much more than just a distilled spirit; it is a cultural heritage protected by law. In 1964, the United States Congress declared it \"America's Native Spirit.\" For a whiskey to be legally considered Bourbon, it must adhere to strict rules: it must be produced in the United States; its grain mixture (known as the *mash bill*) must contain at least 51% corn; and it must be aged in new, charred white oak barrels.\n\nIts name originates from the historic Bourbon County in Kentucky—a region that produces 95% of the world's supply, thanks to its limestone-filtered water, which is ideal for distillation. The wood-charring process is what imparts its deep amber color and its characteristic notes of vanilla, caramel, and smoky wood. Unlike other whiskies, Bourbon is not permitted to contain added artificial colorings or flavorings; its entire flavor profile derives exclusively from the grain, the yeast, and the time it spends \"breathing\" inside the oak."
+        "In January 1848, James W. Marshall discovered shiny gold nuggets at Sutter's Mill, California. Word spread quickly, triggering one of the largest migrations in history. In 1849 alone, some 90,000 people from all over the world, known as \"forty-niners\", arrived hoping to strike it rich, and by 1855 there were about 300,000. Although few found great wealth, the Gold Rush transformed California, sped up its statehood in 1850, and forever changed the region's economy and population."
       ]
     },
     "nivelDesbloqueo": "24_11dificil",
@@ -704,18 +708,18 @@
   },
   {
     "id": "38",
-    "titulo": "El Golden Gate: El Guardián Naranja de San Francisco",
-    "imagen": "/imagenes/historias/el-golden-gate-el-guardian-naranja-de-san-francisco.webp",
+    "titulo": "El Motín del Té: La Chispa de la Revolución",
+    "imagen": "/imagenes/historias/motin-del-te-de-boston.webp",
     "es": {
-      "presentacion": "El Golden Gate: El Guardián Naranja de San Francisco",
+      "presentacion": "El Motín del Té: La Chispa de la Revolución",
       "texto": [
-        "El Puente Golden Gate es mucho más que una vía de transporte; es el símbolo indiscutible de San Francisco y una de las maravillas de la ingeniería moderna. Inaugurado en 1937, este puente colgante conecta la ciudad con el condado de Marin, cruzando el estrecho donde las aguas de la Bahía de San Francisco se encuentran con el Océano Pacífico. En su momento, fue el puente colgante más largo y alto del mundo, desafiando vientos huracanados, corrientes traicioneras y la densa niebla característica de la zona.\n\nSu color no es rojo ni dorado, sino un tono específico llamado \"Naranja Internacional\". Esta elección no fue casualidad: se seleccionó para que la estructura fuera visible para los barcos incluso en los días de niebla más cerrada, y para que armonizara con el paisaje natural circundante. Con sus torres de 227 metros de altura y sus elegantes cables de acero, el Golden Gate ha resistido terremotos y el paso del tiempo, convirtiéndose en el monumento más fotografiado del mundo y un icono de la audacia estadounidense."
+        "En 1773, un grupo de colonos americanos en Boston protestó contra los altos impuestos al té impuestos por el gobierno británico. Disfrazados de guerreros mohawk, abordaron tres barcos británicos en el puerto de Boston y arrojaron al agua cientos de cajas de té de la Compañía de las Indias Orientales. Este acto de rebelión se conoció como el Motín del Té y fue un paso clave hacia la Revolución Americana."
       ]
     },
     "en": {
-      "presentacion": "The Golden Gate: San Francisco’s Orange Guardian",
+      "presentacion": "The Tea Party: The Spark of the Revolution",
       "texto": [
-        "The Golden Gate Bridge is much more than a transportation route; it is the undisputed symbol of San Francisco and one of the wonders of modern engineering. Inaugurated in 1937, this suspension bridge connects the city to Marin County, spanning the strait where the waters of San Francisco Bay meet the Pacific Ocean. At the time of its completion, it was the longest and tallest suspension bridge in the world, braving hurricane-force winds, treacherous currents, and the dense fog characteristic of the region.\n\nIts color is neither red nor gold, but rather a specific shade known as \"International Orange.\" This choice was no accident: it was selected to ensure the structure remained visible to ships—even on the densest foggy days—and to harmonize with the surrounding natural landscape. With its 227-meter-tall towers and elegant steel cables, the Golden Gate has withstood earthquakes and the passage of time, becoming the most photographed landmark in the world and an icon of American audacity."
+        "In 1773, a group of American colonists in Boston protested against high tea taxes imposed by the British government. Disguised as Mohawk warriors, they boarded three British ships in Boston Harbor and dumped hundreds of chests of East India Company tea into the water. This act of rebellion became known as the Boston Tea Party and was a key step towards the American Revolution."
       ]
     },
     "nivelDesbloqueo": "24_13dificil",
@@ -742,18 +746,18 @@
   },
   {
     "id": "40",
-    "titulo": "El Tornado: El Gigante Indomable de las Llanuras",
-    "imagen": "/imagenes/historias/el-tornado-el-gigante-indomable-de-las-llanuras.webp",
+    "titulo": "Paul Revere: La Cabalgata de Medianoche",
+    "imagen": "/imagenes/historias/paul-revere.webp",
     "es": {
-      "presentacion": "El Tornado: El Gigante Indomable de las Llanuras",
+      "presentacion": "Paul Revere: La Cabalgata de Medianoche",
       "texto": [
-        "El Tornado es uno de los fenómenos meteorológicos más poderosos y espectaculares de la naturaleza, y ningún lugar del mundo los experimenta con tanta frecuencia e intensidad como el centro de los Estados Unidos, en la región conocida como Tornado Alley. Estas columnas de aire que rotan violentamente se forman a partir de tormentas supercelulares cuando el aire cálido y húmedo del Golfo de México choca con el aire frío y seco de Canadá, creando una inestabilidad atmosférica masiva.\n\nDesde las llanuras de Kansas hasta Texas, los tornados son una fuerza que define el paisaje y la cultura de la región, inspirando desde cuentos clásicos como El Mago de Oz hasta la ciencia moderna de los \"cazadores de tormentas\". Con vientos que pueden superar los 480 km/h en su categoría más alta (EF5), estos embudos de polvo y escombros son capaces de levantar camiones y edificios, recordándonos la asombrosa energía que se oculta tras los cielos de las Grandes Llanuras."
+        "En abril de 1775, Paul Revere, un platero de Boston, acordó una señal con otros patriotas: se colgaría una linterna en el campanario de la Old North Church si las tropas británicas avanzaban por tierra, y dos si lo hacían por mar. Cuando vio dos luces, cruzó el río y cabalgó en plena noche hacia Lexington para alertar a los colonos de que llegaban los británicos. Al día siguiente comenzó la Guerra de Independencia."
       ]
     },
     "en": {
-      "presentacion": "The Tornado: The Untamable Giant of the Plains",
+      "presentacion": "Paul Revere: The Midnight Ride",
       "texto": [
-        "The tornado is one of nature's most powerful and spectacular meteorological phenomena, and nowhere in the world experiences them with such frequency and intensity as the central United States—specifically in the region known as Tornado Alley. These violently rotating columns of air form within supercell thunderstorms when warm, moist air from the Gulf of Mexico collides with cold, dry air from Canada, creating massive atmospheric instability.\n\nFrom the plains of Kansas down to Texas, tornadoes are a force that defines the region's landscape and culture, inspiring everything from classic tales like *The Wizard of Oz* to the modern science of \"storm chasing.\" With winds capable of exceeding 480 km/h in their highest category (EF5), these funnels of dust and debris are capable of lifting trucks and buildings, reminding us of the astonishing energy lurking behind the skies of the Great Plains."
+        "In April 1775, Paul Revere, a Boston silversmith, arranged a signal with other patriots: one lantern would hang in the steeple of the Old North Church if the British troops moved by land, and two if by sea. When he saw two lights, he crossed the river and rode through the night to Lexington to warn the colonists that the British were coming. The next day the War of Independence began."
       ]
     },
     "nivelDesbloqueo": "24_15dificil",
@@ -761,18 +765,18 @@
   },
   {
     "id": "41",
-    "titulo": "Hollywood: La Fábrica de Sueños",
-    "imagen": "/imagenes/historias/hollywood-la-fabrica-de-suenos.webp",
+    "titulo": "Thomas Edison: El Mago de Menlo Park",
+    "imagen": "/imagenes/historias/thomas-edison.webp",
     "es": {
-      "presentacion": "Hollywood: La Fábrica de Sueños",
+      "presentacion": "Thomas Edison: El Mago de Menlo Park",
       "texto": [
-        "Hollywood no es solo un distrito de Los Ángeles; es el epicentro mundial de la industria del entretenimiento. Lo que comenzó a principios del siglo XX como una pequeña comunidad agrícola, se transformó rápidamente en la \"Meca del Cine\" debido a su clima privilegiado, que permitía rodar al aire libre casi todos los días del año. Hoy en día, caminar por sus calles es recorrer la historia del séptimo arte, donde el glamour del pasado se mezcla con la energía de las superproducciones actuales.\n\nEl símbolo más reconocible es, sin duda, el Cartel de Hollywood en el Monte Lee. Curiosamente, cuando se instaló en 1923, no tenía nada que ver con el cine: era un anuncio publicitario gigante que decía \"HOLLYWOODLAND\" para promocionar una nueva urbanización de viviendas. No fue hasta 1949 que se eliminaron las últimas cuatro letras para que representara a todo el distrito y no solo a un proyecto inmobiliario. Otro punto icónico es el Paseo de la Fama, que cuenta con más de 2.700 estrellas de terrazo y latón a lo largo de 15 bloques, rindiendo homenaje a las leyendas del cine, la música, la radio, la televisión y el teatro."
+        "Thomas Edison fue uno de los inventores y empresarios más prolíficos de la historia, conocido como \"el Mago de Menlo Park\" por el laboratorio de investigación que fundó en Nueva Jersey. Allí reunió a un gran equipo para desarrollar y perfeccionar inventos que cambiaron el mundo. Entre sus creaciones más célebres están la bombilla incandescente práctica, el fonógrafo y el sistema para producir y distribuir energía eléctrica. Su incansable trabajo y su visión sentaron las bases de la tecnología moderna."
       ]
     },
     "en": {
-      "presentacion": "Hollywood: The Dream Factory",
+      "presentacion": "Thomas Edison: The Wizard of Menlo Park",
       "texto": [
-        "Hollywood is not merely a district of Los Angeles; it is the global epicenter of the entertainment industry. What began in the early 20th century as a small farming community quickly transformed into the \"Mecca of Cinema,\" thanks to its exceptional climate, which allowed for outdoor filming nearly every day of the year. Today, walking its streets is like traversing the history of the cinematic arts—a place where the glamour of the past blends seamlessly with the energy of today's blockbuster productions.\n\nIts most recognizable symbol is, without a doubt, the Hollywood Sign on Mount Lee. Curiously, when it was first installed in 1923, it had nothing to do with the movies; it was a giant billboard reading \"HOLLYWOODLAND,\" intended to promote a new residential development. It wasn't until 1949 that the final four letters were removed so that the sign would represent the entire district, rather than just a single real estate project. Another iconic landmark is the Walk of Fame, featuring over 2,700 terrazzo and brass stars spanning 15 city blocks, paying tribute to legends of film, music, radio, television, and theater."
+        "Thomas Edison was one of the most prolific inventors and businessmen in history, known as \"the Wizard of Menlo Park\" because of the research laboratory he founded in New Jersey. There he gathered a large team to develop and refine inventions that changed the world. Among his most famous creations are the practical incandescent light bulb, the phonograph, and the system for generating and distributing electric power. His tireless work and vision laid the foundations of modern technology."
       ]
     },
     "nivelDesbloqueo": "28_1normal",
@@ -780,18 +784,18 @@
   },
   {
     "id": "42",
-    "titulo": "El Hot Dog: El Clásico de los Estadios y las Esquinas",
-    "imagen": "/imagenes/historias/el-hot-dog-el-clasico-de-los-estadios-y-las-esquinas.webp",
+    "titulo": "El Mayflower: El Viaje de los Peregrinos",
+    "imagen": "/imagenes/historias/mayflower.webp",
     "es": {
-      "presentacion": "El Hot Dog: El Clásico de los Estadios y las Esquinas",
+      "presentacion": "El Mayflower: El Viaje de los Peregrinos",
       "texto": [
-        "El Hot Dog (perro caliente) es, junto con la tarta de manzana, uno de los alimentos más emblemáticos de los Estados Unidos. Aunque sus raíces se encuentran en las salchichas tipo frankfurter traídas por inmigrantes alemanes en el siglo XIX, fue en las calles de Nueva York y en los estadios de béisbol donde se convirtió en un fenómeno cultural. Se dice que Charles Feltman, un carnicero alemán, abrió el primer puesto de hot dogs en Coney Island en 1867, vendiendo casi 4,000 salchichas en su primer año.\n\nLo que hace especial al hot dog estadounidense es su increíble diversidad regional. En Nueva York, lo clásico es pedirlo con mostaza y cebollas salteadas; en Chicago, el \"perro\" se sirve en un pan con semillas de amapola y se \"arrastra por el jardín\" con pepinillos, tomate y pimientos, pero ¡jamás con kétchup! Ya sea en una barbacoa del 4 de Julio o en un carrito callejero, el hot dog representa la comida rápida, accesible y profundamente democrática que define el estilo de vida americano."
+        "En 1620, el barco Mayflower partió de Inglaterra hacia el Nuevo Mundo. A bordo iban 102 pasajeros, conocidos como los peregrinos, que buscaban libertad religiosa. Tras una difícil travesía de 66 días, desembarcaron en Massachusetts, donde fundaron la colonia de Plymouth, uno de los primeros asentamientos europeos permanentes de Nueva Inglaterra."
       ]
     },
     "en": {
-      "presentacion": "The Hot Dog: The Classic of Stadiums and Street Corners",
+      "presentacion": "The Mayflower: The Pilgrims' Voyage",
       "texto": [
-        "The hot dog is—along with apple pie—one of the most iconic foods in the United States. Although its roots lie in the frankfurter-style sausages brought by German immigrants in the 19th century, it was on the streets of New York and in baseball stadiums that it evolved into a cultural phenomenon. It is said that Charles Feltman, a German butcher, opened the first hot dog stand on Coney Island in 1867, selling nearly 4,000 sausages in his first year.\n\nWhat makes the American hot dog special is its incredible regional diversity. In New York, the classic order is mustard and sautéed onions; in Chicago, the \"dog\" is served on a poppy-seed bun and \"dragged through the garden\" with pickles, tomatoes, and peppers—but never with ketchup! Whether at a 4th of July barbecue or from a street cart, the hot dog represents the fast, accessible, and deeply democratic food that defines the American way of life."
+        "In 1620, the ship Mayflower left England for the New World. Aboard were 102 passengers, known as the Pilgrims, seeking religious freedom. After a difficult 66-day crossing, they landed in Massachusetts, where they founded Plymouth Colony, one of the first permanent European settlements in New England."
       ]
     },
     "nivelDesbloqueo": "28_2normal",
@@ -875,18 +879,18 @@
   },
   {
     "id": "47",
-    "titulo": "El Empire State Building: El Coloso de Manhattan",
-    "imagen": "/imagenes/historias/el-empire-state-building-el-coloso-de-manhattan.webp",
+    "titulo": "Los Hermanos Wright: El Primer Vuelo",
+    "imagen": "/imagenes/historias/hermanos-wright.webp",
     "es": {
-      "presentacion": "El Empire State Building: El Coloso de Manhattan",
+      "presentacion": "Los Hermanos Wright: El Primer Vuelo",
       "texto": [
-        "El Empire State Building es, posiblemente, el rascacielos más famoso del mundo y un símbolo imperecedero de la ambición y el ingenio de la ciudad de Nueva York. Inaugurado en 1931 en plena Gran Depresión, ostentó el título de edificio más alto del mundo durante 40 años. Su construcción fue una proeza de velocidad y logística sin precedentes: se completó en apenas 410 días, con un ritmo asombroso de 4 plantas y media por semana.\n\nDiseñado en el elegante estilo Art Déco, su silueta escalonada y su icónica aguja son reconocibles en cualquier lugar del planeta. Más allá de su arquitectura, el edificio es famoso por su sistema de iluminación LED, que cambia de colores para conmemorar festividades, eventos deportivos o causas sociales. Desde sus observatorios en los pisos 86 y 102, millones de visitantes han contemplado la majestuosidad de la \"Gran Manzana\", convirtiéndolo en el corazón latente de la cultura popular y el cine estadounidense."
+        "El 17 de diciembre de 1903, en las dunas de Kitty Hawk, Carolina del Norte, los hermanos Orville y Wilbur Wright cambiaron la historia al lograr el primer vuelo sostenido y controlado de un avión con motor. Tras años de rigurosos experimentos con planeadores y de diseñar su propio motor ligero, consiguieron que el Wright Flyer volara 12 segundos en su primer intento de aquel día histórico. Su dedicación a la ingeniería abrió las puertas a la aviación moderna."
       ]
     },
     "en": {
-      "presentacion": "The Empire State Building: The Colossus of Manhattan",
+      "presentacion": "The Wright Brothers: The First Flight",
       "texto": [
-        "The Empire State Building is, arguably, the most famous skyscraper in the world and an enduring symbol of New York City's ambition and ingenuity. Inaugurated in 1931—in the midst of the Great Depression—it held the title of the world's tallest building for 40 years. Its construction was a feat of unprecedented speed and logistics: it was completed in just 410 days, at an astonishing pace of four and a half floors per week.\n\nDesigned in the elegant Art Deco style, its stepped silhouette and iconic spire are recognizable anywhere on the planet. Beyond its architecture, the building is famous for its LED lighting system, which changes colors to commemorate holidays, sporting events, or social causes. From its observatories on the 86th and 102nd floors, millions of visitors have gazed upon the majesty of the \"Big Apple,\" making it the beating heart of American popular culture and cinema."
+        "On December 17, 1903, on the dunes of Kitty Hawk, North Carolina, the brothers Orville and Wilbur Wright changed history by achieving the first sustained, controlled flight of a powered airplane. After years of rigorous experiments with gliders and designing their own lightweight engine, they got the Wright Flyer to fly for 12 seconds on its first attempt of that historic day. Their dedication to engineering opened the door to modern aviation."
       ]
     },
     "nivelDesbloqueo": "28_12dificil",
@@ -894,18 +898,18 @@
   },
   {
     "id": "48",
-    "titulo": "Yankee Stadium: La Catedral del Béisbol en el Bronx",
-    "imagen": "/imagenes/historias/yankee-stadium-la-catedral-del-beisbol-en-el-bronx.webp",
+    "titulo": "El Béisbol: El Pasatiempo Nacional",
+    "imagen": "/imagenes/historias/beisbol-pasatiempo-nacional.webp",
     "es": {
-      "presentacion": "Yankee Stadium: La Catedral del Béisbol en el Bronx",
+      "presentacion": "El Béisbol: El Pasatiempo Nacional",
       "texto": [
-        "El Yankee Stadium, ubicado en el Bronx, Nueva York, es mucho más que un campo de béisbol; es una catedral del deporte mundial. El recinto actual, inaugurado en 2009, fue diseñado para rendir homenaje al estadio original de 1923, conocido como \"La Casa que Ruth construyó\". Con su distintivo friso blanco y su fachada de granito y piedra caliza, combina la nostalgia de la era dorada del béisbol con lujos modernos, como su gigantesca pantalla LED y el Monument Park. Es el hogar de los 27 veces campeones del mundo, los New York Yankees, y ha sido escenario de momentos históricos que trascienden el deporte."
+        "Con raíces en los juegos tradicionales de bate y pelota del siglo XIX, el béisbol se convirtió rápidamente en el pasatiempo nacional de Estados Unidos. En los campos de tierra y césped de pueblos y grandes ciudades, familias y comunidades enteras se reunían para disfrutar de la emoción del juego, la estrategia en el diamante y el compañerismo. Más que un simple deporte, el béisbol reflejó el espíritu de unión, perseverancia y tradición del país, y se convirtió en un símbolo de su historia que ha pasado de generación en generación."
       ]
     },
     "en": {
-      "presentacion": "Yankee Stadium: The Cathedral of Baseball in the Bronx",
+      "presentacion": "Baseball: The National Pastime",
       "texto": [
-        "Yankee Stadium, located in the Bronx, New York, is much more than a baseball field; it is a cathedral of world sports. The current venue, inaugurated in 2009, was designed to pay homage to the original stadium from 1923, known as \"The House That Ruth Built.\" With its distinctive white frieze and granite and limestone façade, it combines the nostalgia of baseball's golden era with modern luxuries, such as its gigantic LED screen and Monument Park. It is the home of the 27-time world champions, the New York Yankees, and has served as the stage for historic moments that transcend the sport."
+        "With roots in the bat-and-ball games of the 19th century, baseball quickly became the national pastime of the United States. On the dirt and grass fields of small towns and big cities, families and whole communities gathered to enjoy the excitement of the game, the strategy on the diamond and the camaraderie. More than just a sport, baseball reflected the country's spirit of unity, perseverance and tradition, and became a symbol of its history passed down from generation to generation."
       ]
     },
     "nivelDesbloqueo": "28_13dificil",
@@ -1008,18 +1012,18 @@
   },
   {
     "id": "54",
-    "titulo": "Elvis Presley: El Arquitecto del Rock and Roll",
-    "imagen": "/imagenes/historias/elvis-presley-el-arquitecto-del-rock-and-roll.webp",
+    "titulo": "El Jazz: La Música de Nueva Orleans",
+    "imagen": "/imagenes/historias/jazz-de-nueva-orleans.webp",
     "es": {
-      "presentacion": "Elvis Presley: El Arquitecto del Rock and Roll",
+      "presentacion": "El Jazz: La Música de Nueva Orleans",
       "texto": [
-        "Elvis Aaron Presley no fue solo un cantante; fue el epicentro de una explosión cultural que redefinió el siglo XX. Su genialidad residió en su capacidad para actuar como un puente biológico y artístico entre géneros que la sociedad de los años 50 mantenía rígidamente separados: el Rhythm and Blues de raíces afroamericanas, el Country del sur rural y el fervor espiritual del Gospel.\n\nDesde sus primeras e incendiarias grabaciones en los modestos Sun Records en Memphis, hasta su transformación en un fenómeno global con éxitos como \"Heartbreak Hotel\", Elvis desafió las normas de la época con movimientos de cadera que escandalizaron a los sectores conservadores y una voz barítona capaz de una ternura infinita o de un rugido salvaje. Aunque su carrera navegó por una larga etapa en Hollywood y culminó en la fastuosidad de los escenarios de Las Vegas, su legado en su icónica mansión de Graceland permanece como el santuario definitivo del hombre que, partiendo de la pobreza en Mississippi, se convirtió en el \"Rey\" indiscutible."
+        "A principios del siglo XX, las calles del Barrio Francés de Nueva Orleans se llenaron de un sonido completamente nuevo. Músicos afroamericanos combinaron ritmos africanos, cantos espirituales, música de bandas de marcha y ragtime para dar origen al jazz. En las plazas y durante los desfiles conocidos como \"second line\", instrumentos como la trompeta, el trombón, el clarinete y el banjo creaban melodías llenas de improvisación y alegría que pronto conquistaron el mundo entero."
       ]
     },
     "en": {
-      "presentacion": "Elvis Presley: The Architect of Rock and Roll",
+      "presentacion": "Jazz: The Music of New Orleans",
       "texto": [
-        "Elvis Aaron Presley was not merely a singer; he was the epicenter of a cultural explosion that redefined the 20th century. His genius lay in his ability to act as a biological and artistic bridge between genres that 1950s society kept rigidly separated: African-American-rooted Rhythm and Blues, Country music from the rural South, and the spiritual fervor of Gospel.\n\nFrom his early, incendiary recordings at the modest Sun Records in Memphis to his transformation into a global phenomenon with hits like \"Heartbreak Hotel,\" Elvis defied the norms of the era with hip movements that scandalized conservative sectors and a baritone voice capable of infinite tenderness or a wild roar. Although his career navigated a long stint in Hollywood and culminated in the opulence of the Las Vegas stages, his legacy—housed in his iconic mansion, Graceland—remains the definitive sanctuary of the man who, rising from poverty in Mississippi, became the undisputed \"King.\""
+        "In the early 20th century, the streets of New Orleans' French Quarter echoed with a brand-new sound. African American musicians blended African rhythms, spirituals, brass band music and ragtime to create jazz. In public squares and during \"second line\" parades, instruments like the trumpet, trombone, clarinet and banjo produced joyful, improvised melodies that would soon captivate the whole world."
       ]
     },
     "nivelDesbloqueo": "32_4normal",

@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom'
 import { ContentProvider } from './data/content'
 import { useSave } from './lib/save'
-import { initCloudSync } from './lib/cloudSync'
 import {
   dimMusicInMatch,
   unlockAudio,
@@ -16,12 +15,13 @@ import {
 } from './lib/audio'
 import { LiveRegion } from './components/LiveRegion'
 import { SkipLink } from './components/SkipLink'
-import { SyncChoice } from './components/SyncChoice'
 import { ConnectionBanners } from './components/ConnectionBanners'
 import { LoadingGate } from './components/LoadingGate'
 import { PageTurnRoutes } from './components/PageTurn'
 import { BookOpening } from './components/BookOpening'
 import { initViewportRefit } from './lib/viewport'
+import { initICloud } from './lib/icloud'
+import { initAds } from './lib/ads'
 import { Intro } from './screens/Intro'
 import { Menu } from './screens/Menu'
 import { Sections } from './screens/Sections'
@@ -33,11 +33,7 @@ import { Tests } from './screens/Tests'
 import { Quiz } from './screens/Quiz'
 import { Achievements } from './screens/Achievements'
 import { FreePlay } from './screens/FreePlay'
-import { Duel } from './screens/Duel'
-import { Daily } from './screens/Daily'
-import { DailyGame } from './screens/DailyGame'
 import { Terms } from './screens/Terms'
-import { FEATURES } from './lib/features'
 
 export default function App() {
   const country = useSave((state) => state.settings.country)
@@ -47,9 +43,11 @@ export default function App() {
     document.documentElement.lang = language
   }, [language])
 
-  useEffect(() => initCloudSync(), [])
-
   useEffect(() => initViewportRefit(), [])
+
+  useEffect(() => initICloud(), [])
+
+  useEffect(() => initAds(), [])
 
   useEffect(() => {
     const unlock = () => unlockAudio()
@@ -67,7 +65,6 @@ export default function App() {
         <SkipLink />
         <LiveRegion />
         <BackgroundMusic />
-        <SyncChoice />
         <ConnectionBanners />
         <PageTurnRoutes>
           <Route path="/" element={<Intro />} />
@@ -82,10 +79,6 @@ export default function App() {
           <Route path="/tests" element={<Tests />} />
           <Route path="/quiz/:level" element={<LoadingGate label="loadingQuiz"><Quiz /></LoadingGate>} />
           <Route path="/achievements" element={<Achievements />} />
-          {/* Parked features (lib/features.ts): their URLs fall through to the menu. */}
-          {FEATURES.duels && <Route path="/duel" element={<Duel />} />}
-          {FEATURES.daily && <Route path="/daily" element={<Daily />} />}
-          {FEATURES.daily && <Route path="/daily/play" element={<DailyGame />} />}
           <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<Navigate to="/menu" replace />} />
         </PageTurnRoutes>
@@ -100,8 +93,7 @@ function BackgroundMusic() {
   const muted = useSave((state) => Boolean(state.settings.muted))
   const inMatch =
     pathname.startsWith('/game/') ||
-    pathname === '/free/match' ||
-    pathname === '/daily/play'
+    pathname === '/free/match'
 
   useEffect(() => {
     playMusic(pathname === '/' ? 'intro' : 'game')

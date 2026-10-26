@@ -2,7 +2,6 @@ import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AvatarPicker, PlayerBadge } from '../components/AvatarPicker'
 import { MuteButton } from '../components/MuteButton'
-import { FlameIcon } from '../components/FlameIcon'
 import { Modal } from '../components/Modal'
 import { PancitoSprite, PancitoTip } from '../components/PancitoGuide'
 import { STAR_TIP } from '../components/Stars'
@@ -18,9 +17,6 @@ import { TERMS_VERSION, termsText } from '../content/legal/terms'
 import { setSetting, progressFor, useSave } from '../lib/save'
 import { playSound } from '../lib/audio'
 import { useT } from '../lib/i18n'
-import { streakLabel, todayResult, useDailyStats } from '../lib/daily'
-import { FEATURES } from '../lib/features'
-import { AccountPrompt } from '../components/AccountPrompt'
 import type { CountryCode, Language } from '../types'
 
 export function Menu() {
@@ -30,10 +26,6 @@ export function Menu() {
 
   const settings = useSave((state) => state.settings)
   const progress = useSave(() => progressFor(settings.country))
-  const dailyStats = useDailyStats()
-  const dailyDone = useSave((state) =>
-    Boolean(todayResult(state.daily, settings.country)),
-  )
 
   const [creditsOpen, setCreditsOpen] = useState(false)
   const [countryPickerOpen, setCountryPickerOpen] = useState(false)
@@ -46,8 +38,8 @@ export function Menu() {
   const allStoriesDone = unlocked > 0 && unlocked >= stories.length
 
   const summary = useMemo(
-    () => summarizePlayer(levels, stories, progress, dailyStats),
-    [levels, stories, progress, dailyStats],
+    () => summarizePlayer(levels, stories, progress),
+    [levels, stories, progress],
   )
   const achievementsEarned = achievements.filter(
     (item) => achievementProgress(item, summary) >= item.objetivo,
@@ -164,29 +156,6 @@ export function Menu() {
         <button type="button" className="btn-secondary" onClick={() => go('/free')}>
           {t('freePlay')}
         </button>
-        {FEATURES.duels && (
-          <button type="button" className="btn-secondary" onClick={() => go('/duel')}>
-            {t('duel')}
-          </button>
-        )}
-        {FEATURES.daily && (
-          <button
-            type="button"
-            className="btn-secondary btn-daily"
-            data-pending={!dailyDone || undefined}
-            aria-label={`${t('dailyTitle')}. ${streakLabel(t, dailyStats.currentStreak)}${dailyDone ? '' : `. ${t('dailyPending')}`}`}
-            onClick={() => go('/daily')}
-          >
-            {!dailyDone && <span className="btn-daily-dot" aria-hidden="true" />}
-            {t('dailyShort')}
-            {dailyStats.currentStreak > 0 && (
-              <span className="btn-note btn-daily-streak" aria-hidden="true">
-                <FlameIcon />
-                {dailyStats.currentStreak}
-              </span>
-            )}
-          </button>
-        )}
         <div className="menu-settings-row">
           <button
             type="button"
@@ -484,9 +453,6 @@ function Onboarding() {
       </Modal>
     )
   }
-
-  /* Last step: offer a cloud account, after Pancito's first menu tip. */
-  if ((settings.tipsSeen ?? []).includes('menu-play')) return <AccountPrompt />
 
   return null
 }

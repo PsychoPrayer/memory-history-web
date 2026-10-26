@@ -104,35 +104,17 @@ Todo el progreso vive en `localStorage` bajo la clave `memoryhistory.guardado`, 
 único objeto con el progreso separado por país. Unity lo repartía en decenas de claves
 sueltas de PlayerPrefs.
 
-El progreso sigue en `localStorage`. Con Supabase configurado, `initCloudSync()` en
-`src/lib/cloudSync.ts` sube el guardado al iniciar sesión y lo fusiona (mejores
-estrellas, uniones de historias) entre nube y dispositivo.
+No hay cuentas ni servidor propio. Cada plataforma guarda el progreso a su manera:
 
-### Supabase (cuentas + sync)
+- **Web:** solo en el navegador (`localStorage`).
+- **Android:** en el móvil; la copia de seguridad automática de Google (Auto Backup)
+  lo recupera al reinstalar o cambiar de móvil.
+- **iPhone/iPad:** en el dispositivo y en iCloud (almacén clave-valor), mediante el
+  plugin nativo `ICloudSave` (`ios/App/App/ICloudSavePlugin.swift`) y
+  `src/lib/icloud.ts`. Si el progreso del dispositivo y el de iCloud son distintos, se
+  fusionan (mejores estrellas, uniones de historias) con `src/lib/mergeSave.ts`.
 
-1. Crea un proyecto en [supabase.com](https://supabase.com).
-2. En SQL Editor, ejecuta `supabase/schema.sql`.
-3. Authentication → Providers → Email: déjalo activo y **desactiva “Confirm email”**.
-   Los jugadores solo eligen usuario y contraseña; el juego los convierte en un
-   correo interno `usuario@users.memoryhistory.app` que nunca recibe mensajes
-   (dominio configurable con `VITE_USERNAME_EMAIL_DOMAIN`). Las cuentas antiguas
-   con correo real siguen entrando escribiendo su correo en el campo de usuario.
-4. Copia Project URL y anon key a `.env` (usa `.env.example` como plantilla):
-
-```
-VITE_SUPABASE_URL=https://xxxx.supabase.co
-VITE_SUPABASE_ANON_KEY=eyJ...
-```
-
-5. Para la clasificación del Desafío del día, ejecuta también `supabase/daily.sql`
-   en el SQL Editor. Sin esa tabla el desafío funciona igual, solo sin clasificación.
-6. Después ejecuta `supabase/accounts.sql`: códigos de recuperación, borrado de cuenta
-   desde el juego y reportes de nombres en la clasificación.
-7. En Vercel, añade las mismas variables de entorno y redeploy.
-8. En el juego: Configuración → Cuenta en la nube.
-
-Para moderar: los reportes están en la tabla `name_reports`. Con 3 reportes, las filas
-del jugador en `daily_results` pasan a `hidden = true`; ponlas en `false` para restaurarlas.
+Configuración → "Borrar todos mis datos" elimina el guardado local y la copia de iCloud.
 
 ### Web y app nativa
 

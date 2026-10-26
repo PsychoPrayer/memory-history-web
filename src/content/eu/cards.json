@@ -24,12 +24,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "5.1",
-    "nombre": "Baseball Cap",
-    "imagen": "/imagenes/cartas/baseball-cap.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "6.1",
     "nombre": "basketball",
     "imagen": "/imagenes/cartas/basketball.webp",
@@ -42,28 +36,10 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "8.1",
-    "nombre": "beer",
-    "imagen": "/imagenes/cartas/beer.webp",
-    "desbloqueoEn": 24
-  },
-  {
-    "id": "9.1",
-    "nombre": "Mordekay",
-    "imagen": "/imagenes/cartas/mordekay.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "10.1",
     "nombre": "Bold Eagle",
     "imagen": "/imagenes/cartas/bold-eagle.webp",
     "desbloqueoEn": 12
-  },
-  {
-    "id": "11.1",
-    "nombre": "Bourbon whiskey",
-    "imagen": "/imagenes/cartas/bourbon-whiskey.webp",
-    "desbloqueoEn": 24
   },
   {
     "id": "12.1",
@@ -78,12 +54,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "14.1",
-    "nombre": "campbell soup",
-    "imagen": "/imagenes/cartas/campbell-soup.webp",
-    "desbloqueoEn": 16
-  },
-  {
     "id": "15.1",
     "nombre": "canoa",
     "imagen": "/imagenes/cartas/canoa.webp",
@@ -93,12 +63,6 @@
     "id": "16.1",
     "nombre": "cardenal",
     "imagen": "/imagenes/cartas/cardenal.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "17.1",
-    "nombre": "can",
-    "imagen": "/imagenes/cartas/can.webp",
     "desbloqueoEn": 12
   },
   {
@@ -124,12 +88,6 @@
     "nombre": "horse",
     "imagen": "/imagenes/cartas/horse.webp",
     "desbloqueoEn": 12
-  },
-  {
-    "id": "22.1",
-    "nombre": "Converse",
-    "imagen": "/imagenes/cartas/converse.webp",
-    "desbloqueoEn": 20
   },
   {
     "id": "23.1",
@@ -240,21 +198,9 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "41.1",
-    "nombre": "hershey",
-    "imagen": "/imagenes/cartas/hershey.webp",
-    "desbloqueoEn": 24
-  },
-  {
     "id": "42.1",
     "nombre": "hockey helmet",
     "imagen": "/imagenes/cartas/hockey-helmet.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "43.1",
-    "nombre": "hollywood",
-    "imagen": "/imagenes/cartas/hollywood.webp",
     "desbloqueoEn": 12
   },
   {
@@ -267,12 +213,6 @@
     "id": "45.1",
     "nombre": "Ironside",
     "imagen": "/imagenes/cartas/ironside.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "46.1",
-    "nombre": "kisses",
-    "imagen": "/imagenes/cartas/kisses.webp",
     "desbloqueoEn": 12
   },
   {
@@ -315,12 +255,6 @@
     "id": "53.1",
     "nombre": "Oak Tree",
     "imagen": "/imagenes/cartas/oak-tree.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "54.1",
-    "nombre": "Model A",
-    "imagen": "/imagenes/cartas/model-a.webp",
     "desbloqueoEn": 12
   },
   {
@@ -372,12 +306,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "63.1",
-    "nombre": "Anabelle",
-    "imagen": "/imagenes/cartas/anabelle.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "64.1",
     "nombre": "Roadrunner",
     "imagen": "/imagenes/cartas/roadrunner.webp",
@@ -420,18 +348,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "71.1",
-    "nombre": "Smokey Bear",
-    "imagen": "/imagenes/cartas/smokey-bear.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "72.1",
-    "nombre": "Spam",
-    "imagen": "/imagenes/cartas/spam.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "73.1",
     "nombre": "Liberty Statue",
     "imagen": "/imagenes/cartas/liberty-statue.webp",
@@ -447,12 +363,6 @@
     "id": "75.1",
     "nombre": "Sunflower",
     "imagen": "/imagenes/cartas/sunflower.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "76.1",
-    "nombre": "Syrop",
-    "imagen": "/imagenes/cartas/syrop.webp",
     "desbloqueoEn": 12
   },
   {
@@ -492,12 +402,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "84.1",
-    "nombre": "Strong Woman",
-    "imagen": "/imagenes/cartas/strong-woman.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "85.1",
     "nombre": "Chicken Wings",
     "imagen": "/imagenes/cartas/chicken-wings.webp",
@@ -513,18 +417,6 @@
     "id": "87.1",
     "nombre": "Botas",
     "imagen": "/imagenes/cartas/botas.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "88.1",
-    "nombre": "Elvis",
-    "imagen": "/imagenes/cartas/elvis.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "89.1",
-    "nombre": "John Wayne",
-    "imagen": "/imagenes/cartas/john-wayne.webp",
     "desbloqueoEn": 12
   },
   {
@@ -546,12 +438,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "93.1",
-    "nombre": "Cinabon",
-    "imagen": "/imagenes/cartas/cinabon.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "94.1",
     "nombre": "pie limon",
     "imagen": "/imagenes/cartas/pie-limon.webp",
@@ -565,8 +451,68 @@
   },
   {
     "id": "96.1",
-    "nombre": "Cheerios",
-    "imagen": "/imagenes/cartas/cheerios.webp",
+    "nombre": "Thomas Jefferson",
+    "imagen": "/imagenes/cartas/thomas-jefferson.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "97.1",
+    "nombre": "Sacagawea",
+    "imagen": "/imagenes/cartas/sacagawea.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "98.1",
+    "nombre": "Pony Express",
+    "imagen": "/imagenes/cartas/pony-express.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "99.1",
+    "nombre": "Paul Revere",
+    "imagen": "/imagenes/cartas/paul-revere.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "100.1",
+    "nombre": "Minuteman",
+    "imagen": "/imagenes/cartas/minuteman.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "101.1",
+    "nombre": "Mayflower",
+    "imagen": "/imagenes/cartas/mayflower.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "102.1",
+    "nombre": "We the People",
+    "imagen": "/imagenes/cartas/we-the-people.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "103.1",
+    "nombre": "Log Cabin",
+    "imagen": "/imagenes/cartas/log-cabin.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "104.1",
+    "nombre": "Lewis & Clark Compass",
+    "imagen": "/imagenes/cartas/lewis-and-clark-compass.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "105.1",
+    "nombre": "Bell Telephone",
+    "imagen": "/imagenes/cartas/telefono-de-bell.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "106.1",
+    "nombre": "13-Star Flag",
+    "imagen": "/imagenes/cartas/bandera-de-13-estrellas.webp",
     "desbloqueoEn": 12
   }
 ]

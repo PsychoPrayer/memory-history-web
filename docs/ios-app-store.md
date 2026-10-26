@@ -44,5 +44,6 @@ Then Archive again (bump build number each upload).
 
 - Vite uses `base: './'` so assets load inside the native WebView.
 - Do not leave a `server.url` live-reload IP in production config.
-- Privacy labels: account / cloud save (Supabase) must match App Store Connect nutrition labels.
+- Privacy labels: progress stays on the device and in the player's own iCloud, but the AdMob SDK collects usage/advertising and diagnostics data (not linked to identity, not used for tracking). See docs/anuncios.md. Do not put the app in the Kids category (no third-party ads allowed there).
+- iCloud: in Xcode → Signing & Capabilities, add **iCloud** and tick **Key-value storage** (see `ios/App/App/App.entitlements`).
 - Android Play package is `com.pancitogames.memoryhistory2` (legacy listing). iOS stays `com.pancitogames.memoryhistory`. `npm run cap:android` patches the Android id after sync.

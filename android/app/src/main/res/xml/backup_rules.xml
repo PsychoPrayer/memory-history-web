@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Auto Backup (Android 11 and earlier): only the game's save, which lives in the
+  web view's localStorage. Web view caches stay out so the backup stays small.
+-->
+<full-backup-content>
+    <include domain="root" path="app_webview/Default/Local Storage/" />
+</full-backup-content>

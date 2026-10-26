@@ -12,7 +12,7 @@ español; el código, los comentarios y los mensajes de commit van en inglés.
 ## 1. Qué es Memory History
 
 Un **juego de memoria educativo** sobre la historia y la cultura de distintos países,
-de **PancitoGames**. Gratis y sin anuncios. Lo protagoniza **Pancito**, un panecillo
+de **PancitoGames**. Gratis; las apps de Android e iOS tienen anuncios de AdMob (la web no). Lo protagoniza **Pancito**, un panecillo
 explorador que guía al jugador.
 
 - **Países jugables:** Venezuela, España y Estados Unidos (70 niveles y 54 historias
@@ -24,23 +24,17 @@ explorador que guía al jugador.
 - **Tests:** preguntas sobre las historias desbloqueadas.
 - **PancitoLandia:** partida libre con una baraja de 59 Pancitos.
 - **Logros**, **pista** (bombilla, una por nivel) y **juego sin conexión**.
-- **Cuentas opcionales** con usuario y contraseña (sin correo) y código de recuperación.
-  Al terminar la bienvenida el juego **pregunta una vez** si quieres crearla
-  ("Sí, crear mi usuario" / "Ahora no"); siempre se puede hacer luego en Configuración.
+- **Sin cuentas ni servidor.** El progreso se guarda en cada dispositivo (ver 5.
+  Datos). Configuración → "Borrar todos mis datos" lo borra todo.
 - **Avatares:** el jugador elige entre los 5 Pancitos.
+- **Libro de exploración:** tras los logos, el libro se abre al tocarlo
+  (`components/BookOpening.tsx`); cada pantalla es una hoja sobre una mesa de madera y
+  se cambia de pantalla pasando página (`components/PageTurn.tsx`).
 
-**El juego es para una sola persona y queremos mantenerlo simple y didáctico.**
-
-### Funciones aparcadas (no mostrar)
-
-Están construidas pero **apagadas** en `src/lib/features.ts` hasta que el proyecto
-esté más sólido. No aparecen en el menú y sus rutas llevan al menú. **No las actives ni
-las muestres** sin que Iván lo pida:
-
-- `duels`: duelos en tiempo real entre jugadores (`screens/Duel.tsx`, `lib/duel.ts`).
-- `daily`: desafío del día con clasificación, racha, pasaporte, logros propios y
-  **avatares de premio** (`screens/Daily*.tsx`, `lib/daily*.ts`). Con él apagado, el
-  selector solo ofrece los 5 Pancitos.
+**El juego es para una sola persona y queremos mantenerlo simple y didáctico.** Los
+duelos, el desafío del día y las cuentas en la nube existieron y se quitaron a propósito
+(Iván no quiere depender de un servidor de pago). No los vuelvas a añadir sin que él lo
+pida.
 
 Se publica como **web** (Vercel) y como **app nativa** para App Store y Google Play
 (Capacitor).
@@ -50,8 +44,6 @@ Se publica como **web** (Vercel) y como **app nativa** para App Store y Google P
 ## 2. Stack
 
 - **React 18 + TypeScript + Vite 5**, `react-router-dom` 6.
-- **Supabase**: cuentas (Auth), guardado en la nube, duelos, clasificación del desafío,
-  recuperación de cuentas y reportes.
 - **Capacitor 8** para iOS y Android (`ios/`, `android/`).
 - **Vercel** para la web: cada push a `main` se publica solo.
 - Sin librerías de UI ni de estilos: **todo el CSS vive en `src/index.css`**.
@@ -64,18 +56,17 @@ Se publica como **web** (Vercel) y como **app nativa** para App Store y Google P
 ```
 src/
   screens/      Una pantalla por ruta: Menu, Sections (/levels), Levels (/levels/:cards,
-                el mapa), Game, Daily, DailyGame, Stories, Tests, Quiz, Achievements,
-                FreePlay, Duel, Settings, Terms, Intro
+                el mapa), Game, Stories, Tests, Quiz, Achievements, FreePlay,
+                Settings, Terms, Intro
   components/   Piezas reutilizables: Board, Card, MatchBar, Modal, LoadingGate,
-                CloudAccount, SyncChoice, AccountModals, AvatarPicker, PancitoGuide...
-  lib/          Lógica: save (guardado local), cloudSync (Supabase + fusión de
-                progreso), daily (desafío), useMatch (reglas de partida), i18n (textos
-                ES/EN), offline (service worker), avatars, nameFilter, duel...
+                BookOpening, PageTurn, AvatarPicker, PancitoGuide...
+  lib/          Lógica: save (guardado local), icloud (copia en iCloud en iPhone),
+                mergeSave (fusión de progreso), useMatch (reglas de partida), i18n
+                (textos ES/EN), offline (service worker), avatars...
   data/         Carga del contenido por país y reglas de progresión
   content/      JSON del contenido de cada país (ve, es, eu, pl) y textos legales
   sw-template.js  Plantilla del service worker (la build genera dist/sw.js)
 public/         imagenes/ (cartas, historias, atlas, banderas, ui), audio/, icons/
-supabase/       SQL para el proyecto de Supabase
 tools/          Scripts de Node (iconos, banderas, paquete Android)
 docs/           Notas de publicación (ej. ios-app-store.md)
 ```
@@ -96,7 +87,6 @@ node tools/icons.mjs   # regenera los iconos de public/icons
 
 - La **web** usa rutas absolutas (`/`) y service worker. La **app nativa** usa
   `--mode native` (rutas relativas, sin service worker). No mezcles las dos builds.
-- Variables en `.env` (ver `.env.example`): `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`.
 
 ---
 
@@ -131,28 +121,26 @@ node tools/icons.mjs   # regenera los iconos de public/icons
   horizontal.
 - Respeta `prefers-reduced-motion` en toda animación.
 
-### Datos y nube
-- El progreso vive en `localStorage` (`lib/save.ts`) y se sincroniza con Supabase.
-  Si añades un campo nuevo al guardado, contémplalo en `migrate()` (save.ts) y en
+### Datos
+- El progreso vive en `localStorage` (`lib/save.ts`). No hay servidor propio.
+  - **Web:** solo en ese navegador.
+  - **Android:** la copia de seguridad automática de Google lo guarda
+    (`android/app/src/main/res/xml/backup_rules.xml` y `data_extraction_rules.xml`
+    incluyen solo el localStorage del visor web).
+  - **iPhone/iPad:** `lib/icloud.ts` lo copia en iCloud mediante el plugin nativo
+    `ios/App/App/ICloudSavePlugin.swift` (registrado en `AppViewController.swift`;
+    permiso en `App.entitlements`). Si dispositivo e iCloud difieren, se fusionan con
+    `mergeSavedStates()`.
+- Si añades un campo nuevo al guardado, contémplalo en `migrate()` (save.ts) y en
   `mergeSavedStates()` (mergeSave.ts).
-- Al iniciar sesión con progresos distintos en dispositivo y cuenta, el jugador elige
-  (combinar / cargar cuenta / conservar dispositivo). No subas nada mientras haya un
-  conflicto pendiente.
-- El filtro de nombres ofensivos está duplicado a propósito en `lib/nameFilter.ts` y en
-  `public.name_is_blocked()` de `supabase/accounts.sql`: si cambias uno, cambia el otro.
 
 ### Tiendas
 - **Nada de donaciones ni enlaces de pago externos** (Ko-fi, PayPal…): App Store y
   Google Play lo rechazan. Si algún día hay apoyo económico, será con las compras
   integradas de cada tienda.
-
-### Supabase
-- Los SQL de `supabase/` se ejecutan en el SQL Editor en este orden: `schema.sql`,
-  `duel.sql` (+ `duel_avatar`, `duel_rematch`, `duel_score`), `daily.sql`,
-  `accounts.sql`. Todos se pueden volver a ejecutar sin romper nada.
-- En Authentication → Email, **"Confirm email" está desactivado** (las cuentas no
-  tienen correo real). No lo cambies.
-- Nunca pongas la `service_role` key en el código del juego.
+- **Anuncios:** solo Google AdMob y solo en las apps (`lib/ads.ts`, guía en
+  `docs/anuncios.md`). Siempre en modo niños: no personalizados, clasificación G, sin
+  identificador publicitario ni permiso de rastreo. Nunca anuncios durante una partida.
 
 ---
 

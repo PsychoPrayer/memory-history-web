@@ -108,24 +108,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "19",
-    "nombre": "Einstein",
-    "imagen": "/imagenes/cartas/einstein.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "20",
-    "nombre": "El Fantasma de la Ópera",
-    "imagen": "/imagenes/cartas/el-fantasma-de-la-opera.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "21",
-    "nombre": "El Principito",
-    "imagen": "/imagenes/cartas/el-principito.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "22",
     "nombre": "Escandinavia",
     "imagen": "/imagenes/cartas/escandinavia.webp",
@@ -180,12 +162,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "31",
-    "nombre": "Gandalf",
-    "imagen": "/imagenes/cartas/gandalf.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "32",
     "nombre": "Genghis Khan",
     "imagen": "/imagenes/cartas/gengis-kan.webp",
@@ -216,12 +192,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "37",
-    "nombre": "Indiana Jones",
-    "imagen": "/imagenes/cartas/indiana-jones.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "38",
     "nombre": "Inglaterra",
     "imagen": "/imagenes/cartas/inglaterra.webp",
@@ -237,30 +207,6 @@
     "id": "40",
     "nombre": "Italia",
     "imagen": "/imagenes/cartas/italia.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "41",
-    "nombre": "Jack Sparrow",
-    "imagen": "/imagenes/cartas/jack-sparrow.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "42",
-    "nombre": "Jon Snow",
-    "imagen": "/imagenes/cartas/john-snow.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "43",
-    "nombre": "Louis Armstrong",
-    "imagen": "/imagenes/cartas/louis-amstrong.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "44",
-    "nombre": "Marcel Marceau",
-    "imagen": "/imagenes/cartas/marcel-marcou.webp",
     "desbloqueoEn": 12
   },
   {
@@ -330,12 +276,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "57",
-    "nombre": "Sherlock Holmes",
-    "imagen": "/imagenes/cartas/sherlock-holmes.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "58",
     "nombre": "Somalia",
     "imagen": "/imagenes/cartas/somalia.webp",
@@ -351,6 +291,48 @@
     "id": "61",
     "nombre": "Vaquero",
     "imagen": "/imagenes/cartas/vaquero.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "62",
+    "nombre": "Juana de Arco",
+    "imagen": "/imagenes/cartas/juana-de-arco.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "63",
+    "nombre": "Marco Polo",
+    "imagen": "/imagenes/cartas/marco-polo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "64",
+    "nombre": "Cleopatra",
+    "imagen": "/imagenes/cartas/cleopatra.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "65",
+    "nombre": "Detective",
+    "imagen": "/imagenes/cartas/detective.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "66",
+    "nombre": "Mozart",
+    "imagen": "/imagenes/cartas/mozart.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "67",
+    "nombre": "Pirata",
+    "imagen": "/imagenes/cartas/pirata.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "68",
+    "nombre": "Robin Hood",
+    "imagen": "/imagenes/cartas/robin-hood.webp",
     "desbloqueoEn": 12
   }
 ]

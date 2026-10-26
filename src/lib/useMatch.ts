@@ -255,8 +255,9 @@ export function useMatch(
     ],
   )
 
-  const requestHint = useCallback(() => {
-    if (hintUsed || phase !== 'playing' || paused || comparing) return false
+  /** `bonus` gives one more hint after the free one (a rewarded ad, see lib/ads.ts). */
+  const requestHint = useCallback((bonus = false) => {
+    if ((hintUsed && !bonus) || phase !== 'playing' || paused || comparing) return false
 
     const closedFlips = tiles.map((tile) =>
       tile.state === 'flipped' ? { ...tile, state: 'hidden' as const } : tile,

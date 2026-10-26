@@ -67,7 +67,7 @@ self.addEventListener('fetch', (event) => {
     if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
       event.respondWith(staleWhileRevalidate(request, FONT_CACHE))
     }
-    /* Supabase and everything else: always live. */
+    /* Everything else: always live. */
     return
   }
 

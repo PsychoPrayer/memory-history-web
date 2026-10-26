@@ -60,34 +60,13 @@ export interface FreeSettings {
   back: string | null
 }
 
-/** Official (first) attempt at one day's challenge in one country. */
-export interface DailyResult {
-  /** UTC day, YYYY-MM-DD. */
-  day: string
-  country: CountryCode
-  cards: number
-  seconds: number
-  mistakes: number
-  stars: Stars
-  /** Sent to the cloud leaderboard. */
-  submitted: boolean
-}
-
-export interface DailyData {
-  /** Keyed by `day|country`. */
-  results: Record<string, DailyResult>
-  /** `day|country` keys whose official attempt has begun; replays are practice. */
-  started: string[]
-}
-
 export interface SavedState {
   version: number
-  /** Epoch ms; used to prefer newer settings when merging cloud saves. */
+  /** Epoch ms; used to prefer newer settings when merging with the iCloud copy. */
   updatedAt: number
   settings: SettingsData
   free: FreeSettings
   countries: Record<string, CountryProgress>
-  daily: DailyData
 }
 
 const EMPTY_PROGRESS: CountryProgress = {
@@ -138,7 +117,6 @@ function initialState(): SavedState {
       back: null,
     },
     countries: {},
-    daily: { results: {}, started: [] },
   }
 }
 
@@ -231,15 +209,6 @@ function migrate(raw: Record<string, unknown>): SavedState {
     }
   }
 
-  if (raw.daily && typeof raw.daily === 'object') {
-    const daily = raw.daily as Partial<DailyData>
-    base.daily = {
-      results:
-        daily.results && typeof daily.results === 'object' ? daily.results : {},
-      started: Array.isArray(daily.started) ? daily.started : [],
-    }
-  }
-
   if (typeof raw.updatedAt === 'number') base.updatedAt = raw.updatedAt
   else base.updatedAt = Date.now()
 
@@ -287,7 +256,7 @@ function load(): SavedState {
   }
 }
 
-let suppressCloudSync = false
+let suppressSync = false
 
 function persist() {
   state = { ...state, updatedAt: Date.now() }
@@ -296,11 +265,12 @@ function persist() {
   } catch {
     // Private browsing or quota full: match continues, just won't save.
   }
-  if (!suppressCloudSync) syncHandler?.(state)
+  if (!suppressSync) syncHandler?.(state)
   for (const listener of listeners) listener()
 }
 
-type SyncHandler = (state: SavedState) => void
+/** Receives every saved state, or null when the player erases everything (lib/icloud.ts). */
+type SyncHandler = (state: SavedState | null) => void
 let syncHandler: SyncHandler | null = null
 
 export function registerSync(fn: SyncHandler | null) {
@@ -311,17 +281,17 @@ export function readState(): SavedState {
   return state
 }
 
-/** Replace local save (e.g. after cloud merge) without pushing back to the cloud. */
+/** Replace the local save (e.g. after merging the iCloud copy) without echoing it back. */
 export function hydrateState(next: SavedState, options?: { syncCloud?: boolean }) {
   state = migrate(next as unknown as Record<string, unknown>)
-  suppressCloudSync = !options?.syncCloud
+  suppressSync = !options?.syncCloud
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
   } catch {
     /* ignore */
   }
   for (const listener of listeners) listener()
-  suppressCloudSync = false
+  suppressSync = false
   if (options?.syncCloud) syncHandler?.(state)
 }
 
@@ -451,56 +421,29 @@ export function recordAchievements(
   }))
 }
 
-export function markDailyStarted(key: string) {
-  update((previous) =>
-    previous.daily.started.includes(key)
-      ? previous
-      : {
-          ...previous,
-          daily: {
-            ...previous.daily,
-            /* Keep the list short: only recent days matter. */
-            started: [...previous.daily.started, key].slice(-60),
-          },
-        },
-  )
-}
-
-export function recordDaily(key: string, result: DailyResult) {
-  update((previous) =>
-    previous.daily.results[key]
-      ? previous
-      : {
-          ...previous,
-          daily: {
-            ...previous.daily,
-            results: { ...previous.daily.results, [key]: result },
-          },
-        },
-  )
-}
-
-export function markDailySubmitted(key: string) {
-  update((previous) => {
-    const result = previous.daily.results[key]
-    if (!result || result.submitted) return previous
-    return {
-      ...previous,
-      daily: {
-        ...previous.daily,
-        results: { ...previous.daily.results, [key]: { ...result, submitted: true } },
-      },
-    }
-  })
-}
-
-/** Wipes progress in every country and the daily history; keeps settings and onboarding. */
+/** Wipes progress in every country; keeps settings and onboarding. */
 export function clearAllProgress() {
-  update((previous) => ({
-    ...previous,
-    countries: {},
-    daily: { results: {}, started: [] },
-  }))
+  update((previous) => ({ ...previous, countries: {} }))
+}
+
+/**
+ * Deletes everything the game keeps about the player: progress, name, avatar
+ * and settings on this device, and the iCloud copy on iPhone. The game starts
+ * again as on its first launch.
+ */
+export function eraseAllData() {
+  try {
+    localStorage.removeItem(STORAGE_KEY)
+    /* Sign-in tokens left by the old cloud accounts (Supabase, "sb-…"). */
+    for (const key of Object.keys(localStorage)) {
+      if (key.startsWith('sb-')) localStorage.removeItem(key)
+    }
+  } catch {
+    /* nothing stored */
+  }
+  syncHandler?.(null)
+  state = initialState()
+  for (const listener of listeners) listener()
 }
 
 export function clearProgress(country: CountryCode) {

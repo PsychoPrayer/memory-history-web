@@ -6,7 +6,6 @@ import { achievementProgress, summarizePlayer } from '../data/progression'
 import { progressFor, useSave } from '../lib/save'
 import { playSound } from '../lib/audio'
 import { useLanguage, useT } from '../lib/i18n'
-import { useDailyStats } from '../lib/daily'
 import type { Achievement } from '../types'
 
 export function Achievements() {
@@ -16,11 +15,10 @@ export function Achievements() {
 
   const country = useSave((state) => state.settings.country)
   const progress = useSave(() => progressFor(country))
-  const dailyStats = useDailyStats()
 
   const summary = useMemo(
-    () => summarizePlayer(levels, stories, progress, dailyStats),
-    [stories, levels, progress, dailyStats],
+    () => summarizePlayer(levels, stories, progress),
+    [stories, levels, progress],
   )
 
   const [open, setOpen] = useState<Achievement | null>(null)

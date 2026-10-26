@@ -1,8 +1,8 @@
 # TÉRMINOS Y CONDICIONES DE USO Y POLÍTICA DE PRIVACIDAD
 ## MEMORY HISTORY
 
-**Fecha de última actualización:** 17 de octubre de 2026
-**Versión:** 3.1
+**Fecha de última actualización:** 23 de octubre de 2026
+**Versión:** 4
 
 ---
 
@@ -16,87 +16,67 @@ Si no está de acuerdo con alguna parte de estos Términos, no utilice el Juego.
 
 ## 2. QUÉ ES MEMORY HISTORY
 
-Memory History es un juego de memoria educativo y gratuito, sin anuncios, sobre la historia y la cultura de distintos países. Incluye una campaña por niveles, historias ilustradas, tests, logros, un modo libre (PancitoLandia), duelos en tiempo real y un Desafío del día con clasificación.
+Memory History es un juego de memoria educativo y gratuito sobre la historia y la cultura de distintos países. Incluye una campaña por niveles, historias ilustradas, tests, logros y un modo libre (PancitoLandia). Es un juego para una sola persona: no tiene cuentas, chat ni funciones en línea con otros jugadores. Las versiones para Android e iPhone/iPad muestran anuncios (sección 4.4); la versión web no.
 
 En estos Términos, "el Desarrollador" es el equipo que crea y mantiene el Juego (ver sección 15).
 
 ---
 
-## 3. CUENTA OPCIONAL
+## 3. SIN CUENTAS
 
-### 3.1. Jugar sin cuenta
+El Juego **no tiene cuentas ni inicio de sesión** y no pide correo electrónico, número de teléfono, nombre real, fecha de nacimiento ni ningún otro dato personal. Su progreso se guarda en su propio dispositivo (ver sección 4).
 
-Todo el Juego puede usarse sin crear una cuenta, salvo las funciones que necesitan conexión con otros jugadores (duelos y clasificación del Desafío del día).
-
-### 3.2. Crear una cuenta
-
-La cuenta solo pide **un nombre de usuario y una contraseña**. El Juego **no solicita correo electrónico**, número de teléfono, nombre real, fecha de nacimiento ni ningún otro dato personal. Las cuentas creadas antes con correo electrónico siguen funcionando.
-
-### 3.3. Responsabilidad sobre la cuenta
-
-- Usted es responsable de guardar su nombre de usuario y su contraseña y de no compartirlos.
-- Al crear la cuenta, el Juego le muestra una sola vez un **código de recuperación**. Con su nombre de usuario y ese código puede elegir una contraseña nueva si olvida la actual; al usarlo, recibirá un código nuevo y se cerrará la sesión en los demás dispositivos. Desde Configuración puede crear un código nuevo, lo que anula el anterior.
-- Como el Juego no pide correo, **si pierde a la vez su contraseña y su código de recuperación, no será posible recuperar la cuenta** ni el progreso guardado en ella, aunque podrá seguir jugando y crear una cuenta nueva.
-- No use su nombre real ni datos personales como nombre de usuario o nombre de jugador.
-
-### 3.4. Vincular y elegir progreso
-
-Al crear una cuenta, el progreso guardado en el dispositivo se guarda en ella. Al iniciar sesión en un dispositivo que ya tiene progreso distinto, el Juego le permitirá combinar ambos, cargar el de la cuenta o conservar el del dispositivo. Las opciones que reemplazan progreso piden confirmación; el progreso reemplazado no se puede recuperar.
+Las cuentas en la nube que existían en versiones anteriores del Juego se han retirado. El progreso que ya estaba en su dispositivo se conserva. Los datos que esas cuentas guardaban en nuestros servidores se eliminarán por completo; si desea que los borremos antes, escriba a la dirección de la sección 15.
 
 ---
 
 ## 4. PRIVACIDAD Y DATOS
 
-### 4.1. Datos que se guardan en su dispositivo
+### 4.1. Dónde se guarda su progreso
 
-El progreso (niveles, estrellas, historias, tests, logros, desafíos) y las preferencias (idioma, volumen, nombre de jugador, avatar) se guardan en el almacenamiento local de su navegador o dispositivo. Puede borrarlos en cualquier momento eliminando los datos del sitio, desinstalando el Juego o desde Configuración → Reiniciar progreso.
+El progreso (niveles, estrellas, historias, tests y logros) y las preferencias (idioma, volumen, nombre de jugador y avatar) se guardan **solo en su dispositivo**:
 
-### 4.2. Datos que se guardan con una cuenta
+- **Versión web:** en el almacenamiento local de su navegador.
+- **Android:** en el móvil. Si tiene activada la copia de seguridad de Google, Android incluye el guardado del Juego en esa copia, dentro de su cuenta de Google, y lo recupera al reinstalar el Juego o cambiar de móvil.
+- **iPhone y iPad:** en el dispositivo y en su **iCloud**, para que el progreso aparezca en sus otros dispositivos de Apple con la misma cuenta.
 
-Si crea una cuenta, se almacenan en nuestros servidores:
+El Desarrollador **no tiene servidores que guarden sus datos** y no puede ver su progreso. Las copias de Google y de iCloud las gestionan Google y Apple según sus propias políticas de privacidad y puede desactivarlas en los ajustes de su dispositivo.
 
-- su nombre de usuario;
-- su contraseña y su código de recuperación, **solo en forma cifrada** (hash): nadie, ni el Desarrollador, puede leerlos;
-- los intentos de recuperación de cuenta (usuario, fecha y si fueron correctos), que se borran automáticamente a las 24 horas y solo sirven para frenar ataques;
-- una copia de su progreso y preferencias, para sincronizarlos entre dispositivos;
-- los datos técnicos mínimos para mantener la sesión (por ejemplo, la fecha de inicio de sesión y un token de sesión guardado en su dispositivo).
+### 4.2. Nombre de jugador
 
-### 4.3. Datos visibles para otros jugadores
+El nombre de jugador que elija solo se muestra en su dispositivo. No use su nombre real si comparte el dispositivo con otras personas.
 
-- **Duelos:** su nombre de duelo, su avatar y el resultado de cada partida son visibles para el rival.
-- **Clasificación del Desafío del día:** si juega el desafío con la sesión iniciada, su **nombre de jugador, su avatar, su tiempo, sus errores y su puesto** se publican en la clasificación del día y son visibles para **cualquier persona** que abra el Juego.
+### 4.3. Proveedores técnicos
 
-Elija un nombre de jugador que no revele su identidad si no desea que otros la conozcan.
-
-### 4.4. Para qué se usan los datos
-
-Los datos se usan **exclusivamente** para que el Juego funcione: guardar y sincronizar su progreso, permitir los duelos y mostrar la clasificación. **No se venden, no se usan para publicidad, no se usan para crear perfiles y no se comparten** con terceros, salvo con los proveedores técnicos de la sección 4.5.
-
-### 4.5. Proveedores técnicos
-
-- **Supabase:** base de datos y sistema de cuentas.
 - **Vercel:** alojamiento de la versión web.
+- **Google AdMob:** anuncios, solo en las versiones para Android e iPhone/iPad (ver sección 4.4).
 - **Google Fonts:** tipografías del Juego. Al cargarlas, Google recibe datos técnicos de conexión, como la dirección IP.
 
-Estos proveedores tratan los datos únicamente para prestar su servicio y pueden registrar datos técnicos básicos (como la dirección IP) por seguridad y funcionamiento, según sus propias políticas de privacidad.
+Estos proveedores pueden registrar datos técnicos básicos (como la dirección IP) por seguridad y funcionamiento, según sus propias políticas de privacidad.
 
-### 4.6. Lo que el Juego no hace
+### 4.4. Anuncios
 
-El Juego no muestra publicidad; no usa cookies de publicidad ni de seguimiento; no recopila su ubicación; y no accede a sus contactos, fotos ni archivos.
+Las versiones para Android e iPhone/iPad muestran anuncios de **Google AdMob**: un anuncio a pantalla completa de vez en cuando al terminar una partida (nunca durante ella) y, si usted lo elige, un vídeo corto a cambio de una pista extra. La versión web no tiene anuncios.
 
-### 4.7. Conservación y eliminación
+Como el Juego es para todas las edades, **todos los anuncios se tratan como dirigidos a niños**: no son personalizados, no se usa el identificador publicitario del dispositivo, no se pide permiso para hacer seguimiento y solo se muestran anuncios aptos para todos los públicos. Para mostrarlos, Google recibe datos técnicos necesarios (por ejemplo, la dirección IP, el modelo y el sistema del dispositivo y si se vio o tocó un anuncio), que trata según su propia política de privacidad. El Desarrollador no recibe esos datos de forma que le permitan identificarle.
 
-Los datos de la cuenta se conservan mientras la cuenta exista. Los resultados del Desafío del día se conservan para mostrar el historial de clasificaciones. Puede borrar en cualquier momento su cuenta y todos sus datos en la nube (progreso, resultados de la clasificación, duelos y código de recuperación) desde **Configuración → Cuenta en la nube → Borrar mi cuenta**. El borrado es inmediato y definitivo. Si no puede acceder a su cuenta, también puede pedirlo escribiendo a **pancitogamesdev@gmail.com** e indicando su nombre de usuario; atenderemos la solicitud en un plazo máximo de 30 días.
+### 4.5. Lo que el Juego no hace
 
-### 4.8. Sus derechos
+El Juego no muestra anuncios personalizados; no usa cookies de seguimiento; no recopila su ubicación; no crea perfiles; y no accede a sus contactos, fotos ni archivos.
 
-Según la ley aplicable a su lugar de residencia (por ejemplo, el Reglamento General de Protección de Datos de la Unión Europea o las leyes de privacidad de los Estados Unidos), puede tener derecho a acceder a sus datos, rectificarlos, eliminarlos, oponerse a su tratamiento o recibir una copia. Para ejercer estos derechos, escriba a la dirección de la sección 15. Al crear una cuenta, usted consiente el tratamiento de los datos descritos en esta sección con los fines indicados.
+### 4.6. Borrar sus datos
+
+Puede borrar en cualquier momento todo lo que el Juego guarda sobre usted desde **Configuración → Borrar todos mis datos**: su progreso en todos los países, su nombre de jugador, su avatar y sus ajustes en ese dispositivo y, en iPhone y iPad, la copia de iCloud. El borrado es inmediato y definitivo. También puede borrar el progreso de un solo país desde **Configuración → Reiniciar progreso**, o borrar los datos del sitio o desinstalar el Juego.
+
+### 4.7. Sus derechos
+
+Según la ley aplicable a su lugar de residencia (por ejemplo, el Reglamento General de Protección de Datos de la Unión Europea o las leyes de privacidad de los Estados Unidos), puede tener derecho a acceder a sus datos, rectificarlos o eliminarlos. Como sus datos están solo en sus dispositivos, puede ejercer estos derechos directamente desde el Juego o los ajustes de su dispositivo. Para cualquier consulta, escriba a la dirección de la sección 15.
 
 ---
 
 ## 5. MENORES DE EDAD
 
-El Juego es apto para todas las edades y puede usarse completo sin crear una cuenta. Los menores de 13 años (o de la edad mínima que establezca la ley de su país) deben crear una cuenta, jugar a los duelos o aparecer en la clasificación **solo con el permiso de su padre, madre o tutor**, y no deben usar su nombre real como nombre de usuario ni como nombre de jugador. Los padres o tutores son responsables de supervisar el uso del Juego por parte de los menores a su cargo. Si un padre, madre o tutor cree que un menor ha creado una cuenta sin su permiso, puede pedir su eliminación en la dirección de la sección 15.
+El Juego es apto para todas las edades. No pide datos personales ni permite comunicarse con otras personas. Los padres o tutores son responsables de supervisar el uso del Juego por parte de los menores a su cargo.
 
 ---
 
@@ -104,15 +84,9 @@ El Juego es apto para todas las edades y puede usarse completo sin crear una cue
 
 Al usar el Juego, usted se compromete a no:
 
-- usar nombres de usuario, nombres de jugador o de duelo ofensivos, discriminatorios, sexuales, violentos o que suplanten a otra persona;
-- manipular el Juego, sus resultados o la clasificación, ni enviar resultados falsos por medios técnicos;
-- intentar acceder sin autorización a cuentas, sistemas o datos ajenos, ni sobrecargar o interrumpir los servidores;
 - copiar, modificar, descompilar, vender o distribuir el Juego o su contenido sin autorización;
+- intentar acceder sin autorización a los sistemas del Juego ni sobrecargarlos o interrumpirlos;
 - usar el Juego con fines ilegales.
-
-El Juego rechaza automáticamente algunos nombres ofensivos. Cualquier jugador con cuenta puede **reportar** un nombre inapropiado desde la clasificación; cuando un nombre recibe varios reportes de jugadores distintos, se oculta de la clasificación hasta que el Desarrollador lo revise. Los reportes guardan quién reporta, a quién, el motivo y el nombre reportado, y solo los ve el Desarrollador.
-
-El Desarrollador puede, sin previo aviso, cambiar nombres inapropiados, eliminar resultados sospechosos de la clasificación y suspender o eliminar las cuentas que incumplan estas normas.
 
 ---
 
@@ -164,7 +138,7 @@ El Desarrollador puede modificar, ampliar o interrumpir el Juego o cualquiera de
 
 ## 13. TERMINACIÓN
 
-Puede dejar de usar el Juego en cualquier momento, borrar sus datos locales o borrar su cuenta (sección 4.7). El Desarrollador puede suspender o eliminar el acceso de quien incumpla estos Términos. Las secciones sobre propiedad intelectual, ausencia de garantías, limitación de responsabilidad y ley aplicable seguirán vigentes tras la terminación.
+Puede dejar de usar el Juego en cualquier momento, o borrar todos sus datos (sección 4.6). El Desarrollador puede suspender o eliminar el acceso de quien incumpla estos Términos. Las secciones sobre propiedad intelectual, ausencia de garantías, limitación de responsabilidad y ley aplicable seguirán vigentes tras la terminación.
 
 ---
 

@@ -18,12 +18,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "4",
-    "nombre": "Aceite de oliva",
-    "imagen": "/imagenes/cartas/aceite-de-oliva.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "72",
     "nombre": "Zapatos de flamenco",
     "imagen": "/imagenes/cartas/zapatos-de-flamenco.webp",
@@ -294,12 +288,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "49",
-    "nombre": "Pablo Picaso",
-    "imagen": "/imagenes/cartas/pablo-picaso.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "50",
     "nombre": "Pancito torero",
     "imagen": "/imagenes/cartas/pancito-torero.webp",
@@ -345,12 +333,6 @@
     "id": "57",
     "nombre": "Sagrada familia",
     "imagen": "/imagenes/cartas/sagrada-familia.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "58",
-    "nombre": "Salvador Dali",
-    "imagen": "/imagenes/cartas/salvador-dali.webp",
     "desbloqueoEn": 12
   },
   {
@@ -435,6 +417,102 @@
     "id": "73",
     "nombre": "QuebrantaHuesos",
     "imagen": "/imagenes/cartas/quebrantahuesos.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "74",
+    "nombre": "Soldado de los Tercios",
+    "imagen": "/imagenes/cartas/soldado-de-los-tercios.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "75",
+    "nombre": "Puerta de Alcalá",
+    "imagen": "/imagenes/cartas/puerta-de-alcala.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "76",
+    "nombre": "Hórreo",
+    "imagen": "/imagenes/cartas/horreo.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "77",
+    "nombre": "Gaita Gallega",
+    "imagen": "/imagenes/cartas/gaita-gallega.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "78",
+    "nombre": "Francisco de Goya",
+    "imagen": "/imagenes/cartas/goya.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "79",
+    "nombre": "Torre de Hércules",
+    "imagen": "/imagenes/cartas/torre-de-hercules.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "80",
+    "nombre": "El Cid",
+    "imagen": "/imagenes/cartas/el-cid.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "81",
+    "nombre": "Diego Velázquez",
+    "imagen": "/imagenes/cartas/velazquez.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "82",
+    "nombre": "Dama de Elche",
+    "imagen": "/imagenes/cartas/dama-de-elche.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "83",
+    "nombre": "Cristóbal Colón",
+    "imagen": "/imagenes/cartas/cristobal-colon.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "84",
+    "nombre": "Botafumeiro",
+    "imagen": "/imagenes/cartas/botafumeiro.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "85",
+    "nombre": "Bisonte de Altamira",
+    "imagen": "/imagenes/cartas/bisonte-de-altamira.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "86",
+    "nombre": "Astrolabio",
+    "imagen": "/imagenes/cartas/astrolabio.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "87",
+    "nombre": "Nao Victoria",
+    "imagen": "/imagenes/cartas/nao-victoria.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "88",
+    "nombre": "Sancho Panza",
+    "imagen": "/imagenes/cartas/sancho-panza.webp",
+    "desbloqueoEn": 12
+  },
+  {
+    "id": "89",
+    "nombre": "Toro Bravo",
+    "imagen": "/imagenes/cartas/toro-bravo.webp",
     "desbloqueoEn": 12
   }
 ]

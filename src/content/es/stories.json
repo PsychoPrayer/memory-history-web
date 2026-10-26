@@ -343,18 +343,18 @@
   },
   {
     "id": "19",
-    "titulo": "Pablo Picasso",
-    "imagen": "/imagenes/historias/pablo-picaso.webp",
+    "titulo": "Francisco de Goya",
+    "imagen": "/imagenes/historias/francisco-de-goya.webp",
     "es": {
-      "presentacion": "Picasso: genio malagueño que reinventó el arte moderno.",
+      "presentacion": "Francisco de Goya: el pintor que retrató su tiempo.",
       "texto": [
-        "Pablo Ruiz Picasso, nacido en Málaga en 1881, es el artista español más influyente del siglo XX. Pintor, escultor y ceramista, pasó de la etapa azul y rosa al cubismo junto a Georges Braque, revolucionando la mirada occidental con obras como Las señoritas de Avignon y Guernica, denuncia del bombardeo de la villa vasca en 1937. Aunque vivió muchos años en Francia, mantuvo vínculos con España y legó obras esenciales al Museo Reina Sofía de Madrid."
+        "Francisco de Goya es uno de los artistas españoles más importantes de la historia. Su obra abarcó desde los alegres cartones para tapices hasta las profundas y oscuras pinturas de su madurez. Como pintor de la corte retrató con maestría a la realeza, pero su mirada crítica también lo llevó a mostrar la crudeza de la guerra y los horrores de su tiempo en series de grabados inmortales como Los desastres de la guerra. Su genio innovador y su exploración de la psicología humana y de la sombra anticiparon el arte moderno."
       ]
     },
     "en": {
-      "presentacion": "Picasso: Málaga genius who reinvented modern art.",
+      "presentacion": "Francisco de Goya: the painter who portrayed his time.",
       "texto": [
-        "Pablo Ruiz Picasso, born in Málaga in 1881, is the most influential Spanish artist of the twentieth century. Painter, sculptor, and ceramicist, he moved from Blue and Rose periods to Cubism with Georges Braque, revolutionizing Western vision with works such as Les Demoiselles d’Avignon and Guernica, a denunciation of the 1937 bombing of the Basque town. Though he lived many years in France, he kept ties with Spain and left essential works to Madrid’s Reina Sofía Museum."
+        "Francisco de Goya is one of the most important Spanish artists in history. His work ranged from cheerful tapestry cartoons to the deep, dark paintings of his later years. As court painter he masterfully portrayed the royal family, but his critical eye also led him to show the harshness of war and the horrors of his time in immortal print series such as The Disasters of War. His innovative genius and his exploration of human psychology and shadow anticipated modern art."
       ]
     },
     "nivelDesbloqueo": "16_14dificil",
@@ -457,18 +457,18 @@
   },
   {
     "id": "25",
-    "titulo": "Bodegas Ysios",
-    "imagen": "/imagenes/historias/bodegas-ysios.webp",
+    "titulo": "Las Cuevas de Altamira",
+    "imagen": "/imagenes/historias/cuevas-de-altamira.webp",
     "es": {
-      "presentacion": "Bodegas Ysios: arquitectura y vino en la Rioja alavesa.",
+      "presentacion": "Altamira: el primer gran museo de la humanidad.",
       "texto": [
-        "Las Bodegas Ysios, en Laguardia (Álava), son un icono contemporáneo de la Rioja Alavesa diseñado por Santiago Calatrava e inaugurado en 2001. Su fachada ondulada de aluminio y madera evoca barricas y el paisaje de viñedos entre la Sierra de Cantabria. Allí se elaboran vinos bajo la denominación de origen Rioja, heredera de la tradición romana y medieval del vino en Hispania. El edificio une arquitectura de vanguardia y la cultura vitivinícola que define gran parte del norte peninsular."
+        "La Cueva de Altamira, en Cantabria, guarda uno de los conjuntos de arte prehistórico más importantes del mundo, del Paleolítico Superior. Sus techos y paredes están decorados con magníficas pinturas de bisontes, caballos y ciervos, y con huellas de manos humanas, hechas con pigmentos naturales como el ocre y el carbón. Aprovechando los relieves de la roca, los artistas prehistóricos dieron a los animales un realismo y un volumen sorprendentes. Por eso se la llama \"la Capilla Sixtina del arte rupestre\"."
       ]
     },
     "en": {
-      "presentacion": "Bodegas Ysios: architecture and wine in Rioja Alavesa.",
+      "presentacion": "Altamira: humanity's first great museum.",
       "texto": [
-        "Bodegas Ysios in Laguardia (Álava) is a contemporary icon of Rioja Alavesa designed by Santiago Calatrava and opened in 2001. Its undulating aluminum and wood façade evokes barrels and vineyard landscapes below the Cantabrian range. Wines are made there under the Rioja designation, heir to Roman and medieval wine tradition in Hispania. The building joins avant-garde architecture and wine culture that defines much of the northern peninsula."
+        "The Cave of Altamira, in Cantabria, holds one of the most important collections of prehistoric art in the world, from the Upper Paleolithic. Its ceilings and walls are decorated with magnificent paintings of bison, horses and deer, and with human handprints, made with natural pigments such as ochre and charcoal. Using the bumps of the rock, the prehistoric artists gave the animals surprising realism and volume. That is why it is called \"the Sistine Chapel of cave art\"."
       ]
     },
     "nivelDesbloqueo": "20_5normal",
@@ -861,13 +861,13 @@
     "es": {
       "presentacion": "Cervantes: padre del Quijote y de la novela moderna.",
       "texto": [
-        "Miguel de Cervantes Saavedra (1547–1616) es el máximo escritor de la literatura española y autor de Don Quijote de la Mancha, considerada la primera novela moderna. Soldado, prisionero en Argel y escribano, reflejó en su obra la España del Siglo de Oro con humor y profundidad. El Quijote y Sancho Panza son iconos universales de la utopía y la realidad. Su natalicio se celebra el Día del Idioma Español; su legado define la cultura hispana en el mundo."
+        "Miguel de Cervantes Saavedra (1547–1616) es el máximo escritor de la literatura española y autor de Don Quijote de la Mancha, considerada la primera novela moderna. Soldado, prisionero en Argel y escribano, reflejó en su obra la España del Siglo de Oro con humor y profundidad. El Quijote y Sancho Panza son iconos universales de la utopía y la realidad. Cada 23 de abril, día en que fue enterrado, la ONU celebra en su honor el Día del Idioma Español; su legado define la cultura hispana en el mundo."
       ]
     },
     "en": {
       "presentacion": "Cervantes: father of Quixote and the modern novel.",
       "texto": [
-        "Miguel de Cervantes Saavedra (1547–1616) is the greatest writer of Spanish literature and author of Don Quixote, considered the first modern novel. Soldier, prisoner in Algiers, and civil servant, he reflected Golden Age Spain with humor and depth. Quixote and Sancho are universal icons of utopia and reality. His birthday marks Spanish Language Day; his legacy defines Hispanic culture worldwide."
+        "Miguel de Cervantes Saavedra (1547–1616) is the greatest writer of Spanish literature and author of Don Quixote, considered the first modern novel. Soldier, prisoner in Algiers, and civil servant, he reflected Golden Age Spain with humor and depth. Quixote and Sancho are universal icons of utopia and reality. Every April 23, the day he was buried, the UN celebrates Spanish Language Day in his honor; his legacy defines Hispanic culture worldwide."
       ]
     },
     "nivelDesbloqueo": "28_11dificil",
@@ -989,18 +989,18 @@
   },
   {
     "id": "53",
-    "titulo": "Vinos",
-    "imagen": "/imagenes/historias/vinos.webp",
+    "titulo": "El Monasterio de El Escorial",
+    "imagen": "/imagenes/historias/monasterio-de-el-escorial.webp",
     "es": {
-      "presentacion": "Vinos de España: crianza, tierra y tradición en cada copa.",
+      "presentacion": "El Escorial: palacio, monasterio y panteón de reyes.",
       "texto": [
-        "España es la tercera productora mundial de vino y posee más de setenta denominaciones de origen, desde Rioja y Ribera del Duero hasta Jerez, Priorat y Rías Baixas. El vino acompaña la historia desde los romanos y monasterios medievales hasta la exportación global actual. Cada región aporta uvas, crianzas y rituales —la vendimia, la cata, las bodegas subterráneas—. El vino español es patrimonio cultural, economía rural y símbolo de hospitalidad en la mesa."
+        "Situado en la Sierra de Guadarrama, en Madrid, el Real Monasterio de San Lorenzo de El Escorial fue mandado construir por el rey Felipe II en el siglo XVI. Pensado a la vez como monasterio, basílica, palacio real y panteón, este enorme conjunto de estilo herreriano destaca por su sobriedad, su simetría y su granito. Es Patrimonio de la Humanidad y guarda valiosas obras de arte, una célebre biblioteca y los restos de gran parte de los reyes de España."
       ]
     },
     "en": {
-      "presentacion": "Spanish wines: aging, land, and tradition in every glass.",
+      "presentacion": "El Escorial: palace, monastery and royal pantheon.",
       "texto": [
-        "Spain is the world’s third-largest wine producer and has more than seventy designations of origin, from Rioja and Ribera del Duero to Jerez, Priorat, and Rías Baixas. Wine runs through history from Romans and medieval monasteries to today’s global export. Each region offers grapes, aging styles, and rituals—harvest, tasting, underground cellars. Spanish wine is cultural heritage, rural economy, and a symbol of hospitality at the table."
+        "Located in the Sierra de Guadarrama, in Madrid, the Royal Monastery of San Lorenzo de El Escorial was commissioned by King Philip II in the 16th century. Designed as a monastery, basilica, royal palace and pantheon all at once, this huge Herrerian-style complex stands out for its plainness, symmetry and granite. It is a World Heritage Site and holds valuable works of art, a famous library and the remains of most of the kings of Spain."
       ]
     },
     "nivelDesbloqueo": "32_3normal",

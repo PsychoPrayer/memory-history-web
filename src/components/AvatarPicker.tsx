@@ -1,15 +1,10 @@
-import { useMemo, useState, type FormEvent } from 'react'
+import { useState, type FormEvent } from 'react'
 import {
   avatarById,
-  isAvatarUnlocked,
   isValidPlayerName,
   listAvatarOptions,
-  PRIZE_AVATAR_TOTAL,
   type AvatarOption,
 } from '../lib/avatars'
-import { prizeAvatarsEarned, useDailyStats } from '../lib/daily'
-import { isNameBlocked } from '../lib/nameFilter'
-import { FEATURES } from '../lib/features'
 import { playSound } from '../lib/audio'
 import { useT, type TextKey } from '../lib/i18n'
 import { setSetting } from '../lib/save'
@@ -28,26 +23,14 @@ export function AvatarPicker({
   onSaved,
 }: AvatarPickerProps) {
   const t = useT()
-  /* Prize avatars come from the daily challenge; while it is parked only the
-     free Pancitos show (plus a prize one the player already wears). */
-  const options = useMemo(
-    () =>
-      listAvatarOptions().filter(
-        (option) => FEATURES.daily || option.prize === 0 || option.id === initialAvatarId,
-      ),
-    [initialAvatarId],
-  )
+  const options = listAvatarOptions()
   const [name, setName] = useState(initialName)
-  const [avatarId, setAvatarId] = useState(initialAvatarId)
+  const [avatarId, setAvatarId] = useState(avatarById(initialAvatarId).id)
   const selected = avatarById(avatarId)
-  const prizesEarned = prizeAvatarsEarned(useDailyStats())
-  const prizesShown = Math.min(prizesEarned, PRIZE_AVATAR_TOTAL)
-
-  const blocked = isNameBlocked(name)
 
   const onSubmit = (event: FormEvent) => {
     event.preventDefault()
-    if (!isValidPlayerName(name) || blocked) return
+    if (!isValidPlayerName(name)) return
     playSound('button')
     setSetting('playerName', name.trim())
     setSetting('avatarId', avatarId)
@@ -81,47 +64,29 @@ export function AvatarPicker({
           placeholder={t('playerNamePlaceholder')}
         />
       </label>
-      {blocked ? (
-        <p className="cloud-form-error" role="alert">
-          {t('nameBlocked')}
-        </p>
-      ) : (
-        <p className="settings-help">{t('playerNameHelp')}</p>
-      )}
+      <p className="settings-help">{t('playerNameHelp')}</p>
 
       <button
         type="submit"
         className="btn-primary avatar-picker-save"
-        disabled={!isValidPlayerName(name) || blocked}
+        disabled={!isValidPlayerName(name)}
       >
         {t(submitLabel)}
       </button>
 
       <p className="avatar-picker-label">{t('chooseAvatar')}</p>
-      {FEATURES.daily && (
-        <p className="avatar-prize-note">
-          {t('avatarPrizesNote', { a: prizesShown, b: PRIZE_AVATAR_TOTAL })}
-        </p>
-      )}
       <div className="avatar-grid" role="listbox" aria-label={t('chooseAvatar')}>
-        {options.map((option) => {
-          /* A locked avatar someone already wears stays usable for them. */
-          const usable =
-            isAvatarUnlocked(option, prizesEarned) || option.id === initialAvatarId
-          return (
-            <AvatarTile
-              key={option.id}
-              option={option}
-              selected={option.id === avatarId}
-              locked={!usable}
-              lockedLabel={t('avatarLocked')}
-              onSelect={() => {
-                playSound('button')
-                setAvatarId(option.id)
-              }}
-            />
-          )
-        })}
+        {options.map((option) => (
+          <AvatarTile
+            key={option.id}
+            option={option}
+            selected={option.id === avatarId}
+            onSelect={() => {
+              playSound('button')
+              setAvatarId(option.id)
+            }}
+          />
+        ))}
       </div>
     </form>
   )
@@ -130,14 +95,10 @@ export function AvatarPicker({
 function AvatarTile({
   option,
   selected,
-  locked,
-  lockedLabel,
   onSelect,
 }: {
   option: AvatarOption
   selected: boolean
-  locked: boolean
-  lockedLabel: string
   onSelect: () => void
 }) {
   return (
@@ -146,17 +107,13 @@ function AvatarTile({
       className="avatar-tile"
       role="option"
       aria-selected={selected}
-      aria-disabled={locked || undefined}
-      aria-label={locked ? `${lockedLabel} ${option.prize}` : option.name}
+      aria-label={option.name}
       data-selected={selected}
-      data-locked={locked || undefined}
-      disabled={locked}
-      title={locked ? lockedLabel : option.name}
+      title={option.name}
       onClick={onSelect}
     >
       <img src={option.image} alt="" draggable={false} loading="lazy" />
-      {locked && <span className="avatar-tile-lock" aria-hidden="true" />}
-      <span>{locked ? `#${option.prize}` : option.name}</span>
+      <span>{option.name}</span>
     </button>
   )
 }

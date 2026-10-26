@@ -1,15 +1,12 @@
 import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from 'react'
 import { PancitoSprite, type PancitoPose } from './PancitoGuide'
 import { useT, type TextKey } from '../lib/i18n'
-import { FEATURES } from '../lib/features'
 
 const TIP_KEYS: TextKey[] = [
   'loadingTip1',
   'loadingTip2',
   'loadingTip3',
   'loadingTip4',
-  /* Tips 5 and 6 talk about the daily challenge. */
-  ...(FEATURES.daily ? (['loadingTip5', 'loadingTip6'] as const) : []),
   'loadingTip7',
   'loadingTip8',
 ]

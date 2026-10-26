@@ -16,6 +16,8 @@ interface Props {
   onHint?: () => void
   hintUsed?: boolean
   hintDisabled?: boolean
+  /** The free hint is spent but a rewarded ad can give another one. */
+  hintRefill?: boolean
 }
 
 /** Lit glass bulb on a brass screw base; goes dark once the hint is spent. */
@@ -119,6 +121,7 @@ export function MatchBar({
   onHint,
   hintUsed = false,
   hintDisabled = false,
+  hintRefill = false,
 }: Props) {
   const t = useT()
 
@@ -143,13 +146,19 @@ export function MatchBar({
             className="match-bar-hint"
             disabled={hintDisabled || hintUsed}
             data-used={hintUsed || undefined}
-            title={t('hintHelp')}
+            data-refill={hintRefill || undefined}
+            title={hintRefill ? t('adHintTitle') : t('hintHelp')}
             aria-label={
-              hintUsed ? t('hintUsed') : `${t('hintAsk')}. ${t('hintHelp')}`
+              hintRefill
+                ? t('adHintTitle')
+                : hintUsed
+                  ? t('hintUsed')
+                  : `${t('hintAsk')}. ${t('hintHelp')}`
             }
             onClick={onHint}
           >
-            <HintBulbIcon lit={!hintUsed && !hintDisabled} />
+            <HintBulbIcon lit={!hintUsed && !hintRefill && !hintDisabled} />
+            {hintRefill && <span className="match-bar-hint-refill" aria-hidden="true">▶</span>}
           </button>
         )}
       </div>

@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AvatarPicker, PlayerBadge } from '../components/AvatarPicker'
-import { CloudAccount } from '../components/CloudAccount'
+import { Capacitor } from '@capacitor/core'
 import { OfflineDownload } from '../components/OfflineDownload'
 import { Header } from '../components/Header'
 import { Modal } from '../components/Modal'
 import {
   clearProgress,
+  eraseAllData,
   setSetting,
   useSave,
   type TimeAssist,
@@ -22,6 +23,8 @@ export function Settings() {
   const navigate = useNavigate()
   const settings = useSave((state) => state.settings)
   const [confirming, setConfirming] = useState(false)
+  const [erasing, setErasing] = useState(false)
+  const platform = Capacitor.getPlatform()
   const [profileOpen, setProfileOpen] = useState(false)
 
   return (
@@ -101,7 +104,12 @@ export function Settings() {
         />
       </section>
 
-      <CloudAccount />
+      <section className="settings-group">
+        <h2>{t('saveTitle')}</h2>
+        <p className="settings-help">
+          {t(platform === 'ios' ? 'saveWhereIos' : platform === 'android' ? 'saveWhereAndroid' : 'saveWhereWeb')}
+        </p>
+      </section>
 
       <OfflineDownload />
 
@@ -169,7 +177,39 @@ export function Settings() {
         >
           {t('resetProgress')}
         </button>
+        <p className="settings-help">{t('eraseAllHelp')}</p>
+        <button
+          type="button"
+          className="btn-danger"
+          onClick={() => {
+            playSound('button')
+            setErasing(true)
+          }}
+        >
+          {t('eraseAll')}
+        </button>
       </section>
+
+      <Modal open={erasing} onClose={() => setErasing(false)}>
+        <h2 className="modal-title">{t('eraseAll')}</h2>
+        <p className="modal-text">{t('eraseAllConfirm')}</p>
+        <div className="modal-actions">
+          <button
+            type="button"
+            className="btn-danger"
+            onClick={() => {
+              eraseAllData()
+              setErasing(false)
+              navigate('/', { replace: true })
+            }}
+          >
+            {t('eraseAllYes')}
+          </button>
+          <button type="button" className="btn-secondary" onClick={() => setErasing(false)}>
+            {t('no')}
+          </button>
+        </div>
+      </Modal>
 
       <Modal open={confirming} onClose={() => setConfirming(false)}>
         <h2 className="modal-title">{t('resetProgress')}</h2>

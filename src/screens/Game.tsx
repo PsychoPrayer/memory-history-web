@@ -27,6 +27,7 @@ import { playSound, playStarSound } from '../lib/audio'
 import { useLanguage, useT } from '../lib/i18n'
 import { formatTime } from '../lib/board'
 import { rulesFromLevel, freeRules, useMatch } from '../lib/useMatch'
+import { afterMatch, rewardedAvailable, showRewarded } from '../lib/ads'
 import type { CardCatalog, Story, Level } from '../types'
 
 interface Props {
@@ -122,6 +123,39 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null)
   const [pendingTrophySection, setPendingTrophySection] = useState(false)
   const [pendingTrophyCampaign, setPendingTrophyCampaign] = useState(false)
+  /* Rewarded ad for one more hint: offer → playing → back to the match. */
+  const [adFlow, setAdFlow] = useState<'offer' | 'playing' | null>(null)
+  const [bonusHintUsed, setBonusHintUsed] = useState(false)
+  const [bonusPending, setBonusPending] = useState(false)
+  const canWatchForHint = match.hintUsed && !bonusHintUsed && rewardedAvailable()
+
+  /* A new attempt gets its free hint and its bonus back. */
+  useEffect(() => {
+    if (!match.hintUsed) setBonusHintUsed(false)
+  }, [match.hintUsed])
+
+  /* The bonus hint waits until the match has resumed after the ad. */
+  useEffect(() => {
+    if (!bonusPending || match.paused) return
+    setBonusPending(false)
+    match.requestHint(true)
+  }, [bonusPending, match])
+
+  /** After a finished match: maybe a full-screen ad (lib/ads.ts), then go on. */
+  const leave = (go: () => void) => {
+    void afterMatch().then(go)
+  }
+
+  const watchForHint = async () => {
+    setAdFlow('playing')
+    const earned = await showRewarded()
+    setAdFlow(null)
+    if (earned) {
+      setBonusHintUsed(true)
+      setBonusPending(true)
+    }
+    match.resume()
+  }
 
   const hardIntroOpen = Boolean(
     level?.dificil && !tipsSeen.includes('hard-mode-intro'),
@@ -329,9 +363,16 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
         onPause={match.pause}
         onHint={() => {
           playSound('button')
-          match.requestHint()
+          if (!match.hintUsed) {
+            match.requestHint()
+            return
+          }
+          if (!canWatchForHint) return
+          match.pause()
+          setAdFlow('offer')
         }}
-        hintUsed={match.hintUsed}
+        hintUsed={match.hintUsed && !canWatchForHint}
+        hintRefill={canWatchForHint}
         hintDisabled={
           match.phase !== 'playing' ||
           match.paused ||
@@ -380,6 +421,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
         open={
           match.paused &&
           !hardIntroOpen &&
+          adFlow === null &&
           confirmAction === null &&
           match.phase === 'playing'
         }
@@ -454,13 +496,13 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
               </div>
             </dl>
             <div className="modal-actions">
-              <button type="button" className="btn-primary" onClick={match.restart}>
+              <button type="button" className="btn-primary" onClick={() => leave(match.restart)}>
                 {t('tryAgain')}
               </button>
               <button
                 type="button"
                 className="btn-secondary"
-                onClick={() => navigate(levelsExit)}
+                onClick={() => leave(() => navigate(levelsExit))}
               >
                 {t('toLevels')}
               </button>
@@ -507,7 +549,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
                   className="btn-primary"
                   onClick={() => {
                     markTipSeen('victory-first')
-                    navigate(`/game/${encodeURIComponent(next.id)}`)
+                    leave(() => navigate(`/game/${encodeURIComponent(next.id)}`))
                   }}
                 >
                   {t('next')}
@@ -519,7 +561,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
                 onClick={() => {
                   markTipSeen('victory-first')
                   dismissPendingStory()
-                  match.restart()
+                  leave(match.restart)
                 }}
               >
                 {t('improveScore')}
@@ -530,7 +572,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
                 onClick={() => {
                   markTipSeen('victory-first')
                   dismissPendingStory()
-                  navigate(levelsExit)
+                  leave(() => navigate(levelsExit))
                 }}
               >
                 {t('toLevels')}
@@ -630,7 +672,7 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
             <button
               type="button"
               className="btn-primary"
-              onClick={() => navigate(`/game/${encodeURIComponent(next.id)}`)}
+              onClick={() => leave(() => navigate(`/game/${encodeURIComponent(next.id)}`))}
             >
               {t('next')}
             </button>
@@ -638,16 +680,37 @@ function Match({ matchKey, level, rules, deck }: MatchProps) {
           <button
             type="button"
             className={next ? 'btn-secondary' : 'btn-primary'}
-            onClick={match.restart}
+            onClick={() => leave(match.restart)}
           >
             {t('improveScore')}
           </button>
           <button
             type="button"
             className="btn-secondary"
-            onClick={() => navigate(levelsExit)}
+            onClick={() => leave(() => navigate(levelsExit))}
           >
             {t('toLevels')}
+          </button>
+        </div>
+      </Modal>
+
+      <Modal open={adFlow === 'offer'}>
+        <h2 className="modal-title">{t('adHintTitle')}</h2>
+        <PancitoSprite pose="point" className="hard-intro-sprite" />
+        <p className="modal-text">{t('adHintBody')}</p>
+        <div className="modal-actions">
+          <button type="button" className="btn-primary" onClick={() => void watchForHint()}>
+            {t('adHintWatch')}
+          </button>
+          <button
+            type="button"
+            className="btn-secondary"
+            onClick={() => {
+              setAdFlow(null)
+              match.resume()
+            }}
+          >
+            {t('adHintLater')}
           </button>
         </div>
       </Modal>

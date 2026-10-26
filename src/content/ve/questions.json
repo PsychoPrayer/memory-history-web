@@ -125,7 +125,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál es la dieta principal de este animal?",
+      "enunciado": "¿Cuál es la dieta principal del chigüire?",
       "opciones": [
         "Es omnívoro y caza pequeños peces.",
         "Es herbívoro, se alimenta de pastos y plantas acuáticas",
@@ -134,7 +134,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the main diet of this animal?",
+      "enunciado": "What is the main diet of the chigüire?",
       "opciones": [
         "It is omnivorous and hunts small fish.",
         "It is herbivorous, feeding on grasses and aquatic plants",
@@ -173,7 +173,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿En qué ciudad venezolana es común verlas volar libremente entre los edificios?",
+      "enunciado": "¿En qué ciudad venezolana es común ver guacamayas volando libremente entre los edificios?",
       "opciones": [
         "Maracaibo",
         "Caracas",
@@ -182,7 +182,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which Venezuelan city is it common to see them flying freely between buildings?",
+      "enunciado": "In which Venezuelan city is it common to see macaws flying freely between buildings?",
       "opciones": [
         "Maracaibo",
         "Caracas",
@@ -197,7 +197,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es una de las funciones principales de su pico fuerte y curvo?",
+      "enunciado": "¿Para qué usa principalmente la guacamaya su pico fuerte y curvo?",
       "opciones": [
         "Exclusivamente para defenderse de los depredadores.",
         "Para filtrar el agua de los ríos.",
@@ -206,7 +206,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is one of the main functions of their strong, curved beak?",
+      "enunciado": "What does the macaw mainly use its strong, curved beak for?",
       "opciones": [
         "Exclusively to defend themselves from predators.",
         "To filter water from rivers.",
@@ -221,7 +221,7 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué fenómeno natural es el principal responsable de la formación de las dunas en este parque?",
+      "enunciado": "¿Qué fenómeno natural forma las dunas del Parque Nacional Médanos de Coro?",
       "opciones": [
         "Las fuertes lluvias estacionales.",
         "Las corrientes marinas del Golfo de Venezuela.",
@@ -230,7 +230,7 @@
       ]
     },
     "en": {
-      "enunciado": "What natural phenomenon is primarily responsible for the formation of the dunes in this park?",
+      "enunciado": "What natural phenomenon forms the dunes of Médanos de Coro National Park?",
       "opciones": [
         "Heavy seasonal rains.",
         "The ocean currents of the Gulf of Venezuela.",
@@ -269,7 +269,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué tipo de vegetación es predominante en este ecosistema árido?",
+      "enunciado": "¿Qué tipo de vegetación predomina en los Médanos de Coro?",
       "opciones": [
         "Bosques nublados y helechos gigantes.",
         "Manglares y palmeras de coco.",
@@ -278,7 +278,7 @@
       ]
     },
     "en": {
-      "enunciado": "What type of vegetation predominates in this arid ecosystem?",
+      "enunciado": "What type of vegetation predominates in the Médanos de Coro?",
       "opciones": [
         "Cloud forests and giant ferns.",
         "Mangroves and coconut palms.",
@@ -389,7 +389,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué nombre recibe el plato cuando se le añade un huevo frito encima?",
+      "enunciado": "¿Qué nombre recibe el pabellón criollo cuando se le añade un huevo frito encima?",
       "opciones": [
         "Pabellón con baranda.",
         "Pabellón oriental.",
@@ -398,7 +398,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the name of the dish when a fried egg is added on top?",
+      "enunciado": "What is the pabellón criollo called when a fried egg is added on top?",
       "opciones": [
         "Pabellón con baranda.",
         "Pabellón oriental.",
@@ -413,7 +413,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué ingrediente representa el aporte indígena dentro de la simbología del plato?",
+      "enunciado": "¿Qué ingrediente del pabellón criollo representa el aporte indígena?",
       "opciones": [
         "El arroz blanco.",
         "Las caraotas negras.",
@@ -422,7 +422,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which ingredient represents the indigenous contribution within the dish's symbolism?",
+      "enunciado": "Which ingredient of the pabellón criollo represents the indigenous contribution?",
       "opciones": [
         "White rice.",
         "Black beans.",
@@ -461,7 +461,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué batalla histórica conmemora este monumento?",
+      "enunciado": "¿Qué batalla histórica conmemora el Arco de Carabobo?",
       "opciones": [
         "Batalla de La Victoria.",
         "Batalla de San Mateo.",
@@ -470,7 +470,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which historical battle does this monument commemorate?",
+      "enunciado": "Which historical battle does the Carabobo Arch commemorate?",
       "opciones": [
         "Battle of La Victoria.",
         "Battle of San Mateo.",
@@ -485,7 +485,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué ceremonia tradicional se puede observar cada dos horas en el complejo del monumento?",
+      "enunciado": "¿Qué ceremonia se puede ver cada dos horas en el monumento del Arco de Carabobo?",
       "opciones": [
         "Un desfile aéreo de la Fuerza Armada.",
         "Una misa solemne al aire libre.",
@@ -494,7 +494,7 @@
       ]
     },
     "en": {
-      "enunciado": "What traditional ceremony can be observed every two hours in the monument complex?",
+      "enunciado": "What ceremony can be seen every two hours at the Carabobo Arch monument?",
       "opciones": [
         "An aerial parade of the Armed Forces.",
         "An outdoor solemn mass.",
@@ -533,7 +533,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cómo se llama el icónico hotel de forma circular ubicado en una de sus cimas?",
+      "enunciado": "¿Cómo se llama el icónico hotel circular ubicado en una de las cimas del Ávila?",
       "opciones": [
         "Hotel Tamanaco.",
         "Hotel Alba.",
@@ -542,7 +542,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the name of the iconic circular-shaped hotel located on one of its peaks?",
+      "enunciado": "What is the name of the iconic circular hotel on one of the peaks of El Ávila?",
       "opciones": [
         "Hotel Tamanaco.",
         "Hotel Alba.",
@@ -581,7 +581,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿En qué fecha fue declarada oficialmente la Orquídea como Flor Nacional?",
+      "enunciado": "¿En qué fecha fue declarada oficialmente la orquídea como Flor Nacional de Venezuela?",
       "opciones": [
         "19 de abril de 1810.",
         "23 de mayo de 1951.",
@@ -590,7 +590,7 @@
       ]
     },
     "en": {
-      "enunciado": "On what date was the Orchid officially declared the National Flower?",
+      "enunciado": "On what date was the orchid officially declared the National Flower of Venezuela?",
       "opciones": [
         "April 19, 1810.",
         "May 23, 1951.",
@@ -677,7 +677,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuáles son los ingredientes tradicionales que aportan el toque dulce al relleno?",
+      "enunciado": "¿Qué ingredientes dan el toque dulce al relleno del pan de jamón?",
       "opciones": [
         "Chocolate y canela.",
         "Pasas y, en ocasiones, el barnizado con papelón",
@@ -686,7 +686,7 @@
       ]
     },
     "en": {
-      "enunciado": "What are the traditional ingredients that give a sweet touch to the filling?",
+      "enunciado": "Which ingredients give a sweet touch to the filling of ham bread (pan de jamón)?",
       "opciones": [
         "Chocolate and cinnamon.",
         "Raisins and, sometimes, glazing with panela",
@@ -701,7 +701,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué otros dos elementos suelen acompañar al jamón y la tocineta dentro del pan?",
+      "enunciado": "¿Qué otros dos ingredientes acompañan al jamón y la tocineta dentro del pan de jamón?",
       "opciones": [
         "Queso amarillo y jamón de pavo.",
         "Aceitunas verdes y pasas",
@@ -710,7 +710,7 @@
       ]
     },
     "en": {
-      "enunciado": "What other two elements usually accompany the ham and bacon inside the bread?",
+      "enunciado": "Which two other ingredients go with the ham and bacon inside ham bread (pan de jamón)?",
       "opciones": [
         "Yellow cheese and turkey ham.",
         "Green olives and raisins",
@@ -749,7 +749,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué color es el que predomina en el vestuario de los danzantes?",
+      "enunciado": "¿Qué color predomina en el vestuario de los Diablos Danzantes de Yare?",
       "opciones": [
         "Amarillo brillante.",
         "Rojo intenso",
@@ -758,7 +758,7 @@
       ]
     },
     "en": {
-      "enunciado": "What color predominates in the dancers' costumes?",
+      "enunciado": "What color predominates in the costumes of the Dancing Devils of Yare?",
       "opciones": [
         "Bright yellow.",
         "Intense red",
@@ -773,7 +773,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué reconocimiento internacional recibió esta tradición en el año 2012?",
+      "enunciado": "¿Qué reconocimiento internacional recibió en 2012 la danza de los Diablos de Yare?",
       "opciones": [
         "El Premio Nobel de la Paz.",
         "Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO",
@@ -782,7 +782,7 @@
       ]
     },
     "en": {
-      "enunciado": "What international recognition did this tradition receive in 2012?",
+      "enunciado": "What international recognition did the dance of the Devils of Yare receive in 2012?",
       "opciones": [
         "The Nobel Peace Prize.",
         "Intangible Cultural Heritage of Humanity by UNESCO",
@@ -797,7 +797,7 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué símbolo patrio trajo Miranda a Venezuela por primera vez en 1806?",
+      "enunciado": "¿Qué símbolo patrio trajo Francisco de Miranda a Venezuela por primera vez en 1806?",
       "opciones": [
         "El Escudo Nacional.",
         "El Himno Nacional \"Gloria al Bravo Pueblo\".",
@@ -806,7 +806,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which national symbol did Miranda bring to Venezuela for the first time in 1806?",
+      "enunciado": "Which national symbol did Francisco de Miranda bring to Venezuela for the first time in 1806?",
       "opciones": [
         "The National Coat of Arms.",
         "The National Anthem \"Gloria al Bravo Pueblo.\"",
@@ -869,7 +869,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué representan las 24 mieses de trigo en el cuartel rojo?",
+      "enunciado": "¿Qué representan las 24 mieses de trigo del cuartel rojo del escudo de Venezuela?",
       "opciones": [
         "Los meses del año de la independencia.",
         "La unión de los estados de la República y la riqueza",
@@ -878,7 +878,7 @@
       ]
     },
     "en": {
-      "enunciado": "What do the 24 ears of wheat in the red quarter represent?",
+      "enunciado": "What do the 24 ears of wheat in the red quarter of Venezuela's coat of arms represent?",
       "opciones": [
         "The months of the year of independence.",
         "The union of the states of the Republic and wealth",
@@ -893,7 +893,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Hacia qué dirección galopa el caballo blanco en el diseño actual del escudo?",
+      "enunciado": "¿Hacia dónde galopa el caballo blanco del escudo de Venezuela en su diseño actual?",
       "opciones": [
         "Hacia la derecha y mirando hacia atrás.",
         "Hacia la izquierda y mirando hacia adelante",
@@ -902,7 +902,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which direction does the white horse gallop in the current design of the coat of arms?",
+      "enunciado": "In which direction does the white horse on Venezuela's coat of arms gallop in its current design?",
       "opciones": [
         "To the right and looking backward.",
         "To the left and looking forward",
@@ -917,7 +917,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué significan las ramas de olivo y palma que rodean el escudo?",
+      "enunciado": "¿Qué significan las ramas de olivo y palma que rodean el escudo de Venezuela?",
       "opciones": [
         "La flora típica de los llanos y la costa.",
         "El alimento y la sombra para el pueblo.",
@@ -926,7 +926,7 @@
       ]
     },
     "en": {
-      "enunciado": "What do the olive and palm branches surrounding the shield signify?",
+      "enunciado": "What do the olive and palm branches around Venezuela's coat of arms signify?",
       "opciones": [
         "The typical flora of the plains and the coast.",
         "Food and shade for the people.",
@@ -1037,7 +1037,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es la fecha central en la que se celebra su festividad cada año?",
+      "enunciado": "¿Cuál es la fecha central de la festividad de la Virgen del Valle?",
       "opciones": [
         "12 de diciembre.",
         "14 de enero.",
@@ -1046,7 +1046,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the main date on which her feast is celebrated each year?",
+      "enunciado": "What is the main date of the feast of the Virgin of the Valley?",
       "opciones": [
         "December 12.",
         "January 14.",
@@ -1061,7 +1061,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿A qué grupo de personas o institución se le considera especialmente protegida por \"Vallita\"?",
+      "enunciado": "¿A quiénes protege especialmente la Virgen del Valle, a la que llaman \"Vallita\"?",
       "opciones": [
         "A los agricultores de los Andes.",
         "A los pescadores y la Armada",
@@ -1070,7 +1070,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which group of people or institution is considered to be especially protected by \"Vallita\"?",
+      "enunciado": "Whom does the Virgin of the Valley, known as \"Vallita\", especially protect?",
       "opciones": [
         "The farmers of the Andes.",
         "The fishermen and the Navy",
@@ -1109,7 +1109,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cómo se llamaba este pico antes de ser rebautizado en honor a Simón Bolívar?",
+      "enunciado": "¿Cómo se llamaba el Pico Bolívar antes de ser rebautizado en honor a Simón Bolívar?",
       "opciones": [
         "Pico Espejo.",
         "La Columna",
@@ -1118,7 +1118,7 @@
       ]
     },
     "en": {
-      "enunciado": "What was this peak called before being renamed in honor of Simón Bolívar?",
+      "enunciado": "What was Pico Bolívar called before being renamed in honor of Simón Bolívar?",
       "opciones": [
         "Pico Espejo.",
         "La Columna",
@@ -1133,7 +1133,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿A través de qué sistema de transporte se puede llegar cerca de su cumbre?",
+      "enunciado": "¿Con qué medio de transporte se puede llegar cerca de la cumbre del Pico Bolívar?",
       "opciones": [
         "El Tren de los Andes.",
         "El Teleférico de Caracas.",
@@ -1142,7 +1142,7 @@
       ]
     },
     "en": {
-      "enunciado": "Through which transportation system can you get close to its summit?",
+      "enunciado": "Which means of transport can take you close to the summit of Pico Bolívar?",
       "opciones": [
         "The Andes Train.",
         "The Caracas Cable Car.",
@@ -1181,7 +1181,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué significa, paradójicamente, escuchar su silbido de manera muy tenue y distante?",
+      "enunciado": "¿Qué significa, según la leyenda, oír el silbido de El Silbón muy débil y lejano?",
       "opciones": [
         "Que está de buen humor y no atacará.",
         "Que se aleja rápidamente hacia el horizonte.",
@@ -1190,7 +1190,7 @@
       ]
     },
     "en": {
-      "enunciado": "What does it paradoxically mean to hear his whistle very faintly and from a distance?",
+      "enunciado": "According to the legend, what does it mean to hear El Silbón's whistle very faint and far away?",
       "opciones": [
         "That he is in a good mood and will not attack.",
         "That he is quickly moving away toward the horizon.",
@@ -1253,7 +1253,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál fue el destino final de Luisa Cáceres de Arismendi, siendo la primera mujer en recibir este honor?",
+      "enunciado": "¿Qué honor recibió Luisa Cáceres de Arismendi, siendo la primera mujer en obtenerlo?",
       "opciones": [
         "Fue nombrada Presidenta Honoraria.",
         "Sus restos fueron llevados a la Catedral de Caracas.",
@@ -1262,7 +1262,7 @@
       ]
     },
     "en": {
-      "enunciado": "What was the final destiny of Luisa Cáceres de Arismendi, being the first woman to receive this honor?",
+      "enunciado": "What honor did Luisa Cáceres de Arismendi receive, being the first woman to get it?",
       "opciones": [
         "She was named Honorary President.",
         "Her remains were taken to the Caracas Cathedral.",
@@ -1277,7 +1277,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Quién fue el esposo de Luisa y un importante general de la independencia?",
+      "enunciado": "¿Quién fue el esposo de Luisa Cáceres, importante general de la independencia?",
       "opciones": [
         "Santiago Mariño.",
         "José Antonio Páez.",
@@ -1286,7 +1286,7 @@
       ]
     },
     "en": {
-      "enunciado": "Who was Luisa's husband and an important general of independence?",
+      "enunciado": "Who was Luisa Cáceres's husband, an important general of independence?",
       "opciones": [
         "Santiago Mariño.",
         "José Antonio Páez.",
@@ -1325,7 +1325,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué rango militar llegó a alcanzar Manuela en el Ejército Libertador?",
+      "enunciado": "¿Qué rango militar alcanzó Manuela Sáenz en el Ejército Libertador?",
       "opciones": [
         "General de Brigada.",
         "Sargento Mayor.",
@@ -1334,7 +1334,7 @@
       ]
     },
     "en": {
-      "enunciado": "What military rank did Manuela reach in the Liberation Army?",
+      "enunciado": "What military rank did Manuela Sáenz reach in the Liberation Army?",
       "opciones": [
         "Brigadier General.",
         "Major Sergeant.",
@@ -1349,7 +1349,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿En qué ciudad peruana pasó sus últimos años de vida tras ser desterrada?",
+      "enunciado": "¿En qué ciudad peruana pasó Manuela Sáenz sus últimos años tras ser desterrada?",
       "opciones": [
         "Lima.",
         "Cusco.",
@@ -1358,7 +1358,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which Peruvian city did she spend her last years of life after being exiled?",
+      "enunciado": "In which Peruvian city did Manuela Sáenz spend her last years after being exiled?",
       "opciones": [
         "Lima.",
         "Cusco.",
@@ -1397,7 +1397,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿A qué tipo de personas persigue principalmente este espectro, según la tradición?",
+      "enunciado": "¿A qué tipo de personas persigue La Sayona, según la tradición?",
       "opciones": [
         "A los niños que no quieren dormir.",
         "A los viajeros que se pierden en el llano.",
@@ -1406,7 +1406,7 @@
       ]
     },
     "en": {
-      "enunciado": "What type of people does this specter mainly pursue, according to tradition?",
+      "enunciado": "What kind of people does La Sayona chase, according to tradition?",
       "opciones": [
         "Children who do not want to sleep.",
         "Travelers who get lost in the plains.",
@@ -1517,7 +1517,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál es el género musical distintivo que se escucha y baila en El Callao?",
+      "enunciado": "¿Qué género musical se escucha y se baila en los Carnavales de El Callao?",
       "opciones": [
         "El Joropo.",
         "El Calipso",
@@ -1526,7 +1526,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the distinctive musical genre that is heard and danced to in El Callao?",
+      "enunciado": "What music genre is heard and danced to at the El Callao Carnival?",
       "opciones": [
         "Joropo.",
         "Calypso",
@@ -1541,7 +1541,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué personaje femenino representa la elegancia y la tradición de las antillas francesas e inglesas?",
+      "enunciado": "¿Qué personaje femenino de los Carnavales de El Callao representa la elegancia de las Antillas francesas e inglesas?",
       "opciones": [
         "La Sayona.",
         "La Llorona.",
@@ -1550,7 +1550,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which female character represents the elegance and tradition of the French and English Antilles?",
+      "enunciado": "Which female character of the El Callao Carnival represents the elegance of the French and English Antilles?",
       "opciones": [
         "La Sayona.",
         "La Llorona.",
@@ -1565,7 +1565,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Por qué razón histórica se originó esta mezcla cultural tan particular en El Callao?",
+      "enunciado": "¿Por qué surgió la mezcla cultural de los Carnavales de El Callao?",
       "opciones": [
         "Por la llegada masiva de turistas europeos en los años 50.",
         "Por la inmigración de antillanos atraídos por la explotación del oro",
@@ -1574,7 +1574,7 @@
       ]
     },
     "en": {
-      "enunciado": "For what historical reason did this particularly unique cultural mix originate in El Callao?",
+      "enunciado": "Why did the cultural mix of the El Callao Carnival come about?",
       "opciones": [
         "Due to the massive arrival of European tourists in the 1950s.",
         "Due to the immigration of Caribbean people attracted by gold exploitation",
@@ -1589,7 +1589,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál es el nombre del pueblo donde se encuentra el santuario permanente de la Virgen?",
+      "enunciado": "¿En qué pueblo está el santuario permanente de la Divina Pastora?",
       "opciones": [
         "El Tocuyo.",
         "Santa Rosa",
@@ -1598,7 +1598,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the name of the town where the permanent sanctuary of the Virgin is located?",
+      "enunciado": "In which town is the permanent sanctuary of the Divina Pastora?",
       "opciones": [
         "El Tocuyo.",
         "Santa Rosa",
@@ -1613,7 +1613,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué evento histórico en 1856 dio inicio a la tradición de la procesión anual?",
+      "enunciado": "¿Qué hecho de 1856 dio inicio a la procesión anual de la Divina Pastora?",
       "opciones": [
         "Un terremoto que destruyó la catedral.",
         "La llegada de los primeros colonizadores.",
@@ -1622,7 +1622,7 @@
       ]
     },
     "en": {
-      "enunciado": "What historical event in 1856 started the tradition of the annual procession?",
+      "enunciado": "What event in 1856 started the annual procession of the Divina Pastora?",
       "opciones": [
         "An earthquake that destroyed the cathedral.",
         "The arrival of the first settlers.",
@@ -1637,7 +1637,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿En qué fecha específica de enero se realiza siempre su multitudinaria procesión?",
+      "enunciado": "¿Qué día de enero se realiza la procesión de la Divina Pastora?",
       "opciones": [
         "1 de enero.",
         "6 de enero (Día de Reyes).",
@@ -1646,7 +1646,7 @@
       ]
     },
     "en": {
-      "enunciado": "On which specific date in January is her massive procession always held?",
+      "enunciado": "On which day of January is the procession of the Divina Pastora held?",
       "opciones": [
         "January 1.",
         "January 6 (Three Kings' Day).",
@@ -1757,7 +1757,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "Según la historia, ¿en qué región se concentran muchos pueblos indígenas distintos (Amazonas, Bolívar y Delta Amacuro)?",
+      "enunciado": "¿En qué región de Venezuela, formada por Amazonas, Bolívar y Delta Amacuro, viven muchos pueblos indígenas distintos?",
       "opciones": [
         "Los Andes",
         "Los Llanos",
@@ -1766,7 +1766,7 @@
       ]
     },
     "en": {
-      "enunciado": "According to the story, in which region are many different indigenous peoples concentrated (Amazonas, Bolívar, and Delta Amacuro)?",
+      "enunciado": "In which region of Venezuela, made up of Amazonas, Bolívar, and Delta Amacuro, do many different indigenous peoples live?",
       "opciones": [
         "The Andes",
         "The Llanos",
@@ -1781,7 +1781,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "Según el censo mencionado en la historia, ¿alrededor de cuántos pueblos indígenas distintos viven en Venezuela?",
+      "enunciado": "Según el censo de 2011, ¿alrededor de cuántos pueblos indígenas distintos viven en Venezuela?",
       "opciones": [
         "Alrededor de 10",
         "Alrededor de 25",
@@ -1790,7 +1790,7 @@
       ]
     },
     "en": {
-      "enunciado": "According to the census mentioned in the story, about how many different indigenous peoples live in Venezuela?",
+      "enunciado": "According to the 2011 census, about how many different indigenous peoples live in Venezuela?",
       "opciones": [
         "Around 10",
         "Around 25",
@@ -1901,7 +1901,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es la característica forma geométrica que define la torre del hotel?",
+      "enunciado": "¿Qué forma geométrica tiene la torre del Hotel Humboldt?",
       "opciones": [
         "Es un prisma rectangular.",
         "Es una pirámide triangular.",
@@ -1910,7 +1910,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the characteristic geometric shape that defines the hotel's tower?",
+      "enunciado": "What geometric shape is the tower of the Hotel Humboldt?",
       "opciones": [
         "It is a rectangular prism.",
         "It is a triangular pyramid.",
@@ -1925,7 +1925,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué dos paisajes se pueden observar simultáneamente desde la cima del hotel?",
+      "enunciado": "¿Qué dos paisajes se ven a la vez desde el Hotel Humboldt?",
       "opciones": [
         "El Lago de Valencia y el Pico Bolívar.",
         "La ciudad de Caracas y el Mar Caribe",
@@ -1934,7 +1934,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which two landscapes can be observed simultaneously from the top of the hotel?",
+      "enunciado": "Which two landscapes can be seen at the same time from the Hotel Humboldt?",
       "opciones": [
         "Lake Valencia and Pico Bolívar.",
         "The city of Caracas and the Caribbean Sea",
@@ -2045,7 +2045,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Con qué apodo se conoce a la Isla de Margarita en la historia?",
+      "enunciado": "¿Con qué apodo se conoce a la Isla de Margarita?",
       "opciones": [
         "La Isla de la Fantasía",
         "El Faro del Caribe",
@@ -2054,7 +2054,7 @@
       ]
     },
     "en": {
-      "enunciado": "By what nickname is Margarita Island known in the story?",
+      "enunciado": "By what nickname is Margarita Island known?",
       "opciones": [
         "Fantasy Island",
         "The Caribbean Lighthouse",
@@ -2093,7 +2093,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿En qué estado de Venezuela ocurre este fenómeno natural?",
+      "enunciado": "¿En qué estado de Venezuela ocurre el Relámpago del Catatumbo?",
       "opciones": [
         "Estado Falcón.",
         "Estado Zulia",
@@ -2102,7 +2102,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which state of Venezuela does this natural phenomenon occur?",
+      "enunciado": "In which Venezuelan state does the Catatumbo Lightning occur?",
       "opciones": [
         "Falcón State.",
         "Zulia State",
@@ -2117,7 +2117,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es el récord mundial que ostenta este fenómeno en el Libro Guinness?",
+      "enunciado": "¿Qué récord mundial del Libro Guinness tiene el Relámpago del Catatumbo?",
       "opciones": [
         "El trueno más fuerte jamás registrado.",
         "La tormenta que ha durado más años seguidos.",
@@ -2126,7 +2126,7 @@
       ]
     },
     "en": {
-      "enunciado": "What world record does this phenomenon hold in the Guinness Book?",
+      "enunciado": "What Guinness world record does the Catatumbo Lightning hold?",
       "opciones": [
         "The loudest thunder ever recorded.",
         "The storm that has lasted the most consecutive years.",
@@ -2141,7 +2141,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué beneficio ambiental se le atribuye a este fenómeno constante?",
+      "enunciado": "¿Qué beneficio ambiental se le atribuye al Relámpago del Catatumbo?",
       "opciones": [
         "Limpia el agua del Lago de Maracaibo.",
         "Ayuda a la regeneración de la capa de ozono",
@@ -2150,7 +2150,7 @@
       ]
     },
     "en": {
-      "enunciado": "What environmental benefit is attributed to this constant phenomenon?",
+      "enunciado": "What environmental benefit is attributed to the Catatumbo Lightning?",
       "opciones": [
         "Cleans the water of Lake Maracaibo.",
         "Helps regenerate the ozone layer",
@@ -2237,7 +2237,7 @@
     "numero": 1,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuál es la altitud máxima que alcanza la estación final, Pico Espejo?",
+      "enunciado": "¿A qué altitud está Pico Espejo, la estación final del Teleférico de Mérida?",
       "opciones": [
         "2.500 m.s.n.m.",
         "3.800 m.s.n.m.",
@@ -2246,7 +2246,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the maximum altitude reached by the final station, Pico Espejo?",
+      "enunciado": "At what altitude is Pico Espejo, the last station of the Mérida Cable Car?",
       "opciones": [
         "2,500 m.a.s.l.",
         "3,800 m.a.s.l.",
@@ -2261,7 +2261,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué significa la palabra \"Mukumbarí\", nombre dado al sistema en honor a la lengua indígena local?",
+      "enunciado": "¿Qué significa \"Mukumbarí\", el nombre indígena del Teleférico de Mérida?",
       "opciones": [
         "Camino de los Gigantes.",
         "Lugar donde duerme el sol",
@@ -2270,7 +2270,7 @@
       ]
     },
     "en": {
-      "enunciado": "What does the word \"Mukumbarí,\" the name given to the system in honor of the local indigenous language, mean?",
+      "enunciado": "What does \"Mukumbarí\", the indigenous name of the Mérida Cable Car, mean?",
       "opciones": [
         "Path of the Giants.",
         "Place where the sun sleeps",
@@ -2285,7 +2285,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Cuántas estaciones componen el recorrido total desde la ciudad hasta la cumbre?",
+      "enunciado": "¿Cuántas estaciones tiene el Teleférico de Mérida desde la ciudad hasta la cumbre?",
       "opciones": [
         "Tres estaciones.",
         "Cuatro estaciones.",
@@ -2294,7 +2294,7 @@
       ]
     },
     "en": {
-      "enunciado": "How many stations make up the total route from the city to the summit?",
+      "enunciado": "How many stations does the Mérida Cable Car have from the city to the summit?",
       "opciones": [
         "Three stations.",
         "Four stations.",
@@ -2309,7 +2309,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Quiénes fueron los principales redactores del Acta de Independencia?",
+      "enunciado": "¿Quiénes fueron los principales redactores del Acta de Independencia de Venezuela?",
       "opciones": [
         "Simón Bolívar y Francisco de Miranda.",
         "Juan Germán Roscio y Francisco Iznardi",
@@ -2318,7 +2318,7 @@
       ]
     },
     "en": {
-      "enunciado": "Who were the main drafters of the Act of Independence?",
+      "enunciado": "Who were the main drafters of Venezuela's Act of Independence?",
       "opciones": [
         "Simón Bolívar and Francisco de Miranda.",
         "Juan Germán Roscio and Francisco Iznardi",
@@ -2333,7 +2333,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuántas provincias de la Capitanía General de Venezuela firmaron el acta originalmente?",
+      "enunciado": "¿Cuántas provincias de la Capitanía General de Venezuela firmaron el Acta de Independencia de 1811?",
       "opciones": [
         "Las diez provincias.",
         "Siete provincias",
@@ -2342,7 +2342,7 @@
       ]
     },
     "en": {
-      "enunciado": "How many provinces of the Captaincy General of Venezuela originally signed the act?",
+      "enunciado": "How many provinces of the Captaincy General of Venezuela signed the 1811 Act of Independence?",
       "opciones": [
         "All ten provinces.",
         "Seven provinces",
@@ -2357,7 +2357,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿En qué lugar específico de Caracas se reunió el Congreso para la firma?",
+      "enunciado": "¿En qué lugar de Caracas se reunió el Congreso para firmar el Acta de Independencia?",
       "opciones": [
         "En el Panteón Nacional.",
         "En el Palacio de Miraflores.",
@@ -2366,7 +2366,7 @@
       ]
     },
     "en": {
-      "enunciado": "In what specific place in Caracas did the Congress meet for the signing?",
+      "enunciado": "Where in Caracas did Congress meet to sign the Act of Independence?",
       "opciones": [
         "At the National Pantheon.",
         "At the Miraflores Palace.",
@@ -2477,7 +2477,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "Según la leyenda, ¿qué parte del pez debe comer un visitante para quedarse para siempre en Guayana?",
+      "enunciado": "Según la leyenda, ¿qué parte de la sapoara debe comer un visitante para quedarse para siempre en Guayana?",
       "opciones": [
         "La cola.",
         "La cabeza",
@@ -2486,7 +2486,7 @@
       ]
     },
     "en": {
-      "enunciado": "According to the legend, which part of the fish must a visitor eat to stay forever in Guayana?",
+      "enunciado": "According to the legend, which part of the sapoara must a visitor eat to stay forever in Guayana?",
       "opciones": [
         "The tail.",
         "The head",
@@ -2525,7 +2525,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál es el rango de coloración más característico de una tonina adulta?",
+      "enunciado": "¿Cuál es el color más característico de una tonina del Orinoco adulta?",
       "opciones": [
         "Gris oscuro.",
         "Rosado vibrante",
@@ -2534,7 +2534,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the most characteristic coloration range of an adult tonina?",
+      "enunciado": "What is the most characteristic color of an adult Orinoco river dolphin (tonina)?",
       "opciones": [
         "Dark gray.",
         "Vibrant pink",
@@ -2549,7 +2549,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Qué tipo de ecosistema habitan principalmente las toninas?",
+      "enunciado": "¿En qué tipo de ecosistema viven principalmente las toninas del Orinoco?",
       "opciones": [
         "Arrecifes de coral en el Mar Caribe.",
         "Lagos salados de alta montaña.",
@@ -2558,7 +2558,7 @@
       ]
     },
     "en": {
-      "enunciado": "What type of ecosystem do toninas mainly inhabit?",
+      "enunciado": "What type of ecosystem do Orinoco river dolphins (toninas) mainly live in?",
       "opciones": [
         "Coral reefs in the Caribbean Sea.",
         "High mountain salt lakes.",
@@ -3075,23 +3075,23 @@
     "id": "story6_question3",
     "historia": "6",
     "numero": 3,
-    "correcta": 3,
+    "correcta": 0,
     "es": {
-      "enunciado": "¿En qué género musical NO se menciona el uso del cuatro?",
+      "enunciado": "¿Qué género musical llanero se acompaña tradicionalmente con arpa, cuatro y maracas?",
       "opciones": [
         "Joropo",
-        "Galerón",
-        "Tamunangue",
-        "Vals venezolano"
+        "Tango",
+        "Flamenco",
+        "Samba"
       ]
     },
     "en": {
-      "enunciado": "In which musical genre is the cuatro NOT mentioned?",
+      "enunciado": "Which Llanos music genre is traditionally played with harp, cuatro, and maracas?",
       "opciones": [
         "Joropo",
-        "Galerón",
-        "Tamunangue",
-        "Venezuelan waltz"
+        "Tango",
+        "Flamenco",
+        "Samba"
       ]
     }
   },
@@ -3125,7 +3125,7 @@
     "numero": 2,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Cuál de estos NO es un topping típico de la chicha mencionado en la historia?",
+      "enunciado": "¿Cuál de estos NO es un acompañante típico de la chicha venezolana?",
       "opciones": [
         "Canela",
         "Leche condensada",
@@ -3134,7 +3134,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which of these is NOT a typical chicha topping mentioned in the story?",
+      "enunciado": "Which of these is NOT a typical topping for Venezuelan chicha?",
       "opciones": [
         "Cinnamon",
         "Condensed milk",
@@ -3149,7 +3149,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuáles son los ingredientes principales de la chicha moderna según el texto?",
+      "enunciado": "¿Cuáles son los ingredientes principales de la chicha venezolana moderna?",
       "opciones": [
         "Arroz, agua, azúcar y especias",
         "Arroz cocido, leche, azúcar y vainilla",
@@ -3158,7 +3158,7 @@
       ]
     },
     "en": {
-      "enunciado": "What are the main ingredients of modern chicha according to the text?",
+      "enunciado": "What are the main ingredients of modern Venezuelan chicha?",
       "opciones": [
         "Rice, water, sugar and spices",
         "Cooked rice, milk, sugar and vanilla",
@@ -3173,7 +3173,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Dónde nace el río Orinoco, según la historia?",
+      "enunciado": "¿Dónde nace el río Orinoco?",
       "opciones": [
         "En los Andes venezolanos",
         "En el cerro Delgado Chalbaud, Guayana",
@@ -3182,7 +3182,7 @@
       ]
     },
     "en": {
-      "enunciado": "Where does the Orinoco River originate, according to the story?",
+      "enunciado": "Where does the Orinoco River originate?",
       "opciones": [
         "In the Venezuelan Andes",
         "At Cerro Delgado Chalbaud, Guayana",
@@ -3221,7 +3221,7 @@
     "numero": 3,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Qué animal NO se menciona como habitante del ecosistema del Orinoco?",
+      "enunciado": "¿Qué animal NO vive en el ecosistema del río Orinoco?",
       "opciones": [
         "Delfines del Orinoco",
         "Anacondas",
@@ -3230,7 +3230,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which animal is NOT mentioned as an inhabitant of the Orinoco ecosystem?",
+      "enunciado": "Which animal does NOT live in the Orinoco River ecosystem?",
       "opciones": [
         "Orinoco dolphins",
         "Anacondas",
@@ -3293,7 +3293,7 @@
     "numero": 3,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Qué características físicas NO se mencionan del Mucuchíes?",
+      "enunciado": "¿Cuál de estas características NO es propia del perro Mucuchíes?",
       "opciones": [
         "Tamaño mediano-grande",
         "Pelaje denso blanco/crema con o sin manchas",
@@ -3302,7 +3302,7 @@
       ]
     },
     "en": {
-      "enunciado": "What physical characteristics are NOT mentioned for the Mucuchíes?",
+      "enunciado": "Which of these features is NOT typical of the Mucuchíes dog?",
       "opciones": [
         "Medium-large size",
         "Dense white/cream coat with or without spots",
@@ -3317,7 +3317,7 @@
     "numero": 1,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Cuál queso venezolano se menciona como ideal para tequeños?",
+      "enunciado": "¿Qué queso venezolano es el ideal para hacer tequeños?",
       "opciones": [
         "Queso Guayanés",
         "Queso Blanco Duro",
@@ -3326,7 +3326,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which Venezuelan cheese is mentioned as ideal for tequeños?",
+      "enunciado": "Which Venezuelan cheese is ideal for making tequeños?",
       "opciones": [
         "Guayanés Cheese",
         "Hard White Cheese",
@@ -3341,7 +3341,7 @@
     "numero": 2,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Cuál es el queso que se menciona como \"compañero clásico de la cachapa\"?",
+      "enunciado": "¿Qué queso venezolano es el compañero clásico de la cachapa?",
       "opciones": [
         "Queso Blanco Duro",
         "Queso Guayanés",
@@ -3350,7 +3350,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which cheese is mentioned as \"classic companion of the cachapa\"?",
+      "enunciado": "Which Venezuelan cheese is the classic companion of the cachapa?",
       "opciones": [
         "Hard White Cheese",
         "Guayanés Cheese",
@@ -3365,7 +3365,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué queso venezolano se describe como \"tierno, con láminas elásticas que se derrite en la boca\"?",
+      "enunciado": "¿Qué queso venezolano es tierno, con láminas elásticas que se derriten en la boca?",
       "opciones": [
         "Queso Llanero",
         "Queso Telita",
@@ -3374,7 +3374,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which Venezuelan cheese is described as \"tender, with elastic layers that melt in the mouth\"?",
+      "enunciado": "Which Venezuelan cheese is tender, with elastic layers that melt in the mouth?",
       "opciones": [
         "Llanero Cheese",
         "Telita Cheese",
@@ -3413,7 +3413,7 @@
     "numero": 2,
     "correcta": 1,
     "es": {
-      "enunciado": "¿En qué panadería caraqueña se creó el cachito según el texto?",
+      "enunciado": "¿En qué panadería caraqueña se creó el cachito?",
       "opciones": [
         "Panadería \"Venezuela\"",
         "Panadería \"Ramella\"",
@@ -3422,7 +3422,7 @@
       ]
     },
     "en": {
-      "enunciado": "In which Caracas bakery was the cachito created according to the text?",
+      "enunciado": "In which Caracas bakery was the cachito created?",
       "opciones": [
         "\"Venezuela\" Bakery",
         "\"Ramella\" Bakery",
@@ -3461,7 +3461,7 @@
     "numero": 1,
     "correcta": 0,
     "es": {
-      "enunciado": "Según la historia, ¿cómo se llama científicamente el Cardenalito?",
+      "enunciado": "¿Cuál es el nombre científico del cardenalito?",
       "opciones": [
         "Spinus cucullatus",
         "Icterus icterus (el turpial)",
@@ -3470,7 +3470,7 @@
       ]
     },
     "en": {
-      "enunciado": "According to the story, what is the scientific name of the Cardenalito?",
+      "enunciado": "What is the scientific name of the cardenalito?",
       "opciones": [
         "Spinus cucullatus",
         "Icterus icterus (the troupial)",
@@ -3485,7 +3485,7 @@
     "numero": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "¿Desde qué siglo el Cardenalito deslumbró por su plumaje rojo intenso?",
+      "enunciado": "¿Desde qué siglo es admirado el cardenalito por su plumaje rojo intenso?",
       "opciones": [
         "Siglo XVII",
         "Siglo XVIII",
@@ -3494,7 +3494,7 @@
       ]
     },
     "en": {
-      "enunciado": "Since which century did the Cardenalito dazzle with its intense red plumage?",
+      "enunciado": "Since which century has the cardenalito been admired for its intense red plumage?",
       "opciones": [
         "17th century",
         "18th century",
@@ -3509,7 +3509,7 @@
     "numero": 3,
     "correcta": 2,
     "es": {
-      "enunciado": "¿En qué estado de conservación se encuentra actualmente el Cardenalito?",
+      "enunciado": "¿En qué estado de conservación se encuentra actualmente el cardenalito?",
       "opciones": [
         "Preocupación menor",
         "Vulnerable",
@@ -3518,7 +3518,7 @@
       ]
     },
     "en": {
-      "enunciado": "What is the current conservation status of the Cardenalito?",
+      "enunciado": "What is the current conservation status of the cardenalito?",
       "opciones": [
         "Least concern",
         "Vulnerable",
@@ -3581,7 +3581,7 @@
     "numero": 3,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Cuál de estos adornos NO se menciona como parte de la hallaca?",
+      "enunciado": "¿Cuál de estos ingredientes NO forma parte de los adornos tradicionales de la hallaca?",
       "opciones": [
         "Pasas",
         "Aceitunas",
@@ -3590,7 +3590,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which of these garnishes is NOT mentioned as part of the hallaca?",
+      "enunciado": "Which of these ingredients is NOT one of the traditional hallaca garnishes?",
       "opciones": [
         "Raisins",
         "Olives",
@@ -3725,7 +3725,7 @@
     "numero": 3,
     "correcta": 1,
     "es": {
-      "enunciado": "¿Qué queso se menciona como acompañante clásico de la cachapa?",
+      "enunciado": "¿Qué queso es el acompañante clásico de la cachapa?",
       "opciones": [
         "Queso Guayanés",
         "Queso de Mano o Telita",
@@ -3734,7 +3734,7 @@
       ]
     },
     "en": {
-      "enunciado": "Which cheese is mentioned as the classic accompaniment to cachapa?",
+      "enunciado": "Which cheese is the classic accompaniment to cachapa?",
       "opciones": [
         "Guayanés Cheese",
         "Hand Cheese or Telita",

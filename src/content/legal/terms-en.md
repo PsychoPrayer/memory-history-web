@@ -1,8 +1,8 @@
 # TERMS AND CONDITIONS OF USE AND PRIVACY POLICY
 ## MEMORY HISTORY
 
-**Last updated:** October 17, 2026
-**Version:** 3.1
+**Last updated:** October 23, 2026
+**Version:** 4
 
 ---
 
@@ -16,87 +16,67 @@ If you do not agree with any part of these Terms, do not use the Game.
 
 ## 2. WHAT MEMORY HISTORY IS
 
-Memory History is a free, ad-free educational memory game about the history and culture of different countries. It includes a level-based campaign, illustrated stories, tests, achievements, a free-play mode (PancitoLandia), real-time duels and a Daily challenge with a leaderboard.
+Memory History is a free educational memory game about the history and culture of different countries. It includes a level campaign, illustrated stories, tests, achievements and a free mode (PancitoLandia). It is a single-player game: it has no accounts, chat or online features with other players. The Android and iPhone/iPad versions show ads (section 4.4); the web version does not.
 
-In these Terms, the "Developer" is the team that creates and maintains the Game (see section 15).
+In these Terms, "the Developer" is the team that creates and maintains the Game (see section 15).
 
 ---
 
-## 3. OPTIONAL ACCOUNT
+## 3. NO ACCOUNTS
 
-### 3.1. Playing without an account
+The Game **has no accounts or sign-in** and does not ask for an email address, phone number, real name, date of birth or any other personal data. Your progress is saved on your own device (see section 4).
 
-The whole Game can be used without an account, except the features that connect you with other players (duels and the Daily challenge leaderboard).
-
-### 3.2. Creating an account
-
-An account only asks for **a username and a password**. The Game **does not ask for an email address**, phone number, real name, date of birth or any other personal data. Accounts created earlier with an email address keep working.
-
-### 3.3. Looking after your account
-
-- You are responsible for keeping your username and password safe and for not sharing them.
-- When you create the account, the Game shows you a **recovery code** once. With your username and that code you can choose a new password if you forget the current one; using it gives you a new code and signs you out on other devices. From Settings you can create a new code, which cancels the previous one.
-- Because the Game does not ask for an email, **if you lose both your password and your recovery code, the account cannot be recovered**, nor the progress saved in it, although you can keep playing and create a new account.
-- Do not use your real name or personal data as your username or player name.
-
-### 3.4. Linking and choosing progress
-
-When you create an account, the progress saved on the device is saved to it. When you sign in on a device that already has different progress, the Game lets you combine both, load the account's progress or keep the device's. The options that replace progress ask for confirmation; replaced progress cannot be recovered.
+The cloud accounts that existed in earlier versions of the Game have been retired. The progress already on your device is kept. The data those accounts stored on our servers will be deleted completely; if you want us to delete it sooner, write to the address in section 15.
 
 ---
 
 ## 4. PRIVACY AND DATA
 
-### 4.1. Data stored on your device
+### 4.1. Where your progress is saved
 
-Your progress (levels, stars, stories, tests, achievements, challenges) and preferences (language, volume, player name, avatar) are stored in your browser's or device's local storage. You can delete them at any time by clearing the site data, uninstalling the Game or from Settings → Reset progress.
+Your progress (levels, stars, stories, tests and achievements) and preferences (language, volume, player name and avatar) are saved **only on your device**:
 
-### 4.2. Data stored with an account
+- **Web version:** in your browser's local storage.
+- **Android:** on the phone. If Google backup is on, Android includes the Game's save in that backup, inside your Google account, and restores it when you reinstall the Game or change phones.
+- **iPhone and iPad:** on the device and in your **iCloud**, so your progress appears on your other Apple devices with the same account.
 
-If you create an account, our servers store:
+The Developer **has no servers that store your data** and cannot see your progress. The Google and iCloud copies are handled by Google and Apple under their own privacy policies, and you can turn them off in your device settings.
 
-- your username;
-- your password and your recovery code, **only in encrypted (hashed) form**: nobody, not even the Developer, can read them;
-- account recovery attempts (username, date and whether they succeeded), which are deleted automatically after 24 hours and are used only to stop attacks;
-- a copy of your progress and preferences, to sync them across devices;
-- the minimum technical data needed to keep you signed in (for example, the sign-in date and a session token stored on your device).
+### 4.2. Player name
 
-### 4.3. Data visible to other players
+The player name you choose is shown only on your device. Do not use your real name if you share the device with other people.
 
-- **Duels:** your duel name, your avatar and each match result are visible to your opponent.
-- **Daily challenge leaderboard:** if you play the challenge while signed in, your **player name, avatar, time, mistakes and rank** are published on that day's leaderboard and are visible to **anyone** who opens the Game.
+### 4.3. Technical providers
 
-Choose a player name that does not reveal your identity if you do not want others to know it.
-
-### 4.4. How data is used
-
-Data is used **only** to make the Game work: saving and syncing your progress, enabling duels and showing the leaderboard. It is **not sold, not used for advertising, not used for profiling and not shared** with third parties, except the technical providers in section 4.5.
-
-### 4.5. Technical providers
-
-- **Supabase:** database and account system.
 - **Vercel:** hosting of the web version.
+- **Google AdMob:** ads, only in the Android and iPhone/iPad versions (see section 4.4).
 - **Google Fonts:** the Game's typefaces. When they load, Google receives technical connection data such as your IP address.
 
-These providers process data only to deliver their service and may log basic technical data (such as your IP address) for security and operation, under their own privacy policies.
+These providers may log basic technical data (such as your IP address) for security and operation, under their own privacy policies.
 
-### 4.6. What the Game does not do
+### 4.4. Ads
 
-The Game shows no advertising; uses no advertising or tracking cookies; does not collect your location; and does not access your contacts, photos or files.
+The Android and iPhone/iPad versions show **Google AdMob** ads: a full-screen ad now and then when a match ends (never during one) and, if you choose, a short video in exchange for an extra hint. The web version has no ads.
 
-### 4.7. Retention and deletion
+Because the Game is for all ages, **all ads are treated as directed to children**: they are not personalised, the device's advertising ID is not used, no tracking permission is requested, and only ads suitable for all audiences are shown. To show them, Google receives the technical data it needs (for example, IP address, device model and system, and whether an ad was seen or tapped), which it handles under its own privacy policy. The Developer does not receive this data in a way that identifies you.
 
-Account data is kept while the account exists. Daily challenge results are kept to show leaderboard history. You can delete your account and all its cloud data (progress, leaderboard results, duels and recovery code) at any time from **Settings → Cloud account → Delete my account**. Deletion is immediate and permanent. If you cannot access your account, you can also ask for it by writing to **pancitogamesdev@gmail.com** with your username; we will handle the request within 30 days.
+### 4.5. What the Game does not do
 
-### 4.8. Your rights
+The Game shows no personalised ads; uses no tracking cookies; does not collect your location; builds no profiles; and does not access your contacts, photos or files.
 
-Depending on the law where you live (for example, the European Union's General Data Protection Regulation or United States privacy laws), you may have the right to access, correct or delete your data, to object to its processing or to receive a copy. To exercise these rights, write to the address in section 15. By creating an account, you consent to the processing of the data described in this section for the purposes stated.
+### 4.6. Deleting your data
+
+You can delete everything the Game keeps about you at any time from **Settings → Erase all my data**: your progress in every country, your player name, avatar and settings on that device and, on iPhone and iPad, the iCloud copy. Deletion is immediate and permanent. You can also delete one country's progress from **Settings → Reset progress**, or clear the site data or uninstall the Game.
+
+### 4.7. Your rights
+
+Depending on the law where you live (for example, the European Union's General Data Protection Regulation or United States privacy laws), you may have the right to access, correct or delete your data. Because your data is only on your devices, you can exercise these rights directly from the Game or your device settings. For any question, write to the address in section 15.
 
 ---
 
 ## 5. MINORS
 
-The Game is suitable for all ages and can be used in full without an account. Children under 13 (or the minimum age set by the law of their country) should create an account, play duels or appear on the leaderboard **only with the permission of a parent or guardian**, and should not use their real name as a username or player name. Parents and guardians are responsible for supervising the use of the Game by minors in their care. A parent or guardian who believes a child created an account without permission can ask for its deletion at the address in section 15.
+The Game is suitable for all ages. It asks for no personal data and does not let players communicate with other people. Parents or guardians are responsible for supervising the use of the Game by minors in their care.
 
 ---
 
@@ -104,15 +84,9 @@ The Game is suitable for all ages and can be used in full without an account. Ch
 
 When using the Game, you agree not to:
 
-- use usernames, player names or duel names that are offensive, discriminatory, sexual, violent or that impersonate someone else;
-- tamper with the Game, its results or the leaderboard, or submit fake results by technical means;
-- try to access other people's accounts, systems or data without authorization, or overload or disrupt the servers;
-- copy, modify, decompile, sell or distribute the Game or its content without authorization;
+- copy, modify, decompile, sell or distribute the Game or its content without permission;
+- try to access the Game's systems without permission or overload or disrupt them;
 - use the Game for illegal purposes.
-
-The Game automatically rejects some offensive names. Any player with an account can **report** an inappropriate name from the leaderboard; when a name gets several reports from different players, it is hidden from the leaderboard until the Developer reviews it. Reports store who reported, whom, the reason and the reported name, and only the Developer can see them.
-
-The Developer may, without notice, change inappropriate names, remove suspicious results from the leaderboard, and suspend or delete accounts that break these rules.
 
 ---
 
@@ -164,7 +138,7 @@ The Developer may change, expand or discontinue the Game or any of its features 
 
 ## 13. TERMINATION
 
-You can stop using the Game at any time, delete your local data or delete your account (section 4.7). The Developer may suspend or remove access for anyone who breaks these Terms. The sections on intellectual property, no warranties, limitation of liability and governing law survive termination.
+You can stop using the Game at any time, or delete all your data (section 4.6). The Developer may suspend or remove access for anyone who breaks these Terms. The sections on intellectual property, no warranties, limitation of liability and governing law survive termination.
 
 ---
 

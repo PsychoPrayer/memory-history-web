@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Auto Backup and phone-to-phone transfer (Android 12+): only the game's save,
+  which lives in the web view's localStorage.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="root" path="app_webview/Default/Local Storage/" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="root" path="app_webview/Default/Local Storage/" />
+    </device-transfer>
+</data-extraction-rules>

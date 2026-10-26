@@ -72,12 +72,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "13",
-    "nombre": "Queso Palmizulia",
-    "imagen": "/imagenes/cartas/queso-palmizulia.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "14",
     "nombre": "Hallaca",
     "imagen": "/imagenes/cartas/hallaca.webp",
@@ -246,12 +240,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "43",
-    "nombre": "Pelota",
-    "imagen": "/imagenes/cartas/pelota.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "44",
     "nombre": "Hotel Humbolt",
     "imagen": "/imagenes/cartas/hotel-humbolt.webp",
@@ -298,12 +286,6 @@
     "nombre": "Diablos de Yare",
     "imagen": "/imagenes/cartas/diablos-de-yare.webp",
     "desbloqueoEn": 20
-  },
-  {
-    "id": "52",
-    "nombre": "Malta",
-    "imagen": "/imagenes/cartas/malta.webp",
-    "desbloqueoEn": 12
   },
   {
     "id": "53",
@@ -426,33 +408,9 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "72",
-    "nombre": "Cri Cri",
-    "imagen": "/imagenes/cartas/cri-cri.webp",
-    "desbloqueoEn": 24
-  },
-  {
     "id": "73",
     "nombre": "Ave del paraiso",
     "imagen": "/imagenes/cartas/ave-del-paraiso.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "74",
-    "nombre": "Harina Pan",
-    "imagen": "/imagenes/cartas/harina-pan.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "75",
-    "nombre": "Pirulin",
-    "imagen": "/imagenes/cartas/pirulin.webp",
-    "desbloqueoEn": 12
-  },
-  {
-    "id": "76",
-    "nombre": "Toronto",
-    "imagen": "/imagenes/cartas/toronto.webp",
     "desbloqueoEn": 12
   },
   {
@@ -468,12 +426,6 @@
     "desbloqueoEn": 12
   },
   {
-    "id": "79",
-    "nombre": "samba",
-    "imagen": "/imagenes/cartas/samba.webp",
-    "desbloqueoEn": 12
-  },
-  {
     "id": "80",
     "nombre": "Mono titi",
     "imagen": "/imagenes/cartas/mono-titi.webp",
@@ -484,12 +436,6 @@
     "nombre": "Mamon",
     "imagen": "/imagenes/cartas/mamon.webp",
     "desbloqueoEn": 24
-  },
-  {
-    "id": "82",
-    "nombre": "Toddy",
-    "imagen": "/imagenes/cartas/toddy.webp",
-    "desbloqueoEn": 12
   },
   {
     "id": "83",
@@ -522,12 +468,6 @@
     "desbloqueoEn": 24
   },
   {
-    "id": "88",
-    "nombre": "PingPong",
-    "imagen": "/imagenes/cartas/pingpong.webp",
-    "desbloqueoEn": 24
-  },
-  {
     "id": "89",
     "nombre": "Trinitarias",
     "imagen": "/imagenes/cartas/trinitarias.webp",
@@ -552,27 +492,9 @@
     "desbloqueoEn": 20
   },
   {
-    "id": "94",
-    "nombre": "El chichero",
-    "imagen": "/imagenes/cartas/el-chichero.webp",
-    "desbloqueoEn": 20
-  },
-  {
-    "id": "95",
-    "nombre": "cocosette",
-    "imagen": "/imagenes/cartas/cocosette.webp",
-    "desbloqueoEn": 20
-  },
-  {
     "id": "96",
     "nombre": "Maracas",
     "imagen": "/imagenes/cartas/maracas.webp",
-    "desbloqueoEn": 20
-  },
-  {
-    "id": "97",
-    "nombre": "Natuchips",
-    "imagen": "/imagenes/cartas/natuchips.webp",
     "desbloqueoEn": 20
   },
   {
